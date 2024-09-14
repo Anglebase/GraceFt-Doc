@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Signal&lt; Args &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_g_ft_1_1_signal.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_g_ft_1_1_signal-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Signal&lt; Args &gt; 模板类 参考<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_xE8_xAE_xBE_xE6_x96_xBD_xE5_xBA_x93.html">基础设施库</a> &raquo; <a class="el" href="group___xE5_xAF_xB9_xE8_xB1_xA1_xE9_x80_x9A_xE4_xBF_xA1_xE6_x9C_xBA_xE5_x88_xB6.html">对象通信机制</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>信号-槽机制支持  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_signal_8hpp_source.html">Signal.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa02d3f0d72bb1a637b57d2f684f050f1" id="r_aa02d3f0d72bb1a637b57d2f684f050f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa02d3f0d72bb1a637b57d2f684f050f1">Signal</a> ()=default</td></tr>
+<tr class="separator:aa02d3f0d72bb1a637b57d2f684f050f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4ce8bf87cc2e87252a2f1b4a21ed7b" id="r_aae4ce8bf87cc2e87252a2f1b4a21ed7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4ce8bf87cc2e87252a2f1b4a21ed7b">connect</a> (const Slot &amp;slot)</td></tr>
+<tr class="memdesc:aae4ce8bf87cc2e87252a2f1b4a21ed7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接槽函数  <br /></td></tr>
+<tr class="separator:aae4ce8bf87cc2e87252a2f1b4a21ed7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43e8a759c52d8b0f3e162b845aeafa0" id="r_ad43e8a759c52d8b0f3e162b845aeafa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43e8a759c52d8b0f3e162b845aeafa0">disconnect</a> (<a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt; id)</td></tr>
+<tr class="memdesc:ad43e8a759c52d8b0f3e162b845aeafa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开槽函数  <br /></td></tr>
+<tr class="separator:ad43e8a759c52d8b0f3e162b845aeafa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d49574d56e23ce097676ab7ad870ba4" id="r_a8d49574d56e23ce097676ab7ad870ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d49574d56e23ce097676ab7ad870ba4">emit</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a8d49574d56e23ce097676ab7ad870ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信号  <br /></td></tr>
+<tr class="separator:a8d49574d56e23ce097676ab7ad870ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6179dff77a359e027657da78e0b579" id="r_a6a6179dff77a359e027657da78e0b579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6179dff77a359e027657da78e0b579">operator()</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a6a6179dff77a359e027657da78e0b579"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信号  <br /></td></tr>
+<tr class="separator:a6a6179dff77a359e027657da78e0b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
+class GFt::Signal&lt; Args &gt;</div><p>信号-槽机制支持 </p>
+<p>支持任意数量的槽函数，支持任意数量的参数，支持任意类型的参数</p>
+<p>此类是线程安全的，且它是 基础设施库 =&gt; 对象通信机制 的一部分 </p><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>信号参数类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_button_8cpp-example.html#_a30">Button.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa02d3f0d72bb1a637b57d2f684f050f1" name="aa02d3f0d72bb1a637b57d2f684f050f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02d3f0d72bb1a637b57d2f684f050f1">&#9670;&#160;</a></span>Signal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::Signal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aae4ce8bf87cc2e87252a2f1b4a21ed7b" name="aae4ce8bf87cc2e87252a2f1b4a21ed7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4ce8bf87cc2e87252a2f1b4a21ed7b">&#9670;&#160;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt; <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::connect </td>
+          <td>(</td>
+          <td class="paramtype">const Slot &amp;</td>          <td class="paramname"><span class="paramname"><em>slot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>连接槽函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>槽函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>槽函数ID</dd></dl>
+<p>连接的槽函数会在信号发出时被调用</p>
+<p>槽函数ID是按顺序生成的，从0开始 </p><dl class="section note"><dt>注解</dt><dd>生成的槽函数ID时只保证唯一性，不保证其连续性 </dd>
+<dd>
+调用槽函数时不保证调用顺序与连接顺序一致 </dd></dl>
+
+</div>
+</div>
+<a id="ad43e8a759c52d8b0f3e162b845aeafa0" name="ad43e8a759c52d8b0f3e162b845aeafa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43e8a759c52d8b0f3e162b845aeafa0">&#9670;&#160;</a></span>disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>断开槽函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>槽函数ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d49574d56e23ce097676ab7ad870ba4" name="a8d49574d56e23ce097676ab7ad870ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d49574d56e23ce097676ab7ad870ba4">&#9670;&#160;</a></span>emit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::emit </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>信号参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>调用槽函数时不保证调用顺序与连接顺序一致 </dd>
+<dd>
+此函数是线程安全的，但不保证槽函数的线程安全性 </dd></dl>
+
+</div>
+</div>
+<a id="a6a6179dff77a359e027657da78e0b579" name="a6a6179dff77a359e027657da78e0b579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6179dff77a359e027657da78e0b579">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>信号参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>效果同 <a class="el" href="#a8d49574d56e23ce097676ab7ad870ba4" title="发送信号">emit(Args&amp;&amp;... args)</a> </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="#a8d49574d56e23ce097676ab7ad870ba4" title="发送信号">emit(Args&amp;&amp;... args)</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

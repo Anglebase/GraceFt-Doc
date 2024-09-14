@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/RoundRect.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_round_rect_8hpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RoundRect.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Rect.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">requires</span> std::is_arithmetic_v&lt;T&gt;</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_class" href="class_g_ft_1_1_rect.html">Rect&lt;T&gt;</a> rect_;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> lt, rt, rb, lb;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a822d675209caffb6db6f5f7e49d3d676">   21</a></span>        <span class="keyword">constexpr</span> <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a822d675209caffb6db6f5f7e49d3d676">RoundRect</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">Rect&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a51888050e509a5f3ddfd2b618b8c6080">rect</a>, <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> rad)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            : rect_(<a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a51888050e509a5f3ddfd2b618b8c6080">rect</a>), lt(rad), rt(rad), rb(rad), lb(rad) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a51888050e509a5f3ddfd2b618b8c6080">rect</a>.<a class="code hl_function" href="class_g_ft_1_1_rect.html#a34bb8224532dabd9d7db9e518c6b2f89">normalize</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a51888050e509a5f3ddfd2b618b8c6080">   28</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">Rect&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a51888050e509a5f3ddfd2b618b8c6080">rect</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rect_; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a0e5688baa4c90807f1eaaeb601795a32">   31</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a0e5688baa4c90807f1eaaeb601795a32">radiusTopLeft</a>() { <span class="keywordflow">return</span> lt; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a10cfbe65e4052d8291b20a233c4b3906">   34</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a10cfbe65e4052d8291b20a233c4b3906">radiusTopRight</a>() { <span class="keywordflow">return</span> rt; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a184db31167b77710679a8802c31771ea">   37</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a184db31167b77710679a8802c31771ea">radiusBottomRight</a>() { <span class="keywordflow">return</span> rb; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a224d0e8b830c80d774a0c7efae935e1a">   40</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a224d0e8b830c80d774a0c7efae935e1a">radiusBottomLeft</a>() { <span class="keywordflow">return</span> lb; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#ab1a007568aea10de3ac1879b66a1213d">   43</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#ab1a007568aea10de3ac1879b66a1213d">radiusTopLeft</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> lt; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a21234b09dac31473c6a71dc088446bc0">   46</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a21234b09dac31473c6a71dc088446bc0">radiusTopRight</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rt; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#aada593bb2b04d733db8be4e53ae19173">   49</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#aada593bb2b04d733db8be4e53ae19173">radiusBottomRight</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> rb; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#aa3a813946ab93b9104a80bf84a4e7297">   52</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#aa3a813946ab93b9104a80bf84a4e7297">radiusBottomLeft</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> lb; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#ac791fde9d806b4dd8ce72923a92111e4">   57</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#ac791fde9d806b4dd8ce72923a92111e4">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect&lt;T&gt;</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">using namespace </span>_GFt_private_;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">if</span> (_fsafe_equal(lt, other.lt) &amp;&amp; _fsafe_equal(rt, other.rt) &amp;&amp;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    _fsafe_equal(rb, other.rb) &amp;&amp; _fsafe_equal(lb, other.lb)) </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    <span class="keywordflow">return</span> rect_ == other.rect_;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">else</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">if</span> (lt == other.lt &amp;&amp; rt == other.rt &amp;&amp;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    rb == other.rb &amp;&amp; lb == other.lb) </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    <span class="keywordflow">return</span> rect_ == other.rect_;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a6026164c4bf1797759f5763ab47ac2a9">   72</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a6026164c4bf1797759f5763ab47ac2a9">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect&lt;T&gt;</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="};">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a7e370def4a602f6d53dc36e6aa2dfa0e">   79</a></span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="class_g_ft_1_1_round_rect.html#a7e370def4a602f6d53dc36e6aa2dfa0e">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect&lt;T&gt;</a>&amp; r) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            os &lt;&lt; <span class="stringliteral">&quot;RoundRect(&quot;</span> &lt;&lt; r.rect_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; r.lt &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; r.rt &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; r.rb &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; r.lb &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">return</span> os;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keyword">requires</span> std::is_arithmetic_v&lt;U&gt;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_round_rect.html#a4148414dec49a81b301796ba03a1d342">   89</a></span>        <span class="keyword">constexpr</span> <span class="keyword">operator</span> <a class="code hl_function" href="class_g_ft_1_1_round_rect.html#a822d675209caffb6db6f5f7e49d3d676">RoundRect&lt;U&gt;</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect&lt;U&gt;</a> result(this-&gt;rect_);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            result.lt = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a><span class="keyword">&gt;</span>(this-&gt;lt);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            result.rt = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a><span class="keyword">&gt;</span>(this-&gt;rt);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            result.rb = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a><span class="keyword">&gt;</span>(this-&gt;rb);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            result.lb = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a><span class="keyword">&gt;</span>(this-&gt;lb);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    };</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga94d1d81793e42330678d0ed813566a16">  101</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_round_rect.html">iRoundRect</a> = <a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect&lt;int&gt;</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gabebf5d7792426cfe0b778948c43a56d0">  104</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_round_rect.html">fRoundRect</a> = <a class="code hl_class" href="class_g_ft_1_1_round_rect.html">RoundRect&lt;float&gt;</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect</a></div><div class="ttdoc">矩形模板类</div><div class="ttdef"><b>定义</b> Rect.hpp:24</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html_a34bb8224532dabd9d7db9e518c6b2f89"><div class="ttname"><a href="class_g_ft_1_1_rect.html#a34bb8224532dabd9d7db9e518c6b2f89">GFt::Rect::normalize</a></div><div class="ttdeci">constexpr void normalize()</div><div class="ttdoc">规范化矩形数据</div><div class="ttdef"><b>定义</b> Rect.hpp:121</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html">GFt::RoundRect</a></div><div class="ttdoc">圆角矩形类</div><div class="ttdef"><b>定义</b> RoundRect.hpp:14</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a0e5688baa4c90807f1eaaeb601795a32"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a0e5688baa4c90807f1eaaeb601795a32">GFt::RoundRect::radiusTopLeft</a></div><div class="ttdeci">constexpr T &amp; radiusTopLeft()</div><div class="ttdoc">圆角矩形左上角圆角半径</div><div class="ttdef"><b>定义</b> RoundRect.hpp:31</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a10cfbe65e4052d8291b20a233c4b3906"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a10cfbe65e4052d8291b20a233c4b3906">GFt::RoundRect::radiusTopRight</a></div><div class="ttdeci">constexpr T &amp; radiusTopRight()</div><div class="ttdoc">圆角矩形右上角圆角半径</div><div class="ttdef"><b>定义</b> RoundRect.hpp:34</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a184db31167b77710679a8802c31771ea"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a184db31167b77710679a8802c31771ea">GFt::RoundRect::radiusBottomRight</a></div><div class="ttdeci">constexpr T &amp; radiusBottomRight()</div><div class="ttdoc">圆角矩形右下角圆角半径</div><div class="ttdef"><b>定义</b> RoundRect.hpp:37</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a21234b09dac31473c6a71dc088446bc0"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a21234b09dac31473c6a71dc088446bc0">GFt::RoundRect::radiusTopRight</a></div><div class="ttdeci">constexpr const T &amp; radiusTopRight() const</div><div class="ttdoc">圆角矩形右上角圆角半径 (const)</div><div class="ttdef"><b>定义</b> RoundRect.hpp:46</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a224d0e8b830c80d774a0c7efae935e1a"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a224d0e8b830c80d774a0c7efae935e1a">GFt::RoundRect::radiusBottomLeft</a></div><div class="ttdeci">constexpr T &amp; radiusBottomLeft()</div><div class="ttdoc">圆角矩形左下角圆角半径</div><div class="ttdef"><b>定义</b> RoundRect.hpp:40</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a51888050e509a5f3ddfd2b618b8c6080"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a51888050e509a5f3ddfd2b618b8c6080">GFt::RoundRect::rect</a></div><div class="ttdeci">constexpr const Rect&lt; T &gt; &amp; rect() const</div><div class="ttdoc">圆角矩形所在矩形</div><div class="ttdef"><b>定义</b> RoundRect.hpp:28</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a6026164c4bf1797759f5763ab47ac2a9"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a6026164c4bf1797759f5763ab47ac2a9">GFt::RoundRect::operator!=</a></div><div class="ttdeci">constexpr bool operator!=(const RoundRect&lt; T &gt; &amp;other) const</div><div class="ttdoc">判断两个圆角矩形是否不同</div><div class="ttdef"><b>定义</b> RoundRect.hpp:72</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a7e370def4a602f6d53dc36e6aa2dfa0e"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a7e370def4a602f6d53dc36e6aa2dfa0e">GFt::RoundRect::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const RoundRect&lt; T &gt; &amp;r)</div><div class="ttdoc">输出圆角矩形信息到输出流</div><div class="ttdef"><b>定义</b> RoundRect.hpp:79</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_a822d675209caffb6db6f5f7e49d3d676"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#a822d675209caffb6db6f5f7e49d3d676">GFt::RoundRect::RoundRect</a></div><div class="ttdeci">constexpr RoundRect(const Rect&lt; T &gt; &amp;rect, T rad)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> RoundRect.hpp:21</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_aa3a813946ab93b9104a80bf84a4e7297"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#aa3a813946ab93b9104a80bf84a4e7297">GFt::RoundRect::radiusBottomLeft</a></div><div class="ttdeci">constexpr const T &amp; radiusBottomLeft() const</div><div class="ttdoc">圆角矩形左下角圆角半径 (const)</div><div class="ttdef"><b>定义</b> RoundRect.hpp:52</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_aada593bb2b04d733db8be4e53ae19173"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#aada593bb2b04d733db8be4e53ae19173">GFt::RoundRect::radiusBottomRight</a></div><div class="ttdeci">constexpr const T &amp; radiusBottomRight() const</div><div class="ttdoc">圆角矩形右下角圆角半径 (const)</div><div class="ttdef"><b>定义</b> RoundRect.hpp:49</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_ab1a007568aea10de3ac1879b66a1213d"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#ab1a007568aea10de3ac1879b66a1213d">GFt::RoundRect::radiusTopLeft</a></div><div class="ttdeci">constexpr const T &amp; radiusTopLeft() const</div><div class="ttdoc">圆角矩形左上角圆角半径 (const)</div><div class="ttdef"><b>定义</b> RoundRect.hpp:43</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_round_rect_html_ac791fde9d806b4dd8ce72923a92111e4"><div class="ttname"><a href="class_g_ft_1_1_round_rect.html#ac791fde9d806b4dd8ce72923a92111e4">GFt::RoundRect::operator==</a></div><div class="ttdeci">constexpr bool operator==(const RoundRect&lt; T &gt; &amp;other) const</div><div class="ttdoc">判断两个圆角矩形是否相同</div><div class="ttdef"><b>定义</b> RoundRect.hpp:57</div></div>
+<div class="ttc" id="agroup___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb"><div class="ttname"><a href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">GFt::Key::U</a></div><div class="ttdeci">@ U</div><div class="ttdoc">U 键</div></div>
+<div class="ttc" id="agroup___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3"><div class="ttname"><a href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">GFt::Key::T</a></div><div class="ttdeci">@ T</div><div class="ttdoc">T 键</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>RoundRect.hpp</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

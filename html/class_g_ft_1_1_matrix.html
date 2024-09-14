@@ -1,0 +1,1454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Matrix&lt; M, N, T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_g_ft_1_1_matrix.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_g_ft_1_1_matrix-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Matrix&lt; M, N, T &gt; 模板类 参考<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_xE8_xAE_xBE_xE6_x96_xBD_xE5_xBA_x93.html">基础设施库</a> &raquo; <a class="el" href="group___xE5_xA4_x8D_xE5_x90_x88_xE6_x95_xB0_xE6_x8D_xAE_xE7_xB1_xBB_xE5_x9E_x8B.html">复合数据类型</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>矩阵类模板  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_matrix_8hpp_source.html">Matrix.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5ba7ee18643cf308ff3880d1369e701a" id="r_a5ba7ee18643cf308ff3880d1369e701a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ba7ee18643cf308ff3880d1369e701a">Matrix</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> val=0)</td></tr>
+<tr class="memdesc:a5ba7ee18643cf308ff3880d1369e701a"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a5ba7ee18643cf308ff3880d1369e701a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1b80842906f0133218ac2e22496b70" id="r_a6f1b80842906f0133218ac2e22496b70"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f1b80842906f0133218ac2e22496b70">Matrix</a> (const <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>(&amp;arr)[<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>][<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>])</td></tr>
+<tr class="memdesc:a6f1b80842906f0133218ac2e22496b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a6f1b80842906f0133218ac2e22496b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43efd26cf02132c779fd970897907fb" id="r_ab43efd26cf02132c779fd970897907fb"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab43efd26cf02132c779fd970897907fb">Matrix</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other)</td></tr>
+<tr class="separator:ab43efd26cf02132c779fd970897907fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3404403d6725a38dc2952cdfaae8357c" id="r_a3404403d6725a38dc2952cdfaae8357c"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3404403d6725a38dc2952cdfaae8357c">Matrix</a> (<a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a3404403d6725a38dc2952cdfaae8357c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b06dccbf4480c7e9d385d2ec990218b" id="r_a7b06dccbf4480c7e9d385d2ec990218b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b06dccbf4480c7e9d385d2ec990218b">operator=</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other)</td></tr>
+<tr class="separator:a7b06dccbf4480c7e9d385d2ec990218b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aef3b0063d7f19c89c1851655457a8c" id="r_a1aef3b0063d7f19c89c1851655457a8c"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aef3b0063d7f19c89c1851655457a8c">operator=</a> (<a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a1aef3b0063d7f19c89c1851655457a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f912c94bff86942985ba8acdbd48e15" id="r_a2f912c94bff86942985ba8acdbd48e15"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f912c94bff86942985ba8acdbd48e15">operator[]</a> (<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> i)</td></tr>
+<tr class="memdesc:a2f912c94bff86942985ba8acdbd48e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 <a class="el" href="class_g_ft_1_1_matrix.html" title="矩阵类模板">Matrix</a>[M][N] 的形式访问矩阵数据  <br /></td></tr>
+<tr class="separator:a2f912c94bff86942985ba8acdbd48e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9064b4c0a4923b1c06852118913a5d" id="r_a5c9064b4c0a4923b1c06852118913a5d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c9064b4c0a4923b1c06852118913a5d">operator()</a> (<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> i, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> j)</td></tr>
+<tr class="memdesc:a5c9064b4c0a4923b1c06852118913a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 Matrix(M,N) 的形式访问矩阵数据  <br /></td></tr>
+<tr class="separator:a5c9064b4c0a4923b1c06852118913a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad105eec3d5f427f5d127cff2136821bf" id="r_ad105eec3d5f427f5d127cff2136821bf"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad105eec3d5f427f5d127cff2136821bf">operator[]</a> (<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> i) const</td></tr>
+<tr class="memdesc:ad105eec3d5f427f5d127cff2136821bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 <a class="el" href="class_g_ft_1_1_matrix.html" title="矩阵类模板">Matrix</a>[M][N] 的形式访问矩阵数据的 const 版本  <br /></td></tr>
+<tr class="separator:ad105eec3d5f427f5d127cff2136821bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2cb0344f656ce492fe5f60e3219432d" id="r_ad2cb0344f656ce492fe5f60e3219432d"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2cb0344f656ce492fe5f60e3219432d">operator()</a> (<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> i, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> j) const</td></tr>
+<tr class="memdesc:ad2cb0344f656ce492fe5f60e3219432d"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 Matrix(M,N) 的形式访问矩阵数据的 const 版本  <br /></td></tr>
+<tr class="separator:ad2cb0344f656ce492fe5f60e3219432d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43849b9082fb3a4130003ff9755bef2" id="r_af43849b9082fb3a4130003ff9755bef2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af43849b9082fb3a4130003ff9755bef2">operator bool</a> () const</td></tr>
+<tr class="memdesc:af43849b9082fb3a4130003ff9755bef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">将矩阵转换到 bool 值  <br /></td></tr>
+<tr class="separator:af43849b9082fb3a4130003ff9755bef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e681f93fd41f2bde4d389db1f6fec08" id="r_a5e681f93fd41f2bde4d389db1f6fec08"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e681f93fd41f2bde4d389db1f6fec08">operator!</a> () const</td></tr>
+<tr class="memdesc:a5e681f93fd41f2bde4d389db1f6fec08"><td class="mdescLeft">&#160;</td><td class="mdescRight">逻辑非运算符重载  <br /></td></tr>
+<tr class="separator:a5e681f93fd41f2bde4d389db1f6fec08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12b251a59f6af3f62f9728adb21365e" id="r_aa12b251a59f6af3f62f9728adb21365e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa12b251a59f6af3f62f9728adb21365e">operator+</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other) const</td></tr>
+<tr class="memdesc:aa12b251a59f6af3f62f9728adb21365e"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵加法运算符重载  <br /></td></tr>
+<tr class="separator:aa12b251a59f6af3f62f9728adb21365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fd98d49de7bab6712c9af1ac0cfa1b" id="r_ab1fd98d49de7bab6712c9af1ac0cfa1b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1fd98d49de7bab6712c9af1ac0cfa1b">operator-</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other) const</td></tr>
+<tr class="memdesc:ab1fd98d49de7bab6712c9af1ac0cfa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵减法运算符重载  <br /></td></tr>
+<tr class="separator:ab1fd98d49de7bab6712c9af1ac0cfa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34fafc29cc0bc62c5dab0ae87fb20bc5" id="r_a34fafc29cc0bc62c5dab0ae87fb20bc5"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34fafc29cc0bc62c5dab0ae87fb20bc5">operator*</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> scalar) const</td></tr>
+<tr class="memdesc:a34fafc29cc0bc62c5dab0ae87fb20bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵数乘运算符重载  <br /></td></tr>
+<tr class="separator:a34fafc29cc0bc62c5dab0ae87fb20bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f288119255dca4e56882b461e2a7301" id="r_a6f288119255dca4e56882b461e2a7301"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f288119255dca4e56882b461e2a7301">operator/</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> scalar) const</td></tr>
+<tr class="memdesc:a6f288119255dca4e56882b461e2a7301"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵数乘(1/scalar)运算符重载  <br /></td></tr>
+<tr class="separator:a6f288119255dca4e56882b461e2a7301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01036f378187eb2e7ae0849c7f2eb24e" id="r_a01036f378187eb2e7ae0849c7f2eb24e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01036f378187eb2e7ae0849c7f2eb24e">operator+=</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other)</td></tr>
+<tr class="memdesc:a01036f378187eb2e7ae0849c7f2eb24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵加且赋值运算符重载  <br /></td></tr>
+<tr class="separator:a01036f378187eb2e7ae0849c7f2eb24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3949d096ad3a8b3242c7b25b27f6ce" id="r_a8c3949d096ad3a8b3242c7b25b27f6ce"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c3949d096ad3a8b3242c7b25b27f6ce">operator-=</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other)</td></tr>
+<tr class="memdesc:a8c3949d096ad3a8b3242c7b25b27f6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵减且赋值运算符重载  <br /></td></tr>
+<tr class="separator:a8c3949d096ad3a8b3242c7b25b27f6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6921d8cbe8444b1b1e63de93a2c54881" id="r_a6921d8cbe8444b1b1e63de93a2c54881"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6921d8cbe8444b1b1e63de93a2c54881">operator*=</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> scalar)</td></tr>
+<tr class="memdesc:a6921d8cbe8444b1b1e63de93a2c54881"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵数乘且赋值运算符重载  <br /></td></tr>
+<tr class="separator:a6921d8cbe8444b1b1e63de93a2c54881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86e6527c058827bc286330867f72862" id="r_ac86e6527c058827bc286330867f72862"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac86e6527c058827bc286330867f72862">operator/=</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> scalar)</td></tr>
+<tr class="memdesc:ac86e6527c058827bc286330867f72862"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵数乘(1/scalar)且赋值运算符重载  <br /></td></tr>
+<tr class="separator:ac86e6527c058827bc286330867f72862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be0f15d9cc34505297180f7078f2abd" id="r_a7be0f15d9cc34505297180f7078f2abd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7be0f15d9cc34505297180f7078f2abd">operator-</a> () const</td></tr>
+<tr class="memdesc:a7be0f15d9cc34505297180f7078f2abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵负号运算符重载  <br /></td></tr>
+<tr class="separator:a7be0f15d9cc34505297180f7078f2abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cc53a08299b9e7fff6ecdd37dbda25" id="r_a93cc53a08299b9e7fff6ecdd37dbda25"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93cc53a08299b9e7fff6ecdd37dbda25">operator+</a> () const</td></tr>
+<tr class="memdesc:a93cc53a08299b9e7fff6ecdd37dbda25"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵加号运算符重载  <br /></td></tr>
+<tr class="separator:a93cc53a08299b9e7fff6ecdd37dbda25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be9d9ef4174c6ba70c9dd52e228a026" id="r_a9be9d9ef4174c6ba70c9dd52e228a026"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> P&gt; <br />
+requires (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a44c29edb103a2872f519ad0c9a0fdaaa">P</a> &gt; 0)</td></tr>
+<tr class="memitem:a9be9d9ef4174c6ba70c9dd52e228a026"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a44c29edb103a2872f519ad0c9a0fdaaa">P</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9be9d9ef4174c6ba70c9dd52e228a026">operator*</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a44c29edb103a2872f519ad0c9a0fdaaa">P</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a9be9d9ef4174c6ba70c9dd52e228a026"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵乘法运算符重载  <br /></td></tr>
+<tr class="separator:a9be9d9ef4174c6ba70c9dd52e228a026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4aa64395fa30ceb29471e7087ce00e2" id="r_ab4aa64395fa30ceb29471e7087ce00e2"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4aa64395fa30ceb29471e7087ce00e2">operator==</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other) const</td></tr>
+<tr class="memdesc:ab4aa64395fa30ceb29471e7087ce00e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于比较运算符重载  <br /></td></tr>
+<tr class="separator:ab4aa64395fa30ceb29471e7087ce00e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290fd9d7d87eb9c820915a58d0278907" id="r_a290fd9d7d87eb9c820915a58d0278907"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a290fd9d7d87eb9c820915a58d0278907">operator!=</a> (const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;other) const</td></tr>
+<tr class="memdesc:a290fd9d7d87eb9c820915a58d0278907"><td class="mdescLeft">&#160;</td><td class="mdescRight">不等于比较运算符重载  <br /></td></tr>
+<tr class="separator:a290fd9d7d87eb9c820915a58d0278907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e58091e3dfb80814436f47ac30b507" id="r_a53e58091e3dfb80814436f47ac30b507"><td class="memItemLeft" align="right" valign="top">consteval <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53e58091e3dfb80814436f47ac30b507">rows</a> () const</td></tr>
+<tr class="memdesc:a53e58091e3dfb80814436f47ac30b507"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取矩阵的行数  <br /></td></tr>
+<tr class="separator:a53e58091e3dfb80814436f47ac30b507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7173ade8e33a328bf5a0ab64203379b8" id="r_a7173ade8e33a328bf5a0ab64203379b8"><td class="memItemLeft" align="right" valign="top">consteval <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7173ade8e33a328bf5a0ab64203379b8">cols</a> () const</td></tr>
+<tr class="memdesc:a7173ade8e33a328bf5a0ab64203379b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取矩阵的列数  <br /></td></tr>
+<tr class="separator:a7173ade8e33a328bf5a0ab64203379b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bb4eda60b28b99ee4ed5f61896755d" id="r_ac1bb4eda60b28b99ee4ed5f61896755d"><td class="memItemLeft" align="right" valign="top">consteval <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1bb4eda60b28b99ee4ed5f61896755d">count</a> () const</td></tr>
+<tr class="memdesc:ac1bb4eda60b28b99ee4ed5f61896755d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取矩阵的元素个数  <br /></td></tr>
+<tr class="separator:ac1bb4eda60b28b99ee4ed5f61896755d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528a9d5e01a10177d8f093391cd8c965" id="r_a528a9d5e01a10177d8f093391cd8c965"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a528a9d5e01a10177d8f093391cd8c965">transpose</a> () const</td></tr>
+<tr class="memdesc:a528a9d5e01a10177d8f093391cd8c965"><td class="mdescLeft">&#160;</td><td class="mdescRight">求矩阵的转置矩阵  <br /></td></tr>
+<tr class="separator:a528a9d5e01a10177d8f093391cd8c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dd1e8eea0e4a259b6cad1c303fcb76" id="r_a02dd1e8eea0e4a259b6cad1c303fcb76"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02dd1e8eea0e4a259b6cad1c303fcb76">det</a> () const</td></tr>
+<tr class="memdesc:a02dd1e8eea0e4a259b6cad1c303fcb76"><td class="mdescLeft">&#160;</td><td class="mdescRight">求矩阵的行列式值  <br /></td></tr>
+<tr class="separator:a02dd1e8eea0e4a259b6cad1c303fcb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb64b6edb93a8113c36806e3fb39404" id="r_adbb64b6edb93a8113c36806e3fb39404"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbb64b6edb93a8113c36806e3fb39404">adjugate</a> () const</td></tr>
+<tr class="memdesc:adbb64b6edb93a8113c36806e3fb39404"><td class="mdescLeft">&#160;</td><td class="mdescRight">求矩阵的伴随矩阵  <br /></td></tr>
+<tr class="separator:adbb64b6edb93a8113c36806e3fb39404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1513fbdd863239d8e8d502c77d1b849e" id="r_a1513fbdd863239d8e8d502c77d1b849e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1513fbdd863239d8e8d502c77d1b849e">inverse</a> () const</td></tr>
+<tr class="memdesc:a1513fbdd863239d8e8d502c77d1b849e"><td class="mdescLeft">&#160;</td><td class="mdescRight">求矩阵的逆矩阵  <br /></td></tr>
+<tr class="separator:a1513fbdd863239d8e8d502c77d1b849e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27af7d88deee2bb80f3ba22ef8cbe36" id="r_ab27af7d88deee2bb80f3ba22ef8cbe36"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab27af7d88deee2bb80f3ba22ef8cbe36">correct</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> eis=static_cast&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;(1e-6))</td></tr>
+<tr class="memdesc:ab27af7d88deee2bb80f3ba22ef8cbe36"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行矩阵误差修正操作  <br /></td></tr>
+<tr class="separator:ab27af7d88deee2bb80f3ba22ef8cbe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23b018e69472a00bbf2d05b970800c5" id="r_ab23b018e69472a00bbf2d05b970800c5"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; <br />
+requires std::is_arithmetic_v&lt;<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a>&gt;</td></tr>
+<tr class="memitem:ab23b018e69472a00bbf2d05b970800c5"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab23b018e69472a00bbf2d05b970800c5">operator Matrix&lt; M, N, U &gt;</a> () const</td></tr>
+<tr class="memdesc:ab23b018e69472a00bbf2d05b970800c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵类型转换函数  <br /></td></tr>
+<tr class="separator:ab23b018e69472a00bbf2d05b970800c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a33f3e403a3c57340d18bdfc8c524c551" id="r_a33f3e403a3c57340d18bdfc8c524c551"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33f3e403a3c57340d18bdfc8c524c551">I</a> ()</td></tr>
+<tr class="separator:a33f3e403a3c57340d18bdfc8c524c551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:af84c29f7f5cdd165b07eceb9c2205469" id="r_af84c29f7f5cdd165b07eceb9c2205469"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af84c29f7f5cdd165b07eceb9c2205469">operator*</a> (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> scalar, const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp;mat)</td></tr>
+<tr class="memdesc:af84c29f7f5cdd165b07eceb9c2205469"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵数乘运算符重载  <br /></td></tr>
+<tr class="separator:af84c29f7f5cdd165b07eceb9c2205469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+requires (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a> &gt; 0 &amp;&amp; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a> &gt; 0) &amp;&amp; std::is_arithmetic_v&lt;<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+class GFt::Matrix&lt; M, N, T &gt;</div><p>矩阵类模板 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">M</td><td>行数 </td></tr>
+    <tr><td class="paramname">N</td><td>列数 </td></tr>
+    <tr><td class="paramname">T</td><td>数据类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a5ba7ee18643cf308ff3880d1369e701a" name="a5ba7ee18643cf308ff3880d1369e701a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba7ee18643cf308ff3880d1369e701a">&#9670;&#160;</a></span>Matrix() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>val</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<p>此构造函数将以指定值初始化矩阵，默认初始化为零矩阵 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>初始值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f1b80842906f0133218ac2e22496b70" name="a6f1b80842906f0133218ac2e22496b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1b80842906f0133218ac2e22496b70">&#9670;&#160;</a></span>Matrix() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>[M][N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<p>此构造函数将以给定数组初始化矩阵 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab43efd26cf02132c779fd970897907fb" name="ab43efd26cf02132c779fd970897907fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43efd26cf02132c779fd970897907fb">&#9670;&#160;</a></span>Matrix() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3404403d6725a38dc2952cdfaae8357c" name="a3404403d6725a38dc2952cdfaae8357c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3404403d6725a38dc2952cdfaae8357c">&#9670;&#160;</a></span>Matrix() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a33f3e403a3c57340d18bdfc8c524c551" name="a33f3e403a3c57340d18bdfc8c524c551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f3e403a3c57340d18bdfc8c524c551">&#9670;&#160;</a></span>I()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::I </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b06dccbf4480c7e9d385d2ec990218b" name="a7b06dccbf4480c7e9d385d2ec990218b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b06dccbf4480c7e9d385d2ec990218b">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1aef3b0063d7f19c89c1851655457a8c" name="a1aef3b0063d7f19c89c1851655457a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aef3b0063d7f19c89c1851655457a8c">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f912c94bff86942985ba8acdbd48e15" name="a2f912c94bff86942985ba8acdbd48e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f912c94bff86942985ba8acdbd48e15">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> * <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以 <a class="el" href="class_g_ft_1_1_matrix.html" title="矩阵类模板">Matrix</a>[M][N] 的形式访问矩阵数据 </p>
+<dl class="section return"><dt>返回</dt><dd>T[M] 的引用 </dd></dl>
+
+</div>
+</div>
+<a id="a5c9064b4c0a4923b1c06852118913a5d" name="a5c9064b4c0a4923b1c06852118913a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9064b4c0a4923b1c06852118913a5d">&#9670;&#160;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a></td>          <td class="paramname"><span class="paramname"><em>j</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以 Matrix(M,N) 的形式访问矩阵数据 </p>
+<dl class="section return"><dt>返回</dt><dd>T 的引用 </dd></dl>
+
+</div>
+</div>
+<a id="ad105eec3d5f427f5d127cff2136821bf" name="ad105eec3d5f427f5d127cff2136821bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad105eec3d5f427f5d127cff2136821bf">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> * <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以 <a class="el" href="class_g_ft_1_1_matrix.html" title="矩阵类模板">Matrix</a>[M][N] 的形式访问矩阵数据的 const 版本 </p>
+<dl class="section return"><dt>返回</dt><dd>const T[M] 的引用 </dd></dl>
+
+</div>
+</div>
+<a id="ad2cb0344f656ce492fe5f60e3219432d" name="ad2cb0344f656ce492fe5f60e3219432d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2cb0344f656ce492fe5f60e3219432d">&#9670;&#160;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a></td>          <td class="paramname"><span class="paramname"><em>j</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>以 Matrix(M,N) 的形式访问矩阵数据的 const 版本 </p>
+<dl class="section return"><dt>返回</dt><dd>T 的 const 引用 </dd></dl>
+
+</div>
+</div>
+<a id="af43849b9082fb3a4130003ff9755bef2" name="af43849b9082fb3a4130003ff9755bef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43849b9082fb3a4130003ff9755bef2">&#9670;&#160;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将矩阵转换到 bool 值 </p>
+<p>若矩阵为零矩阵，则返回 false；否则返回 true </p><dl class="section return"><dt>返回</dt><dd>转换结果 </dd></dl>
+
+</div>
+</div>
+<a id="a5e681f93fd41f2bde4d389db1f6fec08" name="a5e681f93fd41f2bde4d389db1f6fec08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e681f93fd41f2bde4d389db1f6fec08">&#9670;&#160;</a></span>operator!()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator! </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>逻辑非运算符重载 </p>
+<p>相当于 !static_cast&lt;bool&gt;(*this) </p><dl class="section return"><dt>返回</dt><dd>逻辑非运算结果 </dd></dl>
+
+</div>
+</div>
+<a id="aa12b251a59f6af3f62f9728adb21365e" name="aa12b251a59f6af3f62f9728adb21365e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa12b251a59f6af3f62f9728adb21365e">&#9670;&#160;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵加法运算符重载 </p>
+<p>矩阵加法运算，返回矩阵相加结果 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵加法结果 </dd></dl>
+
+</div>
+</div>
+<a id="ab1fd98d49de7bab6712c9af1ac0cfa1b" name="ab1fd98d49de7bab6712c9af1ac0cfa1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1fd98d49de7bab6712c9af1ac0cfa1b">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵减法运算符重载 </p>
+<p>矩阵减法运算，返回矩阵相减结果 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵减法结果 </dd></dl>
+
+</div>
+</div>
+<a id="a34fafc29cc0bc62c5dab0ae87fb20bc5" name="a34fafc29cc0bc62c5dab0ae87fb20bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34fafc29cc0bc62c5dab0ae87fb20bc5">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>scalar</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵数乘运算符重载 </p>
+<p>矩阵数乘运算，返回矩阵与标量相乘结果 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>标量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵数乘结果 </dd></dl>
+
+</div>
+</div>
+<a id="a6f288119255dca4e56882b461e2a7301" name="a6f288119255dca4e56882b461e2a7301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f288119255dca4e56882b461e2a7301">&#9670;&#160;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>scalar</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵数乘(1/scalar)运算符重载 </p>
+<p>矩阵数乘(1/scalar)运算，返回矩阵与标量相乘结果 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>标量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵数乘(1/scalar)结果 </dd></dl>
+
+</div>
+</div>
+<a id="a01036f378187eb2e7ae0849c7f2eb24e" name="a01036f378187eb2e7ae0849c7f2eb24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01036f378187eb2e7ae0849c7f2eb24e">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵加且赋值运算符重载 </p>
+<p>相当于 this = this + other </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵加且赋值结果 </dd></dl>
+
+</div>
+</div>
+<a id="a8c3949d096ad3a8b3242c7b25b27f6ce" name="a8c3949d096ad3a8b3242c7b25b27f6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3949d096ad3a8b3242c7b25b27f6ce">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵减且赋值运算符重载 </p>
+<p>相当于 this = this - other </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵减且赋值结果 </dd></dl>
+
+</div>
+</div>
+<a id="a6921d8cbe8444b1b1e63de93a2c54881" name="a6921d8cbe8444b1b1e63de93a2c54881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6921d8cbe8444b1b1e63de93a2c54881">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>scalar</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵数乘且赋值运算符重载 </p>
+<p>相当于 this = this * scalar </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>标量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵数乘且赋值结果 </dd></dl>
+
+</div>
+</div>
+<a id="ac86e6527c058827bc286330867f72862" name="ac86e6527c058827bc286330867f72862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86e6527c058827bc286330867f72862">&#9670;&#160;</a></span>operator/=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator/= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>scalar</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵数乘(1/scalar)且赋值运算符重载 </p>
+<p>相当于 this = this / scalar </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>标量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵数乘(1/scalar)且赋值结果 </dd></dl>
+
+</div>
+</div>
+<a id="a7be0f15d9cc34505297180f7078f2abd" name="a7be0f15d9cc34505297180f7078f2abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be0f15d9cc34505297180f7078f2abd">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵负号运算符重载 </p>
+<p>相当于 0 - this </p><dl class="section return"><dt>返回</dt><dd>矩阵负号运算结果 </dd></dl>
+
+</div>
+</div>
+<a id="a93cc53a08299b9e7fff6ecdd37dbda25" name="a93cc53a08299b9e7fff6ecdd37dbda25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cc53a08299b9e7fff6ecdd37dbda25">&#9670;&#160;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵加号运算符重载 </p>
+<dl class="section return"><dt>返回</dt><dd>自身 </dd></dl>
+
+</div>
+</div>
+<a id="a9be9d9ef4174c6ba70c9dd52e228a026" name="a9be9d9ef4174c6ba70c9dd52e228a026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be9d9ef4174c6ba70c9dd52e228a026">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> P&gt; <br />
+requires (<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a44c29edb103a2872f519ad0c9a0fdaaa">P</a> &gt; 0)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a44c29edb103a2872f519ad0c9a0fdaaa">P</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a44c29edb103a2872f519ad0c9a0fdaaa">P</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵乘法运算符重载 </p>
+<p>执行矩阵乘法时要确保左操作数的列数等于右操作数的行数 </p><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">P</td><td>另一个矩阵的列数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵乘法结果 </dd></dl>
+
+</div>
+</div>
+<a id="ab4aa64395fa30ceb29471e7087ce00e2" name="ab4aa64395fa30ceb29471e7087ce00e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4aa64395fa30ceb29471e7087ce00e2">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>等于比较运算符重载 </p>
+<p>矩阵相等比较，若所有元素都相等则返回 true，否则返回 false</p>
+<p>此函数对于浮点数比较是安全的 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>相等比较结果 </dd></dl>
+
+</div>
+</div>
+<a id="a290fd9d7d87eb9c820915a58d0278907" name="a290fd9d7d87eb9c820915a58d0278907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290fd9d7d87eb9c820915a58d0278907">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;<a class="el" href="#a5e681f93fd41f2bde4d389db1f6fec08">::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>不等于比较运算符重载 </p>
+<p>相当于 !(*this == other) </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>不等比较结果 </dd></dl>
+
+</div>
+</div>
+<a id="a53e58091e3dfb80814436f47ac30b507" name="a53e58091e3dfb80814436f47ac30b507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e58091e3dfb80814436f47ac30b507">&#9670;&#160;</a></span>rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::rows </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取矩阵的行数 </p>
+<dl class="section return"><dt>返回</dt><dd>矩阵的行数 </dd></dl>
+
+</div>
+</div>
+<a id="a7173ade8e33a328bf5a0ab64203379b8" name="a7173ade8e33a328bf5a0ab64203379b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7173ade8e33a328bf5a0ab64203379b8">&#9670;&#160;</a></span>cols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::cols </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取矩阵的列数 </p>
+<dl class="section return"><dt>返回</dt><dd>矩阵的列数 </dd></dl>
+
+</div>
+</div>
+<a id="ac1bb4eda60b28b99ee4ed5f61896755d" name="ac1bb4eda60b28b99ee4ed5f61896755d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1bb4eda60b28b99ee4ed5f61896755d">&#9670;&#160;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">consteval</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取矩阵的元素个数 </p>
+<dl class="section return"><dt>返回</dt><dd>矩阵的元素个数 </dd></dl>
+
+</div>
+</div>
+<a id="a528a9d5e01a10177d8f093391cd8c965" name="a528a9d5e01a10177d8f093391cd8c965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528a9d5e01a10177d8f093391cd8c965">&#9670;&#160;</a></span>transpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::transpose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求矩阵的转置矩阵 </p>
+<dl class="section return"><dt>返回</dt><dd>转置矩阵 </dd></dl>
+
+</div>
+</div>
+<a id="a02dd1e8eea0e4a259b6cad1c303fcb76" name="a02dd1e8eea0e4a259b6cad1c303fcb76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dd1e8eea0e4a259b6cad1c303fcb76">&#9670;&#160;</a></span>det()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::det </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求矩阵的行列式值 </p>
+<p>采用定义式求行列式值</p>
+<p>若矩阵不是方阵，则返回零值 </p><dl class="section return"><dt>返回</dt><dd>矩阵的行列式值 </dd></dl>
+
+</div>
+</div>
+<a id="adbb64b6edb93a8113c36806e3fb39404" name="adbb64b6edb93a8113c36806e3fb39404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb64b6edb93a8113c36806e3fb39404">&#9670;&#160;</a></span>adjugate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::adjugate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求矩阵的伴随矩阵 </p>
+<p>采用伴随矩阵定义式求伴随矩阵 </p><dl class="section return"><dt>返回</dt><dd>伴随矩阵 </dd></dl>
+
+</div>
+</div>
+<a id="a1513fbdd863239d8e8d502c77d1b849e" name="a1513fbdd863239d8e8d502c77d1b849e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1513fbdd863239d8e8d502c77d1b849e">&#9670;&#160;</a></span>inverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::inverse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>求矩阵的逆矩阵 </p>
+<p>采用伴随矩阵法求逆矩阵</p>
+<p>若矩阵不可逆，则返回零矩阵 </p><dl class="section return"><dt>返回</dt><dd>逆矩阵 </dd></dl>
+
+</div>
+</div>
+<a id="ab27af7d88deee2bb80f3ba22ef8cbe36" name="ab27af7d88deee2bb80f3ba22ef8cbe36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27af7d88deee2bb80f3ba22ef8cbe36">&#9670;&#160;</a></span>correct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::correct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>eis</em></span><span class="paramdefsep"> = </span><span class="paramdefval">static_cast&lt;<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;(1e-6)</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行矩阵误差修正操作 </p>
+<p>此操作为将矩阵元素与最近邻整数差值小于 eis 的元素都置为最近邻整数</p>
+<p>对于非浮点数矩阵，此操作无效 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eis</td><td>误差范围 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab23b018e69472a00bbf2d05b970800c5" name="ab23b018e69472a00bbf2d05b970800c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23b018e69472a00bbf2d05b970800c5">&#9670;&#160;</a></span>operator Matrix&lt; M, N, U &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; <br />
+requires std::is_arithmetic_v&lt;<a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a>&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">GFt::Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵类型转换函数 </p>
+<p>矩阵类型转换函数，将矩阵的元素类型转换为 U 类型 </p><dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>目标类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>矩阵对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>转换后的矩阵对象 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="af84c29f7f5cdd165b07eceb9c2205469" name="af84c29f7f5cdd165b07eceb9c2205469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84c29f7f5cdd165b07eceb9c2205469">&#9670;&#160;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> M, <a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>scalar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a69691c7bdcc3ce6d5d8a1361f22d04ac">M</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mat</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩阵数乘运算符重载 </p>
+<p>矩阵数乘运算，返回矩阵与标量相乘结果 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>标量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>矩阵数乘结果 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

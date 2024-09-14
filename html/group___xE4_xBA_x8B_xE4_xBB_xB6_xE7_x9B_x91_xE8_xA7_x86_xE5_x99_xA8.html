@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: 事件监视器</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('group___xE4_xBA_x8B_xE4_xBB_xB6_xE7_x9B_x91_xE8_xA7_x86_xE5_x99_xA8.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">事件监视器<div class="ingroups"><a class="el" href="group___a_p_i_xE6_x8E_xA5_xE5_x8F_xA3_xE5_xBA_x93.html">API接口库</a> &raquo; <a class="el" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE7_xB3_xBB_xE7_xBB_x9F.html">事件系统</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>通过继承这些类, 可以监视并处理事件  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_mouse_button_press_event_monitor.html">GFt::MouseButtonPressEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标按钮按下事件监视器接口类  <a href="class_g_ft_1_1_mouse_button_press_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_mouse_button_release_event_monitor.html">GFt::MouseButtonReleaseEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标按钮释放事件监视器接口类  <a href="class_g_ft_1_1_mouse_button_release_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_key_press_event_monitor.html">GFt::KeyPressEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘按下事件监视器接口类  <a href="class_g_ft_1_1_key_press_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_key_release_event_monitor.html">GFt::KeyReleaseEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘释放事件监视器接口类  <a href="class_g_ft_1_1_key_release_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_mouse_button_event_monitor.html">GFt::MouseButtonEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标按钮事件监视器接口类  <a href="class_g_ft_1_1_mouse_button_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_mouse_move_event_monitor.html">GFt::MouseMoveEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标移动事件监视器接口类  <a href="class_g_ft_1_1_mouse_move_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_mouse_wheel_event_monitor.html">GFt::MouseWheelEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标滚轮事件监视器接口类  <a href="class_g_ft_1_1_mouse_wheel_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_mouse_event_monitor.html">GFt::MouseEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标和键盘事件监视器接口类  <a href="class_g_ft_1_1_mouse_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_keyboard_event_monitor.html">GFt::KeyboardEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘事件监视器接口类  <a href="class_g_ft_1_1_keyboard_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_text_input_event_monitor.html">GFt::TextInputEventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">文本输入事件监视器接口类  <a href="class_g_ft_1_1_text_input_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_event_monitor.html">GFt::EventMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">事件监视器接口类  <a href="class_g_ft_1_1_event_monitor.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gacc3331e475e6d9e1c80613353696c353" id="r_gacc3331e475e6d9e1c80613353696c353"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc3331e475e6d9e1c80613353696c353">GFt::MouseButtonPressEventMonitor::onMouseButtonPress</a> (const <a class="el" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:gacc3331e475e6d9e1c80613353696c353"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标按钮按下事件处理函数  <br /></td></tr>
+<tr class="separator:gacc3331e475e6d9e1c80613353696c353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee00b0d3ffd816663a0e6bea52216313" id="r_gaee00b0d3ffd816663a0e6bea52216313"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaee00b0d3ffd816663a0e6bea52216313">GFt::MouseButtonReleaseEventMonitor::onMouseButtonRelease</a> (const <a class="el" href="class_g_ft_1_1_mouse_button_release_event.html">MouseButtonReleaseEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:gaee00b0d3ffd816663a0e6bea52216313"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标按钮释放事件处理函数  <br /></td></tr>
+<tr class="separator:gaee00b0d3ffd816663a0e6bea52216313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2eb60aad5057e22f8b9f5e69b45bf21" id="r_gaf2eb60aad5057e22f8b9f5e69b45bf21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf2eb60aad5057e22f8b9f5e69b45bf21">GFt::KeyPressEventMonitor::onKeyPress</a> (const <a class="el" href="class_g_ft_1_1_key_press_event.html">KeyPressEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:gaf2eb60aad5057e22f8b9f5e69b45bf21"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘按下事件处理函数  <br /></td></tr>
+<tr class="separator:gaf2eb60aad5057e22f8b9f5e69b45bf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a96b40edabdcef9daee7c643a8d1c5c" id="r_ga4a96b40edabdcef9daee7c643a8d1c5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4a96b40edabdcef9daee7c643a8d1c5c">GFt::KeyReleaseEventMonitor::onKeyRelease</a> (const <a class="el" href="class_g_ft_1_1_key_release_event.html">KeyReleaseEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:ga4a96b40edabdcef9daee7c643a8d1c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘释放事件处理函数  <br /></td></tr>
+<tr class="separator:ga4a96b40edabdcef9daee7c643a8d1c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3f8c2b198a37da96326670a3b567f3b" id="r_gae3f8c2b198a37da96326670a3b567f3b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae3f8c2b198a37da96326670a3b567f3b">GFt::MouseMoveEventMonitor::onMouseMove</a> (const <a class="el" href="class_g_ft_1_1_mouse_move_event.html">MouseMoveEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:gae3f8c2b198a37da96326670a3b567f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标移动事件处理函数  <br /></td></tr>
+<tr class="separator:gae3f8c2b198a37da96326670a3b567f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09fe290576511fedc33bdb8b4f57aa36" id="r_ga09fe290576511fedc33bdb8b4f57aa36"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga09fe290576511fedc33bdb8b4f57aa36">GFt::MouseWheelEventMonitor::onMouseWheel</a> (const <a class="el" href="class_g_ft_1_1_mouse_wheel_event.html">MouseWheelEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:ga09fe290576511fedc33bdb8b4f57aa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标滚轮事件处理函数  <br /></td></tr>
+<tr class="separator:ga09fe290576511fedc33bdb8b4f57aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cc3ca87249655d3491714f7f12a8e5f" id="r_ga8cc3ca87249655d3491714f7f12a8e5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8cc3ca87249655d3491714f7f12a8e5f">GFt::TextInputEventMonitor::onTextInput</a> (const <a class="el" href="class_g_ft_1_1_text_input_event.html">TextInputEvent</a> &amp;event)=0</td></tr>
+<tr class="memdesc:ga8cc3ca87249655d3491714f7f12a8e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">文本输入事件处理函数  <br /></td></tr>
+<tr class="separator:ga8cc3ca87249655d3491714f7f12a8e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>通过继承这些类, 可以监视并处理事件 </p>
+<p>由于它们全部都是抽象类, 所以必须在派生类中实现它们的虚函数 </p>
+<h2 class="groupheader">函数说明</h2>
+<a id="gacc3331e475e6d9e1c80613353696c353" name="gacc3331e475e6d9e1c80613353696c353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc3331e475e6d9e1c80613353696c353">&#9670;&#160;</a></span>onMouseButtonPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::MouseButtonPressEventMonitor::onMouseButtonPress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标按钮按下事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>鼠标按钮按下事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_button.html#a077002f266138a06e75d6718d0174ffe">Button</a>, <a class="el" href="class_g_ft_1_1_block.html#a189b17064f91e592d980ef3c9bde771d">GFt::Block</a>, <a class="el" href="class_my_widget.html#ae34cc5053e30faaa165be6827d278400">MyWidget</a> , 以及 <a class="el" href="class_my_window.html#a9f2b9633128a8a4ddf4a34df4ee3c196">MyWindow</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="gaee00b0d3ffd816663a0e6bea52216313" name="gaee00b0d3ffd816663a0e6bea52216313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaee00b0d3ffd816663a0e6bea52216313">&#9670;&#160;</a></span>onMouseButtonRelease()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::MouseButtonReleaseEventMonitor::onMouseButtonRelease </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_mouse_button_release_event.html">MouseButtonReleaseEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标按钮释放事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>鼠标按钮释放事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_g_ft_1_1_block.html#a4901722e46f03c36c309c9c915a7bf62">GFt::Block</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="gaf2eb60aad5057e22f8b9f5e69b45bf21" name="gaf2eb60aad5057e22f8b9f5e69b45bf21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2eb60aad5057e22f8b9f5e69b45bf21">&#9670;&#160;</a></span>onKeyPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::KeyPressEventMonitor::onKeyPress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_key_press_event.html">KeyPressEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>键盘按下事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>键盘按下事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_g_ft_1_1_block.html#aa5f8bc1f01cfe0d2a85023944f5ceba7">GFt::Block</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ga4a96b40edabdcef9daee7c643a8d1c5c" name="ga4a96b40edabdcef9daee7c643a8d1c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a96b40edabdcef9daee7c643a8d1c5c">&#9670;&#160;</a></span>onKeyRelease()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::KeyReleaseEventMonitor::onKeyRelease </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_key_release_event.html">KeyReleaseEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>键盘释放事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>键盘释放事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_g_ft_1_1_block.html#a5a495e4cd325d0d6e2fadefe8e8aca97">GFt::Block</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="gae3f8c2b198a37da96326670a3b567f3b" name="gae3f8c2b198a37da96326670a3b567f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3f8c2b198a37da96326670a3b567f3b">&#9670;&#160;</a></span>onMouseMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::MouseMoveEventMonitor::onMouseMove </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_mouse_move_event.html">MouseMoveEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标移动事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>鼠标移动事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_g_ft_1_1_block.html#a4f3a52a409bb19c46e3b43e697ab1425">GFt::Block</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ga09fe290576511fedc33bdb8b4f57aa36" name="ga09fe290576511fedc33bdb8b4f57aa36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09fe290576511fedc33bdb8b4f57aa36">&#9670;&#160;</a></span>onMouseWheel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::MouseWheelEventMonitor::onMouseWheel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_mouse_wheel_event.html">MouseWheelEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标滚轮事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>鼠标滚轮事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_g_ft_1_1_block.html#aa9bef6966a1217a88411b90bfe49a356">GFt::Block</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ga8cc3ca87249655d3491714f7f12a8e5f" name="ga8cc3ca87249655d3491714f7f12a8e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8cc3ca87249655d3491714f7f12a8e5f">&#9670;&#160;</a></span>onTextInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GFt::TextInputEventMonitor::onTextInput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_text_input_event.html">TextInputEvent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文本输入事件处理函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>文本输入事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_g_ft_1_1_block.html#a6e3a09c8a05d57fc34e71b580417e398">GFt::Block</a>, <a class="el" href="class_my_widget.html#afdfffb14475979ef96abd15fa3093e27">MyWidget</a> , 以及 <a class="el" href="class_my_window.html#ac5c881c7fc0122e0d5763f3ebf85e2b2">MyWindow</a> 内被实现.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+digraph "GFt::Point::x"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="GFt::Point::x",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="点的 x 坐标"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GFt::Rect::center",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_rect.html#adf8b0dbc45bd28434044a68f0e6b019c",tooltip="矩形的中心点坐标"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="GFt::Rect::centerby",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_rect.html#abc4eafa388249b3847e7efb0a1588c72",tooltip="计算给定尺寸的居中矩形"];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="GFt::Line::isCollinearWith",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_line.html#ac1590651471fc4cd4d8624e63d2bdf14",tooltip="判断此直线是否与另一个直线共线"];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="GFt::Line::manhatten\l_distance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_line.html#a584957552369e5b3519974fd01b3be66",tooltip="计算给定的两个锚定点之间的曼哈顿距离"];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="GFt::Rect::normalize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_rect.html#a34bb8224532dabd9d7db9e518c6b2f89",tooltip="规范化矩形数据"];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="GFt::BrushSet::setLinear\lGradient",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_brush_set.html#a30fecb3c59a0f1ff02043b68f0d0cdde",tooltip="设置线性渐变画刷填充"];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="GFt::BrushSet::setPolygon\lGradient",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_brush_set.html#ae161baa39ed765c8a0ba7086605938c7",tooltip="设置多边形径向渐变画刷填充"];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="GFt::BrushSet::setRadial\lGradient",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_brush_set.html#a5020ab6ed63c6bf9a68a9a8fb2804642",tooltip="设置椭圆径向渐变画刷填充"];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="GFt::Circle::x",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_circle.html#a4ad631c88d88a3283a2f1a1f5509eb39",tooltip="圆心 x 坐标"];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="GFt::Circle::x",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_circle.html#aed3b740fe0087c2ad8b4c5aa30735bc1",tooltip="圆心 x 坐标的 const 版本"];
+  Node1 -> Node12 [id="edge11_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="GFt::Rect::x",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_rect.html#a9ee4b2165c607188c652d62f96070f97",tooltip="矩形位置的 x 坐标"];
+  Node12 -> Node9 [id="edge12_Node000012_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 -> Node13 [id="edge13_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="GFt::BrushSet::setTexture",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_brush_set.html#a8b1552e222376bf942b66ae3931512e8",tooltip="设置纹理画刷填充"];
+  Node1 -> Node14 [id="edge14_Node000001_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="GFt::Rect::x",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_g_ft_1_1_rect.html#aef241dbf164c5a03e8465af14287659f",tooltip="矩形位置的 x 坐标的 const 版本"];
+}

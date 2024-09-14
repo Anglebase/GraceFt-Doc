@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: 预定义模板特化类型</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a>  </div>
+  <div class="headertitle"><div class="title">预定义模板特化类型<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_xE8_xAE_xBE_xE6_x96_xBD_xE5_xBA_x93.html">基础设施库</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:gaeb2b6bc4a032fc98a3919bad041bde14" id="r_gaeb2b6bc4a032fc98a3919bad041bde14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeb2b6bc4a032fc98a3919bad041bde14">GFt::iBezier</a> = <a class="el" href="class_g_ft_1_1_bezier.html">Bezier</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:gaeb2b6bc4a032fc98a3919bad041bde14"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型贝塞尔曲线  <br /></td></tr>
+<tr class="separator:gaeb2b6bc4a032fc98a3919bad041bde14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefaa239de1f885ac8fa94ee3653a036c" id="r_gaefaa239de1f885ac8fa94ee3653a036c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaefaa239de1f885ac8fa94ee3653a036c">GFt::fBezier</a> = <a class="el" href="class_g_ft_1_1_bezier.html">Bezier</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gaefaa239de1f885ac8fa94ee3653a036c"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型贝塞尔曲线  <br /></td></tr>
+<tr class="separator:gaefaa239de1f885ac8fa94ee3653a036c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c53e14937c6a2535b85e26780b35ba9" id="r_ga9c53e14937c6a2535b85e26780b35ba9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c53e14937c6a2535b85e26780b35ba9">GFt::iCircle</a> = <a class="el" href="class_g_ft_1_1_circle.html">Circle</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga9c53e14937c6a2535b85e26780b35ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">整型特化圆模板类  <br /></td></tr>
+<tr class="separator:ga9c53e14937c6a2535b85e26780b35ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38ab4a17e674bdc42018197cc6dd2114" id="r_ga38ab4a17e674bdc42018197cc6dd2114"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga38ab4a17e674bdc42018197cc6dd2114">GFt::fCircle</a> = <a class="el" href="class_g_ft_1_1_circle.html">Circle</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga38ab4a17e674bdc42018197cc6dd2114"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型特化圆模板类  <br /></td></tr>
+<tr class="separator:ga38ab4a17e674bdc42018197cc6dd2114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5430da847cc5733ecf43031a6c2437fa" id="r_ga5430da847cc5733ecf43031a6c2437fa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5430da847cc5733ecf43031a6c2437fa">GFt::iEllipse</a> = <a class="el" href="class_g_ft_1_1_ellipse.html">Ellipse</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga5430da847cc5733ecf43031a6c2437fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数椭圆类型  <br /></td></tr>
+<tr class="separator:ga5430da847cc5733ecf43031a6c2437fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f900a7b860b52a23bd76ba8167f79ae" id="r_ga1f900a7b860b52a23bd76ba8167f79ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1f900a7b860b52a23bd76ba8167f79ae">GFt::fEllipse</a> = <a class="el" href="class_g_ft_1_1_ellipse.html">Ellipse</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga1f900a7b860b52a23bd76ba8167f79ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点椭圆类型  <br /></td></tr>
+<tr class="separator:ga1f900a7b860b52a23bd76ba8167f79ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c466e6b95b0b912d6b63e572da86c27" id="r_ga5c466e6b95b0b912d6b63e572da86c27"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c466e6b95b0b912d6b63e572da86c27">GFt::iFitCurve</a> = <a class="el" href="class_g_ft_1_1_fit_curve.html">FitCurve</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga5c466e6b95b0b912d6b63e572da86c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型拟合曲线  <br /></td></tr>
+<tr class="separator:ga5c466e6b95b0b912d6b63e572da86c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca0f68171cd4ae67e13330970e411a57" id="r_gaca0f68171cd4ae67e13330970e411a57"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaca0f68171cd4ae67e13330970e411a57">GFt::fFitCurve</a> = <a class="el" href="class_g_ft_1_1_fit_curve.html">FitCurve</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gaca0f68171cd4ae67e13330970e411a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型拟合曲线  <br /></td></tr>
+<tr class="separator:gaca0f68171cd4ae67e13330970e411a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga135146abce04e8acb61b011b239a719f" id="r_ga135146abce04e8acb61b011b239a719f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga135146abce04e8acb61b011b239a719f">GFt::iLine</a> = <a class="el" href="class_g_ft_1_1_line.html">Line</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga135146abce04e8acb61b011b239a719f"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型直线类型  <br /></td></tr>
+<tr class="separator:ga135146abce04e8acb61b011b239a719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad96dc0fffa699b9daccd58f4c45a5ecf" id="r_gad96dc0fffa699b9daccd58f4c45a5ecf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad96dc0fffa699b9daccd58f4c45a5ecf">GFt::fLine</a> = <a class="el" href="class_g_ft_1_1_line.html">Line</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gad96dc0fffa699b9daccd58f4c45a5ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型直线类型  <br /></td></tr>
+<tr class="separator:gad96dc0fffa699b9daccd58f4c45a5ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9285a0152b394612bab028332f710c62" id="r_ga9285a0152b394612bab028332f710c62"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:ga9285a0152b394612bab028332f710c62"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga9285a0152b394612bab028332f710c62">GFt::Mat2x2</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;2, 2, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:ga9285a0152b394612bab028332f710c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">2x2 矩阵类型  <br /></td></tr>
+<tr class="separator:ga9285a0152b394612bab028332f710c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36f33448098c29c74a97d03b0460f12c" id="r_ga36f33448098c29c74a97d03b0460f12c"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:ga36f33448098c29c74a97d03b0460f12c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga36f33448098c29c74a97d03b0460f12c">GFt::Mat3x3</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;3, 3, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:ga36f33448098c29c74a97d03b0460f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">3x3 矩阵类型  <br /></td></tr>
+<tr class="separator:ga36f33448098c29c74a97d03b0460f12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80258886a6a349b443a635e27de8a178" id="r_ga80258886a6a349b443a635e27de8a178"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:ga80258886a6a349b443a635e27de8a178"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga80258886a6a349b443a635e27de8a178">GFt::Mat4x4</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;4, 4, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:ga80258886a6a349b443a635e27de8a178"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x4 矩阵类型  <br /></td></tr>
+<tr class="separator:ga80258886a6a349b443a635e27de8a178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebe703a6751596b3b9677d73373f1c14" id="r_gaebe703a6751596b3b9677d73373f1c14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaebe703a6751596b3b9677d73373f1c14">GFt::iMat2x2</a> = <a class="el" href="#ga9285a0152b394612bab028332f710c62">Mat2x2</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:gaebe703a6751596b3b9677d73373f1c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">2x2 整数矩阵类型  <br /></td></tr>
+<tr class="separator:gaebe703a6751596b3b9677d73373f1c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b487b1622aa741ba133496943d8d72d" id="r_ga0b487b1622aa741ba133496943d8d72d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b487b1622aa741ba133496943d8d72d">GFt::iMat3x3</a> = <a class="el" href="#ga36f33448098c29c74a97d03b0460f12c">Mat3x3</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga0b487b1622aa741ba133496943d8d72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">3x3 整数矩阵类型  <br /></td></tr>
+<tr class="separator:ga0b487b1622aa741ba133496943d8d72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2e6eff5744f8d4d94ac82631f9b3ce4" id="r_gae2e6eff5744f8d4d94ac82631f9b3ce4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae2e6eff5744f8d4d94ac82631f9b3ce4">GFt::iMat4x4</a> = <a class="el" href="#ga80258886a6a349b443a635e27de8a178">Mat4x4</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:gae2e6eff5744f8d4d94ac82631f9b3ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x4 整数矩阵类型  <br /></td></tr>
+<tr class="separator:gae2e6eff5744f8d4d94ac82631f9b3ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga090ea5147b373baaf0ca8e91abcddcf8" id="r_ga090ea5147b373baaf0ca8e91abcddcf8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga090ea5147b373baaf0ca8e91abcddcf8">GFt::fMat2x2</a> = <a class="el" href="#ga9285a0152b394612bab028332f710c62">Mat2x2</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga090ea5147b373baaf0ca8e91abcddcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">2x2 浮点矩阵类型  <br /></td></tr>
+<tr class="separator:ga090ea5147b373baaf0ca8e91abcddcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12f576dd59cedad77fc4d504b08f2bc7" id="r_ga12f576dd59cedad77fc4d504b08f2bc7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga12f576dd59cedad77fc4d504b08f2bc7">GFt::fMat3x3</a> = <a class="el" href="#ga36f33448098c29c74a97d03b0460f12c">Mat3x3</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga12f576dd59cedad77fc4d504b08f2bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">3x3 浮点矩阵类型  <br /></td></tr>
+<tr class="separator:ga12f576dd59cedad77fc4d504b08f2bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga662b0522cc02c204f213f9f0ac567c62" id="r_ga662b0522cc02c204f213f9f0ac567c62"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga662b0522cc02c204f213f9f0ac567c62">GFt::fMat4x4</a> = <a class="el" href="#ga80258886a6a349b443a635e27de8a178">Mat4x4</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga662b0522cc02c204f213f9f0ac567c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x4 浮点矩阵类型  <br /></td></tr>
+<tr class="separator:ga662b0522cc02c204f213f9f0ac567c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4817ace66207fc087a5433c681203a32" id="r_ga4817ace66207fc087a5433c681203a32"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:ga4817ace66207fc087a5433c681203a32"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga4817ace66207fc087a5433c681203a32">GFt::Vec</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;1, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:ga4817ace66207fc087a5433c681203a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">向量类型  <br /></td></tr>
+<tr class="separator:ga4817ace66207fc087a5433c681203a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c8077cc4f19988b9d236d098040c47d" id="r_ga4c8077cc4f19988b9d236d098040c47d"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:ga4c8077cc4f19988b9d236d098040c47d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga4c8077cc4f19988b9d236d098040c47d">GFt::Vec2</a> = <a class="el" href="#ga4817ace66207fc087a5433c681203a32">Vec</a>&lt;2, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:ga4c8077cc4f19988b9d236d098040c47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">二维向量类型  <br /></td></tr>
+<tr class="separator:ga4c8077cc4f19988b9d236d098040c47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacb13a4d658fac1890fdee00d65ed03b" id="r_gaacb13a4d658fac1890fdee00d65ed03b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:gaacb13a4d658fac1890fdee00d65ed03b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaacb13a4d658fac1890fdee00d65ed03b">GFt::Vec3</a> = <a class="el" href="#ga4817ace66207fc087a5433c681203a32">Vec</a>&lt;3, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:gaacb13a4d658fac1890fdee00d65ed03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">三维向量类型  <br /></td></tr>
+<tr class="separator:gaacb13a4d658fac1890fdee00d65ed03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga126b4bddf1635dcb57591b339fdc4d09" id="r_ga126b4bddf1635dcb57591b339fdc4d09"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
+<tr class="memitem:ga126b4bddf1635dcb57591b339fdc4d09"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga126b4bddf1635dcb57591b339fdc4d09">GFt::Vec4</a> = <a class="el" href="#ga4817ace66207fc087a5433c681203a32">Vec</a>&lt;4, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td></tr>
+<tr class="memdesc:ga126b4bddf1635dcb57591b339fdc4d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">四维向量类型  <br /></td></tr>
+<tr class="separator:ga126b4bddf1635dcb57591b339fdc4d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a64524c3ec875054a752ec3476b093a" id="r_ga3a64524c3ec875054a752ec3476b093a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3a64524c3ec875054a752ec3476b093a">GFt::iVec2</a> = <a class="el" href="#ga4c8077cc4f19988b9d236d098040c47d">Vec2</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga3a64524c3ec875054a752ec3476b093a"><td class="mdescLeft">&#160;</td><td class="mdescRight">二维整数向量类型  <br /></td></tr>
+<tr class="separator:ga3a64524c3ec875054a752ec3476b093a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d3618e87baaf9d2950619cbe7266195" id="r_ga1d3618e87baaf9d2950619cbe7266195"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d3618e87baaf9d2950619cbe7266195">GFt::iVec3</a> = <a class="el" href="#gaacb13a4d658fac1890fdee00d65ed03b">Vec3</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga1d3618e87baaf9d2950619cbe7266195"><td class="mdescLeft">&#160;</td><td class="mdescRight">三维整数向量类型  <br /></td></tr>
+<tr class="separator:ga1d3618e87baaf9d2950619cbe7266195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d7fcfbccf5ab025cc06ef0076cef9b6" id="r_ga8d7fcfbccf5ab025cc06ef0076cef9b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8d7fcfbccf5ab025cc06ef0076cef9b6">GFt::iVec4</a> = <a class="el" href="#ga126b4bddf1635dcb57591b339fdc4d09">Vec4</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga8d7fcfbccf5ab025cc06ef0076cef9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">四维整数向量类型  <br /></td></tr>
+<tr class="separator:ga8d7fcfbccf5ab025cc06ef0076cef9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff64a581b388147f0174f30fe596c546" id="r_gaff64a581b388147f0174f30fe596c546"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaff64a581b388147f0174f30fe596c546">GFt::fVec2</a> = <a class="el" href="#ga4c8077cc4f19988b9d236d098040c47d">Vec2</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gaff64a581b388147f0174f30fe596c546"><td class="mdescLeft">&#160;</td><td class="mdescRight">二维浮点向量类型  <br /></td></tr>
+<tr class="separator:gaff64a581b388147f0174f30fe596c546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac91b643f145a35a06e86e581cce173a4" id="r_gac91b643f145a35a06e86e581cce173a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac91b643f145a35a06e86e581cce173a4">GFt::fVec3</a> = <a class="el" href="#gaacb13a4d658fac1890fdee00d65ed03b">Vec3</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gac91b643f145a35a06e86e581cce173a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">三维浮点向量类型  <br /></td></tr>
+<tr class="separator:gac91b643f145a35a06e86e581cce173a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa5793a12dc43dd5d68e18132c40d130" id="r_gafa5793a12dc43dd5d68e18132c40d130"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafa5793a12dc43dd5d68e18132c40d130">GFt::fVec4</a> = <a class="el" href="#ga126b4bddf1635dcb57591b339fdc4d09">Vec4</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gafa5793a12dc43dd5d68e18132c40d130"><td class="mdescLeft">&#160;</td><td class="mdescRight">四维浮点向量类型  <br /></td></tr>
+<tr class="separator:gafa5793a12dc43dd5d68e18132c40d130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4db4aab9932601699d1d1c63845e79bf" id="r_ga4db4aab9932601699d1d1c63845e79bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a> = <a class="el" href="class_g_ft_1_1_point.html">Point</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga4db4aab9932601699d1d1c63845e79bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型点类别别名  <br /></td></tr>
+<tr class="separator:ga4db4aab9932601699d1d1c63845e79bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae272575b72a43dc6c61f12368c158aa9" id="r_gae272575b72a43dc6c61f12368c158aa9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae272575b72a43dc6c61f12368c158aa9">GFt::fPoint</a> = <a class="el" href="class_g_ft_1_1_point.html">Point</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gae272575b72a43dc6c61f12368c158aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型点类别别名  <br /></td></tr>
+<tr class="separator:gae272575b72a43dc6c61f12368c158aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d3ccf391e9f726cc8973d1ebfe34a96" id="r_ga9d3ccf391e9f726cc8973d1ebfe34a96"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9d3ccf391e9f726cc8973d1ebfe34a96">GFt::iPolygon</a> = <a class="el" href="class_g_ft_1_1_polygon.html">Polygon</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga9d3ccf391e9f726cc8973d1ebfe34a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数多边形类型  <br /></td></tr>
+<tr class="separator:ga9d3ccf391e9f726cc8973d1ebfe34a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72b19162d87ade8c10b6ba84c55f32a7" id="r_ga72b19162d87ade8c10b6ba84c55f32a7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga72b19162d87ade8c10b6ba84c55f32a7">GFt::fPolygon</a> = <a class="el" href="class_g_ft_1_1_polygon.html">Polygon</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga72b19162d87ade8c10b6ba84c55f32a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点数多边形类型  <br /></td></tr>
+<tr class="separator:ga72b19162d87ade8c10b6ba84c55f32a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabf19a3333049b895935c4ff20d7fded" id="r_gaabf19a3333049b895935c4ff20d7fded"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaabf19a3333049b895935c4ff20d7fded">GFt::iRect</a> = <a class="el" href="class_g_ft_1_1_rect.html">Rect</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:gaabf19a3333049b895935c4ff20d7fded"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型矩形类型  <br /></td></tr>
+<tr class="separator:gaabf19a3333049b895935c4ff20d7fded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34803ad6b8a6030e52d0758017c367f9" id="r_ga34803ad6b8a6030e52d0758017c367f9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga34803ad6b8a6030e52d0758017c367f9">GFt::fRect</a> = <a class="el" href="class_g_ft_1_1_rect.html">Rect</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga34803ad6b8a6030e52d0758017c367f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型矩形类型  <br /></td></tr>
+<tr class="separator:ga34803ad6b8a6030e52d0758017c367f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94d1d81793e42330678d0ed813566a16" id="r_ga94d1d81793e42330678d0ed813566a16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga94d1d81793e42330678d0ed813566a16">GFt::iRoundRect</a> = <a class="el" href="class_g_ft_1_1_round_rect.html">RoundRect</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:ga94d1d81793e42330678d0ed813566a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">整型圆角矩形类型  <br /></td></tr>
+<tr class="separator:ga94d1d81793e42330678d0ed813566a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabebf5d7792426cfe0b778948c43a56d0" id="r_gabebf5d7792426cfe0b778948c43a56d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabebf5d7792426cfe0b778948c43a56d0">GFt::fRoundRect</a> = <a class="el" href="class_g_ft_1_1_round_rect.html">RoundRect</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:gabebf5d7792426cfe0b778948c43a56d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型圆角矩形类型  <br /></td></tr>
+<tr class="separator:gabebf5d7792426cfe0b778948c43a56d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4ecf8d7ef9d91eb5bf799893c6d72fb" id="r_gaf4ecf8d7ef9d91eb5bf799893c6d72fb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">GFt::iSize</a> = <a class="el" href="class_g_ft_1_1_size.html">Size</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:gaf4ecf8d7ef9d91eb5bf799893c6d72fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">整数型尺寸  <br /></td></tr>
+<tr class="separator:gaf4ecf8d7ef9d91eb5bf799893c6d72fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54f97cd8e187d1db3408c735a0a105a5" id="r_ga54f97cd8e187d1db3408c735a0a105a5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga54f97cd8e187d1db3408c735a0a105a5">GFt::fSize</a> = <a class="el" href="class_g_ft_1_1_size.html">Size</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:ga54f97cd8e187d1db3408c735a0a105a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">浮点型尺寸  <br /></td></tr>
+<tr class="separator:ga54f97cd8e187d1db3408c735a0a105a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="gaeb2b6bc4a032fc98a3919bad041bde14" name="gaeb2b6bc4a032fc98a3919bad041bde14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb2b6bc4a032fc98a3919bad041bde14">&#9670;&#160;</a></span>iBezier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaeb2b6bc4a032fc98a3919bad041bde14">GFt::iBezier</a> = <a class="el" href="class_g_ft_1_1_bezier.html">Bezier</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型贝塞尔曲线 </p>
+
+</div>
+</div>
+<a id="gaefaa239de1f885ac8fa94ee3653a036c" name="gaefaa239de1f885ac8fa94ee3653a036c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefaa239de1f885ac8fa94ee3653a036c">&#9670;&#160;</a></span>fBezier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaefaa239de1f885ac8fa94ee3653a036c">GFt::fBezier</a> = <a class="el" href="class_g_ft_1_1_bezier.html">Bezier</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型贝塞尔曲线 </p>
+
+</div>
+</div>
+<a id="ga9c53e14937c6a2535b85e26780b35ba9" name="ga9c53e14937c6a2535b85e26780b35ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c53e14937c6a2535b85e26780b35ba9">&#9670;&#160;</a></span>iCircle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga9c53e14937c6a2535b85e26780b35ba9">GFt::iCircle</a> = <a class="el" href="class_g_ft_1_1_circle.html">Circle</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整型特化圆模板类 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_circle.html" title="圆形模板类">Circle</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga38ab4a17e674bdc42018197cc6dd2114" name="ga38ab4a17e674bdc42018197cc6dd2114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38ab4a17e674bdc42018197cc6dd2114">&#9670;&#160;</a></span>fCircle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga38ab4a17e674bdc42018197cc6dd2114">GFt::fCircle</a> = <a class="el" href="class_g_ft_1_1_circle.html">Circle</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型特化圆模板类 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_circle.html" title="圆形模板类">Circle</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga5430da847cc5733ecf43031a6c2437fa" name="ga5430da847cc5733ecf43031a6c2437fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5430da847cc5733ecf43031a6c2437fa">&#9670;&#160;</a></span>iEllipse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga5430da847cc5733ecf43031a6c2437fa">GFt::iEllipse</a> = <a class="el" href="class_g_ft_1_1_ellipse.html">Ellipse</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数椭圆类型 </p>
+
+</div>
+</div>
+<a id="ga1f900a7b860b52a23bd76ba8167f79ae" name="ga1f900a7b860b52a23bd76ba8167f79ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f900a7b860b52a23bd76ba8167f79ae">&#9670;&#160;</a></span>fEllipse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga1f900a7b860b52a23bd76ba8167f79ae">GFt::fEllipse</a> = <a class="el" href="class_g_ft_1_1_ellipse.html">Ellipse</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点椭圆类型 </p>
+
+</div>
+</div>
+<a id="ga5c466e6b95b0b912d6b63e572da86c27" name="ga5c466e6b95b0b912d6b63e572da86c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c466e6b95b0b912d6b63e572da86c27">&#9670;&#160;</a></span>iFitCurve</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga5c466e6b95b0b912d6b63e572da86c27">GFt::iFitCurve</a> = <a class="el" href="class_g_ft_1_1_fit_curve.html">FitCurve</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型拟合曲线 </p>
+
+</div>
+</div>
+<a id="gaca0f68171cd4ae67e13330970e411a57" name="gaca0f68171cd4ae67e13330970e411a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca0f68171cd4ae67e13330970e411a57">&#9670;&#160;</a></span>fFitCurve</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaca0f68171cd4ae67e13330970e411a57">GFt::fFitCurve</a> = <a class="el" href="class_g_ft_1_1_fit_curve.html">FitCurve</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型拟合曲线 </p>
+
+</div>
+</div>
+<a id="ga135146abce04e8acb61b011b239a719f" name="ga135146abce04e8acb61b011b239a719f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga135146abce04e8acb61b011b239a719f">&#9670;&#160;</a></span>iLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga135146abce04e8acb61b011b239a719f">GFt::iLine</a> = <a class="el" href="class_g_ft_1_1_line.html">Line</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型直线类型 </p>
+<p>用于表示整数型直线的类型别名 </p>
+
+</div>
+</div>
+<a id="gad96dc0fffa699b9daccd58f4c45a5ecf" name="gad96dc0fffa699b9daccd58f4c45a5ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad96dc0fffa699b9daccd58f4c45a5ecf">&#9670;&#160;</a></span>fLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gad96dc0fffa699b9daccd58f4c45a5ecf">GFt::fLine</a> = <a class="el" href="class_g_ft_1_1_line.html">Line</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型直线类型 </p>
+<p>用于表示浮点型直线的类型别名 </p>
+
+</div>
+</div>
+<a id="ga9285a0152b394612bab028332f710c62" name="ga9285a0152b394612bab028332f710c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9285a0152b394612bab028332f710c62">&#9670;&#160;</a></span>Mat2x2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga9285a0152b394612bab028332f710c62">GFt::Mat2x2</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;2, 2, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2x2 矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga36f33448098c29c74a97d03b0460f12c" name="ga36f33448098c29c74a97d03b0460f12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36f33448098c29c74a97d03b0460f12c">&#9670;&#160;</a></span>Mat3x3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga36f33448098c29c74a97d03b0460f12c">GFt::Mat3x3</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;3, 3, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3x3 矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga80258886a6a349b443a635e27de8a178" name="ga80258886a6a349b443a635e27de8a178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80258886a6a349b443a635e27de8a178">&#9670;&#160;</a></span>Mat4x4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga80258886a6a349b443a635e27de8a178">GFt::Mat4x4</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;4, 4, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4x4 矩阵类型 </p>
+
+</div>
+</div>
+<a id="gaebe703a6751596b3b9677d73373f1c14" name="gaebe703a6751596b3b9677d73373f1c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebe703a6751596b3b9677d73373f1c14">&#9670;&#160;</a></span>iMat2x2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaebe703a6751596b3b9677d73373f1c14">GFt::iMat2x2</a> = <a class="el" href="#ga9285a0152b394612bab028332f710c62">Mat2x2</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2x2 整数矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga0b487b1622aa741ba133496943d8d72d" name="ga0b487b1622aa741ba133496943d8d72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b487b1622aa741ba133496943d8d72d">&#9670;&#160;</a></span>iMat3x3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga0b487b1622aa741ba133496943d8d72d">GFt::iMat3x3</a> = <a class="el" href="#ga36f33448098c29c74a97d03b0460f12c">Mat3x3</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3x3 整数矩阵类型 </p>
+
+</div>
+</div>
+<a id="gae2e6eff5744f8d4d94ac82631f9b3ce4" name="gae2e6eff5744f8d4d94ac82631f9b3ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2e6eff5744f8d4d94ac82631f9b3ce4">&#9670;&#160;</a></span>iMat4x4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gae2e6eff5744f8d4d94ac82631f9b3ce4">GFt::iMat4x4</a> = <a class="el" href="#ga80258886a6a349b443a635e27de8a178">Mat4x4</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4x4 整数矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga090ea5147b373baaf0ca8e91abcddcf8" name="ga090ea5147b373baaf0ca8e91abcddcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga090ea5147b373baaf0ca8e91abcddcf8">&#9670;&#160;</a></span>fMat2x2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga090ea5147b373baaf0ca8e91abcddcf8">GFt::fMat2x2</a> = <a class="el" href="#ga9285a0152b394612bab028332f710c62">Mat2x2</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2x2 浮点矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga12f576dd59cedad77fc4d504b08f2bc7" name="ga12f576dd59cedad77fc4d504b08f2bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12f576dd59cedad77fc4d504b08f2bc7">&#9670;&#160;</a></span>fMat3x3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga12f576dd59cedad77fc4d504b08f2bc7">GFt::fMat3x3</a> = <a class="el" href="#ga36f33448098c29c74a97d03b0460f12c">Mat3x3</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3x3 浮点矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga662b0522cc02c204f213f9f0ac567c62" name="ga662b0522cc02c204f213f9f0ac567c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga662b0522cc02c204f213f9f0ac567c62">&#9670;&#160;</a></span>fMat4x4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga662b0522cc02c204f213f9f0ac567c62">GFt::fMat4x4</a> = <a class="el" href="#ga80258886a6a349b443a635e27de8a178">Mat4x4</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4x4 浮点矩阵类型 </p>
+
+</div>
+</div>
+<a id="ga4817ace66207fc087a5433c681203a32" name="ga4817ace66207fc087a5433c681203a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4817ace66207fc087a5433c681203a32">&#9670;&#160;</a></span>Vec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> N, typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga4817ace66207fc087a5433c681203a32">GFt::Vec</a> = <a class="el" href="class_g_ft_1_1_matrix.html">Matrix</a>&lt;1, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向量类型 </p>
+
+</div>
+</div>
+<a id="ga4c8077cc4f19988b9d236d098040c47d" name="ga4c8077cc4f19988b9d236d098040c47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c8077cc4f19988b9d236d098040c47d">&#9670;&#160;</a></span>Vec2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga4c8077cc4f19988b9d236d098040c47d">GFt::Vec2</a> = <a class="el" href="#ga4817ace66207fc087a5433c681203a32">Vec</a>&lt;2, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二维向量类型 </p>
+
+</div>
+</div>
+<a id="gaacb13a4d658fac1890fdee00d65ed03b" name="gaacb13a4d658fac1890fdee00d65ed03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaacb13a4d658fac1890fdee00d65ed03b">&#9670;&#160;</a></span>Vec3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaacb13a4d658fac1890fdee00d65ed03b">GFt::Vec3</a> = <a class="el" href="#ga4817ace66207fc087a5433c681203a32">Vec</a>&lt;3, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>三维向量类型 </p>
+
+</div>
+</div>
+<a id="ga126b4bddf1635dcb57591b339fdc4d09" name="ga126b4bddf1635dcb57591b339fdc4d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga126b4bddf1635dcb57591b339fdc4d09">&#9670;&#160;</a></span>Vec4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga126b4bddf1635dcb57591b339fdc4d09">GFt::Vec4</a> = <a class="el" href="#ga4817ace66207fc087a5433c681203a32">Vec</a>&lt;4, <a class="el" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>四维向量类型 </p>
+
+</div>
+</div>
+<a id="ga3a64524c3ec875054a752ec3476b093a" name="ga3a64524c3ec875054a752ec3476b093a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a64524c3ec875054a752ec3476b093a">&#9670;&#160;</a></span>iVec2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga3a64524c3ec875054a752ec3476b093a">GFt::iVec2</a> = <a class="el" href="#ga4c8077cc4f19988b9d236d098040c47d">Vec2</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二维整数向量类型 </p>
+
+</div>
+</div>
+<a id="ga1d3618e87baaf9d2950619cbe7266195" name="ga1d3618e87baaf9d2950619cbe7266195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d3618e87baaf9d2950619cbe7266195">&#9670;&#160;</a></span>iVec3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga1d3618e87baaf9d2950619cbe7266195">GFt::iVec3</a> = <a class="el" href="#gaacb13a4d658fac1890fdee00d65ed03b">Vec3</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>三维整数向量类型 </p>
+
+</div>
+</div>
+<a id="ga8d7fcfbccf5ab025cc06ef0076cef9b6" name="ga8d7fcfbccf5ab025cc06ef0076cef9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d7fcfbccf5ab025cc06ef0076cef9b6">&#9670;&#160;</a></span>iVec4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga8d7fcfbccf5ab025cc06ef0076cef9b6">GFt::iVec4</a> = <a class="el" href="#ga126b4bddf1635dcb57591b339fdc4d09">Vec4</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>四维整数向量类型 </p>
+
+</div>
+</div>
+<a id="gaff64a581b388147f0174f30fe596c546" name="gaff64a581b388147f0174f30fe596c546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff64a581b388147f0174f30fe596c546">&#9670;&#160;</a></span>fVec2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaff64a581b388147f0174f30fe596c546">GFt::fVec2</a> = <a class="el" href="#ga4c8077cc4f19988b9d236d098040c47d">Vec2</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二维浮点向量类型 </p>
+
+</div>
+</div>
+<a id="gac91b643f145a35a06e86e581cce173a4" name="gac91b643f145a35a06e86e581cce173a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac91b643f145a35a06e86e581cce173a4">&#9670;&#160;</a></span>fVec3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gac91b643f145a35a06e86e581cce173a4">GFt::fVec3</a> = <a class="el" href="#gaacb13a4d658fac1890fdee00d65ed03b">Vec3</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>三维浮点向量类型 </p>
+
+</div>
+</div>
+<a id="gafa5793a12dc43dd5d68e18132c40d130" name="gafa5793a12dc43dd5d68e18132c40d130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa5793a12dc43dd5d68e18132c40d130">&#9670;&#160;</a></span>fVec4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gafa5793a12dc43dd5d68e18132c40d130">GFt::fVec4</a> = <a class="el" href="#ga126b4bddf1635dcb57591b339fdc4d09">Vec4</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>四维浮点向量类型 </p>
+
+</div>
+</div>
+<a id="ga4db4aab9932601699d1d1c63845e79bf" name="ga4db4aab9932601699d1d1c63845e79bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4db4aab9932601699d1d1c63845e79bf">&#9670;&#160;</a></span>iPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a> = <a class="el" href="class_g_ft_1_1_point.html">Point</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型点类别别名 </p>
+<p>用于表示一个二维坐标点，其坐标数据类型为 int </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_point.html" title="泛型点类">Point</a> </dd></dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_button_8cpp-example.html#a8">Button.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="gae272575b72a43dc6c61f12368c158aa9" name="gae272575b72a43dc6c61f12368c158aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae272575b72a43dc6c61f12368c158aa9">&#9670;&#160;</a></span>fPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gae272575b72a43dc6c61f12368c158aa9">GFt::fPoint</a> = <a class="el" href="class_g_ft_1_1_point.html">Point</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型点类别别名 </p>
+<p>用于表示一个二维坐标点，其坐标数据类型为 float </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_point.html" title="泛型点类">Point</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga9d3ccf391e9f726cc8973d1ebfe34a96" name="ga9d3ccf391e9f726cc8973d1ebfe34a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d3ccf391e9f726cc8973d1ebfe34a96">&#9670;&#160;</a></span>iPolygon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga9d3ccf391e9f726cc8973d1ebfe34a96">GFt::iPolygon</a> = <a class="el" href="class_g_ft_1_1_polygon.html">Polygon</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数多边形类型 </p>
+
+</div>
+</div>
+<a id="ga72b19162d87ade8c10b6ba84c55f32a7" name="ga72b19162d87ade8c10b6ba84c55f32a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72b19162d87ade8c10b6ba84c55f32a7">&#9670;&#160;</a></span>fPolygon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga72b19162d87ade8c10b6ba84c55f32a7">GFt::fPolygon</a> = <a class="el" href="class_g_ft_1_1_polygon.html">Polygon</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点数多边形类型 </p>
+
+</div>
+</div>
+<a id="gaabf19a3333049b895935c4ff20d7fded" name="gaabf19a3333049b895935c4ff20d7fded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabf19a3333049b895935c4ff20d7fded">&#9670;&#160;</a></span>iRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaabf19a3333049b895935c4ff20d7fded">GFt::iRect</a> = <a class="el" href="class_g_ft_1_1_rect.html">Rect</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型矩形类型 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_rect.html" title="矩形模板类">Rect</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga34803ad6b8a6030e52d0758017c367f9" name="ga34803ad6b8a6030e52d0758017c367f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34803ad6b8a6030e52d0758017c367f9">&#9670;&#160;</a></span>fRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga34803ad6b8a6030e52d0758017c367f9">GFt::fRect</a> = <a class="el" href="class_g_ft_1_1_rect.html">Rect</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型矩形类型 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_rect.html" title="矩形模板类">Rect</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga94d1d81793e42330678d0ed813566a16" name="ga94d1d81793e42330678d0ed813566a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94d1d81793e42330678d0ed813566a16">&#9670;&#160;</a></span>iRoundRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga94d1d81793e42330678d0ed813566a16">GFt::iRoundRect</a> = <a class="el" href="class_g_ft_1_1_round_rect.html">RoundRect</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整型圆角矩形类型 </p>
+
+</div>
+</div>
+<a id="gabebf5d7792426cfe0b778948c43a56d0" name="gabebf5d7792426cfe0b778948c43a56d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabebf5d7792426cfe0b778948c43a56d0">&#9670;&#160;</a></span>fRoundRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gabebf5d7792426cfe0b778948c43a56d0">GFt::fRoundRect</a> = <a class="el" href="class_g_ft_1_1_round_rect.html">RoundRect</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型圆角矩形类型 </p>
+
+</div>
+</div>
+<a id="gaf4ecf8d7ef9d91eb5bf799893c6d72fb" name="gaf4ecf8d7ef9d91eb5bf799893c6d72fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">&#9670;&#160;</a></span>iSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">GFt::iSize</a> = <a class="el" href="class_g_ft_1_1_size.html">Size</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>整数型尺寸 </p>
+<p>用于表示一个二维坐标尺寸，其坐标数据类型为 int </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_size.html" title="泛型尺寸类">Size</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga54f97cd8e187d1db3408c735a0a105a5" name="ga54f97cd8e187d1db3408c735a0a105a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54f97cd8e187d1db3408c735a0a105a5">&#9670;&#160;</a></span>fSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ga54f97cd8e187d1db3408c735a0a105a5">GFt::fSize</a> = <a class="el" href="class_g_ft_1_1_size.html">Size</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>浮点型尺寸 </p>
+<p>用于表示一个二维坐标尺寸，其坐标数据类型为 float </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_g_ft_1_1_size.html" title="泛型尺寸类">Size</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

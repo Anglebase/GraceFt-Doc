@@ -1,0 +1,11 @@
+digraph "GFt::innerProduct"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="GFt::innerProduct",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="计算矩阵内积"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="GFt::operator\|",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group___xE5_xA4_x8D_xE5_x90_x88_xE6_x95_xB0_xE6_x8D_xAE_xE7_xB1_xBB_xE5_x9E_x8B.html#gab9f4523d2858df344c620967faf4071f",tooltip="计算矩阵内积的运算符重载"];
+}

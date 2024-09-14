@@ -1,0 +1,11 @@
+digraph "事件监视器"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir=LR;
+  Node1 [id="Node000001",label="事件监视器",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="通过继承这些类, 可以监视并处理事件"];
+  Node2 [id="Node000002",label="事件系统",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group___xE4_xBA_x8B_xE4_xBB_xB6_xE7_xB3_xBB_xE7_xBB_x9F.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+}

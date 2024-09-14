@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/Circle.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_circle_8hpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Circle.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;numbers&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;_private.inl&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Point.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">requires</span> std::is_arithmetic_v&lt;T&gt;</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html">   19</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_class" href="class_g_ft_1_1_point.html">Point&lt;T&gt;</a> origin_;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> radius_;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#ac6cdbef936aa804f98f1dc2c3e3939b5">   27</a></span>        <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#ac6cdbef936aa804f98f1dc2c3e3939b5">Circle</a>(<a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a4ad631c88d88a3283a2f1a1f5509eb39">x</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a><span class="keyword">&gt;</span>(0), <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a88feb5a6e0739fd9199cd6d7a62bbfb7">y</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a><span class="keyword">&gt;</span>(0), <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">radius</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a><span class="keyword">&gt;</span>(0))</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            : origin_(<a class="code hl_function" href="class_g_ft_1_1_circle.html#a4ad631c88d88a3283a2f1a1f5509eb39">x</a>, <a class="code hl_function" href="class_g_ft_1_1_circle.html#a88feb5a6e0739fd9199cd6d7a62bbfb7">y</a>), radius_(std::abs(<a class="code hl_function" href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">radius</a>)) {}</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a729b1713d853433747d09d174177c836">   32</a></span>        <span class="keyword">constexpr</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a729b1713d853433747d09d174177c836">Circle</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_point.html">Point&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#ab66ff31e45992bc775ca84b64456a4aa">origin</a>, <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">radius</a>) : origin_(<a class="code hl_function" href="class_g_ft_1_1_circle.html#ab66ff31e45992bc775ca84b64456a4aa">origin</a>), radius_(std::abs(<a class="code hl_function" href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">radius</a>)) {}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#ada63f9197c77fa87bfb42b117510614c">   33</a></span>        <span class="keyword">constexpr</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#ada63f9197c77fa87bfb42b117510614c">Circle</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a78b4c1a805e919d8506438598895f6b5">   34</a></span>        <span class="keyword">constexpr</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a78b4c1a805e919d8506438598895f6b5">Circle</a>(<a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#aa0c50aea6af536db9c7e3afeb0808823">   35</a></span>        <span class="keyword">constexpr</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#aa0c50aea6af536db9c7e3afeb0808823">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a3c42073cfbe9c4e3edb8ff49038eaa9d">   36</a></span>        <span class="keyword">constexpr</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#a3c42073cfbe9c4e3edb8ff49038eaa9d">operator=</a>(<a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#ab66ff31e45992bc775ca84b64456a4aa">   40</a></span>        <span class="keyword">constexpr</span> <a class="code hl_class" href="class_g_ft_1_1_point.html">Point&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#ab66ff31e45992bc775ca84b64456a4aa">origin</a>() { <span class="keywordflow">return</span> origin_; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a4ad631c88d88a3283a2f1a1f5509eb39">   43</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#a4ad631c88d88a3283a2f1a1f5509eb39">x</a>() { <span class="keywordflow">return</span> origin_.<a class="code hl_function" href="class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3">x</a>(); }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a88feb5a6e0739fd9199cd6d7a62bbfb7">   46</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#a88feb5a6e0739fd9199cd6d7a62bbfb7">y</a>() { <span class="keywordflow">return</span> origin_.<a class="code hl_function" href="class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d">y</a>(); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">   49</a></span>        <span class="keyword">constexpr</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">radius</a>() { <span class="keywordflow">return</span> radius_; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#aa2ceb6c4279b05559a4bedc024cd2fb7">   52</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_point.html">Point&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#aa2ceb6c4279b05559a4bedc024cd2fb7">origin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> origin_; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#aed3b740fe0087c2ad8b4c5aa30735bc1">   55</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#aed3b740fe0087c2ad8b4c5aa30735bc1">x</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> origin_.<a class="code hl_function" href="class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3">x</a>(); }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#afa7f631d94b0e97e3e9c8810a68a19bc">   58</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#afa7f631d94b0e97e3e9c8810a68a19bc">y</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> origin_.<a class="code hl_function" href="class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d">y</a>(); }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a918ac31b1632fe897b75eca2412b6015">   61</a></span>        <span class="keyword">constexpr</span> <span class="keyword">const</span> <a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_circle.html#a918ac31b1632fe897b75eca2412b6015">radius</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> radius_; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#af10ac4f6eba2f41b2177405a55d3d4f9">   66</a></span>        <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> radius_ &gt; 0 || <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(origin_); }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a56e818579e61a8769119620bb6a035ec">   70</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a56e818579e61a8769119620bb6a035ec">operator!</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(*this); }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a8885df3aa308f00feb2a4ba775395367">   76</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a8885df3aa308f00feb2a4ba775395367">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::numeric_limits&lt;T&gt;::is_integer) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordflow">return</span> origin_ == other.origin_ &amp;&amp; radius_ == other.radius_;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> origin_ == other.origin_ &amp;&amp;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                _GFt_private_::_fsafe_equal(radius_, other.radius_);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#aeac458ac125eb508f32f00de46022a1c">   87</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#aeac458ac125eb508f32f00de46022a1c">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other); }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#ab6b7f86fc3f5227fccd93aa5321ed34e">   91</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#ab6b7f86fc3f5227fccd93aa5321ed34e">perimeter</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keyword">constexpr</span> <span class="keyword">auto</span> coeff = std::numbers::pi * <span class="keyword">static_cast&lt;</span><a class="code hl_enumvalue" href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a><span class="keyword">&gt;</span>(2);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">return</span> coeff * radius_;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a8ec87bd004a8834830d019503d138fc2">   97</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#a8ec87bd004a8834830d019503d138fc2">area</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::numbers::pi * std::pow(radius_, 2); }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="};">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#ace28576be8965e1a733608a25efc723d">  103</a></span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="class_g_ft_1_1_circle.html#ace28576be8965e1a733608a25efc723d">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle</a>&amp; circle) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            os &lt;&lt; <span class="stringliteral">&quot;Circle{&quot;</span> &lt;&lt; circle.origin_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; circle.radius_ &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">return</span> os;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keyword">requires</span> std::is_arithmetic_v&lt;U&gt;</div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_circle.html#a446352d0d4cd25e1be134e745d3c83cc">  113</a></span>        <span class="keyword">constexpr</span> <span class="keyword">operator</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#ac6cdbef936aa804f98f1dc2c3e3939b5">Circle&lt;U&gt;</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_g_ft_1_1_circle.html#ac6cdbef936aa804f98f1dc2c3e3939b5">Circle&lt;U&gt;</a>(this-&gt;origin_, this-&gt;radius_);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    };</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga9c53e14937c6a2535b85e26780b35ba9">  125</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_circle.html">iCircle</a> = <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle&lt;int&gt;</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga38ab4a17e674bdc42018197cc6dd2114">  128</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_circle.html">fCircle</a> = <a class="code hl_class" href="class_g_ft_1_1_circle.html">Circle&lt;float&gt;</a>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html"><div class="ttname"><a href="class_g_ft_1_1_circle.html">GFt::Circle</a></div><div class="ttdoc">圆形模板类</div><div class="ttdef"><b>定义</b> Circle.hpp:19</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a1c72c3df5dfcead2bcdf01abd5129e42"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a1c72c3df5dfcead2bcdf01abd5129e42">GFt::Circle::radius</a></div><div class="ttdeci">constexpr T &amp; radius()</div><div class="ttdoc">半径</div><div class="ttdef"><b>定义</b> Circle.hpp:49</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a3c42073cfbe9c4e3edb8ff49038eaa9d"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a3c42073cfbe9c4e3edb8ff49038eaa9d">GFt::Circle::operator=</a></div><div class="ttdeci">constexpr Circle &amp; operator=(Circle &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a4ad631c88d88a3283a2f1a1f5509eb39"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a4ad631c88d88a3283a2f1a1f5509eb39">GFt::Circle::x</a></div><div class="ttdeci">constexpr T &amp; x()</div><div class="ttdoc">圆心 x 坐标</div><div class="ttdef"><b>定义</b> Circle.hpp:43</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a56e818579e61a8769119620bb6a035ec"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a56e818579e61a8769119620bb6a035ec">GFt::Circle::operator!</a></div><div class="ttdeci">constexpr bool operator!() const</div><div class="ttdoc">逻辑非运算符重载</div><div class="ttdef"><b>定义</b> Circle.hpp:70</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a729b1713d853433747d09d174177c836"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a729b1713d853433747d09d174177c836">GFt::Circle::Circle</a></div><div class="ttdeci">constexpr Circle(const Point&lt; T &gt; &amp;origin, T radius)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> Circle.hpp:32</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a78b4c1a805e919d8506438598895f6b5"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a78b4c1a805e919d8506438598895f6b5">GFt::Circle::Circle</a></div><div class="ttdeci">constexpr Circle(Circle &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a8885df3aa308f00feb2a4ba775395367"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a8885df3aa308f00feb2a4ba775395367">GFt::Circle::operator==</a></div><div class="ttdeci">constexpr bool operator==(const Circle &amp;other) const</div><div class="ttdoc">等于比较运算符重载</div><div class="ttdef"><b>定义</b> Circle.hpp:76</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a88feb5a6e0739fd9199cd6d7a62bbfb7"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a88feb5a6e0739fd9199cd6d7a62bbfb7">GFt::Circle::y</a></div><div class="ttdeci">constexpr T &amp; y()</div><div class="ttdoc">圆心 y 坐标</div><div class="ttdef"><b>定义</b> Circle.hpp:46</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a8ec87bd004a8834830d019503d138fc2"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a8ec87bd004a8834830d019503d138fc2">GFt::Circle::area</a></div><div class="ttdeci">constexpr auto area() const</div><div class="ttdoc">求此圆面积</div><div class="ttdef"><b>定义</b> Circle.hpp:97</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_a918ac31b1632fe897b75eca2412b6015"><div class="ttname"><a href="class_g_ft_1_1_circle.html#a918ac31b1632fe897b75eca2412b6015">GFt::Circle::radius</a></div><div class="ttdeci">constexpr const T &amp; radius() const</div><div class="ttdoc">半径的 const 版本</div><div class="ttdef"><b>定义</b> Circle.hpp:61</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_aa0c50aea6af536db9c7e3afeb0808823"><div class="ttname"><a href="class_g_ft_1_1_circle.html#aa0c50aea6af536db9c7e3afeb0808823">GFt::Circle::operator=</a></div><div class="ttdeci">constexpr Circle &amp; operator=(const Circle &amp;)=default</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_aa2ceb6c4279b05559a4bedc024cd2fb7"><div class="ttname"><a href="class_g_ft_1_1_circle.html#aa2ceb6c4279b05559a4bedc024cd2fb7">GFt::Circle::origin</a></div><div class="ttdeci">constexpr const Point&lt; T &gt; &amp; origin() const</div><div class="ttdoc">圆心坐标的 const 版本</div><div class="ttdef"><b>定义</b> Circle.hpp:52</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_ab66ff31e45992bc775ca84b64456a4aa"><div class="ttname"><a href="class_g_ft_1_1_circle.html#ab66ff31e45992bc775ca84b64456a4aa">GFt::Circle::origin</a></div><div class="ttdeci">constexpr Point&lt; T &gt; &amp; origin()</div><div class="ttdoc">圆心坐标</div><div class="ttdef"><b>定义</b> Circle.hpp:40</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_ab6b7f86fc3f5227fccd93aa5321ed34e"><div class="ttname"><a href="class_g_ft_1_1_circle.html#ab6b7f86fc3f5227fccd93aa5321ed34e">GFt::Circle::perimeter</a></div><div class="ttdeci">constexpr auto perimeter() const</div><div class="ttdoc">求此圆周长</div><div class="ttdef"><b>定义</b> Circle.hpp:91</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_ac6cdbef936aa804f98f1dc2c3e3939b5"><div class="ttname"><a href="class_g_ft_1_1_circle.html#ac6cdbef936aa804f98f1dc2c3e3939b5">GFt::Circle::Circle</a></div><div class="ttdeci">constexpr Circle(T x=static_cast&lt; T &gt;(0), T y=static_cast&lt; T &gt;(0), T radius=static_cast&lt; T &gt;(0))</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> Circle.hpp:27</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_ace28576be8965e1a733608a25efc723d"><div class="ttname"><a href="class_g_ft_1_1_circle.html#ace28576be8965e1a733608a25efc723d">GFt::Circle::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Circle &amp;circle)</div><div class="ttdoc">输出圆的信息</div><div class="ttdef"><b>定义</b> Circle.hpp:103</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_ada63f9197c77fa87bfb42b117510614c"><div class="ttname"><a href="class_g_ft_1_1_circle.html#ada63f9197c77fa87bfb42b117510614c">GFt::Circle::Circle</a></div><div class="ttdeci">constexpr Circle(const Circle &amp;)=default</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_aeac458ac125eb508f32f00de46022a1c"><div class="ttname"><a href="class_g_ft_1_1_circle.html#aeac458ac125eb508f32f00de46022a1c">GFt::Circle::operator!=</a></div><div class="ttdeci">constexpr bool operator!=(const Circle &amp;other) const</div><div class="ttdoc">不等于比较运算符重载</div><div class="ttdef"><b>定义</b> Circle.hpp:87</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_aed3b740fe0087c2ad8b4c5aa30735bc1"><div class="ttname"><a href="class_g_ft_1_1_circle.html#aed3b740fe0087c2ad8b4c5aa30735bc1">GFt::Circle::x</a></div><div class="ttdeci">constexpr const T &amp; x() const</div><div class="ttdoc">圆心 x 坐标的 const 版本</div><div class="ttdef"><b>定义</b> Circle.hpp:55</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_circle_html_afa7f631d94b0e97e3e9c8810a68a19bc"><div class="ttname"><a href="class_g_ft_1_1_circle.html#afa7f631d94b0e97e3e9c8810a68a19bc">GFt::Circle::y</a></div><div class="ttdeci">constexpr const T &amp; y() const</div><div class="ttdoc">圆心 y 坐标的 const 版本</div><div class="ttdef"><b>定义</b> Circle.hpp:58</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point</a></div><div class="ttdoc">泛型点类</div><div class="ttdef"><b>定义</b> Point.hpp:26</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_point_html_a4721af97bf9652e5065865bff1a5b82d"><div class="ttname"><a href="class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d">GFt::Point::y</a></div><div class="ttdeci">constexpr T &amp; y()</div><div class="ttdoc">点的 y 坐标</div><div class="ttdef"><b>定义</b> Point.hpp:43</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_point_html_ae006f6e0a86f50614f486c1c0e9daba3"><div class="ttname"><a href="class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3">GFt::Point::x</a></div><div class="ttdeci">constexpr T &amp; x()</div><div class="ttdoc">点的 x 坐标</div><div class="ttdef"><b>定义</b> Point.hpp:40</div></div>
+<div class="ttc" id="agroup___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3"><div class="ttname"><a href="group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">GFt::Key::T</a></div><div class="ttdeci">@ T</div><div class="ttdoc">T 键</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>Circle.hpp</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
