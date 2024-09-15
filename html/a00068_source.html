@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/Font.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00068_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Font.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Tools.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00202.html">GFt</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">   15</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_enumvalue" href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a7a1920d61156abc05a60135aefe8bc67">Default</a> = 0,        </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175aaedfcbf06fc92bafadf4527a2fcccc69">Thin</a> = 100,         </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a2465f558ba699a3a74bad32ea28eb604">Extralight</a> = 200,   </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a2a1ff112a8ef821dd23e8a4d9c43517c">Ultralight</a> = 200,   </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a9914a0ce04a7b7b6a8e39bec55064b82">Light</a> = 300,        </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a960b44c579bc2f6818d2daaf9e4c16f0">Normal</a> = 400,       </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175ad2203cb1237cb6460cbad94564e39345">Regular</a> = 400,      </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a87f8a6ab85c9ced3702b4ea641ad4bb5">Medium</a> = 500,       </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a625c6f83191b5abca037dc56a1f6e8ea">Semibold</a> = 600,     </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175af0709955f89821e411c979020e1aecb6">Demibold</a> = 600,     </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a114c3050111d8b8ddd830b99ccebd246">Bold</a> = 700,         </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a222ee3d6086eb281238e75c6c6c23102">Extrabold</a> = 800,    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a82e85dd7aaad1574cf617f76506daa3c">Ultrabold</a> = 800,    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175af9ffe67a20da9cbff56b420fca4bd491">Heavy</a> = 900,        </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_enumvalue" href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175ae90dfb84e30edf611e326eeb04d680de">Black</a> = 900         </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    };</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="a00342.html">   43</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00342.html">Font</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="a00342.html#ae5cfe0c0e0b06d536d5814bd1ff4818f">   44</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="a00346.html">Graphics</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span>* font_;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_function" href="a00342.html#afe1a7fc62b07fcc9a9dfde2269ba29a7">Font</a>(<span class="keyword">const</span> std::wstring&amp; <a class="code hl_function" href="a00342.html#a3d419fb1b74e7499ff04b551c0414289">fontFamily</a>, <span class="keywordtype">long</span> <a class="code hl_typedef" href="a00202.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a> = literals::operator<span class="stringliteral">&quot;&quot;</span>_em(1ull));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_function" href="a00342.html#afe1a7fc62b07fcc9a9dfde2269ba29a7">Font</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00342.html">Font</a>&amp; other);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="a00342.html#afe1a7fc62b07fcc9a9dfde2269ba29a7">Font</a>(<a class="code hl_class" href="a00342.html">Font</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_class" href="a00342.html">Font</a>&amp; <a class="code hl_function" href="a00342.html#a47d189a1cf3f394868dd85c1373544f2">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00342.html">Font</a>&amp; other);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_class" href="a00342.html">Font</a>&amp; <a class="code hl_function" href="a00342.html#a47d189a1cf3f394868dd85c1373544f2">operator=</a>(<a class="code hl_class" href="a00342.html">Font</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_function" href="a00342.html#a7173647fd1c25a40b0186d83eda0be27">~Font</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00342.html#a04c06349b81d4309d266db1300105b70">setSize</a>(<span class="keywordtype">long</span> <a class="code hl_typedef" href="a00202.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">long</span> <a class="code hl_function" href="a00342.html#a7a6e3ff3b4a17dea1f75abbd9bc2a70b">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00342.html#a503764c5a0ecdd100d06d664f09d7a62">setWeight</a>(<a class="code hl_enumeration" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a> <a class="code hl_function" href="a00342.html#ab2c3b18db6a9ca88f60060deac8629d9">weight</a>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_enumeration" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a> <a class="code hl_function" href="a00342.html#ab2c3b18db6a9ca88f60060deac8629d9">weight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00342.html#aa3e5e0381a086ff8596c36c5e05a493b">setItalic</a>(<span class="keywordtype">bool</span> <a class="code hl_function" href="a00342.html#add9fd7adec9b2e3ac411ff62cb04a4fe">italic</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="a00342.html#add9fd7adec9b2e3ac411ff62cb04a4fe">italic</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00342.html#a82c047e6dc2501b19e120bb1184d94da">setUnderline</a>(<span class="keywordtype">bool</span> <a class="code hl_function" href="a00342.html#aefe422384c6feebc7ebb08a475e51db9">underline</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="a00342.html#aefe422384c6feebc7ebb08a475e51db9">underline</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00342.html#ae3ed65e5a7f47e0d699c797218a8e99b">setStrikeOut</a>(<span class="keywordtype">bool</span> <a class="code hl_function" href="a00342.html#a76592a0b8e0f6284aa9b700b73ea59db">strikeOut</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="a00342.html#a76592a0b8e0f6284aa9b700b73ea59db">strikeOut</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00342.html#a3ce91e3284ca885157077fce6abb8520">setFontFamily</a>(<span class="keyword">const</span> std::wstring&amp; <a class="code hl_function" href="a00342.html#a3d419fb1b74e7499ff04b551c0414289">fontFamily</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        std::wstring <a class="code hl_function" href="a00342.html#a3d419fb1b74e7499ff04b551c0414289">fontFamily</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="a00342.html#a69c2b68000218a89798f76ef00e8ca38">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="a00342.html">Font</a>&amp; font);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    };</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aa00179_html_ggaead79709b6eced8a1f3c38677ddc8224a7a1920d61156abc05a60135aefe8bc67"><div class="ttname"><a href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a7a1920d61156abc05a60135aefe8bc67">GFt::BrushStyle::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">默认画刷模式</div></div>
+<div class="ttc" id="aa00185_html_gaf1ae0423f6298c625d9d2c68f5725175"><div class="ttname"><a href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">GFt::FontWeight</a></div><div class="ttdeci">FontWeight</div><div class="ttdoc">字体粗细枚举</div><div class="ttdef"><b>定义</b> Font.h:15</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a114c3050111d8b8ddd830b99ccebd246"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a114c3050111d8b8ddd830b99ccebd246">GFt::FontWeight::Bold</a></div><div class="ttdeci">@ Bold</div><div class="ttdoc">粗体 (700)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a222ee3d6086eb281238e75c6c6c23102"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a222ee3d6086eb281238e75c6c6c23102">GFt::FontWeight::Extrabold</a></div><div class="ttdeci">@ Extrabold</div><div class="ttdoc">极粗体 (800)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a2465f558ba699a3a74bad32ea28eb604"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a2465f558ba699a3a74bad32ea28eb604">GFt::FontWeight::Extralight</a></div><div class="ttdeci">@ Extralight</div><div class="ttdoc">极细体 (200)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a2a1ff112a8ef821dd23e8a4d9c43517c"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a2a1ff112a8ef821dd23e8a4d9c43517c">GFt::FontWeight::Ultralight</a></div><div class="ttdeci">@ Ultralight</div><div class="ttdoc">超细体 (200)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a625c6f83191b5abca037dc56a1f6e8ea"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a625c6f83191b5abca037dc56a1f6e8ea">GFt::FontWeight::Semibold</a></div><div class="ttdeci">@ Semibold</div><div class="ttdoc">半粗体 (600)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a82e85dd7aaad1574cf617f76506daa3c"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a82e85dd7aaad1574cf617f76506daa3c">GFt::FontWeight::Ultrabold</a></div><div class="ttdeci">@ Ultrabold</div><div class="ttdoc">超粗体 (800)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a87f8a6ab85c9ced3702b4ea641ad4bb5"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a87f8a6ab85c9ced3702b4ea641ad4bb5">GFt::FontWeight::Medium</a></div><div class="ttdeci">@ Medium</div><div class="ttdoc">中粗体 (500)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a960b44c579bc2f6818d2daaf9e4c16f0">GFt::FontWeight::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">正常粗细 (400)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175a9914a0ce04a7b7b6a8e39bec55064b82"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175a9914a0ce04a7b7b6a8e39bec55064b82">GFt::FontWeight::Light</a></div><div class="ttdeci">@ Light</div><div class="ttdoc">细体 (300)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175aaedfcbf06fc92bafadf4527a2fcccc69"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175aaedfcbf06fc92bafadf4527a2fcccc69">GFt::FontWeight::Thin</a></div><div class="ttdeci">@ Thin</div><div class="ttdoc">细体 (100)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175ad2203cb1237cb6460cbad94564e39345"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175ad2203cb1237cb6460cbad94564e39345">GFt::FontWeight::Regular</a></div><div class="ttdeci">@ Regular</div><div class="ttdoc">正常粗细 (400)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175ae90dfb84e30edf611e326eeb04d680de"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175ae90dfb84e30edf611e326eeb04d680de">GFt::FontWeight::Black</a></div><div class="ttdeci">@ Black</div><div class="ttdoc">黑体 (900)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175af0709955f89821e411c979020e1aecb6"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175af0709955f89821e411c979020e1aecb6">GFt::FontWeight::Demibold</a></div><div class="ttdeci">@ Demibold</div><div class="ttdoc">半粗体 (600)</div></div>
+<div class="ttc" id="aa00185_html_ggaf1ae0423f6298c625d9d2c68f5725175af9ffe67a20da9cbff56b420fca4bd491"><div class="ttname"><a href="a00185.html#ggaf1ae0423f6298c625d9d2c68f5725175af9ffe67a20da9cbff56b420fca4bd491">GFt::FontWeight::Heavy</a></div><div class="ttdeci">@ Heavy</div><div class="ttdoc">黑体 (900)</div></div>
+<div class="ttc" id="aa00202_html"><div class="ttname"><a href="a00202.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="aa00202_html_a3e5158a7f92d9d8abcdb9c4bcd7c3d82"><div class="ttname"><a href="a00202.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">GFt::size</a></div><div class="ttdeci">std::size_t size</div><div class="ttdef"><b>定义</b> Matrix.hpp:19</div></div>
+<div class="ttc" id="aa00342_html"><div class="ttname"><a href="a00342.html">GFt::Font</a></div><div class="ttdoc">字体类</div><div class="ttdef"><b>定义</b> Font.h:43</div></div>
+<div class="ttc" id="aa00342_html_a04c06349b81d4309d266db1300105b70"><div class="ttname"><a href="a00342.html#a04c06349b81d4309d266db1300105b70">GFt::Font::setSize</a></div><div class="ttdeci">void setSize(long size)</div><div class="ttdoc">设置字体大小</div><div class="ttdef"><b>定义</b> Font.cpp:58</div></div>
+<div class="ttc" id="aa00342_html_a3ce91e3284ca885157077fce6abb8520"><div class="ttname"><a href="a00342.html#a3ce91e3284ca885157077fce6abb8520">GFt::Font::setFontFamily</a></div><div class="ttdeci">void setFontFamily(const std::wstring &amp;fontFamily)</div><div class="ttdoc">设置字体名称</div><div class="ttdef"><b>定义</b> Font.cpp:68</div></div>
+<div class="ttc" id="aa00342_html_a3d419fb1b74e7499ff04b551c0414289"><div class="ttname"><a href="a00342.html#a3d419fb1b74e7499ff04b551c0414289">GFt::Font::fontFamily</a></div><div class="ttdeci">std::wstring fontFamily() const</div><div class="ttdoc">获取字体名称</div><div class="ttdef"><b>定义</b> Font.cpp:69</div></div>
+<div class="ttc" id="aa00342_html_a47d189a1cf3f394868dd85c1373544f2"><div class="ttname"><a href="a00342.html#a47d189a1cf3f394868dd85c1373544f2">GFt::Font::operator=</a></div><div class="ttdeci">Font &amp; operator=(const Font &amp;other)</div><div class="ttdoc">复制赋值</div><div class="ttdef"><b>定义</b> Font.cpp:36</div></div>
+<div class="ttc" id="aa00342_html_a503764c5a0ecdd100d06d664f09d7a62"><div class="ttname"><a href="a00342.html#a503764c5a0ecdd100d06d664f09d7a62">GFt::Font::setWeight</a></div><div class="ttdeci">void setWeight(FontWeight weight)</div><div class="ttdoc">设置字体字重(粗细)</div><div class="ttdef"><b>定义</b> Font.cpp:60</div></div>
+<div class="ttc" id="aa00342_html_a69c2b68000218a89798f76ef00e8ca38"><div class="ttname"><a href="a00342.html#a69c2b68000218a89798f76ef00e8ca38">GFt::Font::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Font &amp;font)</div><div class="ttdoc">输出流运算符重载</div><div class="ttdef"><b>定义</b> Font.cpp:70</div></div>
+<div class="ttc" id="aa00342_html_a7173647fd1c25a40b0186d83eda0be27"><div class="ttname"><a href="a00342.html#a7173647fd1c25a40b0186d83eda0be27">GFt::Font::~Font</a></div><div class="ttdeci">~Font()</div><div class="ttdef"><b>定义</b> Font.cpp:54</div></div>
+<div class="ttc" id="aa00342_html_a76592a0b8e0f6284aa9b700b73ea59db"><div class="ttname"><a href="a00342.html#a76592a0b8e0f6284aa9b700b73ea59db">GFt::Font::strikeOut</a></div><div class="ttdeci">bool strikeOut() const</div><div class="ttdoc">获取字体是否具有删除线</div><div class="ttdef"><b>定义</b> Font.cpp:67</div></div>
+<div class="ttc" id="aa00342_html_a7a6e3ff3b4a17dea1f75abbd9bc2a70b"><div class="ttname"><a href="a00342.html#a7a6e3ff3b4a17dea1f75abbd9bc2a70b">GFt::Font::size</a></div><div class="ttdeci">long size() const</div><div class="ttdoc">获取字体大小</div><div class="ttdef"><b>定义</b> Font.cpp:59</div></div>
+<div class="ttc" id="aa00342_html_a82c047e6dc2501b19e120bb1184d94da"><div class="ttname"><a href="a00342.html#a82c047e6dc2501b19e120bb1184d94da">GFt::Font::setUnderline</a></div><div class="ttdeci">void setUnderline(bool underline)</div><div class="ttdoc">设置字体是否具有下划线</div><div class="ttdef"><b>定义</b> Font.cpp:64</div></div>
+<div class="ttc" id="aa00342_html_aa3e5e0381a086ff8596c36c5e05a493b"><div class="ttname"><a href="a00342.html#aa3e5e0381a086ff8596c36c5e05a493b">GFt::Font::setItalic</a></div><div class="ttdeci">void setItalic(bool italic)</div><div class="ttdoc">设置字体是否为斜体</div><div class="ttdef"><b>定义</b> Font.cpp:62</div></div>
+<div class="ttc" id="aa00342_html_ab2c3b18db6a9ca88f60060deac8629d9"><div class="ttname"><a href="a00342.html#ab2c3b18db6a9ca88f60060deac8629d9">GFt::Font::weight</a></div><div class="ttdeci">FontWeight weight() const</div><div class="ttdoc">获取字体字重(粗细)</div><div class="ttdef"><b>定义</b> Font.cpp:61</div></div>
+<div class="ttc" id="aa00342_html_add9fd7adec9b2e3ac411ff62cb04a4fe"><div class="ttname"><a href="a00342.html#add9fd7adec9b2e3ac411ff62cb04a4fe">GFt::Font::italic</a></div><div class="ttdeci">bool italic() const</div><div class="ttdoc">获取字体是否为斜体</div><div class="ttdef"><b>定义</b> Font.cpp:63</div></div>
+<div class="ttc" id="aa00342_html_ae3ed65e5a7f47e0d699c797218a8e99b"><div class="ttname"><a href="a00342.html#ae3ed65e5a7f47e0d699c797218a8e99b">GFt::Font::setStrikeOut</a></div><div class="ttdeci">void setStrikeOut(bool strikeOut)</div><div class="ttdoc">设置字体是否具有删除线</div><div class="ttdef"><b>定义</b> Font.cpp:66</div></div>
+<div class="ttc" id="aa00342_html_aefe422384c6feebc7ebb08a475e51db9"><div class="ttname"><a href="a00342.html#aefe422384c6feebc7ebb08a475e51db9">GFt::Font::underline</a></div><div class="ttdeci">bool underline() const</div><div class="ttdoc">获取字体是否具有下划线</div><div class="ttdef"><b>定义</b> Font.cpp:65</div></div>
+<div class="ttc" id="aa00342_html_afe1a7fc62b07fcc9a9dfde2269ba29a7"><div class="ttname"><a href="a00342.html#afe1a7fc62b07fcc9a9dfde2269ba29a7">GFt::Font::Font</a></div><div class="ttdeci">Font(const std::wstring &amp;fontFamily, long size=literals::operator&quot;&quot;_em(1ull))</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> Font.cpp:8</div></div>
+<div class="ttc" id="aa00346_html"><div class="ttname"><a href="a00346.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>Font.h</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

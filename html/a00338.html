@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::FitCurve&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00338.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="a00335.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::FitCurve&lt; T &gt; 模板类 参考<div class="ingroups"><a class="el" href="a00193.html">基础设施库</a> &raquo; <a class="el" href="a00197.html">图形数据类型</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>拟合曲线类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00065_source.html">FitCurve.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9bb350c94ada49e3412c8d6765b9e9f8" id="r_a9bb350c94ada49e3412c8d6765b9e9f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bb350c94ada49e3412c8d6765b9e9f8">FitCurve</a> ()=default</td></tr>
+<tr class="memdesc:a9bb350c94ada49e3412c8d6765b9e9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
+<tr class="separator:a9bb350c94ada49e3412c8d6765b9e9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab862af22a060c5af8426449f3ee7ec29" id="r_ab862af22a060c5af8426449f3ee7ec29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab862af22a060c5af8426449f3ee7ec29">FitCurve</a> (const std::vector&lt; <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &gt; &amp;points)</td></tr>
+<tr class="memdesc:ab862af22a060c5af8426449f3ee7ec29"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ab862af22a060c5af8426449f3ee7ec29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37a41136084e209c67c65da9cbd8dd9" id="r_ab37a41136084e209c67c65da9cbd8dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab37a41136084e209c67c65da9cbd8dd9">addPoint</a> (const <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;point)</td></tr>
+<tr class="memdesc:ab37a41136084e209c67c65da9cbd8dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加点  <br /></td></tr>
+<tr class="separator:ab37a41136084e209c67c65da9cbd8dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b28869f5f692c26b4bc4f9a121cb3d" id="r_af4b28869f5f692c26b4bc4f9a121cb3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4b28869f5f692c26b4bc4f9a121cb3d">setClosed</a> (bool closed)</td></tr>
+<tr class="memdesc:af4b28869f5f692c26b4bc4f9a121cb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置拟合曲线是否闭合  <br /></td></tr>
+<tr class="separator:af4b28869f5f692c26b4bc4f9a121cb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a892cd10c774381942439da6c2a20b" id="r_a33a892cd10c774381942439da6c2a20b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33a892cd10c774381942439da6c2a20b">setTension</a> (float tension)</td></tr>
+<tr class="memdesc:a33a892cd10c774381942439da6c2a20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置拟合曲线的张力  <br /></td></tr>
+<tr class="separator:a33a892cd10c774381942439da6c2a20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2130ea98be6a20237483447762662954" id="r_a2130ea98be6a20237483447762662954"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2130ea98be6a20237483447762662954">isClosed</a> () const</td></tr>
+<tr class="memdesc:a2130ea98be6a20237483447762662954"><td class="mdescLeft">&#160;</td><td class="mdescRight">拟合曲线是否闭合  <br /></td></tr>
+<tr class="separator:a2130ea98be6a20237483447762662954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8980a0e1873c8dfbe3971f3156358143" id="r_a8980a0e1873c8dfbe3971f3156358143"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8980a0e1873c8dfbe3971f3156358143">getTension</a> () const</td></tr>
+<tr class="memdesc:a8980a0e1873c8dfbe3971f3156358143"><td class="mdescLeft">&#160;</td><td class="mdescRight">拟合曲线的张力  <br /></td></tr>
+<tr class="separator:a8980a0e1873c8dfbe3971f3156358143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376ee74ef4d484b6ba95a38a0e8d6cea" id="r_a376ee74ef4d484b6ba95a38a0e8d6cea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a376ee74ef4d484b6ba95a38a0e8d6cea">count</a> () const</td></tr>
+<tr class="memdesc:a376ee74ef4d484b6ba95a38a0e8d6cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制点的数量  <br /></td></tr>
+<tr class="separator:a376ee74ef4d484b6ba95a38a0e8d6cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08699937d281adc95e741ddd1e1227a" id="r_aa08699937d281adc95e741ddd1e1227a"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; <br />
+requires std::is_arithmetic_v&lt;<a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a>&gt;</td></tr>
+<tr class="memitem:aa08699937d281adc95e741ddd1e1227a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa08699937d281adc95e741ddd1e1227a">operator FitCurve&lt; U &gt;</a> () const</td></tr>
+<tr class="memdesc:aa08699937d281adc95e741ddd1e1227a"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型转换函数  <br /></td></tr>
+<tr class="separator:aa08699937d281adc95e741ddd1e1227a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a4877239a6b7f09fbf5a61ca68a49d74c" id="r_a4877239a6b7f09fbf5a61ca68a49d74c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4877239a6b7f09fbf5a61ca68a49d74c">Path</a></td></tr>
+<tr class="separator:a4877239a6b7f09fbf5a61ca68a49d74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cfe0c0e0b06d536d5814bd1ff4818f" id="r_ae5cfe0c0e0b06d536d5814bd1ff4818f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5cfe0c0e0b06d536d5814bd1ff4818f">Graphics</a></td></tr>
+<tr class="separator:ae5cfe0c0e0b06d536d5814bd1ff4818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c38a778d661f3e894ce7fe4e1f7572" id="r_ac7c38a778d661f3e894ce7fe4e1f7572"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7c38a778d661f3e894ce7fe4e1f7572">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="a00338.html">FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;curve)</td></tr>
+<tr class="memdesc:ac7c38a778d661f3e894ce7fe4e1f7572"><td class="mdescLeft">&#160;</td><td class="mdescRight">流操作符重载  <br /></td></tr>
+<tr class="separator:ac7c38a778d661f3e894ce7fe4e1f7572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+requires std::is_arithmetic_v&lt;<a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+class GFt::FitCurve&lt; T &gt;</div><p>拟合曲线类 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>点的坐标类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a9bb350c94ada49e3412c8d6765b9e9f8" name="a9bb350c94ada49e3412c8d6765b9e9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb350c94ada49e3412c8d6765b9e9f8">&#9670;&#160;</a></span>FitCurve() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::FitCurve </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a id="ab862af22a060c5af8426449f3ee7ec29" name="ab862af22a060c5af8426449f3ee7ec29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab862af22a060c5af8426449f3ee7ec29">&#9670;&#160;</a></span>FitCurve() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::FitCurve </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>points</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>点集 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab37a41136084e209c67c65da9cbd8dd9" name="ab37a41136084e209c67c65da9cbd8dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37a41136084e209c67c65da9cbd8dd9">&#9670;&#160;</a></span>addPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::addPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af4b28869f5f692c26b4bc4f9a121cb3d" name="af4b28869f5f692c26b4bc4f9a121cb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b28869f5f692c26b4bc4f9a121cb3d">&#9670;&#160;</a></span>setClosed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::setClosed </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>closed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置拟合曲线是否闭合 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">closed</td><td>是否闭合 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33a892cd10c774381942439da6c2a20b" name="a33a892cd10c774381942439da6c2a20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a892cd10c774381942439da6c2a20b">&#9670;&#160;</a></span>setTension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::setTension </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tension</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置拟合曲线的张力 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tension</td><td>张力 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2130ea98be6a20237483447762662954" name="a2130ea98be6a20237483447762662954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2130ea98be6a20237483447762662954">&#9670;&#160;</a></span>isClosed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::isClosed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拟合曲线是否闭合 </p>
+<dl class="section return"><dt>返回</dt><dd>是否闭合 </dd></dl>
+
+</div>
+</div>
+<a id="a8980a0e1873c8dfbe3971f3156358143" name="a8980a0e1873c8dfbe3971f3156358143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8980a0e1873c8dfbe3971f3156358143">&#9670;&#160;</a></span>getTension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::getTension </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拟合曲线的张力 </p>
+<dl class="section return"><dt>返回</dt><dd>张力 </dd></dl>
+
+</div>
+</div>
+<a id="a376ee74ef4d484b6ba95a38a0e8d6cea" name="a376ee74ef4d484b6ba95a38a0e8d6cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376ee74ef4d484b6ba95a38a0e8d6cea">&#9670;&#160;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>控制点的数量 </p>
+<dl class="section return"><dt>返回</dt><dd>控制点的数量 </dd></dl>
+
+</div>
+</div>
+<a id="aa08699937d281adc95e741ddd1e1227a" name="aa08699937d281adc95e741ddd1e1227a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08699937d281adc95e741ddd1e1227a">&#9670;&#160;</a></span>operator FitCurve&lt; U &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; <br />
+requires std::is_arithmetic_v&lt;<a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a>&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00338.html">GFt::FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator <a class="el" href="a00338.html">FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>类型转换函数 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>目标类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve</td><td>拟合曲线 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>拟合曲线 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="a4877239a6b7f09fbf5a61ca68a49d74c" name="a4877239a6b7f09fbf5a61ca68a49d74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4877239a6b7f09fbf5a61ca68a49d74c">&#9670;&#160;</a></span>Path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="a00362.html">Path</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5cfe0c0e0b06d536d5814bd1ff4818f" name="ae5cfe0c0e0b06d536d5814bd1ff4818f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cfe0c0e0b06d536d5814bd1ff4818f">&#9670;&#160;</a></span>Graphics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="a00346.html">Graphics</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7c38a778d661f3e894ce7fe4e1f7572" name="ac7c38a778d661f3e894ce7fe4e1f7572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c38a778d661f3e894ce7fe4e1f7572">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00338.html">FitCurve</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>curve</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>流操作符重载 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流 </td></tr>
+    <tr><td class="paramname">curve</td><td>拟合曲线 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>输出流 os </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00202.html">GFt</a></li><li class="navelem"><a class="el" href="a00338.html">FitCurve</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::BrushSet类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00234.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="a00231.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::BrushSet类 参考<div class="ingroups"><a class="el" href="a00194.html">API接口库</a> &raquo; <a class="el" href="a00186.html">图形系统</a> &raquo; <a class="el" href="a00196.html">接口类型</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>画刷设置类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00047_source.html">BrushSet.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:addb548cc503b34754db6d9bb1f57e4bf" id="r_addb548cc503b34754db6d9bb1f57e4bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addb548cc503b34754db6d9bb1f57e4bf">BrushSet</a> (const <a class="el" href="a00242.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:addb548cc503b34754db6d9bb1f57e4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:addb548cc503b34754db6d9bb1f57e4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e57404559b1f3ef6596669bcf869db" id="r_ad4e57404559b1f3ef6596669bcf869db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4e57404559b1f3ef6596669bcf869db">BrushSet</a> (const <a class="el" href="a00234.html">BrushSet</a> &amp;other)</td></tr>
+<tr class="memdesc:ad4e57404559b1f3ef6596669bcf869db"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造  <br /></td></tr>
+<tr class="separator:ad4e57404559b1f3ef6596669bcf869db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7101ffcfa867fa2c9b0725fdb0ad90f" id="r_ad7101ffcfa867fa2c9b0725fdb0ad90f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7101ffcfa867fa2c9b0725fdb0ad90f">BrushSet</a> (<a class="el" href="a00234.html">BrushSet</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:ad7101ffcfa867fa2c9b0725fdb0ad90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动构造  <br /></td></tr>
+<tr class="separator:ad7101ffcfa867fa2c9b0725fdb0ad90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16ad44aa671dcfcbb41c6d9d47991eb" id="r_ab16ad44aa671dcfcbb41c6d9d47991eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00234.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab16ad44aa671dcfcbb41c6d9d47991eb">operator=</a> (const <a class="el" href="a00234.html">BrushSet</a> &amp;other)</td></tr>
+<tr class="memdesc:ab16ad44aa671dcfcbb41c6d9d47991eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">复制赋值  <br /></td></tr>
+<tr class="separator:ab16ad44aa671dcfcbb41c6d9d47991eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af45f410692b3b799001bcb9ae557d075" id="r_af45f410692b3b799001bcb9ae557d075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00234.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af45f410692b3b799001bcb9ae557d075">operator=</a> (<a class="el" href="a00234.html">BrushSet</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:af45f410692b3b799001bcb9ae557d075"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动赋值  <br /></td></tr>
+<tr class="separator:af45f410692b3b799001bcb9ae557d075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4800e02b96e582f8686fe47aeaac6ad" id="r_ab4800e02b96e582f8686fe47aeaac6ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4800e02b96e582f8686fe47aeaac6ad">~BrushSet</a> ()</td></tr>
+<tr class="separator:ab4800e02b96e582f8686fe47aeaac6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c84bb691c4ba6f952eeb70939ef7c87" id="r_a2c84bb691c4ba6f952eeb70939ef7c87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c84bb691c4ba6f952eeb70939ef7c87">setFillStyle</a> (const <a class="el" href="a00242.html">Color</a> &amp;color, <a class="el" href="a00179.html#gab5a34da70648f89842d9eea850b9fedf">FillStyle</a> style=<a class="el" href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfae41480b6bbfbf7407974a88d3d34f4fa">FillStyle::Solid</a>)</td></tr>
+<tr class="memdesc:a2c84bb691c4ba6f952eeb70939ef7c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认画刷填充  <br /></td></tr>
+<tr class="separator:a2c84bb691c4ba6f952eeb70939ef7c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1552e222376bf942b66ae3931512e8" id="r_a8b1552e222376bf942b66ae3931512e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b1552e222376bf942b66ae3931512e8">setTexture</a> (const <a class="el" href="a00406.html">Texture</a> &amp;texture, const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a8b1552e222376bf942b66ae3931512e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纹理画刷填充  <br /></td></tr>
+<tr class="separator:a8b1552e222376bf942b66ae3931512e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fecb3c59a0f1ff02043b68f0d0cdde" id="r_a30fecb3c59a0f1ff02043b68f0d0cdde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30fecb3c59a0f1ff02043b68f0d0cdde">setLinearGradient</a> (const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;start, const <a class="el" href="a00242.html">Color</a> &amp;startColor, const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;end, const <a class="el" href="a00242.html">Color</a> &amp;endColor)</td></tr>
+<tr class="memdesc:a30fecb3c59a0f1ff02043b68f0d0cdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置线性渐变画刷填充  <br /></td></tr>
+<tr class="separator:a30fecb3c59a0f1ff02043b68f0d0cdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5020ab6ed63c6bf9a68a9a8fb2804642" id="r_a5020ab6ed63c6bf9a68a9a8fb2804642"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5020ab6ed63c6bf9a68a9a8fb2804642">setRadialGradient</a> (const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;center, const <a class="el" href="a00242.html">Color</a> &amp;centerColor, const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, const <a class="el" href="a00242.html">Color</a> &amp;outerColor)</td></tr>
+<tr class="memdesc:a5020ab6ed63c6bf9a68a9a8fb2804642"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置椭圆径向渐变画刷填充  <br /></td></tr>
+<tr class="separator:a5020ab6ed63c6bf9a68a9a8fb2804642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae161baa39ed765c8a0ba7086605938c7" id="r_ae161baa39ed765c8a0ba7086605938c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae161baa39ed765c8a0ba7086605938c7">setPolygonGradient</a> (const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;center, const <a class="el" href="a00242.html">Color</a> &amp;centerColor, const std::vector&lt; <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &gt; &amp;points, const std::vector&lt; <a class="el" href="a00242.html">Color</a> &gt; &amp;colors)</td></tr>
+<tr class="memdesc:ae161baa39ed765c8a0ba7086605938c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置多边形径向渐变画刷填充  <br /></td></tr>
+<tr class="separator:ae161baa39ed765c8a0ba7086605938c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fd131f599f5da6bdbb83e2b0a0049b" id="r_a66fd131f599f5da6bdbb83e2b0a0049b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00179.html#gaead79709b6eced8a1f3c38677ddc8224">BrushStyle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66fd131f599f5da6bdbb83e2b0a0049b">getBrushStyle</a> () const</td></tr>
+<tr class="memdesc:a66fd131f599f5da6bdbb83e2b0a0049b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前画刷模式  <br /></td></tr>
+<tr class="separator:a66fd131f599f5da6bdbb83e2b0a0049b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ae5cfe0c0e0b06d536d5814bd1ff4818f" id="r_ae5cfe0c0e0b06d536d5814bd1ff4818f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5cfe0c0e0b06d536d5814bd1ff4818f">Graphics</a></td></tr>
+<tr class="separator:ae5cfe0c0e0b06d536d5814bd1ff4818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>画刷设置类 </p>
+<p>该类用于设置画刷的各种属性，包括填充颜色、填充样式、纹理、线性渐变、椭圆径向渐变、多边形径向渐变等 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#_a3">Button.cpp</a> , 以及 <a class="el" href="a00429.html#_a6">MyWindow.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="addb548cc503b34754db6d9bb1f57e4bf" name="addb548cc503b34754db6d9bb1f57e4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb548cc503b34754db6d9bb1f57e4bf">&#9670;&#160;</a></span>BrushSet() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::BrushSet::BrushSet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>填充颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4e57404559b1f3ef6596669bcf869db" name="ad4e57404559b1f3ef6596669bcf869db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e57404559b1f3ef6596669bcf869db">&#9670;&#160;</a></span>BrushSet() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::BrushSet::BrushSet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00234.html">BrushSet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝构造 </p>
+
+</div>
+</div>
+<a id="ad7101ffcfa867fa2c9b0725fdb0ad90f" name="ad7101ffcfa867fa2c9b0725fdb0ad90f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7101ffcfa867fa2c9b0725fdb0ad90f">&#9670;&#160;</a></span>BrushSet() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::BrushSet::BrushSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00234.html">BrushSet</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移动构造 </p>
+
+</div>
+</div>
+<a id="ab4800e02b96e582f8686fe47aeaac6ad" name="ab4800e02b96e582f8686fe47aeaac6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4800e02b96e582f8686fe47aeaac6ad">&#9670;&#160;</a></span>~BrushSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::BrushSet::~BrushSet </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab16ad44aa671dcfcbb41c6d9d47991eb" name="ab16ad44aa671dcfcbb41c6d9d47991eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16ad44aa671dcfcbb41c6d9d47991eb">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00234.html">BrushSet</a> &amp; GFt::BrushSet::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00234.html">BrushSet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复制赋值 </p>
+
+</div>
+</div>
+<a id="af45f410692b3b799001bcb9ae557d075" name="af45f410692b3b799001bcb9ae557d075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af45f410692b3b799001bcb9ae557d075">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00234.html">BrushSet</a> &amp; GFt::BrushSet::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00234.html">BrushSet</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移动赋值 </p>
+
+</div>
+</div>
+<a id="a2c84bb691c4ba6f952eeb70939ef7c87" name="a2c84bb691c4ba6f952eeb70939ef7c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c84bb691c4ba6f952eeb70939ef7c87">&#9670;&#160;</a></span>setFillStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::BrushSet::setFillStyle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00179.html#gab5a34da70648f89842d9eea850b9fedf">FillStyle</a></td>          <td class="paramname"><span class="paramname"><em>style</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfae41480b6bbfbf7407974a88d3d34f4fa">FillStyle::Solid</a></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置默认画刷填充 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>填充颜色 </td></tr>
+    <tr><td class="paramname">style</td><td>填充样式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a31">Button.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a8b1552e222376bf942b66ae3931512e8" name="a8b1552e222376bf942b66ae3931512e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1552e222376bf942b66ae3931512e8">&#9670;&#160;</a></span>setTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::BrushSet::setTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00406.html">Texture</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>texture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置纹理画刷填充 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>纹理 </td></tr>
+    <tr><td class="paramname">rect</td><td>在纹理图像上的矩形区域 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30fecb3c59a0f1ff02043b68f0d0cdde" name="a30fecb3c59a0f1ff02043b68f0d0cdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30fecb3c59a0f1ff02043b68f0d0cdde">&#9670;&#160;</a></span>setLinearGradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::BrushSet::setLinearGradient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>startColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>endColor</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置线性渐变画刷填充 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>起点 </td></tr>
+    <tr><td class="paramname">startColor</td><td>起点颜色 </td></tr>
+    <tr><td class="paramname">end</td><td>终点 </td></tr>
+    <tr><td class="paramname">endColor</td><td>终点颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5020ab6ed63c6bf9a68a9a8fb2804642" name="a5020ab6ed63c6bf9a68a9a8fb2804642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5020ab6ed63c6bf9a68a9a8fb2804642">&#9670;&#160;</a></span>setRadialGradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::BrushSet::setRadialGradient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>center</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>centerColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>outerColor</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置椭圆径向渐变画刷填充 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>中心点 </td></tr>
+    <tr><td class="paramname">centerColor</td><td>中心颜色 </td></tr>
+    <tr><td class="paramname">rect</td><td>椭圆的外接矩形 </td></tr>
+    <tr><td class="paramname">outerColor</td><td>外环颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae161baa39ed765c8a0ba7086605938c7" name="ae161baa39ed765c8a0ba7086605938c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae161baa39ed765c8a0ba7086605938c7">&#9670;&#160;</a></span>setPolygonGradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::BrushSet::setPolygonGradient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>center</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>centerColor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a00242.html">Color</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>colors</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置多边形径向渐变画刷填充 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>中心点 </td></tr>
+    <tr><td class="paramname">centerColor</td><td>中心颜色 </td></tr>
+    <tr><td class="paramname">points</td><td>多边形顶点 </td></tr>
+    <tr><td class="paramname">colors</td><td>顶点颜色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66fd131f599f5da6bdbb83e2b0a0049b" name="a66fd131f599f5da6bdbb83e2b0a0049b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fd131f599f5da6bdbb83e2b0a0049b">&#9670;&#160;</a></span>getBrushStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00179.html#gaead79709b6eced8a1f3c38677ddc8224">BrushStyle</a> GFt::BrushSet::getBrushStyle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前画刷模式 </p>
+<dl class="section return"><dt>返回</dt><dd>画刷模式 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="ae5cfe0c0e0b06d536d5814bd1ff4818f" name="ae5cfe0c0e0b06d536d5814bd1ff4818f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cfe0c0e0b06d536d5814bd1ff4818f">&#9670;&#160;</a></span>Graphics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="a00346.html">Graphics</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00202.html">GFt</a></li><li class="navelem"><a class="el" href="a00234.html">BrushSet</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

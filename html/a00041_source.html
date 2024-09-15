@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/Block.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00041_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Block.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphInterface.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;EventMonitor.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Event.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Signal.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00202.html">GFt</a> {</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="a00218.html">   17</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00218.html">Block</a> : <span class="keyword">public</span> <a class="code hl_class" href="a00350.html">GraphInterface</a>, <span class="keyword">public</span> <a class="code hl_class" href="a00334.html">EventMonitor</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">struct </span>CompareByZIndex {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code hl_class" href="a00218.html">Block</a>* a, <span class="keyword">const</span> <a class="code hl_class" href="a00218.html">Block</a>* b) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        };</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">int</span> zIndex_;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_class" href="a00218.html">Block</a>* parent_;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        std::multiset&lt;Block*, CompareByZIndex&gt; children_;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="a00218.html#a23f25bcc02a0e94c2f5a4188496b04d0">   25</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="a00210.html">Application</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">void</span> handleOnDraw();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> handleOnMouseButtonPress(<a class="code hl_class" href="a00286.html">MouseButtonPressEvent</a>* event, <span class="keyword">const</span> <a class="code hl_class" href="a00374.html">iPoint</a>&amp; pos = <a class="code hl_typedef" href="a00199.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>());</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> handleOnMouseButtonRelease(<a class="code hl_class" href="a00290.html">MouseButtonReleaseEvent</a>* event, <span class="keyword">const</span> <a class="code hl_class" href="a00374.html">iPoint</a>&amp; pos = <a class="code hl_typedef" href="a00199.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>());</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">void</span> handleOnMouseMove(<a class="code hl_class" href="a00274.html">MouseMoveEvent</a>* event, <span class="keyword">const</span> <a class="code hl_class" href="a00374.html">iPoint</a>&amp; pos = <a class="code hl_typedef" href="a00199.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>());</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordtype">void</span> handleOnMouseWheel(<a class="code hl_class" href="a00270.html">MouseWheelEvent</a>* event, <span class="keyword">const</span> <a class="code hl_class" href="a00374.html">iPoint</a>&amp; pos = <a class="code hl_typedef" href="a00199.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>());</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span> handleOnKeyPress(<a class="code hl_class" href="a00278.html">KeyPressEvent</a>* event);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> handleOnKeyRelease(<a class="code hl_class" href="a00282.html">KeyReleaseEvent</a>* event);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">void</span> handleOnTextInput(<a class="code hl_class" href="a00262.html">TextInputEvent</a>* event);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#a00defc8bb2b35301c7e2e6eeaaf15afa">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00382.html">iRect</a>&amp; <a class="code hl_function" href="a00350.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#a739e089ae53f86757d5c22e8d6d725fa">onMouseButtonPress</a>(<a class="code hl_class" href="a00286.html">MouseButtonPressEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#a24840527c64b1cc8fc02013e813d749e">onMouseButtonRelease</a>(<a class="code hl_class" href="a00290.html">MouseButtonReleaseEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#ae57ed348e20dce6134614565612831bb">onMouseMove</a>(<a class="code hl_class" href="a00274.html">MouseMoveEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#a8d78022a44847743b9695242d1819aed">onMouseWheel</a>(<a class="code hl_class" href="a00270.html">MouseWheelEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#ae3c1579b1a248d8f2dc32c599822df70">onKeyPress</a>(<a class="code hl_class" href="a00278.html">KeyPressEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#a100661f60d285f4829e4a6598bfeacf8">onKeyRelease</a>(<a class="code hl_class" href="a00282.html">KeyReleaseEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#ad6c35f17955ab6e87898f88d6f6b9bc4">onTextInput</a>(<a class="code hl_class" href="a00262.html">TextInputEvent</a>* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_function" href="a00218.html#aed3aa46411c98699bbcbba44667a8900">Block</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00382.html">iRect</a>&amp; <a class="code hl_function" href="a00350.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>, <a class="code hl_class" href="a00218.html">Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="a00218.html#a899e7c9e34803106fd05b95de18fcc67">~Block</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#afa17ae2b61a7af0ba3530d87e7a6a5d1">addChild</a>(<a class="code hl_class" href="a00218.html">Block</a>* child);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#ad9082b218a2ebfadc249eb9469532088">removeChild</a>(<a class="code hl_class" href="a00218.html">Block</a>* child);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#a3e1554d34e6520a7a2c1fa5d3f3ec2c5">setZIndex</a>(<span class="keywordtype">int</span> zIndex);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00218.html#ac47724e32dd61b83bcadc907fc4efabe">setParent</a>(<a class="code hl_class" href="a00218.html">Block</a>* parent);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="a00218.html#ab5a954ef438e4694de271b46e746ce56">getZIndex</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_class" href="a00218.html">Block</a>* <a class="code hl_function" href="a00218.html#a478795a68b66001db32edb1544009060">getParent</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <a class="code hl_class" href="a00374.html">iPoint</a> <a class="code hl_function" href="a00218.html#a0549aff184d697abe5f825da0342a779">relativePosFrom</a>(<a class="code hl_class" href="a00218.html">Block</a>* block) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_class" href="a00374.html">iPoint</a> <a class="code hl_function" href="a00218.html#a384598e63efef1f76278673a402d22da">absolutePos</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="a00218.html#a5301d542cb3c85aa8381f19d2efeecca">  122</a></span>        <a class="code hl_class" href="a00390.html">Signal&lt;Block*&gt;</a> <a class="code hl_variable" href="a00218.html#a5301d542cb3c85aa8381f19d2efeecca">HoverOn</a>;     </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="a00218.html#a8fca38ee5cc6098c6f2d8219f61b33cb">  123</a></span>        <a class="code hl_class" href="a00390.html">Signal&lt;Block*&gt;</a> <a class="code hl_variable" href="a00218.html#a8fca38ee5cc6098c6f2d8219f61b33cb">HoverOff</a>;    </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="a00218.html#a364b56258a83062f97e40b1464901aa9">  124</a></span>        <a class="code hl_class" href="a00390.html">Signal&lt;Block*&gt;</a> <a class="code hl_variable" href="a00218.html#a364b56258a83062f97e40b1464901aa9">FocusOn</a>;     </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="a00218.html#ab0b56b6e60a79a389522d554313465d5">  125</a></span>        <a class="code hl_class" href="a00390.html">Signal&lt;Block*&gt;</a> <a class="code hl_variable" href="a00218.html#ab0b56b6e60a79a389522d554313465d5">FocusOff</a>;    </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    };</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+<div class="ttc" id="aa00199_html_ga4db4aab9932601699d1d1c63845e79bf"><div class="ttname"><a href="a00199.html#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a></div><div class="ttdeci">Point&lt; int &gt; iPoint</div><div class="ttdoc">整数型点类别别名</div><div class="ttdef"><b>定义</b> Point.hpp:180</div></div>
+<div class="ttc" id="aa00202_html"><div class="ttname"><a href="a00202.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="aa00210_html"><div class="ttname"><a href="a00210.html">GFt::Application</a></div><div class="ttdoc">应用程序类</div><div class="ttdef"><b>定义</b> Application.h:10</div></div>
+<div class="ttc" id="aa00218_html"><div class="ttname"><a href="a00218.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
+<div class="ttc" id="aa00218_html_a00defc8bb2b35301c7e2e6eeaaf15afa"><div class="ttname"><a href="a00218.html#a00defc8bb2b35301c7e2e6eeaaf15afa">GFt::Block::onDraw</a></div><div class="ttdeci">void onDraw(const iRect &amp;rect) override</div><div class="ttdoc">此函数用于绘制内容</div><div class="ttdef"><b>定义</b> Block.cpp:42</div></div>
+<div class="ttc" id="aa00218_html_a0549aff184d697abe5f825da0342a779"><div class="ttname"><a href="a00218.html#a0549aff184d697abe5f825da0342a779">GFt::Block::relativePosFrom</a></div><div class="ttdeci">iPoint relativePosFrom(Block *block) const</div><div class="ttdoc">计算相对于指定对象的相对坐标</div><div class="ttdef"><b>定义</b> Block.cpp:99</div></div>
+<div class="ttc" id="aa00218_html_a100661f60d285f4829e4a6598bfeacf8"><div class="ttname"><a href="a00218.html#a100661f60d285f4829e4a6598bfeacf8">GFt::Block::onKeyRelease</a></div><div class="ttdeci">void onKeyRelease(KeyReleaseEvent *event) override</div><div class="ttdoc">此函数用于处理键盘按键释放事件</div><div class="ttdef"><b>定义</b> Block.cpp:52</div></div>
+<div class="ttc" id="aa00218_html_a24840527c64b1cc8fc02013e813d749e"><div class="ttname"><a href="a00218.html#a24840527c64b1cc8fc02013e813d749e">GFt::Block::onMouseButtonRelease</a></div><div class="ttdeci">void onMouseButtonRelease(MouseButtonReleaseEvent *event) override</div><div class="ttdoc">此函数用于处理鼠标按钮释放事件</div><div class="ttdef"><b>定义</b> Block.cpp:48</div></div>
+<div class="ttc" id="aa00218_html_a364b56258a83062f97e40b1464901aa9"><div class="ttname"><a href="a00218.html#a364b56258a83062f97e40b1464901aa9">GFt::Block::FocusOn</a></div><div class="ttdeci">Signal&lt; Block * &gt; FocusOn</div><div class="ttdoc">当该对象获得焦点时触发该信号</div><div class="ttdef"><b>定义</b> Block.h:124</div></div>
+<div class="ttc" id="aa00218_html_a384598e63efef1f76278673a402d22da"><div class="ttname"><a href="a00218.html#a384598e63efef1f76278673a402d22da">GFt::Block::absolutePos</a></div><div class="ttdeci">iPoint absolutePos() const</div><div class="ttdoc">计算相对于屏幕的绝对坐标</div><div class="ttdef"><b>定义</b> Block.cpp:103</div></div>
+<div class="ttc" id="aa00218_html_a3e1554d34e6520a7a2c1fa5d3f3ec2c5"><div class="ttname"><a href="a00218.html#a3e1554d34e6520a7a2c1fa5d3f3ec2c5">GFt::Block::setZIndex</a></div><div class="ttdeci">void setZIndex(int zIndex)</div><div class="ttdoc">设置层级</div><div class="ttdef"><b>定义</b> Block.cpp:75</div></div>
+<div class="ttc" id="aa00218_html_a478795a68b66001db32edb1544009060"><div class="ttname"><a href="a00218.html#a478795a68b66001db32edb1544009060">GFt::Block::getParent</a></div><div class="ttdeci">Block * getParent() const</div><div class="ttdoc">获取父对象</div><div class="ttdef"><b>定义</b> Block.cpp:97</div></div>
+<div class="ttc" id="aa00218_html_a5301d542cb3c85aa8381f19d2efeecca"><div class="ttname"><a href="a00218.html#a5301d542cb3c85aa8381f19d2efeecca">GFt::Block::HoverOn</a></div><div class="ttdeci">Signal&lt; Block * &gt; HoverOn</div><div class="ttdoc">当鼠标悬停该对象时之上时触发该信号</div><div class="ttdef"><b>定义</b> Block.h:122</div></div>
+<div class="ttc" id="aa00218_html_a739e089ae53f86757d5c22e8d6d725fa"><div class="ttname"><a href="a00218.html#a739e089ae53f86757d5c22e8d6d725fa">GFt::Block::onMouseButtonPress</a></div><div class="ttdeci">void onMouseButtonPress(MouseButtonPressEvent *event) override</div><div class="ttdoc">此函数用于处理鼠标按钮按下事件</div><div class="ttdef"><b>定义</b> Block.cpp:43</div></div>
+<div class="ttc" id="aa00218_html_a899e7c9e34803106fd05b95de18fcc67"><div class="ttname"><a href="a00218.html#a899e7c9e34803106fd05b95de18fcc67">GFt::Block::~Block</a></div><div class="ttdeci">virtual ~Block()</div><div class="ttdef"><b>定义</b> Block.cpp:60</div></div>
+<div class="ttc" id="aa00218_html_a8d78022a44847743b9695242d1819aed"><div class="ttname"><a href="a00218.html#a8d78022a44847743b9695242d1819aed">GFt::Block::onMouseWheel</a></div><div class="ttdeci">void onMouseWheel(MouseWheelEvent *event) override</div><div class="ttdoc">此函数用于处理鼠标滚轮事件</div><div class="ttdef"><b>定义</b> Block.cpp:50</div></div>
+<div class="ttc" id="aa00218_html_a8fca38ee5cc6098c6f2d8219f61b33cb"><div class="ttname"><a href="a00218.html#a8fca38ee5cc6098c6f2d8219f61b33cb">GFt::Block::HoverOff</a></div><div class="ttdeci">Signal&lt; Block * &gt; HoverOff</div><div class="ttdoc">当鼠标移开该对象时之上时触发该信号</div><div class="ttdef"><b>定义</b> Block.h:123</div></div>
+<div class="ttc" id="aa00218_html_ab0b56b6e60a79a389522d554313465d5"><div class="ttname"><a href="a00218.html#ab0b56b6e60a79a389522d554313465d5">GFt::Block::FocusOff</a></div><div class="ttdeci">Signal&lt; Block * &gt; FocusOff</div><div class="ttdoc">当该对象失去焦点时触发该信号</div><div class="ttdef"><b>定义</b> Block.h:125</div></div>
+<div class="ttc" id="aa00218_html_ab5a954ef438e4694de271b46e746ce56"><div class="ttname"><a href="a00218.html#ab5a954ef438e4694de271b46e746ce56">GFt::Block::getZIndex</a></div><div class="ttdeci">int getZIndex() const</div><div class="ttdoc">获取层级</div><div class="ttdef"><b>定义</b> Block.cpp:96</div></div>
+<div class="ttc" id="aa00218_html_ac47724e32dd61b83bcadc907fc4efabe"><div class="ttname"><a href="a00218.html#ac47724e32dd61b83bcadc907fc4efabe">GFt::Block::setParent</a></div><div class="ttdeci">void setParent(Block *parent)</div><div class="ttdoc">设置父对象</div><div class="ttdef"><b>定义</b> Block.cpp:84</div></div>
+<div class="ttc" id="aa00218_html_ad6c35f17955ab6e87898f88d6f6b9bc4"><div class="ttname"><a href="a00218.html#ad6c35f17955ab6e87898f88d6f6b9bc4">GFt::Block::onTextInput</a></div><div class="ttdeci">void onTextInput(TextInputEvent *event) override</div><div class="ttdoc">此函数用于处理文本输入事件</div><div class="ttdef"><b>定义</b> Block.cpp:53</div></div>
+<div class="ttc" id="aa00218_html_ad9082b218a2ebfadc249eb9469532088"><div class="ttname"><a href="a00218.html#ad9082b218a2ebfadc249eb9469532088">GFt::Block::removeChild</a></div><div class="ttdeci">void removeChild(Block *child)</div><div class="ttdoc">移除子对象</div><div class="ttdef"><b>定义</b> Block.cpp:69</div></div>
+<div class="ttc" id="aa00218_html_ae3c1579b1a248d8f2dc32c599822df70"><div class="ttname"><a href="a00218.html#ae3c1579b1a248d8f2dc32c599822df70">GFt::Block::onKeyPress</a></div><div class="ttdeci">void onKeyPress(KeyPressEvent *event) override</div><div class="ttdoc">此函数用于处理键盘按键按下事件</div><div class="ttdef"><b>定义</b> Block.cpp:51</div></div>
+<div class="ttc" id="aa00218_html_ae57ed348e20dce6134614565612831bb"><div class="ttname"><a href="a00218.html#ae57ed348e20dce6134614565612831bb">GFt::Block::onMouseMove</a></div><div class="ttdeci">void onMouseMove(MouseMoveEvent *event) override</div><div class="ttdoc">此函数用于处理鼠标移动事件</div><div class="ttdef"><b>定义</b> Block.cpp:49</div></div>
+<div class="ttc" id="aa00218_html_aed3aa46411c98699bbcbba44667a8900"><div class="ttname"><a href="a00218.html#aed3aa46411c98699bbcbba44667a8900">GFt::Block::Block</a></div><div class="ttdeci">Block(const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> Block.cpp:54</div></div>
+<div class="ttc" id="aa00218_html_afa17ae2b61a7af0ba3530d87e7a6a5d1"><div class="ttname"><a href="a00218.html#afa17ae2b61a7af0ba3530d87e7a6a5d1">GFt::Block::addChild</a></div><div class="ttdeci">void addChild(Block *child)</div><div class="ttdoc">添加子对象</div><div class="ttdef"><b>定义</b> Block.cpp:61</div></div>
+<div class="ttc" id="aa00262_html"><div class="ttname"><a href="a00262.html">GFt::TextInputEvent</a></div><div class="ttdoc">文本输入事件</div><div class="ttdef"><b>定义</b> Event.h:229</div></div>
+<div class="ttc" id="aa00270_html"><div class="ttname"><a href="a00270.html">GFt::MouseWheelEvent</a></div><div class="ttdoc">鼠标滚轮事件</div><div class="ttdef"><b>定义</b> Event.h:257</div></div>
+<div class="ttc" id="aa00274_html"><div class="ttname"><a href="a00274.html">GFt::MouseMoveEvent</a></div><div class="ttdoc">鼠标移动事件</div><div class="ttdef"><b>定义</b> Event.h:271</div></div>
+<div class="ttc" id="aa00278_html"><div class="ttname"><a href="a00278.html">GFt::KeyPressEvent</a></div><div class="ttdoc">键盘按键按下事件</div><div class="ttdef"><b>定义</b> Event.h:280</div></div>
+<div class="ttc" id="aa00282_html"><div class="ttname"><a href="a00282.html">GFt::KeyReleaseEvent</a></div><div class="ttdoc">键盘按键弹起事件</div><div class="ttdef"><b>定义</b> Event.h:289</div></div>
+<div class="ttc" id="aa00286_html"><div class="ttname"><a href="a00286.html">GFt::MouseButtonPressEvent</a></div><div class="ttdoc">鼠标按钮按下事件</div><div class="ttdef"><b>定义</b> Event.h:298</div></div>
+<div class="ttc" id="aa00290_html"><div class="ttname"><a href="a00290.html">GFt::MouseButtonReleaseEvent</a></div><div class="ttdoc">鼠标按钮弹起事件</div><div class="ttdef"><b>定义</b> Event.h:307</div></div>
+<div class="ttc" id="aa00334_html"><div class="ttname"><a href="a00334.html">GFt::EventMonitor</a></div><div class="ttdoc">事件监视器接口类</div><div class="ttdef"><b>定义</b> EventMonitor.h:144</div></div>
+<div class="ttc" id="aa00350_html"><div class="ttname"><a href="a00350.html">GFt::GraphInterface</a></div><div class="ttdoc">图形绘制接口</div><div class="ttdef"><b>定义</b> GraphInterface.h:12</div></div>
+<div class="ttc" id="aa00350_html_a32fb8d44141ca4fb67153bc4a22c63ff"><div class="ttname"><a href="a00350.html#a32fb8d44141ca4fb67153bc4a22c63ff">GFt::GraphInterface::rect</a></div><div class="ttdeci">iRect &amp; rect()</div><div class="ttdoc">绘制区域</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:6</div></div>
+<div class="ttc" id="aa00374_html"><div class="ttname"><a href="a00374.html">GFt::Point&lt; int &gt;</a></div></div>
+<div class="ttc" id="aa00382_html"><div class="ttname"><a href="a00382.html">GFt::Rect&lt; int &gt;</a></div></div>
+<div class="ttc" id="aa00390_html"><div class="ttname"><a href="a00390.html">GFt::Signal</a></div><div class="ttdoc">信号-槽机制支持</div><div class="ttdef"><b>定义</b> Signal.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>Block.h</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

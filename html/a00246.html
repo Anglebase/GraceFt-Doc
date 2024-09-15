@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Ellipse&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00246.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="a00243.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Ellipse&lt; T &gt; 模板类 参考<div class="ingroups"><a class="el" href="a00193.html">基础设施库</a> &raquo; <a class="el" href="a00197.html">图形数据类型</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>椭圆类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00056_source.html">Ellipse.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a57fc59e5bf437cbe6cf21bf91f9cdd1a" id="r_a57fc59e5bf437cbe6cf21bf91f9cdd1a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57fc59e5bf437cbe6cf21bf91f9cdd1a">Ellipse</a> (const <a class="el" href="a00382.html">Rect</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;<a class="el" href="#a90a5c60ea63fa48337f980c92bcf9197">rect</a>)</td></tr>
+<tr class="memdesc:a57fc59e5bf437cbe6cf21bf91f9cdd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a57fc59e5bf437cbe6cf21bf91f9cdd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6107e76cdf660c37bfad4219d50cdfc" id="r_ac6107e76cdf660c37bfad4219d50cdfc"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6107e76cdf660c37bfad4219d50cdfc">Ellipse</a> (const <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;<a class="el" href="#a7032985992ec6ccbd5dc922e9cbcb616">center</a>, <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="#acc3036ed10fba23e5f25f6b2d8fc4233">rx</a>, <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="#a65af9a1725c5102561aabc97d3afd7a3">ry</a>)</td></tr>
+<tr class="memdesc:ac6107e76cdf660c37bfad4219d50cdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:ac6107e76cdf660c37bfad4219d50cdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bbd54655e88dfacaf2d5a6c2042e70" id="r_a78bbd54655e88dfacaf2d5a6c2042e70"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78bbd54655e88dfacaf2d5a6c2042e70">operator==</a> (const <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;other) const</td></tr>
+<tr class="memdesc:a78bbd54655e88dfacaf2d5a6c2042e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个椭圆是否相同  <br /></td></tr>
+<tr class="separator:a78bbd54655e88dfacaf2d5a6c2042e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1e6cb4afdc19989d3323fc3df13043" id="r_aeb1e6cb4afdc19989d3323fc3df13043"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb1e6cb4afdc19989d3323fc3df13043">operator!=</a> (const <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;other) const</td></tr>
+<tr class="memdesc:aeb1e6cb4afdc19989d3323fc3df13043"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个椭圆是否不同  <br /></td></tr>
+<tr class="separator:aeb1e6cb4afdc19989d3323fc3df13043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a5c60ea63fa48337f980c92bcf9197" id="r_a90a5c60ea63fa48337f980c92bcf9197"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="a00382.html">Rect</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90a5c60ea63fa48337f980c92bcf9197">rect</a> () const</td></tr>
+<tr class="memdesc:a90a5c60ea63fa48337f980c92bcf9197"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的外接矩形  <br /></td></tr>
+<tr class="separator:a90a5c60ea63fa48337f980c92bcf9197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35746ab85095cd6cbcfd1f48907715b4" id="r_a35746ab85095cd6cbcfd1f48907715b4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35746ab85095cd6cbcfd1f48907715b4">width</a> () const</td></tr>
+<tr class="memdesc:a35746ab85095cd6cbcfd1f48907715b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的宽度  <br /></td></tr>
+<tr class="separator:a35746ab85095cd6cbcfd1f48907715b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afacd9b665f8a7d1fd18566f3b17da8ad" id="r_afacd9b665f8a7d1fd18566f3b17da8ad"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afacd9b665f8a7d1fd18566f3b17da8ad">height</a> () const</td></tr>
+<tr class="memdesc:afacd9b665f8a7d1fd18566f3b17da8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的高度  <br /></td></tr>
+<tr class="separator:afacd9b665f8a7d1fd18566f3b17da8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7032985992ec6ccbd5dc922e9cbcb616" id="r_a7032985992ec6ccbd5dc922e9cbcb616"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7032985992ec6ccbd5dc922e9cbcb616">center</a> () const</td></tr>
+<tr class="memdesc:a7032985992ec6ccbd5dc922e9cbcb616"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的圆心  <br /></td></tr>
+<tr class="separator:a7032985992ec6ccbd5dc922e9cbcb616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3036ed10fba23e5f25f6b2d8fc4233" id="r_acc3036ed10fba23e5f25f6b2d8fc4233"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc3036ed10fba23e5f25f6b2d8fc4233">rx</a> () const</td></tr>
+<tr class="memdesc:acc3036ed10fba23e5f25f6b2d8fc4233"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的水平半径  <br /></td></tr>
+<tr class="separator:acc3036ed10fba23e5f25f6b2d8fc4233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65af9a1725c5102561aabc97d3afd7a3" id="r_a65af9a1725c5102561aabc97d3afd7a3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65af9a1725c5102561aabc97d3afd7a3">ry</a> () const</td></tr>
+<tr class="memdesc:a65af9a1725c5102561aabc97d3afd7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的竖直半径  <br /></td></tr>
+<tr class="separator:a65af9a1725c5102561aabc97d3afd7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab135f1986151f1afeb65edb29063ac03" id="r_ab135f1986151f1afeb65edb29063ac03"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab135f1986151f1afeb65edb29063ac03">area</a> () const</td></tr>
+<tr class="memdesc:ab135f1986151f1afeb65edb29063ac03"><td class="mdescLeft">&#160;</td><td class="mdescRight">椭圆的面积  <br /></td></tr>
+<tr class="separator:ab135f1986151f1afeb65edb29063ac03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645518fb3db0759a72874e6fada5eff8" id="r_a645518fb3db0759a72874e6fada5eff8"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; <br />
+requires std::is_arithmetic_v&lt;<a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a>&gt;</td></tr>
+<tr class="memitem:a645518fb3db0759a72874e6fada5eff8"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a645518fb3db0759a72874e6fada5eff8">operator Ellipse&lt; U &gt;</a> () const</td></tr>
+<tr class="memdesc:a645518fb3db0759a72874e6fada5eff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型转换函数  <br /></td></tr>
+<tr class="separator:a645518fb3db0759a72874e6fada5eff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a8ba9bba78429f005ff9d0dd7b7e2145a" id="r_a8ba9bba78429f005ff9d0dd7b7e2145a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ba9bba78429f005ff9d0dd7b7e2145a">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;elliptic)</td></tr>
+<tr class="memdesc:a8ba9bba78429f005ff9d0dd7b7e2145a"><td class="mdescLeft">&#160;</td><td class="mdescRight">流操作运算符  <br /></td></tr>
+<tr class="separator:a8ba9bba78429f005ff9d0dd7b7e2145a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+requires std::is_arithmetic_v&lt;<a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+class GFt::Ellipse&lt; T &gt;</div><p>椭圆类 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>数值类型, 要求为算术类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a57fc59e5bf437cbe6cf21bf91f9cdd1a" name="a57fc59e5bf437cbe6cf21bf91f9cdd1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fc59e5bf437cbe6cf21bf91f9cdd1a">&#9670;&#160;</a></span>Ellipse() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Ellipse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00382.html">Rect</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>椭圆的外接矩形 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6107e76cdf660c37bfad4219d50cdfc" name="ac6107e76cdf660c37bfad4219d50cdfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6107e76cdf660c37bfad4219d50cdfc">&#9670;&#160;</a></span>Ellipse() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Ellipse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>center</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>rx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a></td>          <td class="paramname"><span class="paramname"><em>ry</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>椭圆的中心点 </td></tr>
+    <tr><td class="paramname">rx</td><td>椭圆的水平半径 </td></tr>
+    <tr><td class="paramname">ry</td><td>椭圆的竖直半径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a78bbd54655e88dfacaf2d5a6c2042e70" name="a78bbd54655e88dfacaf2d5a6c2042e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bbd54655e88dfacaf2d5a6c2042e70">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断两个椭圆是否相同 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若两个椭圆相同, 则返回 true, 否则返回 false </dd></dl>
+
+</div>
+</div>
+<a id="aeb1e6cb4afdc19989d3323fc3df13043" name="aeb1e6cb4afdc19989d3323fc3df13043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1e6cb4afdc19989d3323fc3df13043">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断两个椭圆是否不同 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>另一个椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若两个椭圆不同, 则返回 true, 否则返回 false </dd></dl>
+
+</div>
+</div>
+<a id="a90a5c60ea63fa48337f980c92bcf9197" name="a90a5c60ea63fa48337f980c92bcf9197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a5c60ea63fa48337f980c92bcf9197">&#9670;&#160;</a></span>rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00382.html">Rect</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp; <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::rect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的外接矩形 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的外接矩形 </dd></dl>
+
+</div>
+</div>
+<a id="a35746ab85095cd6cbcfd1f48907715b4" name="a35746ab85095cd6cbcfd1f48907715b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35746ab85095cd6cbcfd1f48907715b4">&#9670;&#160;</a></span>width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::width </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的宽度 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的宽度 </dd></dl>
+
+</div>
+</div>
+<a id="afacd9b665f8a7d1fd18566f3b17da8ad" name="afacd9b665f8a7d1fd18566f3b17da8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afacd9b665f8a7d1fd18566f3b17da8ad">&#9670;&#160;</a></span>height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::height </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的高度 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的高度 </dd></dl>
+
+</div>
+</div>
+<a id="a7032985992ec6ccbd5dc922e9cbcb616" name="a7032985992ec6ccbd5dc922e9cbcb616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7032985992ec6ccbd5dc922e9cbcb616">&#9670;&#160;</a></span>center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00374.html">Point</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::center </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的圆心 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的圆心 </dd></dl>
+
+</div>
+</div>
+<a id="acc3036ed10fba23e5f25f6b2d8fc4233" name="acc3036ed10fba23e5f25f6b2d8fc4233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3036ed10fba23e5f25f6b2d8fc4233">&#9670;&#160;</a></span>rx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::rx </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的水平半径 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的水平半径 </dd></dl>
+
+</div>
+</div>
+<a id="a65af9a1725c5102561aabc97d3afd7a3" name="a65af9a1725c5102561aabc97d3afd7a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65af9a1725c5102561aabc97d3afd7a3">&#9670;&#160;</a></span>ry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::ry </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的竖直半径 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的竖直半径 </dd></dl>
+
+</div>
+</div>
+<a id="ab135f1986151f1afeb65edb29063ac03" name="ab135f1986151f1afeb65edb29063ac03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab135f1986151f1afeb65edb29063ac03">&#9670;&#160;</a></span>area()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::area </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>椭圆的面积 </p>
+<dl class="section return"><dt>返回</dt><dd>椭圆的面积 </dd></dl>
+
+</div>
+</div>
+<a id="a645518fb3db0759a72874e6fada5eff8" name="a645518fb3db0759a72874e6fada5eff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645518fb3db0759a72874e6fada5eff8">&#9670;&#160;</a></span>operator Ellipse&lt; U &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; <br />
+requires std::is_arithmetic_v&lt;<a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a>&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00246.html">GFt::Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::operator <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb">U</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>类型转换函数 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>目标类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elliptic</td><td>椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>目标类型椭圆 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="a8ba9bba78429f005ff9d0dd7b7e2145a" name="a8ba9bba78429f005ff9d0dd7b7e2145a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba9bba78429f005ff9d0dd7b7e2145a">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00246.html">Ellipse</a>&lt; <a class="el" href="a00180.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>elliptic</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>流操作运算符 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>输出流 </td></tr>
+    <tr><td class="paramname">elliptic</td><td>椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>输出流 os </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00202.html">GFt</a></li><li class="navelem"><a class="el" href="a00246.html">Ellipse</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

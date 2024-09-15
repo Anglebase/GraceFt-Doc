@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Font类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00342.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="a00339.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Font类 参考<div class="ingroups"><a class="el" href="a00194.html">API接口库</a> &raquo; <a class="el" href="a00186.html">图形系统</a> &raquo; <a class="el" href="a00187.html">基础类型</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>字体类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00068_source.html">Font.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afe1a7fc62b07fcc9a9dfde2269ba29a7" id="r_afe1a7fc62b07fcc9a9dfde2269ba29a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe1a7fc62b07fcc9a9dfde2269ba29a7">Font</a> (const std::wstring &amp;<a class="el" href="#a3d419fb1b74e7499ff04b551c0414289">fontFamily</a>, long <a class="el" href="a00202.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>=<a class="el" href="a00198.html#ga8d54709bf77256c35e032ab9bcead9f6">literals::operator&quot;&quot;_em</a>(1ull))</td></tr>
+<tr class="memdesc:afe1a7fc62b07fcc9a9dfde2269ba29a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:afe1a7fc62b07fcc9a9dfde2269ba29a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a14dddfacac79666c4339c82580df7a" id="r_a8a14dddfacac79666c4339c82580df7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a14dddfacac79666c4339c82580df7a">Font</a> (const <a class="el" href="a00342.html">Font</a> &amp;other)</td></tr>
+<tr class="memdesc:a8a14dddfacac79666c4339c82580df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">复制构造  <br /></td></tr>
+<tr class="separator:a8a14dddfacac79666c4339c82580df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d359de9f868d1ed6b3bf9c38d288dd" id="r_af8d359de9f868d1ed6b3bf9c38d288dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8d359de9f868d1ed6b3bf9c38d288dd">Font</a> (<a class="el" href="a00342.html">Font</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:af8d359de9f868d1ed6b3bf9c38d288dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动构造  <br /></td></tr>
+<tr class="separator:af8d359de9f868d1ed6b3bf9c38d288dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d189a1cf3f394868dd85c1373544f2" id="r_a47d189a1cf3f394868dd85c1373544f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00342.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47d189a1cf3f394868dd85c1373544f2">operator=</a> (const <a class="el" href="a00342.html">Font</a> &amp;other)</td></tr>
+<tr class="memdesc:a47d189a1cf3f394868dd85c1373544f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">复制赋值  <br /></td></tr>
+<tr class="separator:a47d189a1cf3f394868dd85c1373544f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f48f715ff89d9fe191760417849f688" id="r_a1f48f715ff89d9fe191760417849f688"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00342.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f48f715ff89d9fe191760417849f688">operator=</a> (<a class="el" href="a00342.html">Font</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:a1f48f715ff89d9fe191760417849f688"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动赋值  <br /></td></tr>
+<tr class="separator:a1f48f715ff89d9fe191760417849f688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7173647fd1c25a40b0186d83eda0be27" id="r_a7173647fd1c25a40b0186d83eda0be27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7173647fd1c25a40b0186d83eda0be27">~Font</a> ()</td></tr>
+<tr class="separator:a7173647fd1c25a40b0186d83eda0be27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c06349b81d4309d266db1300105b70" id="r_a04c06349b81d4309d266db1300105b70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04c06349b81d4309d266db1300105b70">setSize</a> (long <a class="el" href="a00202.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>)</td></tr>
+<tr class="memdesc:a04c06349b81d4309d266db1300105b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体大小  <br /></td></tr>
+<tr class="separator:a04c06349b81d4309d266db1300105b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a6e3ff3b4a17dea1f75abbd9bc2a70b" id="r_a7a6e3ff3b4a17dea1f75abbd9bc2a70b"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a6e3ff3b4a17dea1f75abbd9bc2a70b">size</a> () const</td></tr>
+<tr class="memdesc:a7a6e3ff3b4a17dea1f75abbd9bc2a70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体大小  <br /></td></tr>
+<tr class="separator:a7a6e3ff3b4a17dea1f75abbd9bc2a70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503764c5a0ecdd100d06d664f09d7a62" id="r_a503764c5a0ecdd100d06d664f09d7a62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a503764c5a0ecdd100d06d664f09d7a62">setWeight</a> (<a class="el" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a> <a class="el" href="#ab2c3b18db6a9ca88f60060deac8629d9">weight</a>)</td></tr>
+<tr class="memdesc:a503764c5a0ecdd100d06d664f09d7a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体字重(粗细)  <br /></td></tr>
+<tr class="separator:a503764c5a0ecdd100d06d664f09d7a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c3b18db6a9ca88f60060deac8629d9" id="r_ab2c3b18db6a9ca88f60060deac8629d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2c3b18db6a9ca88f60060deac8629d9">weight</a> () const</td></tr>
+<tr class="memdesc:ab2c3b18db6a9ca88f60060deac8629d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体字重(粗细)  <br /></td></tr>
+<tr class="separator:ab2c3b18db6a9ca88f60060deac8629d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e5e0381a086ff8596c36c5e05a493b" id="r_aa3e5e0381a086ff8596c36c5e05a493b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e5e0381a086ff8596c36c5e05a493b">setItalic</a> (bool <a class="el" href="#add9fd7adec9b2e3ac411ff62cb04a4fe">italic</a>)</td></tr>
+<tr class="memdesc:aa3e5e0381a086ff8596c36c5e05a493b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体是否为斜体  <br /></td></tr>
+<tr class="separator:aa3e5e0381a086ff8596c36c5e05a493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9fd7adec9b2e3ac411ff62cb04a4fe" id="r_add9fd7adec9b2e3ac411ff62cb04a4fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add9fd7adec9b2e3ac411ff62cb04a4fe">italic</a> () const</td></tr>
+<tr class="memdesc:add9fd7adec9b2e3ac411ff62cb04a4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体是否为斜体  <br /></td></tr>
+<tr class="separator:add9fd7adec9b2e3ac411ff62cb04a4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c047e6dc2501b19e120bb1184d94da" id="r_a82c047e6dc2501b19e120bb1184d94da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82c047e6dc2501b19e120bb1184d94da">setUnderline</a> (bool <a class="el" href="#aefe422384c6feebc7ebb08a475e51db9">underline</a>)</td></tr>
+<tr class="memdesc:a82c047e6dc2501b19e120bb1184d94da"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体是否具有下划线  <br /></td></tr>
+<tr class="separator:a82c047e6dc2501b19e120bb1184d94da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe422384c6feebc7ebb08a475e51db9" id="r_aefe422384c6feebc7ebb08a475e51db9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe422384c6feebc7ebb08a475e51db9">underline</a> () const</td></tr>
+<tr class="memdesc:aefe422384c6feebc7ebb08a475e51db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体是否具有下划线  <br /></td></tr>
+<tr class="separator:aefe422384c6feebc7ebb08a475e51db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ed65e5a7f47e0d699c797218a8e99b" id="r_ae3ed65e5a7f47e0d699c797218a8e99b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3ed65e5a7f47e0d699c797218a8e99b">setStrikeOut</a> (bool <a class="el" href="#a76592a0b8e0f6284aa9b700b73ea59db">strikeOut</a>)</td></tr>
+<tr class="memdesc:ae3ed65e5a7f47e0d699c797218a8e99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体是否具有删除线  <br /></td></tr>
+<tr class="separator:ae3ed65e5a7f47e0d699c797218a8e99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76592a0b8e0f6284aa9b700b73ea59db" id="r_a76592a0b8e0f6284aa9b700b73ea59db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76592a0b8e0f6284aa9b700b73ea59db">strikeOut</a> () const</td></tr>
+<tr class="memdesc:a76592a0b8e0f6284aa9b700b73ea59db"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体是否具有删除线  <br /></td></tr>
+<tr class="separator:a76592a0b8e0f6284aa9b700b73ea59db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce91e3284ca885157077fce6abb8520" id="r_a3ce91e3284ca885157077fce6abb8520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ce91e3284ca885157077fce6abb8520">setFontFamily</a> (const std::wstring &amp;<a class="el" href="#a3d419fb1b74e7499ff04b551c0414289">fontFamily</a>)</td></tr>
+<tr class="memdesc:a3ce91e3284ca885157077fce6abb8520"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体名称  <br /></td></tr>
+<tr class="separator:a3ce91e3284ca885157077fce6abb8520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d419fb1b74e7499ff04b551c0414289" id="r_a3d419fb1b74e7499ff04b551c0414289"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d419fb1b74e7499ff04b551c0414289">fontFamily</a> () const</td></tr>
+<tr class="memdesc:a3d419fb1b74e7499ff04b551c0414289"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取字体名称  <br /></td></tr>
+<tr class="separator:a3d419fb1b74e7499ff04b551c0414289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ae5cfe0c0e0b06d536d5814bd1ff4818f" id="r_ae5cfe0c0e0b06d536d5814bd1ff4818f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5cfe0c0e0b06d536d5814bd1ff4818f">Graphics</a></td></tr>
+<tr class="separator:ae5cfe0c0e0b06d536d5814bd1ff4818f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c2b68000218a89798f76ef00e8ca38" id="r_a69c2b68000218a89798f76ef00e8ca38"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69c2b68000218a89798f76ef00e8ca38">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="a00342.html">Font</a> &amp;font)</td></tr>
+<tr class="memdesc:a69c2b68000218a89798f76ef00e8ca38"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出流运算符重载  <br /></td></tr>
+<tr class="separator:a69c2b68000218a89798f76ef00e8ca38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>字体类 </p>
+<p>字体类用于管理字体相关的属性，包括字体名称、大小、粗细、斜体、下划线、删除线等。 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#_a21">Button.cpp</a> , 以及 <a class="el" href="a00429.html#_a20">MyWindow.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="afe1a7fc62b07fcc9a9dfde2269ba29a7" name="afe1a7fc62b07fcc9a9dfde2269ba29a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1a7fc62b07fcc9a9dfde2269ba29a7">&#9670;&#160;</a></span>Font() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Font::Font </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>fontFamily</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>size</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="a00198.html#ga8d54709bf77256c35e032ab9bcead9f6">literals::operator&quot;&quot;_em</a>(1ull)</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontFamily</td><td>字体名称 </td></tr>
+    <tr><td class="paramname">size</td><td>字体大小，默认16 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a14dddfacac79666c4339c82580df7a" name="a8a14dddfacac79666c4339c82580df7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a14dddfacac79666c4339c82580df7a">&#9670;&#160;</a></span>Font() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Font::Font </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00342.html">Font</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复制构造 </p>
+
+</div>
+</div>
+<a id="af8d359de9f868d1ed6b3bf9c38d288dd" name="af8d359de9f868d1ed6b3bf9c38d288dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d359de9f868d1ed6b3bf9c38d288dd">&#9670;&#160;</a></span>Font() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Font::Font </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00342.html">Font</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移动构造 </p>
+<dl class="section note"><dt>注解</dt><dd>对象被移动后原对象将失效, 它应该被弃置, 如果通过已被移动的对象访问其成员函数, 将引发空指针解引用(段错误) </dd></dl>
+
+</div>
+</div>
+<a id="a7173647fd1c25a40b0186d83eda0be27" name="a7173647fd1c25a40b0186d83eda0be27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7173647fd1c25a40b0186d83eda0be27">&#9670;&#160;</a></span>~Font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Font::~Font </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a47d189a1cf3f394868dd85c1373544f2" name="a47d189a1cf3f394868dd85c1373544f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d189a1cf3f394868dd85c1373544f2">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00342.html">Font</a> &amp; GFt::Font::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00342.html">Font</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复制赋值 </p>
+
+</div>
+</div>
+<a id="a1f48f715ff89d9fe191760417849f688" name="a1f48f715ff89d9fe191760417849f688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f48f715ff89d9fe191760417849f688">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00342.html">Font</a> &amp; GFt::Font::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00342.html">Font</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移动赋值 </p>
+<dl class="section note"><dt>注解</dt><dd>对象被移动后原对象将失效, 它应该被弃置, 如果通过已被移动的对象访问其成员函数, 将引发空指针解引用(段错误) </dd></dl>
+
+</div>
+</div>
+<a id="a04c06349b81d4309d266db1300105b70" name="a04c06349b81d4309d266db1300105b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c06349b81d4309d266db1300105b70">&#9670;&#160;</a></span>setSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Font::setSize </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体大小 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a32">Button.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a6e3ff3b4a17dea1f75abbd9bc2a70b" name="a7a6e3ff3b4a17dea1f75abbd9bc2a70b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6e3ff3b4a17dea1f75abbd9bc2a70b">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long GFt::Font::size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体大小 </p>
+
+</div>
+</div>
+<a id="a503764c5a0ecdd100d06d664f09d7a62" name="a503764c5a0ecdd100d06d664f09d7a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503764c5a0ecdd100d06d664f09d7a62">&#9670;&#160;</a></span>setWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Font::setWeight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a></td>          <td class="paramname"><span class="paramname"><em>weight</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体字重(粗细) </p>
+
+</div>
+</div>
+<a id="ab2c3b18db6a9ca88f60060deac8629d9" name="ab2c3b18db6a9ca88f60060deac8629d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c3b18db6a9ca88f60060deac8629d9">&#9670;&#160;</a></span>weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00185.html#gaf1ae0423f6298c625d9d2c68f5725175">FontWeight</a> GFt::Font::weight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体字重(粗细) </p>
+
+</div>
+</div>
+<a id="aa3e5e0381a086ff8596c36c5e05a493b" name="aa3e5e0381a086ff8596c36c5e05a493b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e5e0381a086ff8596c36c5e05a493b">&#9670;&#160;</a></span>setItalic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Font::setItalic </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>italic</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体是否为斜体 </p>
+
+</div>
+</div>
+<a id="add9fd7adec9b2e3ac411ff62cb04a4fe" name="add9fd7adec9b2e3ac411ff62cb04a4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9fd7adec9b2e3ac411ff62cb04a4fe">&#9670;&#160;</a></span>italic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GFt::Font::italic </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体是否为斜体 </p>
+
+</div>
+</div>
+<a id="a82c047e6dc2501b19e120bb1184d94da" name="a82c047e6dc2501b19e120bb1184d94da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c047e6dc2501b19e120bb1184d94da">&#9670;&#160;</a></span>setUnderline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Font::setUnderline </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>underline</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体是否具有下划线 </p>
+
+</div>
+</div>
+<a id="aefe422384c6feebc7ebb08a475e51db9" name="aefe422384c6feebc7ebb08a475e51db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe422384c6feebc7ebb08a475e51db9">&#9670;&#160;</a></span>underline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GFt::Font::underline </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体是否具有下划线 </p>
+
+</div>
+</div>
+<a id="ae3ed65e5a7f47e0d699c797218a8e99b" name="ae3ed65e5a7f47e0d699c797218a8e99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ed65e5a7f47e0d699c797218a8e99b">&#9670;&#160;</a></span>setStrikeOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Font::setStrikeOut </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>strikeOut</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体是否具有删除线 </p>
+
+</div>
+</div>
+<a id="a76592a0b8e0f6284aa9b700b73ea59db" name="a76592a0b8e0f6284aa9b700b73ea59db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76592a0b8e0f6284aa9b700b73ea59db">&#9670;&#160;</a></span>strikeOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GFt::Font::strikeOut </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体是否具有删除线 </p>
+
+</div>
+</div>
+<a id="a3ce91e3284ca885157077fce6abb8520" name="a3ce91e3284ca885157077fce6abb8520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce91e3284ca885157077fce6abb8520">&#9670;&#160;</a></span>setFontFamily()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Font::setFontFamily </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>fontFamily</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置字体名称 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a30">Button.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d419fb1b74e7499ff04b551c0414289" name="a3d419fb1b74e7499ff04b551c0414289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d419fb1b74e7499ff04b551c0414289">&#9670;&#160;</a></span>fontFamily()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring GFt::Font::fontFamily </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取字体名称 </p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="ae5cfe0c0e0b06d536d5814bd1ff4818f" name="ae5cfe0c0e0b06d536d5814bd1ff4818f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cfe0c0e0b06d536d5814bd1ff4818f">&#9670;&#160;</a></span>Graphics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="a00346.html">Graphics</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69c2b68000218a89798f76ef00e8ca38" name="a69c2b68000218a89798f76ef00e8ca38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c2b68000218a89798f76ef00e8ca38">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00342.html">Font</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>font</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输出流运算符重载 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00202.html">GFt</a></li><li class="navelem"><a class="el" href="a00342.html">Font</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Graphics类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00346.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="a00343.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Graphics类 参考<div class="ingroups"><a class="el" href="a00194.html">API接口库</a> &raquo; <a class="el" href="a00186.html">图形系统</a> &raquo; <a class="el" href="a00196.html">接口类型</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>绘图接口类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00074_source.html">Graphics.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a967687a626291fe9c1c4e792156adf06" id="r_a967687a626291fe9c1c4e792156adf06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a967687a626291fe9c1c4e792156adf06">Graphics</a> ()</td></tr>
+<tr class="memdesc:a967687a626291fe9c1c4e792156adf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数  <br /></td></tr>
+<tr class="separator:a967687a626291fe9c1c4e792156adf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34865428410f6ea9c69a3acde30212f" id="r_ab34865428410f6ea9c69a3acde30212f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab34865428410f6ea9c69a3acde30212f">Graphics</a> (<a class="el" href="a00346.html">Graphics</a> &amp;&amp;other)</td></tr>
+<tr class="separator:ab34865428410f6ea9c69a3acde30212f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8aaf30c98a61c73648215e3af1bdaa" id="r_aca8aaf30c98a61c73648215e3af1bdaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00346.html">Graphics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca8aaf30c98a61c73648215e3af1bdaa">operator=</a> (<a class="el" href="a00346.html">Graphics</a> &amp;&amp;other)</td></tr>
+<tr class="separator:aca8aaf30c98a61c73648215e3af1bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98307da74c80564d8899ec3548bbe8f2" id="r_a98307da74c80564d8899ec3548bbe8f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98307da74c80564d8899ec3548bbe8f2">~Graphics</a> ()</td></tr>
+<tr class="separator:a98307da74c80564d8899ec3548bbe8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25588c6f0d5a891b289ff01eea2ed2a2" id="r_a25588c6f0d5a891b289ff01eea2ed2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25588c6f0d5a891b289ff01eea2ed2a2">setTarget</a> (<a class="el" href="a00370.html">PixelMap</a> *target)</td></tr>
+<tr class="memdesc:a25588c6f0d5a891b289ff01eea2ed2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置绘图目标  <br /></td></tr>
+<tr class="separator:a25588c6f0d5a891b289ff01eea2ed2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d1acf932950d0e17172cc8420ad1df" id="r_aa8d1acf932950d0e17172cc8420ad1df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8d1acf932950d0e17172cc8420ad1df">setAntiAliasing</a> (bool enable)</td></tr>
+<tr class="memdesc:aa8d1acf932950d0e17172cc8420ad1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置抗锯齿  <br /></td></tr>
+<tr class="separator:aa8d1acf932950d0e17172cc8420ad1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b3109d83ad93ac260cf09476e70bb2" id="r_a37b3109d83ad93ac260cf09476e70bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37b3109d83ad93ac260cf09476e70bb2">setTransform</a> (const <a class="el" href="a00199.html#ga12f576dd59cedad77fc4d504b08f2bc7">fMat3x3</a> &amp;matrix)</td></tr>
+<tr class="memdesc:a37b3109d83ad93ac260cf09476e70bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">应用变换矩阵  <br /></td></tr>
+<tr class="separator:a37b3109d83ad93ac260cf09476e70bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b3439d85cf510e1993a4229dcec411" id="r_a93b3439d85cf510e1993a4229dcec411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00370.html">PixelMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93b3439d85cf510e1993a4229dcec411">getTarget</a> () const</td></tr>
+<tr class="memdesc:a93b3439d85cf510e1993a4229dcec411"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取绘图目标  <br /></td></tr>
+<tr class="separator:a93b3439d85cf510e1993a4229dcec411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481deabc3d413a54ac09cd27ebaced0b" id="r_a481deabc3d413a54ac09cd27ebaced0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00199.html#ga12f576dd59cedad77fc4d504b08f2bc7">fMat3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a481deabc3d413a54ac09cd27ebaced0b">getTransform</a> () const</td></tr>
+<tr class="memdesc:a481deabc3d413a54ac09cd27ebaced0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前应用的变换矩阵  <br /></td></tr>
+<tr class="separator:a481deabc3d413a54ac09cd27ebaced0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3b5f342a92e1407e2367a60538fc23" id="r_acb3b5f342a92e1407e2367a60538fc23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb3b5f342a92e1407e2367a60538fc23">clear</a> ()</td></tr>
+<tr class="memdesc:acb3b5f342a92e1407e2367a60538fc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用背景色重绘绘图目标  <br /></td></tr>
+<tr class="separator:acb3b5f342a92e1407e2367a60538fc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945a73a1d7a5afd2436d0f5fe4ba752f" id="r_a945a73a1d7a5afd2436d0f5fe4ba752f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a945a73a1d7a5afd2436d0f5fe4ba752f">setBackgroundColor</a> (const <a class="el" href="a00242.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a945a73a1d7a5afd2436d0f5fe4ba752f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认背景色  <br /></td></tr>
+<tr class="separator:a945a73a1d7a5afd2436d0f5fe4ba752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0980a2707b2a4a7705fd32f7a1e0bf34" id="r_a0980a2707b2a4a7705fd32f7a1e0bf34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0980a2707b2a4a7705fd32f7a1e0bf34">bindPenSet</a> (<a class="el" href="a00366.html">PenSet</a> *penSet)</td></tr>
+<tr class="memdesc:a0980a2707b2a4a7705fd32f7a1e0bf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定画笔设置  <br /></td></tr>
+<tr class="separator:a0980a2707b2a4a7705fd32f7a1e0bf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344203648d20255f4746b772d9d52c1e" id="r_a344203648d20255f4746b772d9d52c1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a344203648d20255f4746b772d9d52c1e">bindBrushSet</a> (<a class="el" href="a00234.html">BrushSet</a> *brushSet)</td></tr>
+<tr class="memdesc:a344203648d20255f4746b772d9d52c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定画刷设置  <br /></td></tr>
+<tr class="separator:a344203648d20255f4746b772d9d52c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0217e17ed56fc64388655c582943c56f" id="r_a0217e17ed56fc64388655c582943c56f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0217e17ed56fc64388655c582943c56f">bindTextSet</a> (<a class="el" href="a00402.html">TextSet</a> *textSet)</td></tr>
+<tr class="memdesc:a0217e17ed56fc64388655c582943c56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定文本设置  <br /></td></tr>
+<tr class="separator:a0217e17ed56fc64388655c582943c56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85cdf0950fcc47f6fab6a9823ffe5b0c" id="r_a85cdf0950fcc47f6fab6a9823ffe5b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85cdf0950fcc47f6fab6a9823ffe5b0c">drawLine</a> (const <a class="el" href="a00199.html#gad96dc0fffa699b9daccd58f4c45a5ecf">fLine</a> &amp;line)</td></tr>
+<tr class="memdesc:a85cdf0950fcc47f6fab6a9823ffe5b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制线段  <br /></td></tr>
+<tr class="separator:a85cdf0950fcc47f6fab6a9823ffe5b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebde0e473056e8bbc269687f19bdb541" id="r_aebde0e473056e8bbc269687f19bdb541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebde0e473056e8bbc269687f19bdb541">drawRect</a> (const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:aebde0e473056e8bbc269687f19bdb541"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制矩形  <br /></td></tr>
+<tr class="separator:aebde0e473056e8bbc269687f19bdb541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58fab126137a76e4a34d2980735fd4f" id="r_ae58fab126137a76e4a34d2980735fd4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae58fab126137a76e4a34d2980735fd4f">drawRoundRect</a> (const <a class="el" href="a00199.html#gabebf5d7792426cfe0b778948c43a56d0">fRoundRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:ae58fab126137a76e4a34d2980735fd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制圆角矩形  <br /></td></tr>
+<tr class="separator:ae58fab126137a76e4a34d2980735fd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15c505d5ee02503e8e601871010bf73" id="r_ac15c505d5ee02503e8e601871010bf73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac15c505d5ee02503e8e601871010bf73">drawArc</a> (const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, float startAngle, float sweepAngle)</td></tr>
+<tr class="memdesc:ac15c505d5ee02503e8e601871010bf73"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制椭圆弧  <br /></td></tr>
+<tr class="separator:ac15c505d5ee02503e8e601871010bf73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3df6f14cedc97233b8a002f350e7d7" id="r_a5d3df6f14cedc97233b8a002f350e7d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d3df6f14cedc97233b8a002f350e7d7">drawEllipse</a> (const <a class="el" href="a00199.html#ga1f900a7b860b52a23bd76ba8167f79ae">fEllipse</a> &amp;ellipse)</td></tr>
+<tr class="memdesc:a5d3df6f14cedc97233b8a002f350e7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制椭圆  <br /></td></tr>
+<tr class="separator:a5d3df6f14cedc97233b8a002f350e7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf35abce066f6eb8d1c8e6ff7b4470f" id="r_aabf35abce066f6eb8d1c8e6ff7b4470f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabf35abce066f6eb8d1c8e6ff7b4470f">drawPie</a> (const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, float startAngle, float sweepAngle)</td></tr>
+<tr class="memdesc:aabf35abce066f6eb8d1c8e6ff7b4470f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制扇形线框  <br /></td></tr>
+<tr class="separator:aabf35abce066f6eb8d1c8e6ff7b4470f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed9550da8bd6b6b9175ea7c8cd0d63f" id="r_a6ed9550da8bd6b6b9175ea7c8cd0d63f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ed9550da8bd6b6b9175ea7c8cd0d63f">drawPolygon</a> (const <a class="el" href="a00199.html#ga72b19162d87ade8c10b6ba84c55f32a7">fPolygon</a> &amp;polygon)</td></tr>
+<tr class="memdesc:a6ed9550da8bd6b6b9175ea7c8cd0d63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制多边形  <br /></td></tr>
+<tr class="separator:a6ed9550da8bd6b6b9175ea7c8cd0d63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1b8b5461ee211d8502c366a03e5ede" id="r_a1d1b8b5461ee211d8502c366a03e5ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d1b8b5461ee211d8502c366a03e5ede">drawBezier</a> (const <a class="el" href="a00199.html#gaefaa239de1f885ac8fa94ee3653a036c">fBezier</a> &amp;curve)</td></tr>
+<tr class="memdesc:a1d1b8b5461ee211d8502c366a03e5ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制贝塞尔曲线  <br /></td></tr>
+<tr class="separator:a1d1b8b5461ee211d8502c366a03e5ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec372d48240de5f8cf848bafb722f1e" id="r_aeec372d48240de5f8cf848bafb722f1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec372d48240de5f8cf848bafb722f1e">drawFitCurve</a> (const <a class="el" href="a00199.html#gaca0f68171cd4ae67e13330970e411a57">fFitCurve</a> &amp;curve)</td></tr>
+<tr class="memdesc:aeec372d48240de5f8cf848bafb722f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制拟合曲线  <br /></td></tr>
+<tr class="separator:aeec372d48240de5f8cf848bafb722f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea20c39afa86e3a86f554fd4f1a9d28" id="r_a9ea20c39afa86e3a86f554fd4f1a9d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ea20c39afa86e3a86f554fd4f1a9d28">drawPath</a> (const <a class="el" href="a00362.html">Path</a> &amp;path, const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;pos=<a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a>())</td></tr>
+<tr class="memdesc:a9ea20c39afa86e3a86f554fd4f1a9d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制路径  <br /></td></tr>
+<tr class="separator:a9ea20c39afa86e3a86f554fd4f1a9d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c87a3fd384e8717075bd7044042032f" id="r_a6c87a3fd384e8717075bd7044042032f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c87a3fd384e8717075bd7044042032f">drawFillRect</a> (const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a6c87a3fd384e8717075bd7044042032f"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充矩形  <br /></td></tr>
+<tr class="separator:a6c87a3fd384e8717075bd7044042032f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d3e211cbf832f4145c281d5cdb64f7" id="r_a71d3e211cbf832f4145c281d5cdb64f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71d3e211cbf832f4145c281d5cdb64f7">drawFillRoundRect</a> (const <a class="el" href="a00199.html#gabebf5d7792426cfe0b778948c43a56d0">fRoundRect</a> &amp;rect)</td></tr>
+<tr class="memdesc:a71d3e211cbf832f4145c281d5cdb64f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充圆角矩形  <br /></td></tr>
+<tr class="separator:a71d3e211cbf832f4145c281d5cdb64f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275edbcbdf76e07d679944c71ff44021" id="r_a275edbcbdf76e07d679944c71ff44021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a275edbcbdf76e07d679944c71ff44021">drawFillPie</a> (const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, float startAngle, float sweepAngle)</td></tr>
+<tr class="memdesc:a275edbcbdf76e07d679944c71ff44021"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充扇形  <br /></td></tr>
+<tr class="separator:a275edbcbdf76e07d679944c71ff44021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06eac5e1fe3d304986c48ff99837f242" id="r_a06eac5e1fe3d304986c48ff99837f242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06eac5e1fe3d304986c48ff99837f242">drawFillPolygon</a> (const <a class="el" href="a00199.html#ga72b19162d87ade8c10b6ba84c55f32a7">fPolygon</a> &amp;polygon)</td></tr>
+<tr class="memdesc:a06eac5e1fe3d304986c48ff99837f242"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充多边形  <br /></td></tr>
+<tr class="separator:a06eac5e1fe3d304986c48ff99837f242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfedb923d903fed1524f06197a609095" id="r_adfedb923d903fed1524f06197a609095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfedb923d903fed1524f06197a609095">drawFillEllipse</a> (const <a class="el" href="a00199.html#ga1f900a7b860b52a23bd76ba8167f79ae">fEllipse</a> &amp;rect)</td></tr>
+<tr class="memdesc:adfedb923d903fed1524f06197a609095"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充椭圆  <br /></td></tr>
+<tr class="separator:adfedb923d903fed1524f06197a609095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9c86180b7a6c46645a620cf7ecc2a8" id="r_adc9c86180b7a6c46645a620cf7ecc2a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc9c86180b7a6c46645a620cf7ecc2a8">drawFillFitCurve</a> (const <a class="el" href="a00199.html#gaca0f68171cd4ae67e13330970e411a57">fFitCurve</a> &amp;curve)</td></tr>
+<tr class="memdesc:adc9c86180b7a6c46645a620cf7ecc2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充闭合拟合曲线  <br /></td></tr>
+<tr class="separator:adc9c86180b7a6c46645a620cf7ecc2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae587dc06c0d9d9702cacd787f1e3ff60" id="r_ae587dc06c0d9d9702cacd787f1e3ff60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae587dc06c0d9d9702cacd787f1e3ff60">drawFillPath</a> (const <a class="el" href="a00362.html">Path</a> &amp;path, const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;pos=<a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a>())</td></tr>
+<tr class="memdesc:ae587dc06c0d9d9702cacd787f1e3ff60"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充闭合路径  <br /></td></tr>
+<tr class="separator:ae587dc06c0d9d9702cacd787f1e3ff60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ee7e32471cedd075e425c998b4d55e" id="r_a86ee7e32471cedd075e425c998b4d55e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86ee7e32471cedd075e425c998b4d55e">drawImage</a> (const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;pos, const <a class="el" href="a00370.html">PixelMap</a> &amp;pixelMap)</td></tr>
+<tr class="memdesc:a86ee7e32471cedd075e425c998b4d55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制位图  <br /></td></tr>
+<tr class="separator:a86ee7e32471cedd075e425c998b4d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade59fc8b129e858616806c2818f50151" id="r_ade59fc8b129e858616806c2818f50151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade59fc8b129e858616806c2818f50151">drawImage</a> (const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;dest, const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;src, const <a class="el" href="a00370.html">PixelMap</a> &amp;pixelMap)</td></tr>
+<tr class="memdesc:ade59fc8b129e858616806c2818f50151"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制位图  <br /></td></tr>
+<tr class="separator:ade59fc8b129e858616806c2818f50151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3244b269007f751338b7ab9d3a93216a" id="r_a3244b269007f751338b7ab9d3a93216a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3244b269007f751338b7ab9d3a93216a">drawText</a> (const std::wstring &amp;text, const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)</td></tr>
+<tr class="memdesc:a3244b269007f751338b7ab9d3a93216a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置绘制文本  <br /></td></tr>
+<tr class="separator:a3244b269007f751338b7ab9d3a93216a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49d68f5c6d1f603a9601c419a0e6b7a" id="r_ac49d68f5c6d1f603a9601c419a0e6b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac49d68f5c6d1f603a9601c419a0e6b7a">drawText</a> (const std::wstring &amp;text, const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, int flags=<a class="el" href="a00190.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b">TextAlign::Left</a>|<a class="el" href="a00190.html#gga1379e5434ac9b81a8d3790efb3e642e7a7369426c00c51703ca9ded64bf0a791e">TextAlign::Top</a>)</td></tr>
+<tr class="memdesc:ac49d68f5c6d1f603a9601c419a0e6b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定矩形区域内绘制文本  <br /></td></tr>
+<tr class="separator:ac49d68f5c6d1f603a9601c419a0e6b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>绘图接口类 </p>
+<p>该类提供了绘图相关的接口，包括绘制线段、矩形、圆形、椭圆、圆弧、多边形、贝塞尔曲线、拟合曲线、路径、图像、文本等 </p>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#_a9">Button.cpp</a> , 以及 <a class="el" href="a00429.html#_a5">MyWindow.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a967687a626291fe9c1c4e792156adf06" name="a967687a626291fe9c1c4e792156adf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967687a626291fe9c1c4e792156adf06">&#9670;&#160;</a></span>Graphics() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Graphics::Graphics </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a id="ab34865428410f6ea9c69a3acde30212f" name="ab34865428410f6ea9c69a3acde30212f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34865428410f6ea9c69a3acde30212f">&#9670;&#160;</a></span>Graphics() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Graphics::Graphics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00346.html">Graphics</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98307da74c80564d8899ec3548bbe8f2" name="a98307da74c80564d8899ec3548bbe8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98307da74c80564d8899ec3548bbe8f2">&#9670;&#160;</a></span>~Graphics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Graphics::~Graphics </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aca8aaf30c98a61c73648215e3af1bdaa" name="aca8aaf30c98a61c73648215e3af1bdaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8aaf30c98a61c73648215e3af1bdaa">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00346.html">Graphics</a> &amp; GFt::Graphics::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00346.html">Graphics</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25588c6f0d5a891b289ff01eea2ed2a2" name="a25588c6f0d5a891b289ff01eea2ed2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25588c6f0d5a891b289ff01eea2ed2a2">&#9670;&#160;</a></span>setTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::setTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00370.html">PixelMap</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置绘图目标 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>绘图目标，如果为nullptr，则绘图目标为屏幕</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>若设置目标不为 nullptr, 则应保证后续调用此类的其它成员函数时, 目标对象未被析构 </dd>
+<dd>
+否则会引发段错误(指针越界访问) </dd></dl>
+
+</div>
+</div>
+<a id="aa8d1acf932950d0e17172cc8420ad1df" name="aa8d1acf932950d0e17172cc8420ad1df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d1acf932950d0e17172cc8420ad1df">&#9670;&#160;</a></span>setAntiAliasing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::setAntiAliasing </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置抗锯齿 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>是否启用抗锯齿 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37b3109d83ad93ac260cf09476e70bb2" name="a37b3109d83ad93ac260cf09476e70bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b3109d83ad93ac260cf09476e70bb2">&#9670;&#160;</a></span>setTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::setTransform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga12f576dd59cedad77fc4d504b08f2bc7">fMat3x3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>matrix</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>应用变换矩阵 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>变换矩阵</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>对于传入的矩阵, 默认其已经过齐次变换, 即矩阵的最后一列为 (0, 0, 1) </p>
+
+</div>
+</div>
+<a id="a93b3439d85cf510e1993a4229dcec411" name="a93b3439d85cf510e1993a4229dcec411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b3439d85cf510e1993a4229dcec411">&#9670;&#160;</a></span>getTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00370.html">PixelMap</a> * GFt::Graphics::getTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取绘图目标 </p>
+<dl class="section return"><dt>返回</dt><dd>绘图目标 </dd></dl>
+
+</div>
+</div>
+<a id="a481deabc3d413a54ac09cd27ebaced0b" name="a481deabc3d413a54ac09cd27ebaced0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481deabc3d413a54ac09cd27ebaced0b">&#9670;&#160;</a></span>getTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00199.html#ga12f576dd59cedad77fc4d504b08f2bc7">fMat3x3</a> GFt::Graphics::getTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前应用的变换矩阵 </p>
+<dl class="section return"><dt>返回</dt><dd>变换矩阵 </dd></dl>
+
+</div>
+</div>
+<a id="acb3b5f342a92e1407e2367a60538fc23" name="acb3b5f342a92e1407e2367a60538fc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3b5f342a92e1407e2367a60538fc23">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用背景色重绘绘图目标 </p>
+
+</div>
+</div>
+<a id="a945a73a1d7a5afd2436d0f5fe4ba752f" name="a945a73a1d7a5afd2436d0f5fe4ba752f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945a73a1d7a5afd2436d0f5fe4ba752f">&#9670;&#160;</a></span>setBackgroundColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::setBackgroundColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00242.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置默认背景色 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>背景色 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0980a2707b2a4a7705fd32f7a1e0bf34" name="a0980a2707b2a4a7705fd32f7a1e0bf34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0980a2707b2a4a7705fd32f7a1e0bf34">&#9670;&#160;</a></span>bindPenSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::bindPenSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00366.html">PenSet</a> *</td>          <td class="paramname"><span class="paramname"><em>penSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绑定画笔设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">penSet</td><td>画笔设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a344203648d20255f4746b772d9d52c1e" name="a344203648d20255f4746b772d9d52c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344203648d20255f4746b772d9d52c1e">&#9670;&#160;</a></span>bindBrushSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::bindBrushSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00234.html">BrushSet</a> *</td>          <td class="paramname"><span class="paramname"><em>brushSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绑定画刷设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brushSet</td><td>画刷设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a10">Button.cpp</a> , 以及 <a class="el" href="a00429.html#a9">MyWindow.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a0217e17ed56fc64388655c582943c56f" name="a0217e17ed56fc64388655c582943c56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0217e17ed56fc64388655c582943c56f">&#9670;&#160;</a></span>bindTextSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::bindTextSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00402.html">TextSet</a> *</td>          <td class="paramname"><span class="paramname"><em>textSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绑定文本设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textSet</td><td>文本设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a11">Button.cpp</a> , 以及 <a class="el" href="a00429.html#a22">MyWindow.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a85cdf0950fcc47f6fab6a9823ffe5b0c" name="a85cdf0950fcc47f6fab6a9823ffe5b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85cdf0950fcc47f6fab6a9823ffe5b0c">&#9670;&#160;</a></span>drawLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gad96dc0fffa699b9daccd58f4c45a5ecf">fLine</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制线段 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>线段 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebde0e473056e8bbc269687f19bdb541" name="aebde0e473056e8bbc269687f19bdb541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebde0e473056e8bbc269687f19bdb541">&#9670;&#160;</a></span>drawRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>矩形 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae58fab126137a76e4a34d2980735fd4f" name="ae58fab126137a76e4a34d2980735fd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58fab126137a76e4a34d2980735fd4f">&#9670;&#160;</a></span>drawRoundRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawRoundRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gabebf5d7792426cfe0b778948c43a56d0">fRoundRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制圆角矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>圆角矩形 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac15c505d5ee02503e8e601871010bf73" name="ac15c505d5ee02503e8e601871010bf73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac15c505d5ee02503e8e601871010bf73">&#9670;&#160;</a></span>drawArc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawArc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>startAngle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sweepAngle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制椭圆弧 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>椭圆弧所在椭圆的外接矩形 </td></tr>
+    <tr><td class="paramname">startAngle</td><td>起始角度 </td></tr>
+    <tr><td class="paramname">sweepAngle</td><td>扫过角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d3df6f14cedc97233b8a002f350e7d7" name="a5d3df6f14cedc97233b8a002f350e7d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3df6f14cedc97233b8a002f350e7d7">&#9670;&#160;</a></span>drawEllipse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawEllipse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga1f900a7b860b52a23bd76ba8167f79ae">fEllipse</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ellipse</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制椭圆 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabf35abce066f6eb8d1c8e6ff7b4470f" name="aabf35abce066f6eb8d1c8e6ff7b4470f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf35abce066f6eb8d1c8e6ff7b4470f">&#9670;&#160;</a></span>drawPie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawPie </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>startAngle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sweepAngle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制扇形线框 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>扇形所在椭圆的外接矩形 </td></tr>
+    <tr><td class="paramname">startAngle</td><td>起始角度 </td></tr>
+    <tr><td class="paramname">sweepAngle</td><td>扫过角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ed9550da8bd6b6b9175ea7c8cd0d63f" name="a6ed9550da8bd6b6b9175ea7c8cd0d63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed9550da8bd6b6b9175ea7c8cd0d63f">&#9670;&#160;</a></span>drawPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawPolygon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga72b19162d87ade8c10b6ba84c55f32a7">fPolygon</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>polygon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制多边形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>多边形 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d1b8b5461ee211d8502c366a03e5ede" name="a1d1b8b5461ee211d8502c366a03e5ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1b8b5461ee211d8502c366a03e5ede">&#9670;&#160;</a></span>drawBezier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawBezier </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gaefaa239de1f885ac8fa94ee3653a036c">fBezier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curve</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制贝塞尔曲线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve</td><td>贝塞尔曲线 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeec372d48240de5f8cf848bafb722f1e" name="aeec372d48240de5f8cf848bafb722f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec372d48240de5f8cf848bafb722f1e">&#9670;&#160;</a></span>drawFitCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFitCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gaca0f68171cd4ae67e13330970e411a57">fFitCurve</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curve</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制拟合曲线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve</td><td>拟合曲线 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ea20c39afa86e3a86f554fd4f1a9d28" name="a9ea20c39afa86e3a86f554fd4f1a9d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea20c39afa86e3a86f554fd4f1a9d28">&#9670;&#160;</a></span>drawPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00362.html">Path</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a>()</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c87a3fd384e8717075bd7044042032f" name="a6c87a3fd384e8717075bd7044042032f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c87a3fd384e8717075bd7044042032f">&#9670;&#160;</a></span>drawFillRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>矩形 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a12">Button.cpp</a> , 以及 <a class="el" href="a00429.html#a10">MyWindow.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a71d3e211cbf832f4145c281d5cdb64f7" name="a71d3e211cbf832f4145c281d5cdb64f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d3e211cbf832f4145c281d5cdb64f7">&#9670;&#160;</a></span>drawFillRoundRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillRoundRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gabebf5d7792426cfe0b778948c43a56d0">fRoundRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充圆角矩形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>圆角矩形 <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a275edbcbdf76e07d679944c71ff44021" name="a275edbcbdf76e07d679944c71ff44021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275edbcbdf76e07d679944c71ff44021">&#9670;&#160;</a></span>drawFillPie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillPie </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>startAngle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sweepAngle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充扇形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>扇形所在椭圆的外接矩形 </td></tr>
+    <tr><td class="paramname">startAngle</td><td>起始角度 </td></tr>
+    <tr><td class="paramname">sweepAngle</td><td>扫过角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06eac5e1fe3d304986c48ff99837f242" name="a06eac5e1fe3d304986c48ff99837f242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06eac5e1fe3d304986c48ff99837f242">&#9670;&#160;</a></span>drawFillPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillPolygon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga72b19162d87ade8c10b6ba84c55f32a7">fPolygon</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>polygon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充多边形 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>多边形顶点坐标列表</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>如果传入的多边形不是闭合的, 则此函数无效果 </p>
+
+</div>
+</div>
+<a id="adfedb923d903fed1524f06197a609095" name="adfedb923d903fed1524f06197a609095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfedb923d903fed1524f06197a609095">&#9670;&#160;</a></span>drawFillEllipse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillEllipse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga1f900a7b860b52a23bd76ba8167f79ae">fEllipse</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充椭圆 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>椭圆 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc9c86180b7a6c46645a620cf7ecc2a8" name="adc9c86180b7a6c46645a620cf7ecc2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9c86180b7a6c46645a620cf7ecc2a8">&#9670;&#160;</a></span>drawFillFitCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillFitCurve </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gaca0f68171cd4ae67e13330970e411a57">fFitCurve</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curve</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充闭合拟合曲线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curve</td><td>拟合曲线</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>如果传入的曲线不是闭合的, 则此函数无效果 </p>
+
+</div>
+</div>
+<a id="ae587dc06c0d9d9702cacd787f1e3ff60" name="ae587dc06c0d9d9702cacd787f1e3ff60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae587dc06c0d9d9702cacd787f1e3ff60">&#9670;&#160;</a></span>drawFillPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawFillPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00362.html">Path</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a>()</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>填充闭合路径 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86ee7e32471cedd075e425c998b4d55e" name="a86ee7e32471cedd075e425c998b4d55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ee7e32471cedd075e425c998b4d55e">&#9670;&#160;</a></span>drawImage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00370.html">PixelMap</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pixelMap</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制位图 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>要绘制的位置 </td></tr>
+    <tr><td class="paramname">pixelMap</td><td>要绘制的位图 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade59fc8b129e858616806c2818f50151" name="ade59fc8b129e858616806c2818f50151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade59fc8b129e858616806c2818f50151">&#9670;&#160;</a></span>drawImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00370.html">PixelMap</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pixelMap</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绘制位图 </p>
+<p>若源区域与目标区域的大小不一致，则会执行拉伸操作 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>要绘制的目标区域 </td></tr>
+    <tr><td class="paramname">src</td><td>要绘制的区域 </td></tr>
+    <tr><td class="paramname">pixelMap</td><td>要绘制的位图 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3244b269007f751338b7ab9d3a93216a" name="a3244b269007f751338b7ab9d3a93216a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3244b269007f751338b7ab9d3a93216a">&#9670;&#160;</a></span>drawText() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GFt::Graphics::drawText </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::wstring &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>fonts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>show</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定位置绘制文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>要绘制的文本 </td></tr>
+    <tr><td class="paramname">pos</td><td>要绘制的位置 </td></tr>
+    <tr><td class="paramname">font</td><td>指定的字体集合 </td></tr>
+    <tr><td class="paramname">show</td><td>是否显示文本, 若为false则只计算文本的宽度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>实际绘制出的字符的像素宽度 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>若未指定字体集合则使用环境当前绑定的字体 若指定了字体集合，则会按照字体列表的顺序依次查找， 直到找到一个能显示的字体(即字体回滚机制)，此操作将忽略环境当前绑定的字体 </dd></dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="a00428.html#a13">Button.cpp</a> , 以及 <a class="el" href="a00429.html#a24">MyWindow.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac49d68f5c6d1f603a9601c419a0e6b7a" name="ac49d68f5c6d1f603a9601c419a0e6b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49d68f5c6d1f603a9601c419a0e6b7a">&#9670;&#160;</a></span>drawText() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Graphics::drawText </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00199.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>flags</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="a00190.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b">TextAlign::Left</a>&#160;|&#160;<a class="el" href="a00190.html#gga1379e5434ac9b81a8d3790efb3e642e7a7369426c00c51703ca9ded64bf0a791e">TextAlign::Top</a></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在指定矩形区域内绘制文本 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>要绘制的文本 </td></tr>
+    <tr><td class="paramname">rect</td><td>要绘制的矩形区域 </td></tr>
+    <tr><td class="paramname">flags</td><td>文本对齐方式</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>若传入了无效的 flags, 则此函数将会忽略它们, 并使用默认的对齐方式(左上对齐) </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00202.html">GFt</a></li><li class="navelem"><a class="el" href="a00346.html">Graphics</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

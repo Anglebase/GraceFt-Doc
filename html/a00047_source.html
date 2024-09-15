@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/BrushSet.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00047_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">BrushSet.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Color.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Texture.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Point.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Rect.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00202.html">GFt</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="a00179.html#gab5a34da70648f89842d9eea850b9fedf">   16</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="a00179.html#gab5a34da70648f89842d9eea850b9fedf">FillStyle</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_enumvalue" href="a00179.html#ggab5a34da70648f89842d9eea850b9fedface2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</a>,      </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_enumvalue" href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfae41480b6bbfbf7407974a88d3d34f4fa">Solid</a>,      </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_enumvalue" href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfa4803e6b9e63dabf04de980788d6a13c4">Line</a>,       </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
+</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00179.html#gaead79709b6eced8a1f3c38677ddc8224">   23</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="a00179.html#gaead79709b6eced8a1f3c38677ddc8224">BrushStyle</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_enumvalue" href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a7a1920d61156abc05a60135aefe8bc67">Default</a>,         </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224aa3e8ae43188ae76d38f414b2bdb0077b">Texture</a>,         </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_enumvalue" href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a2a7a5ee931feedab83c9c05a3a707a71">LinearGradient</a>,  </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a20d7facaebd18492399cb928a3f10a0e">RadialGradient</a>,  </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a9eee2e7decb778788849fbb5b310f0b3">PolygonGradient</a>, </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    };</div>
+</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a00234.html">   34</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00234.html">BrushSet</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a00234.html#ae5cfe0c0e0b06d536d5814bd1ff4818f">   35</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="a00346.html">Graphics</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">void</span>* brush_;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> release();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_function" href="a00234.html#addb548cc503b34754db6d9bb1f57e4bf">BrushSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; color);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_function" href="a00234.html#addb548cc503b34754db6d9bb1f57e4bf">BrushSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00234.html">BrushSet</a>&amp; other);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="a00234.html#addb548cc503b34754db6d9bb1f57e4bf">BrushSet</a>(<a class="code hl_class" href="a00234.html">BrushSet</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_class" href="a00234.html">BrushSet</a>&amp; <a class="code hl_function" href="a00234.html#ab16ad44aa671dcfcbb41c6d9d47991eb">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00234.html">BrushSet</a>&amp; other);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_class" href="a00234.html">BrushSet</a>&amp; <a class="code hl_function" href="a00234.html#ab16ad44aa671dcfcbb41c6d9d47991eb">operator=</a>(<a class="code hl_class" href="a00234.html">BrushSet</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_function" href="a00234.html#ab4800e02b96e582f8686fe47aeaac6ad">~BrushSet</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00234.html#a2c84bb691c4ba6f952eeb70939ef7c87">setFillStyle</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; color, <a class="code hl_enumeration" href="a00179.html#gab5a34da70648f89842d9eea850b9fedf">FillStyle</a> style = <a class="code hl_enumvalue" href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfae41480b6bbfbf7407974a88d3d34f4fa">FillStyle::Solid</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00234.html#a8b1552e222376bf942b66ae3931512e8">setTexture</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00406.html">Texture</a>&amp; texture, <span class="keyword">const</span> <a class="code hl_class" href="a00382.html">fRect</a>&amp; rect);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00234.html#a30fecb3c59a0f1ff02043b68f0d0cdde">setLinearGradient</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00374.html">fPoint</a>&amp; start, <span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; startColor, <span class="keyword">const</span> <a class="code hl_class" href="a00374.html">fPoint</a>&amp; end, <span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; endColor);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00234.html#a5020ab6ed63c6bf9a68a9a8fb2804642">setRadialGradient</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00374.html">fPoint</a>&amp; center, <span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; centerColor, <span class="keyword">const</span> <a class="code hl_class" href="a00382.html">fRect</a>&amp; rect, <span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; outerColor);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00234.html#ae161baa39ed765c8a0ba7086605938c7">setPolygonGradient</a>(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keyword">const</span> <a class="code hl_class" href="a00374.html">fPoint</a>&amp; center, <span class="keyword">const</span> <a class="code hl_class" href="a00242.html">Color</a>&amp; centerColor,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keyword">const</span> std::vector&lt;fPoint&gt;&amp; points, <span class="keyword">const</span> std::vector&lt;Color&gt;&amp; colors</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        );</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_enumeration" href="a00179.html#gaead79709b6eced8a1f3c38677ddc8224">BrushStyle</a> <a class="code hl_function" href="a00234.html#a66fd131f599f5da6bdbb83e2b0a0049b">getBrushStyle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    };</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="ttc" id="aa00179_html_gab5a34da70648f89842d9eea850b9fedf"><div class="ttname"><a href="a00179.html#gab5a34da70648f89842d9eea850b9fedf">GFt::FillStyle</a></div><div class="ttdeci">FillStyle</div><div class="ttdoc">填充样式</div><div class="ttdef"><b>定义</b> BrushSet.h:16</div></div>
+<div class="ttc" id="aa00179_html_gaead79709b6eced8a1f3c38677ddc8224"><div class="ttname"><a href="a00179.html#gaead79709b6eced8a1f3c38677ddc8224">GFt::BrushStyle</a></div><div class="ttdeci">BrushStyle</div><div class="ttdoc">画刷模式</div><div class="ttdef"><b>定义</b> BrushSet.h:23</div></div>
+<div class="ttc" id="aa00179_html_ggab5a34da70648f89842d9eea850b9fedfa4803e6b9e63dabf04de980788d6a13c4"><div class="ttname"><a href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfa4803e6b9e63dabf04de980788d6a13c4">GFt::FillStyle::Line</a></div><div class="ttdeci">@ Line</div><div class="ttdoc">横线填充</div></div>
+<div class="ttc" id="aa00179_html_ggab5a34da70648f89842d9eea850b9fedface2c8aed9c2fa0cfbed56cbda4d8bf07"><div class="ttname"><a href="a00179.html#ggab5a34da70648f89842d9eea850b9fedface2c8aed9c2fa0cfbed56cbda4d8bf07">GFt::FillStyle::Empty</a></div><div class="ttdeci">@ Empty</div><div class="ttdoc">无填充</div></div>
+<div class="ttc" id="aa00179_html_ggab5a34da70648f89842d9eea850b9fedfae41480b6bbfbf7407974a88d3d34f4fa"><div class="ttname"><a href="a00179.html#ggab5a34da70648f89842d9eea850b9fedfae41480b6bbfbf7407974a88d3d34f4fa">GFt::FillStyle::Solid</a></div><div class="ttdeci">@ Solid</div><div class="ttdoc">纯色填充</div></div>
+<div class="ttc" id="aa00179_html_ggaead79709b6eced8a1f3c38677ddc8224a20d7facaebd18492399cb928a3f10a0e"><div class="ttname"><a href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a20d7facaebd18492399cb928a3f10a0e">GFt::BrushStyle::RadialGradient</a></div><div class="ttdeci">@ RadialGradient</div><div class="ttdoc">椭圆径向渐变画刷模式</div></div>
+<div class="ttc" id="aa00179_html_ggaead79709b6eced8a1f3c38677ddc8224a2a7a5ee931feedab83c9c05a3a707a71"><div class="ttname"><a href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a2a7a5ee931feedab83c9c05a3a707a71">GFt::BrushStyle::LinearGradient</a></div><div class="ttdeci">@ LinearGradient</div><div class="ttdoc">线性渐变画刷模式</div></div>
+<div class="ttc" id="aa00179_html_ggaead79709b6eced8a1f3c38677ddc8224a7a1920d61156abc05a60135aefe8bc67"><div class="ttname"><a href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a7a1920d61156abc05a60135aefe8bc67">GFt::BrushStyle::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">默认画刷模式</div></div>
+<div class="ttc" id="aa00179_html_ggaead79709b6eced8a1f3c38677ddc8224a9eee2e7decb778788849fbb5b310f0b3"><div class="ttname"><a href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224a9eee2e7decb778788849fbb5b310f0b3">GFt::BrushStyle::PolygonGradient</a></div><div class="ttdeci">@ PolygonGradient</div><div class="ttdoc">多边形径向渐变画刷模式</div></div>
+<div class="ttc" id="aa00179_html_ggaead79709b6eced8a1f3c38677ddc8224aa3e8ae43188ae76d38f414b2bdb0077b"><div class="ttname"><a href="a00179.html#ggaead79709b6eced8a1f3c38677ddc8224aa3e8ae43188ae76d38f414b2bdb0077b">GFt::BrushStyle::Texture</a></div><div class="ttdeci">@ Texture</div><div class="ttdoc">纹理画刷模式</div></div>
+<div class="ttc" id="aa00202_html"><div class="ttname"><a href="a00202.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="aa00234_html"><div class="ttname"><a href="a00234.html">GFt::BrushSet</a></div><div class="ttdoc">画刷设置类</div><div class="ttdef"><b>定义</b> BrushSet.h:34</div></div>
+<div class="ttc" id="aa00234_html_a2c84bb691c4ba6f952eeb70939ef7c87"><div class="ttname"><a href="a00234.html#a2c84bb691c4ba6f952eeb70939ef7c87">GFt::BrushSet::setFillStyle</a></div><div class="ttdeci">void setFillStyle(const Color &amp;color, FillStyle style=FillStyle::Solid)</div><div class="ttdoc">设置默认画刷填充</div><div class="ttdef"><b>定义</b> BrushSet.cpp:56</div></div>
+<div class="ttc" id="aa00234_html_a30fecb3c59a0f1ff02043b68f0d0cdde"><div class="ttname"><a href="a00234.html#a30fecb3c59a0f1ff02043b68f0d0cdde">GFt::BrushSet::setLinearGradient</a></div><div class="ttdeci">void setLinearGradient(const fPoint &amp;start, const Color &amp;startColor, const fPoint &amp;end, const Color &amp;endColor)</div><div class="ttdoc">设置线性渐变画刷填充</div><div class="ttdef"><b>定义</b> BrushSet.cpp:78</div></div>
+<div class="ttc" id="aa00234_html_a5020ab6ed63c6bf9a68a9a8fb2804642"><div class="ttname"><a href="a00234.html#a5020ab6ed63c6bf9a68a9a8fb2804642">GFt::BrushSet::setRadialGradient</a></div><div class="ttdeci">void setRadialGradient(const fPoint &amp;center, const Color &amp;centerColor, const fRect &amp;rect, const Color &amp;outerColor)</div><div class="ttdoc">设置椭圆径向渐变画刷填充</div><div class="ttdef"><b>定义</b> BrushSet.cpp:92</div></div>
+<div class="ttc" id="aa00234_html_a66fd131f599f5da6bdbb83e2b0a0049b"><div class="ttname"><a href="a00234.html#a66fd131f599f5da6bdbb83e2b0a0049b">GFt::BrushSet::getBrushStyle</a></div><div class="ttdeci">BrushStyle getBrushStyle() const</div><div class="ttdoc">获取当前画刷模式</div><div class="ttdef"><b>定义</b> BrushSet.cpp:130</div></div>
+<div class="ttc" id="aa00234_html_a8b1552e222376bf942b66ae3931512e8"><div class="ttname"><a href="a00234.html#a8b1552e222376bf942b66ae3931512e8">GFt::BrushSet::setTexture</a></div><div class="ttdeci">void setTexture(const Texture &amp;texture, const fRect &amp;rect)</div><div class="ttdoc">设置纹理画刷填充</div><div class="ttdef"><b>定义</b> BrushSet.cpp:62</div></div>
+<div class="ttc" id="aa00234_html_ab16ad44aa671dcfcbb41c6d9d47991eb"><div class="ttname"><a href="a00234.html#ab16ad44aa671dcfcbb41c6d9d47991eb">GFt::BrushSet::operator=</a></div><div class="ttdeci">BrushSet &amp; operator=(const BrushSet &amp;other)</div><div class="ttdoc">复制赋值</div><div class="ttdef"><b>定义</b> BrushSet.cpp:35</div></div>
+<div class="ttc" id="aa00234_html_ab4800e02b96e582f8686fe47aeaac6ad"><div class="ttname"><a href="a00234.html#ab4800e02b96e582f8686fe47aeaac6ad">GFt::BrushSet::~BrushSet</a></div><div class="ttdeci">~BrushSet()</div><div class="ttdef"><b>定义</b> BrushSet.cpp:51</div></div>
+<div class="ttc" id="aa00234_html_addb548cc503b34754db6d9bb1f57e4bf"><div class="ttname"><a href="a00234.html#addb548cc503b34754db6d9bb1f57e4bf">GFt::BrushSet::BrushSet</a></div><div class="ttdeci">BrushSet(const Color &amp;color)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> BrushSet.cpp:20</div></div>
+<div class="ttc" id="aa00234_html_ae161baa39ed765c8a0ba7086605938c7"><div class="ttname"><a href="a00234.html#ae161baa39ed765c8a0ba7086605938c7">GFt::BrushSet::setPolygonGradient</a></div><div class="ttdeci">void setPolygonGradient(const fPoint &amp;center, const Color &amp;centerColor, const std::vector&lt; fPoint &gt; &amp;points, const std::vector&lt; Color &gt; &amp;colors)</div><div class="ttdoc">设置多边形径向渐变画刷填充</div><div class="ttdef"><b>定义</b> BrushSet.cpp:109</div></div>
+<div class="ttc" id="aa00242_html"><div class="ttname"><a href="a00242.html">GFt::Color</a></div><div class="ttdoc">颜色类</div><div class="ttdef"><b>定义</b> Color.h:13</div></div>
+<div class="ttc" id="aa00346_html"><div class="ttname"><a href="a00346.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:37</div></div>
+<div class="ttc" id="aa00374_html"><div class="ttname"><a href="a00374.html">GFt::Point</a></div><div class="ttdoc">泛型点类</div><div class="ttdef"><b>定义</b> Point.hpp:21</div></div>
+<div class="ttc" id="aa00382_html"><div class="ttname"><a href="a00382.html">GFt::Rect</a></div><div class="ttdoc">矩形模板类</div><div class="ttdef"><b>定义</b> Rect.hpp:24</div></div>
+<div class="ttc" id="aa00406_html"><div class="ttname"><a href="a00406.html">GFt::Texture</a></div><div class="ttdoc">纹理类</div><div class="ttdef"><b>定义</b> Texture.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>BrushSet.h</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
