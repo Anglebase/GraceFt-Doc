@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GraceFt: 成员列表</title>
+<title>GraceFt: GFt::BlockHoverManager类 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('class_g_ft_1_1_mouse_button_event.html',''); initResizable(true); });
+$(function(){initNavTree('class_g_ft_1_1_block_hover_manager.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,24 +104,97 @@ $(function(){initNavTree('class_g_ft_1_1_mouse_button_event.html',''); initResiz
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">GFt::MouseButtonEvent 成员列表</div></div>
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_g_ft_1_1_block_hover_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::BlockHoverManager类 参考<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93.html">基础UI封装库</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>成员的完整列表，这些成员属于 <a class="el" href="class_g_ft_1_1_mouse_button_event.html">GFt::MouseButtonEvent</a>,包括所有继承而来的类成员</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_g_ft_1_1_mouse_event.html#a8bb7112d1746eda699484b4a01277df5">absolutePosition</a>() const</td><td class="entry"><a class="el" href="class_g_ft_1_1_mouse_event.html">GFt::MouseEvent</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_g_ft_1_1_event.html#a12697ed8796c8df97d655cb4f6b0139f">accept</a>()</td><td class="entry"><a class="el" href="class_g_ft_1_1_event.html">GFt::Event</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_g_ft_1_1_mouse_button_event.html#aae31eb53d7d15b388c361cc823cc6b32">button</a>() const</td><td class="entry"><a class="el" href="class_g_ft_1_1_mouse_button_event.html">GFt::MouseButtonEvent</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_g_ft_1_1_event.html#ad3de2ebfa501dd8e1d6dc0b339f27cf3">isAccepted</a>() const</td><td class="entry"><a class="el" href="class_g_ft_1_1_event.html">GFt::Event</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_g_ft_1_1_event.html#a5f6af52607ed1bedde2127f48b622a23">isPropagationStopped</a>() const</td><td class="entry"><a class="el" href="class_g_ft_1_1_event.html">GFt::Event</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_g_ft_1_1_mouse_event.html#ab234b22681bf16718e669737aa78fb96">position</a>() const</td><td class="entry"><a class="el" href="class_g_ft_1_1_mouse_event.html">GFt::MouseEvent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_g_ft_1_1_event.html#a169e1b6b96aafee0791e2227081200fb">stopPropagation</a>()</td><td class="entry"><a class="el" href="class_g_ft_1_1_event.html">GFt::Event</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>鼠标悬停管理器，用于管理当前鼠标悬停块  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_block_focus_8h_source.html">BlockFocus.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aef0008f7f863f4e31a17c84b49d547f9" id="r_aef0008f7f863f4e31a17c84b49d547f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef0008f7f863f4e31a17c84b49d547f9">getHoverOn</a> ()</td></tr>
+<tr class="memdesc:aef0008f7f863f4e31a17c84b49d547f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前鼠标悬停块  <br /></td></tr>
+<tr class="separator:aef0008f7f863f4e31a17c84b49d547f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2204dd6ae9bd21f9ff03979e5e758a" id="r_a6b2204dd6ae9bd21f9ff03979e5e758a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b2204dd6ae9bd21f9ff03979e5e758a">setHoverOn</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block)</td></tr>
+<tr class="memdesc:a6b2204dd6ae9bd21f9ff03979e5e758a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前鼠标悬停块  <br /></td></tr>
+<tr class="separator:a6b2204dd6ae9bd21f9ff03979e5e758a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>鼠标悬停管理器，用于管理当前鼠标悬停块 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="aef0008f7f863f4e31a17c84b49d547f9" name="aef0008f7f863f4e31a17c84b49d547f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0008f7f863f4e31a17c84b49d547f9">&#9670;&#160;</a></span>getHoverOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_block.html">Block</a> * GFt::BlockHoverManager::getHoverOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前鼠标悬停块 </p>
+<dl class="section return"><dt>返回</dt><dd>当前鼠标悬停块 </dd></dl>
+
+</div>
+</div>
+<a id="a6b2204dd6ae9bd21f9ff03979e5e758a" name="a6b2204dd6ae9bd21f9ff03979e5e758a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2204dd6ae9bd21f9ff03979e5e758a">&#9670;&#160;</a></span>setHoverOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::BlockHoverManager::setHoverOn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置当前鼠标悬停块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>要设置的鼠标悬停块 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1_block_hover_manager.html">BlockHoverManager</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

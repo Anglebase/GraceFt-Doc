@@ -5,6 +5,7 @@ var annotated_dup =
       [ "Bezier", "class_g_ft_1_1_bezier.html", "class_g_ft_1_1_bezier" ],
       [ "Block", "class_g_ft_1_1_block.html", "class_g_ft_1_1_block" ],
       [ "BlockFocusManager", "class_g_ft_1_1_block_focus_manager.html", null ],
+      [ "BlockHoverManager", "class_g_ft_1_1_block_hover_manager.html", null ],
       [ "BrushSet", "class_g_ft_1_1_brush_set.html", "class_g_ft_1_1_brush_set" ],
       [ "Circle", "class_g_ft_1_1_circle.html", "class_g_ft_1_1_circle" ],
       [ "Color", "class_g_ft_1_1_color.html", "class_g_ft_1_1_color" ],

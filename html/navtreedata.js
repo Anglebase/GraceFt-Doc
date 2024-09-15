@@ -27,13 +27,16 @@ var NAVTREE =
   [ "GraceFt", "index.html", [
     [ "GraceFt 文档", "index.html", null ],
     [ "专题", "topics.html", "topics" ],
-    [ "命名空间成员", "namespacemembers.html", [
-      [ "全部", "namespacemembers.html", null ],
-      [ "函数", "namespacemembers_func.html", null ],
-      [ "变量", "namespacemembers_vars.html", null ],
-      [ "类型定义", "namespacemembers_type.html", null ],
-      [ "枚举", "namespacemembers_enum.html", null ],
-      [ "枚举值", "namespacemembers_eval.html", null ]
+    [ "命名空间", "namespaces.html", [
+      [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
+      [ "命名空间成员", "namespacemembers.html", [
+        [ "全部", "namespacemembers.html", null ],
+        [ "函数", "namespacemembers_func.html", null ],
+        [ "变量", "namespacemembers_vars.html", null ],
+        [ "类型定义", "namespacemembers_type.html", null ],
+        [ "枚举", "namespacemembers_enum.html", null ],
+        [ "枚举值", "namespacemembers_eval.html", null ]
+      ] ]
     ] ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
@@ -53,9 +56,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_basic_frame_8cpp-example.html",
-"class_g_ft_1_1_matrix.html#af84c29f7f5cdd165b07eceb9c2205469",
-"functions_b.html",
-"group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga0c199c1300afc9db5f8378c94304d347"
+"class_g_ft_1_1_matrix.html#ab27af7d88deee2bb80f3ba22ef8cbe36",
+"class_my_widget.html",
+"group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#gga3a2bd6aa43e6ace6e806c01f045573fbaceb46ca115d05c51aa5a16a8867c3304"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

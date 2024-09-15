@@ -2,12 +2,13 @@ var group___xE4_xBA_x8B_xE4_xBB_xB6_xE5_xAF_xB9_xE8_xB1_xA1_xE7_xB1_xBB_xE5_x9E_
 [
     [ "GFt::Event", "class_g_ft_1_1_event.html", [
       [ "isPropagationStopped", "class_g_ft_1_1_event.html#a5f6af52607ed1bedde2127f48b622a23", null ],
-      [ "stopPropagation", "class_g_ft_1_1_event.html#af44adecd4e4f85d9885b8b7f393cd4d6", null ],
-      [ "accept", "class_g_ft_1_1_event.html#a75d25e2e09d2edb2b900e20d233781cd", null ],
+      [ "stopPropagation", "class_g_ft_1_1_event.html#a169e1b6b96aafee0791e2227081200fb", null ],
+      [ "accept", "class_g_ft_1_1_event.html#a12697ed8796c8df97d655cb4f6b0139f", null ],
       [ "isAccepted", "class_g_ft_1_1_event.html#ad3de2ebfa501dd8e1d6dc0b339f27cf3", null ]
     ] ],
     [ "GFt::MouseEvent", "class_g_ft_1_1_mouse_event.html", [
-      [ "position", "class_g_ft_1_1_mouse_event.html#ab234b22681bf16718e669737aa78fb96", null ]
+      [ "position", "class_g_ft_1_1_mouse_event.html#ab234b22681bf16718e669737aa78fb96", null ],
+      [ "absolutePosition", "class_g_ft_1_1_mouse_event.html#a8bb7112d1746eda699484b4a01277df5", null ]
     ] ],
     [ "GFt::KeyboardEvent", "class_g_ft_1_1_keyboard_event.html", [
       [ "key", "class_g_ft_1_1_keyboard_event.html#ad12d1ff4d95d9e4ccf808f85e128e420", null ]

@@ -9,9 +9,9 @@ var searchData=
   ['setendcap_6',['setEndCap',['../class_g_ft_1_1_pen_set.html#a5df0652809ed543ea420a0ae38539d9a',1,'GFt::PenSet']]],
   ['setfillstyle_7',['setFillStyle',['../class_g_ft_1_1_brush_set.html#a2c84bb691c4ba6f952eeb70939ef7c87',1,'GFt::BrushSet']]],
   ['setfocuson_8',['setFocusOn',['../class_g_ft_1_1_block_focus_manager.html#a049dbd12093a7d7804b9b637661837d5',1,'GFt::BlockFocusManager']]],
-  ['setfont_9',['setFont',['../class_g_ft_1_1_text_set.html#ad0c44b91176aeba1dbafa3de4835468d',1,'GFt::TextSet']]],
-  ['setfontfamily_10',['setFontFamily',['../class_g_ft_1_1_font.html#a3ce91e3284ca885157077fce6abb8520',1,'GFt::Font']]],
-  ['setfps_11',['setFps',['../class_g_ft_1_1_application.html#af95db619637633e2a90c887a7ba8e3ae',1,'GFt::Application']]],
+  ['setfontfamily_9',['setFontFamily',['../class_g_ft_1_1_font.html#a3ce91e3284ca885157077fce6abb8520',1,'GFt::Font']]],
+  ['setfps_10',['setFps',['../class_g_ft_1_1_application.html#af95db619637633e2a90c887a7ba8e3ae',1,'GFt::Application']]],
+  ['sethoveron_11',['setHoverOn',['../class_g_ft_1_1_block_hover_manager.html#a6b2204dd6ae9bd21f9ff03979e5e758a',1,'GFt::BlockHoverManager']]],
   ['setitalic_12',['setItalic',['../class_g_ft_1_1_font.html#aa3e5e0381a086ff8596c36c5e05a493b',1,'GFt::Font']]],
   ['setjoinstyle_13',['setJoinStyle',['../class_g_ft_1_1_pen_set.html#a2c4ac26a432a6e196a2d5e74fe91d145',1,'GFt::PenSet']]],
   ['setlineargradient_14',['setLinearGradient',['../class_g_ft_1_1_brush_set.html#a30fecb3c59a0f1ff02043b68f0d0cdde',1,'GFt::BrushSet']]],
@@ -37,6 +37,6 @@ var searchData=
   ['size_34',['Size',['../class_g_ft_1_1_size.html#aa9094864c3990108c7739ca9ccf6c9be',1,'GFt::Size::Size(T width=static_cast&lt; T &gt;(0), T height=static_cast&lt; T &gt;(0))'],['../class_g_ft_1_1_size.html#aa5e3f784afe593b6ebc86d83aeebb934',1,'GFt::Size::Size(const Size &amp;)=default'],['../class_g_ft_1_1_size.html#a427da979f78cd5a9b5c6f8182ae177ec',1,'GFt::Size::Size(Size &amp;&amp;)=default']]],
   ['size_35',['size',['../class_g_ft_1_1_font.html#a7a6e3ff3b4a17dea1f75abbd9bc2a70b',1,'GFt::Font::size()'],['../class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429',1,'GFt::Rect::size()'],['../class_g_ft_1_1_rect.html#af2b35ba81beac01644f0cd3f793764d6',1,'GFt::Rect::size() const']]],
   ['start_36',['start',['../class_g_ft_1_1_path.html#a74cde07ed9a3b8ec641584aef3bc4f09',1,'GFt::Path']]],
-  ['stoppropagation_37',['stopPropagation',['../class_g_ft_1_1_event.html#af44adecd4e4f85d9885b8b7f393cd4d6',1,'GFt::Event']]],
+  ['stoppropagation_37',['stopPropagation',['../class_g_ft_1_1_event.html#a169e1b6b96aafee0791e2227081200fb',1,'GFt::Event']]],
   ['strikeout_38',['strikeOut',['../class_g_ft_1_1_font.html#a76592a0b8e0f6284aa9b700b73ea59db',1,'GFt::Font']]]
 ];

@@ -126,12 +126,12 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ad43e8a759c52d8b0f3e162b845aeafa0" id="r_ad43e8a759c52d8b0f3e162b845aeafa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43e8a759c52d8b0f3e162b845aeafa0">disconnect</a> (<a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt; id)</td></tr>
 <tr class="memdesc:ad43e8a759c52d8b0f3e162b845aeafa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开槽函数  <br /></td></tr>
 <tr class="separator:ad43e8a759c52d8b0f3e162b845aeafa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d49574d56e23ce097676ab7ad870ba4" id="r_a8d49574d56e23ce097676ab7ad870ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d49574d56e23ce097676ab7ad870ba4">emit</a> (Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a8d49574d56e23ce097676ab7ad870ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信号  <br /></td></tr>
-<tr class="separator:a8d49574d56e23ce097676ab7ad870ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6179dff77a359e027657da78e0b579" id="r_a6a6179dff77a359e027657da78e0b579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6179dff77a359e027657da78e0b579">operator()</a> (Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a6a6179dff77a359e027657da78e0b579"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信号  <br /></td></tr>
-<tr class="separator:a6a6179dff77a359e027657da78e0b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f0296f4d0cc7ad8e97de077be6a61" id="r_a9d9f0296f4d0cc7ad8e97de077be6a61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a> (Args... args)</td></tr>
+<tr class="memdesc:a9d9f0296f4d0cc7ad8e97de077be6a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信号  <br /></td></tr>
+<tr class="separator:a9d9f0296f4d0cc7ad8e97de077be6a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdef83ea015a32ded171ae7b93c83e5" id="r_a0fdef83ea015a32ded171ae7b93c83e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fdef83ea015a32ded171ae7b93c83e5">operator()</a> (Args... args)</td></tr>
+<tr class="memdesc:a0fdef83ea015a32ded171ae7b93c83e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送信号  <br /></td></tr>
+<tr class="separator:a0fdef83ea015a32ded171ae7b93c83e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
@@ -143,7 +143,7 @@ class GFt::Signal&lt; Args &gt;</div><p>信号-槽机制支持 </p>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_button_8cpp-example.html#_a30">Button.cpp</a>.</dd>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_button_8cpp-example.html#_a26">Button.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="aa02d3f0d72bb1a637b57d2f684f050f1" name="aa02d3f0d72bb1a637b57d2f684f050f1"></a>
@@ -249,8 +249,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a8d49574d56e23ce097676ab7ad870ba4" name="a8d49574d56e23ce097676ab7ad870ba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d49574d56e23ce097676ab7ad870ba4">&#9670;&#160;</a></span>emit()</h2>
+<a id="a9d9f0296f4d0cc7ad8e97de077be6a61" name="a9d9f0296f4d0cc7ad8e97de077be6a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9f0296f4d0cc7ad8e97de077be6a61">&#9670;&#160;</a></span>emit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +263,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::emit </td>
           <td>(</td>
-          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -287,8 +287,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a6a6179dff77a359e027657da78e0b579" name="a6a6179dff77a359e027657da78e0b579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a6179dff77a359e027657da78e0b579">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a0fdef83ea015a32ded171ae7b93c83e5" name="a0fdef83ea015a32ded171ae7b93c83e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdef83ea015a32ded171ae7b93c83e5">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +301,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -319,7 +319,7 @@ template&lt;typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
-<p>效果同 <a class="el" href="#a8d49574d56e23ce097676ab7ad870ba4" title="发送信号">emit(Args&amp;&amp;... args)</a> </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="#a8d49574d56e23ce097676ab7ad870ba4" title="发送信号">emit(Args&amp;&amp;... args)</a> </dd></dl>
+<p>效果同 emit(Args&amp;&amp;... args) </p><dl class="section see"><dt>参见</dt><dd>emit(Args&amp;&amp;... args) </dd></dl>
 
 </div>
 </div>
