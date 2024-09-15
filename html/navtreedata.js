@@ -25,7 +25,22 @@
 var NAVTREE =
 [
   [ "GraceFt", "index.html", [
-    [ "GraceFt 文档", "index.html", null ],
+    [ "GraceFt 的使用", "index.html#autotoc_md13", null ],
+    [ "代码风格规范", "md_doc_2codestyle.html", [
+      [ "C++", "md_doc_2codestyle.html#autotoc_md1", [
+        [ "命名规则", "md_doc_2codestyle.html#autotoc_md2", null ],
+        [ "代码格式", "md_doc_2codestyle.html#autotoc_md3", null ],
+        [ "注释", "md_doc_2codestyle.html#autotoc_md4", null ],
+        [ "函数实现", "md_doc_2codestyle.html#autotoc_md5", null ],
+        [ "类实现", "md_doc_2codestyle.html#autotoc_md6", null ],
+        [ "头文件", "md_doc_2codestyle.html#autotoc_md7", null ]
+      ] ]
+    ] ],
+    [ "贡献指南", "md_doc_2guide.html", [
+      [ "贡献方式", "md_doc_2guide.html#autotoc_md9", null ],
+      [ "问题或建议的格式说明", "md_doc_2guide.html#autotoc_md10", null ],
+      [ "代码贡献指南", "md_doc_2guide.html#autotoc_md11", null ]
+    ] ],
     [ "专题", "topics.html", "topics" ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
