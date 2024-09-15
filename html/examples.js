@@ -1,6 +1,6 @@
 var examples =
 [
-    [ "BasicFrame.cpp", "a00427.html", null ],
-    [ "Button.cpp", "a00428.html", null ],
-    [ "MyWindow.cpp", "a00429.html", null ]
+    [ "BasicFrame.cpp", "_basic_frame_8cpp-example.html", null ],
+    [ "Button.cpp", "_button_8cpp-example.html", null ],
+    [ "MyWindow.cpp", "_my_window_8cpp-example.html", null ]
 ];
