@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['fitcurve_0',['FitCurve',['../class_g_ft_1_1_fit_curve.html',1,'GFt']]],
-  ['font_1',['Font',['../class_g_ft_1_1_font.html',1,'GFt']]]
+  ['ellipse_0',['Ellipse',['../class_g_ft_1_1_ellipse.html',1,'GFt']]],
+  ['event_1',['Event',['../class_g_ft_1_1_event.html',1,'GFt']]],
+  ['eventmonitor_2',['EventMonitor',['../class_g_ft_1_1_event_monitor.html',1,'GFt']]]
 ];

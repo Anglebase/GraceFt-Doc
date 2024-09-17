@@ -1,16 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnopqrstuvwxyz~事代几函命图基复头字对工按接文枚注画的类线设贡问预",
-  1: "abcefgklmprstw",
+  0: "_abcdefghijklmnopqrstuvwxyz~事几图基复字对工按接文枚画的线设预",
+  1: "abcdefgklmprstwx",
   2: "g",
   3: "abcdefghiklmnoprstuwxy~",
-  4: "fho",
+  4: "cfhnoprtz",
   5: "bfimsv",
   6: "bcfjklmt",
   7: "_abcdefghijklmnopqrstuvwxyz",
   8: "abdgop",
   9: "a事几图基复字对工按接文枚画线设预",
-  10: "g代贡"
+  10: "g"
 };
 
 var indexSectionNames =

@@ -1,6 +1,16 @@
 var annotated_dup =
 [
     [ "GFt", "namespace_g_ft.html", [
+      [ "UI", "namespace_g_ft_1_1_u_i.html", [
+        [ "XBlock", "struct_g_ft_1_1_u_i_1_1_x_block.html", "struct_g_ft_1_1_u_i_1_1_x_block" ],
+        [ "XButton", "struct_g_ft_1_1_u_i_1_1_x_button.html", "struct_g_ft_1_1_u_i_1_1_x_button" ],
+        [ "XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", "struct_g_ft_1_1_u_i_1_1_x_label" ],
+        [ "XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", "struct_g_ft_1_1_u_i_1_1_x_window" ]
+      ] ],
+      [ "Widget", "namespace_g_ft_1_1_widget.html", [
+        [ "Button", "class_g_ft_1_1_widget_1_1_button.html", "class_g_ft_1_1_widget_1_1_button" ],
+        [ "Label", "class_g_ft_1_1_widget_1_1_label.html", "class_g_ft_1_1_widget_1_1_label" ]
+      ] ],
       [ "Application", "class_g_ft_1_1_application.html", "class_g_ft_1_1_application" ],
       [ "Bezier", "class_g_ft_1_1_bezier.html", "class_g_ft_1_1_bezier" ],
       [ "Block", "class_g_ft_1_1_block.html", "class_g_ft_1_1_block" ],
@@ -9,6 +19,7 @@ var annotated_dup =
       [ "BrushSet", "class_g_ft_1_1_brush_set.html", "class_g_ft_1_1_brush_set" ],
       [ "Circle", "class_g_ft_1_1_circle.html", "class_g_ft_1_1_circle" ],
       [ "Color", "class_g_ft_1_1_color.html", "class_g_ft_1_1_color" ],
+      [ "DeclarativeUIManager", "class_g_ft_1_1_declarative_u_i_manager.html", "class_g_ft_1_1_declarative_u_i_manager" ],
       [ "Ellipse", "class_g_ft_1_1_ellipse.html", "class_g_ft_1_1_ellipse" ],
       [ "Event", "class_g_ft_1_1_event.html", "class_g_ft_1_1_event" ],
       [ "EventMonitor", "class_g_ft_1_1_event_monitor.html", null ],
@@ -51,9 +62,5 @@ var annotated_dup =
       [ "TextSet", "class_g_ft_1_1_text_set.html", "class_g_ft_1_1_text_set" ],
       [ "Texture", "class_g_ft_1_1_texture.html", "class_g_ft_1_1_texture" ],
       [ "Window", "class_g_ft_1_1_window.html", "class_g_ft_1_1_window" ]
-    ] ],
-    [ "Button", "class_button.html", "class_button" ],
-    [ "MainWindow", "class_main_window.html", "class_main_window" ],
-    [ "MyWidget", "class_my_widget.html", "class_my_widget" ],
-    [ "MyWindow", "class_my_window.html", "class_my_window" ]
+    ] ]
 ];

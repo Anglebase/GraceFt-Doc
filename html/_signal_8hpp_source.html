@@ -140,91 +140,105 @@ $(function(){initNavTree('_signal_8hpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">return</span> <span class="keywordtype">id</span>++;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
 </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#ad43e8a759c52d8b0f3e162b845aeafa0">   51</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#ad43e8a759c52d8b0f3e162b845aeafa0">disconnect</a>(<a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;Args...&gt;</a> <span class="keywordtype">id</span>) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">if</span> (slots_.find(<span class="keywordtype">id</span>) != slots_.end())</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                slots_.erase(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Object&gt;</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#a074edc072bc0df3918bf406bc251923a">   55</a></span>        <a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt;Args...&gt; <a class="code hl_function" href="class_g_ft_1_1_signal.html#a074edc072bc0df3918bf406bc251923a">connect</a>(Object* <span class="keywordtype">object</span>, <span class="keywordtype">void</span> (Object::* method)(Args...)) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#aae4ce8bf87cc2e87252a2f1b4a21ed7b">connect</a>([<span class="keywordtype">object</span>, method](Args... args) { (object-&gt;*method)(std::forward&lt;Args&gt;(args)...); });</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
 </div>
 <div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">   60</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a>(Args... args) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            Slots slots;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                slots = slots_;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, slot] : slots)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                slot(std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#ad43e8a759c52d8b0f3e162b845aeafa0">   60</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#ad43e8a759c52d8b0f3e162b845aeafa0">disconnect</a>(<a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;Args...&gt;</a> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (slots_.find(<span class="keywordtype">id</span>) != slots_.end())</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                slots_.erase(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
 </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#a0fdef83ea015a32ded171ae7b93c83e5">   73</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#a0fdef83ea015a32ded171ae7b93c83e5">operator()</a>(Args... args) {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_function" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a>(std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">   69</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a>(Args... args) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            Slots slots;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                slots = slots_;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, slot] : slots)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                slot(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    };</div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal.html#a0fdef83ea015a32ded171ae7b93c83e5">   82</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#a0fdef83ea015a32ded171ae7b93c83e5">operator()</a>(Args... args) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <a class="code hl_function" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a>(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
 </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">template</span>&lt;&gt;</div>
-<div class="foldopen" id="foldopen00087" data-start="{" data-end="};">
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html">   87</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&lt;void&gt; {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">using </span>Slot = std::function&lt;void()&gt;;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keyword">using </span>Slots = std::unordered_map&lt;SlotId&lt;void&gt;, Slot&gt;;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        Slots slots_;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        std::mutex mutex_;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_function" href="class_g_ft_1_1_signal.html#aa02d3f0d72bb1a637b57d2f684f050f1">Signal</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <a class="code hl_function" href="class_g_ft_1_1_signal.html#aa02d3f0d72bb1a637b57d2f684f050f1">Signal</a>(<a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp; operator=(<a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#a93041793e6c7bf6ab11ea62b6bb81dca">   99</a></span>        <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#a93041793e6c7bf6ab11ea62b6bb81dca">Signal</a>() = <span class="keywordflow">default</span>;</div>
-<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">  103</a></span>        <a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">connect</a>(<span class="keyword">const</span> Slot&amp; slot) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <span class="keywordtype">id</span> = 0ull;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            slots_[id] = slot;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">return</span> <span class="keywordtype">id</span>++;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    };</div>
 </div>
-<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#a376c7d32481b451b2ef1e6d704c550a4">  111</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#a376c7d32481b451b2ef1e6d704c550a4">disconnect</a>(<a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <span class="keywordtype">id</span>) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> (slots_.find(<span class="keywordtype">id</span>) != slots_.end())</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                slots_.erase(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="};">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html">   96</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&lt;void&gt; {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keyword">using </span>Slot = std::function&lt;void()&gt;;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keyword">using </span>Slots = std::unordered_map&lt;SlotId&lt;void&gt;, Slot&gt;;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        Slots slots_;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        std::mutex mutex_;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_function" href="class_g_ft_1_1_signal.html#aa02d3f0d72bb1a637b57d2f684f050f1">Signal</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <a class="code hl_function" href="class_g_ft_1_1_signal.html#aa02d3f0d72bb1a637b57d2f684f050f1">Signal</a>(<a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp; operator=(<a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#a93041793e6c7bf6ab11ea62b6bb81dca">  108</a></span>        <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#a93041793e6c7bf6ab11ea62b6bb81dca">Signal</a>() = <span class="keywordflow">default</span>;</div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">  112</a></span>        <a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">connect</a>(<span class="keyword">const</span> Slot&amp; slot) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <span class="keywordtype">id</span> = 0ull;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            slots_[id] = slot;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">return</span> <span class="keywordtype">id</span>++;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
 </div>
-<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#abbacecebb0d9ba1e3a32cc63d3913929">  117</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#abbacecebb0d9ba1e3a32cc63d3913929">emit</a>() {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            Slots slots;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                slots = slots_;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, slot] : slots)</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                slot();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Object&gt;</div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#a5e79eea0b4604c4fdd0ca41d208ef545">  124</a></span>        <a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#a5e79eea0b4604c4fdd0ca41d208ef545">connect</a>(Object* <span class="keywordtype">object</span>, <span class="keywordtype">void</span> (Object::* method)()) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_g_ft_1_1_signal.html#aae4ce8bf87cc2e87252a2f1b4a21ed7b">connect</a>([<span class="keywordtype">object</span>, method]() { (<span class="keywordtype">object</span>-&gt;*method)(); });</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
 </div>
 <div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#afcad6fb5b5a6f5afb20ab5693c70058b">  129</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#afcad6fb5b5a6f5afb20ab5693c70058b">operator()</a>() {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <a class="code hl_function" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a>();</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#a376c7d32481b451b2ef1e6d704c550a4">  129</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#a376c7d32481b451b2ef1e6d704c550a4">disconnect</a>(<a class="code hl_typedef" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId&lt;void&gt;</a> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">if</span> (slots_.find(<span class="keywordtype">id</span>) != slots_.end())</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                slots_.erase(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
 </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    };</div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#abbacecebb0d9ba1e3a32cc63d3913929">  135</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#abbacecebb0d9ba1e3a32cc63d3913929">emit</a>() {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            Slots slots;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                std::lock_guard&lt;std::mutex&gt; lock(mutex_);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                slots = slots_;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, slot] : slots)</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                slot();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_a376c7d32481b451b2ef1e6d704c550a4"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#a376c7d32481b451b2ef1e6d704c550a4">GFt::Signal&lt; void &gt;::disconnect</a></div><div class="ttdeci">void disconnect(SlotId&lt; void &gt; id)</div><div class="ttdoc">断开槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:111</div></div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_signal_3_01void_01_4.html#afcad6fb5b5a6f5afb20ab5693c70058b">  147</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#afcad6fb5b5a6f5afb20ab5693c70058b">operator()</a>() {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <a class="code hl_function" href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">emit</a>();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        }</div>
+</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    };</div>
+</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_a376c7d32481b451b2ef1e6d704c550a4"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#a376c7d32481b451b2ef1e6d704c550a4">GFt::Signal&lt; void &gt;::disconnect</a></div><div class="ttdeci">void disconnect(SlotId&lt; void &gt; id)</div><div class="ttdoc">断开槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:129</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_a5e79eea0b4604c4fdd0ca41d208ef545"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#a5e79eea0b4604c4fdd0ca41d208ef545">GFt::Signal&lt; void &gt;::connect</a></div><div class="ttdeci">SlotId&lt; void &gt; connect(Object *object, void(Object::*method)())</div><div class="ttdoc">将成员函数作为槽函数连接</div><div class="ttdef"><b>定义</b> Signal.hpp:124</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_a93041793e6c7bf6ab11ea62b6bb81dca"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#a93041793e6c7bf6ab11ea62b6bb81dca">GFt::Signal&lt; void &gt;::Signal</a></div><div class="ttdeci">Signal()=default</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_abbacecebb0d9ba1e3a32cc63d3913929"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#abbacecebb0d9ba1e3a32cc63d3913929">GFt::Signal&lt; void &gt;::emit</a></div><div class="ttdeci">void emit()</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:117</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_ae77cfa1254a98cb8876c98682948d353"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">GFt::Signal&lt; void &gt;::connect</a></div><div class="ttdeci">SlotId&lt; void &gt; connect(const Slot &amp;slot)</div><div class="ttdoc">连接槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:103</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_afcad6fb5b5a6f5afb20ab5693c70058b"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#afcad6fb5b5a6f5afb20ab5693c70058b">GFt::Signal&lt; void &gt;::operator()</a></div><div class="ttdeci">void operator()()</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:129</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_abbacecebb0d9ba1e3a32cc63d3913929"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#abbacecebb0d9ba1e3a32cc63d3913929">GFt::Signal&lt; void &gt;::emit</a></div><div class="ttdeci">void emit()</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:135</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_ae77cfa1254a98cb8876c98682948d353"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">GFt::Signal&lt; void &gt;::connect</a></div><div class="ttdeci">SlotId&lt; void &gt; connect(const Slot &amp;slot)</div><div class="ttdoc">连接槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:112</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_afcad6fb5b5a6f5afb20ab5693c70058b"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#afcad6fb5b5a6f5afb20ab5693c70058b">GFt::Signal&lt; void &gt;::operator()</a></div><div class="ttdeci">void operator()()</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:147</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_signal_html"><div class="ttname"><a href="class_g_ft_1_1_signal.html">GFt::Signal</a></div><div class="ttdoc">信号-槽机制支持</div><div class="ttdef"><b>定义</b> Signal.hpp:23</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_html_a0fdef83ea015a32ded171ae7b93c83e5"><div class="ttname"><a href="class_g_ft_1_1_signal.html#a0fdef83ea015a32ded171ae7b93c83e5">GFt::Signal::operator()</a></div><div class="ttdeci">void operator()(Args... args)</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:73</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_html_a9d9f0296f4d0cc7ad8e97de077be6a61"><div class="ttname"><a href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">GFt::Signal::emit</a></div><div class="ttdeci">void emit(Args... args)</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:60</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html_a074edc072bc0df3918bf406bc251923a"><div class="ttname"><a href="class_g_ft_1_1_signal.html#a074edc072bc0df3918bf406bc251923a">GFt::Signal::connect</a></div><div class="ttdeci">SlotId&lt; Args... &gt; connect(Object *object, void(Object::*method)(Args...))</div><div class="ttdoc">将成员函数作为槽函数连接</div><div class="ttdef"><b>定义</b> Signal.hpp:55</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html_a0fdef83ea015a32ded171ae7b93c83e5"><div class="ttname"><a href="class_g_ft_1_1_signal.html#a0fdef83ea015a32ded171ae7b93c83e5">GFt::Signal::operator()</a></div><div class="ttdeci">void operator()(Args... args)</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:82</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html_a9d9f0296f4d0cc7ad8e97de077be6a61"><div class="ttname"><a href="class_g_ft_1_1_signal.html#a9d9f0296f4d0cc7ad8e97de077be6a61">GFt::Signal::emit</a></div><div class="ttdeci">void emit(Args... args)</div><div class="ttdoc">发送信号</div><div class="ttdef"><b>定义</b> Signal.hpp:69</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_signal_html_aa02d3f0d72bb1a637b57d2f684f050f1"><div class="ttname"><a href="class_g_ft_1_1_signal.html#aa02d3f0d72bb1a637b57d2f684f050f1">GFt::Signal::Signal</a></div><div class="ttdeci">Signal()=default</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_signal_html_aae4ce8bf87cc2e87252a2f1b4a21ed7b"><div class="ttname"><a href="class_g_ft_1_1_signal.html#aae4ce8bf87cc2e87252a2f1b4a21ed7b">GFt::Signal::connect</a></div><div class="ttdeci">SlotId&lt; Args... &gt; connect(const Slot &amp;slot)</div><div class="ttdoc">连接槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:43</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_signal_html_ad43e8a759c52d8b0f3e162b845aeafa0"><div class="ttname"><a href="class_g_ft_1_1_signal.html#ad43e8a759c52d8b0f3e162b845aeafa0">GFt::Signal::disconnect</a></div><div class="ttdeci">void disconnect(SlotId&lt; Args... &gt; id)</div><div class="ttdoc">断开槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:51</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html_ad43e8a759c52d8b0f3e162b845aeafa0"><div class="ttname"><a href="class_g_ft_1_1_signal.html#ad43e8a759c52d8b0f3e162b845aeafa0">GFt::Signal::disconnect</a></div><div class="ttdeci">void disconnect(SlotId&lt; Args... &gt; id)</div><div class="ttdoc">断开槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:60</div></div>
 <div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
 <div class="ttc" id="anamespace_g_ft_html_ae27f15d5da089c5645e8ef84a1eadab4"><div class="ttname"><a href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">GFt::SlotId</a></div><div class="ttdeci">std::size_t SlotId</div><div class="ttdoc">槽函数ID类型</div><div class="ttdef"><b>定义</b> Signal.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->

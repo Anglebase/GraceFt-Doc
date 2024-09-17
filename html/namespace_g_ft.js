@@ -16,6 +16,8 @@ var namespace_g_ft =
       [ "operator\"\"_vh", "group___xE8_xAE_xBE_xE5_xA4_x87_xE6_x97_xA0_xE5_x85_xB3_xE5_x8D_x95_xE4_xBD_x8D.html#ga8ac4dae13c10cd2d398281e9871363cd", null ],
       [ "operator\"\"_vh", "group___xE8_xAE_xBE_xE5_xA4_x87_xE6_x97_xA0_xE5_x85_xB3_xE5_x8D_x95_xE4_xBD_x8D.html#ga9f66c7d0aa9133f67dd93448c36b8053", null ]
     ] ],
+    [ "UI", "namespace_g_ft_1_1_u_i.html", "namespace_g_ft_1_1_u_i" ],
+    [ "Widget", "namespace_g_ft_1_1_widget.html", "namespace_g_ft_1_1_widget" ],
     [ "Application", "class_g_ft_1_1_application.html", "class_g_ft_1_1_application" ],
     [ "Bezier", "class_g_ft_1_1_bezier.html", "class_g_ft_1_1_bezier" ],
     [ "Block", "class_g_ft_1_1_block.html", "class_g_ft_1_1_block" ],
@@ -24,6 +26,7 @@ var namespace_g_ft =
     [ "BrushSet", "class_g_ft_1_1_brush_set.html", "class_g_ft_1_1_brush_set" ],
     [ "Circle", "class_g_ft_1_1_circle.html", "class_g_ft_1_1_circle" ],
     [ "Color", "class_g_ft_1_1_color.html", "class_g_ft_1_1_color" ],
+    [ "DeclarativeUIManager", "class_g_ft_1_1_declarative_u_i_manager.html", "class_g_ft_1_1_declarative_u_i_manager" ],
     [ "Ellipse", "class_g_ft_1_1_ellipse.html", "class_g_ft_1_1_ellipse" ],
     [ "Event", "class_g_ft_1_1_event.html", "class_g_ft_1_1_event" ],
     [ "EventMonitor", "class_g_ft_1_1_event_monitor.html", null ],
@@ -308,14 +311,6 @@ var namespace_g_ft =
     [ "operator|", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gab9f4523d2858df344c620967faf4071f", null ],
     [ "operator<<", "namespace_g_ft.html#aee3114bfa657398b5f7c9b3aab8ada38", null ],
     [ "operator<<", "namespace_g_ft.html#a6181c7db2429188ab488e378ca1834a0", null ],
-    [ "DEF_MOUSE_HANDEL_FUNC", "namespace_g_ft.html#ab19de41cc06ba18ae0e8b51af53ea188", null ],
-    [ "DEF_MOUSE_HANDEL_FUNC", "namespace_g_ft.html#aea7845d84f68e92e1b4bb11829d834bf", null ],
-    [ "DEF_MOUSE_HANDEL_FUNC", "namespace_g_ft.html#a1e159fbb89f9a7bdf269a58dc0b7cef0", null ],
-    [ "DEF_MOUSE_HANDEL_FUNC", "namespace_g_ft.html#afc685a19c37023f620e7387e2faf08c1", null ],
-    [ "DEF_KEY_HANDEL_FUNC", "namespace_g_ft.html#af208e97d54c7f6859c95dc0fe4196191", null ],
-    [ "DEF_KEY_HANDEL_FUNC", "namespace_g_ft.html#ae9f68798620a75f22b8b2e4a39a8a487", null ],
-    [ "DEF_KEY_HANDEL_FUNC", "namespace_g_ft.html#acd8211d042383a6896400c5a366236e7", null ],
     [ "operator<<", "namespace_g_ft.html#af4e6b8a886dc956c31f6aaa2b1d03569", null ],
-    [ "operator<<", "namespace_g_ft.html#a5ffc9f2e2c4a03df22a324803d92d396", null ],
-    [ "handleMutex", "namespace_g_ft.html#a7ac5ed2c49974506145c61ce3beab2c4", null ]
+    [ "operator<<", "namespace_g_ft.html#a5ffc9f2e2c4a03df22a324803d92d396", null ]
 ];

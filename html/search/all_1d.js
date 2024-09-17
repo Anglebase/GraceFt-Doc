@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['代码格式_0',['代码格式',['../md_doc_2codestyle.html#autotoc_md3',1,'']]],
-  ['代码贡献指南_1',['代码贡献指南',['../md_doc_2guide.html#autotoc_md11',1,'']]],
-  ['代码风格规范_2',['代码风格规范',['../md_doc_2codestyle.html',1,'']]]
+  ['几何求解工具_0',['几何求解工具',['../group___xE5_x87_xA0_xE4_xBD_x95_xE6_xB1_x82_xE8_xA7_xA3_xE5_xB7_xA5_xE5_x85_xB7.html',1,'']]]
 ];

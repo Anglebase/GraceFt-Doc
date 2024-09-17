@@ -123,6 +123,10 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ae77cfa1254a98cb8876c98682948d353" id="r_ae77cfa1254a98cb8876c98682948d353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae77cfa1254a98cb8876c98682948d353">connect</a> (const Slot &amp;slot)</td></tr>
 <tr class="memdesc:ae77cfa1254a98cb8876c98682948d353"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接槽函数  <br /></td></tr>
 <tr class="separator:ae77cfa1254a98cb8876c98682948d353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e79eea0b4604c4fdd0ca41d208ef545" id="r_a5e79eea0b4604c4fdd0ca41d208ef545"><td class="memTemplParams" colspan="2">template&lt;typename Object &gt; </td></tr>
+<tr class="memitem:a5e79eea0b4604c4fdd0ca41d208ef545"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; void &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5e79eea0b4604c4fdd0ca41d208ef545">connect</a> (Object *object, void(Object::*method)())</td></tr>
+<tr class="memdesc:a5e79eea0b4604c4fdd0ca41d208ef545"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员函数作为槽函数连接  <br /></td></tr>
+<tr class="separator:a5e79eea0b4604c4fdd0ca41d208ef545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376c7d32481b451b2ef1e6d704c550a4" id="r_a376c7d32481b451b2ef1e6d704c550a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a376c7d32481b451b2ef1e6d704c550a4">disconnect</a> (<a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; void &gt; id)</td></tr>
 <tr class="memdesc:a376c7d32481b451b2ef1e6d704c550a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开槽函数  <br /></td></tr>
 <tr class="separator:a376c7d32481b451b2ef1e6d704c550a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,7 +168,7 @@ Public 成员函数</h2></td></tr>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
 <a id="ae77cfa1254a98cb8876c98682948d353" name="ae77cfa1254a98cb8876c98682948d353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae77cfa1254a98cb8876c98682948d353">&#9670;&#160;</a></span>connect()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77cfa1254a98cb8876c98682948d353">&#9670;&#160;</a></span>connect() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,8 +198,53 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>槽函数ID </dd></dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="_button_8cpp-example.html#a33">Button.cpp</a>.</dd>
+
+</div>
+</div>
+<a id="a5e79eea0b4604c4fdd0ca41d208ef545" name="a5e79eea0b4604c4fdd0ca41d208ef545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e79eea0b4604c4fdd0ca41d208ef545">&#9670;&#160;</a></span>connect() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Object &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; void &gt; <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; void &gt;::connect </td>
+          <td>(</td>
+          <td class="paramtype">Object *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(Object::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)()&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将成员函数作为槽函数连接 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>成员函数所在类的类型 </td></tr>
+  </table>
+  </dd>
 </dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>成员函数所在类的实例 </td></tr>
+    <tr><td class="paramname">method</td><td>成员函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>槽函数ID </dd></dl>
 
 </div>
 </div>

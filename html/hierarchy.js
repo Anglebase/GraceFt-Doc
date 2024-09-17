@@ -7,6 +7,7 @@ var hierarchy =
     [ "GFt::BrushSet", "class_g_ft_1_1_brush_set.html", null ],
     [ "GFt::Circle< T >", "class_g_ft_1_1_circle.html", null ],
     [ "GFt::Color", "class_g_ft_1_1_color.html", null ],
+    [ "GFt::DeclarativeUIManager", "class_g_ft_1_1_declarative_u_i_manager.html", null ],
     [ "GFt::Ellipse< T >", "class_g_ft_1_1_ellipse.html", null ],
     [ "GFt::Event", "class_g_ft_1_1_event.html", [
       [ "GFt::KeyboardEvent", "class_g_ft_1_1_keyboard_event.html", [
@@ -28,11 +29,9 @@ var hierarchy =
     [ "GFt::Graphics", "class_g_ft_1_1_graphics.html", null ],
     [ "GFt::GraphInterface", "class_g_ft_1_1_graph_interface.html", [
       [ "GFt::Block", "class_g_ft_1_1_block.html", [
-        [ "Button", "class_button.html", null ],
-        [ "GFt::Window", "class_g_ft_1_1_window.html", null ],
-        [ "MainWindow", "class_main_window.html", null ],
-        [ "MyWidget", "class_my_widget.html", null ],
-        [ "MyWindow", "class_my_window.html", null ]
+        [ "GFt::Widget::Button", "class_g_ft_1_1_widget_1_1_button.html", null ],
+        [ "GFt::Widget::Label", "class_g_ft_1_1_widget_1_1_label.html", null ],
+        [ "GFt::Window", "class_g_ft_1_1_window.html", null ]
       ] ]
     ] ],
     [ "GFt::KeyPressEventMonitor", "class_g_ft_1_1_key_press_event_monitor.html", [
@@ -73,6 +72,7 @@ var hierarchy =
     [ "GFt::Rect< int >", "class_g_ft_1_1_rect.html", null ],
     [ "GFt::RoundRect< T >", "class_g_ft_1_1_round_rect.html", null ],
     [ "GFt::Signal< Args >", "class_g_ft_1_1_signal.html", null ],
+    [ "GFt::Signal< bool >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< GFt::Block * >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< void >", "class_g_ft_1_1_signal_3_01void_01_4.html", null ],
     [ "GFt::Size< T >", "class_g_ft_1_1_size.html", null ],
@@ -81,5 +81,9 @@ var hierarchy =
       [ "GFt::EventMonitor", "class_g_ft_1_1_event_monitor.html", null ]
     ] ],
     [ "GFt::TextSet", "class_g_ft_1_1_text_set.html", null ],
-    [ "GFt::Texture", "class_g_ft_1_1_texture.html", null ]
+    [ "GFt::Texture", "class_g_ft_1_1_texture.html", null ],
+    [ "GFt::UI::XBlock", "struct_g_ft_1_1_u_i_1_1_x_block.html", null ],
+    [ "GFt::UI::XButton", "struct_g_ft_1_1_u_i_1_1_x_button.html", null ],
+    [ "GFt::UI::XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", null ],
+    [ "GFt::UI::XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", null ]
 ];
