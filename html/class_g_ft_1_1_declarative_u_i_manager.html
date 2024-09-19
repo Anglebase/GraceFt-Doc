@@ -124,9 +124,15 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:adeb3f4644ffc8c221bc74e7e437f829c" id="r_adeb3f4644ffc8c221bc74e7e437f829c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb3f4644ffc8c221bc74e7e437f829c">findBlock</a> (const std::string_view &amp;name)</td></tr>
 <tr class="memdesc:adeb3f4644ffc8c221bc74e7e437f829c"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找UI块  <br /></td></tr>
 <tr class="separator:adeb3f4644ffc8c221bc74e7e437f829c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87d4dc5e2d35edcee4db076c505b642" id="r_af87d4dc5e2d35edcee4db076c505b642"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af87d4dc5e2d35edcee4db076c505b642">findBlockByName</a> (const <a class="el" href="class_g_ft_1_1_block.html">Block</a> *block) const</td></tr>
+<tr class="memdesc:af87d4dc5e2d35edcee4db076c505b642"><td class="mdescLeft">&#160;</td><td class="mdescRight">查找UI块名称  <br /></td></tr>
+<tr class="separator:af87d4dc5e2d35edcee4db076c505b642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ab64658d3c5fdf62f5276dd21513c18" id="r_a4ab64658d3c5fdf62f5276dd21513c18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ab64658d3c5fdf62f5276dd21513c18">addBlock</a> (const std::string_view &amp;name, <a class="el" href="class_g_ft_1_1_block.html">Block</a> *block)</td></tr>
 <tr class="memdesc:a4ab64658d3c5fdf62f5276dd21513c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加UI块  <br /></td></tr>
 <tr class="separator:a4ab64658d3c5fdf62f5276dd21513c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b2d7b5cce8f2242aeb20b1cc14e555" id="r_ae3b2d7b5cce8f2242aeb20b1cc14e555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3b2d7b5cce8f2242aeb20b1cc14e555">removeBlock</a> (const std::string_view &amp;name)</td></tr>
+<tr class="memdesc:ae3b2d7b5cce8f2242aeb20b1cc14e555"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除UI块  <br /></td></tr>
+<tr class="separator:ae3b2d7b5cce8f2242aeb20b1cc14e555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
@@ -182,6 +188,32 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="af87d4dc5e2d35edcee4db076c505b642" name="af87d4dc5e2d35edcee4db076c505b642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87d4dc5e2d35edcee4db076c505b642">&#9670;&#160;</a></span>findBlockByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view GFt::DeclarativeUIManager::findBlockByName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查找UI块名称 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>块指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>块名称，如果没有找到则返回空字符串 </dd></dl>
+
+</div>
+</div>
 <a id="a4ab64658d3c5fdf62f5276dd21513c18" name="a4ab64658d3c5fdf62f5276dd21513c18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ab64658d3c5fdf62f5276dd21513c18">&#9670;&#160;</a></span>addBlock()</h2>
 
@@ -210,6 +242,32 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <p>块名称不能重复，如果名称已存在，则会抛出异常 </p>
+
+</div>
+</div>
+<a id="ae3b2d7b5cce8f2242aeb20b1cc14e555" name="ae3b2d7b5cce8f2242aeb20b1cc14e555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b2d7b5cce8f2242aeb20b1cc14e555">&#9670;&#160;</a></span>removeBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::DeclarativeUIManager::removeBlock </td>
+          <td>(</td>
+          <td class="paramtype">const std::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除UI块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>块名称</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>如果名称不存在，则不会有任何操作 </p>
 
 </div>
 </div>

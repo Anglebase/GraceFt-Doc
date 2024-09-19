@@ -34,5 +34,5 @@ var searchData=
   ['drawpolygon_31',['drawPolygon',['../class_g_ft_1_1_graphics.html#a6ed9550da8bd6b6b9175ea7c8cd0d63f',1,'GFt::Graphics']]],
   ['drawrect_32',['drawRect',['../class_g_ft_1_1_graphics.html#aebde0e473056e8bbc269687f19bdb541',1,'GFt::Graphics']]],
   ['drawroundrect_33',['drawRoundRect',['../class_g_ft_1_1_graphics.html#ae58fab126137a76e4a34d2980735fd4f',1,'GFt::Graphics']]],
-  ['drawtext_34',['drawText',['../class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a',1,'GFt::Graphics::drawText(const std::wstring &amp;text, const fPoint &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)'],['../class_g_ft_1_1_graphics.html#ac49d68f5c6d1f603a9601c419a0e6b7a',1,'GFt::Graphics::drawText(const std::wstring &amp;text, const fRect &amp;rect, int flags=TextAlign::Left|TextAlign::Top)']]]
+  ['drawtext_34',['drawText',['../class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a',1,'GFt::Graphics::drawText(const std::wstring &amp;text, const fPoint &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)'],['../class_g_ft_1_1_graphics.html#a225c6b12033f5246a1f21c387bb76354',1,'GFt::Graphics::drawText(const std::wstring &amp;text, const fRect &amp;rect, int flags=TextAlign::Left|TextAlign::Top, const std::vector&lt; std::wstring &gt; &amp;fonts={})']]]
 ];

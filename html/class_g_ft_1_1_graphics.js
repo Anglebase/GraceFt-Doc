@@ -10,6 +10,10 @@ var class_g_ft_1_1_graphics =
     [ "getTarget", "class_g_ft_1_1_graphics.html#a93b3439d85cf510e1993a4229dcec411", null ],
     [ "getTransform", "class_g_ft_1_1_graphics.html#a481deabc3d413a54ac09cd27ebaced0b", null ],
     [ "clear", "class_g_ft_1_1_graphics.html#acb3b5f342a92e1407e2367a60538fc23", null ],
+    [ "textWidth", "class_g_ft_1_1_graphics.html#a786fa35fb46d07449cb806f43354ad38", null ],
+    [ "textHeight", "class_g_ft_1_1_graphics.html#a11a28961d70310176a707e2e23a3cb8d", null ],
+    [ "textWidth", "class_g_ft_1_1_graphics.html#ab228c0ce3c8b1da5e8dcf822662d179a", null ],
+    [ "textHeight", "class_g_ft_1_1_graphics.html#a85dac0edab97924443196d92901628f1", null ],
     [ "setBackgroundColor", "class_g_ft_1_1_graphics.html#a945a73a1d7a5afd2436d0f5fe4ba752f", null ],
     [ "bindPenSet", "class_g_ft_1_1_graphics.html#a0980a2707b2a4a7705fd32f7a1e0bf34", null ],
     [ "bindBrushSet", "class_g_ft_1_1_graphics.html#a344203648d20255f4746b772d9d52c1e", null ],
@@ -34,5 +38,5 @@ var class_g_ft_1_1_graphics =
     [ "drawImage", "class_g_ft_1_1_graphics.html#a86ee7e32471cedd075e425c998b4d55e", null ],
     [ "drawImage", "class_g_ft_1_1_graphics.html#ade59fc8b129e858616806c2818f50151", null ],
     [ "drawText", "class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a", null ],
-    [ "drawText", "class_g_ft_1_1_graphics.html#ac49d68f5c6d1f603a9601c419a0e6b7a", null ]
+    [ "drawText", "class_g_ft_1_1_graphics.html#a225c6b12033f5246a1f21c387bb76354", null ]
 ];

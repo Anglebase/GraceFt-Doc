@@ -145,6 +145,18 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:acb3b5f342a92e1407e2367a60538fc23" id="r_acb3b5f342a92e1407e2367a60538fc23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb3b5f342a92e1407e2367a60538fc23">clear</a> ()</td></tr>
 <tr class="memdesc:acb3b5f342a92e1407e2367a60538fc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用背景色重绘绘图目标  <br /></td></tr>
 <tr class="separator:acb3b5f342a92e1407e2367a60538fc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a786fa35fb46d07449cb806f43354ad38" id="r_a786fa35fb46d07449cb806f43354ad38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a786fa35fb46d07449cb806f43354ad38">textWidth</a> (wchar_t c, const std::vector&lt; std::wstring &gt; &amp;fonts={})</td></tr>
+<tr class="memdesc:a786fa35fb46d07449cb806f43354ad38"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定字符在指定回滚字体集合中的宽度  <br /></td></tr>
+<tr class="separator:a786fa35fb46d07449cb806f43354ad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a28961d70310176a707e2e23a3cb8d" id="r_a11a28961d70310176a707e2e23a3cb8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11a28961d70310176a707e2e23a3cb8d">textHeight</a> (wchar_t c, const std::vector&lt; std::wstring &gt; &amp;fonts={})</td></tr>
+<tr class="memdesc:a11a28961d70310176a707e2e23a3cb8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定字符在指定回滚字体集合中的高度  <br /></td></tr>
+<tr class="separator:a11a28961d70310176a707e2e23a3cb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab228c0ce3c8b1da5e8dcf822662d179a" id="r_ab228c0ce3c8b1da5e8dcf822662d179a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab228c0ce3c8b1da5e8dcf822662d179a">textWidth</a> (const std::wstring &amp;text, const std::vector&lt; std::wstring &gt; &amp;fonts={})</td></tr>
+<tr class="memdesc:ab228c0ce3c8b1da5e8dcf822662d179a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定文本在指定回滚字体集合中的宽度  <br /></td></tr>
+<tr class="separator:ab228c0ce3c8b1da5e8dcf822662d179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dac0edab97924443196d92901628f1" id="r_a85dac0edab97924443196d92901628f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85dac0edab97924443196d92901628f1">textHeight</a> (const std::wstring &amp;text, const std::vector&lt; std::wstring &gt; &amp;fonts={})</td></tr>
+<tr class="memdesc:a85dac0edab97924443196d92901628f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定文本在指定回滚字体集合中的高度  <br /></td></tr>
+<tr class="separator:a85dac0edab97924443196d92901628f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a945a73a1d7a5afd2436d0f5fe4ba752f" id="r_a945a73a1d7a5afd2436d0f5fe4ba752f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a945a73a1d7a5afd2436d0f5fe4ba752f">setBackgroundColor</a> (const <a class="el" href="class_g_ft_1_1_color.html">Color</a> &amp;color)</td></tr>
 <tr class="memdesc:a945a73a1d7a5afd2436d0f5fe4ba752f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置默认背景色  <br /></td></tr>
 <tr class="separator:a945a73a1d7a5afd2436d0f5fe4ba752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,9 +229,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a3244b269007f751338b7ab9d3a93216a" id="r_a3244b269007f751338b7ab9d3a93216a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3244b269007f751338b7ab9d3a93216a">drawText</a> (const std::wstring &amp;text, const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gae272575b72a43dc6c61f12368c158aa9">fPoint</a> &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)</td></tr>
 <tr class="memdesc:a3244b269007f751338b7ab9d3a93216a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定位置绘制文本  <br /></td></tr>
 <tr class="separator:a3244b269007f751338b7ab9d3a93216a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac49d68f5c6d1f603a9601c419a0e6b7a" id="r_ac49d68f5c6d1f603a9601c419a0e6b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac49d68f5c6d1f603a9601c419a0e6b7a">drawText</a> (const std::wstring &amp;text, const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, int flags=<a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b">TextAlign::Left</a>|<a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7369426c00c51703ca9ded64bf0a791e">TextAlign::Top</a>)</td></tr>
-<tr class="memdesc:ac49d68f5c6d1f603a9601c419a0e6b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定矩形区域内绘制文本  <br /></td></tr>
-<tr class="separator:ac49d68f5c6d1f603a9601c419a0e6b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225c6b12033f5246a1f21c387bb76354" id="r_a225c6b12033f5246a1f21c387bb76354"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225c6b12033f5246a1f21c387bb76354">drawText</a> (const std::wstring &amp;text, const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga34803ad6b8a6030e52d0758017c367f9">fRect</a> &amp;rect, int flags=<a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b">TextAlign::Left</a>|<a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7369426c00c51703ca9ded64bf0a791e">TextAlign::Top</a>, const std::vector&lt; std::wstring &gt; &amp;fonts={})</td></tr>
+<tr class="memdesc:a225c6b12033f5246a1f21c387bb76354"><td class="mdescLeft">&#160;</td><td class="mdescRight">在指定矩形区域内绘制文本  <br /></td></tr>
+<tr class="separator:a225c6b12033f5246a1f21c387bb76354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>绘图接口类 </p>
@@ -431,6 +443,130 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>使用背景色重绘绘图目标 </p>
+
+</div>
+</div>
+<a id="a786fa35fb46d07449cb806f43354ad38" name="a786fa35fb46d07449cb806f43354ad38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786fa35fb46d07449cb806f43354ad38">&#9670;&#160;</a></span>textWidth() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GFt::Graphics::textWidth </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::wstring &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>fonts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取指定字符在指定回滚字体集合中的宽度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>要获取宽度的字符 </td></tr>
+    <tr><td class="paramname">fonts</td><td>回滚字体集合, 若未指定则使用当前的环境设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>字符的像素宽度 </dd></dl>
+
+</div>
+</div>
+<a id="a11a28961d70310176a707e2e23a3cb8d" name="a11a28961d70310176a707e2e23a3cb8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a28961d70310176a707e2e23a3cb8d">&#9670;&#160;</a></span>textHeight() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GFt::Graphics::textHeight </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::wstring &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>fonts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取指定字符在指定回滚字体集合中的高度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>要获取高度的字符 </td></tr>
+    <tr><td class="paramname">fonts</td><td>回滚字体集合, 若未指定则使用当前的环境设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>字符的像素高度 </dd></dl>
+
+</div>
+</div>
+<a id="ab228c0ce3c8b1da5e8dcf822662d179a" name="ab228c0ce3c8b1da5e8dcf822662d179a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab228c0ce3c8b1da5e8dcf822662d179a">&#9670;&#160;</a></span>textWidth() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GFt::Graphics::textWidth </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::wstring &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>fonts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取指定文本在指定回滚字体集合中的宽度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>要获取宽度的文本 </td></tr>
+    <tr><td class="paramname">fonts</td><td>回滚字体集合, 若未指定则使用当前的环境设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>文本的像素宽度 </dd></dl>
+
+</div>
+</div>
+<a id="a85dac0edab97924443196d92901628f1" name="a85dac0edab97924443196d92901628f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85dac0edab97924443196d92901628f1">&#9670;&#160;</a></span>textHeight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GFt::Graphics::textHeight </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::wstring &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>fonts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取指定文本在指定回滚字体集合中的高度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>要获取高度的文本 </td></tr>
+    <tr><td class="paramname">fonts</td><td>回滚字体集合, 若未指定则使用当前的环境设置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>文本的像素高度 </dd></dl>
 
 </div>
 </div>
@@ -1113,14 +1249,14 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="ac49d68f5c6d1f603a9601c419a0e6b7a" name="ac49d68f5c6d1f603a9601c419a0e6b7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac49d68f5c6d1f603a9601c419a0e6b7a">&#9670;&#160;</a></span>drawText() <span class="overload">[2/2]</span></h2>
+<a id="a225c6b12033f5246a1f21c387bb76354" name="a225c6b12033f5246a1f21c387bb76354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225c6b12033f5246a1f21c387bb76354">&#9670;&#160;</a></span>drawText() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GFt::Graphics::drawText </td>
+          <td class="memname">int GFt::Graphics::drawText </td>
           <td>(</td>
           <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
         </tr>
@@ -1132,7 +1268,12 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>flags</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b">TextAlign::Left</a>&#160;|&#160;<a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7369426c00c51703ca9ded64bf0a791e">TextAlign::Top</a></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>flags</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b">TextAlign::Left</a>&#160;|&#160;<a class="el" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7369426c00c51703ca9ded64bf0a791e">TextAlign::Top</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::wstring &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>fonts</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1142,10 +1283,13 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">text</td><td>要绘制的文本 </td></tr>
     <tr><td class="paramname">rect</td><td>要绘制的矩形区域 </td></tr>
-    <tr><td class="paramname">flags</td><td>文本对齐方式</td></tr>
+    <tr><td class="paramname">flags</td><td>文本对齐方式 </td></tr>
+    <tr><td class="paramname">font</td><td>指定的字体集合 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>返回</dt><dd>实际绘制出的字符的像素宽度 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>若未指定字体集合则使用环境当前绑定的字体</dd></dl>
 <p>若传入了无效的 flags, 则此函数将会忽略它们, 并使用默认的对齐方式(左上对齐) </p>
 
 </div>
