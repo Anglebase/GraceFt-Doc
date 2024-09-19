@@ -29,6 +29,9 @@ var hierarchy =
     [ "GFt::Graphics", "class_g_ft_1_1_graphics.html", null ],
     [ "GFt::GraphInterface", "class_g_ft_1_1_graph_interface.html", [
       [ "GFt::Block", "class_g_ft_1_1_block.html", [
+        [ "GFt::ColumnLayout", "class_g_ft_1_1_column_layout.html", null ],
+        [ "GFt::GridLayout", "class_g_ft_1_1_grid_layout.html", null ],
+        [ "GFt::RowLayout", "class_g_ft_1_1_row_layout.html", null ],
         [ "GFt::Widget::Button", "class_g_ft_1_1_widget_1_1_button.html", null ],
         [ "GFt::Widget::Label", "class_g_ft_1_1_widget_1_1_label.html", null ],
         [ "GFt::Window", "class_g_ft_1_1_window.html", null ]
@@ -43,6 +46,11 @@ var hierarchy =
     ] ],
     [ "GFt::KeyReleaseEventMonitor", "class_g_ft_1_1_key_release_event_monitor.html", [
       [ "GFt::KeyboardEventMonitor", "class_g_ft_1_1_keyboard_event_monitor.html", null ]
+    ] ],
+    [ "GFt::Layout", "class_g_ft_1_1_layout.html", [
+      [ "GFt::ColumnLayout", "class_g_ft_1_1_column_layout.html", null ],
+      [ "GFt::GridLayout", "class_g_ft_1_1_grid_layout.html", null ],
+      [ "GFt::RowLayout", "class_g_ft_1_1_row_layout.html", null ]
     ] ],
     [ "GFt::Line< T >", "class_g_ft_1_1_line.html", null ],
     [ "GFt::Matrix< M, N, T >", "class_g_ft_1_1_matrix.html", null ],

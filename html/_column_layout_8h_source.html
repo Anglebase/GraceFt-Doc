@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GraceFt: include/GraceFt/RowLayout.h 源文件</title>
+<title>GraceFt: include/GraceFt/ColumnLayout.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('_row_layout_8h_source.html',''); initResizable(true); });
+$(function(){initNavTree('_column_layout_8h_source.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,7 +104,7 @@ $(function(){initNavTree('_row_layout_8h_source.html',''); initResizable(true); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">RowLayout.h</div></div>
+  <div class="headertitle"><div class="title">ColumnLayout.h</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
@@ -115,46 +115,46 @@ $(function(){initNavTree('_row_layout_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
 <div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_row_layout.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_row_layout.html">RowLayout</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_layout.html">Layout</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_column_layout.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_column_layout.html">ColumnLayout</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_layout.html">Layout</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordtype">int</span> space_{ 0 };</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        std::map&lt;Block*, float&gt; blockLayout_;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">void</span> updateLayout();</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#ae6b27e954f7d91c34aef1e40b7baa44e">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#a93a9869a9924e0b5ce623362a7f59b32">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#a7c0bbb488d79c2f0ddd8d1565e59b963">RowLayout</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>, <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_row_layout.html#a94aa5ba3e2bb55bfadb8d083843e9506">   25</a></span>        <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#a94aa5ba3e2bb55bfadb8d083843e9506">~RowLayout</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#a9045e6a0f849a2ce8c1ec3a2ced03c06">ColumnLayout</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>, <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_column_layout.html#a05dc8b3a8d97be64f729a4d4da2415e8">   25</a></span>        <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#a05dc8b3a8d97be64f729a4d4da2415e8">~ColumnLayout</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#a9422c2a31cb4dbe3602863e83124a8c9">addItem</a>(<a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* block, <span class="keywordtype">float</span> widthProportion = 1.f);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#a873231222b8773382fc5fd05cdb0e2ba">removeItem</a>(<a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* block);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#a67109af66b99f89ecfa87c330445fdd2">addItem</a>(<a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* block, <span class="keywordtype">float</span> widthProportion = 1.f);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#af81c6c9729d2aff1731a5440119cc2a3">removeItem</a>(<a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* block);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#af41ea40d4606c6089d02df4dd9240672">setSpace</a>(<span class="keywordtype">int</span> space);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_g_ft_1_1_row_layout.html#a73df630ec4ba13a73cddc9e2f114cc9d">getSpace</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#abb130af21f326d00580e13a5f666b340">setSpace</a>(<span class="keywordtype">int</span> space);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_g_ft_1_1_column_layout.html#ae1f232498a7b928c22d9b39d6a6578db">getSpace</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
 </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="ttc" id="aclass_g_ft_1_1_block_html"><div class="ttname"><a href="class_g_ft_1_1_block.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html">GFt::ColumnLayout</a></div><div class="ttdoc">列布局类</div><div class="ttdef"><b>定义</b> ColumnLayout.h:9</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_a05dc8b3a8d97be64f729a4d4da2415e8"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#a05dc8b3a8d97be64f729a4d4da2415e8">GFt::ColumnLayout::~ColumnLayout</a></div><div class="ttdeci">~ColumnLayout() override</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_a67109af66b99f89ecfa87c330445fdd2"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#a67109af66b99f89ecfa87c330445fdd2">GFt::ColumnLayout::addItem</a></div><div class="ttdeci">void addItem(Block *block, float widthProportion=1.f)</div><div class="ttdoc">添加参与布局的块对象</div><div class="ttdef"><b>定义</b> ColumnLayout.cpp:36</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_a9045e6a0f849a2ce8c1ec3a2ced03c06"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#a9045e6a0f849a2ce8c1ec3a2ced03c06">GFt::ColumnLayout::ColumnLayout</a></div><div class="ttdeci">ColumnLayout(const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> ColumnLayout.cpp:32</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_a93a9869a9924e0b5ce623362a7f59b32"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#a93a9869a9924e0b5ce623362a7f59b32">GFt::ColumnLayout::onDraw</a></div><div class="ttdeci">void onDraw(const iRect &amp;rect) override</div><div class="ttdoc">重写onDraw方法，刷新布局</div><div class="ttdef"><b>定义</b> ColumnLayout.cpp:27</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_abb130af21f326d00580e13a5f666b340"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#abb130af21f326d00580e13a5f666b340">GFt::ColumnLayout::setSpace</a></div><div class="ttdeci">void setSpace(int space)</div><div class="ttdoc">设置布局之间的间隔宽度</div><div class="ttdef"><b>定义</b> ColumnLayout.cpp:48</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_ae1f232498a7b928c22d9b39d6a6578db"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#ae1f232498a7b928c22d9b39d6a6578db">GFt::ColumnLayout::getSpace</a></div><div class="ttdeci">int getSpace() const</div><div class="ttdoc">获取布局之间的间隔宽度</div><div class="ttdef"><b>定义</b> ColumnLayout.cpp:52</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html_af81c6c9729d2aff1731a5440119cc2a3"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html#af81c6c9729d2aff1731a5440119cc2a3">GFt::ColumnLayout::removeItem</a></div><div class="ttdeci">void removeItem(Block *block)</div><div class="ttdoc">移除参与布局的块对象</div><div class="ttdef"><b>定义</b> ColumnLayout.cpp:41</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a32fb8d44141ca4fb67153bc4a22c63ff"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">GFt::GraphInterface::rect</a></div><div class="ttdeci">iRect &amp; rect()</div><div class="ttdoc">绘制区域</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:6</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_layout_html"><div class="ttname"><a href="class_g_ft_1_1_layout.html">GFt::Layout</a></div><div class="ttdoc">布局基类</div><div class="ttdef"><b>定义</b> Layout.h:5</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html">GFt::RowLayout</a></div><div class="ttdoc">行布局类</div><div class="ttdef"><b>定义</b> RowLayout.h:9</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_a73df630ec4ba13a73cddc9e2f114cc9d"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#a73df630ec4ba13a73cddc9e2f114cc9d">GFt::RowLayout::getSpace</a></div><div class="ttdeci">int getSpace() const</div><div class="ttdoc">获取布局之间的间隔宽度</div><div class="ttdef"><b>定义</b> RowLayout.cpp:52</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_a7c0bbb488d79c2f0ddd8d1565e59b963"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#a7c0bbb488d79c2f0ddd8d1565e59b963">GFt::RowLayout::RowLayout</a></div><div class="ttdeci">RowLayout(const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> RowLayout.cpp:33</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_a873231222b8773382fc5fd05cdb0e2ba"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#a873231222b8773382fc5fd05cdb0e2ba">GFt::RowLayout::removeItem</a></div><div class="ttdeci">void removeItem(Block *block)</div><div class="ttdoc">移除参与布局的块对象</div><div class="ttdef"><b>定义</b> RowLayout.cpp:41</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_a9422c2a31cb4dbe3602863e83124a8c9"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#a9422c2a31cb4dbe3602863e83124a8c9">GFt::RowLayout::addItem</a></div><div class="ttdeci">void addItem(Block *block, float widthProportion=1.f)</div><div class="ttdoc">添加参与布局的块对象</div><div class="ttdef"><b>定义</b> RowLayout.cpp:36</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_a94aa5ba3e2bb55bfadb8d083843e9506"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#a94aa5ba3e2bb55bfadb8d083843e9506">GFt::RowLayout::~RowLayout</a></div><div class="ttdeci">~RowLayout() override</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_ae6b27e954f7d91c34aef1e40b7baa44e"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#ae6b27e954f7d91c34aef1e40b7baa44e">GFt::RowLayout::onDraw</a></div><div class="ttdeci">void onDraw(const iRect &amp;rect) override</div><div class="ttdoc">重写onDraw方法，刷新布局</div><div class="ttdef"><b>定义</b> RowLayout.cpp:27</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_row_layout_html_af41ea40d4606c6089d02df4dd9240672"><div class="ttname"><a href="class_g_ft_1_1_row_layout.html#af41ea40d4606c6089d02df4dd9240672">GFt::RowLayout::setSpace</a></div><div class="ttdeci">void setSpace(int space)</div><div class="ttdoc">设置布局之间的间隔宽度</div><div class="ttdef"><b>定义</b> RowLayout.cpp:48</div></div>
 <div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>RowLayout.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>ColumnLayout.h</b></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

@@ -111,6 +111,9 @@ $(function(){initNavTree('class_g_ft_1_1_layout.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 
+<p>布局基类  
+ <a href="#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_layout_8h_source.html">Layout.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 GFt::Layout 继承关系图:</div>
@@ -120,7 +123,9 @@ $(function(){initNavTree('class_g_ft_1_1_layout.html',''); initResizable(true); 
  <div class="center">
   <img src="class_g_ft_1_1_layout.png" usemap="#GFt::Layout_map" alt=""/>
   <map id="GFt::Layout_map" name="GFt::Layout_map">
-<area href="class_g_ft_1_1_row_layout.html" alt="GFt::RowLayout" shape="rect" coords="0,56,100,80"/>
+<area href="class_g_ft_1_1_column_layout.html" title="列布局类" alt="GFt::ColumnLayout" shape="rect" coords="0,56,118,80"/>
+<area href="class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="GFt::GridLayout" shape="rect" coords="128,56,246,80"/>
+<area href="class_g_ft_1_1_row_layout.html" title="行布局类" alt="GFt::RowLayout" shape="rect" coords="256,56,374,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -130,32 +135,49 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:a9726c6ac542232898ec76b8aaeec0047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af3f22ab844676ad215792d4874cf88" id="r_a2af3f22ab844676ad215792d4874cf88"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2af3f22ab844676ad215792d4874cf88">~Layout</a> ()=default</td></tr>
 <tr class="separator:a2af3f22ab844676ad215792d4874cf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8664bd32afe1f7d24622ca0f7107d968" id="r_a8664bd32afe1f7d24622ca0f7107d968"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8664bd32afe1f7d24622ca0f7107d968">leftPadding</a> ()</td></tr>
-<tr class="separator:a8664bd32afe1f7d24622ca0f7107d968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51433699abf471dc23c14ec9a0b0ece1" id="r_a51433699abf471dc23c14ec9a0b0ece1"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51433699abf471dc23c14ec9a0b0ece1">topPadding</a> ()</td></tr>
-<tr class="separator:a51433699abf471dc23c14ec9a0b0ece1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d4355b9ce2f3f76b756a25b921e66c" id="r_a87d4355b9ce2f3f76b756a25b921e66c"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d4355b9ce2f3f76b756a25b921e66c">rightPadding</a> ()</td></tr>
-<tr class="separator:a87d4355b9ce2f3f76b756a25b921e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6133f174020b930ac20429c71abcb67" id="r_ab6133f174020b930ac20429c71abcb67"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6133f174020b930ac20429c71abcb67">bottomPadding</a> ()</td></tr>
-<tr class="separator:ab6133f174020b930ac20429c71abcb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade882f5531d9dafaef072b5019ba79ca" id="r_ade882f5531d9dafaef072b5019ba79ca"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade882f5531d9dafaef072b5019ba79ca">horizontalSpacing</a> ()</td></tr>
-<tr class="separator:ade882f5531d9dafaef072b5019ba79ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86eb3e486b2f43b3fbb706131b9a10e8" id="r_a86eb3e486b2f43b3fbb706131b9a10e8"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86eb3e486b2f43b3fbb706131b9a10e8">verticalSpacing</a> ()</td></tr>
-<tr class="separator:a86eb3e486b2f43b3fbb706131b9a10e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54444eeb322d0ffd67d614909c46f900" id="r_a54444eeb322d0ffd67d614909c46f900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54444eeb322d0ffd67d614909c46f900">leftPadding</a> () const</td></tr>
-<tr class="separator:a54444eeb322d0ffd67d614909c46f900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e55afdcfe2e89cd4964508179aeb0d5" id="r_a6e55afdcfe2e89cd4964508179aeb0d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e55afdcfe2e89cd4964508179aeb0d5">topPadding</a> () const</td></tr>
-<tr class="separator:a6e55afdcfe2e89cd4964508179aeb0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7729a3f94c12e859cbcad85c95bf3801" id="r_a7729a3f94c12e859cbcad85c95bf3801"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7729a3f94c12e859cbcad85c95bf3801">rightPadding</a> () const</td></tr>
-<tr class="separator:a7729a3f94c12e859cbcad85c95bf3801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff69a8ed9cd97409ba8b3adea96e625" id="r_a0ff69a8ed9cd97409ba8b3adea96e625"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ff69a8ed9cd97409ba8b3adea96e625">bottomPadding</a> () const</td></tr>
-<tr class="separator:a0ff69a8ed9cd97409ba8b3adea96e625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca64a5c9e4e39a5cfc7177e77daf9e1" id="r_aaca64a5c9e4e39a5cfc7177e77daf9e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaca64a5c9e4e39a5cfc7177e77daf9e1">horizontalSpacing</a> () const</td></tr>
-<tr class="separator:aaca64a5c9e4e39a5cfc7177e77daf9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0eb727ce3a04e68ad0b55dff7b705e" id="r_a5e0eb727ce3a04e68ad0b55dff7b705e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e0eb727ce3a04e68ad0b55dff7b705e">verticalSpacing</a> () const</td></tr>
-<tr class="separator:a5e0eb727ce3a04e68ad0b55dff7b705e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34384df7f42e3ba0646a0f033ec3d71d" id="r_a34384df7f42e3ba0646a0f033ec3d71d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34384df7f42e3ba0646a0f033ec3d71d">setPadding</a> (int padding)</td></tr>
+<tr class="memdesc:a34384df7f42e3ba0646a0f033ec3d71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置边距  <br /></td></tr>
+<tr class="separator:a34384df7f42e3ba0646a0f033ec3d71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0dc9a5f7fb7e4174daaf3e0a745723" id="r_a7e0dc9a5f7fb7e4174daaf3e0a745723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e0dc9a5f7fb7e4174daaf3e0a745723">setPadding</a> (int leftright, int topbottom)</td></tr>
+<tr class="memdesc:a7e0dc9a5f7fb7e4174daaf3e0a745723"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置边距  <br /></td></tr>
+<tr class="separator:a7e0dc9a5f7fb7e4174daaf3e0a745723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404ae5dbb4abe28e18f0257086f7f6aa" id="r_a404ae5dbb4abe28e18f0257086f7f6aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a404ae5dbb4abe28e18f0257086f7f6aa">setPadding</a> (int left, int top, int right, int bottom)</td></tr>
+<tr class="memdesc:a404ae5dbb4abe28e18f0257086f7f6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置边距  <br /></td></tr>
+<tr class="separator:a404ae5dbb4abe28e18f0257086f7f6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d0b5cc0d06e39876f93c870782cfe3" id="r_ab7d0b5cc0d06e39876f93c870782cfe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7d0b5cc0d06e39876f93c870782cfe3">setLeftPadding</a> (int left)</td></tr>
+<tr class="memdesc:ab7d0b5cc0d06e39876f93c870782cfe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置左边距  <br /></td></tr>
+<tr class="separator:ab7d0b5cc0d06e39876f93c870782cfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1bb65c4f1a97e02aeb9f130a552d50d" id="r_aa1bb65c4f1a97e02aeb9f130a552d50d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1bb65c4f1a97e02aeb9f130a552d50d">setTopPadding</a> (int top)</td></tr>
+<tr class="memdesc:aa1bb65c4f1a97e02aeb9f130a552d50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置上边距  <br /></td></tr>
+<tr class="separator:aa1bb65c4f1a97e02aeb9f130a552d50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0d9c867430044fd7e6f1cedae80e18" id="r_a5d0d9c867430044fd7e6f1cedae80e18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d0d9c867430044fd7e6f1cedae80e18">setRightPadding</a> (int right)</td></tr>
+<tr class="memdesc:a5d0d9c867430044fd7e6f1cedae80e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置右边距  <br /></td></tr>
+<tr class="separator:a5d0d9c867430044fd7e6f1cedae80e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124eaef31a5b810fc690034d769b7d38" id="r_a124eaef31a5b810fc690034d769b7d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a124eaef31a5b810fc690034d769b7d38">setBottomPadding</a> (int bottom)</td></tr>
+<tr class="memdesc:a124eaef31a5b810fc690034d769b7d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置下边距  <br /></td></tr>
+<tr class="separator:a124eaef31a5b810fc690034d769b7d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7f908db3da0396168ca19362822056" id="r_a4f7f908db3da0396168ca19362822056"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f7f908db3da0396168ca19362822056">getLeftPadding</a> () const</td></tr>
+<tr class="memdesc:a4f7f908db3da0396168ca19362822056"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取左边距  <br /></td></tr>
+<tr class="separator:a4f7f908db3da0396168ca19362822056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0da46216277a11913cac19d017373b" id="r_aef0da46216277a11913cac19d017373b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef0da46216277a11913cac19d017373b">getTopPadding</a> () const</td></tr>
+<tr class="memdesc:aef0da46216277a11913cac19d017373b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取上边距  <br /></td></tr>
+<tr class="separator:aef0da46216277a11913cac19d017373b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc16cb2407e28d84ace6a9cd0434f998" id="r_adc16cb2407e28d84ace6a9cd0434f998"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc16cb2407e28d84ace6a9cd0434f998">getRightPadding</a> () const</td></tr>
+<tr class="memdesc:adc16cb2407e28d84ace6a9cd0434f998"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取右边距  <br /></td></tr>
+<tr class="separator:adc16cb2407e28d84ace6a9cd0434f998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49553daf8b2c250f3ff9c8c7cd9e0aae" id="r_a49553daf8b2c250f3ff9c8c7cd9e0aae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49553daf8b2c250f3ff9c8c7cd9e0aae">getBottomPadding</a> () const</td></tr>
+<tr class="memdesc:a49553daf8b2c250f3ff9c8c7cd9e0aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取下边距  <br /></td></tr>
+<tr class="separator:a49553daf8b2c250f3ff9c8c7cd9e0aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3864f2c8a251a6ef4a9d25aedbbbbbca" id="r_a3864f2c8a251a6ef4a9d25aedbbbbbca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3864f2c8a251a6ef4a9d25aedbbbbbca">setShouldUpdateLayout</a> (bool <a class="el" href="#ae1ae78eabb0528a7e45243a09127f861">shouldUpdateLayout</a>=true)</td></tr>
+<tr class="memdesc:a3864f2c8a251a6ef4a9d25aedbbbbbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">标记是否需要更新布局  <br /></td></tr>
+<tr class="separator:a3864f2c8a251a6ef4a9d25aedbbbbbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ae78eabb0528a7e45243a09127f861" id="r_ae1ae78eabb0528a7e45243a09127f861"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1ae78eabb0528a7e45243a09127f861">shouldUpdateLayout</a> () const</td></tr>
+<tr class="memdesc:ae1ae78eabb0528a7e45243a09127f861"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查是否需要更新布局  <br /></td></tr>
+<tr class="separator:ae1ae78eabb0528a7e45243a09127f861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">构造及析构函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>布局基类 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a9726c6ac542232898ec76b8aaeec0047" name="a9726c6ac542232898ec76b8aaeec0047"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9726c6ac542232898ec76b8aaeec0047">&#9670;&#160;</a></span>Layout()</h2>
 
@@ -207,116 +229,187 @@ Public 成员函数</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a8664bd32afe1f7d24622ca0f7107d968" name="a8664bd32afe1f7d24622ca0f7107d968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8664bd32afe1f7d24622ca0f7107d968">&#9670;&#160;</a></span>leftPadding() <span class="overload">[1/2]</span></h2>
+<a id="a34384df7f42e3ba0646a0f033ec3d71d" name="a34384df7f42e3ba0646a0f033ec3d71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34384df7f42e3ba0646a0f033ec3d71d">&#9670;&#160;</a></span>setPadding() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int &amp; GFt::Layout::leftPadding </td>
+          <td class="memname">void GFt::Layout::setPadding </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>padding</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置边距 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">padding</td><td>统一设置边距 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a51433699abf471dc23c14ec9a0b0ece1" name="a51433699abf471dc23c14ec9a0b0ece1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51433699abf471dc23c14ec9a0b0ece1">&#9670;&#160;</a></span>topPadding() <span class="overload">[1/2]</span></h2>
+<a id="a7e0dc9a5f7fb7e4174daaf3e0a745723" name="a7e0dc9a5f7fb7e4174daaf3e0a745723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0dc9a5f7fb7e4174daaf3e0a745723">&#9670;&#160;</a></span>setPadding() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int &amp; GFt::Layout::topPadding </td>
+          <td class="memname">void GFt::Layout::setPadding </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>leftright</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>topbottom</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置边距 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leftright</td><td>左右边距 </td></tr>
+    <tr><td class="paramname">topbottom</td><td>上下边距 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a404ae5dbb4abe28e18f0257086f7f6aa" name="a404ae5dbb4abe28e18f0257086f7f6aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404ae5dbb4abe28e18f0257086f7f6aa">&#9670;&#160;</a></span>setPadding() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Layout::setPadding </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>top</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>right</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bottom</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置边距 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>左边距 </td></tr>
+    <tr><td class="paramname">top</td><td>上边距 </td></tr>
+    <tr><td class="paramname">right</td><td>右边距 </td></tr>
+    <tr><td class="paramname">bottom</td><td>下边距 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7d0b5cc0d06e39876f93c870782cfe3" name="ab7d0b5cc0d06e39876f93c870782cfe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d0b5cc0d06e39876f93c870782cfe3">&#9670;&#160;</a></span>setLeftPadding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Layout::setLeftPadding </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>left</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置左边距 </p>
+
 </div>
 </div>
-<a id="a87d4355b9ce2f3f76b756a25b921e66c" name="a87d4355b9ce2f3f76b756a25b921e66c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87d4355b9ce2f3f76b756a25b921e66c">&#9670;&#160;</a></span>rightPadding() <span class="overload">[1/2]</span></h2>
+<a id="aa1bb65c4f1a97e02aeb9f130a552d50d" name="aa1bb65c4f1a97e02aeb9f130a552d50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1bb65c4f1a97e02aeb9f130a552d50d">&#9670;&#160;</a></span>setTopPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int &amp; GFt::Layout::rightPadding </td>
+          <td class="memname">void GFt::Layout::setTopPadding </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>top</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置上边距 </p>
+
 </div>
 </div>
-<a id="ab6133f174020b930ac20429c71abcb67" name="ab6133f174020b930ac20429c71abcb67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6133f174020b930ac20429c71abcb67">&#9670;&#160;</a></span>bottomPadding() <span class="overload">[1/2]</span></h2>
+<a id="a5d0d9c867430044fd7e6f1cedae80e18" name="a5d0d9c867430044fd7e6f1cedae80e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0d9c867430044fd7e6f1cedae80e18">&#9670;&#160;</a></span>setRightPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int &amp; GFt::Layout::bottomPadding </td>
+          <td class="memname">void GFt::Layout::setRightPadding </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>right</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置右边距 </p>
+
 </div>
 </div>
-<a id="ade882f5531d9dafaef072b5019ba79ca" name="ade882f5531d9dafaef072b5019ba79ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade882f5531d9dafaef072b5019ba79ca">&#9670;&#160;</a></span>horizontalSpacing() <span class="overload">[1/2]</span></h2>
+<a id="a124eaef31a5b810fc690034d769b7d38" name="a124eaef31a5b810fc690034d769b7d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124eaef31a5b810fc690034d769b7d38">&#9670;&#160;</a></span>setBottomPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int &amp; GFt::Layout::horizontalSpacing </td>
+          <td class="memname">void GFt::Layout::setBottomPadding </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bottom</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>设置下边距 </p>
+
 </div>
 </div>
-<a id="a86eb3e486b2f43b3fbb706131b9a10e8" name="a86eb3e486b2f43b3fbb706131b9a10e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86eb3e486b2f43b3fbb706131b9a10e8">&#9670;&#160;</a></span>verticalSpacing() <span class="overload">[1/2]</span></h2>
+<a id="a4f7f908db3da0396168ca19362822056" name="a4f7f908db3da0396168ca19362822056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7f908db3da0396168ca19362822056">&#9670;&#160;</a></span>getLeftPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int &amp; GFt::Layout::verticalSpacing </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54444eeb322d0ffd67d614909c46f900" name="a54444eeb322d0ffd67d614909c46f900"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54444eeb322d0ffd67d614909c46f900">&#9670;&#160;</a></span>leftPadding() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GFt::Layout::leftPadding </td>
+          <td class="memname">int GFt::Layout::getLeftPadding </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -324,16 +417,18 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>获取左边距 </p>
+
 </div>
 </div>
-<a id="a6e55afdcfe2e89cd4964508179aeb0d5" name="a6e55afdcfe2e89cd4964508179aeb0d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e55afdcfe2e89cd4964508179aeb0d5">&#9670;&#160;</a></span>topPadding() <span class="overload">[2/2]</span></h2>
+<a id="aef0da46216277a11913cac19d017373b" name="aef0da46216277a11913cac19d017373b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0da46216277a11913cac19d017373b">&#9670;&#160;</a></span>getTopPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GFt::Layout::topPadding </td>
+          <td class="memname">int GFt::Layout::getTopPadding </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -341,16 +436,18 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>获取上边距 </p>
+
 </div>
 </div>
-<a id="a7729a3f94c12e859cbcad85c95bf3801" name="a7729a3f94c12e859cbcad85c95bf3801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7729a3f94c12e859cbcad85c95bf3801">&#9670;&#160;</a></span>rightPadding() <span class="overload">[2/2]</span></h2>
+<a id="adc16cb2407e28d84ace6a9cd0434f998" name="adc16cb2407e28d84ace6a9cd0434f998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc16cb2407e28d84ace6a9cd0434f998">&#9670;&#160;</a></span>getRightPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GFt::Layout::rightPadding </td>
+          <td class="memname">int GFt::Layout::getRightPadding </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -358,16 +455,18 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>获取右边距 </p>
+
 </div>
 </div>
-<a id="a0ff69a8ed9cd97409ba8b3adea96e625" name="a0ff69a8ed9cd97409ba8b3adea96e625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ff69a8ed9cd97409ba8b3adea96e625">&#9670;&#160;</a></span>bottomPadding() <span class="overload">[2/2]</span></h2>
+<a id="a49553daf8b2c250f3ff9c8c7cd9e0aae" name="a49553daf8b2c250f3ff9c8c7cd9e0aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49553daf8b2c250f3ff9c8c7cd9e0aae">&#9670;&#160;</a></span>getBottomPadding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GFt::Layout::bottomPadding </td>
+          <td class="memname">int GFt::Layout::getBottomPadding </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -375,16 +474,37 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>获取下边距 </p>
+
 </div>
 </div>
-<a id="aaca64a5c9e4e39a5cfc7177e77daf9e1" name="aaca64a5c9e4e39a5cfc7177e77daf9e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaca64a5c9e4e39a5cfc7177e77daf9e1">&#9670;&#160;</a></span>horizontalSpacing() <span class="overload">[2/2]</span></h2>
+<a id="a3864f2c8a251a6ef4a9d25aedbbbbbca" name="a3864f2c8a251a6ef4a9d25aedbbbbbca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3864f2c8a251a6ef4a9d25aedbbbbbca">&#9670;&#160;</a></span>setShouldUpdateLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GFt::Layout::horizontalSpacing </td>
+          <td class="memname">void GFt::Layout::setShouldUpdateLayout </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>shouldUpdateLayout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>标记是否需要更新布局 </p>
+
+</div>
+</div>
+<a id="ae1ae78eabb0528a7e45243a09127f861" name="ae1ae78eabb0528a7e45243a09127f861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ae78eabb0528a7e45243a09127f861">&#9670;&#160;</a></span>shouldUpdateLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GFt::Layout::shouldUpdateLayout </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -392,22 +512,7 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a5e0eb727ce3a04e68ad0b55dff7b705e" name="a5e0eb727ce3a04e68ad0b55dff7b705e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e0eb727ce3a04e68ad0b55dff7b705e">&#9670;&#160;</a></span>verticalSpacing() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GFt::Layout::verticalSpacing </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>检查是否需要更新布局 </p>
 
 </div>
 </div>
