@@ -6,6 +6,9 @@ var searchData=
   ['x2_3',['X2',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a54105bddbfe3f639d49cbe8f5182c958',1,'GFt']]],
   ['xblock_4',['XBlock',['../struct_g_ft_1_1_u_i_1_1_x_block.html',1,'GFt::UI']]],
   ['xbutton_5',['XButton',['../struct_g_ft_1_1_u_i_1_1_x_button.html',1,'GFt::UI']]],
-  ['xlabel_6',['XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html',1,'GFt::UI']]],
-  ['xwindow_7',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
+  ['xcolumnlayout_6',['XColumnLayout',['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html',1,'GFt::UI']]],
+  ['xgridlayout_7',['XGridLayout',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html',1,'GFt::UI']]],
+  ['xlabel_8',['XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html',1,'GFt::UI']]],
+  ['xrowlayout_9',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
+  ['xwindow_10',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
 ];

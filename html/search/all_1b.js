@@ -20,6 +20,9 @@ var searchData=
   ['_7ewindow_17',['~Window',['../class_g_ft_1_1_window.html#ac805b33fd497fb66eda31ed85bca5622',1,'GFt::Window']]],
   ['_7exblock_18',['~XBlock',['../struct_g_ft_1_1_u_i_1_1_x_block.html#af3cd3d98c4a95671787360d6d8305ced',1,'GFt::UI::XBlock']]],
   ['_7exbutton_19',['~XButton',['../struct_g_ft_1_1_u_i_1_1_x_button.html#abf33c29908b5c8aa8d42510753d68bd5',1,'GFt::UI::XButton']]],
-  ['_7exlabel_20',['~XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html#a3650da0c36b01fae9123894f2d24ea4a',1,'GFt::UI::XLabel']]],
-  ['_7exwindow_21',['~XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html#a48a280bb83893cf4bc5e291b6746ee93',1,'GFt::UI::XWindow']]]
+  ['_7excolumnlayout_20',['~XColumnLayout',['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html#ab3b90c2e2e8243226c53ce334a83697e',1,'GFt::UI::XColumnLayout']]],
+  ['_7exgridlayout_21',['~XGridLayout',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html#afc745e3ef051248114e0948053548435',1,'GFt::UI::XGridLayout']]],
+  ['_7exlabel_22',['~XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html#a3650da0c36b01fae9123894f2d24ea4a',1,'GFt::UI::XLabel']]],
+  ['_7exrowlayout_23',['~XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html#a0c10f0421d13b4fa81c0538c6b27ea41',1,'GFt::UI::XRowLayout']]],
+  ['_7exwindow_24',['~XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html#a48a280bb83893cf4bc5e291b6746ee93',1,'GFt::UI::XWindow']]]
 ];

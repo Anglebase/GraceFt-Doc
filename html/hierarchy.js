@@ -92,6 +92,9 @@ var hierarchy =
     [ "GFt::Texture", "class_g_ft_1_1_texture.html", null ],
     [ "GFt::UI::XBlock", "struct_g_ft_1_1_u_i_1_1_x_block.html", null ],
     [ "GFt::UI::XButton", "struct_g_ft_1_1_u_i_1_1_x_button.html", null ],
+    [ "GFt::UI::XColumnLayout", "struct_g_ft_1_1_u_i_1_1_x_column_layout.html", null ],
+    [ "GFt::UI::XGridLayout", "struct_g_ft_1_1_u_i_1_1_x_grid_layout.html", null ],
     [ "GFt::UI::XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", null ],
+    [ "GFt::UI::XRowLayout", "struct_g_ft_1_1_u_i_1_1_x_row_layout.html", null ],
     [ "GFt::UI::XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", null ]
 ];
