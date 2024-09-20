@@ -1,5 +1,59 @@
 var group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93 =
 [
+    [ "GFt::ColumnLayout", "class_g_ft_1_1_column_layout.html", [
+      [ "ColumnLayout", "class_g_ft_1_1_column_layout.html#a9045e6a0f849a2ce8c1ec3a2ced03c06", null ],
+      [ "~ColumnLayout", "class_g_ft_1_1_column_layout.html#a05dc8b3a8d97be64f729a4d4da2415e8", null ],
+      [ "onDraw", "class_g_ft_1_1_column_layout.html#a93a9869a9924e0b5ce623362a7f59b32", null ],
+      [ "addItem", "class_g_ft_1_1_column_layout.html#a67109af66b99f89ecfa87c330445fdd2", null ],
+      [ "removeItem", "class_g_ft_1_1_column_layout.html#af81c6c9729d2aff1731a5440119cc2a3", null ],
+      [ "setSpace", "class_g_ft_1_1_column_layout.html#abb130af21f326d00580e13a5f666b340", null ],
+      [ "getSpace", "class_g_ft_1_1_column_layout.html#ae1f232498a7b928c22d9b39d6a6578db", null ]
+    ] ],
+    [ "GFt::GridLayout", "class_g_ft_1_1_grid_layout.html", [
+      [ "GridLayout", "class_g_ft_1_1_grid_layout.html#a82fb11ffb0b4daeaeeae24e15d12d53f", null ],
+      [ "~GridLayout", "class_g_ft_1_1_grid_layout.html#a4cc3fbbf5fd1605d1433e2f57d702e5e", null ],
+      [ "onDraw", "class_g_ft_1_1_grid_layout.html#a76b6b7c1df2f43b927b93cabd6ca25f7", null ],
+      [ "addItem", "class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c", null ],
+      [ "removeItem", "class_g_ft_1_1_grid_layout.html#a19cc595be711e2c80e4f94e288df60d0", null ],
+      [ "setSpace", "class_g_ft_1_1_grid_layout.html#a2fd9c57454da1a58c2de0cf029b828ac", null ],
+      [ "setSpace", "class_g_ft_1_1_grid_layout.html#ae38f78d5384d3219d3ffa2591c4425f6", null ],
+      [ "setGridSize", "class_g_ft_1_1_grid_layout.html#a2f94bf27853e228a553d500650dae9f5", null ],
+      [ "setGridSize", "class_g_ft_1_1_grid_layout.html#a1e451ed2b605823d42018656db866f5e", null ],
+      [ "setVSpace", "class_g_ft_1_1_grid_layout.html#a6ec362ed2f20b1f28f37c2344a48b234", null ],
+      [ "setHSpace", "class_g_ft_1_1_grid_layout.html#a803eff4d6cc217e9546d0bf42c8c37aa", null ],
+      [ "setRows", "class_g_ft_1_1_grid_layout.html#ad073fd4f39154fb2d0af16c12b52cf7a", null ],
+      [ "setCols", "class_g_ft_1_1_grid_layout.html#a6a42e40d6d9dd52d8f2ed572b4cef330", null ],
+      [ "getRows", "class_g_ft_1_1_grid_layout.html#ad81511c7c20f26ce604663dfb714d9af", null ],
+      [ "getCols", "class_g_ft_1_1_grid_layout.html#add771820a3daa5e784f842f8fe178eeb", null ],
+      [ "getVSpace", "class_g_ft_1_1_grid_layout.html#a26550c93b381251abee0ad4a78906096", null ],
+      [ "getHSpace", "class_g_ft_1_1_grid_layout.html#a4e715976a528305f40f24194754d7be8", null ]
+    ] ],
+    [ "GFt::Layout", "class_g_ft_1_1_layout.html", [
+      [ "Layout", "class_g_ft_1_1_layout.html#a9726c6ac542232898ec76b8aaeec0047", null ],
+      [ "~Layout", "class_g_ft_1_1_layout.html#a2af3f22ab844676ad215792d4874cf88", null ],
+      [ "setPadding", "class_g_ft_1_1_layout.html#a34384df7f42e3ba0646a0f033ec3d71d", null ],
+      [ "setPadding", "class_g_ft_1_1_layout.html#a7e0dc9a5f7fb7e4174daaf3e0a745723", null ],
+      [ "setPadding", "class_g_ft_1_1_layout.html#a404ae5dbb4abe28e18f0257086f7f6aa", null ],
+      [ "setLeftPadding", "class_g_ft_1_1_layout.html#ab7d0b5cc0d06e39876f93c870782cfe3", null ],
+      [ "setTopPadding", "class_g_ft_1_1_layout.html#aa1bb65c4f1a97e02aeb9f130a552d50d", null ],
+      [ "setRightPadding", "class_g_ft_1_1_layout.html#a5d0d9c867430044fd7e6f1cedae80e18", null ],
+      [ "setBottomPadding", "class_g_ft_1_1_layout.html#a124eaef31a5b810fc690034d769b7d38", null ],
+      [ "getLeftPadding", "class_g_ft_1_1_layout.html#a4f7f908db3da0396168ca19362822056", null ],
+      [ "getTopPadding", "class_g_ft_1_1_layout.html#aef0da46216277a11913cac19d017373b", null ],
+      [ "getRightPadding", "class_g_ft_1_1_layout.html#adc16cb2407e28d84ace6a9cd0434f998", null ],
+      [ "getBottomPadding", "class_g_ft_1_1_layout.html#a49553daf8b2c250f3ff9c8c7cd9e0aae", null ],
+      [ "setShouldUpdateLayout", "class_g_ft_1_1_layout.html#a3864f2c8a251a6ef4a9d25aedbbbbbca", null ],
+      [ "shouldUpdateLayout", "class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861", null ]
+    ] ],
+    [ "GFt::RowLayout", "class_g_ft_1_1_row_layout.html", [
+      [ "RowLayout", "class_g_ft_1_1_row_layout.html#a7c0bbb488d79c2f0ddd8d1565e59b963", null ],
+      [ "~RowLayout", "class_g_ft_1_1_row_layout.html#a94aa5ba3e2bb55bfadb8d083843e9506", null ],
+      [ "onDraw", "class_g_ft_1_1_row_layout.html#ae6b27e954f7d91c34aef1e40b7baa44e", null ],
+      [ "addItem", "class_g_ft_1_1_row_layout.html#a9422c2a31cb4dbe3602863e83124a8c9", null ],
+      [ "removeItem", "class_g_ft_1_1_row_layout.html#a873231222b8773382fc5fd05cdb0e2ba", null ],
+      [ "setSpace", "class_g_ft_1_1_row_layout.html#af41ea40d4606c6089d02df4dd9240672", null ],
+      [ "getSpace", "class_g_ft_1_1_row_layout.html#a73df630ec4ba13a73cddc9e2f114cc9d", null ]
+    ] ],
     [ "GFt::Application", "class_g_ft_1_1_application.html", [
       [ "Application", "class_g_ft_1_1_application.html#a765adaa476b31f37703d79577778ff8d", null ],
       [ "~Application", "class_g_ft_1_1_application.html#ab3903c3c32b7cdf6e6ac333cb409e0ab", null ],
