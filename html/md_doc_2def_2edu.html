@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GraceFt 教程</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.0.0</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('md_doc_2def_2edu.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">GraceFt 教程</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+基本介绍</h1>
+<p>GraceFt 是一款基于 C++ 开源图形引擎 <a href="https://club.xege.org/">EGE(Easy Graphics Engine)</a> 的图形应用程序框架，GracFt 基于<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL v3.0</a>开源协议开源。GraceFt 的一大特色是它完全基于原生的C++实现了**声明式**的界面编程模型，使得界面开发更加简单、直观。目前，GraecFt 的所有内容全部位于命名空间 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 下, <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 中分为3个主要模块: <a class="el" href="namespace_g_ft_1_1_u_i.html" title="声明式UI框架">GFt::UI</a> 、 <a class="el" href="namespace_g_ft_1_1_widget.html">GFt::Widget</a> 和 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 根命名空间。GFt 的根命名空间提供了一系列基础设施, <a class="el" href="namespace_g_ft_1_1_widget.html">GFt::Widget</a> 提供了一些常用部件, <a class="el" href="namespace_g_ft_1_1_u_i.html" title="声明式UI框架">GFt::UI</a> 提供了声明式的界面编程模型的实现支持；其次 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 中还有 <a class="el" href="namespace_g_ft_1_1literals.html">GFt::literals</a> 命名空间提供了一些方便的字面量定义。</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+环境配置</h1>
+<ol type="1">
+<li><b>确保你的电脑上已经安装了至少支持 C++20 的编译器</b>: GracFt 是基于 C++20 开发的，所以你的编译器必须支持 C++20 才能编译 GraceFt 项目</li>
+<li><b>下载项目模板或手动配置项目环境</b>: 你可以从 <a href="https://github.com/Graceful-Engineering-Team/GraceFt">Github</a> 下载项目模板，或者手动配置自己习惯的项目环境</li>
+<li><b>从此刻开始，你就可以开始编写你的 GraceFt 项目了！</b></li>
+</ol>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Hello World</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+定义式界面编程模型</h2>
+<p>下面是一个简单的 "Hello World" 程序，展示了如何基于定义式的界面编程模型，使用 GraceFt 编写一个窗口程序：</p>
+<p><b>首先，你需要包含构建应用程序相关的 GraceFt 头文件：</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+</div><!-- fragment --><p> 在这个文件中定义了一个 <code><a class="el" href="class_g_ft_1_1_application.html" title="应用程序类">GFt::Application</a></code> 类，它是 GraceFt 应用程序的入口类，掌管着整个应用程序的事件循环。</p>
+<p><b>同时，也需要包含一个用于构建窗口的头文件：</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+</div><!-- fragment --><p> 在这个文件中定义了一个 <code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 类，它管理着窗口的各种属性和行为，它是由单例模式+工厂模式实现的，这意味着你只能创建一个 <code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 对象。</p>
+<p><b>接下来就是 GraceFt 的核心了，你需要包含一个头文件来创建UI对象：</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
+</div><!-- fragment --><p> 这个头文件定义了一个 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，它是 GraceFt 界面编程模型的核心类，也是所有界面元素的基类，你可以通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类来创建各种类型的界面元素。 <b>通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，你就可以创建你的第一个界面元素了，比如一个 <code>GFt::HelloBlock</code> 对象：</b> </p><div class="fragment"><div class="line"><span class="keyword">class </span>HelloBlock : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">protected</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect)<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code hl_class" href="class_g_ft_1_1_graphics.html">GFt::Graphics</a> g;</div>
+<div class="line">        <span class="keyword">auto</span> r = <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>{<a class="code hl_typedef" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a>(), rect.<a class="code hl_function" href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">size</a>()};</div>
+<div class="line">        g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">drawText</a>(L<span class="stringliteral">&quot;Hello World!&quot;</span>, r, <a class="code hl_enumvalue" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24">GFt::TextAlign::Center</a>|<a class="code hl_enumvalue" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74">GFt::TextAlign::Middle</a>);</div>
+<div class="line">    }</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    HelloBlock(<span class="keyword">const</span> iRect&amp; rect, Block* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0)</div>
+<div class="line">        : Block(rect, parent, zIndex) {}</div>
+<div class="line">};</div>
+<div class="ttc" id="aclass_g_ft_1_1_block_html"><div class="ttname"><a href="class_g_ft_1_1_block.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_block_html_a00defc8bb2b35301c7e2e6eeaaf15afa"><div class="ttname"><a href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">GFt::Block::onDraw</a></div><div class="ttdeci">void onDraw(const iRect &amp;rect) override</div><div class="ttdoc">此函数用于绘制内容</div><div class="ttdef"><b>定义</b> Block.cpp:46</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:37</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html_a3244b269007f751338b7ab9d3a93216a"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">GFt::Graphics::drawText</a></div><div class="ttdeci">int drawText(const std::wstring &amp;text, const fPoint &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)</div><div class="ttdoc">在指定位置绘制文本</div><div class="ttdef"><b>定义</b> Graphics.cpp:345</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html_a63d2cc467c9f93f56cc7bd0a08c20429"><div class="ttname"><a href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">GFt::Rect::size</a></div><div class="ttdeci">constexpr Size&lt; T &gt; &amp; size()</div><div class="ttdoc">矩形大小</div><div class="ttdef"><b>定义</b> Rect.hpp:76</div></div>
+<div class="ttc" id="agroup___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE_html_gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74"><div class="ttname"><a href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74">GFt::Middle</a></div><div class="ttdeci">@ Middle</div><div class="ttdoc">垂直居中</div><div class="ttdef"><b>定义</b> Graphics.h:29</div></div>
+<div class="ttc" id="agroup___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE_html_gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24"><div class="ttname"><a href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24">GFt::Center</a></div><div class="ttdeci">@ Center</div><div class="ttdoc">水平居中</div><div class="ttdef"><b>定义</b> Graphics.h:26</div></div>
+<div class="ttc" id="agroup___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B_html_ga4db4aab9932601699d1d1c63845e79bf"><div class="ttname"><a href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a></div><div class="ttdeci">Point&lt; int &gt; iPoint</div><div class="ttdoc">整数型点类别别名</div><div class="ttdef"><b>定义</b> Point.hpp:180</div></div>
+</div><!-- fragment --><p> 为了能够使用 <code><a class="el" href="class_g_ft_1_1_graphics.html" title="绘图接口类">GFt::Graphics</a></code> 类绘制文本，你需要包含 <code><a class="el" href="_graphics_8h_source.html">GraceFt/Graphics.h</a></code> 头文件。 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Graphics.h&gt;</span></div>
+</div><!-- fragment --><p> 新的 <code>HelloBlock</code> 类继承自 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，并重写了 <code>onDraw</code> 方法，在这个方法中，我们使用 <code><a class="el" href="class_g_ft_1_1_graphics.html" title="绘图接口类">GFt::Graphics</a></code> 类在指定的矩形区域内居中的位置绘制了一个文本 "Hello World!"。接下来演示该如何使用这个类来构建图形用户界面。</p>
+<p><b>最后，实现main函数，并启用 GraceFt 应用程序的事件循环：</b> 首先要创建UI对象节点树，不过这个示例只有一个UI对象，所以节点树只有一个根节点： </p><div class="fragment"><div class="line">GFt::HelloBlock root{iRect{100, 100, 640, 480}};</div>
+</div><!-- fragment --><p> 处于简单起见，我们这里将窗口对象设置为栈变量，不过在实际项目中，你应该使用尽量使用堆内存分配窗口对象，因为UI元素的生命周期往往远长于栈变量的生命周期。</p>
+<p>然后，我们基于这个对象来创建一个窗口对象，并将它显示在屏幕上： </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_g_ft_1_1_window.html">GFt::Window</a>* window = <a class="code hl_function" href="class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07">GFt::Window::createWindow</a>(&amp;root);</div>
+<div class="line">window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html"><div class="ttname"><a href="class_g_ft_1_1_window.html">GFt::Window</a></div><div class="ttdoc">全局窗口对象</div><div class="ttdef"><b>定义</b> Window.h:11</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html_a0a2952370bf3a6a87d39e62ebe42fa07"><div class="ttname"><a href="class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07">GFt::Window::createWindow</a></div><div class="ttdeci">static Window * createWindow(Block *block, bool hide=false)</div><div class="ttdoc">创建普通窗口</div><div class="ttdef"><b>定义</b> Window.cpp:34</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html_a751034af79c475b74da750af107fa119"><div class="ttname"><a href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">GFt::Window::show</a></div><div class="ttdeci">void show()</div><div class="ttdoc">显示窗口</div><div class="ttdef"><b>定义</b> Window.cpp:24</div></div>
+</div><!-- fragment --><p> 正如刚刚所说，<code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 是一个单例模式+工厂模式的类，所以你只能创建一个 <code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 对象，之后再通过创建窗口的工厂函数尝试创建对象时，都会返回已经创建的窗口对象实例。创建窗口之后，你就可以调用 <code>show</code> 方法将窗口显示在屏幕上，如果没有调用 <code>show</code> 方法，窗口将不会显示在屏幕上。构造窗口对象时，会将根节点的矩形区域作为窗口在桌面上的初始位置和大小。</p>
+<p>最后，你需要基于刚才创建的窗口对象再创建一个 <code><a class="el" href="class_g_ft_1_1_application.html" title="应用程序类">GFt::Application</a></code> 对象，并启动事件循环： </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_g_ft_1_1_application.html">GFt::Application</a> app{window};</div>
+<div class="line">app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html"><div class="ttname"><a href="class_g_ft_1_1_application.html">GFt::Application</a></div><div class="ttdoc">应用程序类</div><div class="ttdef"><b>定义</b> Application.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html_af7afafd00b553376a2913cdd8a27363a"><div class="ttname"><a href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">GFt::Application::run</a></div><div class="ttdeci">int run()</div><div class="ttdoc">运行程序</div><div class="ttdef"><b>定义</b> Application.cpp:132</div></div>
+</div><!-- fragment --><p> 类 <code><a class="el" href="class_g_ft_1_1_application.html" title="应用程序类">GFt::Application</a></code> 是专门用来管理事件循环的类，它会监听窗口的各种事件，并把这些事件分发给相应的元素进行处理。</p>
+<p>下面是完整的程序： </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Graphics.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>HelloBlock : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">protected</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect)<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code hl_class" href="class_g_ft_1_1_graphics.html">GFt::Graphics</a> g;</div>
+<div class="line">        <span class="keyword">auto</span> r = <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>{<a class="code hl_typedef" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a>(), rect.<a class="code hl_function" href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">size</a>()};</div>
+<div class="line">        g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">drawText</a>(L<span class="stringliteral">&quot;Hello World!&quot;</span>, r, <a class="code hl_enumvalue" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24">GFt::TextAlign::Center</a>|<a class="code hl_enumvalue" href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74">GFt::TextAlign::Middle</a>);</div>
+<div class="line">    }</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    HelloBlock(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect, Block* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0)</div>
+<div class="line">        : Block(rect, parent, zIndex) {}</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    HelloBlock root{<a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>{100, 100, 640, 480}};</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">GFt::Window</a>* window = <a class="code hl_function" href="class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07">GFt::Window::createWindow</a>(&amp;root);</div>
+<div class="line">    window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">GFt::Application</a> app{window};</div>
+<div class="line">    <span class="keywordflow">return</span> app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> 编译并运行程序，你将会看到一个窗口出现在屏幕上，上面显示着 "Hello World!" 文本。</p>
+<p>但代码中频繁出现的 <code><a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a></code> 会令人感到厌烦，因此也可以通过 <code>using namespace</code> 来简化代码： </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Graphics.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>HelloBlock : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">protected</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; rect)<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code hl_class" href="class_g_ft_1_1_graphics.html">Graphics</a> g;</div>
+<div class="line">        <span class="keyword">auto</span> r = <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{<a class="code hl_typedef" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>(), rect.<a class="code hl_function" href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">size</a>()};</div>
+<div class="line">        g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">drawText</a>(L<span class="stringliteral">&quot;Hello World!&quot;</span>, r, TextAlign::Center|TextAlign::Middle);</div>
+<div class="line">    }</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    HelloBlock(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; rect, <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0)</div>
+<div class="line">        : <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>(rect, parent, zIndex) {}</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    HelloBlock root{<a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{100, 100, 640, 480}};</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* window = Window::createWindow(&amp;root);</div>
+<div class="line">    window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">Application</a> app{window};</div>
+<div class="line">    <span class="keywordflow">return</span> app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+</div><!-- fragment --><p> 这样，代码更加简洁，更加易读，但是需要注意的是头文件中不应该包含 <code>using namespace</code> 语句，否则可能会导致名称歧义错误。</p>
+<p>这是 GraceFt 的定义式的界面编程模型的基本用法，你可以通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类来创建各种类型的界面元素，并通过 <code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 类来管理窗口的各种属性和行为，通过 <code><a class="el" href="class_g_ft_1_1_application.html" title="应用程序类">GFt::Application</a></code> 类来管理事件循环。接下来，将通过另一个Hello World示例来展示如何使用 GraecFt 的声明式的界面编程模型来创建窗口程序。</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+声明式界面编程模型</h2>
+<p>GraceFt 的声明式界面编程模型是基于 C++20 的<a href="https://zh.cppreference.com/w/cpp/language/list_initialization">指派符列表初始化</a>实现的，它提供了一种更加简洁的声明式的界面编程模型，使得界面开发更加简单、直观。下面是一个简单的 "Hello World" 程序，展示了如何基于声明式的界面编程模型，使用 GraceFt 编写一个窗口程序： </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/UI.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_window.html">GFt::UI::XWindow</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;Root&quot;</span>,</div>
+<div class="line">        .rect = <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>{50,50,640,480},</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a>&amp; block) {</div>
+<div class="line">            <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a>{</div>
+<div class="line">                .name = <span class="stringliteral">&quot;HelloLabel&quot;</span>,</div>
+<div class="line">                .text = L<span class="stringliteral">&quot;Nothing to see here&quot;</span>,</div>
+<div class="line">                .rect = <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>{250,150,140,180},</div>
+<div class="line">                .parent = block,</div>
+<div class="line">                .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">GFt::Widget::Label</a>&amp; label) {</div>
+<div class="line">                    label.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;Hello, world!&quot;</span>;</div>
+<div class="line">                }</div>
+<div class="line">            };</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">GFt::Window</a>* window = <a class="code hl_function" href="class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07">GFt::Window::createWindow</a>(BLOCK(Root));</div>
+<div class="line">    window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">GFt::Application</a> app{ window };</div>
+<div class="line">    <span class="keywordflow">return</span> app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_label_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_label.html">GFt::Widget::Label</a></div><div class="ttdoc">文本标签控件</div><div class="ttdef"><b>定义</b> Label.h:10</div></div>
+<div class="ttc" id="agroup___xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">GFt::Key::L</a></div><div class="ttdeci">@ L</div><div class="ttdoc">L 键</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_label_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a></div><div class="ttdoc">标签声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:93</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_window_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_window.html">GFt::UI::XWindow</a></div><div class="ttdoc">窗口声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:50</div></div>
+</div><!-- fragment --><p> 通过这段代码，可以产生一个与之前定义式的界面编程模型显示内容完全相同的窗口程序。声明式界面编程模型的实现利用了无名对象在语句结束时会立即析构的特性，通过析构函数向声明式UI管理器注册UI对象，并在程序运行时自动创建UI对象，同时还提供了一些方便的宏来简化代码，例如 <code>BLOCK</code> 宏用来获取指定的UI对象指针。声明式的界面编程模型是函数式的，这意味着代码可以被简单地重用和组合，使得界面开发更加灵活、可扩展。对于上面这段代码，也可以通过 <code>using namespace</code> 来简化代码： </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/UI.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1_u_i.html">GFt::UI</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1_widget.html">GFt::Widget</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_window.html">XWindow</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;Root&quot;</span>,</div>
+<div class="line">        .rect = <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{50,50,640,480},</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>&amp; block) {</div>
+<div class="line">            <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_label.html">XLabel</a>{</div>
+<div class="line">                .name = <span class="stringliteral">&quot;HelloLabel&quot;</span>,</div>
+<div class="line">                .text = L<span class="stringliteral">&quot;Nothing to see here&quot;</span>,</div>
+<div class="line">                .rect = <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{250,150,140,180},</div>
+<div class="line">                .parent = block,</div>
+<div class="line">                .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>&amp; label) {</div>
+<div class="line">                    label.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;Hello, world!&quot;</span>;</div>
+<div class="line">                }</div>
+<div class="line">            };</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* window = Window::createWindow(BLOCK(Root));</div>
+<div class="line">    window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">Application</a> app{ window };</div>
+<div class="line">    <span class="keywordflow">return</span> app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:47</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdef"><b>定义</b> Button.h:11</div></div>
+</div><!-- fragment --><p> 声明式的界面编程模型的底层依然是使用定义式的UI类实现的，但是它相对于定义式的界面编程模型，提供了更加简洁的语法，使得代码更加易读、易写。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

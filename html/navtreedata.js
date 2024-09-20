@@ -25,7 +25,17 @@
 var NAVTREE =
 [
   [ "GraceFt", "index.html", [
-    [ "GraceFt 的使用", "index.html#autotoc_md1", null ],
+    [ "GraceFt 教程", "md_doc_2def_2edu.html", [
+      [ "基本介绍", "md_doc_2def_2edu.html#autotoc_md1", null ],
+      [ "环境配置", "md_doc_2def_2edu.html#autotoc_md2", null ],
+      [ "Hello World", "md_doc_2def_2edu.html#autotoc_md3", [
+        [ "定义式界面编程模型", "md_doc_2def_2edu.html#autotoc_md4", null ],
+        [ "声明式界面编程模型", "md_doc_2def_2edu.html#autotoc_md5", null ]
+      ] ]
+    ] ],
+    [ "GraceFt", "md_doc_2def_2mainpage.html", [
+      [ "GraceFt 的使用", "md_doc_2def_2mainpage.html#autotoc_md7", null ]
+    ] ],
     [ "专题", "topics.html", "topics" ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
@@ -57,7 +67,7 @@ var NAVTREEINDEX =
 "class_g_ft_1_1_layout.html#aa1bb65c4f1a97e02aeb9f130a552d50d",
 "class_g_ft_1_1_size.html#a2d73fa497aafc79b318a5c466912dbff",
 "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a641642d3718d5db8994a79d51b43e88c",
-"struct_g_ft_1_1_u_i_1_1_x_grid_layout.html#a6de8666e313bfabf8f18002356e025d5"
+"struct_g_ft_1_1_u_i_1_1_x_grid_layout.html#a237efda6b092e6dba248564d3a563c1a"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';
