@@ -2,7 +2,7 @@ var searchData=
 [
   ['g_0',['G',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2adfcf28d0734569a6a693bc8194de62bf',1,'GFt']]],
   ['getbottompadding_1',['getBottomPadding',['../class_g_ft_1_1_layout.html#a49553daf8b2c250f3ff9c8c7cd9e0aae',1,'GFt::Layout']]],
-  ['getbounds_2',['getBounds',['../class_g_ft_1_1_path.html#ae5d96cc04620cedc4bbb5ec2bd494cf2',1,'GFt::Path']]],
+  ['getbounds_2',['getBounds',['../class_g_ft_1_1_path.html#ab209efbb7a16475b5fd5a7f833cd0ee0',1,'GFt::Path']]],
   ['getbrushstyle_3',['getBrushStyle',['../class_g_ft_1_1_brush_set.html#a66fd131f599f5da6bdbb83e2b0a0049b',1,'GFt::BrushSet']]],
   ['getcapstyle_4',['getCapStyle',['../class_g_ft_1_1_pen_set.html#af04374a08ec6358032a37067d078877b',1,'GFt::PenSet']]],
   ['getcolor_5',['getColor',['../class_g_ft_1_1_pen_set.html#af5c6c424935743598b2d214d50e3eba7',1,'GFt::PenSet::getColor()'],['../class_g_ft_1_1_text_set.html#a864646113ef88b7b02cabf03904610ee',1,'GFt::TextSet::getColor()']]],

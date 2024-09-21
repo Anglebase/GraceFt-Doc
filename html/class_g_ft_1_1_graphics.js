@@ -7,6 +7,7 @@ var class_g_ft_1_1_graphics =
     [ "setTarget", "class_g_ft_1_1_graphics.html#a25588c6f0d5a891b289ff01eea2ed2a2", null ],
     [ "setAntiAliasing", "class_g_ft_1_1_graphics.html#aa8d1acf932950d0e17172cc8420ad1df", null ],
     [ "setTransform", "class_g_ft_1_1_graphics.html#a37b3109d83ad93ac260cf09476e70bb2", null ],
+    [ "resetTransform", "class_g_ft_1_1_graphics.html#ad74c661284389ae2cb8384c82ae3d66d", null ],
     [ "getTarget", "class_g_ft_1_1_graphics.html#a93b3439d85cf510e1993a4229dcec411", null ],
     [ "getTransform", "class_g_ft_1_1_graphics.html#a481deabc3d413a54ac09cd27ebaced0b", null ],
     [ "clear", "class_g_ft_1_1_graphics.html#acb3b5f342a92e1407e2367a60538fc23", null ],

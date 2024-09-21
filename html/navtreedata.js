@@ -43,6 +43,7 @@ var NAVTREE =
         [ "编写自己的窗口程序", "md_doc_2def_2edu.html#autotoc_md12", null ]
       ] ]
     ] ],
+    [ "Bug 列表", "bug.html", null ],
     [ "专题", "topics.html", "topics" ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
@@ -71,10 +72,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_g_ft_1_1_layout.html#a4f7f908db3da0396168ca19362822056",
-"class_g_ft_1_1_size.html#a046ad7772ec129292018cdac5aac1087",
-"group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a5c6ba25104401c9ee0650230fc6ba413",
-"struct_g_ft_1_1_u_i_1_1_x_button.html#af3de1a9ca8b899286d47108e90c38057"
+"class_g_ft_1_1_layout.html#a404ae5dbb4abe28e18f0257086f7f6aa",
+"class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353",
+"group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a4c614360da93c0a041b22e537de151eb",
+"struct_g_ft_1_1_u_i_1_1_x_button.html#a48820ec5b486bbe27027e9ae55c47112"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

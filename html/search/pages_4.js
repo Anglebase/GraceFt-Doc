@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['使用文档_0',['GraceFt 使用文档',['../index.html',1,'']]]
+  ['图形应用程序框架_0',['GraceFt - C++图形应用程序框架',['../index.html',1,'']]]
 ];

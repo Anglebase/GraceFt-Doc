@@ -22,7 +22,8 @@ var searchData=
   ['brushset_19',['BrushSet',['../class_g_ft_1_1_brush_set.html',1,'GFt::BrushSet'],['../class_g_ft_1_1_texture.html#ad0362288186fc1c66f2bed3bbfaeb4a1',1,'GFt::Texture::BrushSet'],['../class_g_ft_1_1_brush_set.html#addb548cc503b34754db6d9bb1f57e4bf',1,'GFt::BrushSet::BrushSet(const Color &amp;color)'],['../class_g_ft_1_1_brush_set.html#ad4e57404559b1f3ef6596669bcf869db',1,'GFt::BrushSet::BrushSet(const BrushSet &amp;other)'],['../class_g_ft_1_1_brush_set.html#ad7101ffcfa867fa2c9b0725fdb0ad90f',1,'GFt::BrushSet::BrushSet(BrushSet &amp;&amp;other)']]],
   ['brushset_20',['brushSet',['../class_g_ft_1_1_widget_1_1_button.html#ae517b7b092595519cc53e2562d415b39',1,'GFt::Widget::Button::brushSet()'],['../class_g_ft_1_1_widget_1_1_button.html#a0a68b71c04d0992fda38b2d7e499ae35',1,'GFt::Widget::Button::brushSet() const'],['../class_g_ft_1_1_widget_1_1_label.html#a61f7d7befcdc3c6d4afc7265cfa46385',1,'GFt::Widget::Label::brushSet()'],['../class_g_ft_1_1_widget_1_1_label.html#aed3ea9cfe9c5ce21e44d0747eb6f1c3f',1,'GFt::Widget::Label::brushSet() const']]],
   ['brushstyle_21',['BrushStyle',['../group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#gaead79709b6eced8a1f3c38677ddc8224',1,'GFt']]],
-  ['button_22',['Button',['../class_g_ft_1_1_widget_1_1_button.html',1,'GFt::Widget::Button'],['../class_g_ft_1_1_widget_1_1_button.html#a3eb035983e04a7ed162598b26c745e93',1,'GFt::Widget::Button::Button()']]],
-  ['button_23',['button',['../class_g_ft_1_1_mouse_button_event.html#aae31eb53d7d15b388c361cc823cc6b32',1,'GFt::MouseButtonEvent']]],
-  ['byte_24',['byte',['../namespace_g_ft.html#a845d5198e1f028b501e98b534d56b9b0',1,'GFt']]]
+  ['bug_20列表_22',['Bug 列表',['../bug.html',1,'']]],
+  ['button_23',['Button',['../class_g_ft_1_1_widget_1_1_button.html',1,'GFt::Widget::Button'],['../class_g_ft_1_1_widget_1_1_button.html#a3eb035983e04a7ed162598b26c745e93',1,'GFt::Widget::Button::Button()']]],
+  ['button_24',['button',['../class_g_ft_1_1_mouse_button_event.html#aae31eb53d7d15b388c361cc823cc6b32',1,'GFt::MouseButtonEvent']]],
+  ['byte_25',['byte',['../namespace_g_ft.html#a845d5198e1f028b501e98b534d56b9b0',1,'GFt']]]
 ];

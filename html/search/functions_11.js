@@ -13,5 +13,7 @@ var searchData=
   ['tohsv_10',['toHSV',['../class_g_ft_1_1_color.html#a1a2113f13ecc9102cd2a280e5a811bbd',1,'GFt::Color']]],
   ['top_11',['top',['../class_g_ft_1_1_rect.html#a7c35489f859d7c925be4828713037194',1,'GFt::Rect']]],
   ['toppadding_12',['topPadding',['../class_g_ft_1_1_widget_1_1_label.html#af287196928dc4c5b0512ef5e1c0fb70f',1,'GFt::Widget::Label::topPadding()'],['../class_g_ft_1_1_widget_1_1_label.html#a84d7cc749f367a85c6cbb3715eeef1fb',1,'GFt::Widget::Label::topPadding() const']]],
-  ['transpose_13',['transpose',['../class_g_ft_1_1_matrix.html#a528a9d5e01a10177d8f093391cd8c965',1,'GFt::Matrix']]]
+  ['transformby_13',['transformBy',['../class_g_ft_1_1_path.html#ab698176ada863c9a6a4a37e4eb10357b',1,'GFt::Path']]],
+  ['translate_14',['translate',['../group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga3076392d29f7004d47b5079bde60a8a6',1,'GFt']]],
+  ['transpose_15',['transpose',['../class_g_ft_1_1_matrix.html#a528a9d5e01a10177d8f093391cd8c965',1,'GFt::Matrix']]]
 ];

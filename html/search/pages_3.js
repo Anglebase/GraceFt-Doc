@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['教程_0',['GraceFt 教程',['../md_doc_2def_2edu.html',1,'']]]
+  ['列表_0',['Bug 列表',['../bug.html',1,'']]]
 ];
