@@ -110,7 +110,7 @@ $(function(){initNavTree('md_doc_2def_2edu.html',''); initResizable(true); });
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 基本介绍</h1>
-<p>GraceFt 是一款基于 C++ 开源图形引擎 <a href="https://club.xege.org/">EGE(Easy Graphics Engine)</a> 的图形应用程序框架，GracFt 基于<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL v3.0</a>开源协议开源。GraceFt 的一大特色是它完全基于原生的C++实现了声明式的界面编程模型，使得界面开发更加简单、直观。目前，GraecFt 的所有内容全部位于命名空间 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 下, <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 中分为3个主要模块: <a class="el" href="namespace_g_ft_1_1_u_i.html" title="声明式UI框架">GFt::UI</a> 、 <a class="el" href="namespace_g_ft_1_1_widget.html">GFt::Widget</a> 和 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 根命名空间。GFt 的根命名空间提供了一系列基础设施, <a class="el" href="namespace_g_ft_1_1_widget.html">GFt::Widget</a> 提供了一些常用部件, <a class="el" href="namespace_g_ft_1_1_u_i.html" title="声明式UI框架">GFt::UI</a> 提供了声明式的界面编程模型的实现支持；其次 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 中还有 <a class="el" href="namespace_g_ft_1_1literals.html">GFt::literals</a> 命名空间提供了一些方便的字面量定义。</p>
+<p>GraceFt 是一款基于 C++ 开源图形引擎 <a href="https://club.xege.org/">EGE(Easy Graphics Engine)</a> 的图形应用程序框架，GracFt 基于<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL v3.0</a>开源协议开源。GraceFt 的一大特色是它完全基于原生的C++实现了声明式的界面编程模型，使得界面开发更加简单、直观。目前，GraecFt 的所有内容全部位于命名空间 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 下, <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 中分为3个主要模块: <a class="el" href="namespace_g_ft_1_1_u_i.html" title="声明式UI框架">GFt::UI</a> 、 <a class="el" href="namespace_g_ft_1_1_widget.html" title="定义式UI库">GFt::Widget</a> 和 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 根命名空间。GFt 的根命名空间提供了一系列基础设施, <a class="el" href="namespace_g_ft_1_1_widget.html" title="定义式UI库">GFt::Widget</a> 提供了一些常用部件, <a class="el" href="namespace_g_ft_1_1_u_i.html" title="声明式UI框架">GFt::UI</a> 提供了声明式的界面编程模型的实现支持；其次 <a class="el" href="namespace_g_ft.html" title="GraceFt库的命名空间。">GFt</a> 中还有 <a class="el" href="namespace_g_ft_1_1literals.html" title="字面量定义">GFt::literals</a> 命名空间提供了一些方便的字面量定义。</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 环境配置</h1>
 <ol type="1">
@@ -287,7 +287,7 @@ Hello World</h1>
 <div class="line">    <span class="keywordflow">return</span> app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:57</div></div>
-<div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdef"><b>定义</b> Button.h:11</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdoc">定义式UI库</div><div class="ttdef"><b>定义</b> Button.h:12</div></div>
 </div><!-- fragment --><p> 声明式的界面编程模型的底层依然是使用定义式的UI类实现的，但是它相对于定义式的界面编程模型，提供了更加简洁的语法，使得代码更加易读、易写。</p>
 <h1><a class="anchor" id="autotoc_md6"></a>
 核心架构</h1>
@@ -363,7 +363,7 @@ Hello World</h1>
 <div class="ttc" id="aclass_g_ft_1_1_graphics_html_adfedb923d903fed1524f06197a609095"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#adfedb923d903fed1524f06197a609095">GFt::Graphics::drawFillEllipse</a></div><div class="ttdeci">void drawFillEllipse(const fEllipse &amp;rect)</div><div class="ttdoc">填充椭圆</div><div class="ttdef"><b>定义</b> Graphics.cpp:317</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point&lt; int &gt;</a></div></div>
 <div class="ttc" id="aclass_g_ft_1_1_text_set_html"><div class="ttname"><a href="class_g_ft_1_1_text_set.html">GFt::TextSet</a></div><div class="ttdoc">文本环境设置类,</div><div class="ttdef"><b>定义</b> TextSet.h:11</div></div>
-<div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdoc">字面量定义</div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
 </div><!-- fragment --><p> <b>最后，在 <code>main.cpp</code> 中编写你的应用程序入口</b> ，并在其中创建你的窗口对象： </p><div class="fragment"><div class="line"><span class="comment">/* main.cpp */</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;Window.h&gt;</span></div>
