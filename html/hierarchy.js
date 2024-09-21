@@ -82,6 +82,7 @@ var hierarchy =
     [ "GFt::Signal< Args >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< bool >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< GFt::Block * >", "class_g_ft_1_1_signal.html", null ],
+    [ "GFt::Signal< GFt::Window * >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< void >", "class_g_ft_1_1_signal_3_01void_01_4.html", null ],
     [ "GFt::Size< T >", "class_g_ft_1_1_size.html", null ],
     [ "GFt::Size< int >", "class_g_ft_1_1_size.html", null ],
