@@ -40,6 +40,8 @@ var class_g_ft_1_1_graphics =
     [ "drawFillPath", "class_g_ft_1_1_graphics.html#ae587dc06c0d9d9702cacd787f1e3ff60", null ],
     [ "drawImage", "class_g_ft_1_1_graphics.html#a86ee7e32471cedd075e425c998b4d55e", null ],
     [ "drawImage", "class_g_ft_1_1_graphics.html#ade59fc8b129e858616806c2818f50151", null ],
+    [ "drawAlphaImage", "class_g_ft_1_1_graphics.html#a540d04d80b022d8d92631eb26cc1fa96", null ],
+    [ "drawAlphaImage", "class_g_ft_1_1_graphics.html#a69daa7d5d529270c22b91cfda67fb8ec", null ],
     [ "drawText", "class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a", null ],
     [ "drawText", "class_g_ft_1_1_graphics.html#a225c6b12033f5246a1f21c387bb76354", null ]
 ];

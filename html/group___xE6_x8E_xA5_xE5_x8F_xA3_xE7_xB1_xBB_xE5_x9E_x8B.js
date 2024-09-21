@@ -56,6 +56,8 @@ var group___xE6_x8E_xA5_xE5_x8F_xA3_xE7_xB1_xBB_xE5_x9E_x8B =
       [ "drawFillPath", "class_g_ft_1_1_graphics.html#ae587dc06c0d9d9702cacd787f1e3ff60", null ],
       [ "drawImage", "class_g_ft_1_1_graphics.html#a86ee7e32471cedd075e425c998b4d55e", null ],
       [ "drawImage", "class_g_ft_1_1_graphics.html#ade59fc8b129e858616806c2818f50151", null ],
+      [ "drawAlphaImage", "class_g_ft_1_1_graphics.html#a540d04d80b022d8d92631eb26cc1fa96", null ],
+      [ "drawAlphaImage", "class_g_ft_1_1_graphics.html#a69daa7d5d529270c22b91cfda67fb8ec", null ],
       [ "drawText", "class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a", null ],
       [ "drawText", "class_g_ft_1_1_graphics.html#a225c6b12033f5246a1f21c387bb76354", null ]
     ] ],
@@ -122,6 +124,9 @@ var group___xE6_x8E_xA5_xE5_x8F_xA3_xE7_xB1_xBB_xE5_x9E_x8B =
       [ "operator=", "class_g_ft_1_1_pixel_map.html#a705cd4e7116db9a6f12516e7ae8d9e4b", null ],
       [ "operator=", "class_g_ft_1_1_pixel_map.html#ab5de0cf86101fef27f66c1675242e748", null ],
       [ "clip", "class_g_ft_1_1_pixel_map.html#a9a9ddfdb2b75028fd85f660fe6c54c96", null ],
+      [ "size", "class_g_ft_1_1_pixel_map.html#ab8422bd0011ad1d9e614474a41a102d0", null ],
+      [ "setAlpha", "class_g_ft_1_1_pixel_map.html#a1e68d3d19d87ba0c2e99e0b186d70c6b", null ],
+      [ "saveToFile", "class_g_ft_1_1_pixel_map.html#a200c8e0d1389874dbdba1f6962f1ea3e", null ],
       [ "Graphics", "class_g_ft_1_1_pixel_map.html#ae5cfe0c0e0b06d536d5814bd1ff4818f", null ]
     ] ],
     [ "GFt::TextSet", "class_g_ft_1_1_text_set.html", [

@@ -25,6 +25,7 @@ var class_g_ft_1_1_point =
     [ "norm", "class_g_ft_1_1_point.html#ab0e701f6e9a87d552b20e500e4f55e92", null ],
     [ "angle", "class_g_ft_1_1_point.html#ab4d4df5d325e53b9ce98b84476a99eb5", null ],
     [ "operator Point< U >", "class_g_ft_1_1_point.html#a0a106cf3ba0a7264106be0d88f6e5ea6", null ],
+    [ "operator Vec2< T >", "class_g_ft_1_1_point.html#a6e1632b5cff94c5b18746b42c4580502", null ],
     [ "operator<<", "class_g_ft_1_1_point.html#ab322db2b5457c54c9b959c6336792d2d", null ],
     [ "distance", "class_g_ft_1_1_point.html#a442f999083bd6c587a2c15e4cb1f4b63", null ]
 ];
