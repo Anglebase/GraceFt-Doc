@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GraceFt: 首页</title>
+<title>GraceFt: GraceFt - C++图形应用程序框架</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,10 +103,87 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">GraceFt 文档</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">GraceFt - C++图形应用程序框架 </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<h1><a class="anchor" id="autotoc_md14"></a>
+简介</h1>
+<p>GraceFt 是一款基于开源图形引擎 EGE (Easy Graphics Engine) 的 C++ 图形应用程序开发框架。它提供了一系列高层封装，使得开发者可以快速地开发出具有图形界面的应用程序。GraceFt 的使用风格与 Qt 相似，但与它的名字一样，相较于 Qt，GraceFt 更加地优雅和简洁。GraceFt 的一大优势是它基于原生 C++ 实现了声明式 UI 的语法，使得代码更加易读。</p>
+<h1><a class="anchor" id="autotoc_md15"></a>
+特点</h1>
+<ul>
+<li>**简洁性**：GraceFt 提供了简洁的 API，使得开发过程更加直观。</li>
+<li>**面向对象**：框架设计遵循面向对象的原则，易于理解和使用。</li>
+<li>**灵活性**：开发者可以根据需要自由地扩展和定制功能。</li>
+<li>**声明式语法**：GraceFt 基于原生 C++ 实现声明式UI语法，使得代码更加易读。</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md16"></a>
+GraceFt 配置</h1>
+<p>请按照以下步骤安装 GraceFt：</p>
+<ol type="1">
+<li>克隆 GraceFt 的代码库： <div class="fragment"><div class="line">git clone https://github.com/Anglebase/GraceFt.git</div>
+</div><!-- fragment --></li>
+<li>进入项目目录： <div class="fragment"><div class="line">cd GraceFt</div>
+</div><!-- fragment --></li>
+<li>编译 GraceFt： <div class="fragment"><div class="line">cmake -B build -S .</div>
+<div class="line">cmake --build build --config Release</div>
+</div><!-- fragment --></li>
+<li>在生成出的 lib 文件夹下就可以找到编译出的静态库文件</li>
+<li>将include/GraceFt目录下的所有头文件引入到你的项目中，便可以开发你的应用程序了</li>
+<li>在编译时链接 GraceFt 静态库文件，并添加其它必要的链接库(如相应的 EGE 库)</li>
+</ol>
+<p><b>GraceFt 需要至少 C++20 编译器支持</b></p>
+<h1><a class="anchor" id="autotoc_md17"></a>
+快速入门</h1>
+<p>以下是使用 GraceFt 开发一个简单应用程序的示例：</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Tools.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1literals.html">GFt::literals</a>;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a> block{</div>
+<div class="line">        <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>{ 5_sw,5_sh,60_sw,60_sh, }</div>
+<div class="line">    };</div>
+<div class="line">    <span class="keyword">auto</span> window =</div>
+<div class="line">        <a class="code hl_function" href="class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07">GFt::Window::createWindow</a>(&amp;block);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">GFt::Application</a> app(window);</div>
+<div class="line">    window-&gt;show();</div>
+<div class="line">    <span class="keywordflow">return</span> app.exec();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html"><div class="ttname"><a href="class_g_ft_1_1_application.html">GFt::Application</a></div><div class="ttdoc">应用程序类</div><div class="ttdef"><b>定义</b> Application.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_block_html"><div class="ttname"><a href="class_g_ft_1_1_block.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html_a0a2952370bf3a6a87d39e62ebe42fa07"><div class="ttname"><a href="class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07">GFt::Window::createWindow</a></div><div class="ttdeci">static Window * createWindow(Block *block, bool hide=false)</div><div class="ttdoc">创建普通窗口</div><div class="ttdef"><b>定义</b> Window.cpp:34</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
+</div><!-- fragment --><p> <b><a href="https://github.com/Anglebase/GraceFt/releases">使用模板快速创建项目</a></b></p>
+<h1><a class="anchor" id="autotoc_md18"></a>
+文档</h1>
+<p>完整的 API 文档和使用指南可以在 <a href="https://anglebase.github.io/GraceFt-Doc/">这里</a> 找到。</p>
+<h1><a class="anchor" id="autotoc_md19"></a>
+贡献</h1>
+<p>我们欢迎任何形式的贡献，包括但不限于：</p>
+<ul>
+<li>代码提交</li>
+<li>功能请求</li>
+<li>问题报告</li>
+</ul>
+<p>请在提交前阅读 贡献指南。</p>
+<h1><a class="anchor" id="autotoc_md20"></a>
+许可证</h1>
+<p>GraceFt 遵循 <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0 许可证</a>。有关详细信息，请查看 <code>LICENSE</code> 文件。</p>
+<h1><a class="anchor" id="autotoc_md21"></a>
+开发者</h1>
+<ul>
+<li><a href="https://github.com/Anglebase">Anglebase</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md22"></a>
+致谢</h1>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['预定义模板特化类型_0',['预定义模板特化类型',['../group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html',1,'']]]
+  ['画刷样式枚举_0',['画刷样式枚举',['../group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html',1,'']]],
+  ['画笔样式枚举_1',['画笔样式枚举',['../group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html',1,'']]]
 ];

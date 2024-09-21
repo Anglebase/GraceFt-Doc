@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['贡献指南_0',['贡献指南',['../md_doc_2guide.html',1,'']]],
-  ['贡献方式_1',['贡献方式',['../md_doc_2guide.html#autotoc_md9',1,'']]]
+  ['简介_0',['简介',['../index.html#autotoc_md14',1,'']]]
 ];

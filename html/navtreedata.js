@@ -25,16 +25,23 @@
 var NAVTREE =
 [
   [ "GraceFt", "index.html", [
+    [ "GraceFt - C++图形应用程序框架", "index.html", "index" ],
     [ "GraceFt 教程", "md_doc_2def_2edu.html", [
       [ "基本介绍", "md_doc_2def_2edu.html#autotoc_md1", null ],
       [ "环境配置", "md_doc_2def_2edu.html#autotoc_md2", null ],
       [ "Hello World", "md_doc_2def_2edu.html#autotoc_md3", [
         [ "定义式界面编程模型", "md_doc_2def_2edu.html#autotoc_md4", null ],
         [ "声明式界面编程模型", "md_doc_2def_2edu.html#autotoc_md5", null ]
+      ] ],
+      [ "核心架构", "md_doc_2def_2edu.html#autotoc_md6", [
+        [ "对象树", "md_doc_2def_2edu.html#autotoc_md7", null ],
+        [ "事件循环", "md_doc_2def_2edu.html#autotoc_md8", null ]
+      ] ],
+      [ "基于模板项目创建新项目", "md_doc_2def_2edu.html#autotoc_md9", [
+        [ "准备工作", "md_doc_2def_2edu.html#autotoc_md10", null ],
+        [ "项目目录结构", "md_doc_2def_2edu.html#autotoc_md11", null ],
+        [ "编写自己的窗口程序", "md_doc_2def_2edu.html#autotoc_md12", null ]
       ] ]
-    ] ],
-    [ "GraceFt", "md_doc_2def_2mainpage.html", [
-      [ "GraceFt 的使用", "md_doc_2def_2mainpage.html#autotoc_md7", null ]
     ] ],
     [ "专题", "topics.html", "topics" ],
     [ "命名空间", "namespaces.html", [
@@ -64,10 +71,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_g_ft_1_1_layout.html#aa1bb65c4f1a97e02aeb9f130a552d50d",
-"class_g_ft_1_1_size.html#a2d73fa497aafc79b318a5c466912dbff",
-"group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a641642d3718d5db8994a79d51b43e88c",
-"struct_g_ft_1_1_u_i_1_1_x_grid_layout.html#a237efda6b092e6dba248564d3a563c1a"
+"class_g_ft_1_1_layout.html#a4f7f908db3da0396168ca19362822056",
+"class_g_ft_1_1_size.html#a046ad7772ec129292018cdac5aac1087",
+"group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a5c6ba25104401c9ee0650230fc6ba413",
+"struct_g_ft_1_1_u_i_1_1_x_button.html#af3de1a9ca8b899286d47108e90c38057"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

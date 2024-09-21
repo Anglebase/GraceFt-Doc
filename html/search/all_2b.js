@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['环境配置_0',['环境配置',['../md_doc_2def_2edu.html#autotoc_md2',1,'']]]
+  ['教程_0',['GraceFt 教程',['../md_doc_2def_2edu.html',1,'']]]
 ];

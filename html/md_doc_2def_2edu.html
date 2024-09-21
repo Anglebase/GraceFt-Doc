@@ -115,6 +115,7 @@ $(function(){initNavTree('md_doc_2def_2edu.html',''); initResizable(true); });
 环境配置</h1>
 <ol type="1">
 <li><b>确保你的电脑上已经安装了至少支持 C++20 的编译器</b>: GracFt 是基于 C++20 开发的，所以你的编译器必须支持 C++20 才能编译 GraceFt 项目</li>
+<li><b>确保你的电脑上已经安装了 CMake 3.15 或以上版本</b>: GraceFt 项目是使用 CMake 构建的，所以你需要确保你的电脑上已经安装了 CMake 3.15 或以上版本</li>
 <li><b>下载项目模板或手动配置项目环境</b>: 你可以从 <a href="https://github.com/Graceful-Engineering-Team/GraceFt">Github</a> 下载项目模板，或者手动配置自己习惯的项目环境</li>
 <li><b>从此刻开始，你就可以开始编写你的 GraceFt 项目了！</b></li>
 </ol>
@@ -128,7 +129,8 @@ Hello World</h1>
 <p><b>同时，也需要包含一个用于构建窗口的头文件：</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
 </div><!-- fragment --><p> 在这个文件中定义了一个 <code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 类，它管理着窗口的各种属性和行为，它是由单例模式+工厂模式实现的，这意味着你只能创建一个 <code><a class="el" href="class_g_ft_1_1_window.html" title="全局窗口对象">GFt::Window</a></code> 对象。</p>
 <p><b>接下来就是 GraceFt 的核心了，你需要包含一个头文件来创建UI对象：</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
-</div><!-- fragment --><p> 这个头文件定义了一个 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，它是 GraceFt 界面编程模型的核心类，也是所有界面元素的基类，你可以通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类来创建各种类型的界面元素。 <b>通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，你就可以创建你的第一个界面元素了，比如一个 <code>GFt::HelloBlock</code> 对象：</b> </p><div class="fragment"><div class="line"><span class="keyword">class </span>HelloBlock : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a></div>
+</div><!-- fragment --><p> 这个头文件定义了一个 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，它是 GraceFt 界面编程模型的核心类，也是所有界面元素的基类，你可以通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类来创建各种类型的界面元素。</p>
+<p><b>通过继承 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，你就可以创建你的第一个界面元素了，比如一个 <code>GFt::HelloBlock</code> 对象：</b> </p><div class="fragment"><div class="line"><span class="keyword">class </span>HelloBlock : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a></div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">protected</span>:</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">onDraw</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect)<span class="keyword"> override </span>{</div>
@@ -142,12 +144,12 @@ Hello World</h1>
 <div class="line">};</div>
 <div class="ttc" id="aclass_g_ft_1_1_block_html"><div class="ttname"><a href="class_g_ft_1_1_block.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_block_html_a00defc8bb2b35301c7e2e6eeaaf15afa"><div class="ttname"><a href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">GFt::Block::onDraw</a></div><div class="ttdeci">void onDraw(const iRect &amp;rect) override</div><div class="ttdoc">此函数用于绘制内容</div><div class="ttdef"><b>定义</b> Block.cpp:46</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:37</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_graphics_html_a3244b269007f751338b7ab9d3a93216a"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">GFt::Graphics::drawText</a></div><div class="ttdeci">int drawText(const std::wstring &amp;text, const fPoint &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)</div><div class="ttdoc">在指定位置绘制文本</div><div class="ttdef"><b>定义</b> Graphics.cpp:345</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:38</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html_a3244b269007f751338b7ab9d3a93216a"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">GFt::Graphics::drawText</a></div><div class="ttdeci">int drawText(const std::wstring &amp;text, const fPoint &amp;pos, const std::vector&lt; std::wstring &gt; &amp;fonts={}, bool show=true)</div><div class="ttdoc">在指定位置绘制文本</div><div class="ttdef"><b>定义</b> Graphics.cpp:351</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
 <div class="ttc" id="aclass_g_ft_1_1_rect_html_a63d2cc467c9f93f56cc7bd0a08c20429"><div class="ttname"><a href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">GFt::Rect::size</a></div><div class="ttdeci">constexpr Size&lt; T &gt; &amp; size()</div><div class="ttdoc">矩形大小</div><div class="ttdef"><b>定义</b> Rect.hpp:76</div></div>
-<div class="ttc" id="agroup___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE_html_gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74"><div class="ttname"><a href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74">GFt::Middle</a></div><div class="ttdeci">@ Middle</div><div class="ttdoc">垂直居中</div><div class="ttdef"><b>定义</b> Graphics.h:29</div></div>
-<div class="ttc" id="agroup___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE_html_gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24"><div class="ttname"><a href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24">GFt::Center</a></div><div class="ttdeci">@ Center</div><div class="ttdoc">水平居中</div><div class="ttdef"><b>定义</b> Graphics.h:26</div></div>
+<div class="ttc" id="agroup___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE_html_gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74"><div class="ttname"><a href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a409d4d6084772bd20db261a0bb0d8d74">GFt::Middle</a></div><div class="ttdeci">@ Middle</div><div class="ttdoc">垂直居中</div><div class="ttdef"><b>定义</b> Graphics.h:30</div></div>
+<div class="ttc" id="agroup___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE_html_gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24"><div class="ttname"><a href="group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a7e1b1f4f903c5f00f09e5812c2fa8c24">GFt::Center</a></div><div class="ttdeci">@ Center</div><div class="ttdoc">水平居中</div><div class="ttdef"><b>定义</b> Graphics.h:27</div></div>
 <div class="ttc" id="agroup___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B_html_ga4db4aab9932601699d1d1c63845e79bf"><div class="ttname"><a href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">GFt::iPoint</a></div><div class="ttdeci">Point&lt; int &gt; iPoint</div><div class="ttdoc">整数型点类别别名</div><div class="ttdef"><b>定义</b> Point.hpp:180</div></div>
 </div><!-- fragment --><p> 为了能够使用 <code><a class="el" href="class_g_ft_1_1_graphics.html" title="绘图接口类">GFt::Graphics</a></code> 类绘制文本，你需要包含 <code><a class="el" href="_graphics_8h_source.html">GraceFt/Graphics.h</a></code> 头文件。 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Graphics.h&gt;</span></div>
 </div><!-- fragment --><p> 新的 <code>HelloBlock</code> 类继承自 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类，并重写了 <code>onDraw</code> 方法，在这个方法中，我们使用 <code><a class="el" href="class_g_ft_1_1_graphics.html" title="绘图接口类">GFt::Graphics</a></code> 类在指定的矩形区域内居中的位置绘制了一个文本 "Hello World!"。接下来演示该如何使用这个类来构建图形用户界面。</p>
@@ -252,9 +254,9 @@ Hello World</h1>
 <div class="line">}</div>
 <div class="ttc" id="aclass_g_ft_1_1_widget_1_1_label_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_label.html">GFt::Widget::Label</a></div><div class="ttdoc">文本标签控件</div><div class="ttdef"><b>定义</b> Label.h:10</div></div>
 <div class="ttc" id="agroup___xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">GFt::Key::L</a></div><div class="ttdeci">@ L</div><div class="ttdoc">L 键</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_label_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a></div><div class="ttdoc">标签声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:93</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_window_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_window.html">GFt::UI::XWindow</a></div><div class="ttdoc">窗口声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:50</div></div>
-</div><!-- fragment --><p> 通过这段代码，可以产生一个与之前定义式的界面编程模型显示内容完全相同的窗口程序。声明式界面编程模型的实现利用了无名对象在语句结束时会立即析构的特性，通过析构函数向声明式UI管理器注册UI对象，并在程序运行时自动创建UI对象，同时还提供了一些方便的宏来简化代码，例如 <code>BLOCK</code> 宏用来获取指定的UI对象指针。声明式的界面编程模型是函数式的，这意味着代码可以被简单地重用和组合，使得界面开发更加灵活、可扩展。对于上面这段代码，也可以通过 <code>using namespace</code> 来简化代码： </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_label_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a></div><div class="ttdoc">标签声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:103</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_window_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_window.html">GFt::UI::XWindow</a></div><div class="ttdoc">窗口声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:60</div></div>
+</div><!-- fragment --><p> 通过这段代码，可以产生一个与之前定义式的界面编程模型显示内容完全相同的窗口程序。声明式界面编程模型的实现利用了无名对象在语句结束时会立即析构的特性，通过析构函数向声明式UI管理器注册UI对象并构建对象树，同时还提供了一些方便的宏来简化代码，例如 <code>BLOCK</code> 宏用来获取指定的UI对象指针。声明式的界面编程模型是函数式的，这意味着代码可以被简单地重用和组合，使得界面开发更加灵活、可扩展。对于上面这段代码，也可以通过 <code>using namespace</code> 来简化代码： </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/UI.h&gt;</span></div>
 <div class="line"> </div>
@@ -284,9 +286,99 @@ Hello World</h1>
 <div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">Application</a> app{ window };</div>
 <div class="line">    <span class="keywordflow">return</span> app.<a class="code hl_function" href="class_g_ft_1_1_application.html#af7afafd00b553376a2913cdd8a27363a">run</a>();</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:47</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:57</div></div>
 <div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdef"><b>定义</b> Button.h:11</div></div>
-</div><!-- fragment --><p> 声明式的界面编程模型的底层依然是使用定义式的UI类实现的，但是它相对于定义式的界面编程模型，提供了更加简洁的语法，使得代码更加易读、易写。 </p>
+</div><!-- fragment --><p> 声明式的界面编程模型的底层依然是使用定义式的UI类实现的，但是它相对于定义式的界面编程模型，提供了更加简洁的语法，使得代码更加易读、易写。</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+核心架构</h1>
+<h2><a class="anchor" id="autotoc_md7"></a>
+对象树</h2>
+<p>在 GraceFt 中，所有的 UI 元素都被组织成一个树状结构，称为对象树，这类似于 HTML 文档的 DOM 树。对象树的每个元素都是 <code><a class="el" href="class_g_ft_1_1_block.html" title="块对象">GFt::Block</a></code> 类的子类构建的，它是所有 UI 元素的基类，它提供了一些基本的属性和行为，例如位置、尺寸、父节点、子节点、Z轴顺序等。在声明式的界面编程模型中，可以通过比定义式的界面编程模型更加简单直观的方式去构建对象树。</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+事件循环</h2>
+<p>事件循环是所有图形应用程序的核心，它负责监听窗口的各种事件，并把这些事件分发给相应的元素进行处理。在 GraceFt 中，事件循环的这些行为是由 <code><a class="el" href="class_g_ft_1_1_application.html" title="应用程序类">GFt::Application</a></code> 类来管理的。为了优化事件循环的性能，GraceFt 摒弃了整树遍历的方式，而是采用了事件分发的方式，这使得事件处理更加高效。对于窗口来说，事件分为三大类，分别为绘制事件、鼠标事件和键盘事件。如果在事件循环中启用了裁剪优化，那么 GraceFt 将不会绘制与父节点区域没有交际的子节点，这可以提高绘制效率，但如果你不希望它们不被绘制可以通过 <code><a class="el" href="class_g_ft_1_1_application.html#a08f594ec4c56616bd1990fa354ab80c0" title="运行程序">GFt::Application::exec()</a></code> 的参数关闭裁剪优化，它默认是开启的。对于鼠标事件来说，GraceFt 的事件循环将依据当前的鼠标位置来确定哪个元素应该响应鼠标事件，并将事件传递给相应的元素(参见 <code><a class="el" href="class_g_ft_1_1_block.html#a739e089ae53f86757d5c22e8d6d725fa" title="此函数用于处理鼠标按钮按下事件">GFt::Block::onMouseButtonPress()</a></code> 方法的文档)。对于键盘事件来说，GraceFt 的事件循环将依据当前的键盘焦点来确定哪个元素应该响应键盘事件，并将事件传递给相应的元素(参见 <code><a class="el" href="class_g_ft_1_1_block.html#ae3c1579b1a248d8f2dc32c599822df70" title="此函数用于处理键盘按键按下事件">GFt::Block::onKeyPress()</a></code> 方法的文档)。</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+基于模板项目创建新项目</h1>
+<p>为了便于开发者的使用，GraceFt 提供了 GraceFt 项目模板，你可以从<a href="https://github.com/Anglebase/GraceFt/releases">Github</a>上获取它，下面将介绍如何基于模板项目创建新项目。</p>
+<h2><a class="anchor" id="autotoc_md10"></a>
+准备工作</h2>
+<ol type="1">
+<li>确保你的电脑上已经安装 CMake 3.15 或以上版本和至少支持 C++20 的编译器(推荐使用<a href="https://github.com/skeeto/w64devkit/releases">GCC 14.2</a>或更高版本)</li>
+<li>下载项目模板并解压到你喜欢的目录，使用你习惯的IDE打开项目目录(推荐使用<a href="https://code.visualstudio.com/">Visual Studio Code</a>) <em>3. 通过启用 CMake 构建可以得到一个Hello GraceFt的示例程序</em></li>
+</ol>
+<h2><a class="anchor" id="autotoc_md11"></a>
+项目目录结构</h2>
+<div class="fragment"><div class="line">.</div>
+<div class="line">│  CMakeLists.txt</div>
+<div class="line">│  main.cpp</div>
+<div class="line">├─GraceFt-vX.Y.Z</div>
+<div class="line">│  ├─GraceFt</div>
+<div class="line">│  └─lib</div>
+<div class="line">├─include</div>
+<div class="line">│   MyWindow.h</div>
+<div class="line">└─src</div>
+<div class="line">    CMakeLists.txt</div>
+<div class="line">    MyWindow.cpp</div>
+</div><!-- fragment --><p> 其中，<code>GraceFt-vX.Y.Z</code> 是 GraceFt 依赖项所在的目录，<code>include</code> 目录存放你自己的项目的头文件，<code>src</code> 目录存放项目的源文件。<code>main.cpp</code> 作为应用程序的入口文件，<code>CMakeLists.txt</code> 作为 CMake 构建脚本，<code>MyWindow.h</code> 和 <code>MyWindow.cpp</code> 作为示例窗口程序的源文件，你可以通过它们测试你的环境配置是否正确，也可以直接删除它们。同时不要忘记在 <code>CMakeLists.txt</code> 中移除它们。</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+编写自己的窗口程序</h2>
+<p>现在我们以一个简单的窗口程序为例，来展示如何基于 GraceFt 编写一个窗口程序。</p>
+<p>**首先，移除示例程序**，同时也不要忘记在 <code>CMakeLists.txt</code> 中移除它们。</p>
+<p>**然后，创建自己的头文件**，在 <code>include</code> 目录下创建一个名为 <code>MyGraecFt.h</code> 的头文件，并在其中定义自己的窗口类： </p><div class="fragment"><div class="line"><span class="comment">/* MyGraecFt.h */</span></div>
+<div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>MyGraecFt : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a> {</div>
+<div class="line"><span class="keyword">protected</span>:</div>
+<div class="line">    <span class="keywordtype">void</span> onDraw(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect) <span class="keyword">override</span>;</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    MyGraecFt(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect, <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
+<div class="line">    <span class="keyword">virtual</span> ~MyGraecFt();</div>
+<div class="line">};</div>
+</div><!-- fragment --><p> **接下来，创建自己的源文件**，在 <code>src</code> 目录下创建一个名为 <code>MyGraecFt.cpp</code> 的源文件，并在其中实现自己的窗口类： </p><div class="fragment"><div class="line"><span class="comment">/* MyGraecFt.cpp */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;MyWindow.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;Graphics.h&gt;</span></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1literals.html">GFt::literals</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> MyGraceFt::onDraw(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect) {</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_graphics.html">Graphics</a> g;</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> bs(0x7980f5ef_rgba);</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_text_set.html">TextSet</a> ts(0x0ee_rgba);</div>
+<div class="line">    g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#a344203648d20255f4746b772d9d52c1e">bindBrushSet</a>(&amp;bs);</div>
+<div class="line">    g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#a0217e17ed56fc64388655c582943c56f">bindTextSet</a>(&amp;ts);</div>
+<div class="line">    g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#adfedb923d903fed1524f06197a609095">drawFillEllipse</a>(<a class="code hl_class" href="class_g_ft_1_1_ellipse.html">fEllipse</a>{ <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{<a class="code hl_class" href="class_g_ft_1_1_point.html">iPoint</a>{}, rect.<a class="code hl_function" href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">size</a>() } });</div>
+<div class="line">    g.<a class="code hl_function" href="class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a">drawText</a>(L<span class="stringliteral">&quot;My GraceFt!&quot;</span>, <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ <a class="code hl_class" href="class_g_ft_1_1_point.html">iPoint</a>{}, rect.<a class="code hl_function" href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">size</a>() }, TextAlign::Center | TextAlign::Middle);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">MyGraceFt::MyGraceFt(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect, <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a>* parent, <span class="keywordtype">int</span> zIndex)</div>
+<div class="line">    : <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>(rect, parent, zIndex) {}</div>
+<div class="line"> </div>
+<div class="line">MyGraceFt::~MyGraceFt() = <span class="keywordflow">default</span>;</div>
+<div class="ttc" id="aclass_g_ft_1_1_brush_set_html"><div class="ttname"><a href="class_g_ft_1_1_brush_set.html">GFt::BrushSet</a></div><div class="ttdoc">画刷设置类</div><div class="ttdef"><b>定义</b> BrushSet.h:34</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_ellipse_html"><div class="ttname"><a href="class_g_ft_1_1_ellipse.html">GFt::Ellipse</a></div><div class="ttdoc">椭圆类</div><div class="ttdef"><b>定义</b> Ellipse.hpp:13</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html_a0217e17ed56fc64388655c582943c56f"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#a0217e17ed56fc64388655c582943c56f">GFt::Graphics::bindTextSet</a></div><div class="ttdeci">void bindTextSet(TextSet *textSet)</div><div class="ttdoc">绑定文本设置</div><div class="ttdef"><b>定义</b> Graphics.cpp:196</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html_a344203648d20255f4746b772d9d52c1e"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#a344203648d20255f4746b772d9d52c1e">GFt::Graphics::bindBrushSet</a></div><div class="ttdeci">void bindBrushSet(BrushSet *brushSet)</div><div class="ttdoc">绑定画刷设置</div><div class="ttdef"><b>定义</b> Graphics.cpp:163</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html_adfedb923d903fed1524f06197a609095"><div class="ttname"><a href="class_g_ft_1_1_graphics.html#adfedb923d903fed1524f06197a609095">GFt::Graphics::drawFillEllipse</a></div><div class="ttdeci">void drawFillEllipse(const fEllipse &amp;rect)</div><div class="ttdoc">填充椭圆</div><div class="ttdef"><b>定义</b> Graphics.cpp:314</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_text_set_html"><div class="ttname"><a href="class_g_ft_1_1_text_set.html">GFt::TextSet</a></div><div class="ttdoc">文本环境设置类,</div><div class="ttdef"><b>定义</b> TextSet.h:11</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
+</div><!-- fragment --><p> **最后，在 <code>main.cpp</code> 中编写你的应用程序入口**，并在其中创建你的窗口对象： </p><div class="fragment"><div class="line"><span class="comment">/* main.cpp */</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;Window.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;MyWindow.h&quot;</span></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    MyGraceFt root(<a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 50,50,800,600 });</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* window = Window::createWindow(&amp;root);</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">Application</a> app(window);</div>
+<div class="line">    window-&gt;show();</div>
+<div class="line">    <span class="keywordflow">return</span> app.run();</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> **编译并运行程序**，你将会看到一个窗口出现在屏幕上，上面显示着 "My GraceFt!" 文本和一个填充的椭圆。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

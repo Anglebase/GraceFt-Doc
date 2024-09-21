@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['线性代数工具_0',['线性代数工具',['../group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html',1,'']]]
+  ['核心架构_0',['核心架构',['../md_doc_2def_2edu.html#autotoc_md6',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnopqrstuvwxyz~事几图基声复字定对工按接教文枚环画的线设部预",
+  0: "_abcdefghijklmnopqrstuvwxyz~事准几图基声复字定对工开快按接教文枚核特环画简线编致许设贡部配项预",
   1: "abcdefgklmprstwx",
   2: "g",
   3: "abcdefghiklmnoprstuwxy~",
@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "_abcdefghijklmnopqrstuvwxyz",
   8: "abdgop",
   9: "a事几图基复字对工按接文枚画线设部预",
-  10: "g教"
+  10: "cg图教"
 };
 
 var indexSectionNames =
