@@ -15,7 +15,7 @@ var searchData=
   ['close_12',['close',['../class_g_ft_1_1_path.html#aebbd121e2f942cc2d250204dd064f6ce',1,'GFt::Path']]],
   ['closeall_13',['closeAll',['../class_g_ft_1_1_path.html#abba631e803b5c08205ed96b07384b1dd',1,'GFt::Path']]],
   ['color_14',['Color',['../class_g_ft_1_1_color.html',1,'GFt::Color'],['../class_g_ft_1_1_color.html#aa9f6c6899c99af88d5850cc1a5d3b051',1,'GFt::Color::Color()']]],
-  ['cols_15',['cols',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html#a6de8666e313bfabf8f18002356e025d5',1,'GFt::UI::XGridLayout::cols'],['../class_g_ft_1_1_matrix.html#a7173ade8e33a328bf5a0ab64203379b8',1,'GFt::Matrix::cols()']]],
+  ['cols_15',['cols',['../class_g_ft_1_1_matrix.html#a7173ade8e33a328bf5a0ab64203379b8',1,'GFt::Matrix']]],
   ['columnlayout_16',['ColumnLayout',['../class_g_ft_1_1_column_layout.html',1,'GFt::ColumnLayout'],['../class_g_ft_1_1_column_layout.html#a9045e6a0f849a2ce8c1ec3a2ced03c06',1,'GFt::ColumnLayout::ColumnLayout()']]],
   ['comma_17',['Comma',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a58be47db9455679e6a44df2eff9c9fa6',1,'GFt']]],
   ['connect_18',['connect',['../class_g_ft_1_1_signal.html#aae4ce8bf87cc2e87252a2f1b4a21ed7b',1,'GFt::Signal::connect(const Slot &amp;slot)'],['../class_g_ft_1_1_signal.html#a074edc072bc0df3918bf406bc251923a',1,'GFt::Signal::connect(Object *object, void(Object::*method)(Args...))'],['../class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353',1,'GFt::Signal&lt; void &gt;::connect(const Slot &amp;slot)'],['../class_g_ft_1_1_signal_3_01void_01_4.html#a5e79eea0b4604c4fdd0ca41d208ef545',1,'GFt::Signal&lt; void &gt;::connect(Object *object, void(Object::*method)())']]],

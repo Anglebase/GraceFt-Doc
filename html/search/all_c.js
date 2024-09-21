@@ -1,7 +1,7 @@
 var searchData=
 [
   ['l_0',['L',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587',1,'GFt']]],
-  ['label_1',['Label',['../class_g_ft_1_1_widget_1_1_label.html',1,'GFt::Widget::Label'],['../class_g_ft_1_1_widget_1_1_label.html#a9dc583bb19b573ed87a1c33c1adf8297',1,'GFt::Widget::Label::Label()']]],
+  ['label_1',['Label',['../class_g_ft_1_1_widget_1_1_label.html',1,'GFt::Widget::Label'],['../class_g_ft_1_1_widget_1_1_label.html#a9dc583bb19b573ed87a1c33c1adf8297',1,'GFt::Widget::Label::Label(const std::wstring &amp;text, const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)'],['../class_g_ft_1_1_widget_1_1_label.html#a36ad7fa27cf2ef5e4b3a26c1ffc167b7',1,'GFt::Widget::Label::Label(const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)']]],
   ['layout_2',['Layout',['../class_g_ft_1_1_layout.html',1,'GFt::Layout'],['../class_g_ft_1_1_layout.html#a9726c6ac542232898ec76b8aaeec0047',1,'GFt::Layout::Layout()']]],
   ['lbrace_3',['Lbrace',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2aa9673adffaedfe2d10fc09ec5e4a8fb2',1,'GFt']]],
   ['left_4',['Left',['../group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a4b2024cfb248af64b60dfef9d4c1a59b',1,'GFt::Left'],['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a945d5e233cf7d6240f6b783b36a374ff',1,'GFt::Left'],['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a945d5e233cf7d6240f6b783b36a374ff',1,'GFt::Left']]],

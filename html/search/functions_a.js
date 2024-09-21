@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label_0',['Label',['../class_g_ft_1_1_widget_1_1_label.html#a9dc583bb19b573ed87a1c33c1adf8297',1,'GFt::Widget::Label']]],
+  ['label_0',['Label',['../class_g_ft_1_1_widget_1_1_label.html#a9dc583bb19b573ed87a1c33c1adf8297',1,'GFt::Widget::Label::Label(const std::wstring &amp;text, const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)'],['../class_g_ft_1_1_widget_1_1_label.html#a36ad7fa27cf2ef5e4b3a26c1ffc167b7',1,'GFt::Widget::Label::Label(const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)']]],
   ['layout_1',['Layout',['../class_g_ft_1_1_layout.html#a9726c6ac542232898ec76b8aaeec0047',1,'GFt::Layout']]],
   ['left_2',['left',['../class_g_ft_1_1_rect.html#a57b959c1014df36b0c28d49159d91fdb',1,'GFt::Rect']]],
   ['leftpadding_3',['leftPadding',['../class_g_ft_1_1_widget_1_1_label.html#a62e2fe365b61a6452d7ef40e6e3030b7',1,'GFt::Widget::Label::leftPadding()'],['../class_g_ft_1_1_widget_1_1_label.html#a67ef296aad5cfe8cdcca71e95efacbd1',1,'GFt::Widget::Label::leftPadding() const']]],

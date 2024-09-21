@@ -1,6 +1,7 @@
 var class_g_ft_1_1_widget_1_1_label =
 [
     [ "Label", "class_g_ft_1_1_widget_1_1_label.html#a9dc583bb19b573ed87a1c33c1adf8297", null ],
+    [ "Label", "class_g_ft_1_1_widget_1_1_label.html#a36ad7fa27cf2ef5e4b3a26c1ffc167b7", null ],
     [ "~Label", "class_g_ft_1_1_widget_1_1_label.html#ad9239668390d22fcec6d218d8d513b6b", null ],
     [ "onDraw", "class_g_ft_1_1_widget_1_1_label.html#a6a5a60d988e8f31eaafe98fe3a59bc96", null ],
     [ "onMouseButtonPress", "class_g_ft_1_1_widget_1_1_label.html#a8395862118b376073f79253c2f814023", null ],

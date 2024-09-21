@@ -2,6 +2,7 @@ var group___xE9_x83_xA8_xE4_xBB_xB6_xE5_xBA_x93 =
 [
     [ "GFt::Widget::Button", "class_g_ft_1_1_widget_1_1_button.html", [
       [ "Button", "class_g_ft_1_1_widget_1_1_button.html#a3eb035983e04a7ed162598b26c745e93", null ],
+      [ "Button", "class_g_ft_1_1_widget_1_1_button.html#a04aa0e57d67a09c378e5af5d1fb07334", null ],
       [ "~Button", "class_g_ft_1_1_widget_1_1_button.html#ab0ec01a5a84bc4cc3302083ca45a31cf", null ],
       [ "onDraw", "class_g_ft_1_1_widget_1_1_button.html#a32ddbb1f5bc40d0dcdc4f488d0985ac7", null ],
       [ "onMouseButtonPress", "class_g_ft_1_1_widget_1_1_button.html#a3c791621c5275f8458c9baa4647c5514", null ],
@@ -30,6 +31,7 @@ var group___xE9_x83_xA8_xE4_xBB_xB6_xE5_xBA_x93 =
     ] ],
     [ "GFt::Widget::Label", "class_g_ft_1_1_widget_1_1_label.html", [
       [ "Label", "class_g_ft_1_1_widget_1_1_label.html#a9dc583bb19b573ed87a1c33c1adf8297", null ],
+      [ "Label", "class_g_ft_1_1_widget_1_1_label.html#a36ad7fa27cf2ef5e4b3a26c1ffc167b7", null ],
       [ "~Label", "class_g_ft_1_1_widget_1_1_label.html#ad9239668390d22fcec6d218d8d513b6b", null ],
       [ "onDraw", "class_g_ft_1_1_widget_1_1_label.html#a6a5a60d988e8f31eaafe98fe3a59bc96", null ],
       [ "onMouseButtonPress", "class_g_ft_1_1_widget_1_1_label.html#a8395862118b376073f79253c2f814023", null ],
