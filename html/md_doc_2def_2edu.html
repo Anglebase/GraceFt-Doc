@@ -323,8 +323,8 @@ Hello World</h1>
 <h2><a class="anchor" id="autotoc_md12"></a>
 编写自己的窗口程序</h2>
 <p>现在我们以一个简单的窗口程序为例，来展示如何基于 GraceFt 编写一个窗口程序。</p>
-<p>**首先，移除示例程序**，同时也不要忘记在 <code>CMakeLists.txt</code> 中移除它们。</p>
-<p>**然后，创建自己的头文件**，在 <code>include</code> 目录下创建一个名为 <code>MyGraecFt.h</code> 的头文件，并在其中定义自己的窗口类： </p><div class="fragment"><div class="line"><span class="comment">/* MyGraecFt.h */</span></div>
+<p><b>首先，移除示例程序</b> ，同时也不要忘记在 <code>CMakeLists.txt</code> 中移除它们。</p>
+<p><b>然后，创建自己的头文件</b> ，在 <code>include</code> 目录下创建一个名为 <code>MyGraecFt.h</code> 的头文件，并在其中定义自己的窗口类： </p><div class="fragment"><div class="line"><span class="comment">/* MyGraecFt.h */</span></div>
 <div class="line"><span class="preprocessor">#pragma once</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
 <div class="line"> </div>
@@ -335,7 +335,7 @@ Hello World</h1>
 <div class="line">    MyGraecFt(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">GFt::iRect</a>&amp; rect, <a class="code hl_class" href="class_g_ft_1_1_block.html">GFt::Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
 <div class="line">    <span class="keyword">virtual</span> ~MyGraecFt();</div>
 <div class="line">};</div>
-</div><!-- fragment --><p> **接下来，创建自己的源文件**，在 <code>src</code> 目录下创建一个名为 <code>MyGraecFt.cpp</code> 的源文件，并在其中实现自己的窗口类： </p><div class="fragment"><div class="line"><span class="comment">/* MyGraecFt.cpp */</span></div>
+</div><!-- fragment --><p> <b>接下来，创建自己的源文件</b> ，在 <code>src</code> 目录下创建一个名为 <code>MyGraecFt.cpp</code> 的源文件，并在其中实现自己的窗口类： </p><div class="fragment"><div class="line"><span class="comment">/* MyGraecFt.cpp */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;MyWindow.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;Graphics.h&gt;</span></div>
@@ -364,7 +364,7 @@ Hello World</h1>
 <div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point&lt; int &gt;</a></div></div>
 <div class="ttc" id="aclass_g_ft_1_1_text_set_html"><div class="ttname"><a href="class_g_ft_1_1_text_set.html">GFt::TextSet</a></div><div class="ttdoc">文本环境设置类,</div><div class="ttdef"><b>定义</b> TextSet.h:11</div></div>
 <div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
-</div><!-- fragment --><p> **最后，在 <code>main.cpp</code> 中编写你的应用程序入口**，并在其中创建你的窗口对象： </p><div class="fragment"><div class="line"><span class="comment">/* main.cpp */</span></div>
+</div><!-- fragment --><p> <b>最后，在 <code>main.cpp</code> 中编写你的应用程序入口</b> ，并在其中创建你的窗口对象： </p><div class="fragment"><div class="line"><span class="comment">/* main.cpp */</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;Window.h&gt;</span></div>
 <div class="line"> </div>
@@ -378,7 +378,7 @@ Hello World</h1>
 <div class="line">    window-&gt;show();</div>
 <div class="line">    <span class="keywordflow">return</span> app.run();</div>
 <div class="line">}</div>
-</div><!-- fragment --><p> **编译并运行程序**，你将会看到一个窗口出现在屏幕上，上面显示着 "My GraceFt!" 文本和一个填充的椭圆。 </p>
+</div><!-- fragment --><p> <b>将上面所添加的文件添加到CmakeLists.txt中，并编译运行程序</b> ，你将会看到一个窗口出现在屏幕上，上面显示着 "My GraceFt!" 文本和一个填充的椭圆。 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
