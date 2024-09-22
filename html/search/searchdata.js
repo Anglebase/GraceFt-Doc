@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "bfimsv",
   6: "bcfjklmt",
   7: "_abcdefghijklmnopqrstuvwxyz",
-  8: "abdgop",
+  8: "abdgopt",
   9: "a事几图基复字对工按接文枚画线设部预",
   10: "bcg列图教"
 };

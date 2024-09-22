@@ -1,23 +1,10 @@
 var group___xE6_x9E_x9A_xE4_xB8_xBE =
 [
-    [ "画刷样式枚举", "group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html", "group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE" ],
-    [ "按键枚举", "group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html", null ],
     [ "字体枚举", "group___xE5_xAD_x97_xE4_xBD_x93_xE6_x9E_x9A_xE4_xB8_xBE.html", "group___xE5_xAD_x97_xE4_xBD_x93_xE6_x9E_x9A_xE4_xB8_xBE" ],
+    [ "按键枚举", "group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html", null ],
     [ "文本枚举", "group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html", "group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE" ],
+    [ "画刷样式枚举", "group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html", "group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE" ],
     [ "画笔样式枚举", "group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html", "group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE" ],
-    [ "GFt::MouseButton", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#gab12b3026be176df4395f5e4c793dbdd2", [
-      [ "GFt::MouseButton::Left", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a945d5e233cf7d6240f6b783b36a374ff", null ],
-      [ "GFt::MouseButton::Right", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a92b09c7c48c520c3c55e497875da437c", null ],
-      [ "GFt::MouseButton::Middle", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2ab1ca34f82e83c52b010f86955f264e05", null ],
-      [ "GFt::MouseButton::X1", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2abb7f5ae6220c9828e5ec91faf054197c", null ],
-      [ "GFt::MouseButton::X2", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a54105bddbfe3f639d49cbe8f5182c958", null ],
-      [ "GFt::MouseButton::Unknown", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a88183b946cc5f0e8c96b2e66e1c74a7e", null ]
-    ] ],
-    [ "GFt::MouseWheel", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#gaf9369d7e5d979a567fc13e057df09e0b", [
-      [ "GFt::MouseWheel::Up", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf9369d7e5d979a567fc13e057df09e0ba258f49887ef8d14ac268c92b02503aaa", null ],
-      [ "GFt::MouseWheel::Down", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf9369d7e5d979a567fc13e057df09e0ba08a38277b0309070706f6652eeae9a53", null ],
-      [ "GFt::MouseWheel::None", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf9369d7e5d979a567fc13e057df09e0ba6adf97f83acf6453d4a6a4b1070f3754", null ]
-    ] ],
     [ "GFt::Key", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#gad4cc0aeb1aafaf6155c13d69069fddf2", [
       [ "GFt::Key::LeftMouse", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2adc3b19d2e43d3f3b21dba3797f8dfade", null ],
       [ "GFt::Key::RightMouse", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8996a4f34d0b03f713d08c8dccfe072a", null ],
@@ -131,5 +118,18 @@ var group___xE6_x9E_x9A_xE4_xB8_xBE =
       [ "GFt::Key::Rbrace", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a336a4c9062c886fc8b144675d951ac4c", null ],
       [ "GFt::Key::Quote", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ac48e929b2b1eabba2ba036884433345e", null ],
       [ "GFt::Key::ImeProcess", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8df26cf63a30bd09f38026880c6159ce", null ]
+    ] ],
+    [ "GFt::MouseButton", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#gab12b3026be176df4395f5e4c793dbdd2", [
+      [ "GFt::MouseButton::Left", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a945d5e233cf7d6240f6b783b36a374ff", null ],
+      [ "GFt::MouseButton::Right", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a92b09c7c48c520c3c55e497875da437c", null ],
+      [ "GFt::MouseButton::Middle", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2ab1ca34f82e83c52b010f86955f264e05", null ],
+      [ "GFt::MouseButton::X1", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2abb7f5ae6220c9828e5ec91faf054197c", null ],
+      [ "GFt::MouseButton::X2", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a54105bddbfe3f639d49cbe8f5182c958", null ],
+      [ "GFt::MouseButton::Unknown", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a88183b946cc5f0e8c96b2e66e1c74a7e", null ]
+    ] ],
+    [ "GFt::MouseWheel", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#gaf9369d7e5d979a567fc13e057df09e0b", [
+      [ "GFt::MouseWheel::Up", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf9369d7e5d979a567fc13e057df09e0ba258f49887ef8d14ac268c92b02503aaa", null ],
+      [ "GFt::MouseWheel::Down", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf9369d7e5d979a567fc13e057df09e0ba08a38277b0309070706f6652eeae9a53", null ],
+      [ "GFt::MouseWheel::None", "group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf9369d7e5d979a567fc13e057df09e0ba6adf97f83acf6453d4a6a4b1070f3754", null ]
     ] ]
 ];

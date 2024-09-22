@@ -128,7 +128,7 @@ $(function(){initNavTree('class_g_ft_1_1_window.html',''); initResizable(true); 
 <area href="class_g_ft_1_1_block.html" title="块对象" alt="GFt::Block" shape="rect" coords="482,224,713,248"/>
 <area href="class_g_ft_1_1_graph_interface.html" title="图形绘制接口" alt="GFt::GraphInterface" shape="rect" coords="0,168,231,192"/>
 <area href="class_g_ft_1_1_event_monitor.html" title="事件监视器接口类" alt="GFt::EventMonitor" shape="rect" coords="964,168,1195,192"/>
-<area href="class_g_ft_1_1_mouse_event_monitor.html" title="鼠标和键盘事件监视器接口类" alt="GFt::MouseEventMonitor" shape="rect" coords="361,112,592,136"/>
+<area href="class_g_ft_1_1_mouse_event_monitor.html" title="鼠标事件监视器接口类" alt="GFt::MouseEventMonitor" shape="rect" coords="361,112,592,136"/>
 <area href="class_g_ft_1_1_keyboard_event_monitor.html" title="键盘事件监视器接口类" alt="GFt::KeyboardEventMonitor" shape="rect" coords="964,112,1195,136"/>
 <area href="class_g_ft_1_1_text_input_event_monitor.html" title="文本输入事件监视器接口类" alt="GFt::TextInputEventMonitor" shape="rect" coords="1205,112,1436,136"/>
 <area href="class_g_ft_1_1_mouse_button_event_monitor.html" title="鼠标按钮事件监视器接口类" alt="GFt::MouseButtonEventMonitor" shape="rect" coords="120,56,351,80"/>
@@ -145,54 +145,72 @@ $(function(){initNavTree('class_g_ft_1_1_window.html',''); initResizable(true); 
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ac805b33fd497fb66eda31ed85bca5622" id="r_ac805b33fd497fb66eda31ed85bca5622"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac805b33fd497fb66eda31ed85bca5622">~Window</a> ()</td></tr>
 <tr class="separator:ac805b33fd497fb66eda31ed85bca5622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a751034af79c475b74da750af107fa119" id="r_a751034af79c475b74da750af107fa119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751034af79c475b74da750af107fa119">show</a> ()</td></tr>
-<tr class="memdesc:a751034af79c475b74da750af107fa119"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示窗口  <br /></td></tr>
-<tr class="separator:a751034af79c475b74da750af107fa119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137071ae5e6038fc832caf89a0df73bc" id="r_a137071ae5e6038fc832caf89a0df73bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a> ()</td></tr>
 <tr class="memdesc:a137071ae5e6038fc832caf89a0df73bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">隐藏窗口  <br /></td></tr>
 <tr class="separator:a137071ae5e6038fc832caf89a0df73bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4be7c988d496984f84c6b98ef1dbe68" id="r_ab4be7c988d496984f84c6b98ef1dbe68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4be7c988d496984f84c6b98ef1dbe68">resize</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">iSize</a> &amp;<a class="el" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>)</td></tr>
-<tr class="memdesc:ab4be7c988d496984f84c6b98ef1dbe68"><td class="mdescLeft">&#160;</td><td class="mdescRight">更改窗口的大小  <br /></td></tr>
-<tr class="separator:ab4be7c988d496984f84c6b98ef1dbe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae293e77218a295c6e096ac35c478731" id="r_aae293e77218a295c6e096ac35c478731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae293e77218a295c6e096ac35c478731">maximize</a> ()</td></tr>
+<tr class="memdesc:aae293e77218a295c6e096ac35c478731"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口最大化  <br /></td></tr>
+<tr class="separator:aae293e77218a295c6e096ac35c478731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77dd1bf31946e2c708cc9a503a18a1e" id="r_ae77dd1bf31946e2c708cc9a503a18a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae77dd1bf31946e2c708cc9a503a18a1e">minimize</a> ()</td></tr>
+<tr class="memdesc:ae77dd1bf31946e2c708cc9a503a18a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口最小化  <br /></td></tr>
+<tr class="separator:ae77dd1bf31946e2c708cc9a503a18a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40a3c571cc4523cc301ad017a7058b76" id="r_a40a3c571cc4523cc301ad017a7058b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40a3c571cc4523cc301ad017a7058b76">move</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a> &amp;dpos)</td></tr>
 <tr class="memdesc:a40a3c571cc4523cc301ad017a7058b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动窗口(相对位置)  <br /></td></tr>
 <tr class="separator:a40a3c571cc4523cc301ad017a7058b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2904cc10430a95a016493a259a56041" id="r_ae2904cc10430a95a016493a259a56041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2904cc10430a95a016493a259a56041">moveTo</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a> &amp;pos)</td></tr>
 <tr class="memdesc:ae2904cc10430a95a016493a259a56041"><td class="mdescLeft">&#160;</td><td class="mdescRight">移动窗口(绝对位置)  <br /></td></tr>
 <tr class="separator:ae2904cc10430a95a016493a259a56041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ee1e758ed030be2e6376124f180ef4" id="r_a30ee1e758ed030be2e6376124f180ef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30ee1e758ed030be2e6376124f180ef4">resize</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">iSize</a> &amp;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>)</td></tr>
+<tr class="memdesc:a30ee1e758ed030be2e6376124f180ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">更改窗口的大小  <br /></td></tr>
+<tr class="separator:a30ee1e758ed030be2e6376124f180ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621750410755b4b4356565ed16f9218e" id="r_a621750410755b4b4356565ed16f9218e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a621750410755b4b4356565ed16f9218e">restore</a> ()</td></tr>
+<tr class="memdesc:a621750410755b4b4356565ed16f9218e"><td class="mdescLeft">&#160;</td><td class="mdescRight">还原最大化的窗口  <br /></td></tr>
+<tr class="separator:a621750410755b4b4356565ed16f9218e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed6110a6aef274be4c74b56fd41e59a" id="r_aeed6110a6aef274be4c74b56fd41e59a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeed6110a6aef274be4c74b56fd41e59a">setAlpha</a> (float alpha)</td></tr>
+<tr class="memdesc:aeed6110a6aef274be4c74b56fd41e59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口透明度  <br /></td></tr>
+<tr class="separator:aeed6110a6aef274be4c74b56fd41e59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881464029a1197e92193e9a6cbd895a0" id="r_a881464029a1197e92193e9a6cbd895a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a881464029a1197e92193e9a6cbd895a0">setFrameless</a> (bool frameless=true)</td></tr>
+<tr class="memdesc:a881464029a1197e92193e9a6cbd895a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口是否无边框  <br /></td></tr>
+<tr class="separator:a881464029a1197e92193e9a6cbd895a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35f50283a9e1dbe00cf8274f986f9119" id="r_a35f50283a9e1dbe00cf8274f986f9119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35f50283a9e1dbe00cf8274f986f9119">setTitle</a> (const std::wstring &amp;title)</td></tr>
 <tr class="memdesc:a35f50283a9e1dbe00cf8274f986f9119"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口标题  <br /></td></tr>
 <tr class="separator:a35f50283a9e1dbe00cf8274f986f9119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b980bda181f3b8d7248e5c004a028a" id="r_ad0b980bda181f3b8d7248e5c004a028a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0b980bda181f3b8d7248e5c004a028a">setTopMost</a> (bool topMost=true)</td></tr>
+<tr class="memdesc:ad0b980bda181f3b8d7248e5c004a028a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置窗口是否置顶  <br /></td></tr>
+<tr class="separator:ad0b980bda181f3b8d7248e5c004a028a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751034af79c475b74da750af107fa119" id="r_a751034af79c475b74da750af107fa119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751034af79c475b74da750af107fa119">show</a> ()</td></tr>
+<tr class="memdesc:a751034af79c475b74da750af107fa119"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示窗口  <br /></td></tr>
+<tr class="separator:a751034af79c475b74da750af107fa119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_g_ft_1_1_block"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_g_ft_1_1_block')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_g_ft_1_1_block.html">GFt::Block</a></td></tr>
 <tr class="memitem:aed3aa46411c98699bbcbba44667a8900 inherit pub_methods_class_g_ft_1_1_block" id="r_aed3aa46411c98699bbcbba44667a8900"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#aed3aa46411c98699bbcbba44667a8900">Block</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;<a class="el" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>, <a class="el" href="class_g_ft_1_1_block.html">Block</a> *parent=nullptr, int zIndex=0)</td></tr>
 <tr class="memdesc:aed3aa46411c98699bbcbba44667a8900 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
 <tr class="separator:aed3aa46411c98699bbcbba44667a8900 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a899e7c9e34803106fd05b95de18fcc67 inherit pub_methods_class_g_ft_1_1_block" id="r_a899e7c9e34803106fd05b95de18fcc67"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a899e7c9e34803106fd05b95de18fcc67">~Block</a> ()</td></tr>
 <tr class="separator:a899e7c9e34803106fd05b95de18fcc67 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block" id="r_afa17ae2b61a7af0ba3530d87e7a6a5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1">addChild</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *child)</td></tr>
-<tr class="memdesc:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加子对象  <br /></td></tr>
-<tr class="separator:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block" id="r_ad9082b218a2ebfadc249eb9469532088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088">removeChild</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *child)</td></tr>
-<tr class="memdesc:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除子对象  <br /></td></tr>
-<tr class="separator:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block" id="r_a3e1554d34e6520a7a2c1fa5d3f3ec2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a3e1554d34e6520a7a2c1fa5d3f3ec2c5">setZIndex</a> (int zIndex)</td></tr>
-<tr class="memdesc:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置层级  <br /></td></tr>
-<tr class="separator:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block" id="r_ac47724e32dd61b83bcadc907fc4efabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ac47724e32dd61b83bcadc907fc4efabe">setParent</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *parent)</td></tr>
-<tr class="memdesc:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置父对象  <br /></td></tr>
-<tr class="separator:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block" id="r_ab5a954ef438e4694de271b46e746ce56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ab5a954ef438e4694de271b46e746ce56">getZIndex</a> () const</td></tr>
-<tr class="memdesc:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取层级  <br /></td></tr>
-<tr class="separator:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block" id="r_a478795a68b66001db32edb1544009060"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a478795a68b66001db32edb1544009060">getParent</a> () const</td></tr>
-<tr class="memdesc:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取父对象  <br /></td></tr>
-<tr class="separator:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block" id="r_a0549aff184d697abe5f825da0342a779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a0549aff184d697abe5f825da0342a779">relativePosFrom</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block) const</td></tr>
-<tr class="memdesc:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算相对于指定对象的相对坐标  <br /></td></tr>
-<tr class="separator:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a384598e63efef1f76278673a402d22da inherit pub_methods_class_g_ft_1_1_block" id="r_a384598e63efef1f76278673a402d22da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a384598e63efef1f76278673a402d22da">absolutePos</a> () const</td></tr>
 <tr class="memdesc:a384598e63efef1f76278673a402d22da inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算相对于屏幕的绝对坐标  <br /></td></tr>
 <tr class="separator:a384598e63efef1f76278673a402d22da inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block" id="r_afa17ae2b61a7af0ba3530d87e7a6a5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1">addChild</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *child)</td></tr>
+<tr class="memdesc:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加子对象  <br /></td></tr>
+<tr class="separator:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block" id="r_a478795a68b66001db32edb1544009060"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a478795a68b66001db32edb1544009060">getParent</a> () const</td></tr>
+<tr class="memdesc:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取父对象  <br /></td></tr>
+<tr class="separator:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block" id="r_ab5a954ef438e4694de271b46e746ce56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ab5a954ef438e4694de271b46e746ce56">getZIndex</a> () const</td></tr>
+<tr class="memdesc:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取层级  <br /></td></tr>
+<tr class="separator:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block" id="r_a0549aff184d697abe5f825da0342a779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a0549aff184d697abe5f825da0342a779">relativePosFrom</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block) const</td></tr>
+<tr class="memdesc:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算相对于指定对象的相对坐标  <br /></td></tr>
+<tr class="separator:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block" id="r_ad9082b218a2ebfadc249eb9469532088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088">removeChild</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *child)</td></tr>
+<tr class="memdesc:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除子对象  <br /></td></tr>
+<tr class="separator:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block" id="r_ac47724e32dd61b83bcadc907fc4efabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ac47724e32dd61b83bcadc907fc4efabe">setParent</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *parent)</td></tr>
+<tr class="memdesc:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置父对象  <br /></td></tr>
+<tr class="separator:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block" id="r_a3e1554d34e6520a7a2c1fa5d3f3ec2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a3e1554d34e6520a7a2c1fa5d3f3ec2c5">setZIndex</a> (int zIndex)</td></tr>
+<tr class="memdesc:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置层级  <br /></td></tr>
+<tr class="separator:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_g_ft_1_1_graph_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_g_ft_1_1_graph_interface')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_g_ft_1_1_graph_interface.html">GFt::GraphInterface</a></td></tr>
 <tr class="memitem:a1454812a2eb855681fe43598ff3e1209 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a1454812a2eb855681fe43598ff3e1209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a1454812a2eb855681fe43598ff3e1209">GraphInterface</a> (<a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> <a class="el" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>)</td></tr>
 <tr class="memdesc:a1454812a2eb855681fe43598ff3e1209 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
@@ -208,21 +226,21 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:a0a2952370bf3a6a87d39e62ebe42fa07" id="r_a0a2952370bf3a6a87d39e62ebe42fa07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2952370bf3a6a87d39e62ebe42fa07">createWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
-<tr class="memdesc:a0a2952370bf3a6a87d39e62ebe42fa07"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建普通窗口  <br /></td></tr>
-<tr class="separator:a0a2952370bf3a6a87d39e62ebe42fa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdc6fcd08648d5c99833f8059ac7f64" id="r_afbdc6fcd08648d5c99833f8059ac7f64"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbdc6fcd08648d5c99833f8059ac7f64">createFullScreenWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
 <tr class="memdesc:afbdc6fcd08648d5c99833f8059ac7f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建全屏窗口  <br /></td></tr>
 <tr class="separator:afbdc6fcd08648d5c99833f8059ac7f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac99b42c882dd1892033bd4c8669c146" id="r_aac99b42c882dd1892033bd4c8669c146"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac99b42c882dd1892033bd4c8669c146">createTopMostWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
-<tr class="memdesc:aac99b42c882dd1892033bd4c8669c146"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建置顶窗口  <br /></td></tr>
-<tr class="separator:aac99b42c882dd1892033bd4c8669c146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104057e005b6a44753812770477e1baa" id="r_a104057e005b6a44753812770477e1baa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a104057e005b6a44753812770477e1baa">createNoBorderWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
-<tr class="memdesc:a104057e005b6a44753812770477e1baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建无边框窗口  <br /></td></tr>
-<tr class="separator:a104057e005b6a44753812770477e1baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb2fa389f009626f5608892eabced4b" id="r_a9bb2fa389f009626f5608892eabced4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bb2fa389f009626f5608892eabced4b">createNoBorderTopMostWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
 <tr class="memdesc:a9bb2fa389f009626f5608892eabced4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建无边框置顶窗口  <br /></td></tr>
 <tr class="separator:a9bb2fa389f009626f5608892eabced4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104057e005b6a44753812770477e1baa" id="r_a104057e005b6a44753812770477e1baa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a104057e005b6a44753812770477e1baa">createNoBorderWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
+<tr class="memdesc:a104057e005b6a44753812770477e1baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建无边框窗口  <br /></td></tr>
+<tr class="separator:a104057e005b6a44753812770477e1baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac99b42c882dd1892033bd4c8669c146" id="r_aac99b42c882dd1892033bd4c8669c146"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac99b42c882dd1892033bd4c8669c146">createTopMostWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
+<tr class="memdesc:aac99b42c882dd1892033bd4c8669c146"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建置顶窗口  <br /></td></tr>
+<tr class="separator:aac99b42c882dd1892033bd4c8669c146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2952370bf3a6a87d39e62ebe42fa07" id="r_a0a2952370bf3a6a87d39e62ebe42fa07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2952370bf3a6a87d39e62ebe42fa07">createWindow</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block, bool <a class="el" href="#a137071ae5e6038fc832caf89a0df73bc">hide</a>=false)</td></tr>
+<tr class="memdesc:a0a2952370bf3a6a87d39e62ebe42fa07"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建普通窗口  <br /></td></tr>
+<tr class="separator:a0a2952370bf3a6a87d39e62ebe42fa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb1e7ca0093f6084803c42c40a46695" id="r_a9fb1e7ca0093f6084803c42c40a46695"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_window.html">Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fb1e7ca0093f6084803c42c40a46695">window</a> ()</td></tr>
 <tr class="memdesc:a9fb1e7ca0093f6084803c42c40a46695"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取已创建的窗口对象实例  <br /></td></tr>
 <tr class="separator:a9fb1e7ca0093f6084803c42c40a46695"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,26 +253,47 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ab122f28dffaeb639fb7743f4c9774765" id="r_ab122f28dffaeb639fb7743f4c9774765"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab122f28dffaeb639fb7743f4c9774765">onWindowDestroyed</a></td></tr>
 <tr class="memdesc:ab122f28dffaeb639fb7743f4c9774765"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口销毁信号  <br /></td></tr>
 <tr class="separator:ab122f28dffaeb639fb7743f4c9774765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82179a612f66f3ad74b0e140b718173c" id="r_a82179a612f66f3ad74b0e140b718173c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82179a612f66f3ad74b0e140b718173c">onWindowMaximized</a></td></tr>
+<tr class="memdesc:a82179a612f66f3ad74b0e140b718173c"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口最大化信号  <br /></td></tr>
+<tr class="separator:a82179a612f66f3ad74b0e140b718173c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b990a3c78421fb982c280920b99c94" id="r_a07b990a3c78421fb982c280920b99c94"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07b990a3c78421fb982c280920b99c94">onWindowMinimized</a></td></tr>
+<tr class="memdesc:a07b990a3c78421fb982c280920b99c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口最小化信号  <br /></td></tr>
+<tr class="separator:a07b990a3c78421fb982c280920b99c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bdf072b383b244442b8840b0c29de14" id="r_a7bdf072b383b244442b8840b0c29de14"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bdf072b383b244442b8840b0c29de14">onWindowMoved</a></td></tr>
+<tr class="memdesc:a7bdf072b383b244442b8840b0c29de14"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口位置改变信号  <br /></td></tr>
+<tr class="separator:a7bdf072b383b244442b8840b0c29de14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f54eecd9e792a8846792806442cd18" id="r_a71f54eecd9e792a8846792806442cd18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f54eecd9e792a8846792806442cd18">onWindowResized</a></td></tr>
+<tr class="memdesc:a71f54eecd9e792a8846792806442cd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口大小改变信号  <br /></td></tr>
+<tr class="separator:a71f54eecd9e792a8846792806442cd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc47a835281428273c2b293df513ff5c" id="r_adc47a835281428273c2b293df513ff5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc47a835281428273c2b293df513ff5c">onWindowRestored</a></td></tr>
+<tr class="memdesc:adc47a835281428273c2b293df513ff5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口还原信号  <br /></td></tr>
+<tr class="separator:adc47a835281428273c2b293df513ff5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 额外继承的成员函数</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_g_ft_1_1_block"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_g_ft_1_1_block')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="class_g_ft_1_1_block.html">GFt::Block</a></td></tr>
-<tr class="memitem:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block" id="r_a5301d542cb3c85aa8381f19d2efeecca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a5301d542cb3c85aa8381f19d2efeecca">HoverOn</a></td></tr>
-<tr class="memdesc:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当鼠标悬停该对象时之上时触发该信号  <br /></td></tr>
-<tr class="separator:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block" id="r_a8fca38ee5cc6098c6f2d8219f61b33cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a8fca38ee5cc6098c6f2d8219f61b33cb">HoverOff</a></td></tr>
-<tr class="memdesc:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当鼠标移开该对象时之上时触发该信号  <br /></td></tr>
-<tr class="separator:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block" id="r_a364b56258a83062f97e40b1464901aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a364b56258a83062f97e40b1464901aa9">FocusOn</a></td></tr>
-<tr class="memdesc:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当该对象获得焦点时触发该信号  <br /></td></tr>
-<tr class="separator:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b56b6e60a79a389522d554313465d5 inherit pub_attribs_class_g_ft_1_1_block" id="r_ab0b56b6e60a79a389522d554313465d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ab0b56b6e60a79a389522d554313465d5">FocusOff</a></td></tr>
 <tr class="memdesc:ab0b56b6e60a79a389522d554313465d5 inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当该对象失去焦点时触发该信号  <br /></td></tr>
 <tr class="separator:ab0b56b6e60a79a389522d554313465d5 inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block" id="r_a364b56258a83062f97e40b1464901aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a364b56258a83062f97e40b1464901aa9">FocusOn</a></td></tr>
+<tr class="memdesc:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当该对象获得焦点时触发该信号  <br /></td></tr>
+<tr class="separator:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block" id="r_a8fca38ee5cc6098c6f2d8219f61b33cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a8fca38ee5cc6098c6f2d8219f61b33cb">HoverOff</a></td></tr>
+<tr class="memdesc:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当鼠标移开该对象时之上时触发该信号  <br /></td></tr>
+<tr class="separator:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block" id="r_a5301d542cb3c85aa8381f19d2efeecca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a5301d542cb3c85aa8381f19d2efeecca">HoverOn</a></td></tr>
+<tr class="memdesc:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当鼠标悬停该对象时之上时触发该信号  <br /></td></tr>
+<tr class="separator:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_g_ft_1_1_block"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_block')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_block.html">GFt::Block</a></td></tr>
 <tr class="memitem:a00defc8bb2b35301c7e2e6eeaaf15afa inherit pro_methods_class_g_ft_1_1_block" id="r_a00defc8bb2b35301c7e2e6eeaaf15afa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa">onDraw</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;<a class="el" href="class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff">rect</a>) override</td></tr>
 <tr class="memdesc:a00defc8bb2b35301c7e2e6eeaaf15afa inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于绘制内容  <br /></td></tr>
 <tr class="separator:a00defc8bb2b35301c7e2e6eeaaf15afa inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block" id="r_ae3c1579b1a248d8f2dc32c599822df70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ae3c1579b1a248d8f2dc32c599822df70">onKeyPress</a> (<a class="el" href="class_g_ft_1_1_key_press_event.html">KeyPressEvent</a> *event) override</td></tr>
+<tr class="memdesc:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理键盘按键按下事件  <br /></td></tr>
+<tr class="separator:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block" id="r_a100661f60d285f4829e4a6598bfeacf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a100661f60d285f4829e4a6598bfeacf8">onKeyRelease</a> (<a class="el" href="class_g_ft_1_1_key_release_event.html">KeyReleaseEvent</a> *event) override</td></tr>
+<tr class="memdesc:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理键盘按键释放事件  <br /></td></tr>
+<tr class="separator:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a739e089ae53f86757d5c22e8d6d725fa inherit pro_methods_class_g_ft_1_1_block" id="r_a739e089ae53f86757d5c22e8d6d725fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a739e089ae53f86757d5c22e8d6d725fa">onMouseButtonPress</a> (<a class="el" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a> *event) override</td></tr>
 <tr class="memdesc:a739e089ae53f86757d5c22e8d6d725fa inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理鼠标按钮按下事件  <br /></td></tr>
 <tr class="separator:a739e089ae53f86757d5c22e8d6d725fa inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,12 +306,6 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a8d78022a44847743b9695242d1819aed inherit pro_methods_class_g_ft_1_1_block" id="r_a8d78022a44847743b9695242d1819aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a8d78022a44847743b9695242d1819aed">onMouseWheel</a> (<a class="el" href="class_g_ft_1_1_mouse_wheel_event.html">MouseWheelEvent</a> *event) override</td></tr>
 <tr class="memdesc:a8d78022a44847743b9695242d1819aed inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理鼠标滚轮事件  <br /></td></tr>
 <tr class="separator:a8d78022a44847743b9695242d1819aed inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block" id="r_ae3c1579b1a248d8f2dc32c599822df70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ae3c1579b1a248d8f2dc32c599822df70">onKeyPress</a> (<a class="el" href="class_g_ft_1_1_key_press_event.html">KeyPressEvent</a> *event) override</td></tr>
-<tr class="memdesc:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理键盘按键按下事件  <br /></td></tr>
-<tr class="separator:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block" id="r_a100661f60d285f4829e4a6598bfeacf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a100661f60d285f4829e4a6598bfeacf8">onKeyRelease</a> (<a class="el" href="class_g_ft_1_1_key_release_event.html">KeyReleaseEvent</a> *event) override</td></tr>
-<tr class="memdesc:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理键盘按键释放事件  <br /></td></tr>
-<tr class="separator:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c35f17955ab6e87898f88d6f6b9bc4 inherit pro_methods_class_g_ft_1_1_block" id="r_ad6c35f17955ab6e87898f88d6f6b9bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ad6c35f17955ab6e87898f88d6f6b9bc4">onTextInput</a> (<a class="el" href="class_g_ft_1_1_text_input_event.html">TextInputEvent</a> *event) override</td></tr>
 <tr class="memdesc:ad6c35f17955ab6e87898f88d6f6b9bc4 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理文本输入事件  <br /></td></tr>
 <tr class="separator:ad6c35f17955ab6e87898f88d6f6b9bc4 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,22 +341,192 @@ Public 成员函数</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a751034af79c475b74da750af107fa119" name="a751034af79c475b74da750af107fa119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a751034af79c475b74da750af107fa119">&#9670;&#160;</a></span>show()</h2>
+<a id="afbdc6fcd08648d5c99833f8059ac7f64" name="afbdc6fcd08648d5c99833f8059ac7f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdc6fcd08648d5c99833f8059ac7f64">&#9670;&#160;</a></span>createFullScreenWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GFt::Window::show </td>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createFullScreenWindow </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>显示窗口 </p>
+<p>创建全屏窗口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9bb2fa389f009626f5608892eabced4b" name="a9bb2fa389f009626f5608892eabced4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb2fa389f009626f5608892eabced4b">&#9670;&#160;</a></span>createNoBorderTopMostWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createNoBorderTopMostWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建无边框置顶窗口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
+    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a104057e005b6a44753812770477e1baa" name="a104057e005b6a44753812770477e1baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104057e005b6a44753812770477e1baa">&#9670;&#160;</a></span>createNoBorderWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createNoBorderWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建无边框窗口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
+    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac99b42c882dd1892033bd4c8669c146" name="aac99b42c882dd1892033bd4c8669c146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac99b42c882dd1892033bd4c8669c146">&#9670;&#160;</a></span>createTopMostWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createTopMostWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建置顶窗口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
+    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a2952370bf3a6a87d39e62ebe42fa07" name="a0a2952370bf3a6a87d39e62ebe42fa07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2952370bf3a6a87d39e62ebe42fa07">&#9670;&#160;</a></span>createWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建普通窗口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
+    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -346,28 +549,41 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="ab4be7c988d496984f84c6b98ef1dbe68" name="ab4be7c988d496984f84c6b98ef1dbe68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4be7c988d496984f84c6b98ef1dbe68">&#9670;&#160;</a></span>resize()</h2>
+<a id="aae293e77218a295c6e096ac35c478731" name="aae293e77218a295c6e096ac35c478731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae293e77218a295c6e096ac35c478731">&#9670;&#160;</a></span>maximize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GFt::Window::resize </td>
+          <td class="memname">void GFt::Window::maximize </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">iSize</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>更改窗口的大小 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>新的窗口大小 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>窗口最大化 </p>
+
+</div>
+</div>
+<a id="ae77dd1bf31946e2c708cc9a503a18a1e" name="ae77dd1bf31946e2c708cc9a503a18a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77dd1bf31946e2c708cc9a503a18a1e">&#9670;&#160;</a></span>minimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Window::minimize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>窗口最小化 </p>
 
 </div>
 </div>
@@ -421,6 +637,101 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="a30ee1e758ed030be2e6376124f180ef4" name="a30ee1e758ed030be2e6376124f180ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ee1e758ed030be2e6376124f180ef4">&#9670;&#160;</a></span>resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Window::resize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">iSize</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更改窗口的大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>新的窗口大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a621750410755b4b4356565ed16f9218e" name="a621750410755b4b4356565ed16f9218e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621750410755b4b4356565ed16f9218e">&#9670;&#160;</a></span>restore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Window::restore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>还原最大化的窗口 </p>
+
+</div>
+</div>
+<a id="aeed6110a6aef274be4c74b56fd41e59a" name="aeed6110a6aef274be4c74b56fd41e59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed6110a6aef274be4c74b56fd41e59a">&#9670;&#160;</a></span>setAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Window::setAlpha </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置窗口透明度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alpha</td><td>透明度值(0.0~1.0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a881464029a1197e92193e9a6cbd895a0" name="a881464029a1197e92193e9a6cbd895a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881464029a1197e92193e9a6cbd895a0">&#9670;&#160;</a></span>setFrameless()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Window::setFrameless </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>frameless</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置窗口是否无边框 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frameless</td><td>是否无边框 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>当窗口最大化时, 此函数无效 </dd></dl>
+
+</div>
+</div>
 <a id="a35f50283a9e1dbe00cf8274f986f9119" name="a35f50283a9e1dbe00cf8274f986f9119"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35f50283a9e1dbe00cf8274f986f9119">&#9670;&#160;</a></span>setTitle()</h2>
 
@@ -446,192 +757,48 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a0a2952370bf3a6a87d39e62ebe42fa07" name="a0a2952370bf3a6a87d39e62ebe42fa07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2952370bf3a6a87d39e62ebe42fa07">&#9670;&#160;</a></span>createWindow()</h2>
+<a id="ad0b980bda181f3b8d7248e5c004a028a" name="ad0b980bda181f3b8d7248e5c004a028a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b980bda181f3b8d7248e5c004a028a">&#9670;&#160;</a></span>setTopMost()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createWindow </td>
+          <td class="memname">void GFt::Window::setTopMost </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>topMost</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>创建普通窗口 </p>
+<p>设置窗口是否置顶 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
-    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
+    <tr><td class="paramname">topMost</td><td>是否置顶 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>注解</dt><dd>当窗口最大化时, 此函数无效 </dd></dl>
 
 </div>
 </div>
-<a id="afbdc6fcd08648d5c99833f8059ac7f64" name="afbdc6fcd08648d5c99833f8059ac7f64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbdc6fcd08648d5c99833f8059ac7f64">&#9670;&#160;</a></span>createFullScreenWindow()</h2>
+<a id="a751034af79c475b74da750af107fa119" name="a751034af79c475b74da750af107fa119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751034af79c475b74da750af107fa119">&#9670;&#160;</a></span>show()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createFullScreenWindow </td>
+          <td class="memname">void GFt::Window::show </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>创建全屏窗口 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aac99b42c882dd1892033bd4c8669c146" name="aac99b42c882dd1892033bd4c8669c146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac99b42c882dd1892033bd4c8669c146">&#9670;&#160;</a></span>createTopMostWindow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createTopMostWindow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>创建置顶窗口 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
-    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a104057e005b6a44753812770477e1baa" name="a104057e005b6a44753812770477e1baa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a104057e005b6a44753812770477e1baa">&#9670;&#160;</a></span>createNoBorderWindow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createNoBorderWindow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>创建无边框窗口 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
-    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9bb2fa389f009626f5608892eabced4b" name="a9bb2fa389f009626f5608892eabced4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bb2fa389f009626f5608892eabced4b">&#9670;&#160;</a></span>createNoBorderTopMostWindow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_g_ft_1_1_window.html">Window</a> * GFt::Window::createNoBorderTopMostWindow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hide</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>创建无边框置顶窗口 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>窗口大小 </td></tr>
-    <tr><td class="paramname">hide</td><td>是否在创建后隐藏窗口 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>显示窗口 </p>
 
 </div>
 </div>
@@ -709,6 +876,126 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>窗口销毁信号 </p>
+
+</div>
+</div>
+<a id="a82179a612f66f3ad74b0e140b718173c" name="a82179a612f66f3ad74b0e140b718173c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82179a612f66f3ad74b0e140b718173c">&#9670;&#160;</a></span>onWindowMaximized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt; GFt::Window::onWindowMaximized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口最大化信号 </p>
+
+</div>
+</div>
+<a id="a07b990a3c78421fb982c280920b99c94" name="a07b990a3c78421fb982c280920b99c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b990a3c78421fb982c280920b99c94">&#9670;&#160;</a></span>onWindowMinimized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt; GFt::Window::onWindowMinimized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口最小化信号 </p>
+
+</div>
+</div>
+<a id="a7bdf072b383b244442b8840b0c29de14" name="a7bdf072b383b244442b8840b0c29de14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bdf072b383b244442b8840b0c29de14">&#9670;&#160;</a></span>onWindowMoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt; GFt::Window::onWindowMoved</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口位置改变信号 </p>
+
+</div>
+</div>
+<a id="a71f54eecd9e792a8846792806442cd18" name="a71f54eecd9e792a8846792806442cd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f54eecd9e792a8846792806442cd18">&#9670;&#160;</a></span>onWindowResized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt; GFt::Window::onWindowResized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口大小改变信号 </p>
+
+</div>
+</div>
+<a id="adc47a835281428273c2b293df513ff5c" name="adc47a835281428273c2b293df513ff5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc47a835281428273c2b293df513ff5c">&#9670;&#160;</a></span>onWindowRestored</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_window.html">Window</a> * &gt; GFt::Window::onWindowRestored</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口还原信号 </p>
 
 </div>
 </div>
