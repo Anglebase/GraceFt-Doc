@@ -7,12 +7,14 @@ var annotated_dup =
         [ "XColumnLayout", "struct_g_ft_1_1_u_i_1_1_x_column_layout.html", "struct_g_ft_1_1_u_i_1_1_x_column_layout" ],
         [ "XGridLayout", "struct_g_ft_1_1_u_i_1_1_x_grid_layout.html", "struct_g_ft_1_1_u_i_1_1_x_grid_layout" ],
         [ "XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", "struct_g_ft_1_1_u_i_1_1_x_label" ],
+        [ "XMainWindow", "struct_g_ft_1_1_u_i_1_1_x_main_window.html", "struct_g_ft_1_1_u_i_1_1_x_main_window" ],
         [ "XRowLayout", "struct_g_ft_1_1_u_i_1_1_x_row_layout.html", "struct_g_ft_1_1_u_i_1_1_x_row_layout" ],
         [ "XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", "struct_g_ft_1_1_u_i_1_1_x_window" ]
       ] ],
       [ "Widget", "namespace_g_ft_1_1_widget.html", [
         [ "Button", "class_g_ft_1_1_widget_1_1_button.html", "class_g_ft_1_1_widget_1_1_button" ],
-        [ "Label", "class_g_ft_1_1_widget_1_1_label.html", "class_g_ft_1_1_widget_1_1_label" ]
+        [ "Label", "class_g_ft_1_1_widget_1_1_label.html", "class_g_ft_1_1_widget_1_1_label" ],
+        [ "MainWindow", "class_g_ft_1_1_widget_1_1_main_window.html", "class_g_ft_1_1_widget_1_1_main_window" ]
       ] ],
       [ "Application", "class_g_ft_1_1_application.html", "class_g_ft_1_1_application" ],
       [ "Bezier", "class_g_ft_1_1_bezier.html", "class_g_ft_1_1_bezier" ],

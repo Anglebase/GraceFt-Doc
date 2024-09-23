@@ -35,6 +35,7 @@ var hierarchy =
         [ "GFt::RowLayout", "class_g_ft_1_1_row_layout.html", null ],
         [ "GFt::Widget::Button", "class_g_ft_1_1_widget_1_1_button.html", null ],
         [ "GFt::Widget::Label", "class_g_ft_1_1_widget_1_1_label.html", null ],
+        [ "GFt::Widget::MainWindow", "class_g_ft_1_1_widget_1_1_main_window.html", null ],
         [ "GFt::Window", "class_g_ft_1_1_window.html", null ]
       ] ]
     ] ],
@@ -97,6 +98,7 @@ var hierarchy =
     [ "GFt::UI::XColumnLayout", "struct_g_ft_1_1_u_i_1_1_x_column_layout.html", null ],
     [ "GFt::UI::XGridLayout", "struct_g_ft_1_1_u_i_1_1_x_grid_layout.html", null ],
     [ "GFt::UI::XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", null ],
+    [ "GFt::UI::XMainWindow", "struct_g_ft_1_1_u_i_1_1_x_main_window.html", null ],
     [ "GFt::UI::XRowLayout", "struct_g_ft_1_1_u_i_1_1_x_row_layout.html", null ],
     [ "GFt::UI::XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", null ]
 ];

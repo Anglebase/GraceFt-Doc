@@ -9,6 +9,7 @@ var searchData=
   ['xcolumnlayout_6',['XColumnLayout',['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html',1,'GFt::UI']]],
   ['xgridlayout_7',['XGridLayout',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html',1,'GFt::UI']]],
   ['xlabel_8',['XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html',1,'GFt::UI']]],
-  ['xrowlayout_9',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
-  ['xwindow_10',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
+  ['xmainwindow_9',['XMainWindow',['../struct_g_ft_1_1_u_i_1_1_x_main_window.html',1,'GFt::UI']]],
+  ['xrowlayout_10',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
+  ['xwindow_11',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
 ];

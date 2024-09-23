@@ -10,5 +10,6 @@ var searchData=
   ['onwindowminimized_7',['onWindowMinimized',['../class_g_ft_1_1_window.html#a07b990a3c78421fb982c280920b99c94',1,'GFt::Window']]],
   ['onwindowmoved_8',['onWindowMoved',['../class_g_ft_1_1_window.html#a7bdf072b383b244442b8840b0c29de14',1,'GFt::Window']]],
   ['onwindowresized_9',['onWindowResized',['../class_g_ft_1_1_window.html#a71f54eecd9e792a8846792806442cd18',1,'GFt::Window']]],
-  ['onwindowrestored_10',['onWindowRestored',['../class_g_ft_1_1_window.html#adc47a835281428273c2b293df513ff5c',1,'GFt::Window']]]
+  ['onwindowrestored_10',['onWindowRestored',['../class_g_ft_1_1_window.html#adc47a835281428273c2b293df513ff5c',1,'GFt::Window']]],
+  ['onwindowsizechanged_11',['onWindowSizeChanged',['../class_g_ft_1_1_window.html#a9426c755937d0318a145b15aaa982527',1,'GFt::Window']]]
 ];

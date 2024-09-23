@@ -1,5 +1,6 @@
 var namespace_g_ft_1_1_widget =
 [
     [ "Button", "class_g_ft_1_1_widget_1_1_button.html", "class_g_ft_1_1_widget_1_1_button" ],
-    [ "Label", "class_g_ft_1_1_widget_1_1_label.html", "class_g_ft_1_1_widget_1_1_label" ]
+    [ "Label", "class_g_ft_1_1_widget_1_1_label.html", "class_g_ft_1_1_widget_1_1_label" ],
+    [ "MainWindow", "class_g_ft_1_1_widget_1_1_main_window.html", "class_g_ft_1_1_widget_1_1_main_window" ]
 ];

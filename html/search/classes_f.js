@@ -5,6 +5,7 @@ var searchData=
   ['xcolumnlayout_2',['XColumnLayout',['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html',1,'GFt::UI']]],
   ['xgridlayout_3',['XGridLayout',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html',1,'GFt::UI']]],
   ['xlabel_4',['XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html',1,'GFt::UI']]],
-  ['xrowlayout_5',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
-  ['xwindow_6',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
+  ['xmainwindow_5',['XMainWindow',['../struct_g_ft_1_1_u_i_1_1_x_main_window.html',1,'GFt::UI']]],
+  ['xrowlayout_6',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
+  ['xwindow_7',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
 ];
