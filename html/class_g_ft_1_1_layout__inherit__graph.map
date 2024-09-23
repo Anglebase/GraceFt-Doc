@@ -1,9 +1,9 @@
 <map id="GFt::Layout" name="GFt::Layout">
-<area shape="rect" id="Node000001" title="布局基类" alt="" coords="227,5,435,613"/>
-<area shape="rect" id="Node000002" href="$class_g_ft_1_1_column_layout.html" title="列布局类" alt="" coords="5,704,223,997"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,583,175,705,170,703,219,581"/>
-<area shape="rect" id="Node000003" href="$class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="" coords="247,661,415,1040"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,628,334,662,329,662,329,628"/>
-<area shape="rect" id="Node000004" href="$class_g_ft_1_1_row_layout.html" title="行布局类" alt="" coords="440,712,657,989"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="443,581,496,711,491,713,438,583"/>
+<area shape="rect" id="Node000001" title="布局基类" alt="" coords="532,5,1012,955"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_column_layout.html" title="列布局类" alt="" coords="5,1067,560,1521"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="527,893,421,1068,417,1066,522,890"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="" coords="585,1003,959,1585"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="775,970,775,1003,769,1003,769,970"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_row_layout.html" title="行布局类" alt="" coords="984,1081,1539,1507"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1022,890,1136,1080,1131,1082,1017,893"/>
 </map>

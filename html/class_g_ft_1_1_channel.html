@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Channel&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_g_ft_1_1_channel.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_g_ft_1_1_channel-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Channel&lt; T &gt; 模板类 参考<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_xE8_xAE_xBE_xE6_x96_xBD_xE5_xBA_x93.html">基础设施库</a> &raquo; <a class="el" href="group___xE7_xB3_x96_xE8_xA1_xA3_xE5_xB7_xA5_xE5_x85_xB7.html">糖衣工具</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>通道模板类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_channel_8hpp_source.html">Channel.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a11fcfb0ddd2bc9e469794ff5f2e17cdc" id="r_a11fcfb0ddd2bc9e469794ff5f2e17cdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11fcfb0ddd2bc9e469794ff5f2e17cdc">Channel</a> (std::size_t capacity=1ull)</td></tr>
+<tr class="memdesc:a11fcfb0ddd2bc9e469794ff5f2e17cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a11fcfb0ddd2bc9e469794ff5f2e17cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60cf384231b4e625855b6c21af71d77" id="r_ab60cf384231b4e625855b6c21af71d77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab60cf384231b4e625855b6c21af71d77">~Channel</a> ()=default</td></tr>
+<tr class="separator:ab60cf384231b4e625855b6c21af71d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249fc7baabcf53d49560cd54f03dc8c6" id="r_a249fc7baabcf53d49560cd54f03dc8c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249fc7baabcf53d49560cd54f03dc8c6">recv</a> ()</td></tr>
+<tr class="memdesc:a249fc7baabcf53d49560cd54f03dc8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">从通道接收数据  <br /></td></tr>
+<tr class="separator:a249fc7baabcf53d49560cd54f03dc8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea213fd3769c19c3a4b35f22224a2bf6" id="r_aea213fd3769c19c3a4b35f22224a2bf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea213fd3769c19c3a4b35f22224a2bf6">send</a> (const <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;data)</td></tr>
+<tr class="memdesc:aea213fd3769c19c3a4b35f22224a2bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据到通道  <br /></td></tr>
+<tr class="separator:aea213fd3769c19c3a4b35f22224a2bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37861331e211d21df7a62e086b996f4c" id="r_a37861331e211d21df7a62e086b996f4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37861331e211d21df7a62e086b996f4c">send</a> (<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;&amp;data)</td></tr>
+<tr class="memdesc:a37861331e211d21df7a62e086b996f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据到通道  <br /></td></tr>
+<tr class="separator:a37861331e211d21df7a62e086b996f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8889f9a3b045e3753541bb17fabb3ac1" id="r_a8889f9a3b045e3753541bb17fabb3ac1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8889f9a3b045e3753541bb17fabb3ac1">try_recv</a> (<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;data)</td></tr>
+<tr class="memdesc:a8889f9a3b045e3753541bb17fabb3ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">尝试从通道接收数据  <br /></td></tr>
+<tr class="separator:a8889f9a3b045e3753541bb17fabb3ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e563e8a43b853f369340687c1b8a5b" id="r_a65e563e8a43b853f369340687c1b8a5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e563e8a43b853f369340687c1b8a5b">try_send</a> (const <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;data)</td></tr>
+<tr class="memdesc:a65e563e8a43b853f369340687c1b8a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">尝试发送数据到通道  <br /></td></tr>
+<tr class="separator:a65e563e8a43b853f369340687c1b8a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae48cdebc22c1619ed0cbab733348c67" id="r_aae48cdebc22c1619ed0cbab733348c67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae48cdebc22c1619ed0cbab733348c67">try_send</a> (<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;&amp;data)</td></tr>
+<tr class="memdesc:aae48cdebc22c1619ed0cbab733348c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">尝试发送数据到通道  <br /></td></tr>
+<tr class="separator:aae48cdebc22c1619ed0cbab733348c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&gt;<br />
+class GFt::Channel&lt; T &gt;</div><p>通道模板类 </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>通道中元素的类型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>此类是线程安全的，可用于多线程环境下的数据交换 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a11fcfb0ddd2bc9e469794ff5f2e17cdc" name="a11fcfb0ddd2bc9e469794ff5f2e17cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11fcfb0ddd2bc9e469794ff5f2e17cdc">&#9670;&#160;</a></span>Channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::Channel </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>capacity</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1ull</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capacity</td><td>通道的容量，默认为1 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab60cf384231b4e625855b6c21af71d77" name="ab60cf384231b4e625855b6c21af71d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60cf384231b4e625855b6c21af71d77">&#9670;&#160;</a></span>~Channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::~<a class="el" href="class_g_ft_1_1_channel.html">Channel</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a249fc7baabcf53d49560cd54f03dc8c6" name="a249fc7baabcf53d49560cd54f03dc8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249fc7baabcf53d49560cd54f03dc8c6">&#9670;&#160;</a></span>recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> <a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::recv </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从通道接收数据 </p>
+<dl class="section return"><dt>返回</dt><dd>接收到的数据</dd></dl>
+<p>若通道为空，则线程会被阻塞，直到有数据到来 </p>
+
+</div>
+</div>
+<a id="aea213fd3769c19c3a4b35f22224a2bf6" name="aea213fd3769c19c3a4b35f22224a2bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea213fd3769c19c3a4b35f22224a2bf6">&#9670;&#160;</a></span>send() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::send </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据到通道 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>要发送的数据</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>若通道已满，则线程会被阻塞，直到有空余位置 </p>
+
+</div>
+</div>
+<a id="a37861331e211d21df7a62e086b996f4c" name="a37861331e211d21df7a62e086b996f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37861331e211d21df7a62e086b996f4c">&#9670;&#160;</a></span>send() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送数据到通道 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>要发送的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#aea213fd3769c19c3a4b35f22224a2bf6" title="发送数据到通道">send()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8889f9a3b045e3753541bb17fabb3ac1" name="a8889f9a3b045e3753541bb17fabb3ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8889f9a3b045e3753541bb17fabb3ac1">&#9670;&#160;</a></span>try_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::try_recv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>尝试从通道接收数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>接收到的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若成功接收，则返回true，否则返回false</dd></dl>
+<p>若通道为空，则不会接收数据，并返回false </p>
+
+</div>
+</div>
+<a id="a65e563e8a43b853f369340687c1b8a5b" name="a65e563e8a43b853f369340687c1b8a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e563e8a43b853f369340687c1b8a5b">&#9670;&#160;</a></span>try_send() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::try_send </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>尝试发送数据到通道 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>要发送的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若成功发送，则返回true，否则返回false</dd></dl>
+<p>若通道已满，则不会发送数据，并返回false </p>
+
+</div>
+</div>
+<a id="aae48cdebc22c1619ed0cbab733348c67" name="aae48cdebc22c1619ed0cbab733348c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae48cdebc22c1619ed0cbab733348c67">&#9670;&#160;</a></span>try_send() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1_channel.html">GFt::Channel</a>&lt; <a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;::try_send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>尝试发送数据到通道 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>要发送的数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若成功发送，则返回true，否则返回false </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#a65e563e8a43b853f369340687c1b8a5b" title="尝试发送数据到通道">try_send()</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1_channel.html">Channel</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

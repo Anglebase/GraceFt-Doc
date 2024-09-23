@@ -5,6 +5,7 @@ var hierarchy =
     [ "GFt::BlockFocusManager", "class_g_ft_1_1_block_focus_manager.html", null ],
     [ "GFt::BlockHoverManager", "class_g_ft_1_1_block_hover_manager.html", null ],
     [ "GFt::BrushSet", "class_g_ft_1_1_brush_set.html", null ],
+    [ "GFt::Channel< T >", "class_g_ft_1_1_channel.html", null ],
     [ "GFt::Circle< T >", "class_g_ft_1_1_circle.html", null ],
     [ "GFt::Color", "class_g_ft_1_1_color.html", null ],
     [ "GFt::DeclarativeUIManager", "class_g_ft_1_1_declarative_u_i_manager.html", null ],

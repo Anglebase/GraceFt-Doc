@@ -1,5 +1,15 @@
 var NAVTREEINDEX4 =
 {
+"namespace_g_ft_1_1_widget.html":[4,0,0,2],
+"namespace_g_ft_1_1literals.html":[4,0,0,0],
+"namespace_g_ft_1_1literals.html#a73b064e8e33f86106d82701f2a3e5544":[4,0,0,0,4],
+"namespace_g_ft_1_1literals.html#afca304e839d4998c011adbc067874b76":[4,0,0,0,5],
+"namespacemembers.html":[4,1,0],
+"namespacemembers_enum.html":[4,1,3],
+"namespacemembers_eval.html":[4,1,4],
+"namespacemembers_func.html":[4,1,1],
+"namespacemembers_type.html":[4,1,2],
+"namespaces.html":[4,0],
 "pages.html":[],
 "struct_g_ft_1_1_u_i_1_1_x_block.html":[4,0,0,1,0],
 "struct_g_ft_1_1_u_i_1_1_x_block.html":[5,0,0,0,0],

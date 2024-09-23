@@ -1,3 +1,23 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$class_g_ft_1_1_fit_curve.html" title="拟合曲线类" alt="" coords="5,5,138,32"/>
+<area shape="rect" id="Node000000" href="$class_g_ft_1_1_event.html" title="事件基类" alt="" coords="5,159,177,196"/>
+<area shape="rect" id="Node000001" href="$class_g_ft_1_1_keyboard_event.html" title="键盘事件基类" alt="" coords="232,67,524,104"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="166,151,316,102,317,107,167,156"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_mouse_event.html" title="鼠标事件基类" alt="" coords="255,159,501,196"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="192,175,254,175,254,180,192,180"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_text_input_event.html" title="文本输入事件" alt="" coords="225,220,531,258"/>
+<area shape="poly" id="edge10_Node000000_Node000010" title=" " alt="" coords="190,198,225,206,279,217,277,222,224,211,189,203"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_key_press_event.html" title="键盘按键按下事件" alt="" coords="602,5,893,43"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="510,61,629,41,630,46,511,66"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_key_release_event.html" title="键盘按键弹起事件" alt="" coords="586,67,908,104"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="539,83,586,83,586,88,539,88"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_mouse_button_event.html" title="鼠标按钮事件基类" alt="" coords="579,128,915,166"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="516,163,578,158,579,163,516,169"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_mouse_move_event.html" title="鼠标移动事件" alt="" coords="594,189,900,227"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="517,186,594,193,593,198,516,192"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_mouse_wheel_event.html" title="鼠标滚轮事件" alt="" coords="586,251,908,288"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="513,199,532,206,556,221,580,236,614,248,613,253,578,241,554,226,530,211,511,204"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_mouse_button_press_event.html" title="鼠标按钮按下事件" alt="" coords="978,97,1390,135"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="930,131,978,128,978,133,931,137"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_mouse_button_release_event.html" title="鼠标按钮弹起事件" alt="" coords="963,159,1405,196"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="931,157,963,159,963,165,931,162"/>
 </map>

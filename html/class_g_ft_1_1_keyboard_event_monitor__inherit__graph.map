@@ -1,23 +1,23 @@
 <map id="GFt::KeyboardEventMonitor" name="GFt::KeyboardEventMonitor">
-<area shape="rect" id="Node000001" title="键盘事件监视器接口类" alt="" coords="581,139,756,208"/>
-<area shape="rect" id="Node000004" href="$class_g_ft_1_1_event_monitor.html" title="事件监视器接口类" alt="" coords="609,256,729,325"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="671,223,671,256,666,256,666,223"/>
-<area shape="rect" id="Node000002" href="$class_g_ft_1_1_key_press_event_monitor.html" title="键盘按下事件监视器接口类" alt="" coords="476,5,653,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="611,100,643,137,639,141,607,104"/>
-<area shape="rect" id="Node000003" href="$class_g_ft_1_1_key_release_event_monitor.html" title="键盘释放事件监视器接口类" alt="" coords="677,5,868,91"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="730,104,699,141,695,137,726,100"/>
-<area shape="rect" id="Node000005" href="$class_g_ft_1_1_block.html" title="块对象" alt="" coords="558,373,779,1216"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="671,340,671,374,666,374,666,340"/>
-<area shape="rect" id="Node000006" href="$class_g_ft_1_1_column_layout.html" title="列布局类" alt="" coords="5,1592,223,1885"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="549,898,470,972,386,1060,306,1159,270,1211,238,1265,201,1346,172,1431,150,1515,135,1593,130,1592,145,1514,167,1429,196,1344,233,1263,265,1209,302,1156,382,1057,466,968,545,894"/>
-<area shape="rect" id="Node000007" href="$class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="" coords="247,1549,415,1928"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="553,996,487,1127,430,1265,407,1336,388,1409,360,1550,355,1549,383,1408,402,1334,425,1263,482,1124,548,994"/>
-<area shape="rect" id="Node000008" href="$class_g_ft_1_1_row_layout.html" title="行布局类" alt="" coords="440,1600,657,1877"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="616,1231,569,1601,563,1600,611,1230"/>
-<area shape="rect" id="Node000009" href="$class_g_ft_1_1_widget_1_1_button.html" title="按钮控件" alt="" coords="682,1440,898,2037"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="727,1230,754,1440,749,1440,722,1231"/>
-<area shape="rect" id="Node000010" href="$class_g_ft_1_1_widget_1_1_label.html" title="文本标签控件" alt="" coords="923,1488,1105,1989"/>
-<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="789,995,855,1125,913,1263,947,1375,975,1488,969,1489,942,1376,907,1265,850,1127,784,997"/>
-<area shape="rect" id="Node000011" href="$class_g_ft_1_1_window.html" title="全局窗口对象" alt="" coords="1130,1264,1333,2213"/>
-<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="793,889,876,963,964,1052,1049,1153,1087,1207,1120,1263,1132,1286,1128,1288,1116,1265,1082,1210,1045,1156,960,1056,872,967,789,893"/>
+<area shape="rect" id="Node000001" title="键盘事件监视器接口类" alt="" coords="1338,181,1726,283"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_event_monitor.html" title="事件监视器接口类" alt="" coords="1398,331,1666,432"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1535,298,1535,331,1529,331,1529,298"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_key_press_event_monitor.html" title="键盘按下事件监视器接口类" alt="" coords="1122,5,1513,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1415,140,1467,179,1464,184,1412,144"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_key_release_event_monitor.html" title="键盘释放事件监视器接口类" alt="" coords="1537,5,1957,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1652,144,1600,184,1597,179,1649,140"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_block.html" title="块对象" alt="" coords="1307,480,1757,1792"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1535,447,1535,480,1529,480,1529,447"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_column_layout.html" title="列布局类" alt="" coords="5,2399,560,2854"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1296,1261,1119,1366,1024,1430,926,1500,830,1577,738,1660,652,1748,574,1842,530,1906,489,1975,453,2047,422,2121,369,2266,331,2400,326,2399,364,2264,417,2119,449,2045,485,1973,525,1904,570,1838,648,1744,734,1656,827,1573,923,1496,1020,1426,1116,1362,1293,1256"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="" coords="585,2335,959,2918"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1299,1381,1212,1483,1125,1596,1044,1717,974,1841,922,1962,879,2089,844,2216,818,2336,813,2335,839,2215,874,2088,917,1960,970,1839,1040,1714,1121,1593,1208,1480,1295,1378"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_row_layout.html" title="行布局类" alt="" coords="984,2413,1539,2840"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1413,1807,1302,2414,1297,2413,1408,1806"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_widget_1_1_button.html" title="按钮控件" alt="" coords="1563,2161,2043,3092"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="1656,1806,1721,2161,1716,2162,1651,1807"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_widget_1_1_label.html" title="文本标签控件" alt="" coords="2067,2236,2501,3017"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="1769,1403,1845,1503,1922,1610,1994,1723,2057,1839,2101,1935,2139,2035,2173,2136,2202,2235,2197,2237,2168,2138,2134,2037,2096,1937,2052,1841,1989,1726,1917,1613,1841,1506,1764,1407"/>
+<area shape="rect" id="Node000011" href="$class_g_ft_1_1_window.html" title="全局窗口对象" alt="" coords="2526,1840,3021,3413"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="1772,1250,1954,1354,2053,1418,2153,1489,2253,1566,2348,1651,2436,1742,2515,1838,2528,1856,2524,1860,2511,1842,2432,1745,2344,1655,2249,1571,2150,1493,2050,1422,1951,1359,1769,1254"/>
 </map>

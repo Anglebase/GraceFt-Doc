@@ -1,6 +1,6 @@
 <map id="图形系统" name="图形系统">
-<area shape="rect" id="Node000002" href="$group___a_p_i_xE6_x8E_xA5_xE5_x8F_xA3_xE5_xBA_x93.html" title="该模块是API接口库，包含了与底层交互的相关内容" alt="" coords="5,32,112,60"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="160,32,265,60"/>
-<area shape="rect" id="Node000003" href="$group___xE5_x9F_xBA_xE7_xA1_x80_xE7_xB1_xBB_xE5_x9E_x8B.html" title=" " alt="" coords="313,5,418,33"/>
-<area shape="rect" id="Node000004" href="$group___xE6_x8E_xA5_xE5_x8F_xA3_xE7_xB1_xBB_xE5_x9E_x8B.html" title=" " alt="" coords="313,57,418,85"/>
+<area shape="rect" id="Node000002" href="$group___a_p_i_xE6_x8E_xA5_xE5_x8F_xA3_xE5_xBA_x93.html" title="该模块是API接口库，包含了与底层交互的相关内容" alt="" coords="5,34,153,74"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="201,36,330,72"/>
+<area shape="rect" id="Node000003" href="$group___xE5_x9F_xBA_xE7_xA1_x80_xE7_xB1_xBB_xE5_x9E_x8B.html" title=" " alt="" coords="378,5,507,41"/>
+<area shape="rect" id="Node000004" href="$group___xE6_x8E_xA5_xE5_x8F_xA3_xE7_xB1_xBB_xE5_x9E_x8B.html" title=" " alt="" coords="378,65,507,101"/>
 </map>

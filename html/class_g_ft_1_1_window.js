@@ -1,6 +1,7 @@
 var class_g_ft_1_1_window =
 [
     [ "~Window", "class_g_ft_1_1_window.html#ac805b33fd497fb66eda31ed85bca5622", null ],
+    [ "fullscreen", "class_g_ft_1_1_window.html#a691307faf5cac601563cac5e81982703", null ],
     [ "hide", "class_g_ft_1_1_window.html#a137071ae5e6038fc832caf89a0df73bc", null ],
     [ "maximize", "class_g_ft_1_1_window.html#aae293e77218a295c6e096ac35c478731", null ],
     [ "minimize", "class_g_ft_1_1_window.html#ae77dd1bf31946e2c708cc9a503a18a1e", null ],

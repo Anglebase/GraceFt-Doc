@@ -15,5 +15,7 @@ var searchData=
   ['toppadding_12',['topPadding',['../class_g_ft_1_1_widget_1_1_label.html#af287196928dc4c5b0512ef5e1c0fb70f',1,'GFt::Widget::Label::topPadding()'],['../class_g_ft_1_1_widget_1_1_label.html#a84d7cc749f367a85c6cbb3715eeef1fb',1,'GFt::Widget::Label::topPadding() const']]],
   ['transformby_13',['transformBy',['../class_g_ft_1_1_path.html#ab698176ada863c9a6a4a37e4eb10357b',1,'GFt::Path']]],
   ['translate_14',['translate',['../group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga3076392d29f7004d47b5079bde60a8a6',1,'GFt']]],
-  ['transpose_15',['transpose',['../class_g_ft_1_1_matrix.html#a528a9d5e01a10177d8f093391cd8c965',1,'GFt::Matrix']]]
+  ['transpose_15',['transpose',['../class_g_ft_1_1_matrix.html#a528a9d5e01a10177d8f093391cd8c965',1,'GFt::Matrix']]],
+  ['try_5frecv_16',['try_recv',['../class_g_ft_1_1_channel.html#a8889f9a3b045e3753541bb17fabb3ac1',1,'GFt::Channel']]],
+  ['try_5fsend_17',['try_send',['../class_g_ft_1_1_channel.html#a65e563e8a43b853f369340687c1b8a5b',1,'GFt::Channel::try_send(const T &amp;data)'],['../class_g_ft_1_1_channel.html#aae48cdebc22c1619ed0cbab733348c67',1,'GFt::Channel::try_send(T &amp;&amp;data)']]]
 ];

@@ -24,6 +24,7 @@ var namespace_g_ft =
     [ "BlockFocusManager", "class_g_ft_1_1_block_focus_manager.html", null ],
     [ "BlockHoverManager", "class_g_ft_1_1_block_hover_manager.html", null ],
     [ "BrushSet", "class_g_ft_1_1_brush_set.html", "class_g_ft_1_1_brush_set" ],
+    [ "Channel", "class_g_ft_1_1_channel.html", "class_g_ft_1_1_channel" ],
     [ "Circle", "class_g_ft_1_1_circle.html", "class_g_ft_1_1_circle" ],
     [ "Color", "class_g_ft_1_1_color.html", "class_g_ft_1_1_color" ],
     [ "ColumnLayout", "class_g_ft_1_1_column_layout.html", "class_g_ft_1_1_column_layout" ],
