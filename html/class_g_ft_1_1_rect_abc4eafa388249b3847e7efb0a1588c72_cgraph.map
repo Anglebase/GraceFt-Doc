@@ -1,0 +1,15 @@
+<map id="GFt::Rect::centerby" name="GFt::Rect::centerby">
+<area shape="rect" id="Node000001" title="计算给定尺寸的居中矩形" alt="" coords="5,56,143,83"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#adef52c4a97b8d06a2f491e3d42836198" title="构造函数" alt="" coords="195,31,310,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,57,179,52,180,57,144,62"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_rect.html#adf8b0dbc45bd28434044a68f0e6b019c" title="矩形的中心点坐标" alt="" coords="191,81,314,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,76,176,81,175,86,143,82"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="362,5,482,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,78,313,67,361,42,373,36,375,41,363,46,315,72,289,83"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="364,56,480,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="314,83,348,78,349,83,315,88"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="374,107,470,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="315,101,359,108,358,113,314,107"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="374,157,470,184"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="284,106,363,143,375,148,373,153,361,148,281,111"/>
+</map>

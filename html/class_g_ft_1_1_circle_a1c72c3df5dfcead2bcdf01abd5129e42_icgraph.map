@@ -1,0 +1,9 @@
+<map id="GFt::Circle::radius" name="GFt::Circle::radius">
+<area shape="rect" id="Node000001" title="半径" alt="" coords="244,56,372,83"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#a8615d8eb3e1a9ec3eb3cdc95ff5ace74" title="向路径中添加圆" alt="" coords="30,5,171,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,54,157,35,159,30,236,49"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graphics.html#a29eac9dc0d1a68c19e39bc27f80b3ba8" title="绘制圆" alt="" coords="14,56,187,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,72,188,72,188,67,228,67"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graphics.html#ae85b6c4672a2f52def925c38a93b7a1b" title="填充圆" alt="" coords="5,107,196,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,90,159,109,157,103,235,84"/>
+</map>

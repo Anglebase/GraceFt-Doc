@@ -1,0 +1,7 @@
+<map id="GFt::ColumnLayout::setSpace" name="GFt::ColumnLayout::setSpace">
+<area shape="rect" id="Node000001" title="设置布局之间的间隔宽度" alt="" coords="5,5,149,48"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_layout.html#a3864f2c8a251a6ef4a9d25aedbbbbbca" title="标记是否需要更新布局" alt="" coords="197,5,395,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,24,181,24,181,29,149,29"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861" title="检查是否需要更新布局" alt="" coords="443,5,621,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,24,427,24,427,29,396,29"/>
+</map>

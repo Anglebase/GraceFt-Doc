@@ -1,0 +1,7 @@
+<map id="GFt::PenSet::setCapStyle" name="GFt::PenSet::setCapStyle">
+<area shape="rect" id="Node000001" title="设置线帽样式" alt="" coords="5,31,180,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_pen_set.html#a5df0652809ed543ea420a0ae38539d9a" title="设置终止线帽样式" alt="" coords="230,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,214,27,215,33,181,37"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_pen_set.html#ad830905325bf6718511b215bcdb5bd5c" title="设置起始线帽样式" alt="" coords="228,56,400,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,51,212,55,212,60,180,57"/>
+</map>

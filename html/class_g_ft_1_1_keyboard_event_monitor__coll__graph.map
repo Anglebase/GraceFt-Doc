@@ -1,0 +1,7 @@
+<map id="GFt::KeyboardEventMonitor" name="GFt::KeyboardEventMonitor">
+<area shape="rect" id="Node000001" title="键盘事件监视器接口类" alt="" coords="111,139,285,208"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_key_press_event_monitor.html" title="键盘按下事件监视器接口类" alt="" coords="5,5,183,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,100,172,137,168,141,136,104"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_key_release_event_monitor.html" title="键盘释放事件监视器接口类" alt="" coords="207,5,397,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,104,228,141,224,137,255,100"/>
+</map>

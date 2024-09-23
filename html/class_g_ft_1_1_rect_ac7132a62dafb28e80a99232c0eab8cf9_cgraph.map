@@ -1,0 +1,7 @@
+<map id="GFt::Rect::bottom" name="GFt::Rect::bottom">
+<area shape="rect" id="Node000001" title="矩形的下侧边界坐标" alt="" coords="5,31,133,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="181,5,301,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,32,165,27,166,32,134,37"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="193,56,289,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,51,178,57,177,63,133,56"/>
+</map>

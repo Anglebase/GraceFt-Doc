@@ -1,0 +1,7 @@
+<map id="GFt::FitCurve::operator FitCurve&lt; U &gt;" name="GFt::FitCurve::operator FitCurve&lt; U &gt;">
+<area shape="rect" id="Node000001" title="类型转换函数" alt="" coords="5,23,162,65"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_fit_curve.html#ab37a41136084e209c67c65da9cbd8dd9" title="添加点" alt="" coords="214,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,32,198,28,198,33,162,37"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_fit_curve.html#af4b28869f5f692c26b4bc4f9a121cb3d" title="设置拟合曲线是否闭合" alt="" coords="210,56,378,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,51,194,55,194,60,162,56"/>
+</map>

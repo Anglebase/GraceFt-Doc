@@ -1,0 +1,7 @@
+<map id="GFt::Line::isCollinearWith" name="GFt::Line::isCollinearWith">
+<area shape="rect" id="Node000001" title="判断此直线是否与另一个直线共线" alt="" coords="5,31,177,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="225,5,321,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,29,209,25,209,30,178,35"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="225,56,321,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,53,209,58,209,63,177,59"/>
+</map>

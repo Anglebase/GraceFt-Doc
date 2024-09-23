@@ -1,0 +1,29 @@
+<map id="GFt::MouseEventMonitor" name="GFt::MouseEventMonitor">
+<area shape="rect" id="Node000001" title="鼠标事件监视器接口类" alt="" coords="589,304,748,373"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_event_monitor.html" title="事件监视器接口类" alt="" coords="609,421,729,491"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="671,388,671,422,666,422,666,388"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_mouse_button_event_monitor.html" title="鼠标按钮事件监视器接口类" alt="" coords="351,179,549,248"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="524,253,611,302,608,306,521,258"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_mouse_button_press_event_monitor.html" title="鼠标按钮按下事件监视器接口类" alt="" coords="226,5,431,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="388,133,425,177,421,181,384,136"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_mouse_button_release_event_monitor.html" title="鼠标按钮释放事件监视器接口类" alt="" coords="456,5,689,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="517,136,480,181,476,177,513,132"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_mouse_move_event_monitor.html" title="鼠标移动事件监视器接口类" alt="" coords="573,171,764,256"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="671,271,671,304,666,304,666,271"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_mouse_wheel_event_monitor.html" title="鼠标滚轮事件监视器接口类" alt="" coords="788,171,984,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="801,266,729,307,726,302,798,261"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_block.html" title="块对象" alt="" coords="558,539,779,1381"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="671,506,671,539,666,539,666,506"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_column_layout.html" title="列布局类" alt="" coords="5,1757,223,2051"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="549,1063,470,1137,386,1225,306,1324,270,1377,238,1431,201,1511,172,1596,150,1680,135,1758,130,1757,145,1679,167,1595,196,1509,233,1428,265,1374,302,1321,382,1222,466,1133,545,1060"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="" coords="247,1715,415,2093"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="553,1161,487,1292,430,1430,407,1501,388,1574,360,1716,355,1715,383,1573,402,1500,425,1428,482,1290,548,1159"/>
+<area shape="rect" id="Node000011" href="$class_g_ft_1_1_row_layout.html" title="行布局类" alt="" coords="440,1765,657,2043"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="616,1396,569,1766,563,1765,611,1396"/>
+<area shape="rect" id="Node000012" href="$class_g_ft_1_1_widget_1_1_button.html" title="按钮控件" alt="" coords="682,1605,898,2203"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="727,1396,754,1605,749,1606,722,1396"/>
+<area shape="rect" id="Node000013" href="$class_g_ft_1_1_widget_1_1_label.html" title="文本标签控件" alt="" coords="923,1653,1105,2155"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="789,1160,855,1291,913,1428,947,1540,975,1653,969,1654,942,1541,907,1430,850,1293,784,1163"/>
+<area shape="rect" id="Node000014" href="$class_g_ft_1_1_window.html" title="全局窗口对象" alt="" coords="1130,1429,1333,2379"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="793,1054,876,1128,964,1217,1049,1318,1087,1372,1120,1428,1132,1451,1128,1454,1116,1431,1082,1375,1045,1322,960,1221,872,1132,789,1058"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="GFt::Ellipse::area" name="GFt::Ellipse::area">
+<area shape="rect" id="Node000001" title="椭圆的面积" alt="" coords="5,31,129,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#a28abf0910c3ce58b24584ec97a3398f2" title="矩形高度" alt="" coords="177,5,299,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,32,161,27,162,33,129,37"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_rect.html#a54f1d736a9b2d603fd07ec2481fa02cc" title="矩形宽度" alt="" coords="179,56,297,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,51,164,56,163,61,129,56"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="347,5,467,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,16,332,16,332,21,299,21"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="349,56,465,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="297,67,333,67,333,72,297,72"/>
+</map>

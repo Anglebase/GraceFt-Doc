@@ -1,0 +1,8 @@
+<map id="GFt::Block::absolutePos" name="GFt::Block::absolutePos">
+<area shape="rect" id="Node000001" title="计算相对于屏幕的绝对坐标" alt="" coords="5,35,170,61"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="54,36,48,26,52,16,65,10,88,8,111,11,124,17,121,22,110,16,87,13,67,15,56,20,53,25,58,33"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#a5de6f19eb73b13baf9e667716b07e771" title="矩形左上角的坐标" alt="" coords="220,5,352,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="170,33,204,28,205,33,171,38"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff" title="绘制区域" alt="" coords="218,56,355,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="171,58,202,62,202,68,170,63"/>
+</map>

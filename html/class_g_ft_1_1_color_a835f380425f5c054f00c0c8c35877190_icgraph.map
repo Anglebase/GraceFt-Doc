@@ -1,0 +1,31 @@
+<map id="GFt::Color::alpha" name="GFt::Color::alpha">
+<area shape="rect" id="Node000001" title=" " alt="" coords="468,249,589,276"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_brush_set.html#addb548cc503b34754db6d9bb1f57e4bf" title="构造函数" alt="" coords="237,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="519,235,507,193,487,142,458,90,440,66,418,46,400,35,403,30,422,42,443,63,462,87,492,139,512,191,524,234"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_pen_set.html#a28a2430566bf684b9a44cba09aa7e544" title="构造函数" alt="" coords="248,56,394,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="515,236,500,203,479,165,452,128,418,97,393,84,395,79,422,92,456,125,484,163,505,201,520,234"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_text_set.html#a8bd7356aca12a4d0c905c04e4f298ef1" title="构造函数" alt="" coords="246,107,396,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="508,238,470,191,446,167,419,148,394,136,396,131,421,143,449,163,474,187,512,234"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_graphics.html#a945a73a1d7a5afd2436d0f5fe4ba752f" title="设置默认背景色" alt="" coords="222,157,420,200"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="485,244,419,214,389,203,391,198,421,210,487,240"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_pen_set.html#ae5cab5aaeef69d387567252c105f8002" title="设置颜色" alt="" coords="245,224,396,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="452,256,397,249,397,244,453,251"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_text_set.html#ad1431a3da93a510cd22a858222e3b1c7" title="设置颜色" alt="" coords="244,275,398,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="453,275,398,281,398,276,452,269"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_brush_set.html#a2c84bb691c4ba6f952eeb70939ef7c87" title="设置默认画刷填充" alt="" coords="232,325,410,352"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="489,286,421,316,384,327,382,322,419,311,487,281"/>
+<area shape="rect" id="Node000013" href="$class_g_ft_1_1_brush_set.html#a30fecb3c59a0f1ff02043b68f0d0cdde" title="设置线性渐变画刷填充" alt="" coords="238,376,404,419"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="508,290,470,329,421,366,399,378,396,373,419,362,467,325,504,286"/>
+<area shape="rect" id="Node000014" href="$class_g_ft_1_1_brush_set.html#ae161baa39ed765c8a0ba7086605938c7" title="设置多边形径向渐变画刷填充" alt="" coords="232,443,410,485"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="519,292,483,362,455,400,422,433,403,444,401,440,418,429,451,396,478,359,514,289"/>
+<area shape="rect" id="Node000015" href="$class_g_ft_1_1_brush_set.html#a5020ab6ed63c6bf9a68a9a8fb2804642" title="设置椭圆径向渐变画刷填充" alt="" coords="237,509,405,552"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="525,292,513,337,493,392,463,449,444,476,422,499,406,511,403,507,418,495,440,473,459,447,488,390,508,335,519,290"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_widget_1_1_button.html#a3eb035983e04a7ed162598b26c745e93" title="构造函数" alt="" coords="20,217,159,260"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="234,322,220,316,205,305,195,295,172,274,151,263,153,258,175,270,199,291,209,301,223,311,236,317"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_widget_1_1_button.html#a32ddbb1f5bc40d0dcdc4f488d0985ac7" title="此函数用于绘制内容" alt="" coords="20,284,159,327"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="216,326,159,318,160,313,217,321"/>
+<area shape="rect" id="Node000011" href="$class_g_ft_1_1_widget_1_1_button.html#a3c791621c5275f8458c9baa4647c5514" title="此函数用于处理鼠标按钮按下事件" alt="" coords="12,351,167,393"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="216,356,167,364,167,358,216,351"/>
+<area shape="rect" id="Node000012" href="$class_g_ft_1_1_widget_1_1_button.html#a705f88b5fb404906dc0e2794a38932b7" title="此函数用于处理鼠标按钮释放事件" alt="" coords="5,417,174,460"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="236,360,223,366,209,376,199,386,175,408,153,419,151,414,172,403,195,382,205,372,220,362,234,355"/>
+</map>

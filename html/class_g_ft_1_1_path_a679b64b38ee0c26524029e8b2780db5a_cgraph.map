@@ -1,0 +1,5 @@
+<map id="GFt::Path::addEllipse" name="GFt::Path::addEllipse">
+<area shape="rect" id="Node000001" title="向路径中添加椭圆" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_ellipse.html#a90a5c60ea63fa48337f980c92bcf9197" title="椭圆的外接矩形" alt="" coords="200,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
+</map>

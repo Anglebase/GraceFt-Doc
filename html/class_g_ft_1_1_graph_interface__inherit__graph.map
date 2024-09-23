@@ -1,0 +1,17 @@
+<map id="GFt::GraphInterface" name="GFt::GraphInterface">
+<area shape="rect" id="Node000001" title="图形绘制接口" alt="" coords="587,5,751,208"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html" title="块对象" alt="" coords="558,256,779,1099"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="671,223,671,256,666,256,666,223"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_column_layout.html" title="列布局类" alt="" coords="5,1475,223,1768"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="549,781,470,855,386,943,306,1042,270,1094,238,1148,201,1228,172,1313,150,1398,135,1475,130,1474,145,1396,167,1312,196,1226,233,1145,265,1091,302,1039,382,939,466,851,545,777"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_grid_layout.html" title="网格布局类" alt="" coords="247,1432,415,1811"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="553,879,487,1009,430,1148,407,1218,388,1291,360,1433,355,1432,383,1290,402,1217,425,1146,482,1007,548,876"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_row_layout.html" title="行布局类" alt="" coords="440,1483,657,1760"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="616,1114,569,1483,563,1483,611,1113"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_widget_1_1_button.html" title="按钮控件" alt="" coords="682,1323,898,1920"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="727,1113,754,1322,749,1323,722,1114"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_widget_1_1_label.html" title="文本标签控件" alt="" coords="923,1371,1105,1872"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="789,878,855,1008,913,1146,947,1257,975,1370,969,1372,942,1259,907,1148,850,1010,784,880"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_window.html" title="全局窗口对象" alt="" coords="1130,1147,1333,2096"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="793,772,876,846,964,935,1049,1036,1087,1090,1120,1145,1132,1169,1128,1171,1116,1148,1082,1093,1045,1039,960,938,872,849,789,776"/>
+</map>

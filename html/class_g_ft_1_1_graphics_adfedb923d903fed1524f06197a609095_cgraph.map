@@ -1,0 +1,5 @@
+<map id="GFt::Graphics::drawFillEllipse" name="GFt::Graphics::drawFillEllipse">
+<area shape="rect" id="Node000001" title="填充椭圆" alt="" coords="5,5,201,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_ellipse.html#a90a5c60ea63fa48337f980c92bcf9197" title="椭圆的外接矩形" alt="" coords="249,5,369,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,16,233,16,233,21,201,21"/>
+</map>

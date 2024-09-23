@@ -1,0 +1,8 @@
+<map id="GFt::Graphics::bindBrushSet" name="GFt::Graphics::bindBrushSet">
+<area shape="rect" id="Node000001" title="绑定画刷设置" alt="" coords="192,47,381,73"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="323,34,310,28,286,25,264,27,252,32,249,37,255,45,250,48,244,38,248,28,263,22,286,20,312,23,325,29"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_widget_1_1_button.html#a32ddbb1f5bc40d0dcdc4f488d0985ac7" title="此函数用于绘制内容" alt="" coords="5,5,144,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="182,46,143,40,144,35,183,41"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_widget_1_1_label.html#a6a5a60d988e8f31eaafe98fe3a59bc96" title="此函数用于绘制内容" alt="" coords="9,72,140,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="183,79,141,86,140,80,182,74"/>
+</map>

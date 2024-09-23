@@ -1,0 +1,5 @@
+<map id="GFt::Event::isAccepted" name="GFt::Event::isAccepted">
+<area shape="rect" id="Node000001" title="事件是否已被接受" alt="" coords="5,13,164,40"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_event.html#a5f6af52607ed1bedde2127f48b622a23" title="事件是否已被终止传播" alt="" coords="212,5,384,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,24,196,24,196,29,164,29"/>
+</map>

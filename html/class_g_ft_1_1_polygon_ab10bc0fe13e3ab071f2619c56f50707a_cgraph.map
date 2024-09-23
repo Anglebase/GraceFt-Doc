@@ -1,0 +1,9 @@
+<map id="GFt::Polygon::operator Polygon&lt; U &gt;" name="GFt::Polygon::operator Polygon&lt; U &gt;">
+<area shape="rect" id="Node000001" title="类型转换函数模板" alt="" coords="5,48,159,91"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_polygon.html#a5bd5ea5de76438ea1fd728ba3ea16a23" title="向多边形中添加点" alt="" coords="211,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,48,217,34,218,39,160,53"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_polygon.html#a7832c7d6c47c7e0e78cb4adee46d668e" title="获取多边形是否闭合" alt="" coords="211,56,368,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,67,195,67,195,72,159,72"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_polygon.html#a1f95514f170ad0836979d2eaa06c2b64" title="设置多边形是否闭合" alt="" coords="207,107,372,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,85,218,100,217,105,158,91"/>
+</map>

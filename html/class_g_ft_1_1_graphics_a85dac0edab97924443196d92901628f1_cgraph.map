@@ -1,0 +1,5 @@
+<map id="GFt::Graphics::textHeight" name="GFt::Graphics::textHeight">
+<area shape="rect" id="Node000001" title="获取指定文本在指定回滚字体集合中的高度" alt="" coords="5,5,177,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graphics.html#a11a28961d70310176a707e2e23a3cb8d" title="获取指定字符在指定回滚字体集合中的高度" alt="" coords="225,5,396,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,16,209,16,209,21,177,21"/>
+</map>

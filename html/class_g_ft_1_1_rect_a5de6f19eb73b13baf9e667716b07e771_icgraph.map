@@ -1,0 +1,18 @@
+<map id="GFt::Rect::position" name="GFt::Rect::position">
+<area shape="rect" id="Node000001" title="矩形左上角的坐标" alt="" coords="493,188,625,215"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#a384598e63efef1f76278673a402d22da" title="计算相对于屏幕的绝对坐标" alt="" coords="261,29,425,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,176,501,122,474,94,444,70,420,59,422,54,446,66,478,90,505,118,545,173"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_window.html#afbdc6fcd08648d5c99833f8059ac7f64" title="创建全屏窗口" alt="" coords="241,80,445,123"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="523,182,444,137,416,126,418,121,446,132,526,177"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_window.html#a9bb2fa389f009626f5608892eabced4b" title="创建无边框置顶窗口" alt="" coords="244,147,442,189"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="477,191,442,186,442,181,478,186"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_window.html#a104057e005b6a44753812770477e1baa" title="创建无边框窗口" alt="" coords="244,213,442,256"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="478,216,442,222,442,217,477,211"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_window.html#aac99b42c882dd1892033bd4c8669c146" title="创建置顶窗口" alt="" coords="247,280,439,323"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="526,226,446,270,418,282,416,277,444,266,523,221"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_window.html#a0a2952370bf3a6a87d39e62ebe42fa07" title="创建普通窗口" alt="" coords="248,347,438,373"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="545,230,505,284,478,313,446,337,422,348,420,344,444,332,474,309,501,281,540,226"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="380,16,367,10,343,8,320,10,308,15,305,20,311,27,306,30,300,21,304,11,319,5,343,3,369,5,382,12"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_block.html#a0549aff184d697abe5f825da0342a779" title="计算相对于指定对象的相对坐标" alt="" coords="5,29,193,56"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="245,45,193,45,193,40,245,40"/>
+</map>

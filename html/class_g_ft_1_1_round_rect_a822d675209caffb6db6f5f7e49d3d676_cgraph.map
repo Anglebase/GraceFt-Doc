@@ -1,0 +1,13 @@
+<map id="GFt::RoundRect::RoundRect" name="GFt::RoundRect::RoundRect">
+<area shape="rect" id="Node000001" title="构造函数" alt="" coords="5,81,197,108"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#a34bb8224532dabd9d7db9e518c6b2f89" title="规范化矩形数据" alt="" coords="245,81,388,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,92,229,92,229,97,197,97"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="436,5,556,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,78,448,36,450,41,351,83"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="438,56,554,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,82,422,77,423,82,389,87"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="448,107,544,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="389,102,433,108,432,114,388,107"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="448,157,544,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="351,106,450,148,448,153,349,111"/>
+</map>

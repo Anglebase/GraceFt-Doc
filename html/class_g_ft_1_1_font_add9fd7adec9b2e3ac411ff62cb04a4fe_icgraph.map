@@ -1,0 +1,7 @@
+<map id="GFt::Font::italic" name="GFt::Font::italic">
+<area shape="rect" id="Node000001" title="获取字体是否为斜体" alt="" coords="186,31,298,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#a88b264485312aa5377b3ba77380707ba" title="向路径中添加文本" alt="" coords="5,5,138,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,36,138,31,138,26,171,31"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_font.html#aa3e5e0381a086ff8596c36c5e05a493b" title="设置字体是否为斜体" alt="" coords="6,56,137,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,57,138,62,137,57,170,52"/>
+</map>

@@ -1,0 +1,47 @@
+<map id="GFt::Widget::Button::onDraw" name="GFt::Widget::Button::onDraw">
+<area shape="rect" id="Node000001" title="此函数用于绘制内容" alt="" coords="5,223,144,265"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graphics.html#a344203648d20255f4746b772d9d52c1e" title="绑定画刷设置" alt="" coords="192,29,381,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,221,97,187,120,145,151,102,190,66,198,61,201,65,193,70,155,106,125,148,102,189,86,224"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graphics.html#a0217e17ed56fc64388655c582943c56f" title="绑定文本设置" alt="" coords="196,104,376,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="93,220,135,180,162,158,190,140,203,134,206,139,193,145,165,163,139,184,97,224"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graphics.html#a6c87a3fd384e8717075bd7044042032f" title="填充矩形" alt="" coords="194,155,378,181"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="131,220,191,197,228,184,230,189,193,203,133,225"/>
+<area shape="rect" id="Node000013" href="$class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a" title="在指定位置绘制文本" alt="" coords="429,256,593,283"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="144,238,255,236,381,241,437,250,437,255,381,247,255,241,144,243"/>
+<area shape="rect" id="Node000014" href="$class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa" title="此函数用于绘制内容" alt="" coords="218,256,355,283"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="145,250,202,257,202,262,144,255"/>
+<area shape="rect" id="Node000015" href="$class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff" title="绘制区域" alt="" coords="218,307,355,349"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="125,263,193,292,209,298,207,303,191,297,123,268"/>
+<area shape="rect" id="Node000016" href="$class_g_ft_1_1_brush_set.html#a2c84bb691c4ba6f952eeb70939ef7c87" title="设置默认画刷填充" alt="" coords="197,373,376,400"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="93,264,135,312,163,338,193,359,204,365,202,369,190,364,159,342,131,316,89,267"/>
+<area shape="rect" id="Node000021" href="$class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429" title="矩形大小" alt="" coords="231,424,342,451"/>
+<area shape="poly" id="edge24_Node000001_Node000021" title=" " alt="" coords="87,265,103,297,126,337,156,376,193,410,217,422,215,427,190,414,152,380,122,339,98,300,82,267"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="250,30,244,21,248,11,263,5,286,3,312,5,325,12,323,16,310,10,286,8,264,10,252,15,249,20,255,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="250,105,244,95,248,86,263,79,286,77,312,80,325,86,323,91,310,85,286,83,264,85,252,89,249,95,255,102"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_rect.html#a28abf0910c3ce58b24584ec97a3398f2" title="矩形高度" alt="" coords="450,53,572,80"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="355,152,380,140,394,129,403,116,412,103,427,90,437,84,440,89,431,94,416,106,407,119,398,132,382,145,357,157"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_rect.html#a54f1d736a9b2d603fd07ec2481fa02cc" title="矩形宽度" alt="" coords="452,104,570,131"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="348,151,436,131,437,137,350,157"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_rect.html#a9ee4b2165c607188c652d62f96070f97" title="矩形位置的 x 坐标" alt="" coords="464,205,558,232"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="350,179,449,202,448,207,348,185"/>
+<area shape="rect" id="Node000011" href="$class_g_ft_1_1_rect.html#ac9917a92aa64ed53d619bb14fa0e2fa6" title="矩形位置的 y 坐标" alt="" coords="464,155,558,181"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="379,165,449,165,449,171,379,171"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="641,53,762,80"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="573,64,626,64,626,69,573,69"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="643,104,760,131"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="571,115,628,115,628,120,571,120"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="653,231,750,257"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="559,222,638,233,638,238,559,228"/>
+<area shape="rect" id="Node000012" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="653,167,750,193"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="559,168,638,173,638,179,559,174"/>
+<area shape="poly" id="edge15_Node000013_Node000010" title=" " alt="" coords="593,256,638,250,638,255,594,261"/>
+<area shape="poly" id="edge16_Node000013_Node000012" title=" " alt="" coords="562,253,592,242,667,200,669,204,594,246,564,258"/>
+<area shape="rect" id="Node000017" href="$class_g_ft_1_1_color.html#a835f380425f5c054f00c0c8c35877190" title=" " alt="" coords="450,467,572,493"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="355,398,382,410,397,420,407,431,416,442,430,452,442,458,439,463,428,457,413,446,403,435,394,424,380,414,353,403"/>
+<area shape="rect" id="Node000018" href="$class_g_ft_1_1_color.html#a4fab2d9a568a8e5dba7c0f1244882e23" title=" " alt="" coords="454,315,568,341"/>
+<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="340,370,442,343,443,348,341,375"/>
+<area shape="rect" id="Node000019" href="$class_g_ft_1_1_color.html#a785d61b40729ffddcbb1a76e883fac1d" title=" " alt="" coords="450,365,572,392"/>
+<area shape="poly" id="edge22_Node000016_Node000019" title=" " alt="" coords="376,381,434,379,434,384,376,386"/>
+<area shape="rect" id="Node000020" href="$class_g_ft_1_1_color.html#a924f67889c2670032a1acbc8e1d59828" title=" " alt="" coords="457,416,565,443"/>
+<area shape="poly" id="edge23_Node000016_Node000020" title=" " alt="" coords="361,398,442,414,441,419,360,403"/>
+</map>

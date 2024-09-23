@@ -1,0 +1,5 @@
+<map id="GFt::Graphics::drawBezier" name="GFt::Graphics::drawBezier">
+<area shape="rect" id="Node000001" title="绘制贝塞尔曲线" alt="" coords="5,5,182,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_bezier.html#aee20e9dc42a37cbc4dbba40284db05dd" title="统计点的数量" alt="" coords="230,5,358,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,16,214,16,214,21,182,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="GFt::RoundRect::rect" name="GFt::RoundRect::rect">
+<area shape="rect" id="Node000001" title="圆角矩形所在矩形" alt="" coords="276,31,423,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graphics.html#a71d3e211cbf832f4145c281d5cdb64f7" title="填充圆角矩形" alt="" coords="5,5,228,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,37,228,33,228,28,260,32"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graphics.html#ae58fab126137a76e4a34d2980735fd4f" title="绘制圆角矩形" alt="" coords="14,56,219,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,56,220,61,219,55,260,51"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="GFt::Block::absolutePos" name="GFt::Block::absolutePos">
+<area shape="rect" id="Node000001" title="计算相对于屏幕的绝对坐标" alt="" coords="241,29,405,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="361,16,348,10,323,8,299,10,287,15,284,20,289,27,285,30,278,21,283,11,298,5,323,3,349,5,364,12"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#a0549aff184d697abe5f825da0342a779" title="计算相对于指定对象的相对坐标" alt="" coords="5,29,193,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="225,45,193,45,193,40,225,40"/>
+</map>

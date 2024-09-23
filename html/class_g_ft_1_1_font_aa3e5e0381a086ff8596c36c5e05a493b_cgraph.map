@@ -1,0 +1,5 @@
+<map id="GFt::Font::setItalic" name="GFt::Font::setItalic">
+<area shape="rect" id="Node000001" title="设置字体是否为斜体" alt="" coords="5,5,137,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_font.html#add9fd7adec9b2e3ac411ff62cb04a4fe" title="获取字体是否为斜体" alt="" coords="185,5,297,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,16,169,16,169,21,137,21"/>
+</map>

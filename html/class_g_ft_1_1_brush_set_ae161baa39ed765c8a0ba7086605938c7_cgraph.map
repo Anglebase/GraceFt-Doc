@@ -1,0 +1,15 @@
+<map id="GFt::BrushSet::setPolygonGradient" name="GFt::BrushSet::setPolygonGradient">
+<area shape="rect" id="Node000001" title="设置多边形径向渐变画刷填充" alt="" coords="5,124,184,167"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_color.html#a835f380425f5c054f00c0c8c35877190" title=" " alt="" coords="232,5,354,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,121,169,82,230,42,240,37,242,41,233,46,172,87,123,126"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_color.html#a4fab2d9a568a8e5dba7c0f1244882e23" title=" " alt="" coords="236,56,350,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,121,241,86,243,91,153,126"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_color.html#a785d61b40729ffddcbb1a76e883fac1d" title=" " alt="" coords="232,107,354,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,131,216,127,217,132,184,137"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_color.html#a924f67889c2670032a1acbc8e1d59828" title=" " alt="" coords="239,157,347,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="184,154,223,159,223,164,184,159"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="245,208,341,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="153,165,243,200,241,205,151,170"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="245,259,341,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="123,165,172,204,233,244,242,249,240,254,230,249,169,208,119,169"/>
+</map>

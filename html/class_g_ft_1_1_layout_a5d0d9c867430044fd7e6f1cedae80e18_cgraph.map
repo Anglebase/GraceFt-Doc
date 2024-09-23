@@ -1,0 +1,7 @@
+<map id="GFt::Layout::setRightPadding" name="GFt::Layout::setRightPadding">
+<area shape="rect" id="Node000001" title="设置右边距" alt="" coords="5,13,200,40"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_layout.html#a3864f2c8a251a6ef4a9d25aedbbbbbca" title="标记是否需要更新布局" alt="" coords="248,5,446,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,24,232,24,232,29,200,29"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861" title="检查是否需要更新布局" alt="" coords="494,5,672,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,24,478,24,478,29,447,29"/>
+</map>

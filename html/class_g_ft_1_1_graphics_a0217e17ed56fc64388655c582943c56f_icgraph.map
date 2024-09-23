@@ -1,0 +1,8 @@
+<map id="GFt::Graphics::bindTextSet" name="GFt::Graphics::bindTextSet">
+<area shape="rect" id="Node000001" title="绑定文本设置" alt="" coords="192,47,372,73"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="317,34,305,28,282,25,260,27,248,32,246,37,251,45,247,48,240,38,245,28,259,22,282,20,307,23,320,29"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_widget_1_1_button.html#a32ddbb1f5bc40d0dcdc4f488d0985ac7" title="此函数用于绘制内容" alt="" coords="5,5,144,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="179,46,144,40,145,35,180,41"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_widget_1_1_label.html#a6a5a60d988e8f31eaafe98fe3a59bc96" title="此函数用于绘制内容" alt="" coords="9,72,140,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="180,79,141,85,140,80,179,74"/>
+</map>

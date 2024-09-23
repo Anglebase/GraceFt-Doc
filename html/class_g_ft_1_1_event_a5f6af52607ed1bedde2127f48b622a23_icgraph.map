@@ -1,0 +1,5 @@
+<map id="GFt::Event::isPropagationStopped" name="GFt::Event::isPropagationStopped">
+<area shape="rect" id="Node000001" title="事件是否已被终止传播" alt="" coords="212,5,384,48"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_event.html#ad3de2ebfa501dd8e1d6dc0b339f27cf3" title="事件是否已被接受" alt="" coords="5,13,164,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,29,164,29,164,24,196,24"/>
+</map>

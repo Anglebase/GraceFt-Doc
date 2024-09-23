@@ -1,0 +1,19 @@
+<map id="GFt::operator&amp;" name="GFt::operator&amp;">
+<area shape="rect" id="Node000001" title="计算两个矩形的交集" alt="" coords="5,81,113,108"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#a28abf0910c3ce58b24584ec97a3398f2" title="矩形高度" alt="" coords="161,5,283,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,78,160,42,172,36,174,41,162,46,88,83"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_rect.html#a54f1d736a9b2d603fd07ec2481fa02cc" title="矩形宽度" alt="" coords="163,56,281,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="113,84,147,78,148,84,114,89"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_rect.html#a9ee4b2165c607188c652d62f96070f97" title="矩形位置的 x 坐标" alt="" coords="175,107,269,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="114,100,160,108,159,113,113,106"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_rect.html#ac9917a92aa64ed53d619bb14fa0e2fa6" title="矩形位置的 y 坐标" alt="" coords="175,157,269,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="88,106,162,143,174,148,172,153,160,148,85,111"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="331,5,451,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,16,316,16,316,21,283,21"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="333,56,449,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="281,67,317,67,317,72,281,72"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="343,107,439,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="270,117,328,117,328,123,270,123"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="343,157,439,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="270,168,328,168,328,173,270,173"/>
+</map>

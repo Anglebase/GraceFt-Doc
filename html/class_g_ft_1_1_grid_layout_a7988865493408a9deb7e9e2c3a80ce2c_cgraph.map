@@ -1,0 +1,13 @@
+<map id="GFt::GridLayout::addItem" name="GFt::GridLayout::addItem">
+<area shape="rect" id="Node000001" title="添加子布局块" alt="" coords="5,64,175,91"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1" title="添加子对象" alt="" coords="250,5,394,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,61,251,34,252,39,146,66"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graph_interface.html#a32fb8d44141ca4fb67153bc4a22c63ff" title="绘制区域" alt="" coords="253,56,390,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,75,237,75,237,80,175,80"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_layout.html#a3864f2c8a251a6ef4a9d25aedbbbbbca" title="标记是否需要更新布局" alt="" coords="223,123,421,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="140,89,231,115,230,120,139,94"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088" title="移除子对象" alt="" coords="476,5,641,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,16,460,16,460,21,394,21"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861" title="检查是否需要更新布局" alt="" coords="469,123,647,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="422,141,453,141,453,147,422,147"/>
+</map>

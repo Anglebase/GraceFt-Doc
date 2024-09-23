@@ -1,0 +1,9 @@
+<map id="GFt::FitCurve::count" name="GFt::FitCurve::count">
+<area shape="rect" id="Node000001" title="控制点的数量" alt="" coords="243,64,384,91"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#a3d286a78841809672b9a233f8325efad" title="向路径中添加拟合曲线" alt="" coords="21,5,179,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,62,194,47,152,35,154,30,195,41,250,57"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graphics.html#adc9c86180b7a6c46645a620cf7ecc2a8" title="填充闭合拟合曲线" alt="" coords="14,56,186,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,80,186,80,186,75,227,75"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graphics.html#aeec372d48240de5f8cf848bafb722f1e" title="绘制拟合曲线" alt="" coords="5,123,195,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,98,195,113,154,125,152,119,194,108,248,93"/>
+</map>

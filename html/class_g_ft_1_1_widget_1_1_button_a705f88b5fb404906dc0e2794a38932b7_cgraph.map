@@ -1,0 +1,17 @@
+<map id="GFt::Widget::Button::onMouseButtonRelease" name="GFt::Widget::Button::onMouseButtonRelease">
+<area shape="rect" id="Node000001" title="此函数用于处理鼠标按钮释放事件" alt="" coords="5,72,174,115"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_mouse_button_event.html#aae31eb53d7d15b388c361cc823cc6b32" title="获取鼠标按钮" alt="" coords="232,5,394,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,69,224,50,225,56,164,74"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_block.html#a24840527c64b1cc8fc02013e813d749e" title="此函数用于处理鼠标按钮释放事件" alt="" coords="222,72,405,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,91,206,91,206,96,174,96"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_brush_set.html#a2c84bb691c4ba6f952eeb70939ef7c87" title="设置默认画刷填充" alt="" coords="224,139,402,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,113,246,132,245,137,173,118"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_color.html#a835f380425f5c054f00c0c8c35877190" title=" " alt="" coords="454,63,575,89"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="371,135,404,124,452,99,463,94,466,99,454,104,406,129,373,141"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_color.html#a4fab2d9a568a8e5dba7c0f1244882e23" title=" " alt="" coords="457,113,571,140"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="402,138,441,133,442,138,403,143"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_color.html#a785d61b40729ffddcbb1a76e883fac1d" title=" " alt="" coords="453,164,575,191"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="403,161,438,165,437,170,402,166"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_color.html#a924f67889c2670032a1acbc8e1d59828" title=" " alt="" coords="460,215,568,241"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="352,163,463,206,461,211,350,168"/>
+</map>

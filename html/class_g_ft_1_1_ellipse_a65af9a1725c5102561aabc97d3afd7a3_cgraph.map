@@ -1,0 +1,7 @@
+<map id="GFt::Ellipse::ry" name="GFt::Ellipse::ry">
+<area shape="rect" id="Node000001" title="椭圆的竖直半径" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#a28abf0910c3ce58b24584ec97a3398f2" title="矩形高度" alt="" coords="163,5,285,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,16,147,16,147,21,115,21"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="333,5,453,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,16,318,16,318,21,285,21"/>
+</map>

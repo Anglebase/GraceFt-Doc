@@ -56,7 +56,7 @@ var searchData=
   ['setzindex_53',['setZIndex',['../class_g_ft_1_1_block.html#a3e1554d34e6520a7a2c1fa5d3f3ec2c5',1,'GFt::Block']]],
   ['shift_54',['Shift',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a825a3d98017bab11815ad2817201324c',1,'GFt']]],
   ['shouldupdatelayout_55',['shouldUpdateLayout',['../class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861',1,'GFt::Layout']]],
-  ['show_56',['show',['../class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119',1,'GFt::Window']]],
+  ['show_56',['show',['../class_g_ft_1_1_block.html#a6134e1d136284b60ce443f5c40033be2',1,'GFt::Block::show()'],['../class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119',1,'GFt::Window::show()']]],
   ['signal_57',['Signal',['../class_g_ft_1_1_signal.html',1,'GFt::Signal&lt; Args &gt;'],['../class_g_ft_1_1_signal.html#aa02d3f0d72bb1a637b57d2f684f050f1',1,'GFt::Signal::Signal()'],['../class_g_ft_1_1_signal_3_01void_01_4.html#a93041793e6c7bf6ab11ea62b6bb81dca',1,'GFt::Signal&lt; void &gt;::Signal()']]],
   ['signal_3c_20bool_20_3e_58',['Signal&lt; bool &gt;',['../class_g_ft_1_1_signal.html',1,'GFt']]],
   ['signal_3c_20gft_3a_3ablock_20_2a_20_3e_59',['Signal&lt; GFt::Block * &gt;',['../class_g_ft_1_1_signal.html',1,'GFt']]],

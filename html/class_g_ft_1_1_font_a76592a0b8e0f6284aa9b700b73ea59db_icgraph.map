@@ -1,0 +1,7 @@
+<map id="GFt::Font::strikeOut" name="GFt::Font::strikeOut">
+<area shape="rect" id="Node000001" title="获取字体是否具有删除线" alt="" coords="212,31,350,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#a88b264485312aa5377b3ba77380707ba" title="向路径中添加文本" alt="" coords="18,5,151,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,36,151,30,151,25,197,30"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_font.html#ae3ed65e5a7f47e0d699c797218a8e99b" title="设置字体是否具有删除线" alt="" coords="5,56,164,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,58,164,62,164,56,196,52"/>
+</map>

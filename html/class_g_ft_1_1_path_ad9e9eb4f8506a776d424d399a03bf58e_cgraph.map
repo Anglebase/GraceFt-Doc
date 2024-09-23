@@ -1,0 +1,7 @@
+<map id="GFt::Path::addLine" name="GFt::Path::addLine">
+<area shape="rect" id="Node000001" title="向路径中添加直线" alt="" coords="5,31,137,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_line.html#ab9d06c353ff624d97f5bcaed44bed885" title="获取直线的锚定点1" alt="" coords="185,5,284,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,31,169,26,170,31,138,36"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_line.html#a2a72ca37528413a826c06af019fa994d" title="获取直线的锚定点2" alt="" coords="185,56,284,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,52,170,57,169,62,137,57"/>
+</map>

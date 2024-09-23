@@ -1,0 +1,7 @@
+<map id="GFt::Window::move" name="GFt::Window::move">
+<area shape="rect" id="Node000001" title="移动窗口(相对位置)" alt="" coords="5,31,144,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="192,5,288,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,31,176,26,177,31,144,36"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="192,56,288,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,52,177,57,176,62,143,57"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="GFt::Line::manhatten_distance" name="GFt::Line::manhatten_distance">
+<area shape="rect" id="Node000001" title="计算给定的两个锚定点之间的曼哈顿距离" alt="" coords="5,23,150,65"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="198,5,294,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,30,182,26,183,31,150,36"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="198,56,294,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,52,183,57,182,62,150,58"/>
+</map>

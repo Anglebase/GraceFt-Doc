@@ -1,0 +1,7 @@
+<map id="GFt::Block::Block" name="GFt::Block::Block">
+<area shape="rect" id="Node000001" title="构造函数" alt="" coords="5,5,131,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1" title="添加子对象" alt="" coords="179,5,322,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,16,163,16,163,21,131,21"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088" title="移除子对象" alt="" coords="370,5,535,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,16,354,16,354,21,323,21"/>
+</map>

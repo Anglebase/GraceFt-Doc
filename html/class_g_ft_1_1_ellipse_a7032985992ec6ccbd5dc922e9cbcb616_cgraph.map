@@ -1,0 +1,13 @@
+<map id="GFt::Ellipse::center" name="GFt::Ellipse::center">
+<area shape="rect" id="Node000001" title="椭圆的圆心" alt="" coords="5,81,140,108"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#adf8b0dbc45bd28434044a68f0e6b019c" title="矩形的中心点坐标" alt="" coords="188,81,311,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,92,173,92,173,97,140,97"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="359,5,479,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="278,78,358,42,370,36,372,41,360,46,281,83"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="361,56,477,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="311,83,345,78,346,83,312,88"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="371,107,467,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="312,101,356,108,355,113,311,107"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="371,157,467,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="281,106,360,143,372,148,370,153,358,148,278,111"/>
+</map>

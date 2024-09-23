@@ -1,0 +1,7 @@
+<map id="GFt::Graphics::drawFillPolygon" name="GFt::Graphics::drawFillPolygon">
+<area shape="rect" id="Node000001" title="填充多边形" alt="" coords="5,31,209,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_polygon.html#a6fe4adb30b9279abaf7e636265af1770" title="计算多边形点的数量" alt="" coords="266,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,30,251,25,251,31,210,35"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_polygon.html#a7832c7d6c47c7e0e78cb4adee46d668e" title="获取多边形是否闭合" alt="" coords="257,56,414,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,53,241,56,241,62,209,58"/>
+</map>

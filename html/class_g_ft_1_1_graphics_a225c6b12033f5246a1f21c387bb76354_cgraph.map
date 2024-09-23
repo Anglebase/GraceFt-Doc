@@ -1,0 +1,23 @@
+<map id="GFt::Graphics::drawText" name="GFt::Graphics::drawText">
+<area shape="rect" id="Node000001" title="在指定矩形区域内绘制文本" alt="" coords="5,107,170,133"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graphics.html#a3244b269007f751338b7ab9d3a93216a" title="在指定位置绘制文本" alt="" coords="218,56,382,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,103,225,84,227,89,147,109"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_rect.html#a28abf0910c3ce58b24584ec97a3398f2" title="矩形高度" alt="" coords="239,157,361,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="147,131,227,151,225,156,146,137"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_rect.html#a54f1d736a9b2d603fd07ec2481fa02cc" title="矩形宽度" alt="" coords="241,208,359,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="110,132,159,162,219,194,234,200,232,205,217,198,156,167,108,136"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_rect.html#a9ee4b2165c607188c652d62f96070f97" title="矩形位置的 x 坐标" alt="" coords="253,5,347,32"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="108,104,156,73,217,42,237,33,239,38,219,46,159,78,110,108"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_rect.html#ac9917a92aa64ed53d619bb14fa0e2fa6" title="矩形位置的 y 坐标" alt="" coords="253,107,347,133"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="170,117,237,117,237,123,170,123"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="442,19,538,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,53,427,42,428,47,372,58"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="442,95,538,121"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="369,81,428,93,427,98,368,86"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_size.html#abf07d76b19fc604f562c85df19eab0a2" title="尺寸的高度" alt="" coords="430,157,550,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="362,168,415,168,415,173,362,173"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7" title="尺寸的宽度" alt="" coords="432,208,548,235"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="360,219,417,219,417,224,360,224"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="348,19,427,25,426,30,347,25"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="347,114,426,109,427,115,348,120"/>
+</map>

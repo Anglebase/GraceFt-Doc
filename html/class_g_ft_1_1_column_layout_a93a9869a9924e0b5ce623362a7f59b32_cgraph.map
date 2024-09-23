@@ -1,0 +1,5 @@
+<map id="GFt::ColumnLayout::onDraw" name="GFt::ColumnLayout::onDraw">
+<area shape="rect" id="Node000001" title="重写onDraw方法，刷新布局" alt="" coords="5,5,149,48"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#a00defc8bb2b35301c7e2e6eeaaf15afa" title="此函数用于绘制内容" alt="" coords="197,13,334,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,24,181,24,181,29,149,29"/>
+</map>

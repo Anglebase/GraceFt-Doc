@@ -1,0 +1,7 @@
+<map id="GFt::Path::addBezier" name="GFt::Path::addBezier">
+<area shape="rect" id="Node000001" title="向路径中添加贝塞尔曲线" alt="" coords="5,31,150,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_bezier.html#aee20e9dc42a37cbc4dbba40284db05dd" title="统计点的数量" alt="" coords="198,5,326,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,31,182,27,183,32,150,37"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_path.html#a4986089459535f090336c948568a5c30" title="计算路径共有多少个控制点" alt="" coords="203,56,321,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,51,188,56,187,62,150,57"/>
+</map>

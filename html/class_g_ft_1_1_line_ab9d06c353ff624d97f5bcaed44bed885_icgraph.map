@@ -1,0 +1,9 @@
+<map id="GFt::Line::P1" name="GFt::Line::P1">
+<area shape="rect" id="Node000001" title="获取直线的锚定点1" alt="" coords="217,56,316,83"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#ad9e9eb4f8506a776d424d399a03bf58e" title="向路径中添加直线" alt="" coords="21,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,54,136,35,138,30,203,49"/>
+<area shape="rect" id="Node000003" href="$group___xE5_x87_xA0_xE4_xBD_x95_xE6_xB1_x82_xE8_xA7_xA3_xE5_xB7_xA5_xE5_x85_xB7.html#ga4b820cdb759fd530d4f6344c40973b64" title="计算直线l关于点p的对称线" alt="" coords="12,56,162,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,72,163,72,163,67,201,67"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graphics.html#a85cdf0950fcc47f6fab6a9823ffe5b0c" title="绘制线段" alt="" coords="5,107,169,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,90,138,109,136,104,201,85"/>
+</map>

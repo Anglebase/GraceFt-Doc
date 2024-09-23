@@ -1,0 +1,11 @@
+<map id="GFt::ColumnLayout::addItem" name="GFt::ColumnLayout::addItem">
+<area shape="rect" id="Node000001" title="添加参与布局的块对象" alt="" coords="5,27,149,69"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1" title="添加子对象" alt="" coords="224,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,36,208,28,209,33,149,41"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_layout.html#a3864f2c8a251a6ef4a9d25aedbbbbbca" title="标记是否需要更新布局" alt="" coords="197,56,395,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,55,182,59,181,65,149,60"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088" title="移除子对象" alt="" coords="450,5,615,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,16,434,16,434,21,368,21"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861" title="检查是否需要更新布局" alt="" coords="443,56,621,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,75,427,75,427,80,396,80"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="GFt::Path::addText" name="GFt::Path::addText">
+<area shape="rect" id="Node000001" title="向路径中添加文本" alt="" coords="5,183,138,209"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_font.html#a3d419fb1b74e7499ff04b551c0414289" title="获取字体名称" alt="" coords="186,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,181,116,115,147,76,184,42,191,37,194,41,187,46,151,80,121,118,82,183"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_font.html#add9fd7adec9b2e3ac411ff62cb04a4fe" title="获取字体是否为斜体" alt="" coords="203,56,315,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,180,125,138,153,114,184,92,195,87,197,92,187,97,157,118,129,142,87,184"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_font.html#a7a6e3ff3b4a17dea1f75abbd9bc2a70b" title="获取字体大小" alt="" coords="204,107,314,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="101,180,185,143,201,137,203,142,187,148,103,185"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_font.html#a76592a0b8e0f6284aa9b700b73ea59db" title="获取字体是否具有删除线" alt="" coords="190,157,328,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="138,184,174,179,174,185,138,190"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_font.html#aefe422384c6feebc7ebb08a475e51db9" title="获取字体是否具有下划线" alt="" coords="190,208,328,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="138,202,175,207,175,213,138,208"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_font.html#ab2c3b18db6a9ca88f60060deac8629d9" title="获取字体字重(粗细)" alt="" coords="197,259,320,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="103,207,187,244,203,250,201,255,185,249,101,212"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="211,309,307,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="87,208,129,250,157,274,187,295,198,301,195,305,184,300,153,278,125,254,83,212"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="211,360,307,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="82,209,121,274,151,312,187,346,198,353,195,357,184,350,147,316,116,277,77,211"/>
+</map>

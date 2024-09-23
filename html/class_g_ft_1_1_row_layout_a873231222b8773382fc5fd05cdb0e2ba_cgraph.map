@@ -1,0 +1,9 @@
+<map id="GFt::RowLayout::removeItem" name="GFt::RowLayout::removeItem">
+<area shape="rect" id="Node000001" title="移除参与布局的块对象" alt="" coords="5,35,200,61"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088" title="移除子对象" alt="" coords="264,5,430,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,34,248,28,249,33,200,39"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_layout.html#a3864f2c8a251a6ef4a9d25aedbbbbbca" title="标记是否需要更新布局" alt="" coords="248,56,446,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,57,232,61,232,66,200,62"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_layout.html#ae1ae78eabb0528a7e45243a09127f861" title="检查是否需要更新布局" alt="" coords="494,56,672,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="447,75,478,75,478,80,447,80"/>
+</map>

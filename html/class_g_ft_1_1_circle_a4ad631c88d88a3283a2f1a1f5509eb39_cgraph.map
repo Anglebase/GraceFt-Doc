@@ -1,0 +1,5 @@
+<map id="GFt::Circle::x" name="GFt::Circle::x">
+<area shape="rect" id="Node000001" title="圆心 x 坐标" alt="" coords="5,5,106,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="154,5,250,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,16,138,16,138,21,106,21"/>
+</map>

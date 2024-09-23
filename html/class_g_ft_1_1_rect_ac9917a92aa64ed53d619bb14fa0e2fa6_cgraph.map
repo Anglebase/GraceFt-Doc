@@ -1,0 +1,5 @@
+<map id="GFt::Rect::y" name="GFt::Rect::y">
+<area shape="rect" id="Node000001" title="矩形位置的 y 坐标" alt="" coords="5,5,100,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="148,5,244,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,16,132,16,132,21,100,21"/>
+</map>

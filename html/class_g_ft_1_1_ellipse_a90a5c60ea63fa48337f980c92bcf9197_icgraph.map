@@ -1,0 +1,9 @@
+<map id="GFt::Ellipse::rect" name="GFt::Ellipse::rect">
+<area shape="rect" id="Node000001" title="椭圆的外接矩形" alt="" coords="249,56,369,83"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#a679b64b38ee0c26524029e8b2780db5a" title="向路径中添加椭圆" alt="" coords="30,5,176,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,54,160,35,161,30,237,49"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graphics.html#a5d3df6f14cedc97233b8a002f350e7d7" title="绘制椭圆" alt="" coords="14,56,192,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,72,193,72,193,67,233,67"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graphics.html#adfedb923d903fed1524f06197a609095" title="填充椭圆" alt="" coords="5,107,201,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,90,161,109,160,103,236,84"/>
+</map>

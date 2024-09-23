@@ -1,0 +1,13 @@
+<map id="GFt::centerSymmetric" name="GFt::centerSymmetric">
+<area shape="rect" id="Node000001" title="计算直线l关于点p的对称线" alt="" coords="5,81,156,108"/>
+<area shape="rect" id="Node000002" href="$group___xE5_x87_xA0_xE4_xBD_x95_xE6_xB1_x82_xE8_xA7_xA3_xE5_xB7_xA5_xE5_x85_xB7.html#gaccd153f058ae1c11699d1b0422a40019" title="计算点a关于点b的对称点" alt="" coords="204,31,354,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,78,208,59,210,64,136,83"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_line.html#ab9d06c353ff624d97f5bcaed44bed885" title="获取直线的锚定点1" alt="" coords="229,81,328,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,92,214,92,214,97,156,97"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_line.html#a2a72ca37528413a826c06af019fa994d" title="获取直线的锚定点2" alt="" coords="229,132,328,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,106,215,126,214,132,135,111"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_point.html#ae006f6e0a86f50614f486c1c0e9daba3" title="点的 x 坐标" alt="" coords="402,5,498,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,30,386,25,387,31,355,35"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_point.html#a4721af97bf9652e5065865bff1a5b82d" title="点的 y 坐标" alt="" coords="402,56,498,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="355,53,387,57,386,63,354,58"/>
+</map>

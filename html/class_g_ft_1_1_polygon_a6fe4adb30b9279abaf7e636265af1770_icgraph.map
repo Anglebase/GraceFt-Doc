@@ -1,0 +1,9 @@
+<map id="GFt::Polygon::count" name="GFt::Polygon::count">
+<area shape="rect" id="Node000001" title="计算多边形点的数量" alt="" coords="257,56,395,83"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_path.html#aaa39d93de623e9901e4aaa3c8b8c5de5" title="向路径中添加多边形" alt="" coords="30,5,184,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,55,167,35,168,30,251,49"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_graphics.html#a06eac5e1fe3d304986c48ff99837f242" title="填充多边形" alt="" coords="5,56,209,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,72,209,72,209,67,241,67"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_graphics.html#a6ed9550da8bd6b6b9175ea7c8cd0d63f" title="绘制多边形" alt="" coords="14,107,200,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="251,89,168,109,167,103,250,84"/>
+</map>

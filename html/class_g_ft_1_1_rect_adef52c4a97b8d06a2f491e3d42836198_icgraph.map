@@ -1,0 +1,7 @@
+<map id="GFt::Rect::Rect" name="GFt::Rect::Rect">
+<area shape="rect" id="Node000001" title="构造函数" alt="" coords="191,35,306,61"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_rect.html#abc4eafa388249b3847e7efb0a1588c72" title="计算给定尺寸的居中矩形" alt="" coords="5,5,143,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,38,143,33,144,28,176,33"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_rect.html#a1a099305248524f266dd78d601d09636" title="矩形类型转换函数" alt="" coords="7,56,141,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,63,142,69,141,63,175,58"/>
+</map>

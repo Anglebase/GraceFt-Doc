@@ -1,0 +1,9 @@
+<map id="GFt::Graphics::drawText" name="GFt::Graphics::drawText">
+<area shape="rect" id="Node000001" title="在指定位置绘制文本" alt="" coords="218,64,382,91"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graphics.html#a225c6b12033f5246a1f21c387bb76354" title="在指定矩形区域内绘制文本" alt="" coords="5,5,170,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,62,138,35,139,30,235,57"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_widget_1_1_button.html#a32ddbb1f5bc40d0dcdc4f488d0985ac7" title="此函数用于绘制内容" alt="" coords="18,56,157,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,80,157,80,157,75,202,75"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_widget_1_1_label.html#a6a5a60d988e8f31eaafe98fe3a59bc96" title="此函数用于绘制内容" alt="" coords="22,123,153,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,98,155,126,153,121,239,93"/>
+</map>

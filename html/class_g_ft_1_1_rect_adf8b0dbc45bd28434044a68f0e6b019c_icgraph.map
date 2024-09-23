@@ -1,0 +1,7 @@
+<map id="GFt::Rect::center" name="GFt::Rect::center">
+<area shape="rect" id="Node000001" title="矩形的中心点坐标" alt="" coords="191,31,314,57"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_ellipse.html#a7032985992ec6ccbd5dc922e9cbcb616" title="椭圆的圆心" alt="" coords="7,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,36,141,31,142,26,175,30"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_rect.html#abc4eafa388249b3847e7efb0a1588c72" title="计算给定尺寸的居中矩形" alt="" coords="5,56,143,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,58,143,62,142,57,175,52"/>
+</map>

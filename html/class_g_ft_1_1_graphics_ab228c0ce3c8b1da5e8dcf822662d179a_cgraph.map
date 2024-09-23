@@ -1,0 +1,5 @@
+<map id="GFt::Graphics::textWidth" name="GFt::Graphics::textWidth">
+<area shape="rect" id="Node000001" title="获取指定文本在指定回滚字体集合中的宽度" alt="" coords="5,5,173,32"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graphics.html#a786fa35fb46d07449cb806f43354ad38" title="获取指定字符在指定回滚字体集合中的宽度" alt="" coords="221,5,388,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,16,205,16,205,21,173,21"/>
+</map>

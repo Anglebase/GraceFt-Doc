@@ -1,0 +1,29 @@
+<map id="GFt::Block" name="GFt::Block">
+<area shape="rect" id="Node000001" title="块对象" alt="" coords="765,809,987,1588"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_graph_interface.html" title="图形绘制接口" alt="" coords="627,468,791,671"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="742,685,775,809,770,810,737,686"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_event_monitor.html" title="事件监视器接口类" alt="" coords="816,535,936,604"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="879,619,879,810,873,810,873,619"/>
+<area shape="rect" id="Node000004" href="$class_g_ft_1_1_mouse_event_monitor.html" title="鼠标事件监视器接口类" alt="" coords="478,315,637,384"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="651,366,730,394,769,414,804,439,825,461,843,486,867,534,862,536,838,488,821,464,801,443,766,419,728,399,650,371"/>
+<area shape="rect" id="Node000005" href="$class_g_ft_1_1_mouse_button_event_monitor.html" title="鼠标按钮事件监视器接口类" alt="" coords="131,180,328,249"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="327,253,480,314,478,319,325,257"/>
+<area shape="rect" id="Node000006" href="$class_g_ft_1_1_mouse_button_press_event_monitor.html" title="鼠标按钮按下事件监视器接口类" alt="" coords="5,5,211,123"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="166,132,204,179,200,182,162,136"/>
+<area shape="rect" id="Node000007" href="$class_g_ft_1_1_mouse_button_release_event_monitor.html" title="鼠标按钮释放事件监视器接口类" alt="" coords="235,5,469,123"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="297,136,259,182,255,179,293,132"/>
+<area shape="rect" id="Node000008" href="$class_g_ft_1_1_mouse_move_event_monitor.html" title="鼠标移动事件监视器接口类" alt="" coords="353,172,543,257"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="494,267,532,313,528,317,490,270"/>
+<area shape="rect" id="Node000009" href="$class_g_ft_1_1_mouse_wheel_event_monitor.html" title="鼠标滚轮事件监视器接口类" alt="" coords="567,172,763,257"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="624,270,586,317,582,313,620,267"/>
+<area shape="rect" id="Node000010" href="$class_g_ft_1_1_keyboard_event_monitor.html" title="键盘事件监视器接口类" alt="" coords="789,315,963,384"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="879,399,879,535,873,535,873,399"/>
+<area shape="rect" id="Node000011" href="$class_g_ft_1_1_key_press_event_monitor.html" title="键盘按下事件监视器接口类" alt="" coords="787,172,965,257"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="879,272,879,315,873,315,873,272"/>
+<area shape="rect" id="Node000012" href="$class_g_ft_1_1_key_release_event_monitor.html" title="键盘释放事件监视器接口类" alt="" coords="989,172,1179,257"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1008,268,930,317,927,312,1005,263"/>
+<area shape="rect" id="Node000013" href="$class_g_ft_1_1_text_input_event_monitor.html" title="文本输入事件监视器接口类" alt="" coords="987,307,1162,392"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="995,403,950,443,917,490,892,536,888,534,912,487,946,440,992,399"/>
+<area shape="rect" id="Node000014" href="$class_g_ft_1_1_signal.html" title=" " alt="" coords="960,441,1144,697"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1019,698,992,794,987,792,1014,696"/>
+</map>

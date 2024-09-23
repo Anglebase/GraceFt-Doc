@@ -1,0 +1,7 @@
+<map id="GFt::MouseButtonEventMonitor" name="GFt::MouseButtonEventMonitor">
+<area shape="rect" id="Node000001" title="鼠标按钮事件监视器接口类" alt="" coords="131,171,328,240"/>
+<area shape="rect" id="Node000002" href="$class_g_ft_1_1_mouse_button_press_event_monitor.html" title="鼠标按钮按下事件监视器接口类" alt="" coords="5,5,211,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,132,202,169,198,173,166,136"/>
+<area shape="rect" id="Node000003" href="$class_g_ft_1_1_mouse_button_release_event_monitor.html" title="鼠标按钮释放事件监视器接口类" alt="" coords="235,5,469,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,136,261,173,257,169,289,132"/>
+</map>
