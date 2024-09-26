@@ -7,7 +7,8 @@ var searchData=
   ['isclosed_4',['isClosed',['../class_g_ft_1_1_fit_curve.html#a2130ea98be6a20237483447762662954',1,'GFt::FitCurve::isClosed()'],['../class_g_ft_1_1_polygon.html#a7832c7d6c47c7e0e78cb4adee46d668e',1,'GFt::Polygon::isClosed()']]],
   ['iscollinearwith_5',['isCollinearWith',['../class_g_ft_1_1_line.html#ac1590651471fc4cd4d8624e63d2bdf14',1,'GFt::Line']]],
   ['isdisabled_6',['isDisabled',['../class_g_ft_1_1_widget_1_1_button.html#a05baf4bdb1a05df3805ebbb7523217ac',1,'GFt::Widget::Button']]],
-  ['ispropagationstopped_7',['isPropagationStopped',['../class_g_ft_1_1_event.html#a5f6af52607ed1bedde2127f48b622a23',1,'GFt::Event']]],
-  ['istransparent_8',['isTransparent',['../class_g_ft_1_1_text_set.html#aadf80a0f4ecd98fb542b5b35bfb9a7c6',1,'GFt::TextSet']]],
-  ['italic_9',['italic',['../class_g_ft_1_1_font.html#add9fd7adec9b2e3ac411ff62cb04a4fe',1,'GFt::Font']]]
+  ['ishide_7',['isHide',['../class_g_ft_1_1_block.html#a08a37a0e1c1ab0aa05942909a4ad6919',1,'GFt::Block']]],
+  ['ispropagationstopped_8',['isPropagationStopped',['../class_g_ft_1_1_event.html#a5f6af52607ed1bedde2127f48b622a23',1,'GFt::Event']]],
+  ['istransparent_9',['isTransparent',['../class_g_ft_1_1_text_set.html#aadf80a0f4ecd98fb542b5b35bfb9a7c6',1,'GFt::TextSet']]],
+  ['italic_10',['italic',['../class_g_ft_1_1_font.html#add9fd7adec9b2e3ac411ff62cb04a4fe',1,'GFt::Font']]]
 ];

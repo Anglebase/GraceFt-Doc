@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"md_doc_2def_2edu.html#autotoc_md1":[1,0],
+"md_doc_2def_2edu.html#autotoc_md10":[1,4,0],
+"md_doc_2def_2edu.html#autotoc_md11":[1,4,1],
 "md_doc_2def_2edu.html#autotoc_md12":[1,4,2],
 "md_doc_2def_2edu.html#autotoc_md2":[1,1],
 "md_doc_2def_2edu.html#autotoc_md3":[1,2],

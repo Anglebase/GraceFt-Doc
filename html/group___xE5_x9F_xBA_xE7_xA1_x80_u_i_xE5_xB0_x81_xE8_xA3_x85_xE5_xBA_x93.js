@@ -14,6 +14,7 @@ var group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93 =
       [ "getParent", "class_g_ft_1_1_block.html#a478795a68b66001db32edb1544009060", null ],
       [ "getZIndex", "class_g_ft_1_1_block.html#ab5a954ef438e4694de271b46e746ce56", null ],
       [ "hide", "class_g_ft_1_1_block.html#a5ea62ba84b390e284db100fdf96775a3", null ],
+      [ "isHide", "class_g_ft_1_1_block.html#a08a37a0e1c1ab0aa05942909a4ad6919", null ],
       [ "onDraw", "class_g_ft_1_1_block.html#a6feeb1a194d653f5513c1ebfb02384fb", null ],
       [ "onKeyPress", "class_g_ft_1_1_block.html#ae3c1579b1a248d8f2dc32c599822df70", null ],
       [ "onKeyRelease", "class_g_ft_1_1_block.html#a100661f60d285f4829e4a6598bfeacf8", null ],
@@ -31,7 +32,8 @@ var group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93 =
       [ "FocusOff", "class_g_ft_1_1_block.html#ab0b56b6e60a79a389522d554313465d5", null ],
       [ "FocusOn", "class_g_ft_1_1_block.html#a364b56258a83062f97e40b1464901aa9", null ],
       [ "HoverOff", "class_g_ft_1_1_block.html#a8fca38ee5cc6098c6f2d8219f61b33cb", null ],
-      [ "HoverOn", "class_g_ft_1_1_block.html#a5301d542cb3c85aa8381f19d2efeecca", null ]
+      [ "HoverOn", "class_g_ft_1_1_block.html#a5301d542cb3c85aa8381f19d2efeecca", null ],
+      [ "ViewChanged", "class_g_ft_1_1_block.html#a5d4f7076dba4a67c0c4ecf5247e8de5f", null ]
     ] ],
     [ "GFt::BlockFocusManager", "class_g_ft_1_1_block_focus_manager.html", null ],
     [ "GFt::BlockHoverManager", "class_g_ft_1_1_block_hover_manager.html", null ],
