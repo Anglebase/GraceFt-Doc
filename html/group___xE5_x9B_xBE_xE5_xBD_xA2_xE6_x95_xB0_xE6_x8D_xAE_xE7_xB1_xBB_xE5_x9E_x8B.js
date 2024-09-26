@@ -93,6 +93,7 @@ var group___xE5_x9B_xBE_xE5_xBD_xA2_xE6_x95_xB0_xE6_x8D_xAE_xE7_xB1_xBB_xE5_x9E_
     [ "GFt::Rect< T >", "class_g_ft_1_1_rect.html", [
       [ "Rect", "class_g_ft_1_1_rect.html#adef52c4a97b8d06a2f491e3d42836198", null ],
       [ "Rect", "class_g_ft_1_1_rect.html#ad182e7409ff1cd35479ab68ef21894aa", null ],
+      [ "Rect", "class_g_ft_1_1_rect.html#a18c2e29867fad8edddcf7e4864d60ee0", null ],
       [ "Rect", "class_g_ft_1_1_rect.html#a7eb93679328a6028a217897e943fb2ab", null ],
       [ "Rect", "class_g_ft_1_1_rect.html#a95f6399d155209e1cede79674e8fb4e7", null ],
       [ "bottom", "class_g_ft_1_1_rect.html#ac7132a62dafb28e80a99232c0eab8cf9", null ],

@@ -7,7 +7,7 @@ var searchData=
   ['add_4',['Add',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2aec211f7c20af43e742bf2570c3cb84f9',1,'GFt']]],
   ['addarc_5',['addArc',['../class_g_ft_1_1_path.html#ab8339d76ea713fb342f397f78d536315',1,'GFt::Path']]],
   ['addbezier_6',['addBezier',['../class_g_ft_1_1_path.html#a8697172bc5ab684a4c44313899edfb1e',1,'GFt::Path']]],
-  ['addblock_7',['addBlock',['../class_g_ft_1_1_declarative_u_i_manager.html#a4ab64658d3c5fdf62f5276dd21513c18',1,'GFt::DeclarativeUIManager']]],
+  ['addblock_7',['addBlock',['../class_g_ft_1_1_declarative_u_i_manager.html#a4d67855782ff791903bc7b19d88ea17f',1,'GFt::DeclarativeUIManager']]],
   ['addchild_8',['addChild',['../class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1',1,'GFt::Block']]],
   ['addcircle_9',['addCircle',['../class_g_ft_1_1_path.html#a8615d8eb3e1a9ec3eb3cdc95ff5ace74',1,'GFt::Path']]],
   ['addellipse_10',['addEllipse',['../class_g_ft_1_1_path.html#a679b64b38ee0c26524029e8b2780db5a',1,'GFt::Path']]],

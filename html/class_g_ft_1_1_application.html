@@ -136,12 +136,18 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ab951365f61e96b93e02f64a5139f6c9c" id="r_ab951365f61e96b93e02f64a5139f6c9c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab951365f61e96b93e02f64a5139f6c9c">exit</a> ()</td></tr>
 <tr class="memdesc:ab951365f61e96b93e02f64a5139f6c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">退出程序  <br /></td></tr>
 <tr class="separator:ab951365f61e96b93e02f64a5139f6c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685973471d89b0978d86ccc385d36f1b" id="r_a685973471d89b0978d86ccc385d36f1b"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a685973471d89b0978d86ccc385d36f1b">getEventTime</a> ()</td></tr>
+<tr class="memdesc:a685973471d89b0978d86ccc385d36f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取事件处理帧时长  <br /></td></tr>
+<tr class="separator:a685973471d89b0978d86ccc385d36f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d3329349a3ad884b96ac65c1777814" id="r_ab3d3329349a3ad884b96ac65c1777814"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3d3329349a3ad884b96ac65c1777814">getFps</a> ()</td></tr>
 <tr class="memdesc:ab3d3329349a3ad884b96ac65c1777814"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取目标帧率  <br /></td></tr>
 <tr class="separator:ab3d3329349a3ad884b96ac65c1777814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50278b168049599eb4787c2586efb524" id="r_a50278b168049599eb4787c2586efb524"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50278b168049599eb4787c2586efb524">getRealFps</a> ()</td></tr>
 <tr class="memdesc:a50278b168049599eb4787c2586efb524"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取真实帧率  <br /></td></tr>
 <tr class="separator:a50278b168049599eb4787c2586efb524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259c6844da432c0320e0598584aa91e7" id="r_a259c6844da432c0320e0598584aa91e7"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a259c6844da432c0320e0598584aa91e7">getRenderTime</a> ()</td></tr>
+<tr class="memdesc:a259c6844da432c0320e0598584aa91e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取渲染帧时长  <br /></td></tr>
+<tr class="separator:a259c6844da432c0320e0598584aa91e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af95db619637633e2a90c887a7ba8e3ae" id="r_af95db619637633e2a90c887a7ba8e3ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af95db619637633e2a90c887a7ba8e3ae">setFps</a> (double fps)</td></tr>
 <tr class="memdesc:af95db619637633e2a90c887a7ba8e3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置目标帧率  <br /></td></tr>
 <tr class="separator:af95db619637633e2a90c887a7ba8e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +226,8 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>程序退出状态</dd></dl>
-<p>该函数会阻塞线程, 直到程序退出 </p>
+<p>该函数会阻塞线程, 直到程序退出</p>
+<dl class="section note"><dt>注解</dt><dd>若未检测到窗口被成功创建，此函数不会阻塞，将会立即返回错误码 1(通常此函数返回值直接作为程序的退出码) </dd></dl>
 
 </div>
 </div>
@@ -249,6 +256,34 @@ Public 成员函数</h2></td></tr>
 
 <p>退出程序 </p>
 <p>该效果等同于 <a class="el" href="#a80d3fa62f9c3830ed16240d28278bacd" title="退出程序">shouldClose()</a> </p>
+
+</div>
+</div>
+<a id="a685973471d89b0978d86ccc385d36f1b" name="a685973471d89b0978d86ccc385d36f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685973471d89b0978d86ccc385d36f1b">&#9670;&#160;</a></span>getEventTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GFt::Application::getEventTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取事件处理帧时长 </p>
+<dl class="section return"><dt>返回</dt><dd>事件处理帧时长(以微秒计) </dd></dl>
 
 </div>
 </div>
@@ -305,6 +340,34 @@ Public 成员函数</h2></td></tr>
 
 <p>获取真实帧率 </p>
 <dl class="section return"><dt>返回</dt><dd>真实帧率 </dd></dl>
+
+</div>
+</div>
+<a id="a259c6844da432c0320e0598584aa91e7" name="a259c6844da432c0320e0598584aa91e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a259c6844da432c0320e0598584aa91e7">&#9670;&#160;</a></span>getRenderTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GFt::Application::getRenderTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取渲染帧时长 </p>
+<dl class="section return"><dt>返回</dt><dd>渲染帧时长(以毫秒计) </dd></dl>
 
 </div>
 </div>

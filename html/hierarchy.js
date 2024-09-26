@@ -83,6 +83,8 @@ var hierarchy =
     [ "GFt::RoundRect< T >", "class_g_ft_1_1_round_rect.html", null ],
     [ "GFt::Signal< Args >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< bool >", "class_g_ft_1_1_signal.html", null ],
+    [ "GFt::Signal< const GFt::Point & >", "class_g_ft_1_1_signal.html", null ],
+    [ "GFt::Signal< const GFt::Size & >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< GFt::Block * >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< GFt::Window * >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< void >", "class_g_ft_1_1_signal_3_01void_01_4.html", null ],

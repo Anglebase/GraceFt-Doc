@@ -51,6 +51,7 @@ var group___xE6_x8E_xA5_xE5_x8F_xA3_xE7_xB1_xBB_xE5_x9E_x8B =
       [ "getTarget", "class_g_ft_1_1_graphics.html#a93b3439d85cf510e1993a4229dcec411", null ],
       [ "getTransform", "class_g_ft_1_1_graphics.html#a481deabc3d413a54ac09cd27ebaced0b", null ],
       [ "operator=", "class_g_ft_1_1_graphics.html#aca8aaf30c98a61c73648215e3af1bdaa", null ],
+      [ "reset", "class_g_ft_1_1_graphics.html#a80ffd42dc786272e6a50a0ce3a4d54a4", null ],
       [ "resetTransform", "class_g_ft_1_1_graphics.html#ad74c661284389ae2cb8384c82ae3d66d", null ],
       [ "setAntiAliasing", "class_g_ft_1_1_graphics.html#aa8d1acf932950d0e17172cc8420ad1df", null ],
       [ "setBackgroundColor", "class_g_ft_1_1_graphics.html#a945a73a1d7a5afd2436d0f5fe4ba752f", null ],
