@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnopqrstuvwxyz~事准几列图基声复字定对工开快按接教文枚核特环画简糖线编致许设贡部配项预",
+  0: "_abcdefghijklmnopqrstuvwxyz~事准几列图基声复字定对工开快按接教文枚核特环画示简糖线编致计许设贡部配项预",
   1: "abcdefgklmprstwx",
   2: "g",
   3: "abcdefghiklmnoprstuwxy~",
@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "_abcdefghijklmnopqrstuvwxyz",
   8: "abdgopt",
   9: "a事几图基复字工按接文枚画糖线设部预",
-  10: "bcg列图教"
+  10: "bcg列图教示"
 };
 
 var indexSectionNames =

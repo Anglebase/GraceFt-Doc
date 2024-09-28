@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: 示例</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">示例</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md13"></a></p>
+<h1><a class="anchor" id="autotoc_md14"></a>
+计算器</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;GraceFt/UI.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1_u_i.html">GFt::UI</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1_widget.html">GFt::Widget</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_g_ft_1_1literals.html">GFt::literals</a>;</div>
+<div class="line"><span class="keyword">using namespace </span>std::string_literals;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 计算表达式</span></div>
+<div class="line">std::wstring eval(<span class="keyword">const</span> std::wstring&amp; expr) {</div>
+<div class="line">    <span class="comment">// 检查有效性</span></div>
+<div class="line">    <span class="keywordflow">if</span> (expr.empty())</div>
+<div class="line">        <span class="keywordflow">return</span> L<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line">    <span class="keywordflow">if</span> (expr.find_first_not_of(L<span class="stringliteral">&quot;0123456789+-*/(.)&quot;</span>) != std::wstring::npos ||</div>
+<div class="line">        <span class="stringliteral">&quot;0123456789&quot;</span>s.find(expr[0]) == std::string::npos)</div>
+<div class="line">        <span class="keywordflow">return</span> L<span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">    <span class="keyword">const</span> std::unordered_map&lt;wchar_t, int&gt; precedence = {</div>
+<div class="line">        { L<span class="charliteral">&#39;+&#39;</span>, 1 },</div>
+<div class="line">        { L<span class="charliteral">&#39;-&#39;</span>, 1 },</div>
+<div class="line">        { <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;*&#39;</span>, 2 },</div>
+<div class="line">        { <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;/&#39;</span>, 2 },</div>
+<div class="line">    };</div>
+<div class="line">    <span class="keyword">enum class</span> State {</div>
+<div class="line">        Num,</div>
+<div class="line">        Op,</div>
+<div class="line">        Group,</div>
+<div class="line">    };</div>
+<div class="line">    <span class="comment">// 分离Token</span></div>
+<div class="line">    std::vector&lt;std::pair&lt;State, std::wstring&gt;&gt; tokens;</div>
+<div class="line">    tokens.push_back({ State::Num, <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;&quot;</span> });</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> c : expr) {</div>
+<div class="line">        <span class="keywordflow">switch</span> (c) {</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;0&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;1&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;2&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;3&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;4&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;5&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;6&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;7&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;8&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;9&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;.&#39;</span>:</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">auto</span>&amp; [s, t] = tokens.back();</div>
+<div class="line">            <span class="keywordflow">if</span> (s != State::Num)</div>
+<div class="line">                tokens.push_back({ State::Num, <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;&quot;</span> });</div>
+<div class="line">            tokens.back().second += c;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;+&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;-&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;*&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;/&#39;</span>:</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keyword">auto</span>&amp; [s, t] = tokens.back();</div>
+<div class="line">            <span class="keywordflow">if</span> (s == State::Num || s == State::Group) {</div>
+<div class="line">                tokens.push_back({ State::Op, std::wstring(1, c) });</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span> {</div>
+<div class="line">                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;(&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;)&#39;</span>:</div>
+<div class="line">        {</div>
+<div class="line">            tokens.push_back({ State::Group, std::wstring(1, c) });</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">default</span>:</div>
+<div class="line">            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">// 计算</span></div>
+<div class="line">    std::stack&lt;double&gt; values;</div>
+<div class="line">    std::stack&lt;wchar_t&gt; ops;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [s, t] : tokens) {</div>
+<div class="line">        <span class="keywordflow">if</span> (s == State::Num) {</div>
+<div class="line">            <span class="keywordflow">if</span> (std::count_if(t.begin(), t.end(), [](<span class="keywordtype">wchar_t</span> c) { return c == L<span class="stringliteral">&#39;.&#39;</span>; }) &gt; 1)</div>
+<div class="line">                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">            <span class="keywordflow">try</span> { values.push(std::stod(t)); }</div>
+<div class="line">            <span class="keywordflow">catch</span> (...) { <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>; }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == State::Op || s == State::Group) {</div>
+<div class="line">            <span class="keywordflow">switch</span> (t[0]) {</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;(&#39;</span>:</div>
+<div class="line">                ops.push(t[0]);</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;)&#39;</span>:</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">while</span> (!ops.empty() &amp;&amp; ops.top() != L<span class="charliteral">&#39;(&#39;</span>) {</div>
+<div class="line">                    <span class="keyword">auto</span> op = ops.top();</div>
+<div class="line">                    ops.pop();</div>
+<div class="line">                    <span class="keywordflow">if</span> (values.empty())</div>
+<div class="line">                        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">                    <span class="keyword">auto</span> b = values.top();</div>
+<div class="line">                    values.pop();</div>
+<div class="line">                    <span class="keywordflow">if</span> (values.empty())</div>
+<div class="line">                        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">                    <span class="keyword">auto</span> a = values.top();</div>
+<div class="line">                    values.pop();</div>
+<div class="line">                    <span class="keywordflow">switch</span> (op) {</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;+&#39;</span>: values.push(a + b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;-&#39;</span>: values.push(a - b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;*&#39;</span>: values.push(a * b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;/&#39;</span>: values.push(a / b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    }</div>
+<div class="line">                }</div>
+<div class="line">                <span class="keywordflow">if</span> (ops.empty() || ops.top() != L<span class="charliteral">&#39;(&#39;</span>)</div>
+<div class="line">                    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">                ops.pop();</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">default</span>:</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">while</span> (!ops.empty() &amp;&amp; ops.top() != L<span class="charliteral">&#39;(&#39;</span> &amp;&amp; precedence.at(t[0]) &lt;= precedence.at(ops.top())) {</div>
+<div class="line">                    <span class="keyword">auto</span> op = ops.top();</div>
+<div class="line">                    ops.pop();</div>
+<div class="line">                    <span class="keywordflow">if</span> (values.empty())</div>
+<div class="line">                        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">                    <span class="keyword">auto</span> b = values.top();</div>
+<div class="line">                    values.pop();</div>
+<div class="line">                    <span class="keywordflow">if</span> (values.empty())</div>
+<div class="line">                        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">                    <span class="keyword">auto</span> a = values.top();</div>
+<div class="line">                    values.pop();</div>
+<div class="line">                    <span class="keywordflow">switch</span> (op) {</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;+&#39;</span>: values.push(a + b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;-&#39;</span>: values.push(a - b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;*&#39;</span>: values.push(a * b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;/&#39;</span>: values.push(a / b); <span class="keywordflow">break</span>;</div>
+<div class="line">                    }</div>
+<div class="line">                }</div>
+<div class="line">                ops.push(t[0]);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">// =</span></div>
+<div class="line">    <span class="keywordflow">while</span> (!ops.empty()) {</div>
+<div class="line">        <span class="keyword">auto</span> op = ops.top();</div>
+<div class="line">        ops.pop();</div>
+<div class="line">        <span class="keywordflow">if</span> (values.empty())</div>
+<div class="line">            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">        <span class="keyword">auto</span> b = values.top();</div>
+<div class="line">        values.pop();</div>
+<div class="line">        <span class="keywordflow">if</span> (values.empty())</div>
+<div class="line">            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">        <span class="keyword">auto</span> a = values.top();</div>
+<div class="line">        values.pop();</div>
+<div class="line">        <span class="keywordflow">switch</span> (op) {</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;+&#39;</span>: values.push(a + b); <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;-&#39;</span>: values.push(a - b); <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;*&#39;</span>: values.push(a * b); <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="charliteral">&#39;/&#39;</span>: values.push(a / b); <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (!ops.empty() || values.size() != 1)</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;出错&quot;</span>;</div>
+<div class="line">    std::wostringstream woss;</div>
+<div class="line">    woss &lt;&lt; values.top();</div>
+<div class="line">    <span class="keywordflow">return</span> woss.str();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> ButtonsContent(<a class="code hl_class" href="class_g_ft_1_1_grid_layout.html">GridLayout</a>&amp; it) {</div>
+<div class="line">    <span class="comment">// 基本属性</span></div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a2f94bf27853e228a553d500650dae9f5">setGridSize</a>(5, 4);</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a2fd9c57454da1a58c2de0cf029b828ac">setSpace</a>(0.5_em);</div>
+<div class="line">    <span class="comment">// + 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region +</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;+&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;+&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;+&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;+&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,1,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// - 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region -</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;-&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;-&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;-&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;-&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,2,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// * 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region *</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;*&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;*&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;*&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;*&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,3,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// / 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region /</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;/&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;/&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;/&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;/&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,4,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// . 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region .</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;.&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;.&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 0,4,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// = 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region =</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;=&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;=&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> result = eval(exprLabel-&gt;text());</div>
+<div class="line">                exprLabel-&gt;text() = result;</div>
+<div class="line">                std::cout &lt;&lt; <span class="stringliteral">&quot;FPS: &quot;</span> &lt;&lt; Application::getRealFps() &lt;&lt; std::endl;</div>
+<div class="line">                std::cout &lt;&lt; <span class="stringliteral">&quot;RenderTime: &quot;</span> &lt;&lt; Application::getRenderTime() &lt;&lt; std::endl;</div>
+<div class="line">                std::cout &lt;&lt; <span class="stringliteral">&quot;EventTime: &quot;</span> &lt;&lt; Application::getEventTime() &lt;&lt; std::endl;</div>
+<div class="line">                });</div>
+<div class="line">    }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;=&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 2,4,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// 0 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region 0</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;0&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;0&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 1,4,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// ( 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region ()</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;(&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;(&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;(&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;(&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 0,0,1,1 });</div>
+<div class="line">    <span class="comment">// ) 键</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;)&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;)&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 1,0,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// backarrow 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region backarrow</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;backarrow&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keywordflow">if</span> (!exprLabel-&gt;text().empty()) {</div>
+<div class="line">                    exprLabel-&gt;text().pop_back();</div>
+<div class="line">                }</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;backarrow&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 2,0,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// clear 键</span></div>
+<div class="line"><span class="preprocessor">#pragma region clear</span></div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">        .name = <span class="stringliteral">&quot;clear&quot;</span>,</div>
+<div class="line">        .parent = it,</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;C&quot;</span>;</div>
+<div class="line">            it.onClicked.connect([] {</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>().clear();</div>
+<div class="line">            });</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;clear&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,0,1,1 });</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">    <span class="comment">// 数字键 </span></div>
+<div class="line"><span class="preprocessor">#pragma region 1-9</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= 9; i++) {</div>
+<div class="line">        std::string name = std::to_string(i);</div>
+<div class="line">        <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
+<div class="line">            .name = name,</div>
+<div class="line">            .parent = it,</div>
+<div class="line">            .content = [i](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_button.html">Button</a>&amp; it) {</div>
+<div class="line">                it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(2_em);</div>
+<div class="line">                it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">                it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">                it.text() = std::to_wstring(i);</div>
+<div class="line">                it.onClicked.connect([i] {</div>
+<div class="line">                    <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                    exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += std::to_wstring(i);</div>
+<div class="line">                });</div>
+<div class="line">            }</div>
+<div class="line">        };</div>
+<div class="line">        <span class="keyword">auto</span> k = i - 1;</div>
+<div class="line">        it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(name), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ k % 3,3 - k / 3,1,1 });</div>
+<div class="line">    }</div>
+<div class="line"><span class="preprocessor">#pragma endregion</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_main_window.html">XMainWindow</a>{</div>
+<div class="line">        <span class="comment">// 主窗口</span></div>
+<div class="line">        .name = <span class="stringliteral">&quot;AppWindow&quot;</span>,</div>
+<div class="line">        .title = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;四则运算计算器&quot;</span>,</div>
+<div class="line">        .rect = <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 50, 50, 600, 800 },</div>
+<div class="line">        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_main_window.html">MainWindow</a>&amp; it) {</div>
+<div class="line">            <span class="comment">// 窗口布局</span></div>
+<div class="line">            <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_column_layout.html">XColumnLayout</a>{</div>
+<div class="line">                .name = <span class="stringliteral">&quot;WindowLayout&quot;</span>,</div>
+<div class="line">                .rect = <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ it.<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>().<a class="code hl_function" href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">size</a>() },</div>
+<div class="line">                .parent = it,</div>
+<div class="line">                .content = [](<a class="code hl_class" href="class_g_ft_1_1_column_layout.html">ColumnLayout</a>&amp; it) {</div>
+<div class="line">                    <span class="comment">// 基本属性配置</span></div>
+<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_layout.html#a34384df7f42e3ba0646a0f033ec3d71d">setPadding</a>(1_em);</div>
+<div class="line">                    Window::onWindowSizeChanged.connect([&amp;it](<a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* w) {</div>
+<div class="line">                        it.<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(<a class="code hl_class" href="class_g_ft_1_1_size.html">iSize</a>{100_vw, 100_vh});</div>
+<div class="line">                    });</div>
+<div class="line">                    Window::onWindowCreated.connect([&amp;it](<a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* w) {</div>
+<div class="line">                        it.<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(<a class="code hl_class" href="class_g_ft_1_1_size.html">iSize</a>{100_vw, 100_vh});</div>
+<div class="line">                    });</div>
+<div class="line">                    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_label.html">XLabel</a> {</div>
+<div class="line">                        .name = <span class="stringliteral">&quot;exprLabel&quot;</span>,</div>
+<div class="line">                        .parent = it,</div>
+<div class="line">                        .content = [](<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>&amp; it) {</div>
+<div class="line">                            it.textSet().font().<a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a>(5_em);</div>
+<div class="line">                            it.textSet().font().setWeight(FontWeight::Bold);</div>
+<div class="line">                            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
+<div class="line">                        }</div>
+<div class="line">                    };</div>
+<div class="line">                    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_grid_layout.html">XGridLayout</a> {</div>
+<div class="line">                        .name = <span class="stringliteral">&quot;btns&quot;</span>,</div>
+<div class="line">                        .parent = it,</div>
+<div class="line">                        .content = ButtonsContent,</div>
+<div class="line">                    };</div>
+<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>), 0.5);</div>
+<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;btns&quot;</span>), 2.5);</div>
+<div class="line">                }</div>
+<div class="line">            };</div>
+<div class="line">        }</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* window = Window::createWindow(BLOCK(<span class="stringliteral">&quot;AppWindow&quot;</span>));</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">Application</a> app(window);</div>
+<div class="line">    window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
+<div class="line">    <span class="keywordflow">return</span> app.run();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html"><div class="ttname"><a href="class_g_ft_1_1_application.html">GFt::Application</a></div><div class="ttdoc">应用程序类</div><div class="ttdef"><b>定义</b> Application.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_column_layout_html"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html">GFt::ColumnLayout</a></div><div class="ttdoc">列布局类</div><div class="ttdef"><b>定义</b> ColumnLayout.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a955b88aaaf2a49bdea685be52a02cc97"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">GFt::GraphInterface::setSize</a></div><div class="ttdeci">void setSize(const iSize &amp;size)</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:31</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a99c0544fcbbb56c689fe6e3964b6a55d"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">GFt::GraphInterface::rect</a></div><div class="ttdeci">const iRect &amp; rect() const</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:40</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_grid_layout_html"><div class="ttname"><a href="class_g_ft_1_1_grid_layout.html">GFt::GridLayout</a></div><div class="ttdoc">网格布局类</div><div class="ttdef"><b>定义</b> GridLayout.h:11</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_grid_layout_html_a2f94bf27853e228a553d500650dae9f5"><div class="ttname"><a href="class_g_ft_1_1_grid_layout.html#a2f94bf27853e228a553d500650dae9f5">GFt::GridLayout::setGridSize</a></div><div class="ttdeci">void setGridSize(int size)</div><div class="ttdoc">设置网格大小</div><div class="ttdef"><b>定义</b> GridLayout.cpp:56</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_grid_layout_html_a2fd9c57454da1a58c2de0cf029b828ac"><div class="ttname"><a href="class_g_ft_1_1_grid_layout.html#a2fd9c57454da1a58c2de0cf029b828ac">GFt::GridLayout::setSpace</a></div><div class="ttdeci">void setSpace(int space)</div><div class="ttdoc">设置网格间距</div><div class="ttdef"><b>定义</b> GridLayout.cpp:47</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_grid_layout_html_a7988865493408a9deb7e9e2c3a80ce2c"><div class="ttname"><a href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">GFt::GridLayout::addItem</a></div><div class="ttdeci">void addItem(Block *item, const iRect &amp;rect)</div><div class="ttdoc">添加子布局块</div><div class="ttdef"><b>定义</b> GridLayout.cpp:33</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_layout_html_a34384df7f42e3ba0646a0f033ec3d71d"><div class="ttname"><a href="class_g_ft_1_1_layout.html#a34384df7f42e3ba0646a0f033ec3d71d">GFt::Layout::setPadding</a></div><div class="ttdeci">void setPadding(int padding)</div><div class="ttdoc">设置边距</div><div class="ttdef"><b>定义</b> Layout.cpp:6</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html_a63d2cc467c9f93f56cc7bd0a08c20429"><div class="ttname"><a href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">GFt::Rect::size</a></div><div class="ttdeci">constexpr Size&lt; T &gt; &amp; size()</div><div class="ttdoc">矩形大小</div><div class="ttdef"><b>定义</b> Rect.hpp:80</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_size_html"><div class="ttname"><a href="class_g_ft_1_1_size.html">GFt::Size&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_button_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_button.html">GFt::Widget::Button</a></div><div class="ttdoc">按钮控件</div><div class="ttdef"><b>定义</b> Button.h:16</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_label_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_label.html">GFt::Widget::Label</a></div><div class="ttdoc">文本标签控件</div><div class="ttdef"><b>定义</b> Label.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_label_html_a9573373af1d396c9d059c4be59e4fe55"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">GFt::Widget::Label::text</a></div><div class="ttdeci">std::wstring &amp; text()</div><div class="ttdoc">文本内容</div><div class="ttdef"><b>定义</b> Label.cpp:25</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_main_window_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_main_window.html">GFt::Widget::MainWindow</a></div><div class="ttdoc">主窗口</div><div class="ttdef"><b>定义</b> MainWindow.h:9</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html"><div class="ttname"><a href="class_g_ft_1_1_window.html">GFt::Window</a></div><div class="ttdoc">全局窗口对象</div><div class="ttdef"><b>定义</b> Window.h:12</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html_a751034af79c475b74da750af107fa119"><div class="ttname"><a href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">GFt::Window::show</a></div><div class="ttdeci">void show()</div><div class="ttdoc">显示窗口</div><div class="ttdef"><b>定义</b> Window.cpp:40</div></div>
+<div class="ttc" id="agroup___xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">GFt::Key::L</a></div><div class="ttdeci">@ L</div><div class="ttdoc">L 键</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:78</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdoc">定义式UI库</div><div class="ttdef"><b>定义</b> Button.h:12</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdoc">字面量定义</div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_button_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_button.html">GFt::UI::XButton</a></div><div class="ttdoc">按钮声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:109</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_column_layout_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_column_layout.html">GFt::UI::XColumnLayout</a></div><div class="ttdoc">列布局声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:118</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_grid_layout_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_grid_layout.html">GFt::UI::XGridLayout</a></div><div class="ttdoc">网格布局声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:121</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_label_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a></div><div class="ttdoc">标签声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:112</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_main_window_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_main_window.html">GFt::UI::XMainWindow</a></div><div class="ttdoc">主窗口声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:93</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

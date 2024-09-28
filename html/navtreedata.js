@@ -43,6 +43,9 @@ var NAVTREE =
         [ "编写自己的窗口程序", "md_doc_2def_2edu.html#autotoc_md12", null ]
       ] ]
     ] ],
+    [ "示例", "md_doc_2def_2exp.html", [
+      [ "计算器", "md_doc_2def_2exp.html#autotoc_md14", null ]
+    ] ],
     [ "Bug 列表", "bug.html", null ],
     [ "专题", "topics.html", "topics" ],
     [ "命名空间", "namespaces.html", [
