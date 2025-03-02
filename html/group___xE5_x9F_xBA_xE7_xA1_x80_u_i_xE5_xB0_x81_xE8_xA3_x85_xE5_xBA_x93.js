@@ -9,7 +9,7 @@ var group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93 =
     [ "GFt::Block", "class_g_ft_1_1_block.html", [
       [ "Block", "class_g_ft_1_1_block.html#aed3aa46411c98699bbcbba44667a8900", null ],
       [ "~Block", "class_g_ft_1_1_block.html#a899e7c9e34803106fd05b95de18fcc67", null ],
-      [ "absolutePos", "class_g_ft_1_1_block.html#a384598e63efef1f76278673a402d22da", null ],
+      [ "absolutePosition", "class_g_ft_1_1_block.html#ac953fd57cd0fc2ce7820e9db3666dda9", null ],
       [ "addChild", "class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1", null ],
       [ "getParent", "class_g_ft_1_1_block.html#a478795a68b66001db32edb1544009060", null ],
       [ "getZIndex", "class_g_ft_1_1_block.html#ab5a954ef438e4694de271b46e746ce56", null ],
@@ -116,6 +116,7 @@ var group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93 =
       [ "moveTo", "class_g_ft_1_1_window.html#ae2904cc10430a95a016493a259a56041", null ],
       [ "resize", "class_g_ft_1_1_window.html#a30ee1e758ed030be2e6376124f180ef4", null ],
       [ "restore", "class_g_ft_1_1_window.html#a621750410755b4b4356565ed16f9218e", null ],
+      [ "setAlpha", "class_g_ft_1_1_window.html#a44077ae072308a176fb4ce5c7c61c7cf", null ],
       [ "setAlpha", "class_g_ft_1_1_window.html#aeed6110a6aef274be4c74b56fd41e59a", null ],
       [ "setFrameless", "class_g_ft_1_1_window.html#a881464029a1197e92193e9a6cbd895a0", null ],
       [ "setTitle", "class_g_ft_1_1_window.html#a35f50283a9e1dbe00cf8274f986f9119", null ],

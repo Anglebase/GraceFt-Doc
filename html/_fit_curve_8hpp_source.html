@@ -33,7 +33,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
    </div>
    <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
   </td>
@@ -141,23 +141,23 @@ $(function(){initNavTree('_fit_curve_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">return</span> os;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">requires</span> std::is_arithmetic_v&lt;U&gt;</div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_fit_curve.html#aa08699937d281adc95e741ddd1e1227a">   61</a></span>        <span class="keyword">operator</span> <a class="code hl_function" href="class_g_ft_1_1_fit_curve.html#a9bb350c94ada49e3412c8d6765b9e9f8">FitCurve&lt;U&gt;</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">FitCurve&lt;U&gt;</a> result;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; point : this-&gt;points)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                result.<a class="code hl_function" href="class_g_ft_1_1_fit_curve.html#ab37a41136084e209c67c65da9cbd8dd9">addPoint</a>(<a class="code hl_class" href="class_g_ft_1_1_point.html">Point&lt;U&gt;</a>(point.x(), point.y()));</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            result.<a class="code hl_function" href="class_g_ft_1_1_fit_curve.html#af4b28869f5f692c26b4bc4f9a121cb3d">setClosed</a>(this-&gt;closed);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">requires</span> std::is_arithmetic_v&lt;U&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_fit_curve.html#aa08699937d281adc95e741ddd1e1227a">   60</a></span>        <span class="keyword">operator</span> <a class="code hl_function" href="class_g_ft_1_1_fit_curve.html#a9bb350c94ada49e3412c8d6765b9e9f8">FitCurve&lt;U&gt;</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">FitCurve&lt;U&gt;</a> result;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; point : this-&gt;points)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                result.<a class="code hl_function" href="class_g_ft_1_1_fit_curve.html#ab37a41136084e209c67c65da9cbd8dd9">addPoint</a>(<a class="code hl_class" href="class_g_ft_1_1_point.html">Point&lt;U&gt;</a>(point.x(), point.y()));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            result.<a class="code hl_function" href="class_g_ft_1_1_fit_curve.html#af4b28869f5f692c26b4bc4f9a121cb3d">setClosed</a>(this-&gt;closed);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
 </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    };</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga5c466e6b95b0b912d6b63e572da86c27">   72</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">iFitCurve</a> = <a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">FitCurve&lt;int&gt;</a>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaca0f68171cd4ae67e13330970e411a57">   75</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">fFitCurve</a> = <a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">FitCurve&lt;float&gt;</a>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga5c466e6b95b0b912d6b63e572da86c27">   71</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">iFitCurve</a> = <a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">FitCurve&lt;int&gt;</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaca0f68171cd4ae67e13330970e411a57">   74</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">fFitCurve</a> = <a class="code hl_class" href="class_g_ft_1_1_fit_curve.html">FitCurve&lt;float&gt;</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 <div class="ttc" id="aclass_g_ft_1_1_fit_curve_html"><div class="ttname"><a href="class_g_ft_1_1_fit_curve.html">GFt::FitCurve</a></div><div class="ttdoc">拟合曲线类</div><div class="ttdef"><b>定义</b> FitCurve.hpp:15</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_fit_curve_html_a2130ea98be6a20237483447762662954"><div class="ttname"><a href="class_g_ft_1_1_fit_curve.html#a2130ea98be6a20237483447762662954">GFt::FitCurve::isClosed</a></div><div class="ttdeci">bool isClosed() const</div><div class="ttdoc">拟合曲线是否闭合</div><div class="ttdef"><b>定义</b> FitCurve.hpp:39</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_fit_curve_html_a33a892cd10c774381942439da6c2a20b"><div class="ttname"><a href="class_g_ft_1_1_fit_curve.html#a33a892cd10c774381942439da6c2a20b">GFt::FitCurve::setTension</a></div><div class="ttdeci">void setTension(float tension)</div><div class="ttdoc">设置拟合曲线的张力</div><div class="ttdef"><b>定义</b> FitCurve.hpp:36</div></div>
@@ -168,10 +168,10 @@ $(function(){initNavTree('_fit_curve_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="aclass_g_ft_1_1_fit_curve_html_ab862af22a060c5af8426449f3ee7ec29"><div class="ttname"><a href="class_g_ft_1_1_fit_curve.html#ab862af22a060c5af8426449f3ee7ec29">GFt::FitCurve::FitCurve</a></div><div class="ttdeci">FitCurve(const std::vector&lt; Point&lt; T &gt; &gt; &amp;points)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> FitCurve.hpp:26</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_fit_curve_html_ac7c38a778d661f3e894ce7fe4e1f7572"><div class="ttname"><a href="class_g_ft_1_1_fit_curve.html#ac7c38a778d661f3e894ce7fe4e1f7572">GFt::FitCurve::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const FitCurve&lt; T &gt; &amp;curve)</div><div class="ttdoc">流操作符重载</div><div class="ttdef"><b>定义</b> FitCurve.hpp:51</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_fit_curve_html_af4b28869f5f692c26b4bc4f9a121cb3d"><div class="ttname"><a href="class_g_ft_1_1_fit_curve.html#af4b28869f5f692c26b4bc4f9a121cb3d">GFt::FitCurve::setClosed</a></div><div class="ttdeci">void setClosed(bool closed)</div><div class="ttdoc">设置拟合曲线是否闭合</div><div class="ttdef"><b>定义</b> FitCurve.hpp:33</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:38</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:39</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_path_html"><div class="ttname"><a href="class_g_ft_1_1_path.html">GFt::Path</a></div><div class="ttdoc">路径类</div><div class="ttdef"><b>定义</b> Path.h:19</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point</a></div><div class="ttdoc">泛型点类</div><div class="ttdef"><b>定义</b> Point.hpp:22</div></div>
-<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

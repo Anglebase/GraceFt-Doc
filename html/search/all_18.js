@@ -6,10 +6,14 @@ var searchData=
   ['x2_3',['X2',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggab12b3026be176df4395f5e4c793dbdd2a54105bddbfe3f639d49cbe8f5182c958',1,'GFt']]],
   ['xblock_4',['XBlock',['../struct_g_ft_1_1_u_i_1_1_x_block.html',1,'GFt::UI']]],
   ['xbutton_5',['XButton',['../struct_g_ft_1_1_u_i_1_1_x_button.html',1,'GFt::UI']]],
-  ['xcolumnlayout_6',['XColumnLayout',['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html',1,'GFt::UI']]],
-  ['xgridlayout_7',['XGridLayout',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html',1,'GFt::UI']]],
-  ['xlabel_8',['XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html',1,'GFt::UI']]],
-  ['xmainwindow_9',['XMainWindow',['../struct_g_ft_1_1_u_i_1_1_x_main_window.html',1,'GFt::UI']]],
-  ['xrowlayout_10',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
-  ['xwindow_11',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
+  ['xcheckbox_6',['XCheckBox',['../struct_g_ft_1_1_u_i_1_1_x_check_box.html',1,'GFt::UI']]],
+  ['xcolumnlayout_7',['XColumnLayout',['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html',1,'GFt::UI']]],
+  ['xgridlayout_8',['XGridLayout',['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html',1,'GFt::UI']]],
+  ['xhslider_9',['XHSlider',['../struct_g_ft_1_1_u_i_1_1_x_h_slider.html',1,'GFt::UI']]],
+  ['xlabel_10',['XLabel',['../struct_g_ft_1_1_u_i_1_1_x_label.html',1,'GFt::UI']]],
+  ['xmainwindow_11',['XMainWindow',['../struct_g_ft_1_1_u_i_1_1_x_main_window.html',1,'GFt::UI']]],
+  ['xradiobox_12',['XRadioBox',['../struct_g_ft_1_1_u_i_1_1_x_radio_box.html',1,'GFt::UI']]],
+  ['xrowlayout_13',['XRowLayout',['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html',1,'GFt::UI']]],
+  ['xvslider_14',['XVSlider',['../struct_g_ft_1_1_u_i_1_1_x_v_slider.html',1,'GFt::UI']]],
+  ['xwindow_15',['XWindow',['../struct_g_ft_1_1_u_i_1_1_x_window.html',1,'GFt::UI']]]
 ];

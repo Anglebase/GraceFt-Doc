@@ -33,7 +33,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
    </div>
    <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
   </td>
@@ -107,6 +107,7 @@ $(function(){initNavTree('class_g_ft_1_1_application.html',''); initResizable(tr
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
 <a href="class_g_ft_1_1_application-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">GFt::Application类 参考<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_u_i_xE5_xB0_x81_xE8_xA3_x85_xE5_xBA_x93.html">基础UI封装库</a></div></div></div>
 </div><!--header-->
@@ -136,6 +137,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:ab951365f61e96b93e02f64a5139f6c9c" id="r_ab951365f61e96b93e02f64a5139f6c9c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab951365f61e96b93e02f64a5139f6c9c">exit</a> ()</td></tr>
 <tr class="memdesc:ab951365f61e96b93e02f64a5139f6c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">退出程序  <br /></td></tr>
 <tr class="separator:ab951365f61e96b93e02f64a5139f6c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e03a1186c2b9f1a75df53ab8ea0b42" id="r_a65e03a1186c2b9f1a75df53ab8ea0b42"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e03a1186c2b9f1a75df53ab8ea0b42">getAbsoluteMousePosition</a> ()</td></tr>
+<tr class="memdesc:a65e03a1186c2b9f1a75df53ab8ea0b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取鼠标相对于屏幕的绝对位置  <br /></td></tr>
+<tr class="separator:a65e03a1186c2b9f1a75df53ab8ea0b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685973471d89b0978d86ccc385d36f1b" id="r_a685973471d89b0978d86ccc385d36f1b"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a685973471d89b0978d86ccc385d36f1b">getEventTime</a> ()</td></tr>
 <tr class="memdesc:a685973471d89b0978d86ccc385d36f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取事件处理帧时长  <br /></td></tr>
 <tr class="separator:a685973471d89b0978d86ccc385d36f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,12 +152,33 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a259c6844da432c0320e0598584aa91e7" id="r_a259c6844da432c0320e0598584aa91e7"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a259c6844da432c0320e0598584aa91e7">getRenderTime</a> ()</td></tr>
 <tr class="memdesc:a259c6844da432c0320e0598584aa91e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取渲染帧时长  <br /></td></tr>
 <tr class="separator:a259c6844da432c0320e0598584aa91e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe759fb125dbb45a37e84411d02bea2" id="r_abfe759fb125dbb45a37e84411d02bea2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfe759fb125dbb45a37e84411d02bea2">getRoot</a> ()</td></tr>
+<tr class="memdesc:abfe759fb125dbb45a37e84411d02bea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取根窗口节点  <br /></td></tr>
+<tr class="separator:abfe759fb125dbb45a37e84411d02bea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f43dff23d2303fd39bc9420d17fc918" id="r_a5f43dff23d2303fd39bc9420d17fc918"><td class="memItemLeft" align="right" valign="top">static std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f43dff23d2303fd39bc9420d17fc918">localPath</a> ()</td></tr>
+<tr class="memdesc:a5f43dff23d2303fd39bc9420d17fc918"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取应用程序的可执行文件所在的路径  <br /></td></tr>
+<tr class="separator:a5f43dff23d2303fd39bc9420d17fc918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af95db619637633e2a90c887a7ba8e3ae" id="r_af95db619637633e2a90c887a7ba8e3ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af95db619637633e2a90c887a7ba8e3ae">setFps</a> (double fps)</td></tr>
 <tr class="memdesc:af95db619637633e2a90c887a7ba8e3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置目标帧率  <br /></td></tr>
 <tr class="separator:af95db619637633e2a90c887a7ba8e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d3fa62f9c3830ed16240d28278bacd" id="r_a80d3fa62f9c3830ed16240d28278bacd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80d3fa62f9c3830ed16240d28278bacd">shouldClose</a> ()</td></tr>
 <tr class="memdesc:a80d3fa62f9c3830ed16240d28278bacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">退出程序  <br /></td></tr>
 <tr class="separator:a80d3fa62f9c3830ed16240d28278bacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af586c385cccebd93671589ca07b2cdab" id="r_af586c385cccebd93671589ca07b2cdab"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af586c385cccebd93671589ca07b2cdab">showCursor</a> (bool show)</td></tr>
+<tr class="memdesc:af586c385cccebd93671589ca07b2cdab"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置鼠标是否可见  <br /></td></tr>
+<tr class="separator:af586c385cccebd93671589ca07b2cdab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d8011a330e421d4f7c07fae127ea79" id="r_a05d8011a330e421d4f7c07fae127ea79"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05d8011a330e421d4f7c07fae127ea79">updateBlockHoverState</a> ()</td></tr>
+<tr class="memdesc:a05d8011a330e421d4f7c07fae127ea79"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新鼠标悬浮状态  <br /></td></tr>
+<tr class="separator:a05d8011a330e421d4f7c07fae127ea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a7d4a688a637d436c7b374d6a2adddcbc" id="r_a7d4a688a637d436c7b374d6a2adddcbc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d4a688a637d436c7b374d6a2adddcbc">onEventCall</a></td></tr>
+<tr class="memdesc:a7d4a688a637d436c7b374d6a2adddcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">每一帧事件处理(之前)时触发此信号  <br /></td></tr>
+<tr class="separator:a7d4a688a637d436c7b374d6a2adddcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18250611fa0618ed14e3682480196410" id="r_a18250611fa0618ed14e3682480196410"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18250611fa0618ed14e3682480196410">onRenderCall</a></td></tr>
+<tr class="memdesc:a18250611fa0618ed14e3682480196410"><td class="mdescLeft">&#160;</td><td class="mdescRight">每一帧渲染(之前)时触发此信号  <br /></td></tr>
+<tr class="separator:a18250611fa0618ed14e3682480196410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>应用程序类 </p>
@@ -256,6 +281,35 @@ Public 成员函数</h2></td></tr>
 
 <p>退出程序 </p>
 <p>该效果等同于 <a class="el" href="#a80d3fa62f9c3830ed16240d28278bacd" title="退出程序">shouldClose()</a> </p>
+
+</div>
+</div>
+<a id="a65e03a1186c2b9f1a75df53ab8ea0b42" name="a65e03a1186c2b9f1a75df53ab8ea0b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e03a1186c2b9f1a75df53ab8ea0b42">&#9670;&#160;</a></span>getAbsoluteMousePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a> GFt::Application::getAbsoluteMousePosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取鼠标相对于屏幕的绝对位置 </p>
+<dl class="section return"><dt>返回</dt><dd>鼠标位置 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="namespace_g_ft_1_1_sys.html#a37a2c6604e18995616f4d3c424845923" title="获取鼠标的绝对位置">Sys::getCursorPosition()</a> </dd></dl>
 
 </div>
 </div>
@@ -371,6 +425,62 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
+<a id="abfe759fb125dbb45a37e84411d02bea2" name="abfe759fb125dbb45a37e84411d02bea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe759fb125dbb45a37e84411d02bea2">&#9670;&#160;</a></span>getRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_block.html">Block</a> * GFt::Application::getRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取根窗口节点 </p>
+<dl class="section return"><dt>返回</dt><dd>根窗口节点 </dd></dl>
+
+</div>
+</div>
+<a id="a5f43dff23d2303fd39bc9420d17fc918" name="a5f43dff23d2303fd39bc9420d17fc918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f43dff23d2303fd39bc9420d17fc918">&#9670;&#160;</a></span>localPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::filesystem::path GFt::Application::localPath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取应用程序的可执行文件所在的路径 </p>
+<p>此函数是惰性求值函数 </p><dl class="section return"><dt>返回</dt><dd>可执行文件所在的路径，若失败则返回空路径 </dd></dl>
+
+</div>
+</div>
 <a id="ace21db24e6d9f04d3c9e7809d5afb4ef" name="ace21db24e6d9f04d3c9e7809d5afb4ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace21db24e6d9f04d3c9e7809d5afb4ef">&#9670;&#160;</a></span>run()</h2>
 
@@ -452,6 +562,127 @@ Public 成员函数</h2></td></tr>
 
 <p>退出程序 </p>
 <p>调用此函数会导致程序退出 </p>
+
+</div>
+</div>
+<a id="af586c385cccebd93671589ca07b2cdab" name="af586c385cccebd93671589ca07b2cdab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af586c385cccebd93671589ca07b2cdab">&#9670;&#160;</a></span>showCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GFt::Application::showCursor </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>show</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置鼠标是否可见 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">show</td><td>是否可见 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>之前鼠标是否可见 </dd></dl>
+
+</div>
+</div>
+<a id="a05d8011a330e421d4f7c07fae127ea79" name="a05d8011a330e421d4f7c07fae127ea79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d8011a330e421d4f7c07fae127ea79">&#9670;&#160;</a></span>updateBlockHoverState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Application::updateBlockHoverState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新鼠标悬浮状态 </p>
+<p>此函数用于通知应用更新 <a class="el" href="class_g_ft_1_1_block_hover_manager.html" title="鼠标悬停管理器，用于管理当前鼠标悬停块">BlockHoverManager</a> </p><dl class="section note"><dt>注解</dt><dd>该函数默认只会在捕获到鼠标事件时才会被调用，如果 <a class="el" href="class_g_ft_1_1_block.html" title="块对象">Block</a> 对象树含有具有位置动画的对象, 则需要在每一帧调用此函数来更新 <a class="el" href="class_g_ft_1_1_block_hover_manager.html" title="鼠标悬停管理器，用于管理当前鼠标悬停块">BlockHoverManager</a> 的状态以确保 <a class="el" href="class_g_ft_1_1_block_hover_manager.html" title="鼠标悬停管理器，用于管理当前鼠标悬停块">BlockHoverManager</a> 状态的正确性，通常直接将其连接到 onEventCall 信号以实现自动更新 <div class="fragment"><div class="line"><span class="comment">// 将 updateBlockHoverState 函数连接到 onEventCall 信号</span></div>
+<div class="line"><span class="comment">// 在 main 函数的开头添加以下代码即可</span></div>
+<div class="line"><a class="code hl_variable" href="class_g_ft_1_1_window.html#a824a6c28ffc8b711a9867a1c7779c6bf">Window::onWindowCreated</a>.connect([](<a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* w) {</div>
+<div class="line">    <a class="code hl_variable" href="#a7d4a688a637d436c7b374d6a2adddcbc">Application::onEventCall</a>.<a class="code hl_function" href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">connect</a>(&amp;<a class="code hl_function" href="#a05d8011a330e421d4f7c07fae127ea79">Application::updateBlockHoverState</a>);</div>
+<div class="line">    });</div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html_a05d8011a330e421d4f7c07fae127ea79"><div class="ttname"><a href="#a05d8011a330e421d4f7c07fae127ea79">GFt::Application::updateBlockHoverState</a></div><div class="ttdeci">static void updateBlockHoverState()</div><div class="ttdoc">更新鼠标悬浮状态</div><div class="ttdef"><b>定义</b> Application.cpp:127</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html_a7d4a688a637d436c7b374d6a2adddcbc"><div class="ttname"><a href="#a7d4a688a637d436c7b374d6a2adddcbc">GFt::Application::onEventCall</a></div><div class="ttdeci">static Signal&lt; void &gt; onEventCall</div><div class="ttdoc">每一帧事件处理(之前)时触发此信号</div><div class="ttdef"><b>定义</b> Application.h:98</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_3_01void_01_4_html_ae77cfa1254a98cb8876c98682948d353"><div class="ttname"><a href="class_g_ft_1_1_signal_3_01void_01_4.html#ae77cfa1254a98cb8876c98682948d353">GFt::Signal&lt; void &gt;::connect</a></div><div class="ttdeci">SlotId&lt; void &gt; connect(const Slot &amp;slot)</div><div class="ttdoc">连接槽函数</div><div class="ttdef"><b>定义</b> Signal.hpp:120</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html"><div class="ttname"><a href="class_g_ft_1_1_window.html">GFt::Window</a></div><div class="ttdoc">全局窗口对象</div><div class="ttdef"><b>定义</b> Window.h:13</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html_a824a6c28ffc8b711a9867a1c7779c6bf"><div class="ttname"><a href="class_g_ft_1_1_window.html#a824a6c28ffc8b711a9867a1c7779c6bf">GFt::Window::onWindowCreated</a></div><div class="ttdeci">static Signal&lt; Window * &gt; onWindowCreated</div><div class="ttdoc">窗口创建信号</div><div class="ttdef"><b>定义</b> Window.h:113</div></div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a7d4a688a637d436c7b374d6a2adddcbc" name="a7d4a688a637d436c7b374d6a2adddcbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4a688a637d436c7b374d6a2adddcbc">&#9670;&#160;</a></span>onEventCall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; void &gt; GFt::Application::onEventCall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每一帧事件处理(之前)时触发此信号 </p>
+
+</div>
+</div>
+<a id="a18250611fa0618ed14e3682480196410" name="a18250611fa0618ed14e3682480196410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18250611fa0618ed14e3682480196410">&#9670;&#160;</a></span>onRenderCall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; void &gt; GFt::Application::onRenderCall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每一帧渲染(之前)时触发此信号 </p>
 
 </div>
 </div>

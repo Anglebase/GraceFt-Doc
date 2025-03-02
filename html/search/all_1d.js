@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['准备工作_0',['准备工作',['../md_doc_2def_2edu.html#autotoc_md10',1,'']]]
+  ['使用技巧_0',['GraceFt 使用技巧',['../md_doc_2def_2tips.html',1,'']]]
 ];

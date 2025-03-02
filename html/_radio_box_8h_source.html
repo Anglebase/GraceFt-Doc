@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/widget/RadioBox.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_radio_box_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RadioBox.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">class </span>RadioManager;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">namespace </span>Widget {</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_radio_box.html">   10</a></span>        <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_radio_box.html">RadioBox</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <a class="code hl_class" href="class_g_ft_1_1_radio_manager.html">GFt::RadioManager</a>&amp; manager_;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            std::wstring text_;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a> hoverfont_;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a> normalfont_;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a> selectedfont_;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> hoverbs_;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> normalbs_;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> selectedbs_;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a4824979f2080b51ca544f788b495d99d">onDraw</a>(<a class="code hl_class" href="class_g_ft_1_1_graphics.html">Graphics</a>&amp; g) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#af20c10fa3eed4227d6cde4853170fce8">onMouseButtonPress</a>(<a class="code hl_class" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a>* e) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a64e5e4b8947f854046e1ec626ac1d23c">RadioBox</a>(<a class="code hl_class" href="class_g_ft_1_1_radio_manager.html">GFt::RadioManager</a>&amp; manager, <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>, <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_radio_box.html#a3df63f9036d7ec89f099ca8d6c1e4188">   32</a></span>            <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a3df63f9036d7ec89f099ca8d6c1e4188">~RadioBox</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a4e7e4dbc38955be82efc3b4b531497f1">setChecked</a>(<span class="keywordtype">bool</span> checked);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a1ecbb9c963325ed84ab7fc9f9969bdc1">isChecked</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            std::wstring&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a4d1f3925540b58e47dc81d4e8ec42ab8">text</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#aeb8abebe956065748784daf5477b03cf">hoverFont</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#af3f6f2f44a410a766f16859b87daf450">normalFont</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a397039230e02ee27f8d48e6aaffb60eb">selectedFont</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#abbcc3b7b5bac9dbf990f131e9f89fb4c">hoverBrush</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#ab7c66d9d309cda471c4a5f0d950c7fc2">normalBrush</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#ac5ccd6ea3f56b97bd65b1337123dd75c">selectedBrush</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">const</span> std::wstring&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a4d1f3925540b58e47dc81d4e8ec42ab8">text</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#aeb8abebe956065748784daf5477b03cf">hoverFont</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#af3f6f2f44a410a766f16859b87daf450">normalFont</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#a397039230e02ee27f8d48e6aaffb60eb">selectedFont</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#abbcc3b7b5bac9dbf990f131e9f89fb4c">hoverBrush</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#ab7c66d9d309cda471c4a5f0d950c7fc2">normalBrush</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_radio_box.html#ac5ccd6ea3f56b97bd65b1337123dd75c">selectedBrush</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_radio_box.html#a93dd5fea104e6766933e6fa186a8d9fb">   71</a></span>            <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;void&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_widget_1_1_radio_box.html#a93dd5fea104e6766933e6fa186a8d9fb">onChecked</a>;         </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_radio_box.html#a517eafddfb4bb683cfb5867934e9b84c">   72</a></span>            <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;void&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_widget_1_1_radio_box.html#a517eafddfb4bb683cfb5867934e9b84c">onUnchecked</a>;       </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_radio_box.html#aee59c2621d7f726739c4bf37e3fb6752">   73</a></span>            <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;bool&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_widget_1_1_radio_box.html#aee59c2621d7f726739c4bf37e3fb6752">onCheckChanged</a>;    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        };</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_radio_manager.html">   78</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_radio_manager.html">RadioManager</a> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_class" href="class_g_ft_1_1_widget_1_1_radio_box.html">Widget::RadioBox</a>* radiobox_;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_function" href="class_g_ft_1_1_radio_manager.html#a19d683b4d15622ad337813ccd76d3a4d">RadioManager</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_radio_manager.html#a10f06307334e1f5e76173c9450bca52c">   82</a></span>        <a class="code hl_function" href="class_g_ft_1_1_radio_manager.html#a10f06307334e1f5e76173c9450bca52c">~RadioManager</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_radio_manager.html#a164292cdbad86f8c9294c3b0982290fe">setRadioBox</a>(<a class="code hl_class" href="class_g_ft_1_1_widget_1_1_radio_box.html">Widget::RadioBox</a>* radiobox);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_class" href="class_g_ft_1_1_widget_1_1_radio_box.html">Widget::RadioBox</a>* <a class="code hl_function" href="class_g_ft_1_1_radio_manager.html#ae9c91a81a900289a480515dbc6679761">getRadioBox</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    };</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_block_html"><div class="ttname"><a href="class_g_ft_1_1_block.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_brush_set_html"><div class="ttname"><a href="class_g_ft_1_1_brush_set.html">GFt::BrushSet</a></div><div class="ttdoc">画刷设置类</div><div class="ttdef"><b>定义</b> BrushSet.h:35</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_font_html"><div class="ttname"><a href="class_g_ft_1_1_font.html">GFt::Font</a></div><div class="ttdoc">字体类</div><div class="ttdef"><b>定义</b> Font.h:46</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a99c0544fcbbb56c689fe6e3964b6a55d"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">GFt::GraphInterface::rect</a></div><div class="ttdeci">const iRect &amp; rect() const</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:40</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:39</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_mouse_button_press_event_html"><div class="ttname"><a href="class_g_ft_1_1_mouse_button_press_event.html">GFt::MouseButtonPressEvent</a></div><div class="ttdoc">鼠标按钮按下事件</div><div class="ttdef"><b>定义</b> Event.h:307</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_radio_manager_html"><div class="ttname"><a href="class_g_ft_1_1_radio_manager.html">GFt::RadioManager</a></div><div class="ttdoc">单选框管理器</div><div class="ttdef"><b>定义</b> RadioBox.h:78</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_radio_manager_html_a10f06307334e1f5e76173c9450bca52c"><div class="ttname"><a href="class_g_ft_1_1_radio_manager.html#a10f06307334e1f5e76173c9450bca52c">GFt::RadioManager::~RadioManager</a></div><div class="ttdeci">~RadioManager()</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_radio_manager_html_a164292cdbad86f8c9294c3b0982290fe"><div class="ttname"><a href="class_g_ft_1_1_radio_manager.html#a164292cdbad86f8c9294c3b0982290fe">GFt::RadioManager::setRadioBox</a></div><div class="ttdeci">void setRadioBox(Widget::RadioBox *radiobox)</div><div class="ttdoc">设置当前选中的单选框</div><div class="ttdef"><b>定义</b> RadioBox.cpp:84</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_radio_manager_html_a19d683b4d15622ad337813ccd76d3a4d"><div class="ttname"><a href="class_g_ft_1_1_radio_manager.html#a19d683b4d15622ad337813ccd76d3a4d">GFt::RadioManager::RadioManager</a></div><div class="ttdeci">RadioManager()</div><div class="ttdef"><b>定义</b> RadioBox.cpp:82</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_radio_manager_html_ae9c91a81a900289a480515dbc6679761"><div class="ttname"><a href="class_g_ft_1_1_radio_manager.html#ae9c91a81a900289a480515dbc6679761">GFt::RadioManager::getRadioBox</a></div><div class="ttdeci">Widget::RadioBox * getRadioBox() const</div><div class="ttdoc">获取当前选中的单选框</div><div class="ttdef"><b>定义</b> RadioBox.cpp:96</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html"><div class="ttname"><a href="class_g_ft_1_1_signal.html">GFt::Signal</a></div><div class="ttdoc">信号-槽机制支持</div><div class="ttdef"><b>定义</b> Signal.hpp:25</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html">GFt::Widget::RadioBox</a></div><div class="ttdoc">单选框</div><div class="ttdef"><b>定义</b> RadioBox.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a1ecbb9c963325ed84ab7fc9f9969bdc1"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a1ecbb9c963325ed84ab7fc9f9969bdc1">GFt::Widget::RadioBox::isChecked</a></div><div class="ttdeci">bool isChecked() const</div><div class="ttdoc">获取单选框的选中状态</div><div class="ttdef"><b>定义</b> RadioBox.cpp:62</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a397039230e02ee27f8d48e6aaffb60eb"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a397039230e02ee27f8d48e6aaffb60eb">GFt::Widget::RadioBox::selectedFont</a></div><div class="ttdeci">Font &amp; selectedFont()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:69</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a3df63f9036d7ec89f099ca8d6c1e4188"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a3df63f9036d7ec89f099ca8d6c1e4188">GFt::Widget::RadioBox::~RadioBox</a></div><div class="ttdeci">~RadioBox() override</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a4824979f2080b51ca544f788b495d99d"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a4824979f2080b51ca544f788b495d99d">GFt::Widget::RadioBox::onDraw</a></div><div class="ttdeci">void onDraw(Graphics &amp;g) override</div><div class="ttdoc">此函数用于绘制内容</div><div class="ttdef"><b>定义</b> RadioBox.cpp:8</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a4d1f3925540b58e47dc81d4e8ec42ab8"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a4d1f3925540b58e47dc81d4e8ec42ab8">GFt::Widget::RadioBox::text</a></div><div class="ttdeci">std::wstring &amp; text()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:66</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a4e7e4dbc38955be82efc3b4b531497f1"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a4e7e4dbc38955be82efc3b4b531497f1">GFt::Widget::RadioBox::setChecked</a></div><div class="ttdeci">void setChecked(bool checked)</div><div class="ttdoc">设置单选框的选中状态</div><div class="ttdef"><b>定义</b> RadioBox.cpp:57</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a517eafddfb4bb683cfb5867934e9b84c"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a517eafddfb4bb683cfb5867934e9b84c">GFt::Widget::RadioBox::onUnchecked</a></div><div class="ttdeci">Signal&lt; void &gt; onUnchecked</div><div class="ttdoc">单选框被取消选中时触发</div><div class="ttdef"><b>定义</b> RadioBox.h:72</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a64e5e4b8947f854046e1ec626ac1d23c"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a64e5e4b8947f854046e1ec626ac1d23c">GFt::Widget::RadioBox::RadioBox</a></div><div class="ttdeci">RadioBox(GFt::RadioManager &amp;manager, const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:50</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_a93dd5fea104e6766933e6fa186a8d9fb"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#a93dd5fea104e6766933e6fa186a8d9fb">GFt::Widget::RadioBox::onChecked</a></div><div class="ttdeci">Signal&lt; void &gt; onChecked</div><div class="ttdoc">单选框被选中时触发</div><div class="ttdef"><b>定义</b> RadioBox.h:71</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_ab7c66d9d309cda471c4a5f0d950c7fc2"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#ab7c66d9d309cda471c4a5f0d950c7fc2">GFt::Widget::RadioBox::normalBrush</a></div><div class="ttdeci">BrushSet &amp; normalBrush()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:71</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_abbcc3b7b5bac9dbf990f131e9f89fb4c"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#abbcc3b7b5bac9dbf990f131e9f89fb4c">GFt::Widget::RadioBox::hoverBrush</a></div><div class="ttdeci">BrushSet &amp; hoverBrush()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:70</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_ac5ccd6ea3f56b97bd65b1337123dd75c"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#ac5ccd6ea3f56b97bd65b1337123dd75c">GFt::Widget::RadioBox::selectedBrush</a></div><div class="ttdeci">BrushSet &amp; selectedBrush()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:72</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_aeb8abebe956065748784daf5477b03cf"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#aeb8abebe956065748784daf5477b03cf">GFt::Widget::RadioBox::hoverFont</a></div><div class="ttdeci">Font &amp; hoverFont()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:67</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_aee59c2621d7f726739c4bf37e3fb6752"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#aee59c2621d7f726739c4bf37e3fb6752">GFt::Widget::RadioBox::onCheckChanged</a></div><div class="ttdeci">Signal&lt; bool &gt; onCheckChanged</div><div class="ttdoc">单选框选中状态改变时触发</div><div class="ttdef"><b>定义</b> RadioBox.h:73</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_af20c10fa3eed4227d6cde4853170fce8"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#af20c10fa3eed4227d6cde4853170fce8">GFt::Widget::RadioBox::onMouseButtonPress</a></div><div class="ttdeci">void onMouseButtonPress(MouseButtonPressEvent *e) override</div><div class="ttdoc">此函数用于处理鼠标按钮按下事件</div><div class="ttdef"><b>定义</b> RadioBox.cpp:45</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_radio_box_html_af3f6f2f44a410a766f16859b87daf450"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_radio_box.html#af3f6f2f44a410a766f16859b87daf450">GFt::Widget::RadioBox::normalFont</a></div><div class="ttdeci">Font &amp; normalFont()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> RadioBox.cpp:68</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><a class="el" href="dir_1dd470e1957e4a4967fb3faf7f9eeb8d.html">widget</a></li><li class="navelem"><b>RadioBox.h</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

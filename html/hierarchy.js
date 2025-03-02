@@ -1,5 +1,19 @@
 var hierarchy =
 [
+    [ "Client< type >", "class_client.html", null ],
+    [ "Client< TCP >", "class_client_3_01_t_c_p_01_4.html", null ],
+    [ "Client< UDP >", "class_client_3_01_u_d_p_01_4.html", null ],
+    [ "Data", "class_data.html", null ],
+    [ "GFt::AnimationAbstract", "class_g_ft_1_1_animation_abstract.html", [
+      [ "GFt::Animation< Type >", "class_g_ft_1_1_animation.html", null ]
+    ] ],
+    [ "GFt::AnimationManager", "class_g_ft_1_1_animation_manager.html", null ],
+    [ "GFt::AnimationParams< Type >", "struct_g_ft_1_1_animation_params.html", null ],
+    [ "GFt::AnimationState", "class_g_ft_1_1_animation_state.html", [
+      [ "GFt::AnimationPause", "class_g_ft_1_1_animation_pause.html", null ],
+      [ "GFt::AnimationPlay", "class_g_ft_1_1_animation_play.html", null ],
+      [ "GFt::AnimationStop", "class_g_ft_1_1_animation_stop.html", null ]
+    ] ],
     [ "GFt::Application", "class_g_ft_1_1_application.html", null ],
     [ "GFt::Bezier< T >", "class_g_ft_1_1_bezier.html", null ],
     [ "GFt::BlockFocusManager", "class_g_ft_1_1_block_focus_manager.html", null ],
@@ -34,11 +48,19 @@ var hierarchy =
         [ "GFt::GridLayout", "class_g_ft_1_1_grid_layout.html", null ],
         [ "GFt::RowLayout", "class_g_ft_1_1_row_layout.html", null ],
         [ "GFt::Widget::Button", "class_g_ft_1_1_widget_1_1_button.html", null ],
+        [ "GFt::Widget::CheckBox", "class_g_ft_1_1_widget_1_1_check_box.html", null ],
+        [ "GFt::Widget::HScrollBar", "class_g_ft_1_1_widget_1_1_h_scroll_bar.html", null ],
+        [ "GFt::Widget::HSlider", "class_g_ft_1_1_widget_1_1_h_slider.html", null ],
         [ "GFt::Widget::Label", "class_g_ft_1_1_widget_1_1_label.html", null ],
         [ "GFt::Widget::MainWindow", "class_g_ft_1_1_widget_1_1_main_window.html", null ],
+        [ "GFt::Widget::RadioBox", "class_g_ft_1_1_widget_1_1_radio_box.html", null ],
+        [ "GFt::Widget::VScrollBar", "class_g_ft_1_1_widget_1_1_v_scroll_bar.html", null ],
+        [ "GFt::Widget::VSlider", "class_g_ft_1_1_widget_1_1_v_slider.html", null ],
         [ "GFt::Window", "class_g_ft_1_1_window.html", null ]
       ] ]
     ] ],
+    [ "GFt::json::Format", "struct_g_ft_1_1json_1_1_format.html", null ],
+    [ "GFt::json::Value< CharT >", "class_g_ft_1_1json_1_1_value.html", null ],
     [ "GFt::KeyPressEventMonitor", "class_g_ft_1_1_key_press_event_monitor.html", [
       [ "GFt::KeyboardEventMonitor", "class_g_ft_1_1_keyboard_event_monitor.html", [
         [ "GFt::EventMonitor", "class_g_ft_1_1_event_monitor.html", [
@@ -75,16 +97,21 @@ var hierarchy =
     [ "GFt::Path", "class_g_ft_1_1_path.html", null ],
     [ "GFt::PenSet", "class_g_ft_1_1_pen_set.html", null ],
     [ "GFt::PixelMap", "class_g_ft_1_1_pixel_map.html", null ],
+    [ "GFt::PlanEvent", "class_g_ft_1_1_plan_event.html", null ],
     [ "GFt::Point< T >", "class_g_ft_1_1_point.html", null ],
+    [ "GFt::Point< float >", "class_g_ft_1_1_point.html", null ],
     [ "GFt::Point< int >", "class_g_ft_1_1_point.html", null ],
     [ "GFt::Polygon< T >", "class_g_ft_1_1_polygon.html", null ],
+    [ "GFt::RadioManager", "class_g_ft_1_1_radio_manager.html", null ],
     [ "GFt::Rect< T >", "class_g_ft_1_1_rect.html", null ],
     [ "GFt::Rect< int >", "class_g_ft_1_1_rect.html", null ],
     [ "GFt::RoundRect< T >", "class_g_ft_1_1_round_rect.html", null ],
     [ "GFt::Signal< Args >", "class_g_ft_1_1_signal.html", null ],
+    [ "GFt::Signal< AType, AType >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< bool >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< const GFt::Point & >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< const GFt::Size & >", "class_g_ft_1_1_signal.html", null ],
+    [ "GFt::Signal< float >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< GFt::Block * >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< GFt::Window * >", "class_g_ft_1_1_signal.html", null ],
     [ "GFt::Signal< void >", "class_g_ft_1_1_signal_3_01void_01_4.html", null ],
@@ -97,10 +124,18 @@ var hierarchy =
     [ "GFt::Texture", "class_g_ft_1_1_texture.html", null ],
     [ "GFt::UI::XBlock", "struct_g_ft_1_1_u_i_1_1_x_block.html", null ],
     [ "GFt::UI::XButton", "struct_g_ft_1_1_u_i_1_1_x_button.html", null ],
+    [ "GFt::UI::XCheckBox", "struct_g_ft_1_1_u_i_1_1_x_check_box.html", null ],
     [ "GFt::UI::XColumnLayout", "struct_g_ft_1_1_u_i_1_1_x_column_layout.html", null ],
     [ "GFt::UI::XGridLayout", "struct_g_ft_1_1_u_i_1_1_x_grid_layout.html", null ],
+    [ "GFt::UI::XHSlider", "struct_g_ft_1_1_u_i_1_1_x_h_slider.html", null ],
     [ "GFt::UI::XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", null ],
     [ "GFt::UI::XMainWindow", "struct_g_ft_1_1_u_i_1_1_x_main_window.html", null ],
+    [ "GFt::UI::XRadioBox", "struct_g_ft_1_1_u_i_1_1_x_radio_box.html", null ],
     [ "GFt::UI::XRowLayout", "struct_g_ft_1_1_u_i_1_1_x_row_layout.html", null ],
-    [ "GFt::UI::XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", null ]
+    [ "GFt::UI::XVSlider", "struct_g_ft_1_1_u_i_1_1_x_v_slider.html", null ],
+    [ "GFt::UI::XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", null ],
+    [ "Server< type >", "class_server.html", null ],
+    [ "Server< TCP >", "class_server_3_01_t_c_p_01_4.html", null ],
+    [ "Server< UDP >", "class_server_3_01_u_d_p_01_4.html", null ],
+    [ "SocketInit", "struct_socket_init.html", null ]
 ];

@@ -17,7 +17,7 @@ var group___xE5_x9F_xBA_xE7_xA1_x80_xE7_xB1_xBB_xE5_x9E_x8B =
       [ "operator<<", "class_g_ft_1_1_color.html#a7540a81377bda75ff73af99fa3747540", null ]
     ] ],
     [ "GFt::Font", "class_g_ft_1_1_font.html", [
-      [ "Font", "class_g_ft_1_1_font.html#afe1a7fc62b07fcc9a9dfde2269ba29a7", null ],
+      [ "Font", "class_g_ft_1_1_font.html#a39ee66dcae628b24a43e164870e6c73f", null ],
       [ "Font", "class_g_ft_1_1_font.html#a8a14dddfacac79666c4339c82580df7a", null ],
       [ "Font", "class_g_ft_1_1_font.html#af8d359de9f868d1ed6b3bf9c38d288dd", null ],
       [ "~Font", "class_g_ft_1_1_font.html#a7173647fd1c25a40b0186d83eda0be27", null ],

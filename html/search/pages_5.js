@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['教程_0',['GraceFt 教程',['../md_doc_2def_2edu.html',1,'']]]
+  ['图形应用程序框架_0',['GraceFt - C++图形应用程序框架',['../index.html',1,'']]]
 ];

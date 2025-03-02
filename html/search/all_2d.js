@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['文本枚举_0',['文本枚举',['../group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html',1,'']]],
-  ['文档_1',['文档',['../index.html#autotoc_md20',1,'']]]
+  ['按键枚举_0',['按键枚举',['../group___xE6_x8C_x89_xE9_x94_xAE_xE6_x9E_x9A_xE4_xB8_xBE.html',1,'']]]
 ];

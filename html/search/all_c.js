@@ -14,8 +14,11 @@ var searchData=
   ['leftwin_11',['LeftWin',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a85b75b41a657d649fb01b7f4e8730ce8',1,'GFt']]],
   ['light_12',['Light',['../group___xE5_xAD_x97_xE4_xBD_x93_xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf1ae0423f6298c625d9d2c68f5725175a9914a0ce04a7b7b6a8e39bec55064b82',1,'GFt']]],
   ['line_13',['Line',['../class_g_ft_1_1_line.html',1,'GFt::Line&lt; T &gt;'],['../class_g_ft_1_1_line.html#a9328f49acee06d4010da499e974f745e',1,'GFt::Line::Line()'],['../group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ggab5a34da70648f89842d9eea850b9fedfa4803e6b9e63dabf04de980788d6a13c4',1,'GFt::Line']]],
-  ['lineargradient_14',['LinearGradient',['../group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ggaead79709b6eced8a1f3c38677ddc8224a2a7a5ee931feedab83c9c05a3a707a71',1,'GFt']]],
-  ['linestyle_15',['LineStyle',['../group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ga64eeba15fcf5e2f8b58f489720c5d305',1,'GFt']]],
-  ['loadfromfile_16',['loadFromFile',['../class_g_ft_1_1_pixel_map.html#aaf68a9d011fec92b7cb2f6e1985839d9',1,'GFt::PixelMap']]],
-  ['loadfromwindow_17',['loadFromWindow',['../class_g_ft_1_1_pixel_map.html#a7f8361f9760503921fc8aefb07c128f5',1,'GFt::PixelMap']]]
+  ['linear_14',['linear',['../namespace_g_ft_1_1_trans_funcs.html#a4c79add5092fdf0a110e6994824897d7',1,'GFt::TransFuncs']]],
+  ['lineargradient_15',['LinearGradient',['../group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ggaead79709b6eced8a1f3c38677ddc8224a2a7a5ee931feedab83c9c05a3a707a71',1,'GFt']]],
+  ['linestyle_16',['LineStyle',['../group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ga64eeba15fcf5e2f8b58f489720c5d305',1,'GFt']]],
+  ['listen_17',['listen',['../class_server_3_01_t_c_p_01_4.html#a1d478d6cd20445223c800d0787a88b6c',1,'Server&lt; TCP &gt;']]],
+  ['loadfromfile_18',['loadFromFile',['../class_g_ft_1_1_pixel_map.html#aaf68a9d011fec92b7cb2f6e1985839d9',1,'GFt::PixelMap']]],
+  ['loadfromwindow_19',['loadFromWindow',['../class_g_ft_1_1_pixel_map.html#a7f8361f9760503921fc8aefb07c128f5',1,'GFt::PixelMap']]],
+  ['localpath_20',['localPath',['../class_g_ft_1_1_application.html#a5f43dff23d2303fd39bc9420d17fc918',1,'GFt::Application']]]
 ];

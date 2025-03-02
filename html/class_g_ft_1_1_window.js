@@ -9,6 +9,7 @@ var class_g_ft_1_1_window =
     [ "moveTo", "class_g_ft_1_1_window.html#ae2904cc10430a95a016493a259a56041", null ],
     [ "resize", "class_g_ft_1_1_window.html#a30ee1e758ed030be2e6376124f180ef4", null ],
     [ "restore", "class_g_ft_1_1_window.html#a621750410755b4b4356565ed16f9218e", null ],
+    [ "setAlpha", "class_g_ft_1_1_window.html#a44077ae072308a176fb4ce5c7c61c7cf", null ],
     [ "setAlpha", "class_g_ft_1_1_window.html#aeed6110a6aef274be4c74b56fd41e59a", null ],
     [ "setFrameless", "class_g_ft_1_1_window.html#a881464029a1197e92193e9a6cbd895a0", null ],
     [ "setTitle", "class_g_ft_1_1_window.html#a35f50283a9e1dbe00cf8274f986f9119", null ],

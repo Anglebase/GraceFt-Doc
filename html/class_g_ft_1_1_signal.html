@@ -33,7 +33,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
    </div>
    <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
   </td>
@@ -107,7 +107,7 @@ $(function(){initNavTree('class_g_ft_1_1_signal.html',''); initResizable(true); 
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="class_g_ft_1_1_signal-members.html">所有成员列表</a>  </div>
-  <div class="headertitle"><div class="title">GFt::Signal&lt; Args &gt; 模板类 参考<div class="ingroups"><a class="el" href="group___xE5_x9F_xBA_xE7_xA1_x80_xE8_xAE_xBE_xE6_x96_xBD_xE5_xBA_x93.html">基础设施库</a> &raquo; <a class="el" href="group___xE7_xB3_x96_xE8_xA1_xA3_xE5_xB7_xA5_xE5_x85_xB7.html">糖衣工具</a></div></div></div>
+  <div class="headertitle"><div class="title">GFt::Signal&lt; Args &gt; 模板类 参考<div class="ingroups"><a class="el" href="group___xE5_xB7_xA5_xE5_x85_xB7_xE9_x9B_x86.html">工具集</a> &raquo; <a class="el" href="group___xE7_xB3_x96_xE8_xA1_xA3_xE5_xB7_xA5_xE5_x85_xB7.html">糖衣工具</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,10 +123,11 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:aae4ce8bf87cc2e87252a2f1b4a21ed7b" id="r_aae4ce8bf87cc2e87252a2f1b4a21ed7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4ce8bf87cc2e87252a2f1b4a21ed7b">connect</a> (const Slot &amp;slot)</td></tr>
 <tr class="memdesc:aae4ce8bf87cc2e87252a2f1b4a21ed7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接槽函数  <br /></td></tr>
 <tr class="separator:aae4ce8bf87cc2e87252a2f1b4a21ed7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074edc072bc0df3918bf406bc251923a" id="r_a074edc072bc0df3918bf406bc251923a"><td class="memTemplParams" colspan="2">template&lt;typename Object &gt; </td></tr>
-<tr class="memitem:a074edc072bc0df3918bf406bc251923a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a074edc072bc0df3918bf406bc251923a">connect</a> (Object *object, void(Object::*method)(Args...))</td></tr>
-<tr class="memdesc:a074edc072bc0df3918bf406bc251923a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员函数作为槽函数连接  <br /></td></tr>
-<tr class="separator:a074edc072bc0df3918bf406bc251923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f31cf1688758ca84c8c147112a14f2" id="r_a04f31cf1688758ca84c8c147112a14f2"><td class="memTemplParams" colspan="2">template&lt;typename Derived , typename Base &gt; <br />
+requires std::derived_from&lt;Derived, Base&gt;</td></tr>
+<tr class="memitem:a04f31cf1688758ca84c8c147112a14f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a04f31cf1688758ca84c8c147112a14f2">connect</a> (Derived *object, void(Base::*method)(Args...))</td></tr>
+<tr class="memdesc:a04f31cf1688758ca84c8c147112a14f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">将成员函数作为槽函数连接  <br /></td></tr>
+<tr class="separator:a04f31cf1688758ca84c8c147112a14f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad43e8a759c52d8b0f3e162b845aeafa0" id="r_ad43e8a759c52d8b0f3e162b845aeafa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43e8a759c52d8b0f3e162b845aeafa0">disconnect</a> (<a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt; id)</td></tr>
 <tr class="memdesc:ad43e8a759c52d8b0f3e162b845aeafa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开槽函数  <br /></td></tr>
 <tr class="separator:ad43e8a759c52d8b0f3e162b845aeafa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +142,7 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
 class GFt::Signal&lt; Args &gt;</div><p>信号-槽机制支持 </p>
 <p>支持任意数量的槽函数，支持任意数量的参数，支持任意类型的参数</p>
-<p>此类是线程安全的，且它是 基础设施库 =&gt; 糖衣工具 的一部分 </p><dl class="tparams"><dt>模板参数</dt><dd>
+<p>此类是线程安全的，这意味着你可以在另一线程执行槽函数时添加或移除槽函数，但不保证槽函数运行的线程安全性 </p><dl class="tparams"><dt>模板参数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Args</td><td>信号参数类型 </td></tr>
   </table>
@@ -216,15 +217,16 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a074edc072bc0df3918bf406bc251923a" name="a074edc072bc0df3918bf406bc251923a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a074edc072bc0df3918bf406bc251923a">&#9670;&#160;</a></span>connect() <span class="overload">[2/2]</span></h2>
+<a id="a04f31cf1688758ca84c8c147112a14f2" name="a04f31cf1688758ca84c8c147112a14f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f31cf1688758ca84c8c147112a14f2">&#9670;&#160;</a></span>connect() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename... Args&gt; </div>
 <div class="memtemplate">
-template&lt;typename Object &gt; </div>
+template&lt;typename Derived , typename Base &gt; <br />
+requires std::derived_from&lt;Derived, Base&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -232,12 +234,12 @@ template&lt;typename Object &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespace_g_ft.html#ae27f15d5da089c5645e8ef84a1eadab4">SlotId</a>&lt; Args... &gt; <a class="el" href="class_g_ft_1_1_signal.html">GFt::Signal</a>&lt; Args &gt;::connect </td>
           <td>(</td>
-          <td class="paramtype">Object *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+          <td class="paramtype">Derived *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(Object::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(Args...)&#160;)</td>
+          <td class="paramtype">void(Base::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(Args...)&#160;)</td>
         </tr>
       </table>
   </td>
@@ -250,10 +252,12 @@ template&lt;typename Object &gt; </div>
 <p>将成员函数作为槽函数连接 </p>
 <dl class="tparams"><dt>模板参数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Object</td><td>成员函数所在类的类型 </td></tr>
+    <tr><td class="paramname">Derived</td><td>对象类类型 </td></tr>
+    <tr><td class="paramname">Base</td><td>成员函数所在类类型 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>注解</dt><dd>要求 Derived 必须是 Base 的派生类(子类)或 Base 本身 </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>成员函数所在类的实例 </td></tr>
@@ -370,7 +374,7 @@ template&lt;typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
-<p>效果同 emit(Args&amp;&amp;... args) </p><dl class="section see"><dt>参见</dt><dd>emit(Args&amp;&amp;... args) </dd></dl>
+<p>效果同 <a class="el" href="#a9d9f0296f4d0cc7ad8e97de077be6a61" title="发送信号">emit()</a> </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="#a9d9f0296f4d0cc7ad8e97de077be6a61" title="发送信号">emit()</a> </dd></dl>
 
 </div>
 </div>

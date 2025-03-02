@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/Animation.hpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_animation_8hpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Animation.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;GraceFt/Signal.hpp&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">   16</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a> = std::chrono::time_point&lt;std::chrono::steady_clock&gt;;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">   17</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">TransFunc</a> = std::function&lt;float(<span class="keywordtype">float</span>)&gt;;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="concept_g_ft_1_1_animatable.html">   23</a></span>    <span class="keyword">concept </span><a class="code hl_concept" href="concept_g_ft_1_1_animatable.html">Animatable</a> = <span class="keyword">requires</span>(Type v) { { v + (v - v) * 1.f } -&gt; std::convertible_to&lt;Type&gt;; };</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespace_g_ft.html#a8f58d699d41c53347fdb4b760a9fd4c6">   26</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_g_ft.html#a8f58d699d41c53347fdb4b760a9fd4c6">Setter</a> = std::function&lt;void(<span class="keyword">const</span> Type&amp;)&gt;;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespace_g_ft.html#ada811bab55b5bf90b39b54530ae379b7">   28</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_g_ft.html#ada811bab55b5bf90b39b54530ae379b7">Getter</a> = std::function&lt;Type()&gt;;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespace_g_ft.html#a8e34902299da209831a38596420c6e2f">   30</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespace_g_ft.html#a8e34902299da209831a38596420c6e2f">Initial</a> = std::variant&lt;Type, Getter&lt;Type&gt;&gt;;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#gaf1c71398d2e84891a67426221f326994">   34</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#gaf1c71398d2e84891a67426221f326994">AnimationStateType</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_enumvalue" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#ggaf1c71398d2e84891a67426221f326994a11a755d598c0c417f9a36758c3da7481">Stop</a>,   </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_enumvalue" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#ggaf1c71398d2e84891a67426221f326994ade3c731be5633838089a07179d301d7b">Play</a>,   </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_enumvalue" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#ggaf1c71398d2e84891a67426221f326994a105b296a83f9c105355403f3332af50f">Pause</a>   </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    };</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">class </span>AnimationAbstract;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_state.html">   44</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_state.html">AnimationState</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_state.html#a00e37a715d6164bede61d31730388316">   46</a></span>        <a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* <a class="code hl_variable" href="class_g_ft_1_1_animation_state.html#a00e37a715d6164bede61d31730388316">owner_</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="class_g_ft_1_1_animation_state.html#abe41a2c7a553b3a8704b2f648d3f3883">AnimationState</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* owner);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_state.html#a0ce0efe83fb7a5554953936c8a4c892a">   50</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_state.html#a0ce0efe83fb7a5554953936c8a4c892a">update</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now) = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    };</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html">   55</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a00b7f00c1e25e81e518e5faa334dbe66">   56</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#afd527075e4853f74e75c10c330431223">   57</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_state.html">AnimationState</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a1049e6c950ee3429d92331947a21fef7">   58</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_stop.html">AnimationStop</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a6656587ada641adf0aa984f8ea56bb45">   59</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_play.html">AnimationPlay</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#aa0945f6b8466005b8fcedc031c2625d8">   60</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_pause.html">AnimationPause</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#af925470ab28c8ba5f563eacf8cf42636">   61</a></span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt; <span class="keyword">requires</span> <a class="code hl_concept" href="concept_g_ft_1_1_animatable.html">Animatable&lt;Type&gt;</a> <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation.html">Animation</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a> start_time_;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        std::chrono::milliseconds finished_;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">float</span> duration_ms_;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_typedef" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">TransFunc</a> trans_func_;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_class" href="class_g_ft_1_1_animation_state.html">AnimationState</a>* state_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a36407f5e4a6c4245d09d2a49520b28c3">   70</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a36407f5e4a6c4245d09d2a49520b28c3">hadSetPlay</a>() = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#aabda3b2cd4f01abc05af76a5285efe9c">   71</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#aabda3b2cd4f01abc05af76a5285efe9c">playingUpdate</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now) = 0;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a37435f409960e8eef0cc7b49fa7cc7fb">AnimationAbstract</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; start_time, <span class="keywordtype">float</span> ms, <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">TransFunc</a>&amp; trans_func);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#ae29283107d73869b0a4b7226f36cbb0c">~AnimationAbstract</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#ad5ef7cbc1c03063096a43da6e1a1a3b7">update</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a3d6b905443c7b20478517f09ce95e5b7">setStop</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a06853a0cd3d9af9dba3960353b067f63">setPlay</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a077a7dcf7a4b8455c972091f540127f1">setPause</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a9bd42e75c4a425c1b9ffd6cb8da5711a">isPlaying</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a09444c78d06b292152a7eb95cf54972f">isPaused</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a844349cc21291e430dd8a1803930c7a9">isStopped</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a1ae59caacae5e0f02c5862940415a821">setTransFunc</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">TransFunc</a>&amp; trans_func);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a524511799100924d19553e9513c949c7">setDuration</a>(<span class="keywordtype">float</span> ms);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">TransFunc</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a019f3232b0d16bb8b3b11a162b87a05b">getTransFunc</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a213ab1045896cccc95d4f37645d8f7b4">getDuration</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a7cefed8648714c8805ea5b974dd3ad91">  103</a></span>        <span class="keyword">using </span><a class="code hl_enumeration" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#gaf1c71398d2e84891a67426221f326994">AType</a> = <a class="code hl_enumeration" href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#gaf1c71398d2e84891a67426221f326994">AnimationStateType</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#aeb712460240af7869aa122590e3d414c">  104</a></span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;AType, AType&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_animation_abstract.html#aeb712460240af7869aa122590e3d414c">onStateChanged</a>;    </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a82bd78df12a4064dd3525d6eaf3e852a">  105</a></span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;void&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_animation_abstract.html#a82bd78df12a4064dd3525d6eaf3e852a">onFinished</a>;                </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_abstract.html#a3746b086802833cb26d39ce3f2319d99">  106</a></span>        <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;void&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_animation_abstract.html#a3746b086802833cb26d39ce3f2319d99">onUpdated</a>;                 </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="};">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_stop.html">  111</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_stop.html">AnimationStop</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_animation_state.html">AnimationState</a> {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <a class="code hl_function" href="class_g_ft_1_1_animation_stop.html#a55851dc0902a3e07b2ccc5246b6f2f85">AnimationStop</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* owner);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_stop.html#a7b7b8ef7e91d165162f16499359fc4ee">update</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    };</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="{" data-end="};">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_play.html">  119</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_play.html">AnimationPlay</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_animation_state.html">AnimationState</a> {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <a class="code hl_function" href="class_g_ft_1_1_animation_play.html#a31ded274a6e4308226ec884800b3f639">AnimationPlay</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* owner);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_play.html#ae52dfcac65dd2e40fc2045ad4aa85930">update</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    };</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="};">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_pause.html">  127</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_pause.html">AnimationPause</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_animation_state.html">AnimationState</a> {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_function" href="class_g_ft_1_1_animation_pause.html#a9c67e40e248e6afd61972acfacb564bc">AnimationPause</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* owner);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_pause.html#af8c589ad6e0e921da0f3f72ac548a018">update</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    };</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keyword">requires</span> <a class="code hl_concept" href="concept_g_ft_1_1_animatable.html">Animatable&lt;Type&gt;</a></div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="};">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="struct_g_ft_1_1_animation_params.html">  137</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_g_ft_1_1_animation_params.html">AnimationParams</a> {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="struct_g_ft_1_1_animation_params.html#a609730466fcade9c0ed843c8a4ca0ed8">  138</a></span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#a8f58d699d41c53347fdb4b760a9fd4c6">Setter&lt;Type&gt;</a>&amp; <a class="code hl_variable" href="struct_g_ft_1_1_animation_params.html#a609730466fcade9c0ed843c8a4ca0ed8">setter</a>;     </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="struct_g_ft_1_1_animation_params.html#ae98abf0ab56009d7fbd95de7f1f28843">  139</a></span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#a8e34902299da209831a38596420c6e2f">Initial&lt;Type&gt;</a>&amp; <a class="code hl_variable" href="struct_g_ft_1_1_animation_params.html#ae98abf0ab56009d7fbd95de7f1f28843">initial</a>;   </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="struct_g_ft_1_1_animation_params.html#a10b281e2b59ee8239f22999205370ebb">  140</a></span>        <span class="keyword">const</span> Type&amp; <a class="code hl_variable" href="struct_g_ft_1_1_animation_params.html#a10b281e2b59ee8239f22999205370ebb">target</a>;             </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="struct_g_ft_1_1_animation_params.html#aa3ffa44f560f092cb4a685a4821ba976">  141</a></span>        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; <a class="code hl_variable" href="struct_g_ft_1_1_animation_params.html#aa3ffa44f560f092cb4a685a4821ba976">duration</a>;          </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="struct_g_ft_1_1_animation_params.html#a1b8d597ac6ff45269ecb1b738696fdd3">  142</a></span>        <a class="code hl_typedef" href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">TransFunc</a> <a class="code hl_variable" href="struct_g_ft_1_1_animation_params.html#a1b8d597ac6ff45269ecb1b738696fdd3">trans_func</a>;           </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    };</div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keyword">requires</span> <a class="code hl_concept" href="concept_g_ft_1_1_animatable.html">Animatable&lt;Type&gt;</a></div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="};">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation.html">  150</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation.html">Animation</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a> {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        Type start_value_;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        Type end_value_;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <a class="code hl_typedef" href="namespace_g_ft.html#ada811bab55b5bf90b39b54530ae379b7">Getter&lt;Type&gt;</a> getter_;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <a class="code hl_typedef" href="namespace_g_ft.html#a8f58d699d41c53347fdb4b760a9fd4c6">Setter&lt;Type&gt;</a> setter_;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keyword">protected</span>:</div>
+<div class="foldopen" id="foldopen00157" data-start="{" data-end="}">
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation.html#ae143712873c6d2b47901efab9cdfcc3c">  157</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation.html#ae143712873c6d2b47901efab9cdfcc3c">hadSetPlay</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">if</span> (getter_)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                start_value_ = getter_();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation.html#a3ea1645107ad240ace296325ef51734c">  161</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation.html#a3ea1645107ad240ace296325ef51734c">playingUpdate</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keyword">using namespace </span>std::chrono;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            finished_ = duration_cast&lt;milliseconds&gt;(now - start_time_);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keyword">auto</span> elapsed_ns = duration_cast&lt;nanoseconds&gt;(finished_).count();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keyword">auto</span> progress = elapsed_ns * 1e-6f / duration_ms_;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="keywordflow">if</span> (progress &gt; 1.f) {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                <a class="code hl_function" href="class_g_ft_1_1_animation_abstract.html#a3d6b905443c7b20478517f09ce95e5b7">setStop</a>();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <a class="code hl_variable" href="class_g_ft_1_1_animation_abstract.html#a82bd78df12a4064dd3525d6eaf3e852a">onFinished</a>();</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                start_time_ = now;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            setter_(start_value_ + (end_value_ - start_value_) * trans_func_(progress));</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <a class="code hl_variable" href="class_g_ft_1_1_animation_abstract.html#a3746b086802833cb26d39ce3f2319d99">onUpdated</a>();</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
+</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation.html#a384aeab8e6cb2be4de2af7962f0a721b">  178</a></span>        <a class="code hl_function" href="class_g_ft_1_1_animation.html#a384aeab8e6cb2be4de2af7962f0a721b">Animation</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_g_ft_1_1_animation_params.html">AnimationParams&lt;Type&gt;</a>&amp; params)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            : setter_(params.setter), end_value_(params.target),</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>(<a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>(), params.duration, params.trans_func) {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <a class="code hl_function" href="class_g_ft_1_1_animation.html#a7f6ea06f065475cd954f2ed5947f71bf">setInitial</a>(params.<a class="code hl_variable" href="struct_g_ft_1_1_animation_params.html#ae98abf0ab56009d7fbd95de7f1f28843">initial</a>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00187" data-start="{" data-end="}">
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation.html#a7f6ea06f065475cd954f2ed5947f71bf">  187</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation.html#a7f6ea06f065475cd954f2ed5947f71bf">setInitial</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#a8e34902299da209831a38596420c6e2f">Initial&lt;Type&gt;</a>&amp; initial) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keyword">auto</span> ptr = std::get_if&lt;Type&gt;(&amp;initial);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            ptr ? start_value_ = *ptr, getter_ = <a class="code hl_typedef" href="namespace_g_ft.html#ada811bab55b5bf90b39b54530ae379b7">Getter&lt;Type&gt;</a>()</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                : getter_ = std::get&lt;Getter&lt;Type&gt;&gt;(initial);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
+</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation.html#ad3062547a5c63f4410449ae67eca293a">  194</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation.html#ad3062547a5c63f4410449ae67eca293a">setTarget</a>(<span class="keyword">const</span> Type&amp; target) { end_value_ = target; }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    };</div>
+</div>
+<div class="foldopen" id="foldopen00199" data-start="{" data-end="};">
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_animation_manager.html">  199</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a> {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        std::list&lt;AnimationAbstract*&gt; animations_;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        std::mutex mutex_;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp; operator=(<a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_manager.html#aad405cce02c3c259b154464251fcbb46">registerAnimation</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* animation);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_manager.html#ae87acd842e597c292de7d773a2648c79">unregisterAnimation</a>(<a class="code hl_class" href="class_g_ft_1_1_animation_abstract.html">AnimationAbstract</a>* animation);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_animation_manager.html#a65b5ed0e87319f342577b94a50b30543">updateAll</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">TimePoint</a>&amp; now);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keyword">static</span> <a class="code hl_class" href="class_g_ft_1_1_animation_manager.html">AnimationManager</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_animation_manager.html#a10ec57f4005a57c348af157e992ddfc7">getInstance</a>();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    };</div>
+</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html">  230</a></span>    <span class="keyword">namespace </span>TransFuncs {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html#a4c79add5092fdf0a110e6994824897d7">  232</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a4c79add5092fdf0a110e6994824897d7">linear</a>(<span class="keywordtype">float</span> x) { <span class="keywordflow">return</span> x; }</div>
+<div class="foldopen" id="foldopen00236" data-start="{" data-end="}">
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html#a799fa7ee82cc2b345ab3fdf12add6cbe">  236</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a799fa7ee82cc2b345ab3fdf12add6cbe">power</a>(<span class="keywordtype">float</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a799fa7ee82cc2b345ab3fdf12add6cbe">power</a>) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keywordflow">return</span> [<a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a799fa7ee82cc2b345ab3fdf12add6cbe">power</a>](<span class="keywordtype">float</span> k)-&gt;<span class="keywordtype">float</span> {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                return ::std::pow(k, <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a799fa7ee82cc2b345ab3fdf12add6cbe">power</a>);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                };</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        }</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html#ae188c97f9937d15aeb4356d22e652f2a">  242</a></span>        <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#ae188c97f9937d15aeb4356d22e652f2a">bezier</a>(<span class="keywordtype">float</span> x) { <span class="keywordflow">return</span> 3.f * x * x - 2.f * x * x * x; }</div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html#a19020164b8b8b118690a45a8dcfee16f">  244</a></span>        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a19020164b8b8b118690a45a8dcfee16f">smoothInOut</a>(<span class="keywordtype">float</span> x) {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keyword">auto</span> tao = 2 * 3.14159265358979323846;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keyword">auto</span> y = x * tao;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">return</span> (y - ::std::sin(y)) / tao;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00252" data-start="{" data-end="}">
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html#a9abaed321ce3c2625c4079a02fda03ce">  252</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a9abaed321ce3c2625c4079a02fda03ce">overDamped</a>(<span class="keywordtype">float</span> damping) {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="keywordflow">return</span> [damping](<span class="keywordtype">float</span> x)-&gt; <span class="keywordtype">float</span> {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                <span class="keywordflow">return</span> (1.f - ::std::exp(-damping * x * x)) * (1 / (1 - ::std::exp(-damping)));</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                };</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="}">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_trans_funcs.html#a1959bc859975f3c3f1640fd93ea2e272">  260</a></span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespace_g_ft_1_1_trans_funcs.html#a1959bc859975f3c3f1640fd93ea2e272">underDamped</a>(<span class="keywordtype">float</span> damping) {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">return</span> [damping](<span class="keywordtype">float</span> x)-&gt; <span class="keywordtype">float</span> { <span class="keywordflow">return</span> 1.f - (1.f - x) * ::std::cos(x * damping); };</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html">GFt::AnimationAbstract</a></div><div class="ttdoc">动画抽象基类</div><div class="ttdef"><b>定义</b> Animation.hpp:55</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a019f3232b0d16bb8b3b11a162b87a05b"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a019f3232b0d16bb8b3b11a162b87a05b">GFt::AnimationAbstract::getTransFunc</a></div><div class="ttdeci">const TransFunc &amp; getTransFunc() const</div><div class="ttdoc">获取动画的过渡变换函数</div><div class="ttdef"><b>定义</b> Animation.cpp:60</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a06853a0cd3d9af9dba3960353b067f63"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a06853a0cd3d9af9dba3960353b067f63">GFt::AnimationAbstract::setPlay</a></div><div class="ttdeci">void setPlay()</div><div class="ttdoc">设置动画状态为播放</div><div class="ttdef"><b>定义</b> Animation.cpp:30</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a077a7dcf7a4b8455c972091f540127f1"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a077a7dcf7a4b8455c972091f540127f1">GFt::AnimationAbstract::setPause</a></div><div class="ttdeci">void setPause()</div><div class="ttdoc">设置动画状态为暂停</div><div class="ttdef"><b>定义</b> Animation.cpp:42</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a09444c78d06b292152a7eb95cf54972f"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a09444c78d06b292152a7eb95cf54972f">GFt::AnimationAbstract::isPaused</a></div><div class="ttdeci">bool isPaused() const</div><div class="ttdoc">判断动画是否处于暂停状态</div><div class="ttdef"><b>定义</b> Animation.cpp:52</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a1ae59caacae5e0f02c5862940415a821"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a1ae59caacae5e0f02c5862940415a821">GFt::AnimationAbstract::setTransFunc</a></div><div class="ttdeci">void setTransFunc(const TransFunc &amp;trans_func)</div><div class="ttdoc">设置动画过渡变换函数</div><div class="ttdef"><b>定义</b> Animation.cpp:58</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a213ab1045896cccc95d4f37645d8f7b4"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a213ab1045896cccc95d4f37645d8f7b4">GFt::AnimationAbstract::getDuration</a></div><div class="ttdeci">float getDuration() const</div><div class="ttdoc">获取动画的持续时间</div><div class="ttdef"><b>定义</b> Animation.cpp:61</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a36407f5e4a6c4245d09d2a49520b28c3"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a36407f5e4a6c4245d09d2a49520b28c3">GFt::AnimationAbstract::hadSetPlay</a></div><div class="ttdeci">virtual void hadSetPlay()=0</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a37435f409960e8eef0cc7b49fa7cc7fb"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a37435f409960e8eef0cc7b49fa7cc7fb">GFt::AnimationAbstract::AnimationAbstract</a></div><div class="ttdeci">AnimationAbstract(const TimePoint &amp;start_time, float ms, const TransFunc &amp;trans_func)</div><div class="ttdef"><b>定义</b> Animation.cpp:6</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a3746b086802833cb26d39ce3f2319d99"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a3746b086802833cb26d39ce3f2319d99">GFt::AnimationAbstract::onUpdated</a></div><div class="ttdeci">Signal&lt; void &gt; onUpdated</div><div class="ttdoc">动画值更新信号</div><div class="ttdef"><b>定义</b> Animation.hpp:106</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a3d6b905443c7b20478517f09ce95e5b7"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a3d6b905443c7b20478517f09ce95e5b7">GFt::AnimationAbstract::setStop</a></div><div class="ttdeci">void setStop()</div><div class="ttdoc">设置动画状态为停止</div><div class="ttdef"><b>定义</b> Animation.cpp:20</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a524511799100924d19553e9513c949c7"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a524511799100924d19553e9513c949c7">GFt::AnimationAbstract::setDuration</a></div><div class="ttdeci">void setDuration(float ms)</div><div class="ttdoc">设置动画持续时间</div><div class="ttdef"><b>定义</b> Animation.cpp:59</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a82bd78df12a4064dd3525d6eaf3e852a"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a82bd78df12a4064dd3525d6eaf3e852a">GFt::AnimationAbstract::onFinished</a></div><div class="ttdeci">Signal&lt; void &gt; onFinished</div><div class="ttdoc">动画进度改变信号</div><div class="ttdef"><b>定义</b> Animation.hpp:105</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a844349cc21291e430dd8a1803930c7a9"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a844349cc21291e430dd8a1803930c7a9">GFt::AnimationAbstract::isStopped</a></div><div class="ttdeci">bool isStopped() const</div><div class="ttdoc">判断动画是否处于停止状态</div><div class="ttdef"><b>定义</b> Animation.cpp:55</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_a9bd42e75c4a425c1b9ffd6cb8da5711a"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#a9bd42e75c4a425c1b9ffd6cb8da5711a">GFt::AnimationAbstract::isPlaying</a></div><div class="ttdeci">bool isPlaying() const</div><div class="ttdoc">判断动画是否处于播放状态</div><div class="ttdef"><b>定义</b> Animation.cpp:49</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_aabda3b2cd4f01abc05af76a5285efe9c"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#aabda3b2cd4f01abc05af76a5285efe9c">GFt::AnimationAbstract::playingUpdate</a></div><div class="ttdeci">virtual void playingUpdate(const TimePoint &amp;now)=0</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_ad5ef7cbc1c03063096a43da6e1a1a3b7"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#ad5ef7cbc1c03063096a43da6e1a1a3b7">GFt::AnimationAbstract::update</a></div><div class="ttdeci">void update(const TimePoint &amp;now)</div><div class="ttdef"><b>定义</b> Animation.cpp:18</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_ae29283107d73869b0a4b7226f36cbb0c"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#ae29283107d73869b0a4b7226f36cbb0c">GFt::AnimationAbstract::~AnimationAbstract</a></div><div class="ttdeci">~AnimationAbstract()</div><div class="ttdef"><b>定义</b> Animation.cpp:15</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_abstract_html_aeb712460240af7869aa122590e3d414c"><div class="ttname"><a href="class_g_ft_1_1_animation_abstract.html#aeb712460240af7869aa122590e3d414c">GFt::AnimationAbstract::onStateChanged</a></div><div class="ttdeci">Signal&lt; AType, AType &gt; onStateChanged</div><div class="ttdoc">动画状态改变信号</div><div class="ttdef"><b>定义</b> Animation.hpp:104</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_html"><div class="ttname"><a href="class_g_ft_1_1_animation.html">GFt::Animation</a></div><div class="ttdoc">动画模板类</div><div class="ttdef"><b>定义</b> Animation.hpp:150</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_html_a384aeab8e6cb2be4de2af7962f0a721b"><div class="ttname"><a href="class_g_ft_1_1_animation.html#a384aeab8e6cb2be4de2af7962f0a721b">GFt::Animation::Animation</a></div><div class="ttdeci">Animation(const AnimationParams&lt; Type &gt; &amp;params)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> Animation.hpp:178</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_html_a3ea1645107ad240ace296325ef51734c"><div class="ttname"><a href="class_g_ft_1_1_animation.html#a3ea1645107ad240ace296325ef51734c">GFt::Animation::playingUpdate</a></div><div class="ttdeci">void playingUpdate(const TimePoint &amp;now) override</div><div class="ttdef"><b>定义</b> Animation.hpp:161</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_html_a7f6ea06f065475cd954f2ed5947f71bf"><div class="ttname"><a href="class_g_ft_1_1_animation.html#a7f6ea06f065475cd954f2ed5947f71bf">GFt::Animation::setInitial</a></div><div class="ttdeci">void setInitial(const Initial&lt; Type &gt; &amp;initial)</div><div class="ttdoc">设置动画初始化值</div><div class="ttdef"><b>定义</b> Animation.hpp:187</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_html_ad3062547a5c63f4410449ae67eca293a"><div class="ttname"><a href="class_g_ft_1_1_animation.html#ad3062547a5c63f4410449ae67eca293a">GFt::Animation::setTarget</a></div><div class="ttdeci">void setTarget(const Type &amp;target)</div><div class="ttdoc">设置动画目标值</div><div class="ttdef"><b>定义</b> Animation.hpp:194</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_html_ae143712873c6d2b47901efab9cdfcc3c"><div class="ttname"><a href="class_g_ft_1_1_animation.html#ae143712873c6d2b47901efab9cdfcc3c">GFt::Animation::hadSetPlay</a></div><div class="ttdeci">void hadSetPlay() override</div><div class="ttdef"><b>定义</b> Animation.hpp:157</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_manager_html"><div class="ttname"><a href="class_g_ft_1_1_animation_manager.html">GFt::AnimationManager</a></div><div class="ttdoc">动画管理器</div><div class="ttdef"><b>定义</b> Animation.hpp:199</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_manager_html_a10ec57f4005a57c348af157e992ddfc7"><div class="ttname"><a href="class_g_ft_1_1_animation_manager.html#a10ec57f4005a57c348af157e992ddfc7">GFt::AnimationManager::getInstance</a></div><div class="ttdeci">static AnimationManager &amp; getInstance()</div><div class="ttdoc">获取动画管理器实例</div><div class="ttdef"><b>定义</b> Animation.cpp:84</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_manager_html_a65b5ed0e87319f342577b94a50b30543"><div class="ttname"><a href="class_g_ft_1_1_animation_manager.html#a65b5ed0e87319f342577b94a50b30543">GFt::AnimationManager::updateAll</a></div><div class="ttdeci">void updateAll(const TimePoint &amp;now)</div><div class="ttdoc">更新所有动画对象</div><div class="ttdef"><b>定义</b> Animation.cpp:80</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_manager_html_aad405cce02c3c259b154464251fcbb46"><div class="ttname"><a href="class_g_ft_1_1_animation_manager.html#aad405cce02c3c259b154464251fcbb46">GFt::AnimationManager::registerAnimation</a></div><div class="ttdeci">void registerAnimation(AnimationAbstract *animation)</div><div class="ttdoc">注册动画对象</div><div class="ttdef"><b>定义</b> Animation.cpp:68</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_manager_html_ae87acd842e597c292de7d773a2648c79"><div class="ttname"><a href="class_g_ft_1_1_animation_manager.html#ae87acd842e597c292de7d773a2648c79">GFt::AnimationManager::unregisterAnimation</a></div><div class="ttdeci">void unregisterAnimation(AnimationAbstract *animation)</div><div class="ttdoc">注销动画对象</div><div class="ttdef"><b>定义</b> Animation.cpp:73</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_pause_html"><div class="ttname"><a href="class_g_ft_1_1_animation_pause.html">GFt::AnimationPause</a></div><div class="ttdoc">暂停状态</div><div class="ttdef"><b>定义</b> Animation.hpp:127</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_pause_html_a9c67e40e248e6afd61972acfacb564bc"><div class="ttname"><a href="class_g_ft_1_1_animation_pause.html#a9c67e40e248e6afd61972acfacb564bc">GFt::AnimationPause::AnimationPause</a></div><div class="ttdeci">AnimationPause(AnimationAbstract *owner)</div><div class="ttdef"><b>定义</b> Animation.cpp:66</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_pause_html_af8c589ad6e0e921da0f3f72ac548a018"><div class="ttname"><a href="class_g_ft_1_1_animation_pause.html#af8c589ad6e0e921da0f3f72ac548a018">GFt::AnimationPause::update</a></div><div class="ttdeci">void update(const TimePoint &amp;now) override</div><div class="ttdef"><b>定义</b> Animation.cpp:67</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_play_html"><div class="ttname"><a href="class_g_ft_1_1_animation_play.html">GFt::AnimationPlay</a></div><div class="ttdoc">播放状态</div><div class="ttdef"><b>定义</b> Animation.hpp:119</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_play_html_a31ded274a6e4308226ec884800b3f639"><div class="ttname"><a href="class_g_ft_1_1_animation_play.html#a31ded274a6e4308226ec884800b3f639">GFt::AnimationPlay::AnimationPlay</a></div><div class="ttdeci">AnimationPlay(AnimationAbstract *owner)</div><div class="ttdef"><b>定义</b> Animation.cpp:64</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_play_html_ae52dfcac65dd2e40fc2045ad4aa85930"><div class="ttname"><a href="class_g_ft_1_1_animation_play.html#ae52dfcac65dd2e40fc2045ad4aa85930">GFt::AnimationPlay::update</a></div><div class="ttdeci">void update(const TimePoint &amp;now) override</div><div class="ttdef"><b>定义</b> Animation.cpp:65</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_state_html"><div class="ttname"><a href="class_g_ft_1_1_animation_state.html">GFt::AnimationState</a></div><div class="ttdoc">动画状态基类</div><div class="ttdef"><b>定义</b> Animation.hpp:44</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_state_html_a00e37a715d6164bede61d31730388316"><div class="ttname"><a href="class_g_ft_1_1_animation_state.html#a00e37a715d6164bede61d31730388316">GFt::AnimationState::owner_</a></div><div class="ttdeci">AnimationAbstract * owner_</div><div class="ttdef"><b>定义</b> Animation.hpp:46</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_state_html_a0ce0efe83fb7a5554953936c8a4c892a"><div class="ttname"><a href="class_g_ft_1_1_animation_state.html#a0ce0efe83fb7a5554953936c8a4c892a">GFt::AnimationState::update</a></div><div class="ttdeci">virtual void update(const TimePoint &amp;now)=0</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_state_html_abe41a2c7a553b3a8704b2f648d3f3883"><div class="ttname"><a href="class_g_ft_1_1_animation_state.html#abe41a2c7a553b3a8704b2f648d3f3883">GFt::AnimationState::AnimationState</a></div><div class="ttdeci">AnimationState(AnimationAbstract *owner)</div><div class="ttdef"><b>定义</b> Animation.cpp:5</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_stop_html"><div class="ttname"><a href="class_g_ft_1_1_animation_stop.html">GFt::AnimationStop</a></div><div class="ttdoc">停止状态</div><div class="ttdef"><b>定义</b> Animation.hpp:111</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_stop_html_a55851dc0902a3e07b2ccc5246b6f2f85"><div class="ttname"><a href="class_g_ft_1_1_animation_stop.html#a55851dc0902a3e07b2ccc5246b6f2f85">GFt::AnimationStop::AnimationStop</a></div><div class="ttdeci">AnimationStop(AnimationAbstract *owner)</div><div class="ttdef"><b>定义</b> Animation.cpp:62</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_animation_stop_html_a7b7b8ef7e91d165162f16499359fc4ee"><div class="ttname"><a href="class_g_ft_1_1_animation_stop.html#a7b7b8ef7e91d165162f16499359fc4ee">GFt::AnimationStop::update</a></div><div class="ttdeci">void update(const TimePoint &amp;now) override</div><div class="ttdef"><b>定义</b> Animation.cpp:63</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html"><div class="ttname"><a href="class_g_ft_1_1_signal.html">GFt::Signal</a></div><div class="ttdoc">信号-槽机制支持</div><div class="ttdef"><b>定义</b> Signal.hpp:25</div></div>
+<div class="ttc" id="aconcept_g_ft_1_1_animatable_html"><div class="ttname"><a href="concept_g_ft_1_1_animatable.html">GFt::Animatable</a></div><div class="ttdoc">此概念约束类型 Type 必须支持线性插值运算</div><div class="ttdef"><b>定义</b> Animation.hpp:23</div></div>
+<div class="ttc" id="agroup___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93_html_gaf1c71398d2e84891a67426221f326994"><div class="ttname"><a href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#gaf1c71398d2e84891a67426221f326994">GFt::AnimationStateType</a></div><div class="ttdeci">AnimationStateType</div><div class="ttdoc">动画状态类型</div><div class="ttdef"><b>定义</b> Animation.hpp:34</div></div>
+<div class="ttc" id="agroup___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93_html_ggaf1c71398d2e84891a67426221f326994a105b296a83f9c105355403f3332af50f"><div class="ttname"><a href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#ggaf1c71398d2e84891a67426221f326994a105b296a83f9c105355403f3332af50f">GFt::AnimationStateType::Pause</a></div><div class="ttdeci">@ Pause</div><div class="ttdoc">暂停状态</div></div>
+<div class="ttc" id="agroup___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93_html_ggaf1c71398d2e84891a67426221f326994a11a755d598c0c417f9a36758c3da7481"><div class="ttname"><a href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#ggaf1c71398d2e84891a67426221f326994a11a755d598c0c417f9a36758c3da7481">GFt::AnimationStateType::Stop</a></div><div class="ttdeci">@ Stop</div><div class="ttdoc">停止状态</div></div>
+<div class="ttc" id="agroup___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93_html_ggaf1c71398d2e84891a67426221f326994ade3c731be5633838089a07179d301d7b"><div class="ttname"><a href="group___xE5_x8A_xA8_xE7_x94_xBB_xE6_x94_xAF_xE6_x8C_x81_xE5_xBA_x93.html#ggaf1c71398d2e84891a67426221f326994ade3c731be5633838089a07179d301d7b">GFt::AnimationStateType::Play</a></div><div class="ttdeci">@ Play</div><div class="ttdoc">播放状态</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_trans_funcs_html_a19020164b8b8b118690a45a8dcfee16f"><div class="ttname"><a href="namespace_g_ft_1_1_trans_funcs.html#a19020164b8b8b118690a45a8dcfee16f">GFt::TransFuncs::smoothInOut</a></div><div class="ttdeci">float smoothInOut(float x)</div><div class="ttdoc">柔性过渡</div><div class="ttdef"><b>定义</b> Animation.hpp:244</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_trans_funcs_html_a1959bc859975f3c3f1640fd93ea2e272"><div class="ttname"><a href="namespace_g_ft_1_1_trans_funcs.html#a1959bc859975f3c3f1640fd93ea2e272">GFt::TransFuncs::underDamped</a></div><div class="ttdeci">constexpr auto underDamped(float damping)</div><div class="ttdoc">欠阻尼衰减函数生成器</div><div class="ttdef"><b>定义</b> Animation.hpp:260</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_trans_funcs_html_a4c79add5092fdf0a110e6994824897d7"><div class="ttname"><a href="namespace_g_ft_1_1_trans_funcs.html#a4c79add5092fdf0a110e6994824897d7">GFt::TransFuncs::linear</a></div><div class="ttdeci">constexpr float linear(float x)</div><div class="ttdoc">线性过渡函数(默认函数)</div><div class="ttdef"><b>定义</b> Animation.hpp:232</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_trans_funcs_html_a799fa7ee82cc2b345ab3fdf12add6cbe"><div class="ttname"><a href="namespace_g_ft_1_1_trans_funcs.html#a799fa7ee82cc2b345ab3fdf12add6cbe">GFt::TransFuncs::power</a></div><div class="ttdeci">constexpr auto power(float power)</div><div class="ttdoc">幂函数生成器</div><div class="ttdef"><b>定义</b> Animation.hpp:236</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_trans_funcs_html_a9abaed321ce3c2625c4079a02fda03ce"><div class="ttname"><a href="namespace_g_ft_1_1_trans_funcs.html#a9abaed321ce3c2625c4079a02fda03ce">GFt::TransFuncs::overDamped</a></div><div class="ttdeci">constexpr auto overDamped(float damping)</div><div class="ttdoc">过阻尼衰减函数生成器</div><div class="ttdef"><b>定义</b> Animation.hpp:252</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_trans_funcs_html_ae188c97f9937d15aeb4356d22e652f2a"><div class="ttname"><a href="namespace_g_ft_1_1_trans_funcs.html#ae188c97f9937d15aeb4356d22e652f2a">GFt::TransFuncs::bezier</a></div><div class="ttdeci">constexpr float bezier(float x)</div><div class="ttdoc">贝塞尔过渡</div><div class="ttdef"><b>定义</b> Animation.hpp:242</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="anamespace_g_ft_html_a2120f06e982f6f303d6dcf6fad1cfff3"><div class="ttname"><a href="namespace_g_ft.html#a2120f06e982f6f303d6dcf6fad1cfff3">GFt::TransFunc</a></div><div class="ttdeci">std::function&lt; float(float)&gt; TransFunc</div><div class="ttdef"><b>定义</b> Animation.hpp:17</div></div>
+<div class="ttc" id="anamespace_g_ft_html_a8e34902299da209831a38596420c6e2f"><div class="ttname"><a href="namespace_g_ft.html#a8e34902299da209831a38596420c6e2f">GFt::Initial</a></div><div class="ttdeci">std::variant&lt; Type, Getter&lt; Type &gt; &gt; Initial</div><div class="ttdef"><b>定义</b> Animation.hpp:30</div></div>
+<div class="ttc" id="anamespace_g_ft_html_a8f58d699d41c53347fdb4b760a9fd4c6"><div class="ttname"><a href="namespace_g_ft.html#a8f58d699d41c53347fdb4b760a9fd4c6">GFt::Setter</a></div><div class="ttdeci">std::function&lt; void(const Type &amp;)&gt; Setter</div><div class="ttdef"><b>定义</b> Animation.hpp:26</div></div>
+<div class="ttc" id="anamespace_g_ft_html_ad5cc9e747a74e56e49a559b46dd3fd87"><div class="ttname"><a href="namespace_g_ft.html#ad5cc9e747a74e56e49a559b46dd3fd87">GFt::TimePoint</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::steady_clock &gt; TimePoint</div><div class="ttdef"><b>定义</b> Animation.hpp:16</div></div>
+<div class="ttc" id="anamespace_g_ft_html_ada811bab55b5bf90b39b54530ae379b7"><div class="ttname"><a href="namespace_g_ft.html#ada811bab55b5bf90b39b54530ae379b7">GFt::Getter</a></div><div class="ttdeci">std::function&lt; Type()&gt; Getter</div><div class="ttdef"><b>定义</b> Animation.hpp:28</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_animation_params_html"><div class="ttname"><a href="struct_g_ft_1_1_animation_params.html">GFt::AnimationParams</a></div><div class="ttdoc">动画参数结构体</div><div class="ttdef"><b>定义</b> Animation.hpp:137</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_animation_params_html_a10b281e2b59ee8239f22999205370ebb"><div class="ttname"><a href="struct_g_ft_1_1_animation_params.html#a10b281e2b59ee8239f22999205370ebb">GFt::AnimationParams::target</a></div><div class="ttdeci">const Type &amp; target</div><div class="ttdoc">动画目标值</div><div class="ttdef"><b>定义</b> Animation.hpp:140</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_animation_params_html_a1b8d597ac6ff45269ecb1b738696fdd3"><div class="ttname"><a href="struct_g_ft_1_1_animation_params.html#a1b8d597ac6ff45269ecb1b738696fdd3">GFt::AnimationParams::trans_func</a></div><div class="ttdeci">TransFunc trans_func</div><div class="ttdoc">动画过渡函数</div><div class="ttdef"><b>定义</b> Animation.hpp:142</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_animation_params_html_a609730466fcade9c0ed843c8a4ca0ed8"><div class="ttname"><a href="struct_g_ft_1_1_animation_params.html#a609730466fcade9c0ed843c8a4ca0ed8">GFt::AnimationParams::setter</a></div><div class="ttdeci">const Setter&lt; Type &gt; &amp; setter</div><div class="ttdoc">动画值的 setter 方法</div><div class="ttdef"><b>定义</b> Animation.hpp:138</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_animation_params_html_aa3ffa44f560f092cb4a685a4821ba976"><div class="ttname"><a href="struct_g_ft_1_1_animation_params.html#aa3ffa44f560f092cb4a685a4821ba976">GFt::AnimationParams::duration</a></div><div class="ttdeci">const float &amp; duration</div><div class="ttdoc">动画持续时间（毫秒）</div><div class="ttdef"><b>定义</b> Animation.hpp:141</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_animation_params_html_ae98abf0ab56009d7fbd95de7f1f28843"><div class="ttname"><a href="struct_g_ft_1_1_animation_params.html#ae98abf0ab56009d7fbd95de7f1f28843">GFt::AnimationParams::initial</a></div><div class="ttdeci">const Initial&lt; Type &gt; &amp; initial</div><div class="ttdoc">动画初始值，可以是值或 getter 方法，若为 getter 方法则在动画开始时调用并作为初始值</div><div class="ttdef"><b>定义</b> Animation.hpp:139</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>Animation.hpp</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

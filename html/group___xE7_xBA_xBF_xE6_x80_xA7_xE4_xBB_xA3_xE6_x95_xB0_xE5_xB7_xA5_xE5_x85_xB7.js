@@ -15,7 +15,7 @@ var group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_
     [ "GFt::operator*", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga828fb2354ef551ea6fc25c3b929c872b", null ],
     [ "GFt::operator^", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gacd58837d1cec8122d982a83ea54feb69", null ],
     [ "GFt::operator|", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gab9f4523d2858df344c620967faf4071f", null ],
-    [ "GFt::radians", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gadfde4374af08491ad47ae939c7c513d6", null ],
+    [ "GFt::radians", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga83ce582dfd9e9fbebe8cabeb38799a45", null ],
     [ "GFt::rotate", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gaf688561ff7b3b4b50dfc1069a3c21505", null ],
     [ "GFt::rotate", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga6dd817636698af1e7c514ac9169e919f", null ],
     [ "GFt::scale", "group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga405f13b7fee7145b7e218644861a0e4c", null ],

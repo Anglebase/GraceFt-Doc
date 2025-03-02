@@ -33,7 +33,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
    </div>
    <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
   </td>
@@ -110,7 +110,7 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="textblock"><p><a class="anchor" id="autotoc_md13"></a></p>
 <h1><a class="anchor" id="autotoc_md14"></a>
 计算器</h1>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
+<p>这里是一个基于声明式界面编程模型编写的一个计算器的示例 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;GraceFt/Application.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/Window.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;GraceFt/UI.h&gt;</span></div>
 <div class="line"> </div>
@@ -299,12 +299,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;+&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;+&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;+&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,1,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;+&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,1,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// - 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region -</span></div>
@@ -317,12 +317,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;-&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;-&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;-&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,2,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;-&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,2,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// * 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region *</span></div>
@@ -335,12 +335,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;*&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;*&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;*&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,3,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;*&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,3,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// / 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region /</span></div>
@@ -353,12 +353,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;/&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;/&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;/&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,4,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;/&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,4,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// . 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region .</span></div>
@@ -371,12 +371,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;.&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;.&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;.&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 0,4,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;.&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 0,4,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// = 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region =</span></div>
@@ -389,7 +389,7 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;=&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                <span class="keyword">auto</span> result = eval(exprLabel-&gt;text());</div>
 <div class="line">                exprLabel-&gt;text() = result;</div>
 <div class="line">                std::cout &lt;&lt; <span class="stringliteral">&quot;FPS: &quot;</span> &lt;&lt; Application::getRealFps() &lt;&lt; std::endl;</div>
@@ -398,7 +398,7 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">                });</div>
 <div class="line">    }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;=&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 2,4,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;=&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 2,4,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// 0 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region 0</span></div>
@@ -411,12 +411,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;0&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;0&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 1,4,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;0&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 1,4,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// ( 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region ()</span></div>
@@ -429,12 +429,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;(&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;(&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;(&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 0,0,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;(&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 0,0,1,1 });</div>
 <div class="line">    <span class="comment">// ) 键</span></div>
 <div class="line">    <a class="code hl_struct" href="struct_g_ft_1_1_u_i_1_1_x_button.html">XButton</a>{</div>
 <div class="line">        .name = <span class="stringliteral">&quot;)&quot;</span>,</div>
@@ -445,12 +445,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;)&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 1,0,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;)&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 1,0,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// backarrow 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region backarrow</span></div>
@@ -463,14 +463,14 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;&lt;&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                <span class="keywordflow">if</span> (!exprLabel-&gt;text().empty()) {</div>
 <div class="line">                    exprLabel-&gt;text().pop_back();</div>
 <div class="line">                }</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;backarrow&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 2,0,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;backarrow&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 2,0,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// clear 键</span></div>
 <div class="line"><span class="preprocessor">#pragma region clear</span></div>
@@ -483,12 +483,12 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">            it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">            it.text() = <a class="code hl_enumvalue" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">L</a><span class="stringliteral">&quot;C&quot;</span>;</div>
 <div class="line">            it.onClicked.connect([] {</div>
-<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>().clear();</div>
 <div class="line">            });</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
-<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;clear&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,0,1,1 });</div>
+<div class="line">    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;clear&quot;</span>), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ 3,0,1,1 });</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">    <span class="comment">// 数字键 </span></div>
 <div class="line"><span class="preprocessor">#pragma region 1-9</span></div>
@@ -503,13 +503,13 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">                it.textSet().font().setFontFamily(L<span class="stringliteral">&quot;等线&quot;</span>);</div>
 <div class="line">                it.text() = std::to_wstring(i);</div>
 <div class="line">                it.onClicked.connect([i] {</div>
-<div class="line">                    <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
+<div class="line">                    <span class="keyword">auto</span> exprLabel = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_label.html">Label</a>*<span class="keyword">&gt;</span>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>));</div>
 <div class="line">                    exprLabel-&gt;<a class="code hl_function" href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">text</a>() += std::to_wstring(i);</div>
 <div class="line">                });</div>
 <div class="line">            }</div>
 <div class="line">        };</div>
 <div class="line">        <span class="keyword">auto</span> k = i - 1;</div>
-<div class="line">        it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(name), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ k % 3,3 - k / 3,1,1 });</div>
+<div class="line">        it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(name), <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>{ k % 3,3 - k / 3,1,1 });</div>
 <div class="line">    }</div>
 <div class="line"><span class="preprocessor">#pragma endregion</span></div>
 <div class="line">}</div>
@@ -549,19 +549,19 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="line">                        .parent = it,</div>
 <div class="line">                        .content = ButtonsContent,</div>
 <div class="line">                    };</div>
-<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;exprLabel&quot;</span>), 0.5);</div>
-<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(BLOCK(<span class="stringliteral">&quot;btns&quot;</span>), 2.5);</div>
+<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;exprLabel&quot;</span>), 0.5);</div>
+<div class="line">                    it.<a class="code hl_function" href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">addItem</a>(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;btns&quot;</span>), 2.5);</div>
 <div class="line">                }</div>
 <div class="line">            };</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* window = Window::createWindow(BLOCK(<span class="stringliteral">&quot;AppWindow&quot;</span>));</div>
+<div class="line">    <a class="code hl_class" href="class_g_ft_1_1_window.html">Window</a>* window = Window::createWindow(<a class="code hl_define" href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a>(<span class="stringliteral">&quot;AppWindow&quot;</span>));</div>
 <div class="line">    <a class="code hl_class" href="class_g_ft_1_1_application.html">Application</a> app(window);</div>
 <div class="line">    window-&gt;<a class="code hl_function" href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">show</a>();</div>
 <div class="line">    <span class="keywordflow">return</span> app.run();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_g_ft_1_1_application_html"><div class="ttname"><a href="class_g_ft_1_1_application.html">GFt::Application</a></div><div class="ttdoc">应用程序类</div><div class="ttdef"><b>定义</b> Application.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_application_html"><div class="ttname"><a href="class_g_ft_1_1_application.html">GFt::Application</a></div><div class="ttdoc">应用程序类</div><div class="ttdef"><b>定义</b> Application.h:11</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_column_layout_html"><div class="ttname"><a href="class_g_ft_1_1_column_layout.html">GFt::ColumnLayout</a></div><div class="ttdoc">列布局类</div><div class="ttdef"><b>定义</b> ColumnLayout.h:10</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a955b88aaaf2a49bdea685be52a02cc97"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">GFt::GraphInterface::setSize</a></div><div class="ttdeci">void setSize(const iSize &amp;size)</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:31</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a99c0544fcbbb56c689fe6e3964b6a55d"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">GFt::GraphInterface::rect</a></div><div class="ttdeci">const iRect &amp; rect() const</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:40</div></div>
@@ -571,24 +571,25 @@ $(function(){initNavTree('md_doc_2def_2exp.html',''); initResizable(true); });
 <div class="ttc" id="aclass_g_ft_1_1_grid_layout_html_a7988865493408a9deb7e9e2c3a80ce2c"><div class="ttname"><a href="class_g_ft_1_1_grid_layout.html#a7988865493408a9deb7e9e2c3a80ce2c">GFt::GridLayout::addItem</a></div><div class="ttdeci">void addItem(Block *item, const iRect &amp;rect)</div><div class="ttdoc">添加子布局块</div><div class="ttdef"><b>定义</b> GridLayout.cpp:33</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_layout_html_a34384df7f42e3ba0646a0f033ec3d71d"><div class="ttname"><a href="class_g_ft_1_1_layout.html#a34384df7f42e3ba0646a0f033ec3d71d">GFt::Layout::setPadding</a></div><div class="ttdeci">void setPadding(int padding)</div><div class="ttdoc">设置边距</div><div class="ttdef"><b>定义</b> Layout.cpp:6</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
-<div class="ttc" id="aclass_g_ft_1_1_rect_html_a63d2cc467c9f93f56cc7bd0a08c20429"><div class="ttname"><a href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">GFt::Rect::size</a></div><div class="ttdeci">constexpr Size&lt; T &gt; &amp; size()</div><div class="ttdoc">矩形大小</div><div class="ttdef"><b>定义</b> Rect.hpp:80</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html_a63d2cc467c9f93f56cc7bd0a08c20429"><div class="ttname"><a href="class_g_ft_1_1_rect.html#a63d2cc467c9f93f56cc7bd0a08c20429">GFt::Rect::size</a></div><div class="ttdeci">constexpr Size&lt; T &gt; &amp; size()</div><div class="ttdoc">矩形大小</div><div class="ttdef"><b>定义</b> Rect.hpp:82</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_size_html"><div class="ttname"><a href="class_g_ft_1_1_size.html">GFt::Size&lt; int &gt;</a></div></div>
-<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_button_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_button.html">GFt::Widget::Button</a></div><div class="ttdoc">按钮控件</div><div class="ttdef"><b>定义</b> Button.h:16</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_button_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_button.html">GFt::Widget::Button</a></div><div class="ttdoc">按钮控件</div><div class="ttdef"><b>定义</b> Button.h:17</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_widget_1_1_label_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_label.html">GFt::Widget::Label</a></div><div class="ttdoc">文本标签控件</div><div class="ttdef"><b>定义</b> Label.h:10</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_widget_1_1_label_html_a9573373af1d396c9d059c4be59e4fe55"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_label.html#a9573373af1d396c9d059c4be59e4fe55">GFt::Widget::Label::text</a></div><div class="ttdeci">std::wstring &amp; text()</div><div class="ttdoc">文本内容</div><div class="ttdef"><b>定义</b> Label.cpp:25</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_main_window_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_main_window.html">GFt::Widget::MainWindow</a></div><div class="ttdoc">主窗口</div><div class="ttdef"><b>定义</b> MainWindow.h:9</div></div>
-<div class="ttc" id="aclass_g_ft_1_1_window_html"><div class="ttname"><a href="class_g_ft_1_1_window.html">GFt::Window</a></div><div class="ttdoc">全局窗口对象</div><div class="ttdef"><b>定义</b> Window.h:12</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_main_window_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_main_window.html">GFt::Widget::MainWindow</a></div><div class="ttdoc">主窗口</div><div class="ttdef"><b>定义</b> MainWindow.h:10</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_window_html"><div class="ttname"><a href="class_g_ft_1_1_window.html">GFt::Window</a></div><div class="ttdoc">全局窗口对象</div><div class="ttdef"><b>定义</b> Window.h:13</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_window_html_a751034af79c475b74da750af107fa119"><div class="ttname"><a href="class_g_ft_1_1_window.html#a751034af79c475b74da750af107fa119">GFt::Window::show</a></div><div class="ttdeci">void show()</div><div class="ttdoc">显示窗口</div><div class="ttdef"><b>定义</b> Window.cpp:40</div></div>
+<div class="ttc" id="agroup___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i_html_gaa4eacbdba0bb321f39980dd713de2a77"><div class="ttname"><a href="group___xE5_xA3_xB0_xE6_x98_x8E_xE5_xBC_x8F_u_i.html#gaa4eacbdba0bb321f39980dd713de2a77">BLOCK</a></div><div class="ttdeci">#define BLOCK(name)</div><div class="ttdoc">声明式UI块便利宏</div><div class="ttdef"><b>定义</b> UI.h:254</div></div>
 <div class="ttc" id="agroup___xE6_x9E_x9A_xE4_xB8_xBE_html_ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2ad20caec3b48a1eef164cb4ca81ba2587">GFt::Key::L</a></div><div class="ttdeci">@ L</div><div class="ttdoc">L 键</div></div>
-<div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:78</div></div>
-<div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdoc">定义式UI库</div><div class="ttdef"><b>定义</b> Button.h:12</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_u_i_html"><div class="ttname"><a href="namespace_g_ft_1_1_u_i.html">GFt::UI</a></div><div class="ttdoc">声明式UI框架</div><div class="ttdef"><b>定义</b> UI.h:164</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_widget_html"><div class="ttname"><a href="namespace_g_ft_1_1_widget.html">GFt::Widget</a></div><div class="ttdoc">定义式UI库</div><div class="ttdef"><b>定义</b> Button.h:13</div></div>
 <div class="ttc" id="anamespace_g_ft_1_1literals_html"><div class="ttname"><a href="namespace_g_ft_1_1literals.html">GFt::literals</a></div><div class="ttdoc">字面量定义</div><div class="ttdef"><b>定义</b> Color.h:77</div></div>
-<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_button_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_button.html">GFt::UI::XButton</a></div><div class="ttdoc">按钮声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:109</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_column_layout_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_column_layout.html">GFt::UI::XColumnLayout</a></div><div class="ttdoc">列布局声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:118</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_grid_layout_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_grid_layout.html">GFt::UI::XGridLayout</a></div><div class="ttdoc">网格布局声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:121</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_label_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a></div><div class="ttdoc">标签声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:112</div></div>
-<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_main_window_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_main_window.html">GFt::UI::XMainWindow</a></div><div class="ttdoc">主窗口声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:93</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_button_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_button.html">GFt::UI::XButton</a></div><div class="ttdoc">按钮声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:220</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_column_layout_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_column_layout.html">GFt::UI::XColumnLayout</a></div><div class="ttdoc">列布局声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:232</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_grid_layout_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_grid_layout.html">GFt::UI::XGridLayout</a></div><div class="ttdoc">网格布局声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:236</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_label_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_label.html">GFt::UI::XLabel</a></div><div class="ttdoc">标签声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:224</div></div>
+<div class="ttc" id="astruct_g_ft_1_1_u_i_1_1_x_main_window_html"><div class="ttname"><a href="struct_g_ft_1_1_u_i_1_1_x_main_window.html">GFt::UI::XMainWindow</a></div><div class="ttdoc">主窗口声明式UI块</div><div class="ttdef"><b>定义</b> UI.h:184</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

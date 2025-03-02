@@ -1,5 +1,7 @@
 var searchData=
 [
   ['j_0',['J',['../group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2aff44570aca8241914870afbc310cdb85',1,'GFt']]],
-  ['joinstyle_1',['JoinStyle',['../group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ga0c476cbaa451ab475a98c6da57b71aff',1,'GFt']]]
+  ['jformat_1',['jFormat',['../struct_g_ft_1_1json_1_1_format.html#a557e3929e8bf06b2a5ef3f019196ef3e',1,'GFt::json::Format']]],
+  ['join_2',['join',['../group___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0.html#ga32cc16917586d35cc3925c70e4d29442',1,'GFt::join(const std::vector&lt; StdString&lt; CharT &gt; &gt; &amp;strs, const StdString&lt; CharT &gt; &amp;delimiter)'],['../group___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0.html#gad8aff2b141ee2191edddb888b1b4bbaa',1,'GFt::join(const std::vector&lt; StdString&lt; CharT &gt; &gt; &amp;strs, const CharT(&amp;delimiter)[N])'],['../group___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0.html#ga3d720b46f027c95a71ed10e2a5dff1a7',1,'GFt::join(const std::vector&lt; StdString&lt; CharT &gt; &gt; &amp;strs, CharT delimiter)'],['../group___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0.html#ga55e47451a71e8678f46472a602f768c6',1,'GFt::join(const std::vector&lt; StdString&lt; CharT &gt; &gt; &amp;strs, CharT *delimiter)']]],
+  ['joinstyle_3',['JoinStyle',['../group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ga0c476cbaa451ab475a98c6da57b71aff',1,'GFt']]]
 ];

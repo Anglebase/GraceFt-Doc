@@ -2,7 +2,7 @@ var class_g_ft_1_1_block =
 [
     [ "Block", "class_g_ft_1_1_block.html#aed3aa46411c98699bbcbba44667a8900", null ],
     [ "~Block", "class_g_ft_1_1_block.html#a899e7c9e34803106fd05b95de18fcc67", null ],
-    [ "absolutePos", "class_g_ft_1_1_block.html#a384598e63efef1f76278673a402d22da", null ],
+    [ "absolutePosition", "class_g_ft_1_1_block.html#ac953fd57cd0fc2ce7820e9db3666dda9", null ],
     [ "addChild", "class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1", null ],
     [ "getParent", "class_g_ft_1_1_block.html#a478795a68b66001db32edb1544009060", null ],
     [ "getZIndex", "class_g_ft_1_1_block.html#ab5a954ef438e4694de271b46e746ce56", null ],

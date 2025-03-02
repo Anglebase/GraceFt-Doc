@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::PlanEvent类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_g_ft_1_1_plan_event.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_g_ft_1_1_plan_event-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::PlanEvent类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>计划刻事件管理器  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_plan_8h_source.html">Plan.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aa51b748eb3279e60966b5f3054eb4529" id="r_aa51b748eb3279e60966b5f3054eb4529"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa51b748eb3279e60966b5f3054eb4529">add</a> (const PlanFunc &amp;planEvent)</td></tr>
+<tr class="memdesc:aa51b748eb3279e60966b5f3054eb4529"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加立即执行计划事件  <br /></td></tr>
+<tr class="separator:aa51b748eb3279e60966b5f3054eb4529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3de0a61ce057f4c483cdaae203822f" id="r_a0a3de0a61ce057f4c483cdaae203822f"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a3de0a61ce057f4c483cdaae203822f">add</a> (const std::function&lt; bool()&gt; &amp;condition, const PlanFunc &amp;planEvent)</td></tr>
+<tr class="memdesc:a0a3de0a61ce057f4c483cdaae203822f"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加条件执行计划事件  <br /></td></tr>
+<tr class="separator:a0a3de0a61ce057f4c483cdaae203822f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b75497f234dc15711e2192132b8457" id="r_ab7b75497f234dc15711e2192132b8457"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7b75497f234dc15711e2192132b8457">add</a> (float after, const PlanFunc &amp;planEvent)</td></tr>
+<tr class="memdesc:ab7b75497f234dc15711e2192132b8457"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加延时执行计划事件  <br /></td></tr>
+<tr class="separator:ab7b75497f234dc15711e2192132b8457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7226f49e3007f94a892a9548539051" id="r_aea7226f49e3007f94a892a9548539051"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea7226f49e3007f94a892a9548539051">remove</a> (std::size_t id)</td></tr>
+<tr class="memdesc:aea7226f49e3007f94a892a9548539051"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除计划事件  <br /></td></tr>
+<tr class="separator:aea7226f49e3007f94a892a9548539051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>计划刻事件管理器 </p>
+<p>它可以将一系列的计划刻事件添加到计划中，并在特定时刻统一执行这些计划事件， 计划事件的执行顺序与添加的顺序相同，计划刻事件会在每一帧 onEventCall 信号被触发时调用，且每个计划刻事件只会被调用一次 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa51b748eb3279e60966b5f3054eb4529" name="aa51b748eb3279e60966b5f3054eb4529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51b748eb3279e60966b5f3054eb4529">&#9670;&#160;</a></span>add() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t GFt::PlanEvent::add </td>
+          <td>(</td>
+          <td class="paramtype">const PlanFunc &amp;</td>          <td class="paramname"><span class="paramname"><em>planEvent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加立即执行计划事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">planEvent</td><td>计划事件函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>计划事件ID </dd></dl>
+
+</div>
+</div>
+<a id="a0a3de0a61ce057f4c483cdaae203822f" name="a0a3de0a61ce057f4c483cdaae203822f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3de0a61ce057f4c483cdaae203822f">&#9670;&#160;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t GFt::PlanEvent::add </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; bool()&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>condition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PlanFunc &amp;</td>          <td class="paramname"><span class="paramname"><em>planEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加条件执行计划事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condition</td><td>计划事件条件函数 </td></tr>
+    <tr><td class="paramname">planEvent</td><td>计划事件函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>计划事件会在 condition 函数返回 true 时执行 </p><dl class="section return"><dt>返回</dt><dd>计划事件ID </dd></dl>
+
+</div>
+</div>
+<a id="ab7b75497f234dc15711e2192132b8457" name="ab7b75497f234dc15711e2192132b8457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b75497f234dc15711e2192132b8457">&#9670;&#160;</a></span>add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t GFt::PlanEvent::add </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>after</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PlanFunc &amp;</td>          <td class="paramname"><span class="paramname"><em>planEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加延时执行计划事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">after</td><td>计划事件延迟执行时间（单位：毫秒） </td></tr>
+    <tr><td class="paramname">planEvent</td><td>计划事件函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>计划事件会在至少 after 毫秒后执行 </p><dl class="section return"><dt>返回</dt><dd>计划事件ID </dd></dl>
+
+</div>
+</div>
+<a id="aea7226f49e3007f94a892a9548539051" name="aea7226f49e3007f94a892a9548539051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7226f49e3007f94a892a9548539051">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::PlanEvent::remove </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移除计划事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>计划事件ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1_plan_event.html">PlanEvent</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

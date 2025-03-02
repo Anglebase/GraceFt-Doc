@@ -1,21 +1,43 @@
 var annotated_dup =
 [
     [ "GFt", "namespace_g_ft.html", [
+      [ "json", "namespace_g_ft_1_1json.html", [
+        [ "Format", "struct_g_ft_1_1json_1_1_format.html", "struct_g_ft_1_1json_1_1_format" ],
+        [ "Value", "class_g_ft_1_1json_1_1_value.html", "class_g_ft_1_1json_1_1_value" ]
+      ] ],
       [ "UI", "namespace_g_ft_1_1_u_i.html", [
         [ "XBlock", "struct_g_ft_1_1_u_i_1_1_x_block.html", "struct_g_ft_1_1_u_i_1_1_x_block" ],
         [ "XButton", "struct_g_ft_1_1_u_i_1_1_x_button.html", "struct_g_ft_1_1_u_i_1_1_x_button" ],
+        [ "XCheckBox", "struct_g_ft_1_1_u_i_1_1_x_check_box.html", "struct_g_ft_1_1_u_i_1_1_x_check_box" ],
         [ "XColumnLayout", "struct_g_ft_1_1_u_i_1_1_x_column_layout.html", "struct_g_ft_1_1_u_i_1_1_x_column_layout" ],
         [ "XGridLayout", "struct_g_ft_1_1_u_i_1_1_x_grid_layout.html", "struct_g_ft_1_1_u_i_1_1_x_grid_layout" ],
+        [ "XHSlider", "struct_g_ft_1_1_u_i_1_1_x_h_slider.html", "struct_g_ft_1_1_u_i_1_1_x_h_slider" ],
         [ "XLabel", "struct_g_ft_1_1_u_i_1_1_x_label.html", "struct_g_ft_1_1_u_i_1_1_x_label" ],
         [ "XMainWindow", "struct_g_ft_1_1_u_i_1_1_x_main_window.html", "struct_g_ft_1_1_u_i_1_1_x_main_window" ],
+        [ "XRadioBox", "struct_g_ft_1_1_u_i_1_1_x_radio_box.html", "struct_g_ft_1_1_u_i_1_1_x_radio_box" ],
         [ "XRowLayout", "struct_g_ft_1_1_u_i_1_1_x_row_layout.html", "struct_g_ft_1_1_u_i_1_1_x_row_layout" ],
+        [ "XVSlider", "struct_g_ft_1_1_u_i_1_1_x_v_slider.html", "struct_g_ft_1_1_u_i_1_1_x_v_slider" ],
         [ "XWindow", "struct_g_ft_1_1_u_i_1_1_x_window.html", "struct_g_ft_1_1_u_i_1_1_x_window" ]
       ] ],
       [ "Widget", "namespace_g_ft_1_1_widget.html", [
         [ "Button", "class_g_ft_1_1_widget_1_1_button.html", "class_g_ft_1_1_widget_1_1_button" ],
+        [ "CheckBox", "class_g_ft_1_1_widget_1_1_check_box.html", "class_g_ft_1_1_widget_1_1_check_box" ],
+        [ "HScrollBar", "class_g_ft_1_1_widget_1_1_h_scroll_bar.html", "class_g_ft_1_1_widget_1_1_h_scroll_bar" ],
+        [ "HSlider", "class_g_ft_1_1_widget_1_1_h_slider.html", "class_g_ft_1_1_widget_1_1_h_slider" ],
         [ "Label", "class_g_ft_1_1_widget_1_1_label.html", "class_g_ft_1_1_widget_1_1_label" ],
-        [ "MainWindow", "class_g_ft_1_1_widget_1_1_main_window.html", "class_g_ft_1_1_widget_1_1_main_window" ]
+        [ "MainWindow", "class_g_ft_1_1_widget_1_1_main_window.html", "class_g_ft_1_1_widget_1_1_main_window" ],
+        [ "RadioBox", "class_g_ft_1_1_widget_1_1_radio_box.html", "class_g_ft_1_1_widget_1_1_radio_box" ],
+        [ "VScrollBar", "class_g_ft_1_1_widget_1_1_v_scroll_bar.html", "class_g_ft_1_1_widget_1_1_v_scroll_bar" ],
+        [ "VSlider", "class_g_ft_1_1_widget_1_1_v_slider.html", "class_g_ft_1_1_widget_1_1_v_slider" ]
       ] ],
+      [ "Animation", "class_g_ft_1_1_animation.html", "class_g_ft_1_1_animation" ],
+      [ "AnimationAbstract", "class_g_ft_1_1_animation_abstract.html", "class_g_ft_1_1_animation_abstract" ],
+      [ "AnimationManager", "class_g_ft_1_1_animation_manager.html", "class_g_ft_1_1_animation_manager" ],
+      [ "AnimationParams", "struct_g_ft_1_1_animation_params.html", "struct_g_ft_1_1_animation_params" ],
+      [ "AnimationPause", "class_g_ft_1_1_animation_pause.html", "class_g_ft_1_1_animation_pause" ],
+      [ "AnimationPlay", "class_g_ft_1_1_animation_play.html", "class_g_ft_1_1_animation_play" ],
+      [ "AnimationState", "class_g_ft_1_1_animation_state.html", "class_g_ft_1_1_animation_state" ],
+      [ "AnimationStop", "class_g_ft_1_1_animation_stop.html", "class_g_ft_1_1_animation_stop" ],
       [ "Application", "class_g_ft_1_1_application.html", "class_g_ft_1_1_application" ],
       [ "Bezier", "class_g_ft_1_1_bezier.html", "class_g_ft_1_1_bezier" ],
       [ "Block", "class_g_ft_1_1_block.html", "class_g_ft_1_1_block" ],
@@ -59,8 +81,10 @@ var annotated_dup =
       [ "Path", "class_g_ft_1_1_path.html", "class_g_ft_1_1_path" ],
       [ "PenSet", "class_g_ft_1_1_pen_set.html", "class_g_ft_1_1_pen_set" ],
       [ "PixelMap", "class_g_ft_1_1_pixel_map.html", "class_g_ft_1_1_pixel_map" ],
+      [ "PlanEvent", "class_g_ft_1_1_plan_event.html", null ],
       [ "Point", "class_g_ft_1_1_point.html", "class_g_ft_1_1_point" ],
       [ "Polygon", "class_g_ft_1_1_polygon.html", "class_g_ft_1_1_polygon" ],
+      [ "RadioManager", "class_g_ft_1_1_radio_manager.html", "class_g_ft_1_1_radio_manager" ],
       [ "Rect", "class_g_ft_1_1_rect.html", "class_g_ft_1_1_rect" ],
       [ "RoundRect", "class_g_ft_1_1_round_rect.html", "class_g_ft_1_1_round_rect" ],
       [ "RowLayout", "class_g_ft_1_1_row_layout.html", "class_g_ft_1_1_row_layout" ],
@@ -72,5 +96,13 @@ var annotated_dup =
       [ "TextSet", "class_g_ft_1_1_text_set.html", "class_g_ft_1_1_text_set" ],
       [ "Texture", "class_g_ft_1_1_texture.html", "class_g_ft_1_1_texture" ],
       [ "Window", "class_g_ft_1_1_window.html", "class_g_ft_1_1_window" ]
-    ] ]
+    ] ],
+    [ "Client", "class_client.html", null ],
+    [ "Client< TCP >", "class_client_3_01_t_c_p_01_4.html", "class_client_3_01_t_c_p_01_4" ],
+    [ "Client< UDP >", "class_client_3_01_u_d_p_01_4.html", "class_client_3_01_u_d_p_01_4" ],
+    [ "Data", "class_data.html", "class_data" ],
+    [ "Server", "class_server.html", null ],
+    [ "Server< TCP >", "class_server_3_01_t_c_p_01_4.html", "class_server_3_01_t_c_p_01_4" ],
+    [ "Server< UDP >", "class_server_3_01_u_d_p_01_4.html", "class_server_3_01_u_d_p_01_4" ],
+    [ "SocketInit", "struct_socket_init.html", "struct_socket_init" ]
 ];

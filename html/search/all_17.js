@@ -6,5 +6,6 @@ var searchData=
   ['width_3',['width',['../class_g_ft_1_1_ellipse.html#a35746ab85095cd6cbcfd1f48907715b4',1,'GFt::Ellipse::width()'],['../class_g_ft_1_1_rect.html#a54f1d736a9b2d603fd07ec2481fa02cc',1,'GFt::Rect::width()'],['../class_g_ft_1_1_rect.html#a73610e8c2a5b5db93bdf67fa3f2bbdb9',1,'GFt::Rect::width() const'],['../class_g_ft_1_1_size.html#ac0804a28c260282b6f64d620c7f609b7',1,'GFt::Size::width()'],['../class_g_ft_1_1_size.html#a290444db72f4a30487dc7803773eca65',1,'GFt::Size::width() const']]],
   ['window_4',['Window',['../class_g_ft_1_1_window.html',1,'GFt']]],
   ['window_5',['window',['../class_g_ft_1_1_window.html#a9fb1e7ca0093f6084803c42c40a46695',1,'GFt::Window']]],
-  ['world_6',['Hello World',['../md_doc_2def_2edu.html#autotoc_md3',1,'']]]
+  ['world_6',['Hello World',['../md_doc_2def_2edu.html#autotoc_md3',1,'']]],
+  ['write_7',['write',['../class_data.html#ae8cc1a677e1a63c077d7933fe2badf30',1,'Data::write(int start, int size, const byte *in)'],['../class_data.html#aa31f98b362492e35a757ac6fc262a22b',1,'Data::write(const T &amp;in)'],['../class_data.html#ae9562a85ff18c56030496d95495976c1',1,'Data::write(const std::string &amp;in)']]]
 ];

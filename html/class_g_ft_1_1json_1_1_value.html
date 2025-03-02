@@ -1,0 +1,1529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::json::Value&lt; CharT &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_g_ft_1_1json_1_1_value.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_g_ft_1_1json_1_1_value-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::json::Value&lt; CharT &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>JSON 值对象  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="json_8hpp_source.html">json.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4b76056ceac66ba89369aab6c92e5b25" id="r_a4b76056ceac66ba89369aab6c92e5b25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b76056ceac66ba89369aab6c92e5b25">Value</a> ()</td></tr>
+<tr class="separator:a4b76056ceac66ba89369aab6c92e5b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1561cbeb7dc034b13c49a91353d5ccb5" id="r_a1561cbeb7dc034b13c49a91353d5ccb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1561cbeb7dc034b13c49a91353d5ccb5">Value</a> (bool b)</td></tr>
+<tr class="separator:a1561cbeb7dc034b13c49a91353d5ccb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e6120d28b149e911a681ff9e69e4e0" id="r_a44e6120d28b149e911a681ff9e69e4e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e6120d28b149e911a681ff9e69e4e0">Value</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp;a)</td></tr>
+<tr class="separator:a44e6120d28b149e911a681ff9e69e4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b70cf1f51b80143a02cbb937e2767bb" id="r_a7b70cf1f51b80143a02cbb937e2767bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b70cf1f51b80143a02cbb937e2767bb">Value</a> (const CharT *s)</td></tr>
+<tr class="separator:a7b70cf1f51b80143a02cbb937e2767bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b463bbc819d1869ad97e40aa7cbe5d" id="r_a68b463bbc819d1869ad97e40aa7cbe5d"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a68b463bbc819d1869ad97e40aa7cbe5d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a68b463bbc819d1869ad97e40aa7cbe5d">Value</a> (const CharT(&amp;s)[<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>])</td></tr>
+<tr class="separator:a68b463bbc819d1869ad97e40aa7cbe5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1f71106f0dda7cb47983c03870dbd9" id="r_a1e1f71106f0dda7cb47983c03870dbd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e1f71106f0dda7cb47983c03870dbd9">Value</a> (const <a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp;o)</td></tr>
+<tr class="separator:a1e1f71106f0dda7cb47983c03870dbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a5fb1e518b05ac85e45ef6ef3f0e15" id="r_a19a5fb1e518b05ac85e45ef6ef3f0e15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19a5fb1e518b05ac85e45ef6ef3f0e15">Value</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;s)</td></tr>
+<tr class="separator:a19a5fb1e518b05ac85e45ef6ef3f0e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573e06cd2e45a45cf484b6c952a2dc50" id="r_a573e06cd2e45a45cf484b6c952a2dc50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a573e06cd2e45a45cf484b6c952a2dc50">Value</a> (double d)</td></tr>
+<tr class="separator:a573e06cd2e45a45cf484b6c952a2dc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9937e4f98e143960624e06ad0fb1ecb9" id="r_a9937e4f98e143960624e06ad0fb1ecb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9937e4f98e143960624e06ad0fb1ecb9">asArray</a> ()</td></tr>
+<tr class="separator:a9937e4f98e143960624e06ad0fb1ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29a94ade1f4bab1faff27fbd43d9af9" id="r_aa29a94ade1f4bab1faff27fbd43d9af9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa29a94ade1f4bab1faff27fbd43d9af9">asArray</a> () const</td></tr>
+<tr class="separator:aa29a94ade1f4bab1faff27fbd43d9af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725c34d2fcb50147aa7a0c980780a3a4" id="r_a725c34d2fcb50147aa7a0c980780a3a4"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a725c34d2fcb50147aa7a0c980780a3a4">asBoolean</a> ()</td></tr>
+<tr class="separator:a725c34d2fcb50147aa7a0c980780a3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3315a15e3efce735bb9e5d870217e54e" id="r_a3315a15e3efce735bb9e5d870217e54e"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3315a15e3efce735bb9e5d870217e54e">asBoolean</a> () const</td></tr>
+<tr class="separator:a3315a15e3efce735bb9e5d870217e54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce8914f67d4f8f1278b80f8f241215a" id="r_a0ce8914f67d4f8f1278b80f8f241215a"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce8914f67d4f8f1278b80f8f241215a">asInteger</a> () const</td></tr>
+<tr class="separator:a0ce8914f67d4f8f1278b80f8f241215a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddf14727e913c1a962799337f96ca61" id="r_a1ddf14727e913c1a962799337f96ca61"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ddf14727e913c1a962799337f96ca61">asNumber</a> ()</td></tr>
+<tr class="separator:a1ddf14727e913c1a962799337f96ca61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64124d98a114e1428d44ebc56d7ce5a" id="r_af64124d98a114e1428d44ebc56d7ce5a"><td class="memItemLeft" align="right" valign="top">const double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af64124d98a114e1428d44ebc56d7ce5a">asNumber</a> () const</td></tr>
+<tr class="separator:af64124d98a114e1428d44ebc56d7ce5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83ab1f6b1db8b3483a7b211ccf4fe8f" id="r_af83ab1f6b1db8b3483a7b211ccf4fe8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af83ab1f6b1db8b3483a7b211ccf4fe8f">asObject</a> ()</td></tr>
+<tr class="separator:af83ab1f6b1db8b3483a7b211ccf4fe8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47cf2ff1831bfa38130202393492da70" id="r_a47cf2ff1831bfa38130202393492da70"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47cf2ff1831bfa38130202393492da70">asObject</a> () const</td></tr>
+<tr class="separator:a47cf2ff1831bfa38130202393492da70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae784257318ca31932f09b18727973265" id="r_ae784257318ca31932f09b18727973265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae784257318ca31932f09b18727973265">asString</a> ()</td></tr>
+<tr class="separator:ae784257318ca31932f09b18727973265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d69f36598ce779ed6dc4f6e61ea0fec" id="r_a1d69f36598ce779ed6dc4f6e61ea0fec"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d69f36598ce779ed6dc4f6e61ea0fec">asString</a> () const</td></tr>
+<tr class="separator:a1d69f36598ce779ed6dc4f6e61ea0fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad741b8e76b3a61063e54096800d7cdff" id="r_ad741b8e76b3a61063e54096800d7cdff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad741b8e76b3a61063e54096800d7cdff">at</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;key)</td></tr>
+<tr class="separator:ad741b8e76b3a61063e54096800d7cdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f916b05c3d776e1858fa7ed4d816ca" id="r_a94f916b05c3d776e1858fa7ed4d816ca"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f916b05c3d776e1858fa7ed4d816ca">at</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;key) const</td></tr>
+<tr class="separator:a94f916b05c3d776e1858fa7ed4d816ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d5e48667f6ff7e699d4d75a2a0bd98" id="r_a14d5e48667f6ff7e699d4d75a2a0bd98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14d5e48667f6ff7e699d4d75a2a0bd98">isArray</a> () const</td></tr>
+<tr class="separator:a14d5e48667f6ff7e699d4d75a2a0bd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553df0ce2bc162fa2c5999075245ff64" id="r_a553df0ce2bc162fa2c5999075245ff64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553df0ce2bc162fa2c5999075245ff64">isBool</a> () const</td></tr>
+<tr class="separator:a553df0ce2bc162fa2c5999075245ff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f46bebe69f952d17a437f991c70746" id="r_a36f46bebe69f952d17a437f991c70746"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f46bebe69f952d17a437f991c70746">isFloat</a> () const</td></tr>
+<tr class="separator:a36f46bebe69f952d17a437f991c70746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227c85fbe0e0a107a81081545cedbf2d" id="r_a227c85fbe0e0a107a81081545cedbf2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a227c85fbe0e0a107a81081545cedbf2d">isInteger</a> () const</td></tr>
+<tr class="separator:a227c85fbe0e0a107a81081545cedbf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974e084fdb8555440c9d419e8180c9f9" id="r_a974e084fdb8555440c9d419e8180c9f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a974e084fdb8555440c9d419e8180c9f9">isNull</a> () const</td></tr>
+<tr class="separator:a974e084fdb8555440c9d419e8180c9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1733df61e5f50db8f198d40261cc333b" id="r_a1733df61e5f50db8f198d40261cc333b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1733df61e5f50db8f198d40261cc333b">isNumber</a> () const</td></tr>
+<tr class="separator:a1733df61e5f50db8f198d40261cc333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51291f5f9ce1f19cf516a5b1b217b8ed" id="r_a51291f5f9ce1f19cf516a5b1b217b8ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51291f5f9ce1f19cf516a5b1b217b8ed">isObject</a> () const</td></tr>
+<tr class="separator:a51291f5f9ce1f19cf516a5b1b217b8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e43c73da3a37a6227ef9fb777bf7f4" id="r_a77e43c73da3a37a6227ef9fb777bf7f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77e43c73da3a37a6227ef9fb777bf7f4">isString</a> () const</td></tr>
+<tr class="separator:a77e43c73da3a37a6227ef9fb777bf7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb27a09e233189f0b80bf3fa5ecf5350" id="r_afb27a09e233189f0b80bf3fa5ecf5350"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb27a09e233189f0b80bf3fa5ecf5350">operator=</a> (bool b)</td></tr>
+<tr class="separator:afb27a09e233189f0b80bf3fa5ecf5350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd3faba0186517858b9299718ce38ae" id="r_afbd3faba0186517858b9299718ce38ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbd3faba0186517858b9299718ce38ae">operator=</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp;a)</td></tr>
+<tr class="separator:afbd3faba0186517858b9299718ce38ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4e77b2e9d03817afd87840b5978059" id="r_a2d4e77b2e9d03817afd87840b5978059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d4e77b2e9d03817afd87840b5978059">operator=</a> (const CharT *s)</td></tr>
+<tr class="separator:a2d4e77b2e9d03817afd87840b5978059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e04736f4674fee3b968cb0999177cd" id="r_ac2e04736f4674fee3b968cb0999177cd"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:ac2e04736f4674fee3b968cb0999177cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac2e04736f4674fee3b968cb0999177cd">operator=</a> (const CharT(&amp;s)[<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>])</td></tr>
+<tr class="separator:ac2e04736f4674fee3b968cb0999177cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e3035b42797c72bbe8fbc082b905f6" id="r_a19e3035b42797c72bbe8fbc082b905f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19e3035b42797c72bbe8fbc082b905f6">operator=</a> (const <a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp;o)</td></tr>
+<tr class="separator:a19e3035b42797c72bbe8fbc082b905f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b3f1378a60e89d60cb8cf7b0880738" id="r_af8b3f1378a60e89d60cb8cf7b0880738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8b3f1378a60e89d60cb8cf7b0880738">operator=</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;s)</td></tr>
+<tr class="separator:af8b3f1378a60e89d60cb8cf7b0880738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22356eff08331705b7caa5c83ff24517" id="r_a22356eff08331705b7caa5c83ff24517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22356eff08331705b7caa5c83ff24517">operator=</a> (double d)</td></tr>
+<tr class="separator:a22356eff08331705b7caa5c83ff24517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710ddd44238474d287c93ec2c3284d49" id="r_a710ddd44238474d287c93ec2c3284d49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a710ddd44238474d287c93ec2c3284d49">operator[]</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;key)</td></tr>
+<tr class="separator:a710ddd44238474d287c93ec2c3284d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb422b77445b280d49b32038f23c5c92" id="r_abb422b77445b280d49b32038f23c5c92"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb422b77445b280d49b32038f23c5c92">operator[]</a> (const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;key) const</td></tr>
+<tr class="separator:abb422b77445b280d49b32038f23c5c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f6f57fa3367fb436a9313fdde752b7" id="r_ab4f6f57fa3367fb436a9313fdde752b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4f6f57fa3367fb436a9313fdde752b7">operator[]</a> (size_t i)</td></tr>
+<tr class="separator:ab4f6f57fa3367fb436a9313fdde752b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b6042d75dcd2116db42b4e2104a402" id="r_a79b6042d75dcd2116db42b4e2104a402"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79b6042d75dcd2116db42b4e2104a402">operator[]</a> (size_t i) const</td></tr>
+<tr class="separator:a79b6042d75dcd2116db42b4e2104a402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12458f14666666a3da5daf5ff42bb44" id="r_ae12458f14666666a3da5daf5ff42bb44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae12458f14666666a3da5daf5ff42bb44">toBool</a> () const</td></tr>
+<tr class="separator:ae12458f14666666a3da5daf5ff42bb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae615f7f9e6ea6941119cbac343745b56" id="r_ae615f7f9e6ea6941119cbac343745b56"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae615f7f9e6ea6941119cbac343745b56">toFloat</a> () const</td></tr>
+<tr class="separator:ae615f7f9e6ea6941119cbac343745b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3b344611fbd2b0be253ad43578fa73" id="r_a2b3b344611fbd2b0be253ad43578fa73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b3b344611fbd2b0be253ad43578fa73">toInt</a> () const</td></tr>
+<tr class="separator:a2b3b344611fbd2b0be253ad43578fa73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af902e5faf20b0fbeb2d2c61801a5688d" id="r_af902e5faf20b0fbeb2d2c61801a5688d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af902e5faf20b0fbeb2d2c61801a5688d">toString</a> () const</td></tr>
+<tr class="separator:af902e5faf20b0fbeb2d2c61801a5688d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8096dacfff0303a3343cbe2b24d7eee" id="r_ac8096dacfff0303a3343cbe2b24d7eee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft_1_1json.html#ade3d078dadd474f77b23fc8485f2c15f">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8096dacfff0303a3343cbe2b24d7eee">type</a> () const</td></tr>
+<tr class="memdesc:ac8096dacfff0303a3343cbe2b24d7eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前 JSON 值对象持有的 JSON 值类型  <br /></td></tr>
+<tr class="separator:ac8096dacfff0303a3343cbe2b24d7eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:acc859e926cd51a8a4665add47657ede1" id="r_acc859e926cd51a8a4665add47657ede1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft_1_1json.html#ac5be73a88ef7d25b4c3e90aa7bdf2deb">StdOStream</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc859e926cd51a8a4665add47657ede1">operator&lt;&lt;</a> (<a class="el" href="namespace_g_ft_1_1json.html#ac5be73a88ef7d25b4c3e90aa7bdf2deb">StdOStream</a>&lt; CharT &gt; &amp;os, const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a>&lt; CharT &gt; &amp;v)</td></tr>
+<tr class="memdesc:acc859e926cd51a8a4665add47657ede1"><td class="mdescLeft">&#160;</td><td class="mdescRight">向流中写入 JSON 值对象  <br /></td></tr>
+<tr class="separator:acc859e926cd51a8a4665add47657ede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5efdad357e612b34f2f26de11dc6bd6" id="r_ad5efdad357e612b34f2f26de11dc6bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft_1_1json.html#a0058371631e2787a268de5c551498250">StdIStream</a>&lt; CharT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5efdad357e612b34f2f26de11dc6bd6">operator&gt;&gt;</a> (<a class="el" href="namespace_g_ft_1_1json.html#a0058371631e2787a268de5c551498250">StdIStream</a>&lt; CharT &gt; &amp;is, <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a>&lt; CharT &gt; &amp;v)</td></tr>
+<tr class="memdesc:ad5efdad357e612b34f2f26de11dc6bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">从流中读取 JSON 值对象  <br /></td></tr>
+<tr class="separator:ad5efdad357e612b34f2f26de11dc6bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename CharT&gt;<br />
+class GFt::json::Value&lt; CharT &gt;</div><p>JSON 值对象 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a4b76056ceac66ba89369aab6c92e5b25" name="a4b76056ceac66ba89369aab6c92e5b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b76056ceac66ba89369aab6c92e5b25">&#9670;&#160;</a></span>Value() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1561cbeb7dc034b13c49a91353d5ccb5" name="a1561cbeb7dc034b13c49a91353d5ccb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1561cbeb7dc034b13c49a91353d5ccb5">&#9670;&#160;</a></span>Value() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a573e06cd2e45a45cf484b6c952a2dc50" name="a573e06cd2e45a45cf484b6c952a2dc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573e06cd2e45a45cf484b6c952a2dc50">&#9670;&#160;</a></span>Value() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68b463bbc819d1869ad97e40aa7cbe5d" name="a68b463bbc819d1869ad97e40aa7cbe5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b463bbc819d1869ad97e40aa7cbe5d">&#9670;&#160;</a></span>Value() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">const CharT(&amp;)</td>          <td class="paramname"><span class="paramname"><em>s</em></span>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b70cf1f51b80143a02cbb937e2767bb" name="a7b70cf1f51b80143a02cbb937e2767bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b70cf1f51b80143a02cbb937e2767bb">&#9670;&#160;</a></span>Value() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">const CharT *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19a5fb1e518b05ac85e45ef6ef3f0e15" name="a19a5fb1e518b05ac85e45ef6ef3f0e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a5fb1e518b05ac85e45ef6ef3f0e15">&#9670;&#160;</a></span>Value() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44e6120d28b149e911a681ff9e69e4e0" name="a44e6120d28b149e911a681ff9e69e4e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e6120d28b149e911a681ff9e69e4e0">&#9670;&#160;</a></span>Value() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e1f71106f0dda7cb47983c03870dbd9" name="a1e1f71106f0dda7cb47983c03870dbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1f71106f0dda7cb47983c03870dbd9">&#9670;&#160;</a></span>Value() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::Value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9937e4f98e143960624e06ad0fb1ecb9" name="a9937e4f98e143960624e06ad0fb1ecb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9937e4f98e143960624e06ad0fb1ecb9">&#9670;&#160;</a></span>asArray() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa29a94ade1f4bab1faff27fbd43d9af9" name="aa29a94ade1f4bab1faff27fbd43d9af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29a94ade1f4bab1faff27fbd43d9af9">&#9670;&#160;</a></span>asArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a725c34d2fcb50147aa7a0c980780a3a4" name="a725c34d2fcb50147aa7a0c980780a3a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725c34d2fcb50147aa7a0c980780a3a4">&#9670;&#160;</a></span>asBoolean() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asBoolean </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3315a15e3efce735bb9e5d870217e54e" name="a3315a15e3efce735bb9e5d870217e54e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3315a15e3efce735bb9e5d870217e54e">&#9670;&#160;</a></span>asBoolean() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asBoolean </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ce8914f67d4f8f1278b80f8f241215a" name="a0ce8914f67d4f8f1278b80f8f241215a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce8914f67d4f8f1278b80f8f241215a">&#9670;&#160;</a></span>asInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asInteger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ddf14727e913c1a962799337f96ca61" name="a1ddf14727e913c1a962799337f96ca61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ddf14727e913c1a962799337f96ca61">&#9670;&#160;</a></span>asNumber() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af64124d98a114e1428d44ebc56d7ce5a" name="af64124d98a114e1428d44ebc56d7ce5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64124d98a114e1428d44ebc56d7ce5a">&#9670;&#160;</a></span>asNumber() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af83ab1f6b1db8b3483a7b211ccf4fe8f" name="af83ab1f6b1db8b3483a7b211ccf4fe8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83ab1f6b1db8b3483a7b211ccf4fe8f">&#9670;&#160;</a></span>asObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47cf2ff1831bfa38130202393492da70" name="a47cf2ff1831bfa38130202393492da70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47cf2ff1831bfa38130202393492da70">&#9670;&#160;</a></span>asObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae784257318ca31932f09b18727973265" name="ae784257318ca31932f09b18727973265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae784257318ca31932f09b18727973265">&#9670;&#160;</a></span>asString() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d69f36598ce779ed6dc4f6e61ea0fec" name="a1d69f36598ce779ed6dc4f6e61ea0fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d69f36598ce779ed6dc4f6e61ea0fec">&#9670;&#160;</a></span>asString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::asString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad741b8e76b3a61063e54096800d7cdff" name="ad741b8e76b3a61063e54096800d7cdff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad741b8e76b3a61063e54096800d7cdff">&#9670;&#160;</a></span>at() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94f916b05c3d776e1858fa7ed4d816ca" name="a94f916b05c3d776e1858fa7ed4d816ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f916b05c3d776e1858fa7ed4d816ca">&#9670;&#160;</a></span>at() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14d5e48667f6ff7e699d4d75a2a0bd98" name="a14d5e48667f6ff7e699d4d75a2a0bd98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d5e48667f6ff7e699d4d75a2a0bd98">&#9670;&#160;</a></span>isArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a553df0ce2bc162fa2c5999075245ff64" name="a553df0ce2bc162fa2c5999075245ff64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553df0ce2bc162fa2c5999075245ff64">&#9670;&#160;</a></span>isBool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isBool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36f46bebe69f952d17a437f991c70746" name="a36f46bebe69f952d17a437f991c70746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f46bebe69f952d17a437f991c70746">&#9670;&#160;</a></span>isFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isFloat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a227c85fbe0e0a107a81081545cedbf2d" name="a227c85fbe0e0a107a81081545cedbf2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227c85fbe0e0a107a81081545cedbf2d">&#9670;&#160;</a></span>isInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isInteger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a974e084fdb8555440c9d419e8180c9f9" name="a974e084fdb8555440c9d419e8180c9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974e084fdb8555440c9d419e8180c9f9">&#9670;&#160;</a></span>isNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isNull </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1733df61e5f50db8f198d40261cc333b" name="a1733df61e5f50db8f198d40261cc333b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1733df61e5f50db8f198d40261cc333b">&#9670;&#160;</a></span>isNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51291f5f9ce1f19cf516a5b1b217b8ed" name="a51291f5f9ce1f19cf516a5b1b217b8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51291f5f9ce1f19cf516a5b1b217b8ed">&#9670;&#160;</a></span>isObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77e43c73da3a37a6227ef9fb777bf7f4" name="a77e43c73da3a37a6227ef9fb777bf7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e43c73da3a37a6227ef9fb777bf7f4">&#9670;&#160;</a></span>isString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::isString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb27a09e233189f0b80bf3fa5ecf5350" name="afb27a09e233189f0b80bf3fa5ecf5350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb27a09e233189f0b80bf3fa5ecf5350">&#9670;&#160;</a></span>operator=() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbd3faba0186517858b9299718ce38ae" name="afbd3faba0186517858b9299718ce38ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd3faba0186517858b9299718ce38ae">&#9670;&#160;</a></span>operator=() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a4114348dbff7ef30cbaf36a87efb54c8">Array</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d4e77b2e9d03817afd87840b5978059" name="a2d4e77b2e9d03817afd87840b5978059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4e77b2e9d03817afd87840b5978059">&#9670;&#160;</a></span>operator=() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const CharT *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2e04736f4674fee3b968cb0999177cd" name="ac2e04736f4674fee3b968cb0999177cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e04736f4674fee3b968cb0999177cd">&#9670;&#160;</a></span>operator=() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const CharT(&amp;)</td>          <td class="paramname"><span class="paramname"><em>s</em></span>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19e3035b42797c72bbe8fbc082b905f6" name="a19e3035b42797c72bbe8fbc082b905f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e3035b42797c72bbe8fbc082b905f6">&#9670;&#160;</a></span>operator=() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#ae0221bdb90ce6700b5ac2bc76d6f4919">Object</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8b3f1378a60e89d60cb8cf7b0880738" name="af8b3f1378a60e89d60cb8cf7b0880738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b3f1378a60e89d60cb8cf7b0880738">&#9670;&#160;</a></span>operator=() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22356eff08331705b7caa5c83ff24517" name="a22356eff08331705b7caa5c83ff24517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22356eff08331705b7caa5c83ff24517">&#9670;&#160;</a></span>operator=() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a710ddd44238474d287c93ec2c3284d49" name="a710ddd44238474d287c93ec2c3284d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710ddd44238474d287c93ec2c3284d49">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb422b77445b280d49b32038f23c5c92" name="abb422b77445b280d49b32038f23c5c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb422b77445b280d49b32038f23c5c92">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4f6f57fa3367fb436a9313fdde752b7" name="ab4f6f57fa3367fb436a9313fdde752b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f6f57fa3367fb436a9313fdde752b7">&#9670;&#160;</a></span>operator[]() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79b6042d75dcd2116db42b4e2104a402" name="a79b6042d75dcd2116db42b4e2104a402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b6042d75dcd2116db42b4e2104a402">&#9670;&#160;</a></span>operator[]() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a> &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae12458f14666666a3da5daf5ff42bb44" name="ae12458f14666666a3da5daf5ff42bb44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12458f14666666a3da5daf5ff42bb44">&#9670;&#160;</a></span>toBool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::toBool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae615f7f9e6ea6941119cbac343745b56" name="ae615f7f9e6ea6941119cbac343745b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae615f7f9e6ea6941119cbac343745b56">&#9670;&#160;</a></span>toFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::toFloat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b3b344611fbd2b0be253ad43578fa73" name="a2b3b344611fbd2b0be253ad43578fa73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b3b344611fbd2b0be253ad43578fa73">&#9670;&#160;</a></span>toInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::toInt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af902e5faf20b0fbeb2d2c61801a5688d" name="af902e5faf20b0fbeb2d2c61801a5688d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af902e5faf20b0fbeb2d2c61801a5688d">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespace_g_ft_1_1json.html#a95b623cd37fc3b637a1df9a16f95b4ba">StdString</a>&lt; CharT &gt; &amp; <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::toString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8096dacfff0303a3343cbe2b24d7eee" name="ac8096dacfff0303a3343cbe2b24d7eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8096dacfff0303a3343cbe2b24d7eee">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft_1_1json.html#ade3d078dadd474f77b23fc8485f2c15f">Type</a> <a class="el" href="class_g_ft_1_1json_1_1_value.html">GFt::json::Value</a>&lt; CharT &gt;::type </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取当前 JSON 值对象持有的 JSON 值类型 </p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="acc859e926cd51a8a4665add47657ede1" name="acc859e926cd51a8a4665add47657ede1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc859e926cd51a8a4665add47657ede1">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft_1_1json.html#ac5be73a88ef7d25b4c3e90aa7bdf2deb">StdOStream</a>&lt; CharT &gt; &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft_1_1json.html#ac5be73a88ef7d25b4c3e90aa7bdf2deb">StdOStream</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>向流中写入 JSON 值对象 </p>
+
+</div>
+</div>
+<a id="ad5efdad357e612b34f2f26de11dc6bd6" name="ad5efdad357e612b34f2f26de11dc6bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5efdad357e612b34f2f26de11dc6bd6">&#9670;&#160;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft_1_1json.html#a0058371631e2787a268de5c551498250">StdIStream</a>&lt; CharT &gt; &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_g_ft_1_1json.html#a0058371631e2787a268de5c551498250">StdIStream</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>is</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从流中读取 JSON 值对象 </p>
+<p>这个函数会尝试解析 JSON 格式的字符串，并将解析结果存储在当前 JSON 值对象中 它会忽略冗余的空白符、注释和尾随逗号 </p><dl class="section note"><dt>注解</dt><dd>若在读取时遇到错误，会设置流状态为 failbit </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="namespace_g_ft_1_1json.html">json</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1json_1_1_value.html">Value</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

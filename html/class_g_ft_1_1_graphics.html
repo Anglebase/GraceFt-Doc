@@ -33,7 +33,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
    </div>
    <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
   </td>
@@ -585,7 +585,7 @@ Public 成员函数</h2></td></tr>
 <p>绘制椭圆 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rect</td><td>椭圆 </td></tr>
+    <tr><td class="paramname">ellipse</td><td>椭圆 </td></tr>
   </table>
   </dd>
 </dl>
@@ -949,6 +949,7 @@ Public 成员函数</h2></td></tr>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>路径 </td></tr>
+    <tr><td class="paramname">pos</td><td>路径起点坐标 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1100,7 +1101,7 @@ Public 成员函数</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">text</td><td>要绘制的文本 </td></tr>
     <tr><td class="paramname">pos</td><td>要绘制的位置 </td></tr>
-    <tr><td class="paramname">font</td><td>指定的字体集合 </td></tr>
+    <tr><td class="paramname">fonts</td><td>指定的回滚字体集合 </td></tr>
     <tr><td class="paramname">show</td><td>是否显示文本, 若为false则只计算文本的宽度 </td></tr>
   </table>
   </dd>
@@ -1350,8 +1351,18 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>对于传入的矩阵, 默认其已经过齐次变换, 即矩阵的最后一列为 (0, 0, 1) </p>
-
+<p>对于传入的矩阵, 默认其已经过齐次变换, 即矩阵的最后一列为 (0, 0, 1) </p><div class="fragment"><div class="line"><span class="comment">// 例如：将当前坐标系绕点 (100, 100) 逆时针旋转 45 度</span></div>
+<div class="line"><span class="comment">// 然后将变换后的坐标原点平移至 (100, 100)</span></div>
+<div class="line"><span class="comment">// 最后再以变换后的 (200, 200) 为中心进行缩放到原先的 2 倍</span></div>
+<div class="line">g.setTransform(</div>
+<div class="line">    <a class="code hl_function" href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gaf688561ff7b3b4b50dfc1069a3c21505">rotate</a>(makeVec2(100, 100), <a class="code hl_function" href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga83ce582dfd9e9fbebe8cabeb38799a45">radians</a>(45)) *</div>
+<div class="line">    <a class="code hl_function" href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga3076392d29f7004d47b5079bde60a8a6">translate</a>(makeVec2(100, 100)) *</div>
+<div class="line">    <a class="code hl_function" href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga405f13b7fee7145b7e218644861a0e4c">scale</a>(makeVec2(200, 200), makeVec2(2, 2));</div>
+<div class="ttc" id="agroup___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7_html_ga3076392d29f7004d47b5079bde60a8a6"><div class="ttname"><a href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga3076392d29f7004d47b5079bde60a8a6">GFt::translate</a></div><div class="ttdeci">constexpr Matrix&lt; M+1, M+1, T &gt; translate(const Vec&lt; M, T &gt; &amp;v)</div><div class="ttdoc">创建平移坐标变换矩阵</div><div class="ttdef"><b>定义</b> LMath.hpp:172</div></div>
+<div class="ttc" id="agroup___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7_html_ga405f13b7fee7145b7e218644861a0e4c"><div class="ttname"><a href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga405f13b7fee7145b7e218644861a0e4c">GFt::scale</a></div><div class="ttdeci">constexpr Matrix&lt; M+1, M+1, T &gt; scale(const Vec&lt; M, T &gt; &amp;pos, const Vec&lt; M, T &gt; &amp;s)</div><div class="ttdoc">创建缩放坐标变换矩阵</div><div class="ttdef"><b>定义</b> LMath.hpp:187</div></div>
+<div class="ttc" id="agroup___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7_html_ga83ce582dfd9e9fbebe8cabeb38799a45"><div class="ttname"><a href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#ga83ce582dfd9e9fbebe8cabeb38799a45">GFt::radians</a></div><div class="ttdeci">constexpr double radians(T deg)</div><div class="ttdoc">将角度制转为弧度制</div><div class="ttdef"><b>定义</b> LMath.hpp:244</div></div>
+<div class="ttc" id="agroup___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7_html_gaf688561ff7b3b4b50dfc1069a3c21505"><div class="ttname"><a href="group___xE7_xBA_xBF_xE6_x80_xA7_xE4_xBB_xA3_xE6_x95_xB0_xE5_xB7_xA5_xE5_x85_xB7.html#gaf688561ff7b3b4b50dfc1069a3c21505">GFt::rotate</a></div><div class="ttdeci">constexpr Matrix&lt; 3, 3, T &gt; rotate(const Vec&lt; 2, T &gt; &amp;axis, float rad)</div><div class="ttdoc">创建二维坐标系下的旋转坐标变换矩阵</div><div class="ttdef"><b>定义</b> LMath.hpp:200</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a85dac0edab97924443196d92901628f1" name="a85dac0edab97924443196d92901628f1"></a>

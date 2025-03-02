@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: 字符串操作函数</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('group___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">字符串操作函数<div class="ingroups"><a class="el" href="group___xE5_xB7_xA5_xE5_x85_xB7_xE9_x9B_x86.html">工具集</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga55e47451a71e8678f46472a602f768c6" id="r_ga55e47451a71e8678f46472a602f768c6"><td class="memTemplParams" colspan="2">template&lt;typename CharT &gt; </td></tr>
+<tr class="memitem:ga55e47451a71e8678f46472a602f768c6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga55e47451a71e8678f46472a602f768c6">GFt::join</a> (const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;strs, CharT *delimiter)</td></tr>
+<tr class="memdesc:ga55e47451a71e8678f46472a602f768c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是一个重载  <br /></td></tr>
+<tr class="separator:ga55e47451a71e8678f46472a602f768c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d720b46f027c95a71ed10e2a5dff1a7" id="r_ga3d720b46f027c95a71ed10e2a5dff1a7"><td class="memTemplParams" colspan="2">template&lt;typename CharT &gt; </td></tr>
+<tr class="memitem:ga3d720b46f027c95a71ed10e2a5dff1a7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga3d720b46f027c95a71ed10e2a5dff1a7">GFt::join</a> (const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;strs, CharT delimiter)</td></tr>
+<tr class="memdesc:ga3d720b46f027c95a71ed10e2a5dff1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是一个重载  <br /></td></tr>
+<tr class="separator:ga3d720b46f027c95a71ed10e2a5dff1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8aff2b141ee2191edddb888b1b4bbaa" id="r_gad8aff2b141ee2191edddb888b1b4bbaa"><td class="memTemplParams" colspan="2">template&lt;typename CharT , size_t N&gt; </td></tr>
+<tr class="memitem:gad8aff2b141ee2191edddb888b1b4bbaa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gad8aff2b141ee2191edddb888b1b4bbaa">GFt::join</a> (const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;strs, const CharT(&amp;delimiter)[<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>])</td></tr>
+<tr class="memdesc:gad8aff2b141ee2191edddb888b1b4bbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是一个重载  <br /></td></tr>
+<tr class="separator:gad8aff2b141ee2191edddb888b1b4bbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32cc16917586d35cc3925c70e4d29442" id="r_ga32cc16917586d35cc3925c70e4d29442"><td class="memTemplParams" colspan="2">template&lt;typename CharT &gt; </td></tr>
+<tr class="memitem:ga32cc16917586d35cc3925c70e4d29442"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga32cc16917586d35cc3925c70e4d29442">GFt::join</a> (const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;strs, const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;delimiter)</td></tr>
+<tr class="memdesc:ga32cc16917586d35cc3925c70e4d29442"><td class="mdescLeft">&#160;</td><td class="mdescRight">字符串拼接函数  <br /></td></tr>
+<tr class="separator:ga32cc16917586d35cc3925c70e4d29442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6750e8b437fe8df6dc1250b8c0e7a0cd" id="r_ga6750e8b437fe8df6dc1250b8c0e7a0cd"><td class="memTemplParams" colspan="2">template&lt;typename CharT &gt; </td></tr>
+<tr class="memitem:ga6750e8b437fe8df6dc1250b8c0e7a0cd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga6750e8b437fe8df6dc1250b8c0e7a0cd">GFt::split</a> (const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;str, CharT *delimiter)</td></tr>
+<tr class="memdesc:ga6750e8b437fe8df6dc1250b8c0e7a0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是一个重载  <br /></td></tr>
+<tr class="separator:ga6750e8b437fe8df6dc1250b8c0e7a0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab1873e18ccb330c16eba1f99be270ca" id="r_gaab1873e18ccb330c16eba1f99be270ca"><td class="memTemplParams" colspan="2">template&lt;typename CharT &gt; </td></tr>
+<tr class="memitem:gaab1873e18ccb330c16eba1f99be270ca"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaab1873e18ccb330c16eba1f99be270ca">GFt::split</a> (const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;str, CharT delimiter)</td></tr>
+<tr class="memdesc:gaab1873e18ccb330c16eba1f99be270ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是一个重载  <br /></td></tr>
+<tr class="separator:gaab1873e18ccb330c16eba1f99be270ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69e656148a5adcd77233b646eeb6d164" id="r_ga69e656148a5adcd77233b646eeb6d164"><td class="memTemplParams" colspan="2">template&lt;typename CharT , size_t N&gt; </td></tr>
+<tr class="memitem:ga69e656148a5adcd77233b646eeb6d164"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga69e656148a5adcd77233b646eeb6d164">GFt::split</a> (const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;str, const CharT(&amp;delimiter)[<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#ggad4cc0aeb1aafaf6155c13d69069fddf2a8d9c307cb7f3c4a32822a51922d1ceaa">N</a>])</td></tr>
+<tr class="memdesc:ga69e656148a5adcd77233b646eeb6d164"><td class="mdescLeft">&#160;</td><td class="mdescRight">这是一个重载  <br /></td></tr>
+<tr class="separator:ga69e656148a5adcd77233b646eeb6d164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cc0f357d0d4485f6be7e2b98963729b" id="r_ga7cc0f357d0d4485f6be7e2b98963729b"><td class="memTemplParams" colspan="2">template&lt;typename CharT &gt; </td></tr>
+<tr class="memitem:ga7cc0f357d0d4485f6be7e2b98963729b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga7cc0f357d0d4485f6be7e2b98963729b">GFt::split</a> (const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;str, const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;delimiter)</td></tr>
+<tr class="memdesc:ga7cc0f357d0d4485f6be7e2b98963729b"><td class="mdescLeft">&#160;</td><td class="mdescRight">字符串分割函数  <br /></td></tr>
+<tr class="separator:ga7cc0f357d0d4485f6be7e2b98963729b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>此部分函数在头文件 <a class="el" href="_tools_8h_source.html">Tools.h</a> 中定义 </p>
+<h2 class="groupheader">函数说明</h2>
+<a id="ga55e47451a71e8678f46472a602f768c6" name="ga55e47451a71e8678f46472a602f768c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55e47451a71e8678f46472a602f768c6">&#9670;&#160;</a></span>join() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; GFt::join </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CharT *</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是一个重载 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#ga32cc16917586d35cc3925c70e4d29442" title="字符串拼接函数">join()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga3d720b46f027c95a71ed10e2a5dff1a7" name="ga3d720b46f027c95a71ed10e2a5dff1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d720b46f027c95a71ed10e2a5dff1a7">&#9670;&#160;</a></span>join() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; GFt::join </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CharT</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是一个重载 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#ga32cc16917586d35cc3925c70e4d29442" title="字符串拼接函数">join()</a> </dd></dl>
+
+</div>
+</div>
+<a id="gad8aff2b141ee2191edddb888b1b4bbaa" name="gad8aff2b141ee2191edddb888b1b4bbaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8aff2b141ee2191edddb888b1b4bbaa">&#9670;&#160;</a></span>join() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; GFt::join </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CharT(&amp;)</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>[N]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是一个重载 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#ga32cc16917586d35cc3925c70e4d29442" title="字符串拼接函数">join()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga32cc16917586d35cc3925c70e4d29442" name="ga32cc16917586d35cc3925c70e4d29442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32cc16917586d35cc3925c70e4d29442">&#9670;&#160;</a></span>join() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; GFt::join </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>strs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>字符串拼接函数 </p>
+<p>该函数将一个字符串集合按照一个分隔符拼接为一个字符串 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strs</td><td>要拼接的字符串集合 </td></tr>
+    <tr><td class="paramname">delimiter</td><td>分隔符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>拼接后的字符串 <div class="fragment"><div class="line"> 示例</div>
+<div class="line">std::vector&lt;std::string&gt; strs = {<span class="stringliteral">&quot;hello&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>};</div>
+<div class="line">std::string result = <a class="code hl_function" href="#ga32cc16917586d35cc3925c70e4d29442">GFt::join</a>(strs, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><span class="comment">// result = &quot;hello,world&quot;</span></div>
+<div class="ttc" id="agroup___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0_html_ga32cc16917586d35cc3925c70e4d29442"><div class="ttname"><a href="#ga32cc16917586d35cc3925c70e4d29442">GFt::join</a></div><div class="ttdeci">StdString&lt; CharT &gt; join(const std::vector&lt; StdString&lt; CharT &gt; &gt; &amp;strs, const StdString&lt; CharT &gt; &amp;delimiter)</div><div class="ttdoc">字符串拼接函数</div><div class="ttdef"><b>定义</b> Tools.h:227</div></div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga6750e8b437fe8df6dc1250b8c0e7a0cd" name="ga6750e8b437fe8df6dc1250b8c0e7a0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6750e8b437fe8df6dc1250b8c0e7a0cd">&#9670;&#160;</a></span>split() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; GFt::split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CharT *</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是一个重载 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#ga7cc0f357d0d4485f6be7e2b98963729b" title="字符串分割函数">split()</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaab1873e18ccb330c16eba1f99be270ca" name="gaab1873e18ccb330c16eba1f99be270ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab1873e18ccb330c16eba1f99be270ca">&#9670;&#160;</a></span>split() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; GFt::split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CharT</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是一个重载 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#ga7cc0f357d0d4485f6be7e2b98963729b" title="字符串分割函数">split()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga69e656148a5adcd77233b646eeb6d164" name="ga69e656148a5adcd77233b646eeb6d164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69e656148a5adcd77233b646eeb6d164">&#9670;&#160;</a></span>split() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; GFt::split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CharT(&amp;)</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>[N]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>这是一个重载 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="#ga7cc0f357d0d4485f6be7e2b98963729b" title="字符串分割函数">split()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga7cc0f357d0d4485f6be7e2b98963729b" name="ga7cc0f357d0d4485f6be7e2b98963729b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cc0f357d0d4485f6be7e2b98963729b">&#9670;&#160;</a></span>split() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &gt; GFt::split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespace_g_ft.html#a07eeec0df47eb4e14bb97af2779afc78">StdString</a>&lt; CharT &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>字符串分割函数 </p>
+<p>该函数将一个字符串按照一个分隔符分割为多个子字符串 如果分隔符为空，则不会执行任何分割操作 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>要分割的字符串 </td></tr>
+    <tr><td class="paramname">delimiter</td><td>分隔符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>子字符串的集合 <div class="fragment"><div class="line"> 示例</div>
+<div class="line">std::string str = <span class="stringliteral">&quot;hello,world&quot;</span>;</div>
+<div class="line">std::vector&lt;std::string&gt; substrings = <a class="code hl_function" href="#ga7cc0f357d0d4485f6be7e2b98963729b">GFt::split</a>(str, <span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><span class="comment">// substrings = {&quot;hello&quot;, &quot;world&quot;}</span></div>
+<div class="ttc" id="agroup___xE5_xAD_x97_xE7_xAC_xA6_xE4_xB8_xB2_xE6_x93_x8D_xE4_xBD_x9C_xE5_x87_xBD_xE6_x95_xB0_html_ga7cc0f357d0d4485f6be7e2b98963729b"><div class="ttname"><a href="#ga7cc0f357d0d4485f6be7e2b98963729b">GFt::split</a></div><div class="ttdeci">std::vector&lt; StdString&lt; CharT &gt; &gt; split(const StdString&lt; CharT &gt; &amp;str, const StdString&lt; CharT &gt; &amp;delimiter)</div><div class="ttdoc">字符串分割函数</div><div class="ttdef"><b>定义</b> Tools.h:177</div></div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: GFt::Widget::CheckBox类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_g_ft_1_1_widget_1_1_check_box.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_g_ft_1_1_widget_1_1_check_box-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">GFt::Widget::CheckBox类 参考<div class="ingroups"><a class="el" href="group___xE9_x83_xA8_xE4_xBB_xB6_xE5_xBA_x93.html">部件库</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>复选框  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_check_box_8h_source.html">CheckBox.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 GFt::Widget::CheckBox 继承关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="class_g_ft_1_1_widget_1_1_check_box.png" usemap="#GFt::Widget::CheckBox_map" alt=""/>
+  <map id="GFt::Widget::CheckBox_map" name="GFt::Widget::CheckBox_map">
+<area href="class_g_ft_1_1_block.html" title="块对象" alt="GFt::Block" shape="rect" coords="482,224,713,248"/>
+<area href="class_g_ft_1_1_graph_interface.html" title="图形绘制接口" alt="GFt::GraphInterface" shape="rect" coords="0,168,231,192"/>
+<area href="class_g_ft_1_1_event_monitor.html" title="事件监视器接口类" alt="GFt::EventMonitor" shape="rect" coords="964,168,1195,192"/>
+<area href="class_g_ft_1_1_mouse_event_monitor.html" title="鼠标事件监视器接口类" alt="GFt::MouseEventMonitor" shape="rect" coords="361,112,592,136"/>
+<area href="class_g_ft_1_1_keyboard_event_monitor.html" title="键盘事件监视器接口类" alt="GFt::KeyboardEventMonitor" shape="rect" coords="964,112,1195,136"/>
+<area href="class_g_ft_1_1_text_input_event_monitor.html" title="文本输入事件监视器接口类" alt="GFt::TextInputEventMonitor" shape="rect" coords="1205,112,1436,136"/>
+<area href="class_g_ft_1_1_mouse_button_event_monitor.html" title="鼠标按钮事件监视器接口类" alt="GFt::MouseButtonEventMonitor" shape="rect" coords="120,56,351,80"/>
+<area href="class_g_ft_1_1_mouse_move_event_monitor.html" title="鼠标移动事件监视器接口类" alt="GFt::MouseMoveEventMonitor" shape="rect" coords="361,56,592,80"/>
+<area href="class_g_ft_1_1_mouse_wheel_event_monitor.html" title="鼠标滚轮事件监视器接口类" alt="GFt::MouseWheelEventMonitor" shape="rect" coords="602,56,833,80"/>
+<area href="class_g_ft_1_1_key_press_event_monitor.html" title="键盘按下事件监视器接口类" alt="GFt::KeyPressEventMonitor" shape="rect" coords="843,56,1074,80"/>
+<area href="class_g_ft_1_1_key_release_event_monitor.html" title="键盘释放事件监视器接口类" alt="GFt::KeyReleaseEventMonitor" shape="rect" coords="1084,56,1315,80"/>
+<area href="class_g_ft_1_1_mouse_button_press_event_monitor.html" title="鼠标按钮按下事件监视器接口类" alt="GFt::MouseButtonPressEventMonitor" shape="rect" coords="0,0,231,24"/>
+<area href="class_g_ft_1_1_mouse_button_release_event_monitor.html" title="鼠标按钮释放事件监视器接口类" alt="GFt::MouseButtonReleaseEventMonitor" shape="rect" coords="241,0,472,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3b75a8ee92f1b29385f4741ff83c0e03" id="r_a3b75a8ee92f1b29385f4741ff83c0e03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b75a8ee92f1b29385f4741ff83c0e03">CheckBox</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;<a class="el" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>, <a class="el" href="class_g_ft_1_1_block.html">Block</a> *parent=nullptr, int zIndex=0)</td></tr>
+<tr class="memdesc:a3b75a8ee92f1b29385f4741ff83c0e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a3b75a8ee92f1b29385f4741ff83c0e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a63bbe1957ae56d27a281405084a43e" id="r_a6a63bbe1957ae56d27a281405084a43e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a63bbe1957ae56d27a281405084a43e">~CheckBox</a> () override</td></tr>
+<tr class="memdesc:a6a63bbe1957ae56d27a281405084a43e"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <br /></td></tr>
+<tr class="separator:a6a63bbe1957ae56d27a281405084a43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856e4bfe214879bea6aa9a1c6cc0ce80" id="r_a856e4bfe214879bea6aa9a1c6cc0ce80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a856e4bfe214879bea6aa9a1c6cc0ce80">hoverBrush</a> ()</td></tr>
+<tr class="memdesc:a856e4bfe214879bea6aa9a1c6cc0ce80"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a856e4bfe214879bea6aa9a1c6cc0ce80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1781f12f633cd37486d6f7b4bd94f483" id="r_a1781f12f633cd37486d6f7b4bd94f483"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1781f12f633cd37486d6f7b4bd94f483">hoverBrush</a> () const</td></tr>
+<tr class="memdesc:a1781f12f633cd37486d6f7b4bd94f483"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a1781f12f633cd37486d6f7b4bd94f483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e32313facc08cd526b8eb6c84916a6" id="r_a49e32313facc08cd526b8eb6c84916a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49e32313facc08cd526b8eb6c84916a6">hoverFont</a> ()</td></tr>
+<tr class="memdesc:a49e32313facc08cd526b8eb6c84916a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a49e32313facc08cd526b8eb6c84916a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b579f9e43ba86d369a7a6b795f1c9c" id="r_ae6b579f9e43ba86d369a7a6b795f1c9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b579f9e43ba86d369a7a6b795f1c9c">hoverFont</a> () const</td></tr>
+<tr class="memdesc:ae6b579f9e43ba86d369a7a6b795f1c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:ae6b579f9e43ba86d369a7a6b795f1c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40a6898cf055ad2ff0145b60deedc68" id="r_ab40a6898cf055ad2ff0145b60deedc68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab40a6898cf055ad2ff0145b60deedc68">isChecked</a> () const</td></tr>
+<tr class="memdesc:ab40a6898cf055ad2ff0145b60deedc68"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取复选框的选中状态  <br /></td></tr>
+<tr class="separator:ab40a6898cf055ad2ff0145b60deedc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a1f5f9d28b346f16f81cb1927fa364" id="r_a94a1f5f9d28b346f16f81cb1927fa364"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94a1f5f9d28b346f16f81cb1927fa364">normalBrush</a> ()</td></tr>
+<tr class="memdesc:a94a1f5f9d28b346f16f81cb1927fa364"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a94a1f5f9d28b346f16f81cb1927fa364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba9f2cd73da4abc36cb962a3b86647c" id="r_acba9f2cd73da4abc36cb962a3b86647c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acba9f2cd73da4abc36cb962a3b86647c">normalBrush</a> () const</td></tr>
+<tr class="memdesc:acba9f2cd73da4abc36cb962a3b86647c"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:acba9f2cd73da4abc36cb962a3b86647c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c8b95a1d717ee9d78852c6ba220b9e" id="r_a99c8b95a1d717ee9d78852c6ba220b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c8b95a1d717ee9d78852c6ba220b9e">normalFont</a> ()</td></tr>
+<tr class="memdesc:a99c8b95a1d717ee9d78852c6ba220b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a99c8b95a1d717ee9d78852c6ba220b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd101b8c29b252fd1d6998917d2b8ed" id="r_aebd101b8c29b252fd1d6998917d2b8ed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebd101b8c29b252fd1d6998917d2b8ed">normalFont</a> () const</td></tr>
+<tr class="memdesc:aebd101b8c29b252fd1d6998917d2b8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:aebd101b8c29b252fd1d6998917d2b8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084ce953e656696e14c1abfdf28fd096" id="r_a084ce953e656696e14c1abfdf28fd096"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a084ce953e656696e14c1abfdf28fd096">selectedBrush</a> ()</td></tr>
+<tr class="memdesc:a084ce953e656696e14c1abfdf28fd096"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a084ce953e656696e14c1abfdf28fd096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af5cb0ed5f29dd172cf68961837d824" id="r_a0af5cb0ed5f29dd172cf68961837d824"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af5cb0ed5f29dd172cf68961837d824">selectedBrush</a> () const</td></tr>
+<tr class="memdesc:a0af5cb0ed5f29dd172cf68961837d824"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a0af5cb0ed5f29dd172cf68961837d824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74a1aae614bcf3260517c191c9fe154" id="r_ab74a1aae614bcf3260517c191c9fe154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74a1aae614bcf3260517c191c9fe154">selectedFont</a> ()</td></tr>
+<tr class="memdesc:ab74a1aae614bcf3260517c191c9fe154"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:ab74a1aae614bcf3260517c191c9fe154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae013b2b4e5d52aea2a0ee59dcafd80ee" id="r_ae013b2b4e5d52aea2a0ee59dcafd80ee"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae013b2b4e5d52aea2a0ee59dcafd80ee">selectedFont</a> () const</td></tr>
+<tr class="memdesc:ae013b2b4e5d52aea2a0ee59dcafd80ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:ae013b2b4e5d52aea2a0ee59dcafd80ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf302128be38edcd3619978fb78fd244" id="r_acf302128be38edcd3619978fb78fd244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf302128be38edcd3619978fb78fd244">setChecked</a> (bool checked)</td></tr>
+<tr class="memdesc:acf302128be38edcd3619978fb78fd244"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置复选框的选中状态  <br /></td></tr>
+<tr class="separator:acf302128be38edcd3619978fb78fd244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab942a03493bac84a9d48c3c450f033a3" id="r_ab942a03493bac84a9d48c3c450f033a3"><td class="memItemLeft" align="right" valign="top">std::wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab942a03493bac84a9d48c3c450f033a3">text</a> ()</td></tr>
+<tr class="memdesc:ab942a03493bac84a9d48c3c450f033a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:ab942a03493bac84a9d48c3c450f033a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d2ec319c29d1d5433c2a772c568302" id="r_a34d2ec319c29d1d5433c2a772c568302"><td class="memItemLeft" align="right" valign="top">const std::wstring &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d2ec319c29d1d5433c2a772c568302">text</a> () const</td></tr>
+<tr class="memdesc:a34d2ec319c29d1d5433c2a772c568302"><td class="mdescLeft">&#160;</td><td class="mdescRight">样式信息函数  <br /></td></tr>
+<tr class="separator:a34d2ec319c29d1d5433c2a772c568302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_g_ft_1_1_block"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_g_ft_1_1_block')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_g_ft_1_1_block.html">GFt::Block</a></td></tr>
+<tr class="memitem:aed3aa46411c98699bbcbba44667a8900 inherit pub_methods_class_g_ft_1_1_block" id="r_aed3aa46411c98699bbcbba44667a8900"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#aed3aa46411c98699bbcbba44667a8900">Block</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;<a class="el" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>, <a class="el" href="class_g_ft_1_1_block.html">Block</a> *parent=nullptr, int zIndex=0)</td></tr>
+<tr class="memdesc:aed3aa46411c98699bbcbba44667a8900 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:aed3aa46411c98699bbcbba44667a8900 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899e7c9e34803106fd05b95de18fcc67 inherit pub_methods_class_g_ft_1_1_block" id="r_a899e7c9e34803106fd05b95de18fcc67"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a899e7c9e34803106fd05b95de18fcc67">~Block</a> ()</td></tr>
+<tr class="separator:a899e7c9e34803106fd05b95de18fcc67 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac953fd57cd0fc2ce7820e9db3666dda9 inherit pub_methods_class_g_ft_1_1_block" id="r_ac953fd57cd0fc2ce7820e9db3666dda9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ac953fd57cd0fc2ce7820e9db3666dda9">absolutePosition</a> () const</td></tr>
+<tr class="memdesc:ac953fd57cd0fc2ce7820e9db3666dda9 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算相对于屏幕的绝对坐标  <br /></td></tr>
+<tr class="separator:ac953fd57cd0fc2ce7820e9db3666dda9 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block" id="r_afa17ae2b61a7af0ba3530d87e7a6a5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#afa17ae2b61a7af0ba3530d87e7a6a5d1">addChild</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *child)</td></tr>
+<tr class="memdesc:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加子对象  <br /></td></tr>
+<tr class="separator:afa17ae2b61a7af0ba3530d87e7a6a5d1 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block" id="r_a478795a68b66001db32edb1544009060"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a478795a68b66001db32edb1544009060">getParent</a> () const</td></tr>
+<tr class="memdesc:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取父对象  <br /></td></tr>
+<tr class="separator:a478795a68b66001db32edb1544009060 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block" id="r_ab5a954ef438e4694de271b46e746ce56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ab5a954ef438e4694de271b46e746ce56">getZIndex</a> () const</td></tr>
+<tr class="memdesc:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取层级  <br /></td></tr>
+<tr class="separator:ab5a954ef438e4694de271b46e746ce56 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea62ba84b390e284db100fdf96775a3 inherit pub_methods_class_g_ft_1_1_block" id="r_a5ea62ba84b390e284db100fdf96775a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a5ea62ba84b390e284db100fdf96775a3">hide</a> ()</td></tr>
+<tr class="memdesc:a5ea62ba84b390e284db100fdf96775a3 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">隐藏块对象  <br /></td></tr>
+<tr class="separator:a5ea62ba84b390e284db100fdf96775a3 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a37a0e1c1ab0aa05942909a4ad6919 inherit pub_methods_class_g_ft_1_1_block" id="r_a08a37a0e1c1ab0aa05942909a4ad6919"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a08a37a0e1c1ab0aa05942909a4ad6919">isHide</a> () const</td></tr>
+<tr class="memdesc:a08a37a0e1c1ab0aa05942909a4ad6919 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取块当前是否被隐藏  <br /></td></tr>
+<tr class="separator:a08a37a0e1c1ab0aa05942909a4ad6919 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block" id="r_a0549aff184d697abe5f825da0342a779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a0549aff184d697abe5f825da0342a779">relativePosFrom</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *block) const</td></tr>
+<tr class="memdesc:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算相对于指定对象的相对坐标  <br /></td></tr>
+<tr class="separator:a0549aff184d697abe5f825da0342a779 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block" id="r_ad9082b218a2ebfadc249eb9469532088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ad9082b218a2ebfadc249eb9469532088">removeChild</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *child)</td></tr>
+<tr class="memdesc:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除子对象  <br /></td></tr>
+<tr class="separator:ad9082b218a2ebfadc249eb9469532088 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block" id="r_ac47724e32dd61b83bcadc907fc4efabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ac47724e32dd61b83bcadc907fc4efabe">setParent</a> (<a class="el" href="class_g_ft_1_1_block.html">Block</a> *parent)</td></tr>
+<tr class="memdesc:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置父对象  <br /></td></tr>
+<tr class="separator:ac47724e32dd61b83bcadc907fc4efabe inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block" id="r_a3e1554d34e6520a7a2c1fa5d3f3ec2c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a3e1554d34e6520a7a2c1fa5d3f3ec2c5">setZIndex</a> (int zIndex)</td></tr>
+<tr class="memdesc:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置层级  <br /></td></tr>
+<tr class="separator:a3e1554d34e6520a7a2c1fa5d3f3ec2c5 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6134e1d136284b60ce443f5c40033be2 inherit pub_methods_class_g_ft_1_1_block" id="r_a6134e1d136284b60ce443f5c40033be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a6134e1d136284b60ce443f5c40033be2">show</a> ()</td></tr>
+<tr class="memdesc:a6134e1d136284b60ce443f5c40033be2 inherit pub_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示块对象  <br /></td></tr>
+<tr class="separator:a6134e1d136284b60ce443f5c40033be2 inherit pub_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_g_ft_1_1_graph_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_g_ft_1_1_graph_interface')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_g_ft_1_1_graph_interface.html">GFt::GraphInterface</a></td></tr>
+<tr class="memitem:a1454812a2eb855681fe43598ff3e1209 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a1454812a2eb855681fe43598ff3e1209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a1454812a2eb855681fe43598ff3e1209">GraphInterface</a> (<a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> <a class="el" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>)</td></tr>
+<tr class="memdesc:a1454812a2eb855681fe43598ff3e1209 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="separator:a1454812a2eb855681fe43598ff3e1209 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095e9ff0d0a11908b8a48dce7a4b8dbb inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a095e9ff0d0a11908b8a48dce7a4b8dbb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a095e9ff0d0a11908b8a48dce7a4b8dbb">~GraphInterface</a> ()</td></tr>
+<tr class="separator:a095e9ff0d0a11908b8a48dce7a4b8dbb inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c0544fcbbb56c689fe6e3964b6a55d inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a99c0544fcbbb56c689fe6e3964b6a55d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a> () const</td></tr>
+<tr class="separator:a99c0544fcbbb56c689fe6e3964b6a55d inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f431ba4ac0484c97b73dd31ee31cc7 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a37f431ba4ac0484c97b73dd31ee31cc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a37f431ba4ac0484c97b73dd31ee31cc7">setHeight</a> (int height)</td></tr>
+<tr class="separator:a37f431ba4ac0484c97b73dd31ee31cc7 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce31b944e567a0ca91e638e7924cd48 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_abce31b944e567a0ca91e638e7924cd48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#abce31b944e567a0ca91e638e7924cd48">setPosition</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a> &amp;pos)</td></tr>
+<tr class="separator:abce31b944e567a0ca91e638e7924cd48 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace4bf965979812ca5814a983085d74d inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_aace4bf965979812ca5814a983085d74d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#aace4bf965979812ca5814a983085d74d">setRect</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;<a class="el" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>)</td></tr>
+<tr class="separator:aace4bf965979812ca5814a983085d74d inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955b88aaaf2a49bdea685be52a02cc97 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a955b88aaaf2a49bdea685be52a02cc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a955b88aaaf2a49bdea685be52a02cc97">setSize</a> (const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">iSize</a> &amp;<a class="el" href="namespace_g_ft.html#a3e5158a7f92d9d8abcdb9c4bcd7c3d82">size</a>)</td></tr>
+<tr class="separator:a955b88aaaf2a49bdea685be52a02cc97 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe993d73d9127f1df89248b59e35b359 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_afe993d73d9127f1df89248b59e35b359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#afe993d73d9127f1df89248b59e35b359">setWidth</a> (int width)</td></tr>
+<tr class="separator:afe993d73d9127f1df89248b59e35b359 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339ed1cf5fb29f5776d7af952f1f114d inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a339ed1cf5fb29f5776d7af952f1f114d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a339ed1cf5fb29f5776d7af952f1f114d">setX</a> (int x)</td></tr>
+<tr class="separator:a339ed1cf5fb29f5776d7af952f1f114d inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3715ba7bf7af8c682de37c4c6b45fac7 inherit pub_methods_class_g_ft_1_1_graph_interface" id="r_a3715ba7bf7af8c682de37c4c6b45fac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a3715ba7bf7af8c682de37c4c6b45fac7">setY</a> (int y)</td></tr>
+<tr class="separator:a3715ba7bf7af8c682de37c4c6b45fac7 inherit pub_methods_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac43718409863f93e38d03e0d48c43b26" id="r_ac43718409863f93e38d03e0d48c43b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac43718409863f93e38d03e0d48c43b26">onCheckChanged</a></td></tr>
+<tr class="memdesc:ac43718409863f93e38d03e0d48c43b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">复选框选中状态改变时触发  <br /></td></tr>
+<tr class="separator:ac43718409863f93e38d03e0d48c43b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6b70f15a72ac13878e282e14cb890c" id="r_a2a6b70f15a72ac13878e282e14cb890c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a6b70f15a72ac13878e282e14cb890c">onChecked</a></td></tr>
+<tr class="memdesc:a2a6b70f15a72ac13878e282e14cb890c"><td class="mdescLeft">&#160;</td><td class="mdescRight">复选框被选中时触发  <br /></td></tr>
+<tr class="separator:a2a6b70f15a72ac13878e282e14cb890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702b90c7f34785c18d8858a6e0952fec" id="r_a702b90c7f34785c18d8858a6e0952fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702b90c7f34785c18d8858a6e0952fec">onUnchecked</a></td></tr>
+<tr class="memdesc:a702b90c7f34785c18d8858a6e0952fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">复选框被取消选中时触发  <br /></td></tr>
+<tr class="separator:a702b90c7f34785c18d8858a6e0952fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_g_ft_1_1_block"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_g_ft_1_1_block')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="class_g_ft_1_1_block.html">GFt::Block</a></td></tr>
+<tr class="memitem:ab0b56b6e60a79a389522d554313465d5 inherit pub_attribs_class_g_ft_1_1_block" id="r_ab0b56b6e60a79a389522d554313465d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ab0b56b6e60a79a389522d554313465d5">FocusOff</a></td></tr>
+<tr class="memdesc:ab0b56b6e60a79a389522d554313465d5 inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当该对象失去焦点时触发该信号  <br /></td></tr>
+<tr class="separator:ab0b56b6e60a79a389522d554313465d5 inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block" id="r_a364b56258a83062f97e40b1464901aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a364b56258a83062f97e40b1464901aa9">FocusOn</a></td></tr>
+<tr class="memdesc:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当该对象获得焦点时触发该信号  <br /></td></tr>
+<tr class="separator:a364b56258a83062f97e40b1464901aa9 inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block" id="r_a8fca38ee5cc6098c6f2d8219f61b33cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a8fca38ee5cc6098c6f2d8219f61b33cb">HoverOff</a></td></tr>
+<tr class="memdesc:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当鼠标移开该对象时之上时触发该信号  <br /></td></tr>
+<tr class="separator:a8fca38ee5cc6098c6f2d8219f61b33cb inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block" id="r_a5301d542cb3c85aa8381f19d2efeecca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; <a class="el" href="class_g_ft_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a5301d542cb3c85aa8381f19d2efeecca">HoverOn</a></td></tr>
+<tr class="memdesc:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当鼠标悬停该对象时之上时触发该信号  <br /></td></tr>
+<tr class="separator:a5301d542cb3c85aa8381f19d2efeecca inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4f7076dba4a67c0c4ecf5247e8de5f inherit pub_attribs_class_g_ft_1_1_block" id="r_a5d4f7076dba4a67c0c4ecf5247e8de5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a5d4f7076dba4a67c0c4ecf5247e8de5f">ViewChanged</a></td></tr>
+<tr class="memdesc:a5d4f7076dba4a67c0c4ecf5247e8de5f inherit pub_attribs_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">当该对象显示状态变化时触发该信号  <br /></td></tr>
+<tr class="separator:a5d4f7076dba4a67c0c4ecf5247e8de5f inherit pub_attribs_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_g_ft_1_1_graph_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_g_ft_1_1_graph_interface')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="class_g_ft_1_1_graph_interface.html">GFt::GraphInterface</a></td></tr>
+<tr class="memitem:a75e774a2c87f5e8e669cf8181d2341dc inherit pub_attribs_class_g_ft_1_1_graph_interface" id="r_a75e774a2c87f5e8e669cf8181d2341dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga4db4aab9932601699d1d1c63845e79bf">iPoint</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#a75e774a2c87f5e8e669cf8181d2341dc">onPositionChanged</a></td></tr>
+<tr class="separator:a75e774a2c87f5e8e669cf8181d2341dc inherit pub_attribs_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23ee5c24fe6d905884dac538ed4c501 inherit pub_attribs_class_g_ft_1_1_graph_interface" id="r_af23ee5c24fe6d905884dac538ed4c501"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt; const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaf4ecf8d7ef9d91eb5bf799893c6d72fb">iSize</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_graph_interface.html#af23ee5c24fe6d905884dac538ed4c501">onSizeChanged</a></td></tr>
+<tr class="separator:af23ee5c24fe6d905884dac538ed4c501 inherit pub_attribs_class_g_ft_1_1_graph_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a496751577c349dbb91ea20fab7d94920" id="r_a496751577c349dbb91ea20fab7d94920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a496751577c349dbb91ea20fab7d94920">onDraw</a> (<a class="el" href="class_g_ft_1_1_graphics.html">Graphics</a> &amp;g) override</td></tr>
+<tr class="memdesc:a496751577c349dbb91ea20fab7d94920"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于绘制内容  <br /></td></tr>
+<tr class="separator:a496751577c349dbb91ea20fab7d94920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7409bd5417bef0c45bab41d4d51dd77b" id="r_a7409bd5417bef0c45bab41d4d51dd77b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7409bd5417bef0c45bab41d4d51dd77b">onMouseButtonPress</a> (<a class="el" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a> *e) override</td></tr>
+<tr class="memdesc:a7409bd5417bef0c45bab41d4d51dd77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理鼠标按钮按下事件  <br /></td></tr>
+<tr class="separator:a7409bd5417bef0c45bab41d4d51dd77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_block"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_block')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_block.html">GFt::Block</a></td></tr>
+<tr class="memitem:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block" id="r_ae3c1579b1a248d8f2dc32c599822df70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ae3c1579b1a248d8f2dc32c599822df70">onKeyPress</a> (<a class="el" href="class_g_ft_1_1_key_press_event.html">KeyPressEvent</a> *event) override</td></tr>
+<tr class="memdesc:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理键盘按键按下事件  <br /></td></tr>
+<tr class="separator:ae3c1579b1a248d8f2dc32c599822df70 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block" id="r_a100661f60d285f4829e4a6598bfeacf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a100661f60d285f4829e4a6598bfeacf8">onKeyRelease</a> (<a class="el" href="class_g_ft_1_1_key_release_event.html">KeyReleaseEvent</a> *event) override</td></tr>
+<tr class="memdesc:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理键盘按键释放事件  <br /></td></tr>
+<tr class="separator:a100661f60d285f4829e4a6598bfeacf8 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24840527c64b1cc8fc02013e813d749e inherit pro_methods_class_g_ft_1_1_block" id="r_a24840527c64b1cc8fc02013e813d749e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a24840527c64b1cc8fc02013e813d749e">onMouseButtonRelease</a> (<a class="el" href="class_g_ft_1_1_mouse_button_release_event.html">MouseButtonReleaseEvent</a> *event) override</td></tr>
+<tr class="memdesc:a24840527c64b1cc8fc02013e813d749e inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理鼠标按钮释放事件  <br /></td></tr>
+<tr class="separator:a24840527c64b1cc8fc02013e813d749e inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57ed348e20dce6134614565612831bb inherit pro_methods_class_g_ft_1_1_block" id="r_ae57ed348e20dce6134614565612831bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ae57ed348e20dce6134614565612831bb">onMouseMove</a> (<a class="el" href="class_g_ft_1_1_mouse_move_event.html">MouseMoveEvent</a> *event) override</td></tr>
+<tr class="memdesc:ae57ed348e20dce6134614565612831bb inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理鼠标移动事件  <br /></td></tr>
+<tr class="separator:ae57ed348e20dce6134614565612831bb inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d78022a44847743b9695242d1819aed inherit pro_methods_class_g_ft_1_1_block" id="r_a8d78022a44847743b9695242d1819aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#a8d78022a44847743b9695242d1819aed">onMouseWheel</a> (<a class="el" href="class_g_ft_1_1_mouse_wheel_event.html">MouseWheelEvent</a> *event) override</td></tr>
+<tr class="memdesc:a8d78022a44847743b9695242d1819aed inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理鼠标滚轮事件  <br /></td></tr>
+<tr class="separator:a8d78022a44847743b9695242d1819aed inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c35f17955ab6e87898f88d6f6b9bc4 inherit pro_methods_class_g_ft_1_1_block" id="r_ad6c35f17955ab6e87898f88d6f6b9bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_ft_1_1_block.html#ad6c35f17955ab6e87898f88d6f6b9bc4">onTextInput</a> (<a class="el" href="class_g_ft_1_1_text_input_event.html">TextInputEvent</a> *event) override</td></tr>
+<tr class="memdesc:ad6c35f17955ab6e87898f88d6f6b9bc4 inherit pro_methods_class_g_ft_1_1_block"><td class="mdescLeft">&#160;</td><td class="mdescRight">此函数用于处理文本输入事件  <br /></td></tr>
+<tr class="separator:ad6c35f17955ab6e87898f88d6f6b9bc4 inherit pro_methods_class_g_ft_1_1_block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_graph_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_graph_interface')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_graph_interface.html">GFt::GraphInterface</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_mouse_button_press_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_mouse_button_press_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_mouse_button_press_event_monitor.html">GFt::MouseButtonPressEventMonitor</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_mouse_button_release_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_mouse_button_release_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_mouse_button_release_event_monitor.html">GFt::MouseButtonReleaseEventMonitor</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_mouse_move_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_mouse_move_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_mouse_move_event_monitor.html">GFt::MouseMoveEventMonitor</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_mouse_wheel_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_mouse_wheel_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_mouse_wheel_event_monitor.html">GFt::MouseWheelEventMonitor</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_key_press_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_key_press_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_key_press_event_monitor.html">GFt::KeyPressEventMonitor</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_key_release_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_key_release_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_key_release_event_monitor.html">GFt::KeyReleaseEventMonitor</a></td></tr>
+<tr class="inherit_header pro_methods_class_g_ft_1_1_text_input_event_monitor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_g_ft_1_1_text_input_event_monitor')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_g_ft_1_1_text_input_event_monitor.html">GFt::TextInputEventMonitor</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>复选框 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3b75a8ee92f1b29385f4741ff83c0e03" name="a3b75a8ee92f1b29385f4741ff83c0e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b75a8ee92f1b29385f4741ff83c0e03">&#9670;&#160;</a></span>CheckBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Widget::CheckBox::CheckBox </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#gaabf19a3333049b895935c4ff20d7fded">iRect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_block.html">Block</a> *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>zIndex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>复选框的矩形区域 </td></tr>
+    <tr><td class="paramname">parent</td><td>父级块 </td></tr>
+    <tr><td class="paramname">zIndex</td><td>层级 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a63bbe1957ae56d27a281405084a43e" name="a6a63bbe1957ae56d27a281405084a43e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a63bbe1957ae56d27a281405084a43e">&#9670;&#160;</a></span>~CheckBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GFt::Widget::CheckBox::~CheckBox </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a856e4bfe214879bea6aa9a1c6cc0ce80" name="a856e4bfe214879bea6aa9a1c6cc0ce80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856e4bfe214879bea6aa9a1c6cc0ce80">&#9670;&#160;</a></span>hoverBrush() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp; GFt::Widget::CheckBox::hoverBrush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="a1781f12f633cd37486d6f7b4bd94f483" name="a1781f12f633cd37486d6f7b4bd94f483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1781f12f633cd37486d6f7b4bd94f483">&#9670;&#160;</a></span>hoverBrush() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp; GFt::Widget::CheckBox::hoverBrush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="a49e32313facc08cd526b8eb6c84916a6" name="a49e32313facc08cd526b8eb6c84916a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e32313facc08cd526b8eb6c84916a6">&#9670;&#160;</a></span>hoverFont() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp; GFt::Widget::CheckBox::hoverFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="ae6b579f9e43ba86d369a7a6b795f1c9c" name="ae6b579f9e43ba86d369a7a6b795f1c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b579f9e43ba86d369a7a6b795f1c9c">&#9670;&#160;</a></span>hoverFont() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp; GFt::Widget::CheckBox::hoverFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="ab40a6898cf055ad2ff0145b60deedc68" name="ab40a6898cf055ad2ff0145b60deedc68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40a6898cf055ad2ff0145b60deedc68">&#9670;&#160;</a></span>isChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GFt::Widget::CheckBox::isChecked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取复选框的选中状态 </p>
+<dl class="section return"><dt>返回</dt><dd>选中状态 </dd></dl>
+
+</div>
+</div>
+<a id="a94a1f5f9d28b346f16f81cb1927fa364" name="a94a1f5f9d28b346f16f81cb1927fa364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a1f5f9d28b346f16f81cb1927fa364">&#9670;&#160;</a></span>normalBrush() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp; GFt::Widget::CheckBox::normalBrush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="acba9f2cd73da4abc36cb962a3b86647c" name="acba9f2cd73da4abc36cb962a3b86647c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba9f2cd73da4abc36cb962a3b86647c">&#9670;&#160;</a></span>normalBrush() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp; GFt::Widget::CheckBox::normalBrush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="a99c8b95a1d717ee9d78852c6ba220b9e" name="a99c8b95a1d717ee9d78852c6ba220b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c8b95a1d717ee9d78852c6ba220b9e">&#9670;&#160;</a></span>normalFont() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp; GFt::Widget::CheckBox::normalFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="aebd101b8c29b252fd1d6998917d2b8ed" name="aebd101b8c29b252fd1d6998917d2b8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd101b8c29b252fd1d6998917d2b8ed">&#9670;&#160;</a></span>normalFont() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp; GFt::Widget::CheckBox::normalFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="a496751577c349dbb91ea20fab7d94920" name="a496751577c349dbb91ea20fab7d94920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496751577c349dbb91ea20fab7d94920">&#9670;&#160;</a></span>onDraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Widget::CheckBox::onDraw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_graphics.html">Graphics</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>此函数用于绘制内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>绘图设备对象</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>此函数会在每一帧绘制时被调用, 用于绘制内容 </p><dl class="section note"><dt>注解</dt><dd>若启用了裁剪优化，且此对象所在位置不与父对象的区域存在交集, 则此函数不会被调用</dd>
+<dd>
+由于此函数会在每帧渲染时调用，因而应尽量避免过多的计算、创建和销毁临时对象，以提高效率。 </dd>
+<dd>
+渲染帧时长(可通过 <a class="el" href="class_g_ft_1_1_application.html#a259c6844da432c0320e0598584aa91e7" title="获取渲染帧时长">Application::getRenderTime()</a> 获取)最好控制在16ms以内，否则会引发较为明显的卡顿 </dd></dl>
+
+<p>重载 <a class="el" href="class_g_ft_1_1_block.html#a6feeb1a194d653f5513c1ebfb02384fb">GFt::Block</a> .</p>
+
+</div>
+</div>
+<a id="a7409bd5417bef0c45bab41d4d51dd77b" name="a7409bd5417bef0c45bab41d4d51dd77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7409bd5417bef0c45bab41d4d51dd77b">&#9670;&#160;</a></span>onMouseButtonPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Widget::CheckBox::onMouseButtonPress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a> *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>此函数用于处理鼠标按钮按下事件 </p>
+<p>此函数存在默认行为：当此对象被点击时捕获焦点 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>鼠标按钮按下事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>鼠标处理函数会依据鼠标位置进行事件的捕获决断, 并将事件传递给相应的对象进行处理 </dd>
+<dd>
+具体的决断逻辑为：从根节点开始，查找首个满足鼠标位置在其区域内的对象，以该对象 为根节点再次重复此操作，直到某个对象不存在满足条件的子对象，则将事件传递给该对 象进行处理。该对象处理后若冒泡行为未被阻止，则再向上冒泡(即向父对象传递事件)， 直到根节点。 <div class="image">
+<object type="image/svg+xml" data="handlemouse.svg" style="pointer-events: none;"></object>
+<div class="caption">
+鼠标事件处理示意图</div></div>
+ </dd></dl>
+
+<p>重载 <a class="el" href="class_g_ft_1_1_block.html#a739e089ae53f86757d5c22e8d6d725fa">GFt::Block</a> .</p>
+
+</div>
+</div>
+<a id="a084ce953e656696e14c1abfdf28fd096" name="a084ce953e656696e14c1abfdf28fd096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084ce953e656696e14c1abfdf28fd096">&#9670;&#160;</a></span>selectedBrush() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp; GFt::Widget::CheckBox::selectedBrush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="a0af5cb0ed5f29dd172cf68961837d824" name="a0af5cb0ed5f29dd172cf68961837d824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af5cb0ed5f29dd172cf68961837d824">&#9670;&#160;</a></span>selectedBrush() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_brush_set.html">BrushSet</a> &amp; GFt::Widget::CheckBox::selectedBrush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="ab74a1aae614bcf3260517c191c9fe154" name="ab74a1aae614bcf3260517c191c9fe154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74a1aae614bcf3260517c191c9fe154">&#9670;&#160;</a></span>selectedFont() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp; GFt::Widget::CheckBox::selectedFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="ae013b2b4e5d52aea2a0ee59dcafd80ee" name="ae013b2b4e5d52aea2a0ee59dcafd80ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae013b2b4e5d52aea2a0ee59dcafd80ee">&#9670;&#160;</a></span>selectedFont() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_g_ft_1_1_font.html">Font</a> &amp; GFt::Widget::CheckBox::selectedFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="acf302128be38edcd3619978fb78fd244" name="acf302128be38edcd3619978fb78fd244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf302128be38edcd3619978fb78fd244">&#9670;&#160;</a></span>setChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFt::Widget::CheckBox::setChecked </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>checked</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置复选框的选中状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">checked</td><td>选中状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab942a03493bac84a9d48c3c450f033a3" name="ab942a03493bac84a9d48c3c450f033a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab942a03493bac84a9d48c3c450f033a3">&#9670;&#160;</a></span>text() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring &amp; GFt::Widget::CheckBox::text </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<a id="a34d2ec319c29d1d5433c2a772c568302" name="a34d2ec319c29d1d5433c2a772c568302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d2ec319c29d1d5433c2a772c568302">&#9670;&#160;</a></span>text() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::wstring &amp; GFt::Widget::CheckBox::text </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>样式信息函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ac43718409863f93e38d03e0d48c43b26" name="ac43718409863f93e38d03e0d48c43b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43718409863f93e38d03e0d48c43b26">&#9670;&#160;</a></span>onCheckChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt;bool&gt; GFt::Widget::CheckBox::onCheckChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复选框选中状态改变时触发 </p>
+
+</div>
+</div>
+<a id="a2a6b70f15a72ac13878e282e14cb890c" name="a2a6b70f15a72ac13878e282e14cb890c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6b70f15a72ac13878e282e14cb890c">&#9670;&#160;</a></span>onChecked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt;void&gt; GFt::Widget::CheckBox::onChecked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复选框被选中时触发 </p>
+
+</div>
+</div>
+<a id="a702b90c7f34785c18d8858a6e0952fec" name="a702b90c7f34785c18d8858a6e0952fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702b90c7f34785c18d8858a6e0952fec">&#9670;&#160;</a></span>onUnchecked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_ft_1_1_signal.html">Signal</a>&lt;void&gt; GFt::Widget::CheckBox::onUnchecked</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复选框被取消选中时触发 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_g_ft.html">GFt</a></li><li class="navelem"><a class="el" href="namespace_g_ft_1_1_widget.html">Widget</a></li><li class="navelem"><a class="el" href="class_g_ft_1_1_widget_1_1_check_box.html">CheckBox</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

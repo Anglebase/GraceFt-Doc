@@ -6,5 +6,6 @@ var searchData=
   ['bevel_3',['Bevel',['../group___xE7_x94_xBB_xE7_xAC_x94_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#gga0c476cbaa451ab475a98c6da57b71affa1b9ae4ca6d43fc984af318046e1e7bb5',1,'GFt']]],
   ['black_4',['Black',['../group___xE5_xAD_x97_xE4_xBD_x93_xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf1ae0423f6298c625d9d2c68f5725175ae90dfb84e30edf611e326eeb04d680de',1,'GFt']]],
   ['bold_5',['Bold',['../group___xE5_xAD_x97_xE4_xBD_x93_xE6_x9E_x9A_xE4_xB8_xBE.html#ggaf1ae0423f6298c625d9d2c68f5725175a114c3050111d8b8ddd830b99ccebd246',1,'GFt']]],
-  ['bottom_6',['Bottom',['../group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a2c59c11190ffe4cd6a88a4e59c63e65a',1,'GFt']]]
+  ['boolean_6',['Boolean',['../namespace_g_ft_1_1json.html#ade3d078dadd474f77b23fc8485f2c15fa27226c864bac7454a8504f8edb15d95b',1,'GFt::json']]],
+  ['bottom_7',['Bottom',['../group___xE6_x96_x87_xE6_x9C_xAC_xE6_x9E_x9A_xE4_xB8_xBE.html#gga1379e5434ac9b81a8d3790efb3e642e7a2c59c11190ffe4cd6a88a4e59c63e65a',1,'GFt']]]
 ];

@@ -46,6 +46,10 @@ var NAVTREE =
     [ "示例", "md_doc_2def_2exp.html", [
       [ "计算器", "md_doc_2def_2exp.html#autotoc_md14", null ]
     ] ],
+    [ "GraceFt 使用技巧", "md_doc_2def_2tips.html", [
+      [ "信号-槽机制", "md_doc_2def_2tips.html#autotoc_md16", null ],
+      [ "零阻塞操作", "md_doc_2def_2tips.html#autotoc_md17", null ]
+    ] ],
     [ "Bug 列表", "bug.html", null ],
     [ "专题", "topics.html", "topics" ],
     [ "命名空间", "namespaces.html", [
@@ -58,6 +62,7 @@ var NAVTREE =
         [ "枚举值", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
+    [ "概念", "concepts.html", "concepts" ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -66,6 +71,7 @@ var NAVTREE =
         [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", "functions_func" ],
         [ "变量", "functions_vars.html", null ],
+        [ "类型定义", "functions_type.html", null ],
         [ "相关符号", "functions_rela.html", null ]
       ] ]
     ] ]
@@ -75,10 +81,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_g_ft_1_1_grid_layout.html#a6a42e40d6d9dd52d8f2ed572b4cef330",
-"class_g_ft_1_1_round_rect.html#a224d0e8b830c80d774a0c7efae935e1a",
-"group___xE6_x8E_xA5_xE5_x8F_xA3_xE7_xB1_xBB_xE5_x9E_x8B.html",
-"md_doc_2def_2edu.html#autotoc_md1"
+"class_g_ft_1_1_font.html#a503764c5a0ecdd100d06d664f09d7a62",
+"class_g_ft_1_1_pixel_map.html#ae5cfe0c0e0b06d536d5814bd1ff4818f",
+"class_g_ft_1_1_widget_1_1_h_slider.html#a11617333b4d6487d607ed8e85b252dfe",
+"concepts.html",
+"group___xE7_x94_xBB_xE5_x88_xB7_xE6_xA0_xB7_xE5_xBC_x8F_xE6_x9E_x9A_xE4_xB8_xBE.html#ggaead79709b6eced8a1f3c38677ddc8224aa3e8ae43188ae76d38f414b2bdb0077b",
+"struct_g_ft_1_1_u_i_1_1_x_radio_box.html#acd9f76debc2d0271260ef1461f3b1f39"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

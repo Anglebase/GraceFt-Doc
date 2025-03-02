@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_g_ft_1_1_u_i_1_1_x_window.html#a8816108adb1e95653c9d9d582e9cba57',1,'GFt::UI::XWindow::name'],['../struct_g_ft_1_1_u_i_1_1_x_main_window.html#a4f974fb13a279862075e1e7e389e2c3d',1,'GFt::UI::XMainWindow::name'],['../struct_g_ft_1_1_u_i_1_1_x_block.html#a6b60f41c6392b684606be122e503b18f',1,'GFt::UI::XBlock::name'],['../struct_g_ft_1_1_u_i_1_1_x_button.html#a91749c3ebf2a8c3bede9d40a9f6a8eec',1,'GFt::UI::XButton::name'],['../struct_g_ft_1_1_u_i_1_1_x_label.html#a0c4d7cb6a057ce281f3997216725529a',1,'GFt::UI::XLabel::name'],['../struct_g_ft_1_1_u_i_1_1_x_row_layout.html#a29d9791c12d897799a271c253310e78a',1,'GFt::UI::XRowLayout::name'],['../struct_g_ft_1_1_u_i_1_1_x_column_layout.html#a8192a6ab65fbca052bf130e1b16e0afc',1,'GFt::UI::XColumnLayout::name'],['../struct_g_ft_1_1_u_i_1_1_x_grid_layout.html#a10c3bdf4ff666b585fd55635dc192c75',1,'GFt::UI::XGridLayout::name']]]
+  ['hoveroff_0',['HoverOff',['../class_g_ft_1_1_block.html#a8fca38ee5cc6098c6f2d8219f61b33cb',1,'GFt::Block']]],
+  ['hoveron_1',['HoverOn',['../class_g_ft_1_1_block.html#a5301d542cb3c85aa8381f19d2efeecca',1,'GFt::Block']]]
 ];

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/System.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_system_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">System.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraceFt/Event.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;GraceFt/Point.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespace_g_ft_1_1_sys.html">   11</a></span>    <span class="keyword">namespace </span>Sys {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#a75ef1e41864d461481bd52f9bbd3f703">getKeyState</a>(<a class="code hl_enumeration" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#gad4cc0aeb1aafaf6155c13d69069fddf2">Key</a> key);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#a60aa50448e7a1fce595173df6b5f4e8c">getAsyncKeyState</a>(<a class="code hl_enumeration" href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#gad4cc0aeb1aafaf6155c13d69069fddf2">Key</a> key);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="class_g_ft_1_1_point.html">iPoint</a> <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#a37a2c6604e18995616f4d3c424845923">getCursorPosition</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#ad3d4d952bba8c3b59e9efa32ee611666">setCursorPosition</a>(<a class="code hl_class" href="class_g_ft_1_1_point.html">iPoint</a> pos);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        std::wstring <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#a3ae6b7ad08bf3dc76c5e74e207d4605f">getCilpBoardText</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#a3088135f6c54ae96406726f3275c603a">setCilpBoardText</a>(std::wstring text);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        std::optional&lt;std::string&gt; <a class="code hl_function" href="namespace_g_ft_1_1_sys.html#abfe918add6d66bfa87899572fecb4c4b">getEnv</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point&lt; int &gt;</a></div></div>
+<div class="ttc" id="agroup___xE6_x9E_x9A_xE4_xB8_xBE_html_gad4cc0aeb1aafaf6155c13d69069fddf2"><div class="ttname"><a href="group___xE6_x9E_x9A_xE4_xB8_xBE.html#gad4cc0aeb1aafaf6155c13d69069fddf2">GFt::Key</a></div><div class="ttdeci">Key</div><div class="ttdoc">键盘按键枚举</div><div class="ttdef"><b>定义</b> Event.h:33</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_a3088135f6c54ae96406726f3275c603a"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#a3088135f6c54ae96406726f3275c603a">GFt::Sys::setCilpBoardText</a></div><div class="ttdeci">void setCilpBoardText(std::wstring text)</div><div class="ttdoc">向剪贴板设置文本</div><div class="ttdef"><b>定义</b> System.cpp:32</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_a37a2c6604e18995616f4d3c424845923"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#a37a2c6604e18995616f4d3c424845923">GFt::Sys::getCursorPosition</a></div><div class="ttdeci">iPoint getCursorPosition()</div><div class="ttdoc">获取鼠标的绝对位置</div><div class="ttdef"><b>定义</b> System.cpp:13</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_a3ae6b7ad08bf3dc76c5e74e207d4605f"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#a3ae6b7ad08bf3dc76c5e74e207d4605f">GFt::Sys::getCilpBoardText</a></div><div class="ttdeci">std::wstring getCilpBoardText()</div><div class="ttdoc">从剪贴板获取文本</div><div class="ttdef"><b>定义</b> System.cpp:21</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_a60aa50448e7a1fce595173df6b5f4e8c"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#a60aa50448e7a1fce595173df6b5f4e8c">GFt::Sys::getAsyncKeyState</a></div><div class="ttdeci">unsigned short getAsyncKeyState(Key key)</div><div class="ttdoc">获取键盘按键状态(直接读取物理设备状态)</div><div class="ttdef"><b>定义</b> System.cpp:10</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_a75ef1e41864d461481bd52f9bbd3f703"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#a75ef1e41864d461481bd52f9bbd3f703">GFt::Sys::getKeyState</a></div><div class="ttdeci">unsigned short getKeyState(Key key)</div><div class="ttdoc">获取键盘按键状态(基于窗口消息队列读取)</div><div class="ttdef"><b>定义</b> System.cpp:7</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_abfe918add6d66bfa87899572fecb4c4b"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#abfe918add6d66bfa87899572fecb4c4b">GFt::Sys::getEnv</a></div><div class="ttdeci">std::optional&lt; std::string &gt; getEnv(const std::string &amp;name)</div><div class="ttdoc">获取环境变量的值</div><div class="ttdef"><b>定义</b> System.cpp:50</div></div>
+<div class="ttc" id="anamespace_g_ft_1_1_sys_html_ad3d4d952bba8c3b59e9efa32ee611666"><div class="ttname"><a href="namespace_g_ft_1_1_sys.html#ad3d4d952bba8c3b59e9efa32ee611666">GFt::Sys::setCursorPosition</a></div><div class="ttdeci">void setCursorPosition(iPoint pos)</div><div class="ttdoc">设置鼠标的绝对位置</div><div class="ttdef"><b>定义</b> System.cpp:18</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><b>System.h</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

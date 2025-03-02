@@ -33,7 +33,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.1.4</span>
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
    </div>
    <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
   </td>
@@ -140,24 +140,24 @@ $(function(){initNavTree('_polygon_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">requires</span> std::is_arithmetic_v&lt;U&gt;</div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_polygon.html#ab10bc0fe13e3ab071f2619c56f50707a">   55</a></span>        <span class="keyword">operator</span> <a class="code hl_function" href="class_g_ft_1_1_polygon.html#aca697a9aa1cde500c6f3d0d541954231">Polygon&lt;U&gt;</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_class" href="class_g_ft_1_1_polygon.html">Polygon&lt;U&gt;</a> result;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; point : this-&gt;points)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                result.<a class="code hl_function" href="class_g_ft_1_1_polygon.html#a5bd5ea5de76438ea1fd728ba3ea16a23">addPoint</a>(point);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            result.<a class="code hl_function" href="class_g_ft_1_1_polygon.html#a1f95514f170ad0836979d2eaa06c2b64">setClosed</a>(this-&gt;<a class="code hl_function" href="class_g_ft_1_1_polygon.html#a7832c7d6c47c7e0e78cb4adee46d668e">isClosed</a>());</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">requires</span> std::is_arithmetic_v&lt;U&gt;</div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_polygon.html#ab10bc0fe13e3ab071f2619c56f50707a">   54</a></span>        <span class="keyword">operator</span> <a class="code hl_function" href="class_g_ft_1_1_polygon.html#aca697a9aa1cde500c6f3d0d541954231">Polygon&lt;U&gt;</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_class" href="class_g_ft_1_1_polygon.html">Polygon&lt;U&gt;</a> result;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; point : this-&gt;points)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                result.<a class="code hl_function" href="class_g_ft_1_1_polygon.html#a5bd5ea5de76438ea1fd728ba3ea16a23">addPoint</a>(point);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            result.<a class="code hl_function" href="class_g_ft_1_1_polygon.html#a1f95514f170ad0836979d2eaa06c2b64">setClosed</a>(this-&gt;<a class="code hl_function" href="class_g_ft_1_1_polygon.html#a7832c7d6c47c7e0e78cb4adee46d668e">isClosed</a>());</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    };</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    };</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga9d3ccf391e9f726cc8973d1ebfe34a96">   66</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_polygon.html">iPolygon</a> = <a class="code hl_class" href="class_g_ft_1_1_polygon.html">Polygon&lt;int&gt;</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga72b19162d87ade8c10b6ba84c55f32a7">   69</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_polygon.html">fPolygon</a> = <a class="code hl_class" href="class_g_ft_1_1_polygon.html">Polygon&lt;float&gt;</a>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
-<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:38</div></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga9d3ccf391e9f726cc8973d1ebfe34a96">   65</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_polygon.html">iPolygon</a> = <a class="code hl_class" href="class_g_ft_1_1_polygon.html">Polygon&lt;int&gt;</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="group___xE9_xA2_x84_xE5_xAE_x9A_xE4_xB9_x89_xE6_xA8_xA1_xE6_x9D_xBF_xE7_x89_xB9_xE5_x8C_x96_xE7_xB1_xBB_xE5_x9E_x8B.html#ga72b19162d87ade8c10b6ba84c55f32a7">   68</a></span>    <span class="keyword">using </span><a class="code hl_class" href="class_g_ft_1_1_polygon.html">fPolygon</a> = <a class="code hl_class" href="class_g_ft_1_1_polygon.html">Polygon&lt;float&gt;</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:39</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_path_html"><div class="ttname"><a href="class_g_ft_1_1_path.html">GFt::Path</a></div><div class="ttdoc">路径类</div><div class="ttdef"><b>定义</b> Path.h:19</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_point_html"><div class="ttname"><a href="class_g_ft_1_1_point.html">GFt::Point</a></div><div class="ttdoc">泛型点类</div><div class="ttdef"><b>定义</b> Point.hpp:22</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_polygon_html"><div class="ttname"><a href="class_g_ft_1_1_polygon.html">GFt::Polygon</a></div><div class="ttdoc">多边形类</div><div class="ttdef"><b>定义</b> Polygon.hpp:15</div></div>
@@ -168,7 +168,7 @@ $(function(){initNavTree('_polygon_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="aclass_g_ft_1_1_polygon_html_a7832c7d6c47c7e0e78cb4adee46d668e"><div class="ttname"><a href="class_g_ft_1_1_polygon.html#a7832c7d6c47c7e0e78cb4adee46d668e">GFt::Polygon::isClosed</a></div><div class="ttdeci">bool isClosed() const</div><div class="ttdoc">获取多边形是否闭合</div><div class="ttdef"><b>定义</b> Polygon.hpp:38</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_polygon_html_aca697a9aa1cde500c6f3d0d541954231"><div class="ttname"><a href="class_g_ft_1_1_polygon.html#aca697a9aa1cde500c6f3d0d541954231">GFt::Polygon::Polygon</a></div><div class="ttdeci">Polygon()=default</div><div class="ttdoc">默认构造函数</div></div>
 <div class="ttc" id="aclass_g_ft_1_1_polygon_html_af6b698c04e5bbe3d2f9717ad47a15222"><div class="ttname"><a href="class_g_ft_1_1_polygon.html#af6b698c04e5bbe3d2f9717ad47a15222">GFt::Polygon::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Polygon&lt; T &gt; &amp;polygon)</div><div class="ttdoc">流操作符重载</div><div class="ttdef"><b>定义</b> Polygon.hpp:44</div></div>
-<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间。</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

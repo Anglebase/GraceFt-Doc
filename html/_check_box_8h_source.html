@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GraceFt: include/GraceFt/widget/CheckBox.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxy.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GraceFt<span id="projectnumber">&#160;v2.2.1</span>
+   </div>
+   <div id="projectbrief">开源图形引擎 EGE(Easy Graphics Engine) 的高层封装库</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_check_box_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CheckBox.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraceFt/Block.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_g_ft.html">GFt</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">namespace </span>Widget {</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_check_box.html">    9</a></span>        <span class="keyword">class </span><a class="code hl_class" href="class_g_ft_1_1_widget_1_1_check_box.html">CheckBox</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            <span class="keywordtype">bool</span> checked_;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            std::wstring text_;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a> hoverfont_;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a> normalfont_;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a> selectedfont_;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> hoverbs_;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> normalbs_;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a> selectedbs_;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a496751577c349dbb91ea20fab7d94920">onDraw</a>(<a class="code hl_class" href="class_g_ft_1_1_graphics.html">Graphics</a>&amp; g) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a7409bd5417bef0c45bab41d4d51dd77b">onMouseButtonPress</a>(<a class="code hl_class" href="class_g_ft_1_1_mouse_button_press_event.html">MouseButtonPressEvent</a>* e) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a3b75a8ee92f1b29385f4741ff83c0e03">CheckBox</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_rect.html">iRect</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">rect</a>, <a class="code hl_class" href="class_g_ft_1_1_block.html">Block</a>* parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> zIndex = 0);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_check_box.html#a6a63bbe1957ae56d27a281405084a43e">   30</a></span>            <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a6a63bbe1957ae56d27a281405084a43e">~CheckBox</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#acf302128be38edcd3619978fb78fd244">setChecked</a>(<span class="keywordtype">bool</span> checked);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#ab40a6898cf055ad2ff0145b60deedc68">isChecked</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            std::wstring&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#ab942a03493bac84a9d48c3c450f033a3">text</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a49e32313facc08cd526b8eb6c84916a6">hoverFont</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a99c8b95a1d717ee9d78852c6ba220b9e">normalFont</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#ab74a1aae614bcf3260517c191c9fe154">selectedFont</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a856e4bfe214879bea6aa9a1c6cc0ce80">hoverBrush</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a94a1f5f9d28b346f16f81cb1927fa364">normalBrush</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a084ce953e656696e14c1abfdf28fd096">selectedBrush</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">const</span> std::wstring&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#ab942a03493bac84a9d48c3c450f033a3">text</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a49e32313facc08cd526b8eb6c84916a6">hoverFont</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a99c8b95a1d717ee9d78852c6ba220b9e">normalFont</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_font.html">Font</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#ab74a1aae614bcf3260517c191c9fe154">selectedFont</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a856e4bfe214879bea6aa9a1c6cc0ce80">hoverBrush</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a94a1f5f9d28b346f16f81cb1927fa364">normalBrush</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_g_ft_1_1_brush_set.html">BrushSet</a>&amp; <a class="code hl_function" href="class_g_ft_1_1_widget_1_1_check_box.html#a084ce953e656696e14c1abfdf28fd096">selectedBrush</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_check_box.html#a2a6b70f15a72ac13878e282e14cb890c">   69</a></span>            <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;void&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_widget_1_1_check_box.html#a2a6b70f15a72ac13878e282e14cb890c">onChecked</a>;         </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_check_box.html#a702b90c7f34785c18d8858a6e0952fec">   70</a></span>            <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;void&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_widget_1_1_check_box.html#a702b90c7f34785c18d8858a6e0952fec">onUnchecked</a>;       </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_g_ft_1_1_widget_1_1_check_box.html#ac43718409863f93e38d03e0d48c43b26">   71</a></span>            <a class="code hl_class" href="class_g_ft_1_1_signal.html">Signal&lt;bool&gt;</a> <a class="code hl_variable" href="class_g_ft_1_1_widget_1_1_check_box.html#ac43718409863f93e38d03e0d48c43b26">onCheckChanged</a>;    </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        };</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclass_g_ft_1_1_block_html"><div class="ttname"><a href="class_g_ft_1_1_block.html">GFt::Block</a></div><div class="ttdoc">块对象</div><div class="ttdef"><b>定义</b> Block.h:17</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_brush_set_html"><div class="ttname"><a href="class_g_ft_1_1_brush_set.html">GFt::BrushSet</a></div><div class="ttdoc">画刷设置类</div><div class="ttdef"><b>定义</b> BrushSet.h:35</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_font_html"><div class="ttname"><a href="class_g_ft_1_1_font.html">GFt::Font</a></div><div class="ttdoc">字体类</div><div class="ttdef"><b>定义</b> Font.h:46</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graph_interface_html_a99c0544fcbbb56c689fe6e3964b6a55d"><div class="ttname"><a href="class_g_ft_1_1_graph_interface.html#a99c0544fcbbb56c689fe6e3964b6a55d">GFt::GraphInterface::rect</a></div><div class="ttdeci">const iRect &amp; rect() const</div><div class="ttdef"><b>定义</b> GraphInterface.cpp:40</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_graphics_html"><div class="ttname"><a href="class_g_ft_1_1_graphics.html">GFt::Graphics</a></div><div class="ttdoc">绘图接口类</div><div class="ttdef"><b>定义</b> Graphics.h:39</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_mouse_button_press_event_html"><div class="ttname"><a href="class_g_ft_1_1_mouse_button_press_event.html">GFt::MouseButtonPressEvent</a></div><div class="ttdoc">鼠标按钮按下事件</div><div class="ttdef"><b>定义</b> Event.h:307</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_rect_html"><div class="ttname"><a href="class_g_ft_1_1_rect.html">GFt::Rect&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclass_g_ft_1_1_signal_html"><div class="ttname"><a href="class_g_ft_1_1_signal.html">GFt::Signal</a></div><div class="ttdoc">信号-槽机制支持</div><div class="ttdef"><b>定义</b> Signal.hpp:25</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html">GFt::Widget::CheckBox</a></div><div class="ttdoc">复选框</div><div class="ttdef"><b>定义</b> CheckBox.h:9</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a084ce953e656696e14c1abfdf28fd096"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a084ce953e656696e14c1abfdf28fd096">GFt::Widget::CheckBox::selectedBrush</a></div><div class="ttdeci">BrushSet &amp; selectedBrush()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:74</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a2a6b70f15a72ac13878e282e14cb890c"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a2a6b70f15a72ac13878e282e14cb890c">GFt::Widget::CheckBox::onChecked</a></div><div class="ttdeci">Signal&lt; void &gt; onChecked</div><div class="ttdoc">复选框被选中时触发</div><div class="ttdef"><b>定义</b> CheckBox.h:69</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a3b75a8ee92f1b29385f4741ff83c0e03"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a3b75a8ee92f1b29385f4741ff83c0e03">GFt::Widget::CheckBox::CheckBox</a></div><div class="ttdeci">CheckBox(const iRect &amp;rect, Block *parent=nullptr, int zIndex=0)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:50</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a496751577c349dbb91ea20fab7d94920"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a496751577c349dbb91ea20fab7d94920">GFt::Widget::CheckBox::onDraw</a></div><div class="ttdeci">void onDraw(Graphics &amp;g) override</div><div class="ttdoc">此函数用于绘制内容</div><div class="ttdef"><b>定义</b> CheckBox.cpp:8</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a49e32313facc08cd526b8eb6c84916a6"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a49e32313facc08cd526b8eb6c84916a6">GFt::Widget::CheckBox::hoverFont</a></div><div class="ttdeci">Font &amp; hoverFont()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:69</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a6a63bbe1957ae56d27a281405084a43e"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a6a63bbe1957ae56d27a281405084a43e">GFt::Widget::CheckBox::~CheckBox</a></div><div class="ttdeci">~CheckBox() override</div><div class="ttdoc">析构函数</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a702b90c7f34785c18d8858a6e0952fec"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a702b90c7f34785c18d8858a6e0952fec">GFt::Widget::CheckBox::onUnchecked</a></div><div class="ttdeci">Signal&lt; void &gt; onUnchecked</div><div class="ttdoc">复选框被取消选中时触发</div><div class="ttdef"><b>定义</b> CheckBox.h:70</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a7409bd5417bef0c45bab41d4d51dd77b"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a7409bd5417bef0c45bab41d4d51dd77b">GFt::Widget::CheckBox::onMouseButtonPress</a></div><div class="ttdeci">void onMouseButtonPress(MouseButtonPressEvent *e) override</div><div class="ttdoc">此函数用于处理鼠标按钮按下事件</div><div class="ttdef"><b>定义</b> CheckBox.cpp:45</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a856e4bfe214879bea6aa9a1c6cc0ce80"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a856e4bfe214879bea6aa9a1c6cc0ce80">GFt::Widget::CheckBox::hoverBrush</a></div><div class="ttdeci">BrushSet &amp; hoverBrush()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:72</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a94a1f5f9d28b346f16f81cb1927fa364"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a94a1f5f9d28b346f16f81cb1927fa364">GFt::Widget::CheckBox::normalBrush</a></div><div class="ttdeci">BrushSet &amp; normalBrush()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:73</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_a99c8b95a1d717ee9d78852c6ba220b9e"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#a99c8b95a1d717ee9d78852c6ba220b9e">GFt::Widget::CheckBox::normalFont</a></div><div class="ttdeci">Font &amp; normalFont()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:70</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_ab40a6898cf055ad2ff0145b60deedc68"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#ab40a6898cf055ad2ff0145b60deedc68">GFt::Widget::CheckBox::isChecked</a></div><div class="ttdeci">bool isChecked() const</div><div class="ttdoc">获取复选框的选中状态</div><div class="ttdef"><b>定义</b> CheckBox.cpp:64</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_ab74a1aae614bcf3260517c191c9fe154"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#ab74a1aae614bcf3260517c191c9fe154">GFt::Widget::CheckBox::selectedFont</a></div><div class="ttdeci">Font &amp; selectedFont()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:71</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_ab942a03493bac84a9d48c3c450f033a3"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#ab942a03493bac84a9d48c3c450f033a3">GFt::Widget::CheckBox::text</a></div><div class="ttdeci">std::wstring &amp; text()</div><div class="ttdoc">样式信息函数</div><div class="ttdef"><b>定义</b> CheckBox.cpp:68</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_ac43718409863f93e38d03e0d48c43b26"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#ac43718409863f93e38d03e0d48c43b26">GFt::Widget::CheckBox::onCheckChanged</a></div><div class="ttdeci">Signal&lt; bool &gt; onCheckChanged</div><div class="ttdoc">复选框选中状态改变时触发</div><div class="ttdef"><b>定义</b> CheckBox.h:71</div></div>
+<div class="ttc" id="aclass_g_ft_1_1_widget_1_1_check_box_html_acf302128be38edcd3619978fb78fd244"><div class="ttname"><a href="class_g_ft_1_1_widget_1_1_check_box.html#acf302128be38edcd3619978fb78fd244">GFt::Widget::CheckBox::setChecked</a></div><div class="ttdeci">void setChecked(bool checked)</div><div class="ttdoc">设置复选框的选中状态</div><div class="ttdef"><b>定义</b> CheckBox.cpp:57</div></div>
+<div class="ttc" id="anamespace_g_ft_html"><div class="ttname"><a href="namespace_g_ft.html">GFt</a></div><div class="ttdoc">GraceFt库的命名空间</div><div class="ttdef"><b>定义</b> _private.inl:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ef2832b0267382882779cd6f3f59c9b2.html">GraceFt</a></li><li class="navelem"><a class="el" href="dir_1dd470e1957e4a4967fb3faf7f9eeb8d.html">widget</a></li><li class="navelem"><b>CheckBox.h</b></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
